@@ -21,7 +21,8 @@
     "lokalise:push": "npm run lokalise:upload",
     "lokalise:pull": "npm run lokalise:download",
     "build": "echo 'No build step required'",
-    "test": "echo 'Tests not yet implemented'"
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "keywords": [
     "i18n",
@@ -39,10 +40,22 @@
   },
   "peerDependencies": {
     "i18next": ">=23.0.0",
+    "i18next-browser-languagedetector": ">=7.0.0",
+    "i18next-http-backend": ">=2.0.0",
+    "react": ">=18.0.0",
     "react-i18next": ">=14.0.0"
   },
   "peerDependenciesMeta": {
     "i18next": {
+      "optional": false
+    },
+    "i18next-browser-languagedetector": {
+      "optional": true
+    },
+    "i18next-http-backend": {
+      "optional": true
+    },
+    "react": {
       "optional": true
     },
     "react-i18next": {
@@ -50,6 +63,15 @@
     }
   },
   "devDependencies": {
-    "@anthropic-ai/claude-code": "*"
+    "@anthropic-ai/claude-code": "*",
+    "@testing-library/react": "^14.0.0",
+    "@types/react": "^18.2.0",
+    "i18next": "^23.0.0",
+    "i18next-browser-languagedetector": "^7.0.0",
+    "i18next-http-backend": "^2.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^14.0.0",
+    "vitest": "^1.0.0"
   }
 }
