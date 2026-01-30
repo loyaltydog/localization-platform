@@ -205,7 +205,8 @@ describe('useNumberFormat hook', () => {
 
     expect(formatted).toBeDefined();
     expect(typeof formatted).toBe('string');
-    expect(formatted).toMatch(/75|%/);
+    expect(formatted).toContain('75');
+    expect(formatted).toContain('%');
   });
 
   it('should format compact numbers', () => {
@@ -217,6 +218,6 @@ describe('useNumberFormat hook', () => {
 
     expect(formatted).toBeDefined();
     expect(typeof formatted).toBe('string');
-    expect(formatted).toMatch(/1\.5|M|million/i);
+    expect(formatted).toMatch(/1\.5.*[Mm]|M.*1\.5/);
   });
 });
