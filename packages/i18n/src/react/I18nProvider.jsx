@@ -38,34 +38,43 @@ export function I18nProvider({
   fallback = null,
 }) {
   const [isReady, setIsReady] = useState(false);
+  const [error, setError] = useState(null);
   const [i18nInstance, setI18nInstance] = useState(null);
   const initializedRef = useRef(false);
+  // Store config in ref to avoid dependency on object reference
+  const configRef = useRef(config);
 
   useEffect(() => {
-    // Prevent re-initialization from non-memoized config props
+    // Prevent re-initialization
     if (initializedRef.current) {
       return;
     }
+    initializedRef.current = true;
 
-    const init = async () => {
-      const overrides = { ...config };
+    const overrides = { ...configRef.current };
 
-      if (loadPath) {
-        overrides.backend = { loadPath };
-      }
+    if (loadPath) {
+      overrides.backend = { loadPath };
+    }
 
-      if (defaultLanguage) {
-        overrides.lng = defaultLanguage;
-      }
+    if (defaultLanguage) {
+      overrides.lng = defaultLanguage;
+    }
 
-      await initI18n(overrides);
-      initializedRef.current = true;
-      setI18nInstance(getI18n());
-      setIsReady(true);
-    };
+    initI18n(overrides)
+      .then(() => {
+        setI18nInstance(getI18n());
+        setIsReady(true);
+      })
+      .catch((err) => {
+        console.error('Failed to initialize i18n:', err);
+        setError(err);
+      });
+  }, [loadPath, defaultLanguage]);
 
-    init();
-  }, [loadPath, defaultLanguage, config]);
+  if (error) {
+    return fallback;
+  }
 
   if (!isReady || !i18nInstance) {
     return fallback;
