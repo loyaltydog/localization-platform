@@ -1,0 +1,30 @@
+{
+  "pointsEarned": {
+    "title": "Points Earned!",
+    "body": "You earned {{points}} points at {{merchantName}}. New balance: {{balance}}"
+  },
+  "rewardUnlocked": {
+    "title": "Reward Unlocked!",
+    "body": "You've unlocked {{rewardName}}! Show this at checkout to redeem."
+  },
+  "rewardExpiring": {
+    "title": "Reward Expiring Soon",
+    "body": "Your reward {{rewardName}} expires on {{expiryDate}}"
+  },
+  "pointsExpiring": {
+    "title": "Points Expiring Soon",
+    "body": "{{points}} points will expire on {{expiryDate}}. Use them before they're gone!"
+  },
+  "welcome": {
+    "title": "Welcome to {{merchantName}}!",
+    "body": "You're enrolled! You have {{points}} points to start."
+  },
+  "birthday": {
+    "title": "Happy Birthday!",
+    "body": "Enjoy {{bonusPoints}} bonus points from {{merchantName}}!"
+  },
+  "campaign": {
+    "title": "{{campaignName}}",
+    "body": "{{campaignMessage}}"
+  }
+}
