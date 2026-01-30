@@ -10,8 +10,8 @@ import {
   getCurrentLanguage,
   hasLoadedLanguage,
   defaultConfig,
-  SUPPORTED_LANGUAGES,
-} from '../index.js';
+} from '../i18n-config.js';
+import { SUPPORTED_LANGUAGES } from '../../index.js';
 
 describe('i18n-config', () => {
   describe('defaultConfig', () => {
