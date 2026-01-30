@@ -5,8 +5,9 @@
 
 import { useCallback, useMemo } from 'react';
 import { useTranslation as useI18nextTranslation } from 'react-i18next';
-import { SUPPORTED_LANGUAGES, DEFAULT_LANGUAGE } from '../index.js';
+import { SUPPORTED_LANGUAGES, DEFAULT_LANGUAGE, getLanguage } from '../index.js';
 import { isRTL, getTextDirection } from '../rtl/index.js';
+import { changeLanguage as configChangeLanguage } from './i18n-config.js';
 
 /**
  * Enhanced useTranslation hook with additional utilities
@@ -38,9 +39,9 @@ export function useTranslation(namespace = 'common', options = {}) {
 
   const changeLanguage = useCallback(
     (langCode) => {
-      return i18n.changeLanguage(langCode);
+      return configChangeLanguage(langCode);
     },
-    [i18n]
+    []
   );
 
   const isCurrentRTL = useMemo(() => isRTL(language), [language]);
@@ -49,7 +50,7 @@ export function useTranslation(namespace = 'common', options = {}) {
   const languages = useMemo(() => SUPPORTED_LANGUAGES, []);
 
   const currentLanguage = useMemo(
-    () => SUPPORTED_LANGUAGES.find((lang) => lang.code === language) || SUPPORTED_LANGUAGES[0],
+    () => getLanguage(language) || SUPPORTED_LANGUAGES[0],
     [language]
   );
 
@@ -98,13 +99,13 @@ export function useLanguages() {
 
   const setLanguage = useCallback(
     (langCode) => {
-      return i18n.changeLanguage(langCode);
+      return configChangeLanguage(langCode);
     },
-    [i18n]
+    []
   );
 
   const currentLanguage = useMemo(
-    () => SUPPORTED_LANGUAGES.find((lang) => lang.code === currentCode) || SUPPORTED_LANGUAGES[0],
+    () => getLanguage(currentCode) || SUPPORTED_LANGUAGES[0],
     [currentCode]
   );
 
