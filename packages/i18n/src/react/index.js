@@ -46,7 +46,7 @@ export {
 } from './i18n-config.js';
 
 // Provider component
-export { I18nProvider } from './I18nProvider.jsx';
+export { I18nProvider } from './I18nProvider.js';
 
 // Custom hooks
 export {

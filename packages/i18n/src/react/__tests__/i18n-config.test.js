@@ -127,7 +127,11 @@ describe('i18n-config', () => {
 
 describe('Translation content', () => {
   beforeEach(async () => {
-    await initI18n();
+    // initI18n guards against re-initialization, safe to call
+    const i18n = getI18n();
+    if (!i18n.isInitialized) {
+      await initI18n();
+    }
   });
 
   it('should translate common navigation keys', () => {

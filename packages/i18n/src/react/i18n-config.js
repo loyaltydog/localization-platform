@@ -8,7 +8,7 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpBackend from 'i18next-http-backend';
 
-import { SUPPORTED_LANGUAGES, DEFAULT_LANGUAGE, NAMESPACES } from '../index.js';
+import { SUPPORTED_LANGUAGES, DEFAULT_LANGUAGE, NAMESPACES, getLanguage } from '../index.js';
 
 // Import English translations for bundling (always available)
 import commonEn from '../../locales/en/common.json';
@@ -134,16 +134,17 @@ export function getI18n() {
 }
 
 /**
- * Change the current language
+ * Change the current language (supports base language matching, e.g., 'es' -> 'es-ES')
  * @param {string} langCode - Language code to switch to
  * @returns {Promise<void>}
  */
 export async function changeLanguage(langCode) {
-  if (!SUPPORTED_LANGUAGES.some((lang) => lang.code === langCode)) {
+  const lang = getLanguage(langCode);
+  if (!lang) {
     console.warn(`Language "${langCode}" is not supported. Falling back to "${DEFAULT_LANGUAGE}".`);
-    langCode = DEFAULT_LANGUAGE;
+    return i18n.changeLanguage(DEFAULT_LANGUAGE);
   }
-  return i18n.changeLanguage(langCode);
+  return i18n.changeLanguage(lang.code);
 }
 
 /**
@@ -155,22 +156,31 @@ export function getCurrentLanguage() {
 }
 
 /**
- * Check if translations are loaded for a language
+ * Check if translations are loaded for a language (supports base language fallback)
  * @param {string} langCode - Language code to check
  * @param {string} [namespace='common'] - Namespace to check
  * @returns {boolean}
  */
 export function hasLoadedLanguage(langCode, namespace = 'common') {
-  return i18n.hasResourceBundle(langCode, namespace);
+  if (i18n.hasResourceBundle(langCode, namespace)) {
+    return true;
+  }
+  // Try base language (e.g., 'en-US' -> 'en')
+  const baseCode = langCode?.split('-')[0];
+  if (baseCode && baseCode !== langCode) {
+    return i18n.hasResourceBundle(baseCode, namespace);
+  }
+  return false;
 }
 
 /**
  * Preload translations for a language
  * @param {string} langCode - Language code to preload
+ * @param {string} [namespace='common'] - Namespace to check/load
  * @returns {Promise<void>}
  */
-export async function preloadLanguage(langCode) {
-  if (!hasLoadedLanguage(langCode)) {
+export async function preloadLanguage(langCode, namespace = 'common') {
+  if (!hasLoadedLanguage(langCode, namespace)) {
     await i18n.loadLanguages(langCode);
   }
 }
