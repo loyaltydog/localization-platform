@@ -1,0 +1,30 @@
+{
+  "welcome": {
+    "subject": "Welcome to {{merchantName}} Loyalty Program!",
+    "body": "Hi {{memberName}},\n\nYou're now a member of the {{merchantName}} loyalty program with {{points}} points to start.\n\nDownload your pass: {{passUrl}}\n\nStart earning rewards today!"
+  },
+  "rewardEarned": {
+    "subject": "You've earned a reward!",
+    "body": "Congratulations {{memberName}}!\n\nYou've unlocked: {{rewardName}}\n\nShow this at checkout to redeem your reward.\n\nReward expires: {{expiryDate}}"
+  },
+  "pointsEarned": {
+    "subject": "You earned {{points}} points!",
+    "body": "Great news, {{memberName}}!\n\nYou just earned {{points}} points at {{merchantName}}.\n\nCurrent balance: {{balance}} points\nKeep earning to unlock rewards!"
+  },
+  "rewardExpiring": {
+    "subject": "Your reward expires soon",
+    "body": "Hi {{memberName}},\n\nYour reward '{{rewardName}}' will expire on {{expiryDate}}.\n\nDon't forget to use it before it's gone!"
+  },
+  "campaign": {
+    "subject": "{{campaignName}}",
+    "body": "{{campaignBody}}\n\nView your rewards: {{rewardsUrl}}"
+  },
+  "birthday": {
+    "subject": "Happy Birthday from {{merchantName}}!",
+    "body": "Happy Birthday, {{memberName}}!\n\nEnjoy {{bonusPoints}} bonus points as our gift to you.\n\nCurrent balance: {{balance}} points\nHave a wonderful birthday!"
+  },
+  "passwordReset": {
+    "subject": "Reset your password",
+    "body": "Hi {{memberName}},\n\nClick the link below to reset your password:\n{{resetUrl}}\n\nThis link will expire in 24 hours.\n\nIf you didn't request this, please ignore this email."
+  }
+}
