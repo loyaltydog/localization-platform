@@ -85,6 +85,11 @@ export const defaultConfig = {
  * @returns {Promise<import('i18next').i18n>} Initialized i18next instance
  */
 export function initI18n(overrides = {}) {
+  // Guard against multiple initializations
+  if (i18n.isInitialized) {
+    return Promise.resolve(i18n);
+  }
+
   const config = {
     ...defaultConfig,
     ...overrides,
