@@ -54,14 +54,7 @@ describe('i18n-config', () => {
   });
 
   describe('initI18n', () => {
-    beforeEach(() => {
-      // Reset i18n instance between tests
-      const i18n = getI18n();
-      if (i18n.isInitialized) {
-        i18n.options = {};
-      }
-    });
-
+    // Note: i18n singleton is initialized once; tests verify state after init
     it('should initialize i18next with default config', async () => {
       await initI18n();
       const i18n = getI18n();
@@ -70,12 +63,12 @@ describe('i18n-config', () => {
       expect(i18n.language).toBe('en');
     });
 
-    it('should allow config overrides', async () => {
-      await initI18n({ lng: 'es-ES' });
-      const i18n = getI18n();
+    it('should return existing instance if already initialized', async () => {
+      const first = await initI18n();
+      const second = await initI18n({ lng: 'es-ES' });
 
-      // Language might not change if es-ES isn't loaded, but config should be set
-      expect(i18n.options.lng).toBe('es-ES');
+      // Should return same instance, not re-initialize
+      expect(first).toBe(second);
     });
   });
 
@@ -99,9 +92,10 @@ describe('i18n-config', () => {
     });
 
     it('should return false for non-loaded languages', async () => {
-      await initI18n();
+      // Use English-only config to avoid triggering HTTP backend
+      await initI18n({ supportedLngs: ['en'] });
 
-      // Spanish isn't bundled, so it shouldn't be loaded yet
+      // Spanish isn't bundled, so it shouldn't be loaded
       expect(hasLoadedLanguage('es-ES')).toBe(false);
     });
   });
