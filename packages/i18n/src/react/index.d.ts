@@ -40,6 +40,14 @@ export interface I18nConfig extends InitOptions {
   backend?: {
     loadPath?: string;
   };
+  react?: {
+    useSuspense?: boolean;
+    bindI18n?: string;
+    bindI18nStore?: string;
+    transEmptyNodeValue?: string;
+    transSupportBasicHtmlNodes?: boolean;
+    transKeepBasicHtmlNodesFor?: string[];
+  };
 }
 
 export declare const defaultConfig: I18nConfig;
