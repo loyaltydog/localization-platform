@@ -1,30 +1,12 @@
 {
   "project_id": "71116905697c499a444c46.97764157",
   "token": "${LOKALISE_API_TOKEN}",
-  "download": {
-    "langs": [
-      {
-        "lang_iso": "en",
-        "trans_replace": ["locales/en"]
-      },
-      {
-        "lang_iso": "es-ES",
-        "trans_replace": ["locales/es-ES"]
-      }
-    ],
-    "format": "json",
-    "json_unescaped_slashes": true,
-    "include_pcre": ".*\\.json$",
-    "export_empty_as": "skip"
-  },
-  "upload": {
-    "lang_iso": "en",
-    "files": [
-      {
-        "path": "locales/en/*.json"
-      }
-    ],
-    "distinguish_by_sources": true,
-    "replace_modified": true
-  }
+  "file_format": "json",
+  "source_lang_iso": "en",
+  "include_path": false,
+  "export_empty_as": "skip",
+  "placeholder_format": "icu",
+  "indentation": "2sp",
+  "original_filenames": true,
+  "replace_breaks": false
 }
