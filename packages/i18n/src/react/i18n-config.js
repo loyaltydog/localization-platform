@@ -108,6 +108,11 @@ export function initI18n(overrides = {}) {
       ...defaultConfig.react,
       ...(overrides.react || {}),
     },
+    // Deep merge resources (language level) to preserve bundled translations
+    resources: {
+      ...defaultConfig.resources,
+      ...(overrides.resources || {}),
+    },
   };
 
   // Only add HttpBackend if we need to load languages dynamically
