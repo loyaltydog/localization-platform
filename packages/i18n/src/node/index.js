@@ -10,4 +10,16 @@
  * - Language fallback support
  */
 
-export const TODO = 'Implementation pending - see SWE-296';
+/**
+ * Stub TranslationLoader class
+ * Implementation pending - see SWE-296
+ *
+ * @throws {Error} Always throws indicating implementation is pending
+ */
+export class TranslationLoader {
+  constructor() {
+    throw new Error(
+      'TranslationLoader is not yet implemented. See SWE-296: https://linear.app/loyaltydog/issue/SWE-296'
+    );
+  }
+}
