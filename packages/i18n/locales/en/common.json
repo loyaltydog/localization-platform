@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "rewards": "Rewards",
+    "members": "Members",
+    "campaigns": "Campaigns",
+    "analytics": "Analytics",
+    "settings": "Settings"
+  },
+  "actions": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "update": "Update",
+    "submit": "Submit",
+    "confirm": "Confirm",
+    "close": "Close"
+  },
+  "onboarding": {
+    "step1_title": "Configure Points",
+    "step1_description": "Set how customers earn points",
+    "step2_title": "Create First Reward",
+    "step2_description": "Design your first loyalty reward",
+    "step3_title": "Customize Pass",
+    "step3_description": "Brand your digital loyalty pass",
+    "step4_title": "Enrollment Options",
+    "step4_description": "Choose how members join your program",
+    "step5_title": "Launch Program",
+    "step5_description": "Review and launch your loyalty program"
+  },
+  "rewards": {
+    "title": "Rewards",
+    "create": "Create Reward",
+    "edit": "Edit Reward",
+    "delete": "Delete Reward",
+    "pointsRequired": "Points Required",
+    "description": "Description",
+    "available": "Available",
+    "unlocked": "Unlocked"
+  },
+  "members": {
+    "title": "Members",
+    "directory": "Member Directory",
+    "points": "Points",
+    "tier": "Tier",
+    "enrolled": "Enrolled",
+    "lastActivity": "Last Activity"
+  },
+  "campaigns": {
+    "title": "Campaigns",
+    "create": "Create Campaign",
+    "send": "Send Campaign",
+    "recipients": "Recipients",
+    "sent": "Sent",
+    "opened": "Opened",
+    "clicked": "Clicked"
+  },
+  "analytics": {
+    "title": "Analytics",
+    "activeMembers": "Active Members",
+    "rewardRedemptions": "Reward Redemptions",
+    "engagementRate": "Engagement Rate",
+    "pointsIssued": "Points Issued",
+    "last7Days": "Last 7 Days",
+    "last30Days": "Last 30 Days",
+    "last90Days": "Last 90 Days",
+    "custom": "Custom Range"
+  }
+}
