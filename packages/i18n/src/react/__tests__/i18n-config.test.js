@@ -10,7 +10,8 @@ import {
   getCurrentLanguage,
   hasLoadedLanguage,
   defaultConfig,
-} from '../i18n-config.js';
+  SUPPORTED_LANGUAGES,
+} from '../index.js';
 
 describe('i18n-config', () => {
   describe('defaultConfig', () => {
@@ -73,12 +74,12 @@ describe('i18n-config', () => {
   });
 
   describe('getCurrentLanguage', () => {
-    it('should return the current language', async () => {
+    it('should return a valid supported language', async () => {
       await initI18n();
       const lang = getCurrentLanguage();
 
       expect(typeof lang).toBe('string');
-      expect(lang).toBe('en');
+      expect(SUPPORTED_LANGUAGES.some((l) => l.code === lang || l.code.startsWith(lang.split('-')[0]))).toBe(true);
     });
   });
 

@@ -49,6 +49,7 @@ export function I18nProvider({
     if (initializedRef.current) {
       return;
     }
+    // Mark as initializing synchronously to prevent race conditions
     initializedRef.current = true;
 
     const overrides = { ...configRef.current };
