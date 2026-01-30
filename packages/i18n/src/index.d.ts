@@ -10,9 +10,9 @@ export interface Language {
 }
 
 export declare const LOCALES_PATH: string;
-export declare const SUPPORTED_LANGUAGES: Language[];
+export declare const SUPPORTED_LANGUAGES: readonly Language[];
 export declare const DEFAULT_LANGUAGE: string;
-export declare const NAMESPACES: string[];
+export declare const NAMESPACES: readonly string[];
 
-export declare function getLanguage(code: string): Language | undefined;
-export declare function isLanguageSupported(code: string): boolean;
+export declare function getLanguage(code: string | undefined | null): Language | undefined;
+export declare function isLanguageSupported(code: string | undefined | null): boolean;

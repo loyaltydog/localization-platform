@@ -3,7 +3,7 @@
  * @module @loyaltydog/i18n/react
  */
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { I18nextProvider } from 'react-i18next';
 import { initI18n, getI18n } from './i18n-config.js';
 
@@ -39,8 +39,14 @@ export function I18nProvider({
 }) {
   const [isReady, setIsReady] = useState(false);
   const [i18nInstance, setI18nInstance] = useState(null);
+  const initializedRef = useRef(false);
 
   useEffect(() => {
+    // Prevent re-initialization from non-memoized config props
+    if (initializedRef.current) {
+      return;
+    }
+
     const init = async () => {
       const overrides = { ...config };
 
@@ -53,6 +59,7 @@ export function I18nProvider({
       }
 
       await initI18n(overrides);
+      initializedRef.current = true;
       setI18nInstance(getI18n());
       setIsReady(true);
     };
