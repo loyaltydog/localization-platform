@@ -174,14 +174,16 @@ export function hasLoadedLanguage(langCode, namespace = 'common') {
 }
 
 /**
- * Preload translations for a language
+ * Preload translations for a language (supports base language matching)
  * @param {string} langCode - Language code to preload
  * @param {string} [namespace='common'] - Namespace to check/load
  * @returns {Promise<void>}
  */
 export async function preloadLanguage(langCode, namespace = 'common') {
   if (!hasLoadedLanguage(langCode, namespace)) {
-    await i18n.loadLanguages(langCode);
+    const lang = getLanguage(langCode);
+    const codeToLoad = lang?.code || langCode;
+    await i18n.loadLanguages(codeToLoad);
   }
 }
 
