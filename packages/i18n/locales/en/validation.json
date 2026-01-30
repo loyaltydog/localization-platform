@@ -1,0 +1,31 @@
+{
+  "required": "{{field}} is required",
+  "minLength": "{{field}} must be at least {{min}} characters",
+  "maxLength": "{{field}} must be no more than {{max}} characters",
+  "invalidEmail": "Please enter a valid email address",
+  "invalidPhone": "Please enter a valid phone number",
+  "invalidUrl": "Please enter a valid URL",
+  "passwordMismatch": "Passwords do not match",
+  "invalidNumber": "Please enter a valid number",
+  "minValue": "{{field}} must be at least {{value}}",
+  "maxValue": "{{field}} must be no more than {{value}}",
+  "invalidDate": "Please enter a valid date",
+  "futureDate": "{{field}} must be in the future",
+  "pastDate": "{{field}} must be in the past",
+  "fields": {
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "city": "City",
+    "state": "State",
+    "zip": "ZIP Code",
+    "country": "Country",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "points": "Points",
+    "rewardName": "Reward Name",
+    "description": "Description",
+    "message": "Message"
+  }
+}
