@@ -1,30 +1,72 @@
 {
-  "pointsEarned": {
-    "title": "Points Earned!",
-    "body": "You earned {{points}} points at {{merchantName}}. New balance: {{balance}}"
+  "sms": {
+    "welcome": "Welcome to {{merchantName}}! You've joined our loyalty program. Start earning points today!",
+    "pointsEarned": "You earned {{points}} pts at {{merchantName}}! Balance: {{balance}} pts",
+    "rewardReady": "{{memberName}}, your reward is ready! {{rewardName}} - show this at checkout",
+    "rewardExpiring": "Don't forget! Your {{rewardName}} expires {{expiryDate}}. Visit {{merchantName}} soon!",
+    "birthdayReward": "Happy Birthday {{memberName}}! {{merchantName}} has a gift for you. Check your rewards!",
+    "tierUpgrade": "Congrats {{memberName}}! You're now {{tierName}} at {{merchantName}}. Enjoy your new benefits!",
+    "pointsExpiring": "{{points}} pts expiring {{expiryDate}} at {{merchantName}}. Use them before they're gone!",
+    "inactivityReminder": "We miss you {{memberName}}! You have {{points}} pts at {{merchantName}}. Come visit us!",
+    "promoAlert": "{{merchantName}}: {{promoMessage}}",
+    "verificationCode": "Your {{merchantName}} verification code is: {{code}}"
   },
-  "rewardUnlocked": {
-    "title": "Reward Unlocked!",
-    "body": "You've unlocked {{rewardName}}! Show this at checkout to redeem."
+  "push": {
+    "welcome": {
+      "title": "Welcome to {{merchantName}}!",
+      "body": "You've joined our loyalty program. Start earning points today!"
+    },
+    "pointsEarned": {
+      "title": "Points Earned!",
+      "body": "You earned {{points}} points. Balance: {{balance}}"
+    },
+    "rewardReady": {
+      "title": "Reward Ready!",
+      "body": "{{rewardName}} is ready to redeem"
+    },
+    "rewardExpiring": {
+      "title": "Reward Expiring Soon",
+      "body": "{{rewardName}} expires {{expiryDate}}"
+    },
+    "birthdayReward": {
+      "title": "Happy Birthday!",
+      "body": "{{merchantName}} has a special gift for you"
+    },
+    "tierUpgrade": {
+      "title": "Level Up!",
+      "body": "You're now {{tierName}}! Enjoy new benefits"
+    },
+    "pointsExpiring": {
+      "title": "Points Expiring",
+      "body": "{{points}} points expire {{expiryDate}}"
+    },
+    "nearbyStore": {
+      "title": "You're near {{merchantName}}!",
+      "body": "You have {{points}} points. Come visit us!"
+    },
+    "newReward": {
+      "title": "New Reward Available!",
+      "body": "Check out {{rewardName}} - {{pointsCost}} points"
+    },
+    "promoAlert": {
+      "title": "Special Offer!",
+      "body": "{{promoMessage}}"
+    },
+    "stampEarned": {
+      "title": "Stamp Earned!",
+      "body": "{{stampsCollected}}/{{stampsRequired}} - {{stampsRemaining}} more to go!"
+    },
+    "stampCardComplete": {
+      "title": "Stamp Card Complete!",
+      "body": "Congratulations! Claim your free {{rewardName}}"
+    }
   },
-  "rewardExpiring": {
-    "title": "Reward Expiring Soon",
-    "body": "Your reward {{rewardName}} expires on {{expiryDate}}"
-  },
-  "pointsExpiring": {
-    "title": "Points Expiring Soon",
-    "body": "{{points}} points will expire on {{expiryDate}}. Use them before they're gone!"
-  },
-  "welcome": {
-    "title": "Welcome to {{merchantName}}!",
-    "body": "You're enrolled! You have {{points}} points to start."
-  },
-  "birthday": {
-    "title": "Happy Birthday!",
-    "body": "Enjoy {{bonusPoints}} bonus points from {{merchantName}}!"
-  },
-  "campaign": {
-    "title": "{{campaignName}}",
-    "body": "{{campaignMessage}}"
+  "inApp": {
+    "welcome": "Welcome! Start earning points on every purchase.",
+    "pointsEarned": "+{{points}} points earned",
+    "rewardRedeemed": "{{rewardName}} redeemed successfully",
+    "tierUpgrade": "You've reached {{tierName}} status!",
+    "newRewardUnlocked": "New reward unlocked: {{rewardName}}",
+    "goalProgress": "{{progress}}% to your next reward"
   }
 }
