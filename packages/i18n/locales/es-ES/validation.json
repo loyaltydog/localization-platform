@@ -1,0 +1,78 @@
+{
+  "required": {
+    "field": "Este campo es obligatorio",
+    "email": "El correo electrónico es obligatorio",
+    "password": "La contraseña es obligatoria",
+    "name": "El nombre es obligatorio",
+    "phone": "El número de teléfono es obligatorio",
+    "amount": "El importe es obligatorio",
+    "date": "La fecha es obligatoria",
+    "selection": "Por favor, haga una selección"
+  },
+  "format": {
+    "email": "Por favor, introduzca una dirección de correo electrónico válida",
+    "phone": "Por favor, introduzca un número de teléfono válido",
+    "url": "Por favor, introduzca una URL válida",
+    "date": "Por favor, introduzca una fecha válida",
+    "time": "Por favor, introduzca una hora válida",
+    "number": "Por favor, introduzca un número válido",
+    "integer": "Por favor, introduzca un número entero",
+    "decimal": "Por favor, introduzca un número decimal válido",
+    "postalCode": "Por favor, introduzca un código postal válido",
+    "creditCard": "Por favor, introduzca un número de tarjeta válido",
+    "cvv": "Por favor, introduzca un CVV válido",
+    "expiryDate": "Por favor, introduzca una fecha de caducidad válida (MM/AA)"
+  },
+  "length": {
+    "min": "Debe tener al menos {{min}} caracteres",
+    "max": "No debe tener más de {{max}} caracteres",
+    "exact": "Debe tener exactamente {{length}} caracteres",
+    "between": "Debe tener entre {{min}} y {{max}} caracteres"
+  },
+  "range": {
+    "min": "Debe ser al menos {{min}}",
+    "max": "No debe ser más de {{max}}",
+    "between": "Debe estar entre {{min}} y {{max}}"
+  },
+  "password": {
+    "tooShort": "La contraseña debe tener al menos {{min}} caracteres",
+    "tooWeak": "La contraseña es demasiado débil",
+    "requiresUppercase": "La contraseña debe contener al menos una letra mayúscula",
+    "requiresLowercase": "La contraseña debe contener al menos una letra minúscula",
+    "requiresNumber": "La contraseña debe contener al menos un número",
+    "requiresSpecial": "La contraseña debe contener al menos un carácter especial",
+    "noMatch": "Las contraseñas no coinciden",
+    "sameAsCurrent": "La nueva contraseña debe ser diferente de la contraseña actual"
+  },
+  "file": {
+    "required": "Por favor, seleccione un archivo",
+    "tooLarge": "El tamaño del archivo debe ser menor de {{maxSize}}",
+    "invalidType": "Tipo de archivo inválido. Tipos permitidos: {{allowedTypes}}",
+    "tooMany": "Máximo {{max}} archivos permitidos"
+  },
+  "date": {
+    "invalid": "Por favor, introduzca una fecha válida",
+    "past": "La fecha debe estar en el pasado",
+    "future": "La fecha debe estar en el futuro",
+    "before": "La fecha debe ser antes de {{date}}",
+    "after": "La fecha debe ser después de {{date}}",
+    "range": "La fecha debe estar entre {{startDate}} y {{endDate}}"
+  },
+  "custom": {
+    "unique": "Este valor ya está en uso",
+    "exists": "Este valor no existe",
+    "mismatch": "Los valores no coinciden",
+    "invalid": "Valor inválido",
+    "unavailable": "Este valor no está disponible"
+  },
+  "points": {
+    "insufficient": "Puntos insuficientes. Necesita {{required}} pero tiene {{available}}.",
+    "minimum": "Mínimo {{min}} puntos requeridos",
+    "maximum": "Máximo {{max}} puntos permitidos"
+  },
+  "member": {
+    "emailTaken": "Este correo electrónico ya está registrado",
+    "phoneTaken": "Este número de teléfono ya está registrado",
+    "invalidReferralCode": "Código de referencia inválido"
+  }
+}
