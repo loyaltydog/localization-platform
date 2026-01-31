@@ -1,11 +1,14 @@
 /**
  * Node.js/Python backend integration for @loyaltydog/i18n
  *
- * This module provides translation loading capabilities for Python/FastAPI
- * backend services. The Python module is located at:
+ * This module provides translation loading capabilities and API helpers
+ * for backend services (FastAPI, Express, etc.).
+ *
+ * Python Module:
+ *   The Python translation loader is located at:
  *   src/node/translation_loader.py
  *
- * Python Usage Example:
+ *   Python Usage Example:
  *   ```python
  *   from translation_loader import TranslationLoader, translate
  *
@@ -19,23 +22,77 @@
  *                      merchantName="Mi Tienda")
  *   ```
  *
- * The Python module supports:
- * - Nested key access with dot notation (e.g., 'emails.welcome.subject')
- * - Variable interpolation with {{variable}} placeholders
- * - Automatic fallback to English for missing translations
- * - Base language matching (e.g., 'es' resolves to 'es-ES')
- * - Thread-safe caching for performance
+ * JavaScript/Node.js API Helpers:
+ *   See api-helpers.js for language detection, translation retrieval,
+ *   and API response formatting.
+ *
+ *   JS Usage Example:
+ *   ```js
+ *   import {
+ *     detectBrowserLanguage,
+ *     getSupportedLanguagesForAPI,
+ *     getTranslationsForAPI
+ *   } from '@loyaltydog/i18n/node';
+ *
+ *   const acceptLang = request.headers.get('accept-language');
+ *   const detectedLang = detectBrowserLanguage(acceptLang);
+ *   const languages = getSupportedLanguagesForAPI();
+ *   const translations = await getTranslationsForAPI(detectedLang);
+ *   ```
+ *
+ * SMS/Push Notification Helpers:
+ *   See sms-helpers.js for SMS character limits, locale resolution,
+ *   and message formatting.
+ *
+ *   JS Usage Example:
+ *   ```js
+ *   import { getSMSMessage, getPushNotification } from '@loyaltydog/i18n/node';
+ *
+ *   const sms = getSMSMessage(member.preferred_language,
+ *                            merchant.default_language,
+ *                            'sms.pointsEarned',
+ *                            { points: '100', merchantName: 'My Store', balance: '500' });
+ *   smsService.send(member.phone, sms.message);
+ *   ```
  *
  * @module @loyaltydog/i18n/node
  * @see https://github.com/loyaltydog/localization-platform
  */
 
-// This is a documentation stub. The actual implementation is in:
-// - translation_loader.py (Python module)
-// - __init__.py (Python package exports)
-
+// Export Python module info (for documentation)
 export const pythonModule = {
   path: './src/node/translation_loader.py',
   description: 'Python translation loader for FastAPI backend integration'
 };
+
+// Export API helpers
+export {
+  parseAcceptLanguage,
+  detectBrowserLanguage,
+  getSupportedLanguagesForAPI,
+  getTranslationsForAPI,
+  getNamespaceTranslations,
+  isLanguageSupported,
+  getDefaultLanguage,
+  buildLanguagePreference,
+  formatLanguagePreference,
+  getMigrationSQL,
+} from './api-helpers.js';
+
+// Export SMS/Push notification helpers
+export {
+  getCharacterLimit,
+  checkSMSLimits,
+  truncateForSMS,
+  resolveLocale,
+  loadNotification,
+  interpolateParams,
+  getSMSMessage,
+  getPushNotification,
+  getPushNotificationWithParams,
+  batchSMSMessages,
+  SMS_LIMITS,
+  SMS_TEMPLATE_KEYS,
+  PUSH_TEMPLATE_KEYS,
+} from './sms-helpers.js';
 

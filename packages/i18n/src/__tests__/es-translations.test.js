@@ -60,7 +60,7 @@ describe('Spanish (es-ES) Translations', () => {
 
   describe('Translation Completeness', () => {
     it.each(namespaces)('should have same keys as English for %s', (namespace) => {
-      const en = loadTranslation('en', namespace);
+      const en = loadTranslation('en-US', namespace);
       const es = loadTranslation('es-ES', namespace);
 
       const enKeys = new Set(getKeys(en));
@@ -95,7 +95,7 @@ describe('Spanish (es-ES) Translations', () => {
 
   describe('Placeholder Preservation', () => {
     it.each(namespaces)('should preserve {{variable}} placeholders in %s', (namespace) => {
-      const en = loadTranslation('en', namespace);
+      const en = loadTranslation('en-US', namespace);
       const es = loadTranslation('es-ES', namespace);
 
       const enKeys = getKeys(en);
@@ -193,7 +193,7 @@ describe('Spanish (es-ES) Translations', () => {
 
     it('should preserve email structure with subject and body', () => {
       const emails = loadTranslation('es-ES', 'emails');
-      const enEmails = loadTranslation('en', 'emails');
+      const enEmails = loadTranslation('en-US', 'emails');
 
       for (const [key, value] of Object.entries(emails)) {
         // Skip footer - it has a different structure (nested properties)
