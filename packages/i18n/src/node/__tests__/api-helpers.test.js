@@ -238,7 +238,7 @@ describe('API Helpers', () => {
 
       expect(merchants).toContain('ALTER TABLE merchants');
       expect(merchants).toContain('ADD COLUMN IF NOT EXISTS default_language');
-      expect(merchants).toContain('DEFAULT');
+      expect(merchants).toContain("DEFAULT 'en-US'");
     });
 
     it('should return migration SQL for customers', () => {
@@ -246,14 +246,20 @@ describe('API Helpers', () => {
 
       expect(customers).toContain('ALTER TABLE customers');
       expect(customers).toContain('ADD COLUMN IF NOT EXISTS preferred_language');
+      expect(customers).toContain("'en-US'");
     });
 
     it('should include constraint for supported languages', () => {
       const { merchants } = getMigrationSQL();
 
       expect(merchants).toContain('CHECK');
-      expect(merchants).toContain('en');
-      expect(merchants).toContain('es-ES');
+      expect(merchants).toContain("'en-US'");
+      expect(merchants).toContain("'en-GB'");
+      expect(merchants).toContain("'es-ES'");
+      expect(merchants).toContain("'fr'");
+      expect(merchants).toContain("'it'");
+      expect(merchants).toContain("'pt-PT'");
+      expect(merchants).toContain("'pt-BR'");
     });
   });
 });

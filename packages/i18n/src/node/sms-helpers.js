@@ -75,15 +75,17 @@ export function getCharacterLimit(message) {
 export function checkSMSLimits(message, maxSegments = 1) {
   const charLimit = getCharacterLimit(message);
   const charCount = message.length;
+  const isUnicode = charLimit === SMS_LIMITS.UNICODE;
+  const multiplier = isUnicode ? SMS_LIMITS.UNICODE : SMS_LIMITS.MULTIPLIER;
 
   let segmentCount;
   if (charCount <= charLimit) {
     segmentCount = 1;
   } else {
-    segmentCount = Math.ceil(charCount / SMS_LIMITS.MULTIPLIER);
+    segmentCount = Math.ceil(charCount / multiplier);
   }
 
-  const segmentLimit = maxSegments === 1 ? charLimit : SMS_LIMITS.MULTIPLIER * maxSegments;
+  const segmentLimit = maxSegments === 1 ? charLimit : multiplier * maxSegments;
 
   return {
     fits: charCount <= segmentLimit,
@@ -156,8 +158,8 @@ export function resolveLocale(memberLanguage = null, merchantLanguage = null) {
  *
  * @example
  * ```js
- * loadNotification('es-ES', 'pointsEarned', { points: 100, balance: 500 })
- * // Returns: "¡Has ganado 100 puntos! Tu saldo es de 500 puntos."
+ * loadNotification('es-ES', 'sms.pointsEarned', { points: 100, merchantName: 'Test Store', balance: 500 })
+ * // Returns: "Ganaste 100 pts en Test Store! Balance: 500 pts"
  * ```
  */
 export function loadNotification(locale, key, params = {}) {
@@ -176,8 +178,11 @@ export function loadNotification(locale, key, params = {}) {
       if (value && typeof value === 'object' && k in value) {
         value = value[k];
       } else {
-        // Key not found, fallback to English
-        return loadNotification(DEFAULT_LANGUAGE, key, params);
+        // Key not found, fallback to English (but only if not already English)
+        if (locale !== DEFAULT_LANGUAGE) {
+          return loadNotification(DEFAULT_LANGUAGE, key, params);
+        }
+        return key; // Ultimate fallback when already at default locale
       }
     }
 
@@ -189,7 +194,7 @@ export function loadNotification(locale, key, params = {}) {
     // Interpolate parameters
     return interpolateParams(value, params);
   } catch (error) {
-    // If file not found or error, fallback to English
+    // If file not found or error, fallback to English (but only if not already English)
     if (locale !== DEFAULT_LANGUAGE) {
       return loadNotification(DEFAULT_LANGUAGE, key, params);
     }
@@ -258,6 +263,7 @@ export function getSMSMessage(memberLanguage, merchantLanguage, key, params = {}
     const revalidation = checkSMSLimits(message, maxSegments);
     validation.segmentCount = revalidation.segmentCount;
     validation.characterCount = revalidation.characterCount;
+    validation.fits = revalidation.fits;
   } else {
     validation.truncated = false;
   }

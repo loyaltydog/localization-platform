@@ -21,7 +21,7 @@
  * ```
  */
 
-import { SUPPORTED_LANGUAGES, DEFAULT_LANGUAGE } from '../index.js';
+import { SUPPORTED_LANGUAGES, DEFAULT_LANGUAGE, getLanguage } from '../index.js';
 import { readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
@@ -218,7 +218,7 @@ export function getNamespaceTranslations(languageCode, namespace, localesPath = 
  * @returns {boolean} True if supported
  */
 export function isLanguageSupported(languageCode) {
-  return SUPPORTED_LANGUAGES.some(lang => lang.code === languageCode);
+  return getLanguage(languageCode) !== undefined;
 }
 
 /**
@@ -266,7 +266,7 @@ export function formatLanguagePreference(languageCode) {
     return { code: null, name: null, flag: null };
   }
 
-  const language = SUPPORTED_LANGUAGES.find(l => l.code === languageCode);
+  const language = getLanguage(languageCode);
 
   if (!language) {
     return { code: languageCode, name: null, flag: null };
@@ -298,7 +298,7 @@ export function getMigrationSQL() {
     merchants: `
 -- Add defaultLanguage column to merchants table
 ALTER TABLE merchants
-ADD COLUMN IF NOT EXISTS default_language VARCHAR(10) DEFAULT 'en';
+ADD COLUMN IF NOT EXISTS default_language VARCHAR(10) DEFAULT 'en-US';
 
 -- Add index for faster lookups
 CREATE INDEX IF NOT EXISTS idx_merchants_default_language
@@ -307,7 +307,7 @@ ON merchants(default_language);
 -- Add check constraint to ensure only supported languages
 ALTER TABLE merchants
 ADD CONSTRAINT chk_merchants_default_language
-CHECK (default_language IN ('en', 'es-ES', 'fr', 'de', 'he'));
+CHECK (default_language IN ('en-US', 'en-GB', 'es-ES', 'fr', 'it', 'pt-PT', 'pt-BR'));
     `.trim(),
 
     customers: `
@@ -322,7 +322,7 @@ ON customers(preferred_language);
 -- Add check constraint to ensure only supported languages
 ALTER TABLE customers
 ADD CONSTRAINT chk_customers_preferred_language
-CHECK (preferred_language IS NULL OR preferred_language IN ('en', 'es-ES', 'fr', 'de', 'he'));
+CHECK (preferred_language IS NULL OR preferred_language IN ('en-US', 'en-GB', 'es-ES', 'fr', 'it', 'pt-PT', 'pt-BR'));
     `.trim(),
   };
 }

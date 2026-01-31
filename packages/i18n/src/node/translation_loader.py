@@ -50,7 +50,7 @@ class TranslationLoader:
     def __init__(
         self,
         base_path: Optional[Union[str, Path]] = None,
-        default_locale: str = 'en'
+        default_locale: str = 'en-US'
     ) -> None:
         """
         Initialize the TranslationLoader.
@@ -59,7 +59,7 @@ class TranslationLoader:
             base_path: Path to locales directory. Defaults to the
                 locales directory relative to this file.
             default_locale: Fallback locale when translation not found.
-                Defaults to 'en' (English).
+                Defaults to 'en-US' (English US).
 
         Raises:
             ValueError: If base_path doesn't exist or is not a directory

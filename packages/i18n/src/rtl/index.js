@@ -23,6 +23,8 @@
  * ```
  */
 
+import { DEFAULT_LANGUAGE } from '../index.js';
+
 // RTL language codes (base language codes)
 const RTL_LANGUAGES = new Set(['ar', 'he', 'fa', 'ur', 'yi', 'ks', 'sd']);
 
@@ -174,11 +176,16 @@ export function useRTL() {
       rtlSpacing: (styles) => rtlSpacing(styles, isRtl),
     };
   } catch (error) {
+    // Log error for debugging but provide fallback behavior
+    if (typeof console !== 'undefined') {
+      console.error('useRTL: Error loading react-i18next, using fallback:', error);
+    }
+
     // react-i18next not available, fall back to checking window
     const currentLang =
       typeof window !== 'undefined' && window.i18next
         ? window.i18next.language
-        : 'en';
+        : DEFAULT_LANGUAGE;
 
     const isRtl = isRTL(currentLang);
     const dir = getTextDirection(currentLang);

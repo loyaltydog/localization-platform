@@ -120,22 +120,30 @@ describe('Spanish (es-ES) Translations', () => {
 
   describe('Content Quality', () => {
     it('should use formal "usted" address for merchant-facing content', () => {
-      const common = loadTranslation('es-ES', 'common');
+      const notifications = loadTranslation('es-ES', 'notifications');
 
-      // Check for formal address patterns
+      // Check for formal address patterns (used in SMS/Push notifications)
       const informalPatterns = [
         /tienes/i,      // "tienes" is informal "you have"
         /tu nombre/i,   // "tu nombre" is informal "your name"
         /deseas/i,      // "deseas" is informal "you want"
+        /ganas/i,       // "ganas" is informal "you want"
       ];
 
       const formalPatterns = [
-        /usted/i,       // Should use "usted" for formal address
-        /su nombre/i,   // "su nombre" is formal "your name"
+        /tiene/i,       // "tiene" (usted form) - formal "you have"
+        /su\+/i,        // "su" followed by punctuation - formal "your"
+        /desea/i,       // "desea" (usted form) - formal "you want"
       ];
 
-      // Get all string values from common.json
-      const allStrings = getAllStringValues(common);
+      // Get all string values from notifications.json
+      const allStrings = getAllStringValues(notifications);
+
+      // Verify at least one formal pattern exists
+      const hasFormalAddress = allStrings.some(str =>
+        formalPatterns.some(pattern => pattern.test(str))
+      );
+      expect(hasFormalAddress).toBe(true);
 
       for (const str of allStrings) {
         // Check no informal patterns
@@ -272,8 +280,20 @@ function getAllStringValues(obj, strings = []) {
   for (const value of Object.values(obj)) {
     if (typeof value === 'string') {
       strings.push(value);
-    } else if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
-      getAllStringValues(value, strings);
+    } else if (typeof value === 'object' && value !== null) {
+      if (Array.isArray(value)) {
+        // Handle arrays of strings
+        for (const item of value) {
+          if (typeof item === 'string') {
+            strings.push(item);
+          } else if (typeof item === 'object' && item !== null) {
+            getAllStringValues(item, strings);
+          }
+        }
+      } else {
+        // Recurse into nested objects
+        getAllStringValues(value, strings);
+      }
     }
   }
   return strings;

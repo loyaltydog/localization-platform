@@ -1,12 +1,11 @@
 /**
  * Vitest setup file for jest-dom matchers
  */
-import { expect, afterEach } from 'vitest';
+import { expect, afterEach, vi } from 'vitest';
 import { cleanup } from '@testing-library/react';
-import * as matchers from '@testing-library/jest-dom/matchers';
 
-// Extend Vitest's expect with jest-dom matchers
-expect.extend(matchers);
+// Import jest-dom matchers (side-effect import)
+import '@testing-library/jest-dom';
 
 // Cleanup after each test
 afterEach(() => {
