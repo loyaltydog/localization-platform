@@ -1,6 +1,6 @@
 # @loyaltydog/i18n
 
-Shared localization package for the LoyaltyDog platform using i18next and Lokalise.
+Shared internationalization package for all LoyaltyDog platforms.
 
 ## Installation
 
@@ -8,161 +8,144 @@ Shared localization package for the LoyaltyDog platform using i18next and Lokali
 npm install @loyaltydog/i18n
 ```
 
-## Usage
+## Quick Start
 
 ### React (Frontend)
 
-```tsx
+```jsx
 import { useTranslation } from '@loyaltydog/i18n/react';
 
-function Dashboard() {
-  const { t, i18n } = useTranslation('common');
-
-  const switchLanguage = (lang: string) => {
-    i18n.changeLanguage(lang);
-  };
+function MyComponent() {
+  const { t } = useTranslation('common');
 
   return (
-    <div>
-      <h1>{t('nav.dashboard')}</h1>
-      <button onClick={() => switchLanguage('es')}>Español</button>
-      <button onClick={() => switchLanguage('en')}>English</button>
-    </div>
+    <button>{t('actions.save')}</button>
   );
 }
 ```
 
-### FastAPI (Backend)
+### Node.js / FastAPI (Backend)
 
 ```python
-from @loyaltydog.i18n import TranslationLoader
+from loyaltydog_i18n import TranslationLoader
 
-# Initialize translator for a specific locale
-translator = TranslationLoader('es-ES')
-
-# Get translated string with variable interpolation
-subject = translator.translate(
-    'emails',
-    'welcome.subject',
-    merchantName="Mi Tienda"
-)
-# Result: "¡Bienvenido al programa de lealtad de Mi Tienda!"
+loader = TranslationLoader()
+message = loader.get('emails.welcome.subject', lang='es-ES', merchantName='Acme')
+# Result: "¡Bienvenido a Acme!"
 ```
 
-## Translation File Structure
+## Package Structure
 
 ```
-locales/
-├── en/                    # English (source of truth)
-│   ├── common.json        # Navigation, buttons, labels
-│   ├── errors.json        # Error messages
-│   ├── emails.json        # Email templates
-│   ├── notifications.json # SMS/push templates
-│   └── validation.json    # Form validation messages
-└── es-ES/                 # Spanish (Spain)
-    ├── common.json        # Same structure as en/
-    ├── errors.json
-    ├── emails.json
-    ├── notifications.json
-    └── validation.json
+@loyaltydog/i18n/
+├── locales/           # Translation files
+│   ├── en/            # English (source)
+│   │   ├── common.json
+│   │   ├── errors.json
+│   │   ├── emails.json
+│   │   ├── notifications.json
+│   │   └── validation.json
+│   └── es-ES/         # Spanish (Spain)
+├── src/
+│   ├── index.js       # Main entry point
+│   ├── react/         # i18next integration
+│   ├── node/          # Backend loader
+│   └── rtl/           # RTL support
+└── package.json
 ```
 
-## Translation Keys
+## Translation Namespaces
 
-Key format: `namespace.category.item`
+| Namespace | Purpose |
+|-----------|---------|
+| `common` | UI strings (nav, buttons, labels, messages) |
+| `errors` | API error messages |
+| `emails` | Email templates with `{{variable}}` placeholders |
+| `notifications` | SMS and push notification templates |
+| `validation` | Form validation messages |
+
+## Supported Languages
+
+| Language | Code | Status |
+|----------|------|--------|
+| English | `en` | Source |
+| Spanish (Spain) | `es-ES` | Active |
+
+## Translation Key Naming Convention
+
+Use dot notation: `namespace.category.item`
+
+Examples:
+- `common.nav.dashboard`
+- `common.actions.save`
+- `errors.auth.invalidCredentials`
+- `emails.welcome.subject`
+
+## Adding New Translations
+
+1. Add keys to the English source file (`locales/en/*.json`)
+2. Upload to Lokalise: `npm run lokalise:push`
+3. Translate in Lokalise (AI or manual)
+4. Download translations: `npm run lokalise:pull`
+
+## Variable Interpolation
+
+Use `{{variable}}` syntax in translation values:
 
 ```json
 {
-  "nav": {
-    "dashboard": "Dashboard",
-    "rewards": "Rewards"
-  },
-  "actions": {
-    "save": "Save",
-    "cancel": "Cancel"
-  },
-  "emails": {
-    "welcome": {
-      "subject": "Welcome to {{merchantName}}!",
-      "body": "Hi {{memberName}}, you have {{points}} points."
-    }
+  "welcome": {
+    "subject": "Welcome to {{merchantName}}!",
+    "body": "Hi {{memberName}}, you have {{points}} points."
   }
 }
 ```
 
-## Lokalise Workflow
-
-### Upload New Translations
+## Lokalise CLI Commands
 
 ```bash
-cd packages/i18n
+# Upload English source files to Lokalise
 npm run lokalise:upload
-```
 
-### Download Translations
-
-```bash
-cd packages/i18n
+# Download all translations from Lokalise
 npm run lokalise:download
+
+# Aliases
+npm run lokalise:push   # Same as upload
+npm run lokalise:pull   # Same as download
 ```
 
-### CI/CD Auto-Sync
+## Environment Variables
 
-Translations are automatically synced from Lokalise every 6 hours via GitHub Actions.
-
-Manual sync: Go to Actions → "Sync Translations" → "Run workflow"
-
-## Adding New Translation Keys
-
-1. Add keys to `locales/en/*.json` (English is source of truth)
-2. Run `npm run lokalise:upload`
-3. Translators work in Lokalise (AI or manual)
-4. Wait for CI/CD sync or run `npm run lokalise:download`
-
-## Adding New Languages
-
-1. Add language in Lokalise project
-2. Configure in `.lokalise.json`:
-   ```json
-   {
-     "download": {
-       "langs": [
-         { "lang_iso": "fr", "trans_replace": ["locales/fr"] }
-       ]
-     }
-   }
-   ```
-3. Run `npm run lokalise:download`
-4. Update `supportedLngs` in `src/react/i18n-config.ts`
+| Variable | Description |
+|----------|-------------|
+| `LOKALISE_API_TOKEN` | Lokalise API token (stored in GitHub Secrets) |
+| `LOKALISE_PROJECT_ID` | Lokalise project ID: `71116905697c499a444c46.97764157` |
 
 ## RTL Support
 
-For future Hebrew/Arabic support:
+For RTL languages (Hebrew, Arabic, etc.):
 
-```tsx
-import { getTextDirection, rtlClass } from '@loyaltydog/i18n/rtl';
+```jsx
+import { isRTL, getTextDirection } from '@loyaltydog/i18n/rtl';
 
-<nav dir={getTextDirection()} className={rtlClass({
-  base: 'flex',
-  rtl: 'flex-row-reverse'
-})}>
-  {/* Menu items */}
-</nav>
+// Check if current language is RTL
+if (isRTL('he')) {
+  // Apply RTL styles
+}
+
+// Get text direction for HTML
+<html dir={getTextDirection(currentLanguage)}>
 ```
 
-## Namespaces
+## Related Issues
 
-| Namespace | Purpose |
-|-----------|---------|
-| `common` | Navigation, buttons, labels |
-| `errors` | Error messages |
-| `emails` | Email templates |
-| `notifications` | SMS/push notifications |
-| `validation` | Form validation messages |
-| `square` | Square integration |
-| `shopify` | Shopify integration |
-| `eposnow` | EPOSNow integration |
+- [SWE-321](https://linear.app/loyaltydog/issue/SWE-321) - Package setup (this)
+- [SWE-262](https://linear.app/loyaltydog/issue/SWE-262) - i18next React integration
+- [SWE-296](https://linear.app/loyaltydog/issue/SWE-296) - Backend translation loader
+- [SWE-322](https://linear.app/loyaltydog/issue/SWE-322) - RTL support hooks
+- [SWE-323](https://linear.app/loyaltydog/issue/SWE-323) - CI/CD sync workflow
 
 ## License
 
-Copyright © 2025 LoyaltyDog. All rights reserved.
+UNLICENSED - LoyaltyDog Internal Use Only
