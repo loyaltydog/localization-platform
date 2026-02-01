@@ -1,0 +1,40 @@
+{
+  "http": {
+    "400": "Requête incorrecte. Veuillez vérifier vos données et réessayer.",
+    "401": "Non autorisé. Veuillez vous connecter pour continuer.",
+    "403": "Interdit. Vous n'avez pas la permission d'accéder à cette ressource.",
+    "404": "Page non trouvée. La ressource demandée n'a pas pu être trouvée.",
+    "409": "Conflit. La requête n'a pas pu être complétée en raison d'un conflit.",
+    "429": "Trop de requêtes. Veuillez attendre un moment et réessayer.",
+    "500": "Erreur serveur interne. Veuillez réessayer plus tard.",
+    "502": "Service temporairement indisponible. Veuillez réessayer plus tard.",
+    "503": "Service indisponible. Nous travaillons à résoudre ce problème."
+  },
+  "auth": {
+    "invalidCredentials": "Email ou mot de passe invalide. Veuillez vérifier vos informations d'identification et réessayer.",
+    "sessionExpired": "Votre session a expiré. Veuillez vous reconnecter.",
+    "notVerified": "Votre compte n'a pas été vérifié. Veuillez vérifier votre email pour le lien de vérification.",
+    "alreadyLoggedIn": "Vous êtes déjà connecté.",
+    "loginRequired": "Vous devez être connecté pour continuer.",
+    "accountLocked": "Votre compte a été bloqué suite à trop de tentatives échouées. Veuillez contacter le support.",
+    "accountDisabled": "Votre compte a été désactivé. Veuillez contacter le support."
+  },
+  "member": {
+    "notFound": "Membre introuvable. Veuillez vérifier les détails et réessayer.",
+    "alreadyExists": "Un membre avec ces détails existe déjà.",
+    "insufficientPoints": "Vous n'avez pas assez de points pour cette récompense.",
+    "rewardExpired": "Cette récompense a expiré et n'est plus disponible.",
+    "rewardAlreadyRedeemed": "Vous avez déjà échangé cette récompense.",
+    "tierDowngraded": "Votre niveau a été rétrogradé. Continuez à gagner des points pour maintenir votre statut."
+  },
+  "validation": {
+    "required": "Ce champ est requis.",
+    "invalidEmail": "Veuillez entrer une adresse email valide.",
+    "invalidPhone": "Veuillez entrer un numéro de téléphone valide.",
+    "invalidDate": "Veuillez entrer une date valide.",
+    "minLength": "Ce champ doit contenir au moins {{min}} caractères.",
+    "maxLength": "Ce champ ne doit pas dépasser {{max}} caractères.",
+    "passwordMismatch": "Les mots de passe ne correspondent pas.",
+    "weakPassword": "Le mot de passe doit contenir au moins 8 caractères, y compris une majuscule, une minuscule, un chiffre et un caractère spécial."
+  }
+}

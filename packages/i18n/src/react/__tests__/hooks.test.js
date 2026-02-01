@@ -45,7 +45,7 @@ describe('useTranslation hook', () => {
       wrapper: createWrapper(),
     });
 
-    expect(result.current.language).toBe('en');
+    expect(result.current.language).toBe('en-US');
   });
 
   it('should provide RTL status', () => {
@@ -73,8 +73,8 @@ describe('useTranslation hook', () => {
     });
 
     expect(result.current.currentLanguage).toBeDefined();
-    expect(result.current.currentLanguage.code).toBe('en');
-    expect(result.current.currentLanguage.name).toBe('English');
+    expect(result.current.currentLanguage.code).toBe('en-US');
+    expect(result.current.currentLanguage.name).toBe('English (US)');
   });
 
   it('should provide changeLanguage function', () => {
@@ -98,7 +98,7 @@ describe('useLanguages hook', () => {
     });
 
     expect(result.current.languages).toBeDefined();
-    expect(result.current.languages.some((l) => l.code === 'en')).toBe(true);
+    expect(result.current.languages.some((l) => l.code === 'en-US')).toBe(true);
     expect(result.current.languages.some((l) => l.code === 'es-ES')).toBe(true);
   });
 
@@ -107,7 +107,7 @@ describe('useLanguages hook', () => {
       wrapper: createWrapper(),
     });
 
-    expect(result.current.currentCode).toBe('en');
+    expect(result.current.currentCode).toBe('en-US');
   });
 
   it('should provide setLanguage function', () => {
