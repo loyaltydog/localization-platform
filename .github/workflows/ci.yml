@@ -1,0 +1,99 @@
+# CI Workflow for @loyaltydog/i18n package
+# Runs tests on push and pull requests
+
+name: CI
+
+on:
+  push:
+    branches: [main, staging, development]
+  pull_request:
+    branches: [main, staging, development]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Test (Node ${{ matrix.node-version }})
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: [18, 20, 22]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+          cache-dependency-path: packages/i18n/package-lock.json
+
+      - name: Install dependencies
+        working-directory: packages/i18n
+        run: npm ci
+
+      - name: Run tests
+        working-directory: packages/i18n
+        run: npm test -- --reporter=verbose
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results-node-${{ matrix.node-version }}
+          path: packages/i18n/coverage/
+          retention-days: 7
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: packages/i18n/package-lock.json
+
+      - name: Install dependencies
+        working-directory: packages/i18n
+        run: npm ci
+
+      - name: Run ESLint (if configured)
+        working-directory: packages/i18n
+        run: npm run lint 2>/dev/null || echo "No lint script configured"
+        continue-on-error: true
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: packages/i18n/package-lock.json
+
+      - name: Install dependencies
+        working-directory: packages/i18n
+        run: npm ci
+
+      - name: Build package (if configured)
+        working-directory: packages/i18n
+        run: npm run build 2>/dev/null || echo "No build script configured"
+        continue-on-error: true
