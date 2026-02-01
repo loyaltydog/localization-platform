@@ -133,16 +133,29 @@ export function truncateForSMS(message, maxSegments = 1) {
  * ```
  */
 export function resolveLocale(memberLanguage = null, merchantLanguage = null) {
-  const supportedCodes = SUPPORTED_LANGUAGES.map(l => l.code);
+  // Try member language first (exact match, then base match)
+  if (memberLanguage) {
+    const exact = SUPPORTED_LANGUAGES.find(l => l.code === memberLanguage);
+    if (exact) return exact.code;
 
-  // Try member language first
-  if (memberLanguage && supportedCodes.includes(memberLanguage)) {
-    return memberLanguage;
+    // Try base language match (e.g., 'en' matches 'en-US')
+    const baseMatch = SUPPORTED_LANGUAGES.find(l => l.code.toLowerCase().startsWith(memberLanguage.toLowerCase() + '-'));
+    if (baseMatch) return baseMatch.code;
+
+    // Try matching against base code (e.g., 'en' finds 'en-US')
+    const memberBase = memberLanguage.split('-')[0].toLowerCase();
+    const baseMatch2 = SUPPORTED_LANGUAGES.find(l => l.code.split('-')[0].toLowerCase() === memberBase);
+    if (baseMatch2) return baseMatch2.code;
   }
 
-  // Try merchant language
-  if (merchantLanguage && supportedCodes.includes(merchantLanguage)) {
-    return merchantLanguage;
+  // Try merchant language (same logic)
+  if (merchantLanguage) {
+    const exact = SUPPORTED_LANGUAGES.find(l => l.code === merchantLanguage);
+    if (exact) return exact.code;
+
+    const merchantBase = merchantLanguage.split('-')[0].toLowerCase();
+    const baseMatch = SUPPORTED_LANGUAGES.find(l => l.code.split('-')[0].toLowerCase() === merchantBase);
+    if (baseMatch) return baseMatch.code;
   }
 
   return DEFAULT_LANGUAGE;
@@ -368,8 +381,8 @@ export function getPushNotification(memberLanguage, merchantLanguage, key, param
   const locale = resolveLocale(memberLanguage, merchantLanguage);
 
   // Detect legacy signature: (memberLang, merchantLang, titleKey, bodyKey, params)
-  // When third and fourth args are strings, it's the old pattern
-  if (typeof params === 'string' && typeof fifthArg === 'string') {
+  // Legacy: 4th arg is bodyKey (string), 5th arg is params (object)
+  if (typeof params === 'string' && fifthArg && typeof fifthArg === 'object') {
     return {
       title: loadNotification(locale, key, fifthArg),
       body: loadNotification(locale, params, fifthArg),
@@ -378,9 +391,11 @@ export function getPushNotification(memberLanguage, merchantLanguage, key, param
   }
 
   // New signature: (memberLang, merchantLang, key, params)
+  // Load once, use for both title and body
+  const result = loadPushNotification(locale, key, params, params);
   return {
-    title: loadPushNotification(locale, key, params, params).title,
-    body: loadPushNotification(locale, key, params, params).body,
+    title: result.title,
+    body: result.body,
     locale,
   };
 }
