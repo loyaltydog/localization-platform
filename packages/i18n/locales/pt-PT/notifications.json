@@ -1,0 +1,72 @@
+{
+  "sms": {
+    "welcome": "Bem-vindo ao {{merchantName}}! Juntou-se ao nosso programa de fidelidade. Comece a ganhar pontos já!",
+    "pointsEarned": "Ganhou {{points}} pts no {{merchantName}}! Saldo: {{balance}} pts",
+    "rewardReady": "{{memberName}}, a sua recompensa está pronta! {{rewardName}} - apresente no balcão",
+    "rewardExpiring": "Não se esqueça! O seu {{rewardName}} expira em {{expiryDate}}. Visite o {{merchantName}} brevemente!",
+    "birthdayReward": "Feliz aniversário {{memberName}}! O {{merchantName}} tem um presente para si. Verifique as suas recompensas!",
+    "tierUpgrade": "Parabéns {{memberName}}! Agora é {{tierName}} no {{merchantName}}. Desfrute dos seus novos benefícios!",
+    "pointsExpiring": "{{points}} pts a expirar em {{expiryDate}} no {{merchantName}}. Utilize-os antes de desaparecerem!",
+    "inactivityReminder": "Sentimos a sua falta {{memberName}}! Tem {{points}} pts no {{merchantName}}. Venha visitar-nos!",
+    "promoAlert": "{{merchantName}}: {{promoMessage}}",
+    "verificationCode": "O seu código de verificação {{merchantName}} é: {{code}}"
+  },
+  "push": {
+    "welcome": {
+      "title": "Bem-vindo ao {{merchantName}}!",
+      "body": "Juntou-se ao nosso programa de fidelidade. Comece a ganhar pontos já!"
+    },
+    "pointsEarned": {
+      "title": "Pontos ganhos!",
+      "body": "Ganhou {{points}} pontos. Saldo: {{balance}}"
+    },
+    "rewardReady": {
+      "title": "Recompensa pronta!",
+      "body": "{{rewardName}} está pronta para resgatar"
+    },
+    "rewardExpiring": {
+      "title": "Recompensa a expirar",
+      "body": "{{rewardName}} expira em {{expiryDate}}"
+    },
+    "birthdayReward": {
+      "title": "Feliz aniversário!",
+      "body": "{{merchantName}} tem um presente especial para si"
+    },
+    "tierUpgrade": {
+      "title": "Subiu de nível!",
+      "body": "Agora é {{tierName}}! Desfrute dos novos benefícios"
+    },
+    "pointsExpiring": {
+      "title": "Pontos a expirar",
+      "body": "{{points}} pontos expiram em {{expiryDate}}"
+    },
+    "nearbyStore": {
+      "title": "Está perto do {{merchantName}}!",
+      "body": "Tem {{points}} pontos. Venha visitar-nos!"
+    },
+    "newReward": {
+      "title": "Nova recompensa disponível!",
+      "body": "Descubra {{rewardName}} - {{pointsCost}} pontos"
+    },
+    "promoAlert": {
+      "title": "Oferta especial!",
+      "body": "{{promoMessage}}"
+    },
+    "stampEarned": {
+      "title": "Carimbo obtido!",
+      "body": "{{stampsCollected}}/{{stampsRequired}} - mais {{stampsRemaining}} a obter!"
+    },
+    "stampCardComplete": {
+      "title": "Cartão de carimbos completo!",
+      "body": "Parabéns! Reclame o seu {{rewardName}} grátis"
+    }
+  },
+  "inApp": {
+    "welcome": "Bem-vindo! Ganhe pontos em todas as compras.",
+    "pointsEarned": "+{{points}} pontos ganhos",
+    "rewardRedeemed": "{{rewardName}} resgatado com sucesso",
+    "tierUpgrade": "Atingiu o estatuto {{tierName}}!",
+    "newRewardUnlocked": "Nova recompensa desbloqueada: {{rewardName}}",
+    "goalProgress": "{{progress}}% para a sua próxima recompensa"
+  }
+}

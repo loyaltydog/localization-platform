@@ -11,11 +11,11 @@ import HttpBackend from 'i18next-http-backend';
 import { SUPPORTED_LANGUAGES, DEFAULT_LANGUAGE, NAMESPACES, getLanguage } from '../index.js';
 
 // Import English translations for bundling (always available)
-import commonEn from '../../locales/en/common.json';
-import errorsEn from '../../locales/en/errors.json';
-import emailsEn from '../../locales/en/emails.json';
-import notificationsEn from '../../locales/en/notifications.json';
-import validationEn from '../../locales/en/validation.json';
+import commonEn from '../../locales/en-US/common.json';
+import errorsEn from '../../locales/en-US/errors.json';
+import emailsEn from '../../locales/en-US/emails.json';
+import notificationsEn from '../../locales/en-US/notifications.json';
+import validationEn from '../../locales/en-US/validation.json';
 
 /**
  * Default i18next configuration options
@@ -64,9 +64,9 @@ export const defaultConfig = {
     transKeepBasicHtmlNodesFor: ['br', 'strong', 'i', 'p', 'span'],
   },
 
-  // Bundled English resources (always available, no HTTP request needed)
+  // Bundled English (US) resources (always available, no HTTP request needed)
   resources: {
-    en: {
+    'en-US': {
       common: commonEn,
       errors: errorsEn,
       emails: emailsEn,

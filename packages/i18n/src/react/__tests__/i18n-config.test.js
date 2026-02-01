@@ -16,11 +16,11 @@ import { SUPPORTED_LANGUAGES } from '../../index.js';
 describe('i18n-config', () => {
   describe('defaultConfig', () => {
     it('should have English as default language', () => {
-      expect(defaultConfig.lng).toBe('en');
+      expect(defaultConfig.lng).toBe('en-US');
     });
 
     it('should have English as fallback language', () => {
-      expect(defaultConfig.fallbackLng).toBe('en');
+      expect(defaultConfig.fallbackLng).toBe('en-US');
     });
 
     it('should have common as default namespace', () => {
@@ -36,12 +36,12 @@ describe('i18n-config', () => {
     });
 
     it('should have English resources bundled', () => {
-      expect(defaultConfig.resources).toHaveProperty('en');
-      expect(defaultConfig.resources.en).toHaveProperty('common');
-      expect(defaultConfig.resources.en).toHaveProperty('errors');
-      expect(defaultConfig.resources.en).toHaveProperty('emails');
-      expect(defaultConfig.resources.en).toHaveProperty('notifications');
-      expect(defaultConfig.resources.en).toHaveProperty('validation');
+      expect(defaultConfig.resources).toHaveProperty('en-US');
+      expect(defaultConfig.resources['en-US']).toHaveProperty('common');
+      expect(defaultConfig.resources['en-US']).toHaveProperty('errors');
+      expect(defaultConfig.resources['en-US']).toHaveProperty('emails');
+      expect(defaultConfig.resources['en-US']).toHaveProperty('notifications');
+      expect(defaultConfig.resources['en-US']).toHaveProperty('validation');
     });
 
     it('should not escape values (React handles escaping)', () => {
@@ -49,7 +49,7 @@ describe('i18n-config', () => {
     });
 
     it('should support required languages', () => {
-      expect(defaultConfig.supportedLngs).toContain('en');
+      expect(defaultConfig.supportedLngs).toContain('en-US');
       expect(defaultConfig.supportedLngs).toContain('es-ES');
     });
   });
@@ -61,7 +61,7 @@ describe('i18n-config', () => {
       const i18n = getI18n();
 
       expect(i18n.isInitialized).toBe(true);
-      expect(i18n.language).toBe('en');
+      expect(i18n.language).toBe('en-US');
     });
 
     it('should return existing instance if already initialized', async () => {
@@ -87,14 +87,14 @@ describe('i18n-config', () => {
     it('should return true for English (bundled)', async () => {
       await initI18n();
 
-      expect(hasLoadedLanguage('en')).toBe(true);
-      expect(hasLoadedLanguage('en', 'common')).toBe(true);
-      expect(hasLoadedLanguage('en', 'errors')).toBe(true);
+      expect(hasLoadedLanguage('en-US')).toBe(true);
+      expect(hasLoadedLanguage('en-US', 'common')).toBe(true);
+      expect(hasLoadedLanguage('en-US', 'errors')).toBe(true);
     });
 
     it('should return false for non-loaded languages', async () => {
       // Use English-only config to avoid triggering HTTP backend
-      await initI18n({ supportedLngs: ['en'] });
+      await initI18n({ supportedLngs: ['en-US'] });
 
       // Spanish isn't bundled, so it shouldn't be loaded
       expect(hasLoadedLanguage('es-ES')).toBe(false);
@@ -106,8 +106,8 @@ describe('i18n-config', () => {
       await initI18n();
 
       // English should always work since it's bundled
-      await changeLanguage('en');
-      expect(getCurrentLanguage()).toBe('en');
+      await changeLanguage('en-US');
+      expect(getCurrentLanguage()).toBe('en-US');
     });
 
     it('should fall back to English for unsupported languages', async () => {
@@ -119,7 +119,7 @@ describe('i18n-config', () => {
       expect(consoleSpy).toHaveBeenCalledWith(
         expect.stringContaining('not supported')
       );
-      expect(getCurrentLanguage()).toBe('en');
+      expect(getCurrentLanguage()).toBe('en-US');
 
       consoleSpy.mockRestore();
     });

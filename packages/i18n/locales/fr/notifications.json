@@ -1,0 +1,72 @@
+{
+  "sms": {
+    "welcome": "Bienvenue chez {{merchantName}} ! Vous avez rejoint notre programme de fidélité. Commencez à gagner des points dès aujourd'hui !",
+    "pointsEarned": "Vous avez gagné {{points}} pts chez {{merchantName}} ! Solde : {{balance}} pts",
+    "rewardReady": "{{memberName}}, votre récompense est prête ! {{rewardName}} - présentez ceci à la caisse",
+    "rewardExpiring": "N'oubliez pas ! Votre {{rewardName}} expire le {{expiryDate}}. Visitez {{merchantName}} bientôt !",
+    "birthdayReward": "Joyeux anniversaire {{memberName}} ! {{merchantName}} a un cadeau pour vous. Vérifiez vos récompenses !",
+    "tierUpgrade": "Félicitations {{memberName}} ! Vous êtes maintenant {{tierName}} chez {{merchantName}}. Profitez de vos nouveaux avantages !",
+    "pointsExpiring": "{{points}} pts expirent le {{expiryDate}} chez {{merchantName}}. Utilisez-les avant qu'ils ne disparaissent !",
+    "inactivityReminder": "Vous nous manquez {{memberName}} ! Vous avez {{points}} pts chez {{merchantName}}. Venez nous voir !",
+    "promoAlert": "{{merchantName}} : {{promoMessage}}",
+    "verificationCode": "Votre code de vérification {{merchantName}} est : {{code}}"
+  },
+  "push": {
+    "welcome": {
+      "title": "Bienvenue chez {{merchantName}} !",
+      "body": "Vous avez rejoint notre programme de fidélité. Commencez à gagner des points dès aujourd'hui !"
+    },
+    "pointsEarned": {
+      "title": "Points gagnés !",
+      "body": "Vous avez gagné {{points}} points. Solde : {{balance}}"
+    },
+    "rewardReady": {
+      "title": "Récompense prête !",
+      "body": "{{rewardName}} est prêt à être échangé"
+    },
+    "rewardExpiring": {
+      "title": "Récompense expire bientôt",
+      "body": "{{rewardName}} expire le {{expiryDate}}"
+    },
+    "birthdayReward": {
+      "title": "Joyeux anniversaire !",
+      "body": "{{merchantName}} a un cadeau spécial pour vous"
+    },
+    "tierUpgrade": {
+      "title": "Niveau supérieur !",
+      "body": "Vous êtes maintenant {{tierName}} ! Profitez des nouveaux avantages"
+    },
+    "pointsExpiring": {
+      "title": "Points en expiration",
+      "body": "{{points}} points expirent le {{expiryDate}}"
+    },
+    "nearbyStore": {
+      "title": "Vous êtes près de {{merchantName}} !",
+      "body": "Vous avez {{points}} points. Venez nous rendre visite !"
+    },
+    "newReward": {
+      "title": "Nouvelle récompense disponible !",
+      "body": "Découvrez {{rewardName}} - {{pointsCost}} points"
+    },
+    "promoAlert": {
+      "title": "Offre spéciale !",
+      "body": "{{promoMessage}}"
+    },
+    "stampEarned": {
+      "title": "Tampon obtenu !",
+      "body": "{{stampsCollected}}/{{stampsRequired}} - encore {{stampsRemaining}} à obtenir !"
+    },
+    "stampCardComplete": {
+      "title": "Carte de tampons complète !",
+      "body": "Félicitations ! Récupérez votre {{rewardName}} gratuit"
+    }
+  },
+  "inApp": {
+    "welcome": "Bienvenue ! Gagnez des points à chaque achat.",
+    "pointsEarned": "+{{points}} points gagnés",
+    "rewardRedeemed": "{{rewardName}} échangé avec succès",
+    "tierUpgrade": "Vous avez atteint le statut {{tierName}} !",
+    "newRewardUnlocked": "Nouvelle récompense débloquée : {{rewardName}}",
+    "goalProgress": "{{progress}}% vers votre prochaine récompense"
+  }
+}

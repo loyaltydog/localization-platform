@@ -1,0 +1,40 @@
+{
+  "http": {
+    "400": "Solicitação incorreta. Por favor, verifique seus dados e tente novamente.",
+    "401": "Não autorizado. Por favor, faça login para continuar.",
+    "403": "Proibido. Você não tem permissão para acessar este recurso.",
+    "404": "Página não encontrada. O recurso solicitado não pôde ser encontrado.",
+    "409": "Conflito. A solicitação não pôde ser concluída devido a um conflito.",
+    "429": "Muitas solicitações. Por favor, aguarde um momento e tente novamente.",
+    "500": "Erro interno do servidor. Por favor, tente novamente mais tarde.",
+    "502": "Serviço temporariamente indisponível. Por favor, tente novamente mais tarde.",
+    "503": "Serviço indisponível. Estamos trabalhando para resolver este problema."
+  },
+  "auth": {
+    "invalidCredentials": "E-mail ou senha incorretos. Por favor, verifique suas credenciais e tente novamente.",
+    "sessionExpired": "Sua sessão expirou. Por favor, faça login novamente.",
+    "notVerified": "Sua conta não foi verificada. Por favor, verifique seu e-mail para o link de verificação.",
+    "alreadyLoggedIn": "Você já está logado.",
+    "loginRequired": "Você precisa estar logado para continuar.",
+    "accountLocked": "Sua conta foi bloqueada devido a muitas tentativas falhadas. Por favor, entre em contato com o suporte.",
+    "accountDisabled": "Sua conta foi desativada. Por favor, entre em contato com o suporte."
+  },
+  "member": {
+    "notFound": "Membro não encontrado. Por favor, verifique os dados e tente novamente.",
+    "alreadyExists": "Já existe um membro com estes dados.",
+    "insufficientPoints": "Você não tem pontos suficientes para esta recompensa.",
+    "rewardExpired": "Esta recompensa expirou e não está mais disponível.",
+    "rewardAlreadyRedeemed": "Você já resgatou esta recompensa.",
+    "tierDowngraded": "Seu nível foi rebaixado. Continue ganhando pontos para manter seu status."
+  },
+  "validation": {
+    "required": "Este campo é obrigatório.",
+    "invalidEmail": "Por favor, insira um endereço de e-mail válido.",
+    "invalidPhone": "Por favor, insira um número de telefone válido.",
+    "invalidDate": "Por favor, insira uma data válida.",
+    "minLength": "Este campo deve ter pelo menos {{min}} caracteres.",
+    "maxLength": "Este campo não deve exceder {{max}} caracteres.",
+    "passwordMismatch": "As senhas não correspondem.",
+    "weakPassword": "A senha deve conter pelo menos 8 caracteres, incluindo letra maiúscula, minúscula, número e caractere especial."
+  }
+}

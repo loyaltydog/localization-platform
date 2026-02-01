@@ -1,0 +1,94 @@
+{
+  "welcome": {
+    "subject": "¡Bienvenido a {{merchantName}}!",
+    "greeting": "Hola {{memberName}},",
+    "body": "Gracias por unirse al programa de fidelización de {{merchantName}}. Ahora tiene acceso a recompensas y ofertas exclusivas.",
+    "pointsInfo": "Actualmente tiene {{points}} puntos en su cuenta.",
+    "cta": "Ver Sus Recompensas",
+    "footer": "¡Empiece a ganar puntos en cada compra!"
+  },
+  "pointsEarned": {
+    "subject": "¡Ha ganado {{points}} puntos en {{merchantName}}!",
+    "greeting": "Hola {{memberName}},",
+    "body": "¡Buenas noticias! Acaba de ganar {{points}} puntos de su compra.",
+    "transactionDetails": "Detalles de la Transacción",
+    "amount": "Importe: {{amount}}",
+    "date": "Fecha: {{date}}",
+    "newBalance": "Su nuevo saldo es {{balance}} puntos.",
+    "cta": "Consulte Sus Recompensas"
+  },
+  "rewardRedeemed": {
+    "subject": "Recompensa Canjeada: {{rewardName}}",
+    "greeting": "Hola {{memberName}},",
+    "body": "¡Ha canjeado su recompensa con éxito!",
+    "rewardDetails": "Detalles de la Recompensa",
+    "rewardName": "{{rewardName}}",
+    "pointsUsed": "Puntos utilizados: {{points}}",
+    "remainingBalance": "Saldo restante: {{balance}} puntos",
+    "instructions": "Muestre este correo electrónico en el caja para reclamar su recompensa.",
+    "expiryNote": "Esta recompensa caduca el {{expiryDate}}.",
+    "cta": "Ver Recompensa"
+  },
+  "rewardExpiring": {
+    "subject": "¡Su recompensa caduca pronto!",
+    "greeting": "Hola {{memberName}},",
+    "body": "¡No se lo pierda! Su recompensa \"{{rewardName}}\" caduca el {{expiryDate}}.",
+    "cta": "Canjear Ahora",
+    "footer": "Visite {{merchantName}} para usar su recompensa antes de que caduque."
+  },
+  "tierUpgrade": {
+    "subject": "¡Enhorabuena! Ha alcanzado el estatus {{tierName}}.",
+    "greeting": "Hola {{memberName}},",
+    "body": "¡Ha sido ascendido al estatus {{tierName}} en {{merchantName}}.",
+    "benefits": "Sus nuevos beneficios incluyen:",
+    "cta": "Explorar Sus Beneficios",
+    "footer": "¡Gracias por su fidelidad!"
+  },
+  "birthdayReward": {
+    "subject": "¡Feliz cumpleaños de {{merchantName}}!",
+    "greeting": "¡Feliz cumpleaños, {{memberName}}!",
+    "body": "Esperamos que tenga un día maravilloso. Aquí tiene un regalo especial solo para usted.",
+    "rewardInfo": "Ha recibido: {{rewardName}}",
+    "cta": "Reclamar Su Regalo",
+    "expiryNote": "Válido hasta {{expiryDate}}"
+  },
+  "inactivityReminder": {
+    "subject": "Nos extraña en {{merchantName}}.",
+    "greeting": "Hola {{memberName}},",
+    "body": "Ha pasado un tiempo desde su última visita. ¡Nos gustaría volver a verle!",
+    "pointsReminder": "Tiene {{points}} puntos esperando ser usados.",
+    "cta": "Visítenos",
+    "footer": "Sus puntos son valiosos, no los deje desperdiciar."
+  },
+  "pointsExpiring": {
+    "subject": "{{points}} puntos caducando pronto.",
+    "greeting": "Hola {{memberName}},",
+    "body": "¡Atención! {{points}} de sus puntos caducarán el {{expiryDate}}.",
+    "currentBalance": "Saldo actual: {{balance}} puntos",
+    "cta": "Use Sus Puntos",
+    "footer": "Visite {{merchantName}} antes de que caduquen."
+  },
+  "passwordReset": {
+    "subject": "Restablecer su contraseña",
+    "greeting": "Hola {{memberName}},",
+    "body": "Hemos recibido una solicitud para restablecer su contraseña. Haga clic en el botón de abajo para crear una nueva contraseña.",
+    "cta": "Restablecer Contraseña",
+    "expiryNote": "Este enlace caduca en {{expiryHours}} horas.",
+    "ignoreNote": "Si no solicitó esto, puede ignorar este correo electrónico de forma segura."
+  },
+  "emailVerification": {
+    "subject": "Verificar su dirección de correo electrónico",
+    "greeting": "Hola {{memberName}},",
+    "body": "Por favor, verifique su dirección de correo electrónico para completar su registro.",
+    "cta": "Verificar Correo Electrónico",
+    "expiryNote": "Este enlace caduca en {{expiryHours}} horas."
+  },
+  "footer": {
+    "unsubscribe": "Darse de baja de estos correos electrónicos",
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfService": "Términos de Servicio",
+    "contactUs": "Contáctenos",
+    "copyright": "© {{year}} {{merchantName}}. Todos los derechos reservados.",
+    "poweredBy": "Funciona con LoyaltyDog"
+  }
+}
