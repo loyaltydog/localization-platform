@@ -217,9 +217,75 @@ export function loadNotification(locale, key, params = {}) {
  * ```
  */
 export function interpolateParams(template, params) {
+  if (typeof template !== 'string') {
+    return template;
+  }
   return template.replace(/\{\{\s*(\w+)\s*\}\}/g, (match, key) => {
     return params[key] !== undefined ? String(params[key]) : match;
   });
+}
+
+/**
+ * Load a push notification object with nested title/body structure
+ *
+ * @param {string} locale - Language code
+ * @param {string} key - Translation key for the push notification (e.g., 'push.pointsEarned')
+ * @param {Object} [titleParams] - Parameters for title interpolation
+ * @param {Object} [bodyParams] - Parameters for body interpolation
+ * @returns {{title: string, body: string}} Push notification with title and body
+ *
+ * @example
+ * ```js
+ * loadPushNotification('en-US', 'push.pointsEarned', { points: 100 }, { points: 100, balance: 500 })
+ * // Returns: { title: "Points Earned!", body: "You earned 100 points. Balance: 500" }
+ * ```
+ */
+export function loadPushNotification(locale, key, titleParams = {}, bodyParams = {}) {
+  const basePath = join(__dirname, '../../locales');
+  const filePath = join(basePath, locale, 'notifications.json');
+
+  try {
+    const content = readFileSync(filePath, 'utf-8');
+    const translations = JSON.parse(content);
+
+    // Navigate nested keys with dot notation
+    const keys = key.split('.');
+    let value = translations;
+
+    for (const k of keys) {
+      if (value && typeof value === 'object' && k in value) {
+        value = value[k];
+      } else {
+        // Key not found, fallback to English (but only if not already English)
+        if (locale !== DEFAULT_LANGUAGE) {
+          return loadPushNotification(DEFAULT_LANGUAGE, key, titleParams, bodyParams);
+        }
+        // Ultimate fallback - return the key as both title and body
+        return { title: key, body: key };
+      }
+    }
+
+    // Expect a nested object with title and body
+    if (value && typeof value === 'object' && 'title' in value && 'body' in value) {
+      return {
+        title: interpolateParams(value.title, titleParams),
+        body: interpolateParams(value.body, bodyParams),
+      };
+    }
+
+    // If structure is invalid, fallback to English
+    if (locale !== DEFAULT_LANGUAGE) {
+      return loadPushNotification(DEFAULT_LANGUAGE, key, titleParams, bodyParams);
+    }
+
+    return { title: key, body: key };
+  } catch (error) {
+    // If file not found or error, fallback to English (but only if not already English)
+    if (locale !== DEFAULT_LANGUAGE) {
+      return loadPushNotification(DEFAULT_LANGUAGE, key, titleParams, bodyParams);
+    }
+    return { title: key, body: key };
+  }
 }
 
 /**
@@ -280,26 +346,25 @@ export function getSMSMessage(memberLanguage, merchantLanguage, key, params = {}
  *
  * @param {string} memberLanguage - Member's preferred language
  * @param {string} merchantLanguage - Merchant's default language
- * @param {string} key - Translation key for title
- * @param {string} bodyKey - Translation key for body
- * @param {Object} [params] - Parameters for interpolation
+ * @param {string} key - Translation key for the push notification (e.g., 'push.pointsEarned')
+ * @param {Object} [params] - Parameters for interpolation (applied to both title and body)
  * @returns {{title: string, body: string, locale: string}} Push notification payload
  *
  * @example
  * ```js
  * const notification = getPushNotification('es-ES', 'en',
- *                                          'rewardTitle',
- *                                          'rewardBody',
- *                                          { reward: 'Free Coffee' });
+ *                                          'push.pointsEarned',
+ *                                          { points: 100, balance: 500 });
  * pushService.send(deviceId, notification);
  * ```
  */
-export function getPushNotification(memberLanguage, merchantLanguage, key, bodyKey, params = {}) {
+export function getPushNotification(memberLanguage, merchantLanguage, key, params = {}) {
   const locale = resolveLocale(memberLanguage, merchantLanguage);
+  const { title, body } = loadPushNotification(locale, key, params, params);
 
   return {
-    title: loadNotification(locale, key, params),
-    body: loadNotification(locale, bodyKey, params),
+    title,
+    body,
     locale,
   };
 }
@@ -309,17 +374,27 @@ export function getPushNotification(memberLanguage, merchantLanguage, key, bodyK
  *
  * @param {string} memberLanguage - Member's preferred language
  * @param {string} merchantLanguage - Merchant's default language
- * @param {string} key - Translation key
- * @param {Object} [params] - Parameters for interpolation
- * @param {Object} [bodyParams] - Separate parameters for body
+ * @param {string} key - Translation key for the push notification (e.g., 'push.pointsEarned')
+ * @param {Object} [params] - Parameters for title interpolation
+ * @param {Object} [bodyParams] - Separate parameters for body interpolation
  * @returns {{title: string, body: string, locale: string}} Push notification payload
+ *
+ * @example
+ * ```js
+ * const notification = getPushNotificationWithParams('es-ES', 'en',
+ *                                                     'push.pointsEarned',
+ *                                                     { points: 100 },
+ *                                                     { points: 100, balance: 500 });
+ * pushService.send(deviceId, notification);
+ * ```
  */
 export function getPushNotificationWithParams(memberLanguage, merchantLanguage, key, params = {}, bodyParams = {}) {
   const locale = resolveLocale(memberLanguage, merchantLanguage);
+  const { title, body } = loadPushNotification(locale, key, params, bodyParams);
 
   return {
-    title: loadNotification(locale, key, params),
-    body: loadNotification(locale, key, bodyParams),
+    title,
+    body,
     locale,
   };
 }
