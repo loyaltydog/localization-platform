@@ -105,7 +105,10 @@ export function checkSMSLimits(message, maxSegments = 1) {
  */
 export function truncateForSMS(message, maxSegments = 1) {
   const charLimit = getCharacterLimit(message);
-  const maxLength = maxSegments === 1 ? charLimit : SMS_LIMITS.MULTIPLIER * maxSegments;
+  const isUnicode = charLimit === SMS_LIMITS.UNICODE;
+  // For multi-segment, use appropriate per-segment limit
+  const perSegmentLimit = isUnicode ? SMS_LIMITS.UNICODE : SMS_LIMITS.MULTIPLIER;
+  const maxLength = maxSegments === 1 ? charLimit : perSegmentLimit * maxSegments;
 
   if (message.length <= maxLength) {
     return message;
