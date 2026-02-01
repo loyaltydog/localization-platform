@@ -1,78 +1,78 @@
 {
   "required": {
-    "field": "This field is required",
-    "email": "Email is required",
-    "password": "Password is required",
-    "name": "Name is required",
-    "phone": "Phone number is required",
-    "amount": "Amount is required",
-    "date": "Date is required",
-    "selection": "Please make a selection"
+    "field": "Questo campo è obbligatorio",
+    "email": "L'e-mail è obbligatoria",
+    "password": "La password è obbligatoria",
+    "name": "Il nome è obbligatorio",
+    "phone": "Il numero di telefono è obbligatorio",
+    "amount": "L'importo è obbligatorio",
+    "date": "La data è obbligatoria",
+    "selection": "Seleziona un'opzione"
   },
   "format": {
-    "email": "Please enter a valid email address",
-    "phone": "Please enter a valid phone number",
-    "url": "Please enter a valid URL",
-    "date": "Please enter a valid date",
-    "time": "Please enter a valid time",
-    "number": "Please enter a valid number",
-    "integer": "Please enter a whole number",
-    "decimal": "Please enter a valid decimal number",
-    "postalCode": "Please enter a valid postal code",
-    "creditCard": "Please enter a valid card number",
-    "cvv": "Please enter a valid CVV",
-    "expiryDate": "Please enter a valid expiry date (MM/YY)"
+    "email": "Inserisci un indirizzo e-mail valido",
+    "phone": "Inserisci un numero di telefono valido",
+    "url": "Inserisci un URL valido",
+    "date": "Inserisci una data valida",
+    "time": "Inserisci un'ora valida",
+    "number": "Inserisci un numero valido",
+    "integer": "Inserisci un numero intero",
+    "decimal": "Inserisci un numero decimale valido",
+    "postalCode": "Inserisci un CAP valido",
+    "creditCard": "Inserisci un numero di carta valido",
+    "cvv": "Inserisci un CVV valido",
+    "expiryDate": "Inserisci una data di scadenza valida (MM/AA)"
   },
   "length": {
-    "min": "Must be at least {{min}} characters",
-    "max": "Must be no more than {{max}} characters",
-    "exact": "Must be exactly {{length}} characters",
-    "between": "Must be between {{min}} and {{max}} characters"
+    "min": "Deve contenere almeno {{min}} caratteri",
+    "max": "Non deve superare {{max}} caratteri",
+    "exact": "Deve contenere esattamente {{length}} caratteri",
+    "between": "Deve contenere tra {{min}} e {{max}} caratteri"
   },
   "range": {
-    "min": "Must be at least {{min}}",
-    "max": "Must be no more than {{max}}",
-    "between": "Must be between {{min}} and {{max}}"
+    "min": "Deve essere almeno {{min}}",
+    "max": "Non deve superare {{max}}",
+    "between": "Deve essere tra {{min}} e {{max}}"
   },
   "password": {
-    "tooShort": "Password must be at least {{min}} characters",
-    "tooWeak": "Password is too weak",
-    "requiresUppercase": "Password must contain at least one uppercase letter",
-    "requiresLowercase": "Password must contain at least one lowercase letter",
-    "requiresNumber": "Password must contain at least one number",
-    "requiresSpecial": "Password must contain at least one special character",
-    "noMatch": "Passwords do not match",
-    "sameAsCurrent": "New password must be different from current password"
+    "tooShort": "La password deve contenere almeno {{min}} caratteri",
+    "tooWeak": "La password è troppo debole",
+    "requiresUppercase": "La password deve contenere almeno una lettera maiuscola",
+    "requiresLowercase": "La password deve contenere almeno una lettera minuscola",
+    "requiresNumber": "La password deve contenere almeno un numero",
+    "requiresSpecial": "La password deve contenere almeno un carattere speciale",
+    "noMatch": "Le password non corrispondono",
+    "sameAsCurrent": "La nuova password deve essere diversa dalla password attuale"
   },
   "file": {
-    "required": "Please select a file",
-    "tooLarge": "File size must be less than {{maxSize}}",
-    "invalidType": "Invalid file type. Allowed types: {{allowedTypes}}",
-    "tooMany": "Maximum {{max}} files allowed"
+    "required": "Seleziona un file",
+    "tooLarge": "La dimensione del file deve essere inferiore a {{maxSize}}",
+    "invalidType": "Tipo di file non valido. Tipi consentiti: {{allowedTypes}}",
+    "tooMany": "Massimo {{max}} file consentiti"
   },
   "date": {
-    "invalid": "Please enter a valid date",
-    "past": "Date must be in the past",
-    "future": "Date must be in the future",
-    "before": "Date must be before {{date}}",
-    "after": "Date must be after {{date}}",
-    "range": "Date must be between {{startDate}} and {{endDate}}"
+    "invalid": "Inserisci una data valida",
+    "past": "La data deve essere nel passato",
+    "future": "La data deve essere nel futuro",
+    "before": "La data deve essere prima del {{date}}",
+    "after": "La data deve essere dopo il {{date}}",
+    "range": "La data deve essere tra il {{startDate}} e il {{endDate}}"
   },
   "custom": {
-    "unique": "This value is already in use",
-    "exists": "This value does not exist",
-    "mismatch": "Values do not match",
-    "invalid": "Invalid value",
-    "unavailable": "This value is not available"
+    "unique": "Questo valore è già in uso",
+    "exists": "Questo valore non esiste",
+    "mismatch": "I valori non corrispondono",
+    "invalid": "Valore non valido",
+    "unavailable": "Questo valore non è disponibile"
   },
   "points": {
-    "insufficient": "Insufficient points. You need {{required}} but have {{available}}.",
-    "minimum": "Minimum {{min}} points required",
-    "maximum": "Maximum {{max}} points allowed"
+    "insufficient": "Punti insufficienti. Ti servono {{required}} ma hai {{available}}.",
+    "minimum": "Minimo di {{min}} punti richiesto",
+    "maximum": "Massimo di {{max}} punti consentiti"
   },
   "member": {
-    "emailTaken": "This email is already registered",
-    "phoneTaken": "This phone number is already registered",
-    "invalidReferralCode": "Invalid referral code"
+    "emailTaken": "Questa e-mail è già registrata",
+    "phoneTaken": "Questo numero di telefono è già registrato",
+    "invalidReferralCode": "Codice di referral non valido"
   }
 }

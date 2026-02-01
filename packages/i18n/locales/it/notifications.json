@@ -1,72 +1,72 @@
 {
   "sms": {
-    "welcome": "Welcome to {{merchantName}}! You've joined our loyalty program. Start earning points today!",
-    "pointsEarned": "You earned {{points}} pts at {{merchantName}}! Balance: {{balance}} pts",
-    "rewardReady": "{{memberName}}, your reward is ready! {{rewardName}} - show this at checkout",
-    "rewardExpiring": "Don't forget! Your {{rewardName}} expires {{expiryDate}}. Visit {{merchantName}} soon!",
-    "birthdayReward": "Happy Birthday {{memberName}}! {{merchantName}} has a gift for you. Check your rewards!",
-    "tierUpgrade": "Congrats {{memberName}}! You're now {{tierName}} at {{merchantName}}. Enjoy your new benefits!",
-    "pointsExpiring": "{{points}} pts expiring {{expiryDate}} at {{merchantName}}. Use them before they're gone!",
-    "inactivityReminder": "We miss you {{memberName}}! You have {{points}} pts at {{merchantName}}. Come visit us!",
+    "welcome": "Benvenuto da {{merchantName}}! Ti sei unito al nostro programma fedeltà. Inizia a guadagnare punti oggi!",
+    "pointsEarned": "Hai guadagnato {{points}} pts da {{merchantName}}! Saldo: {{balance}} pts",
+    "rewardReady": "{{memberName}}, la tua ricompensa è pronta! {{rewardName}} - mostralo alla cassa",
+    "rewardExpiring": "Non dimenticare! Il tuo {{rewardName}} scade {{expiryDate}}. Visita {{merchantName}} presto!",
+    "birthdayReward": "Buon compleanno {{memberName}}! {{merchantName}} ha un regalo per te. Controlla le tue ricompense!",
+    "tierUpgrade": "Congratulazioni {{memberName}}! Sei ora {{tierName}} da {{merchantName}}. Goditi i tuoi nuovi vantaggi!",
+    "pointsExpiring": "{{points}} pts in scadenza {{expiryDate}} da {{merchantName}}. Usali prima che spariscano!",
+    "inactivityReminder": "Ci manchi {{memberName}}! Hai {{points}} pts da {{merchantName}}. Vieni a trovarci!",
     "promoAlert": "{{merchantName}}: {{promoMessage}}",
-    "verificationCode": "Your {{merchantName}} verification code is: {{code}}"
+    "verificationCode": "Il tuo codice di verifica {{merchantName}} è: {{code}}"
   },
   "push": {
     "welcome": {
-      "title": "Welcome to {{merchantName}}!",
-      "body": "You've joined our loyalty program. Start earning points today!"
+      "title": "Benvenuto da {{merchantName}}!",
+      "body": "Ti sei unito al nostro programma fedeltà. Inizia a guadagnare punti oggi!"
     },
     "pointsEarned": {
-      "title": "Points Earned!",
-      "body": "You earned {{points}} points. Balance: {{balance}}"
+      "title": "Punti guadagnati!",
+      "body": "Hai guadagnato {{points}} punti. Saldo: {{balance}}"
     },
     "rewardReady": {
-      "title": "Reward Ready!",
-      "body": "{{rewardName}} is ready to redeem"
+      "title": "Ricompensa pronta!",
+      "body": "{{rewardName}} è pronto per essere riscattato"
     },
     "rewardExpiring": {
-      "title": "Reward Expiring Soon",
-      "body": "{{rewardName}} expires {{expiryDate}}"
+      "title": "Ricompensa in scadenza",
+      "body": "{{rewardName}} scade {{expiryDate}}"
     },
     "birthdayReward": {
-      "title": "Happy Birthday!",
-      "body": "{{merchantName}} has a special gift for you"
+      "title": "Buon compleanno!",
+      "body": "{{merchantName}} ha un regalo speciale per te"
     },
     "tierUpgrade": {
-      "title": "Level Up!",
-      "body": "You're now {{tierName}}! Enjoy new benefits"
+      "title": "Livello superiore!",
+      "body": "Sei ora {{tierName}}! Goditi i nuovi vantaggi"
     },
     "pointsExpiring": {
-      "title": "Points Expiring",
-      "body": "{{points}} points expire {{expiryDate}}"
+      "title": "Punti in scadenza",
+      "body": "{{points}} punti scadono {{expiryDate}}"
     },
     "nearbyStore": {
-      "title": "You're near {{merchantName}}!",
-      "body": "You have {{points}} points. Come visit us!"
+      "title": "Sei vicino a {{merchantName}}!",
+      "body": "Hai {{points}} punti. Vieni a trovarci!"
     },
     "newReward": {
-      "title": "New Reward Available!",
-      "body": "Check out {{rewardName}} - {{pointsCost}} points"
+      "title": "Nuova ricompensa disponibile!",
+      "body": "Scopri {{rewardName}} - {{pointsCost}} punti"
     },
     "promoAlert": {
-      "title": "Special Offer!",
+      "title": "Offerta speciale!",
       "body": "{{promoMessage}}"
     },
     "stampEarned": {
-      "title": "Stamp Earned!",
-      "body": "{{stampsCollected}}/{{stampsRequired}} - {{stampsRemaining}} more to go!"
+      "title": "Timbro ottenuto!",
+      "body": "{{stampsCollected}}/{{stampsRequired}} - altri {{stampsRemaining}} da ottenere!"
     },
     "stampCardComplete": {
-      "title": "Stamp Card Complete!",
-      "body": "Congratulations! Claim your free {{rewardName}}"
+      "title": "Scheda timbri completa!",
+      "body": "Congratulazioni! Ritira il tuo {{rewardName}} gratuito"
     }
   },
   "inApp": {
-    "welcome": "Welcome! Start earning points on every purchase.",
-    "pointsEarned": "+{{points}} points earned",
-    "rewardRedeemed": "{{rewardName}} redeemed successfully",
-    "tierUpgrade": "You've reached {{tierName}} status!",
-    "newRewardUnlocked": "New reward unlocked: {{rewardName}}",
-    "goalProgress": "{{progress}}% to your next reward"
+    "welcome": "Benvenuto! Guadagna punti ad ogni acquisto.",
+    "pointsEarned": "+{{points}} punti guadagnati",
+    "rewardRedeemed": "{{rewardName}} riscattato con successo",
+    "tierUpgrade": "Hai raggiunto lo stato {{tierName}}!",
+    "newRewardUnlocked": "Nuova ricompensa sbloccata: {{rewardName}}",
+    "goalProgress": "{{progress}}% alla tua prossima ricompensa"
   }
 }

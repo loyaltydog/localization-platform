@@ -1,94 +1,94 @@
 {
   "welcome": {
-    "subject": "Welcome to {{merchantName}}!",
-    "greeting": "Hi {{memberName}},",
-    "body": "Thank you for joining {{merchantName}}'s loyalty program! You now have access to exclusive rewards and offers.",
-    "pointsInfo": "You currently have {{points}} points in your account.",
-    "cta": "View Your Rewards",
-    "footer": "Start earning points on every purchase!"
+    "subject": "Bienvenue chez {{merchantName}} !",
+    "greeting": "Bonjour {{memberName}},",
+    "body": "Merci d'avoir rejoint le programme de fidélité de {{merchantName}} ! Vous avez maintenant accès à des récompenses et des offres exclusives.",
+    "pointsInfo": "Vous avez actuellement {{points}} points sur votre compte.",
+    "cta": "Voir vos récompenses",
+    "footer": "Commencez à gagner des points à chaque achat !"
   },
   "pointsEarned": {
-    "subject": "You earned {{points}} points at {{merchantName}}!",
-    "greeting": "Hi {{memberName}},",
-    "body": "Great news! You just earned {{points}} points from your purchase.",
-    "transactionDetails": "Transaction Details",
-    "amount": "Amount: {{amount}}",
-    "date": "Date: {{date}}",
-    "newBalance": "Your new balance is {{balance}} points.",
-    "cta": "Check Your Rewards"
+    "subject": "Vous avez gagné {{points}} points chez {{merchantName}} !",
+    "greeting": "Bonjour {{memberName}},",
+    "body": "Une excellente nouvelle ! Vous venez de gagner {{points}} points grâce à votre achat.",
+    "transactionDetails": "Détails de la transaction",
+    "amount": "Montant : {{amount}}",
+    "date": "Date : {{date}}",
+    "newBalance": "Votre nouveau solde est de {{balance}} points.",
+    "cta": "Vérifier vos récompenses"
   },
   "rewardRedeemed": {
-    "subject": "Reward Redeemed: {{rewardName}}",
-    "greeting": "Hi {{memberName}},",
-    "body": "You've successfully redeemed your reward!",
-    "rewardDetails": "Reward Details",
+    "subject": "Récompense échangée : {{rewardName}}",
+    "greeting": "Bonjour {{memberName}},",
+    "body": "Vous avez échangé votre récompense avec succès !",
+    "rewardDetails": "Détails de la récompense",
     "rewardName": "{{rewardName}}",
-    "pointsUsed": "Points used: {{points}}",
-    "remainingBalance": "Remaining balance: {{balance}} points",
-    "instructions": "Show this email at checkout to claim your reward.",
-    "expiryNote": "This reward expires on {{expiryDate}}.",
-    "cta": "View Reward"
+    "pointsUsed": "Points utilisés : {{points}}",
+    "remainingBalance": "Solde restant : {{balance}} points",
+    "instructions": "Présentez cet e-mail à la caisse pour récupérer votre récompense.",
+    "expiryNote": "Cette récompense expire le {{expiryDate}}.",
+    "cta": "Voir la récompense"
   },
   "rewardExpiring": {
-    "subject": "Your reward is expiring soon!",
-    "greeting": "Hi {{memberName}},",
-    "body": "Don't miss out! Your reward \"{{rewardName}}\" expires on {{expiryDate}}.",
-    "cta": "Redeem Now",
-    "footer": "Visit {{merchantName}} to use your reward before it expires."
+    "subject": "Votre récompense expire bientôt !",
+    "greeting": "Bonjour {{memberName}},",
+    "body": "Ne manquez pas cette opportunité ! Votre récompense « {{rewardName}} » expire le {{expiryDate}}.",
+    "cta": "Échanger maintenant",
+    "footer": "Visitez {{merchantName}} pour utiliser votre récompense avant son expiration."
   },
   "tierUpgrade": {
-    "subject": "Congratulations! You've reached {{tierName}} status!",
-    "greeting": "Hi {{memberName}},",
-    "body": "You've been upgraded to {{tierName}} status at {{merchantName}}!",
-    "benefits": "Your new benefits include:",
-    "cta": "Explore Your Benefits",
-    "footer": "Thank you for your loyalty!"
+    "subject": "Félicitations ! Vous avez atteint le statut {{tierName}} !",
+    "greeting": "Bonjour {{memberName}},",
+    "body": "Vous avez été upgrade au statut {{tierName}} chez {{merchantName}} !",
+    "benefits": "Vos nouveaux avantages incluent :",
+    "cta": "Découvrir vos avantages",
+    "footer": "Merci pour votre fidélité !"
   },
   "birthdayReward": {
-    "subject": "Happy Birthday from {{merchantName}}!",
-    "greeting": "Happy Birthday, {{memberName}}!",
-    "body": "We hope you have a wonderful day! Here's a special gift just for you.",
-    "rewardInfo": "You've received: {{rewardName}}",
-    "cta": "Claim Your Gift",
-    "expiryNote": "Valid until {{expiryDate}}"
+    "subject": "Joyeux anniversaire de la part de {{merchantName}} !",
+    "greeting": "Joyeux anniversaire, {{memberName}} !",
+    "body": "Nous espérons que vous passerez une merveilleuse journée ! Voici un cadeau spécial rien que pour vous.",
+    "rewardInfo": "Vous avez reçu : {{rewardName}}",
+    "cta": "Récupérer votre cadeau",
+    "expiryNote": "Valable jusqu'au {{expiryDate}}"
   },
   "inactivityReminder": {
-    "subject": "We miss you at {{merchantName}}!",
-    "greeting": "Hi {{memberName}},",
-    "body": "It's been a while since your last visit. We'd love to see you again!",
-    "pointsReminder": "You have {{points}} points waiting to be used.",
-    "cta": "Come Visit Us",
-    "footer": "Your points are valuable – don't let them go to waste!"
+    "subject": "Nous vous manquons chez {{merchantName}} !",
+    "greeting": "Bonjour {{memberName}},",
+    "body": "Cela fait un moment que nous n'avons pas eu de nouvelles de vous. Nous aimerions vous revoir !",
+    "pointsReminder": "Vous avez {{points}} points en attente d'utilisation.",
+    "cta": "Venez nous rendre visite",
+    "footer": "Vos points sont précieux – ne les laissez pas expirer !"
   },
   "pointsExpiring": {
-    "subject": "{{points}} points expiring soon!",
-    "greeting": "Hi {{memberName}},",
-    "body": "Heads up! {{points}} of your points will expire on {{expiryDate}}.",
-    "currentBalance": "Current balance: {{balance}} points",
-    "cta": "Use Your Points",
-    "footer": "Visit {{merchantName}} before they expire!"
+    "subject": "{{points}} points expirent bientôt !",
+    "greeting": "Bonjour {{memberName}},",
+    "body": "Attention ! {{points}} de vos points expireront le {{expiryDate}}.",
+    "currentBalance": "Solde actuel : {{balance}} points",
+    "cta": "Utiliser vos points",
+    "footer": "Visitez {{merchantName}} avant qu'ils n'expirent !"
   },
   "passwordReset": {
-    "subject": "Reset your password",
-    "greeting": "Hi {{memberName}},",
-    "body": "We received a request to reset your password. Click the button below to create a new password.",
-    "cta": "Reset Password",
-    "expiryNote": "This link expires in {{expiryHours}} hours.",
-    "ignoreNote": "If you didn't request this, you can safely ignore this email."
+    "subject": "Réinitialisez votre mot de passe",
+    "greeting": "Bonjour {{memberName}},",
+    "body": "Nous avons reçu une demande de réinitialisation de votre mot de passe. Cliquez sur le bouton ci-dessous pour créer un nouveau mot de passe.",
+    "cta": "Réinitialiser le mot de passe",
+    "expiryNote": "Ce lien expire dans {{expiryHours}} heures.",
+    "ignoreNote": "Si vous n'avez pas fait cette demande, vous pouvez ignorer cet e-mail en toute sécurité."
   },
   "emailVerification": {
-    "subject": "Verify your email address",
-    "greeting": "Hi {{memberName}},",
-    "body": "Please verify your email address to complete your registration.",
-    "cta": "Verify Email",
-    "expiryNote": "This link expires in {{expiryHours}} hours."
+    "subject": "Vérifiez votre adresse e-mail",
+    "greeting": "Bonjour {{memberName}},",
+    "body": "Veuillez vérifier votre adresse e-mail pour compléter votre inscription.",
+    "cta": "Vérifier l'e-mail",
+    "expiryNote": "Ce lien expire dans {{expiryHours}} heures."
   },
   "footer": {
-    "unsubscribe": "Unsubscribe from these emails",
-    "privacyPolicy": "Privacy Policy",
-    "termsOfService": "Terms of Service",
-    "contactUs": "Contact Us",
-    "copyright": "© {{year}} {{merchantName}}. All rights reserved.",
-    "poweredBy": "Powered by LoyaltyDog"
+    "unsubscribe": "Se désabonner de ces e-mails",
+    "privacyPolicy": "Politique de confidentialité",
+    "termsOfService": "Conditions d'utilisation",
+    "contactUs": "Nous contacter",
+    "copyright": "© {{year}} {{merchantName}}. Tous droits réservés.",
+    "poweredBy": "Propulsé par LoyaltyDog"
   }
 }

@@ -1,78 +1,78 @@
 {
   "required": {
-    "field": "This field is required",
-    "email": "Email is required",
-    "password": "Password is required",
-    "name": "Name is required",
-    "phone": "Phone number is required",
-    "amount": "Amount is required",
-    "date": "Date is required",
-    "selection": "Please make a selection"
+    "field": "Este campo é obrigatório",
+    "email": "O e-mail é obrigatório",
+    "password": "A senha é obrigatória",
+    "name": "O nome é obrigatório",
+    "phone": "O número de telefone é obrigatório",
+    "amount": "O valor é obrigatório",
+    "date": "A data é obrigatória",
+    "selection": "Por favor, faça uma seleção"
   },
   "format": {
-    "email": "Please enter a valid email address",
-    "phone": "Please enter a valid phone number",
-    "url": "Please enter a valid URL",
-    "date": "Please enter a valid date",
-    "time": "Please enter a valid time",
-    "number": "Please enter a valid number",
-    "integer": "Please enter a whole number",
-    "decimal": "Please enter a valid decimal number",
-    "postalCode": "Please enter a valid postal code",
-    "creditCard": "Please enter a valid card number",
-    "cvv": "Please enter a valid CVV",
-    "expiryDate": "Please enter a valid expiry date (MM/YY)"
+    "email": "Por favor, insira um endereço de e-mail válido",
+    "phone": "Por favor, insira um número de telefone válido",
+    "url": "Por favor, insira uma URL válida",
+    "date": "Por favor, insira uma data válida",
+    "time": "Por favor, insira um horário válido",
+    "number": "Por favor, insira um número válido",
+    "integer": "Por favor, insira um número inteiro",
+    "decimal": "Por favor, insira um número decimal válido",
+    "postalCode": "Por favor, insira um CEP válido",
+    "creditCard": "Por favor, insira um número de cartão válido",
+    "cvv": "Por favor, insira um CVV válido",
+    "expiryDate": "Por favor, insira uma data de validade válida (MM/AA)"
   },
   "length": {
-    "min": "Must be at least {{min}} characters",
-    "max": "Must be no more than {{max}} characters",
-    "exact": "Must be exactly {{length}} characters",
-    "between": "Must be between {{min}} and {{max}} characters"
+    "min": "Deve ter pelo menos {{min}} caracteres",
+    "max": "Não deve ter mais de {{max}} caracteres",
+    "exact": "Deve ter exatamente {{length}} caracteres",
+    "between": "Deve ter entre {{min}} e {{max}} caracteres"
   },
   "range": {
-    "min": "Must be at least {{min}}",
-    "max": "Must be no more than {{max}}",
-    "between": "Must be between {{min}} and {{max}}"
+    "min": "Deve ser pelo menos {{min}}",
+    "max": "Não deve ser mais de {{max}}",
+    "between": "Deve estar entre {{min}} e {{max}}"
   },
   "password": {
-    "tooShort": "Password must be at least {{min}} characters",
-    "tooWeak": "Password is too weak",
-    "requiresUppercase": "Password must contain at least one uppercase letter",
-    "requiresLowercase": "Password must contain at least one lowercase letter",
-    "requiresNumber": "Password must contain at least one number",
-    "requiresSpecial": "Password must contain at least one special character",
-    "noMatch": "Passwords do not match",
-    "sameAsCurrent": "New password must be different from current password"
+    "tooShort": "A senha deve ter pelo menos {{min}} caracteres",
+    "tooWeak": "A senha é muito fraca",
+    "requiresUppercase": "A senha deve conter pelo menos uma letra maiúscula",
+    "requiresLowercase": "A senha deve conter pelo menos uma letra minúscula",
+    "requiresNumber": "A senha deve conter pelo menos um número",
+    "requiresSpecial": "A senha deve conter pelo menos um caractere especial",
+    "noMatch": "As senhas não coincidem",
+    "sameAsCurrent": "A nova senha deve ser diferente da senha atual"
   },
   "file": {
-    "required": "Please select a file",
-    "tooLarge": "File size must be less than {{maxSize}}",
-    "invalidType": "Invalid file type. Allowed types: {{allowedTypes}}",
-    "tooMany": "Maximum {{max}} files allowed"
+    "required": "Por favor, selecione um arquivo",
+    "tooLarge": "O tamanho do arquivo deve ser menor que {{maxSize}}",
+    "invalidType": "Tipo de arquivo inválido. Tipos permitidos: {{allowedTypes}}",
+    "tooMany": "Máximo de {{max}} arquivos permitidos"
   },
   "date": {
-    "invalid": "Please enter a valid date",
-    "past": "Date must be in the past",
-    "future": "Date must be in the future",
-    "before": "Date must be before {{date}}",
-    "after": "Date must be after {{date}}",
-    "range": "Date must be between {{startDate}} and {{endDate}}"
+    "invalid": "Por favor, insira uma data válida",
+    "past": "A data deve estar no passado",
+    "future": "A data deve estar no futuro",
+    "before": "A data deve ser antes de {{date}}",
+    "after": "A data deve ser depois de {{date}}",
+    "range": "A data deve estar entre {{startDate}} e {{endDate}}"
   },
   "custom": {
-    "unique": "This value is already in use",
-    "exists": "This value does not exist",
-    "mismatch": "Values do not match",
-    "invalid": "Invalid value",
-    "unavailable": "This value is not available"
+    "unique": "Este valor já está em uso",
+    "exists": "Este valor não existe",
+    "mismatch": "Os valores não coincidem",
+    "invalid": "Valor inválido",
+    "unavailable": "Este valor não está disponível"
   },
   "points": {
-    "insufficient": "Insufficient points. You need {{required}} but have {{available}}.",
-    "minimum": "Minimum {{min}} points required",
-    "maximum": "Maximum {{max}} points allowed"
+    "insufficient": "Pontos insuficientes. Você precisa de {{required}} mas tem {{available}}.",
+    "minimum": "Mínimo de {{min}} pontos necessário",
+    "maximum": "Máximo de {{max}} pontos permitidos"
   },
   "member": {
-    "emailTaken": "This email is already registered",
-    "phoneTaken": "This phone number is already registered",
-    "invalidReferralCode": "Invalid referral code"
+    "emailTaken": "Este e-mail já está cadastrado",
+    "phoneTaken": "Este número de telefone já está cadastrado",
+    "invalidReferralCode": "Código de indicação inválido"
   }
 }
