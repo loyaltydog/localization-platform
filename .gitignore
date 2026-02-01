@@ -44,3 +44,5 @@ coverage/
 .parcel-cache/
 .next/
 out/
+
+_bmad*

@@ -1,0 +1,68 @@
+{
+  "http": {
+    "400": "Solicitud incorrecta. Por favor, verifique su entrada e inténtelo de nuevo.",
+    "401": "No está autorizado. Por favor, inicie sesión de nuevo.",
+    "403": "No tiene permiso para realizar esta acción.",
+    "404": "El recurso solicitado no se encontró.",
+    "409": "Esta operación entra en conflicto con los datos existentes.",
+    "422": "Los datos proporcionados no son válidos.",
+    "429": "Demasiadas solicitudes. Por favor, espere un momento e inténtelo de nuevo.",
+    "500": "Se ha producido un error interno del servidor. Por favor, inténtelo de nuevo más tarde.",
+    "502": "Servicio temporalmente no disponible. Por favor, inténtelo de nuevo más tarde.",
+    "503": "El servicio está en mantenimiento. Por favor, inténtelo de nuevo más tarde."
+  },
+  "auth": {
+    "invalidCredentials": "Correo electrónico o contraseña inválidos.",
+    "accountLocked": "Su cuenta ha sido bloqueada. Por favor, contacte con soporte.",
+    "accountDisabled": "Su cuenta ha sido deshabilitada.",
+    "sessionExpired": "Su sesión ha expirado. Por favor, inicie sesión de nuevo.",
+    "tokenInvalid": "Token inválido o expirado.",
+    "emailNotVerified": "Por favor, verifique su dirección de correo electrónico.",
+    "passwordResetRequired": "Debe restablecer su contraseña antes de continuar.",
+    "twoFactorRequired": "Se requiere autenticación de dos factores.",
+    "twoFactorInvalid": "Código de autenticación de dos factores inválido."
+  },
+  "member": {
+    "notFound": "Socio no encontrado.",
+    "alreadyExists": "Ya existe un socio con este correo electrónico o teléfono.",
+    "invalidEmail": "Por favor, proporcione una dirección de correo electrónico válida.",
+    "invalidPhone": "Por favor, proporcione un número de teléfono válido.",
+    "insufficientPoints": "Puntos insuficientes para este canje.",
+    "cardNotFound": "Tarjeta de fidelización no encontrada.",
+    "cardAlreadyLinked": "Esta tarjeta ya está vinculada a otra cuenta.",
+    "enrollmentFailed": "Error al registrar al socio. Por favor, inténtelo de nuevo."
+  },
+  "reward": {
+    "notFound": "Recompensa no encontrada.",
+    "notAvailable": "Esta recompensa no está disponible actualmente.",
+    "expired": "Esta recompensa ha caducado.",
+    "alreadyRedeemed": "Esta recompensa ya ha sido canjeada.",
+    "limitReached": "Ha alcanzado el límite de canje para esta recompensa.",
+    "tierRequired": "Esta recompensa requiere un nivel de membresía superior.",
+    "minimumPointsNotMet": "No se cumple el requisito mínimo de puntos."
+  },
+  "merchant": {
+    "notFound": "Comerciante no encontrado.",
+    "subscriptionExpired": "Su suscripción ha caducado.",
+    "subscriptionRequired": "Esta función requiere una suscripción activa.",
+    "limitReached": "Ha alcanzado el límite de su plan.",
+    "integrationError": "Error al conectar con el servicio de integración."
+  },
+  "transaction": {
+    "failed": "Transacción fallida. Por favor, inténtelo de nuevo.",
+    "alreadyProcessed": "Esta transacción ya ha sido procesada.",
+    "invalidAmount": "Importe de transacción inválido.",
+    "refundNotAllowed": "No se permiten reembolsos para esta transacción.",
+    "partialRefundNotAllowed": "No se permiten reembolsos parciales."
+  },
+  "network": {
+    "connectionFailed": "No se puede conectar. Por favor, verifique su conexión a internet.",
+    "timeout": "La solicitud ha caducado. Por favor, inténtelo de nuevo.",
+    "offline": "Parece que está desconectado. Por favor, verifique su conexión."
+  },
+  "generic": {
+    "unknown": "Se ha producido un error inesperado.",
+    "tryAgain": "Algo salió mal. Por favor, inténtelo de nuevo.",
+    "contactSupport": "Si este problema persiste, por favor, contacte con soporte."
+  }
+}

@@ -1,0 +1,122 @@
+# Sync translations from Lokalise to the repository
+# This workflow runs automatically every 12 hours and can be triggered manually
+
+name: Sync Translations
+
+on:
+  schedule:
+    # Run every 12 hours at minute 0 (00:00 and 12:00 UTC)
+    - cron: '0 */12 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-translations:
+    name: Download and Sync Translations
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Explicitly fetch all history for proper branch operations
+          fetch-depth: 0
+          # Default branch for base reference
+          ref: main
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install Lokalise CLI
+        run: |
+          npm install -g @lokalise/cli
+          lokalise2 --version
+
+      - name: Download translations from Lokalise
+        id: download
+        env:
+          LOKALISE_API_TOKEN: ${{ secrets.LOKALISE_API_TOKEN }}
+          LOKALISE_PROJECT_ID: ${{ secrets.LOKALISE_PROJECT_ID }}
+        run: |
+          set -e
+          cd packages/i18n
+          npm run lokalise:download
+          echo "downloaded=true" >> $GITHUB_OUTPUT
+
+      - name: Check for changes
+        id: check-changes
+        run: |
+          if git diff --quiet packages/i18n/locales/ 2>/dev/null; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "ℹ️ No translation updates found"
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "✅ Changes detected in translation files"
+            # List changed files for debugging
+            git status --short packages/i18n/locales/
+          fi
+
+      - name: Configure Git
+        if: steps.check-changes.outputs.has_changes == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+      - name: Create branch and commit changes
+        if: steps.check-changes.outputs.has_changes == 'true'
+        run: |
+          # Ensure we're on main before branching
+          git checkout main || git checkout master
+
+          # Create timestamped branch name
+          BRANCH_NAME="i18n/sync-$(date +'%Y%m%d-%H%M%S')"
+          git checkout -b "$BRANCH_NAME"
+
+          # Stage translation files
+          git add packages/i18n/locales/
+
+          # Get list of changed languages for commit message (using POSIX-compliant grep)
+          CHANGED_LANGUAGES=$(
+            git diff --cached --name-only \
+            | sed -n 's|^locales/\([^/]*\)/.*|\1|p' \
+            | sort -u \
+            | tr '\n' ',' \
+            | sed 's/,$//'
+          )
+
+          # Create commit message with conventional commit format
+          if [ -n "$CHANGED_LANGUAGES" ]; then
+            COMMIT_MSG="chore(i18n): update translations from Lokalise [$CHANGED_LANGUAGES]"
+          else
+            COMMIT_MSG="chore(i18n): update translations from Lokalise"
+          fi
+
+          # Create commit body
+          {
+            echo ""
+            echo "Synced via GitHub Actions workflow"
+            echo ""
+            echo "Run: #${{ github.run_number }}"
+            echo "Triggered by: ${{ github.event_name }}"
+            echo "Commit SHA: ${{ github.sha }}"
+          } | git commit -m "$COMMIT_MSG" -F -
+
+      - name: Push changes
+        if: steps.check-changes.outputs.has_changes == 'true'
+        run: |
+          BRANCH_NAME=$(git branch --show-current)
+          git push origin "$BRANCH_NAME"
+          echo "Branch pushed: $BRANCH_NAME"
+
+      - name: Summary
+        if: always()
+        run: |
+          if [ "${{ steps.check-changes.outputs.has_changes }}" == "true" ]; then
+            echo "✅ Translations synced successfully"
+          else
+            echo "ℹ️ No translation updates found - nothing to commit"
+          fi
