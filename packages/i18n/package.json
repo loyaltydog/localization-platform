@@ -64,6 +64,7 @@
   },
   "devDependencies": {
     "@anthropic-ai/claude-code": "*",
+    "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^14.0.0",
     "@types/react": "^18.2.0",
     "i18next": "^23.0.0",
