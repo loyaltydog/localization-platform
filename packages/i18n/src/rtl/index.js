@@ -159,45 +159,47 @@ export function rtlSpacing(styles, isRtl) {
  * }
  */
 export function useRTL() {
-  // Dynamic import of useTranslation to avoid hard dependency
+  // Dynamic import to avoid hard dependency and work with ES modules
   // This allows the module to be used in non-React contexts
   try {
-    // Try to get useTranslation from react-i18next
-    const { useTranslation } = require('react-i18next');
-    const { i18n } = useTranslation();
+    // Try dynamic import for ES module compatibility
+    const i18nextModule = typeof require !== 'undefined'
+      ? require('react-i18next')
+      : undefined;
 
-    const currentLang = i18n.language;
-    const isRtl = isRTL(currentLang);
-    const dir = getTextDirection(currentLang);
+    if (i18nextModule && i18nextModule.useTranslation) {
+      const { i18n } = i18nextModule.useTranslation();
 
-    return {
-      isRTL: isRtl,
-      dir,
-      rtlClass: (rtlCls, ltrCls = '') => rtlClass(isRtl, rtlCls, ltrCls),
-      rtlSpacing: (styles) => rtlSpacing(styles, isRtl),
-    };
-  } catch (error) {
-    // Log error for debugging but provide fallback behavior
-    if (typeof console !== 'undefined') {
-      console.error('useRTL: Error loading react-i18next, using fallback:', error);
+      const currentLang = i18n.language;
+      const isRtl = isRTL(currentLang);
+      const dir = getTextDirection(currentLang);
+
+      return {
+        isRTL: isRtl,
+        dir,
+        rtlClass: (rtlCls, ltrCls = '') => rtlClass(isRtl, rtlCls, ltrCls),
+        rtlSpacing: (styles) => rtlSpacing(styles, isRtl),
+      };
     }
-
-    // react-i18next not available, fall back to checking window
-    const currentLang =
-      typeof window !== 'undefined' && window.i18next
-        ? window.i18next.language
-        : DEFAULT_LANGUAGE;
-
-    const isRtl = isRTL(currentLang);
-    const dir = getTextDirection(currentLang);
-
-    return {
-      isRTL: isRtl,
-      dir,
-      rtlClass: (rtlCls, ltrCls = '') => rtlClass(isRtl, rtlCls, ltrCls),
-      rtlSpacing: (styles) => rtlSpacing(styles, isRtl),
-    };
+  } catch (error) {
+    // Silently fall through to window check
   }
+
+  // react-i18next not available, fall back to checking window
+  const currentLang =
+    typeof window !== 'undefined' && window.i18next
+      ? window.i18next.language
+      : DEFAULT_LANGUAGE;
+
+  const isRtl = isRTL(currentLang);
+  const dir = getTextDirection(currentLang);
+
+  return {
+    isRTL: isRtl,
+    dir,
+    rtlClass: (rtlCls, ltrCls = '') => rtlClass(isRtl, rtlCls, ltrCls),
+    rtlSpacing: (styles) => rtlSpacing(styles, isRtl),
+  };
 }
 
 /**

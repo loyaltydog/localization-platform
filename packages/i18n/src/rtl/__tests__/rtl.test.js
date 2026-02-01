@@ -21,6 +21,15 @@ const mockI18next = {
   language: 'en',
 };
 
+// Mock react-i18next to avoid hook call errors in tests
+vi.mock('react-i18next', () => ({
+  useTranslation: () => ({
+    i18n: {
+      language: mockI18next.language,
+    },
+  }),
+}));
+
 describe('RTL Module - isRTL()', () => {
   describe('RTL language detection', () => {
     it('should return true for Hebrew', () => {

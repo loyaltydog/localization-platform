@@ -44,8 +44,11 @@ function loadNamespaceJSON(languageCode, namespace, localesPath) {
     const content = readFileSync(filePath, 'utf-8');
     return JSON.parse(content);
   } catch (error) {
-    // If file not found, return empty object
-    return {};
+    // Only swallow ENOENT (file not found) errors; rethrow others
+    if (error.code === 'ENOENT') {
+      return {};
+    }
+    throw error;
   }
 }
 
@@ -73,11 +76,16 @@ export function parseAcceptLanguage(acceptLanguage) {
   return acceptLanguage
     .split(',')
     .map(lang => {
-      const [code, q] = lang.trim().split(';q=');
-      const quality = q ? parseFloat(q) : 1;
+      const trimmed = lang.trim();
+      // Match optional q-value with flexible spacing: ;q=0.8 or ; q = 0.8
+      const match = trimmed.match(/^([^;]+)(?:;\s*q\s*=\s*([0-9.]+))?$/i);
+      if (!match) return null;
+
+      const [, code, q] = match;
+      const quality = q ? Math.min(1, Math.max(0, parseFloat(q))) : 1;
       return { code: code.trim().toLowerCase(), quality };
     })
-    .filter(lang => lang.code)
+    .filter(Boolean)
     .sort((a, b) => b.quality - a.quality);
 }
 
