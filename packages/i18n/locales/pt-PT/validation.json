@@ -1,0 +1,78 @@
+{
+  "required": {
+    "field": "Este campo é obrigatório",
+    "email": "O e-mail é obrigatório",
+    "password": "A palavra-passe é obrigatória",
+    "name": "O nome é obrigatório",
+    "phone": "O número de telefone é obrigatório",
+    "amount": "O valor é obrigatório",
+    "date": "A data é obrigatória",
+    "selection": "Por favor, faça uma seleção"
+  },
+  "format": {
+    "email": "Introduza um endereço de e-mail válido",
+    "phone": "Introduza um número de telefone válido",
+    "url": "Introduza um URL válido",
+    "date": "Introduza uma data válida",
+    "time": "Introduza uma hora válida",
+    "number": "Introduza um número válido",
+    "integer": "Introduza um número inteiro",
+    "decimal": "Introduza um número decimal válido",
+    "postalCode": "Introduza um código postal válido",
+    "creditCard": "Introduza um número de cartão válido",
+    "cvv": "Introduza um CVV válido",
+    "expiryDate": "Introduza uma data de validade válida (MM/AA)"
+  },
+  "length": {
+    "min": "Deve ter pelo menos {{min}} caracteres",
+    "max": "Não deve ter mais de {{max}} caracteres",
+    "exact": "Deve ter exatamente {{length}} caracteres",
+    "between": "Deve ter entre {{min}} e {{max}} caracteres"
+  },
+  "range": {
+    "min": "Deve ser pelo menos {{min}}",
+    "max": "Não deve ser mais de {{max}}",
+    "between": "Deve estar entre {{min}} e {{max}}"
+  },
+  "password": {
+    "tooShort": "A palavra-passe deve ter pelo menos {{min}} caracteres",
+    "tooWeak": "A palavra-passe é demasiado fraca",
+    "requiresUppercase": "A palavra-passe deve conter pelo menos uma maiúscula",
+    "requiresLowercase": "A palavra-passe deve conter pelo menos uma minúscula",
+    "requiresNumber": "A palavra-passe deve conter pelo menos um número",
+    "requiresSpecial": "A palavra-passe deve conter pelo menos um caráter especial",
+    "noMatch": "As palavras-passe não coincidem",
+    "sameAsCurrent": "A nova palavra-passe deve ser diferente da palavra-passe atual"
+  },
+  "file": {
+    "required": "Selecione um ficheiro",
+    "tooLarge": "O tamanho do ficheiro deve ser inferior a {{maxSize}}",
+    "invalidType": "Tipo de ficheiro inválido. Tipos permitidos: {{allowedTypes}}",
+    "tooMany": "Máximo de {{max}} ficheiros permitidos"
+  },
+  "date": {
+    "invalid": "Introduza uma data válida",
+    "past": "A data deve ser no passado",
+    "future": "A data deve ser no futuro",
+    "before": "A data deve ser antes de {{date}}",
+    "after": "A data deve ser depois de {{date}}",
+    "range": "A data deve ser entre {{startDate}} e {{endDate}}"
+  },
+  "custom": {
+    "unique": "Este valor já está em uso",
+    "exists": "Este valor não existe",
+    "mismatch": "Os valores não coincidem",
+    "invalid": "Valor inválido",
+    "unavailable": "Este valor não está disponível"
+  },
+  "points": {
+    "insufficient": "Pontos insuficientes. Precisa de {{required}} mas tem {{available}}.",
+    "minimum": "Mínimo de {{min}} pontos necessário",
+    "maximum": "Máximo de {{max}} pontos permitidos"
+  },
+  "member": {
+    "emailTaken": "Este e-mail já está registado",
+    "phoneTaken": "Este número de telefone já está registado",
+    "invalidReferralCode": "Código de referral inválido"
+  }
+}

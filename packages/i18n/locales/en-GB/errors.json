@@ -1,0 +1,40 @@
+{
+  "http": {
+    "400": "Incorrect request. Please check your input and try again.",
+    "401": "Unauthorised. Please log in to continue.",
+    "403": "Forbidden. You don't have permission to access this resource.",
+    "404": "Page not found. The requested resource could not be found.",
+    "409": "Conflict. The request could not be completed due to a conflict.",
+    "429": "Too many requests. Please wait a moment and try again.",
+    "500": "Internal server error. Please try again later.",
+    "502": "Service temporarily unavailable. Please try again later.",
+    "503": "Service unavailable. We're working on fixing this issue."
+  },
+  "auth": {
+    "invalidCredentials": "Invalid email or password. Please check your credentials and try again.",
+    "sessionExpired": "Your session has expired. Please log in again.",
+    "notVerified": "Your account has not been verified. Please check your email for a verification link.",
+    "alreadyLoggedIn": "You are already logged in.",
+    "loginRequired": "You must be logged in to continue.",
+    "accountLocked": "Your account has been locked due to too many failed attempts. Please contact support.",
+    "accountDisabled": "Your account has been disabled. Please contact support."
+  },
+  "member": {
+    "notFound": "Member not found. Please check the details and try again.",
+    "alreadyExists": "A member with these details already exists.",
+    "insufficientPoints": "You don't have enough points for this reward.",
+    "rewardExpired": "This reward has expired and is no longer available.",
+    "rewardAlreadyRedeemed": "You have already redeemed this reward.",
+    "tierDowngraded": "Your tier has been downgraded. Continue earning points to maintain your status."
+  },
+  "validation": {
+    "required": "This field is required.",
+    "invalidEmail": "Please enter a valid email address.",
+    "invalidPhone": "Please enter a valid phone number.",
+    "invalidDate": "Please enter a valid date.",
+    "minLength": "This field must be at least {{min}} characters.",
+    "maxLength": "This field must not exceed {{max}} characters.",
+    "passwordMismatch": "The passwords do not match.",
+    "weakPassword": "Password must contain at least 8 characters, including uppercase, lowercase, number and special character."
+  }
+}

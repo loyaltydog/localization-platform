@@ -1,0 +1,94 @@
+{
+  "welcome": {
+    "subject": "Welcome to {{merchantName}}!",
+    "greeting": "Hi {{memberName}},",
+    "body": "Thank you for joining {{merchantName}}'s loyalty program! You now have access to exclusive rewards and offers.",
+    "pointsInfo": "You currently have {{points}} points in your account.",
+    "cta": "View Your Rewards",
+    "footer": "Start earning points on every purchase!"
+  },
+  "pointsEarned": {
+    "subject": "You earned {{points}} points at {{merchantName}}!",
+    "greeting": "Hi {{memberName}},",
+    "body": "Great news! You just earned {{points}} points from your purchase.",
+    "transactionDetails": "Transaction Details",
+    "amount": "Amount: {{amount}}",
+    "date": "Date: {{date}}",
+    "newBalance": "Your new balance is {{balance}} points.",
+    "cta": "Check Your Rewards"
+  },
+  "rewardRedeemed": {
+    "subject": "Reward Redeemed: {{rewardName}}",
+    "greeting": "Hi {{memberName}},",
+    "body": "You've successfully redeemed your reward!",
+    "rewardDetails": "Reward Details",
+    "rewardName": "{{rewardName}}",
+    "pointsUsed": "Points used: {{points}}",
+    "remainingBalance": "Remaining balance: {{balance}} points",
+    "instructions": "Show this email at checkout to claim your reward.",
+    "expiryNote": "This reward expires on {{expiryDate}}.",
+    "cta": "View Reward"
+  },
+  "rewardExpiring": {
+    "subject": "Your reward is expiring soon!",
+    "greeting": "Hi {{memberName}},",
+    "body": "Don't miss out! Your reward \"{{rewardName}}\" expires on {{expiryDate}}.",
+    "cta": "Redeem Now",
+    "footer": "Visit {{merchantName}} to use your reward before it expires."
+  },
+  "tierUpgrade": {
+    "subject": "Congratulations! You've reached {{tierName}} status!",
+    "greeting": "Hi {{memberName}},",
+    "body": "You've been upgraded to {{tierName}} status at {{merchantName}}!",
+    "benefits": "Your new benefits include:",
+    "cta": "Explore Your Benefits",
+    "footer": "Thank you for your loyalty!"
+  },
+  "birthdayReward": {
+    "subject": "Happy Birthday from {{merchantName}}!",
+    "greeting": "Happy Birthday, {{memberName}}!",
+    "body": "We hope you have a wonderful day! Here's a special gift just for you.",
+    "rewardInfo": "You've received: {{rewardName}}",
+    "cta": "Claim Your Gift",
+    "expiryNote": "Valid until {{expiryDate}}"
+  },
+  "inactivityReminder": {
+    "subject": "We miss you at {{merchantName}}!",
+    "greeting": "Hi {{memberName}},",
+    "body": "It's been a while since your last visit. We'd love to see you again!",
+    "pointsReminder": "You have {{points}} points waiting to be used.",
+    "cta": "Come Visit Us",
+    "footer": "Your points are valuable – don't let them go to waste!"
+  },
+  "pointsExpiring": {
+    "subject": "{{points}} points expiring soon!",
+    "greeting": "Hi {{memberName}},",
+    "body": "Heads up! {{points}} of your points will expire on {{expiryDate}}.",
+    "currentBalance": "Current balance: {{balance}} points",
+    "cta": "Use Your Points",
+    "footer": "Visit {{merchantName}} before they expire!"
+  },
+  "passwordReset": {
+    "subject": "Reset your password",
+    "greeting": "Hi {{memberName}},",
+    "body": "We received a request to reset your password. Click the button below to create a new password.",
+    "cta": "Reset Password",
+    "expiryNote": "This link expires in {{expiryHours}} hours.",
+    "ignoreNote": "If you didn't request this, you can safely ignore this email."
+  },
+  "emailVerification": {
+    "subject": "Verify your email address",
+    "greeting": "Hi {{memberName}},",
+    "body": "Please verify your email address to complete your registration.",
+    "cta": "Verify Email",
+    "expiryNote": "This link expires in {{expiryHours}} hours."
+  },
+  "footer": {
+    "unsubscribe": "Unsubscribe from these emails",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "contactUs": "Contact Us",
+    "copyright": "© {{year}} {{merchantName}}. All rights reserved.",
+    "poweredBy": "Powered by LoyaltyDog"
+  }
+}
