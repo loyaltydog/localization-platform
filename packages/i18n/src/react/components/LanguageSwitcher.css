@@ -1,0 +1,174 @@
+/**
+ * Language Switcher Component Styles
+ *
+ * Minimal, functional styles for the language switcher.
+ * Can be overridden by the consuming application.
+ */
+
+.ld-lang-switcher {
+  position: relative;
+  display: inline-block;
+}
+
+/* Button Styles */
+.ld-lang-switcher__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  cursor: pointer;
+  transition: all 150ms ease;
+  font-family: inherit;
+}
+
+.ld-lang-switcher__button:hover {
+  background: #f9fafb;
+  border-color: #9ca3af;
+}
+
+.ld-lang-switcher__button:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Flag Display */
+.ld-lang-switcher__flag {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+/* Current Language */
+.ld-lang-switcher__current {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .ld-lang-switcher__current {
+    display: inline;
+  }
+}
+
+/* Chevron Icon */
+.ld-lang-switcher__chevron {
+  transition: transform 200ms ease;
+}
+
+.ld-lang-switcher__chevron--open {
+  transform: rotate(180deg);
+}
+
+/* Dropdown */
+.ld-lang-switcher__dropdown {
+  position: absolute;
+  top: calc(100% + 0.25rem);
+  right: 0;
+  min-width: 12rem;
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+}
+
+/* List */
+.ld-lang-switcher__list {
+  list-style: none;
+  margin: 0;
+  padding: 0.25rem 0;
+}
+
+/* Option Button */
+.ld-lang-switcher__option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.625rem 0.875rem;
+  background: transparent;
+  border: none;
+  font-size: 0.875rem;
+  color: #374151;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+}
+
+.ld-lang-switcher__option:hover {
+  background: #f3f4f6;
+}
+
+.ld-lang-switcher__option:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: -2px;
+}
+
+.ld-lang-switcher__option--selected {
+  background: #eff6ff;
+  color: #1e40af;
+  font-weight: 500;
+}
+
+.ld-lang-switcher__name {
+  flex: 1;
+}
+
+/* Check Icon for Selected Language */
+.ld-lang-switcher__check {
+  color: #3b82f6;
+  flex-shrink: 0;
+}
+
+/* Compact Version */
+.ld-lang-switcher-compact__select {
+  padding: 0.375rem 0.5rem;
+  font-size: 0.875rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  background: #fff;
+  color: #374151;
+  cursor: pointer;
+}
+
+/* Dark Mode Support (via class or system preference) */
+@media (prefers-color-scheme: dark) {
+  .ld-lang-switcher__button,
+  .ld-lang-switcher__dropdown,
+  .ld-lang-switcher-compact__select {
+    background: #1f2937;
+    border-color: #374151;
+    color: #f3f4f6;
+  }
+
+  .ld-lang-switcher__button:hover {
+    background: #374151;
+  }
+
+  .ld-lang-switcher__option:hover {
+    background: #374151;
+  }
+
+  .ld-lang-switcher__option--selected {
+    background: #1e3a8a;
+    color: #dbeafe;
+  }
+}
+
+/* RTL Support */
+[dir="rtl"] .ld-lang-switcher__dropdown {
+  right: auto;
+  left: 0;
+}
+
+[dir="rtl"] .ld-lang-switcher__chevron {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .ld-lang-switcher__chevron--open {
+  transform: scaleX(-1) rotate(180deg);
+}

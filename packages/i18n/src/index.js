@@ -17,12 +17,17 @@ export const LOCALES_PATH = resolve(__dirname, '../locales');
 
 // Supported languages
 export const SUPPORTED_LANGUAGES = [
-  { code: 'en', name: 'English', nativeName: 'English', flag: '🇺🇸' },
+  { code: 'en-US', name: 'English (US)', nativeName: 'English (US)', flag: '🇺🇸' },
+  { code: 'en-GB', name: 'English (UK)', nativeName: 'English (UK)', flag: '🇬🇧' },
   { code: 'es-ES', name: 'Spanish (Spain)', nativeName: 'Español (España)', flag: '🇪🇸' },
+  { code: 'fr', name: 'French', nativeName: 'Français', flag: '🇫🇷' },
+  { code: 'it', name: 'Italian', nativeName: 'Italiano', flag: '🇮🇹' },
+  { code: 'pt-PT', name: 'Portuguese (Portugal)', nativeName: 'Português (Portugal)', flag: '🇵🇹' },
+  { code: 'pt-BR', name: 'Portuguese (Brazil)', nativeName: 'Português (Brasil)', flag: '🇧🇷' },
 ];
 
 // Default/fallback language
-export const DEFAULT_LANGUAGE = 'en';
+export const DEFAULT_LANGUAGE = 'en-US';
 
 // Translation namespaces
 export const NAMESPACES = [
