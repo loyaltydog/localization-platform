@@ -26,6 +26,7 @@ vi.mock('../../hooks.js', () => ({
     textDirection: 'ltr',
     languages: SUPPORTED_LANGUAGES,
     currentLanguage: SUPPORTED_LANGUAGES[0],
+    ready: true, // Add ready property for loading state handling
   }),
 }));
 
@@ -97,6 +98,11 @@ describe('LanguageSwitcher', () => {
       // Open dropdown
       await fireEvent.click(button);
       expect(screen.getByRole('listbox')).toBeInTheDocument();
+
+      // Wait for useEffect to register document listener
+      await waitFor(() => {
+        expect(screen.getByRole('listbox')).toBeInTheDocument();
+      });
 
       // Click outside
       fireEvent.mouseDown(document.body);

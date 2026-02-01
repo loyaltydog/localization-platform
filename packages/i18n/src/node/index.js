@@ -61,7 +61,7 @@
 
 // Export Python module info (for documentation)
 export const pythonModule = {
-  path: './src/node/translation_loader.py',
+  path: './translation_loader.py',
   description: 'Python translation loader for FastAPI backend integration'
 };
 
