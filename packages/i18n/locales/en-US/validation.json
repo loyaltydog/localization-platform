@@ -1,5 +1,5 @@
 {
-  "required": {
+  "fieldRequired": {
     "field": "This field is required",
     "email": "Email is required",
     "password": "Password is required",
