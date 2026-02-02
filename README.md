@@ -24,8 +24,14 @@ This repository contains the shared localization infrastructure used across all 
 │                   @loyaltydog/i18n (Shared Package)              │
 │  ┌──────────────────────────────────────────────────────────┐  │
 │  │  /locales                                                 │  │
-│  │    /en          # Source of truth (English)               │  │
-│  │    /es-ES       # Spanish (Spain)                         │  │
+│  │    /en-US         # Source of truth (English - United States) │  │
+│  │    /en-GB         # English - United Kingdom (Target)         │  │
+│  │    /es-ES         # Spanish - Spain                          │  │
+│  │    /es-MX         # Spanish - Mexico                          │  │
+│  │    /fr            # French                                   │  │
+│  │    /it            # Italian                                  │  │
+│  │    /pt-BR         # Portuguese - Brazil                       │  │
+│  │    /pt-PT         # Portuguese - Portugal                     │  │
 │  │                                                          │  │
 │  │  /src                                                     │  │
 │  │    /react/     # i18next integration                      │  │
@@ -56,11 +62,14 @@ This repository contains the shared localization infrastructure used across all 
 
 | Language | Code | Status | Priority |
 |----------|------|--------|----------|
-| English | `en` | ✅ Complete | Source |
-| Spanish (Spain) | `es-ES` | 🚧 In Progress | High |
-| French | `fr` | 📋 Planned | Medium |
-| German | `de` | 📋 Planned | Medium |
-| Hebrew | `he` | 📋 Planned | Low (RTL) |
+| **English (US)** | `en-US` | ✅ Source | Base Language |
+| **English (GB)** | `en-GB` | 🚧 In Progress | High |
+| **Spanish (Spain)** | `es-ES` | 🚧 In Progress | High |
+| **Spanish (Mexico)** | `es-MX` | 🚧 In Progress | High |
+| **French** | `fr` | 🚧 In Progress | Medium |
+| **Italian** | `it` | 🚧 In Progress | Medium |
+| **Portuguese (Brazil)** | `pt-BR` | 🚧 In Progress | Medium |
+| **Portuguese (Portugal)** | `pt-PT` | 🚧 In Progress | Medium |
 
 ## Project Links
 
@@ -84,14 +93,19 @@ localization-platform/
 │       ├── package.json
 │       ├── .lokalise.json     # Lokalise CLI config
 │       ├── locales/
-│       │   ├── en/            # English (source)
+│       │   ├── en-US/         # English - United States (source)
 │       │   │   ├── common.json
 │       │   │   ├── errors.json
 │       │   │   ├── emails.json
 │       │   │   ├── notifications.json
 │       │   │   └── validation.json
-│       │   └── es-ES/         # Spanish (Spain)
-│       │       └── ...
+│       │   ├── en-GB/         # English - United Kingdom
+│       │   ├── es-ES/         # Spanish - Spain
+│       │   ├── es-MX/         # Spanish - Mexico
+│       │   ├── fr/            # French
+│       │   ├── it/            # Italian
+│       │   ├── pt-BR/         # Portuguese - Brazil
+│       │   └── pt-PT/         # Portuguese - Portugal
 │       └── src/
 │           ├── react/         # i18next integration
 │           ├── node/          # Python/FastAPI loader
@@ -146,10 +160,10 @@ subject = translator.translate('es', 'emails', 'welcome.subject',
 
 ## Translation Workflow
 
-1. **Developer adds new keys** to `locales/en/*.json`
+1. **Developer adds new keys** to `locales/en-US/*.json`
 2. **Upload to Lokalise:** `npm run lokalise:upload`
-3. **Translators work** in Lokalise (AI translation or manual)
-4. **CI/CD auto-syncs** every 6 hours (or manual trigger)
+3. **AI Translation** triggered in Lokalise for all target languages
+4. **CI/CD auto-syncs** every 12 hours (or manual trigger)
 5. **Translations downloaded** to `locales/{lang}/`
 6. **Consumer repos** update `@loyaltydog/i18n` dependency
 
