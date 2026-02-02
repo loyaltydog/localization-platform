@@ -44,8 +44,8 @@ class TranslationLoader:
         _lock: Thread lock for cache synchronization
     """
 
-    # Regex pattern to find {{variable}} placeholders
-    PLACEHOLDER_PATTERN = re.compile(r'\{\{(\w+)\}\}')
+    # Regex pattern to find {{variable}} placeholders (with or without spaces)
+    PLACEHOLDER_PATTERN = re.compile(r'\{\{\s*(\w+)\s*\}\}')
 
     def __init__(
         self,
