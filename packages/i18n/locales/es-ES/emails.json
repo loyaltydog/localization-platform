@@ -72,30 +72,6 @@
     "website": "www.loyalty.dog",
     "footer_copyright": "&copy; {{ current_year }} LoyaltyDog. Todos los derechos reservados."
   },
-  "password_reset": {
-    "subject": "Restablecer su contraseña",
-    "greeting": "Hola {{memberName}},",
-    "body": "Hemos recibido una solicitud para restablecer la contraseña de su cuenta LoyaltyDog. Si hizo esta solicitud, puede establecer una nueva contraseña haciendo clic en el enlace de abajo:",
-    "reset_button": "Restablecer Contraseña",
-    "alternative_access": "Si el botón de arriba no funciona, también puede copiar y pegar esta URL en su navegador:",
-    "no_action_needed": "Si no solicitó el restablecimiento de contraseña, no se preocupe — puede ignorar este correo electrónico de forma segura. Su contraseña actual permanecerá sin cambios.",
-    "help_heading": "<strong>¿Necesita ayuda?</strong>",
-    "help_contact": "Contáctenos en <a href=\"mailto:support@loyalty.dog\">support@loyalty.dog</a> o visite <a href=\"https://loyalty.dog/contact\">loyalty.dog/contact</a>.",
-    "website": "www.loyalty.dog",
-    "footer_copyright": "&copy; 2025 LoyaltyDog. Todos los derechos reservados."
-  },
-  "email_verification": {
-    "subject": "Código de Verificación de Correo Electrónico",
-    "greeting": "Hola {{memberName}},",
-    "instruction": "Para verificar su dirección de correo electrónico, por favor use la contraseña de un solo uso (OTP) de abajo:",
-    "expiration_notice": "Este código es válido por <strong>5 minutos</strong>. Si no solicitó esta verificación, puede ignorar este correo electrónico de forma segura.",
-    "help_heading": "¿Necesita ayuda o tiene preguntas?",
-    "help_contact": "Comuníquese con nuestro equipo de soporte en <a href=\"mailto:support@loyalty.dog\">support@loyalty.dog</a> o visite <a href=\"https://loyalty.dog/contact\">loyalty.dog/contact</a>.",
-    "closing_message": "Gracias por elegir LoyaltyDog — estamos emocionados de tenerle con nosotros!",
-    "signoff": "Saludos cordiales,<br>El Equipo de LoyaltyDog",
-    "website": "www.loyalty.dog",
-    "footer_copyright": "&copy; 2025 LoyaltyDog. Todos los derechos reservados."
-  },
   "voucher_received": {
     "subject": "¡Ha recibido un bono especial!",
     "greeting": "Hola {{ name }},",
@@ -324,5 +300,29 @@
     "contactUs": "Contáctenos",
     "copyright": "© {{year}} {{merchantName}}. Todos los derechos reservados.",
     "poweredBy": "Funciona con LoyaltyDog"
+  },
+  "passwordReset": {
+    "subject": "Restablecer su contraseña",
+    "greeting": "Hola {{memberName}},",
+    "body": "Hemos recibido una solicitud para restablecer la contraseña de su cuenta LoyaltyDog. Si hizo esta solicitud, puede establecer una nueva contraseña haciendo clic en el enlace de abajo:",
+    "reset_button": "Restablecer Contraseña",
+    "alternative_access": "Si el botón de arriba no funciona, también puede copiar y pegar esta URL en su navegador:",
+    "no_action_needed": "Si no solicitó el restablecimiento de contraseña, no se preocupe — puede ignorar este correo electrónico de forma segura. Su contraseña actual permanecerá sin cambios.",
+    "help_heading": "<strong>¿Necesita ayuda?</strong>",
+    "help_contact": "Contáctenos en <a href=\"mailto:support@loyalty.dog\">support@loyalty.dog</a> o visite <a href=\"https://loyalty.dog/contact\">loyalty.dog/contact</a>.",
+    "website": "www.loyalty.dog",
+    "footer_copyright": "&copy; 2025 LoyaltyDog. Todos los derechos reservados."
+  },
+  "emailVerification": {
+    "subject": "Código de Verificación de Correo Electrónico",
+    "greeting": "Hola {{memberName}},",
+    "instruction": "Para verificar su dirección de correo electrónico, por favor use la contraseña de un solo uso (OTP) de abajo:",
+    "expiration_notice": "Este código es válido por <strong>5 minutos</strong>. Si no solicitó esta verificación, puede ignorar este correo electrónico de forma segura.",
+    "help_heading": "¿Necesita ayuda o tiene preguntas?",
+    "help_contact": "Comuníquese con nuestro equipo de soporte en <a href=\"mailto:support@loyalty.dog\">support@loyalty.dog</a> o visite <a href=\"https://loyalty.dog/contact\">loyalty.dog/contact</a>.",
+    "closing_message": "Gracias por elegir LoyaltyDog — estamos emocionados de tenerle con nosotros!",
+    "signoff": "Saludos cordiales,<br>El Equipo de LoyaltyDog",
+    "website": "www.loyalty.dog",
+    "footer_copyright": "&copy; 2025 LoyaltyDog. Todos los derechos reservados."
   }
 }
