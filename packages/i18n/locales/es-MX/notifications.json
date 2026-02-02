@@ -1,1 +1,105 @@
-{}
+{
+  "sms": {
+    "welcome": "",
+    "pointsEarned": "",
+    "rewardReady": "",
+    "rewardExpiring": "",
+    "birthdayReward": "",
+    "tierUpgrade": "",
+    "pointsExpiring": "",
+    "inactivityReminder": "",
+    "promoAlert": "",
+    "verificationCode": ""
+  },
+  "push": {
+    "welcome": {
+      "title": "",
+      "body": ""
+    },
+    "pointsEarned": {
+      "title": "",
+      "body": ""
+    },
+    "rewardReady": {
+      "title": "",
+      "body": ""
+    },
+    "rewardExpiring": {
+      "title": "",
+      "body": ""
+    },
+    "birthdayReward": {
+      "title": "",
+      "body": ""
+    },
+    "tierUpgrade": {
+      "title": "",
+      "body": ""
+    },
+    "pointsExpiring": {
+      "title": "",
+      "body": ""
+    },
+    "nearbyStore": {
+      "title": "",
+      "body": ""
+    },
+    "newReward": {
+      "title": "",
+      "body": ""
+    },
+    "promoAlert": {
+      "title": "",
+      "body": ""
+    },
+    "stampEarned": {
+      "title": "",
+      "body": ""
+    },
+    "stampCardComplete": {
+      "title": "",
+      "body": ""
+    }
+  },
+  "inApp": {
+    "welcome": "",
+    "pointsEarned": "",
+    "rewardRedeemed": "",
+    "tierUpgrade": "",
+    "newRewardUnlocked": "",
+    "goalProgress": ""
+  },
+  "savedSuccessfully": "",
+  "customerDeleted": "",
+  "analyzing": "",
+  "hangTight": "",
+  "welcomeDashboard": "",
+  "rewardingExperience": "",
+  "beginJourney": "",
+  "simplicity": "",
+  "somethingWentWrong": "",
+  "loadingData": "",
+  "pleaseWait": "",
+  "submitOrSave": "",
+  "noCancel": "",
+  "yesConfirmDelete": "",
+  "warning": "",
+  "abort": "",
+  "askAboutLoyalty": "",
+  "retry": "",
+  "welcomeAdvisor": "",
+  "analyzedData": "",
+  "performanceAnalysis": "",
+  "campaignRecommendations": "",
+  "memberInsights": "",
+  "productAnalysis": "",
+  "wouldYouLike": "",
+  "totalTransactions": "",
+  "memberParticipation": "",
+  "totalRevenue": "",
+  "dateRangeTx": "",
+  "oopsError": "",
+  "updatedSuccessfully": "",
+  "messageHasBeenSent": "",
+  "loadingPleaseWait": ""
+}

@@ -1,78 +1,158 @@
 {
   "required": {
-    "field": "This field is required",
-    "email": "Email is required",
-    "password": "Password is required",
-    "name": "Name is required",
-    "phone": "Phone number is required",
-    "amount": "Amount is required",
-    "date": "Date is required",
-    "selection": "Please make a selection"
+    "field": "",
+    "email": "",
+    "password": "",
+    "name": "",
+    "phone": "",
+    "amount": "",
+    "date": "",
+    "selection": "",
+    "enterAvailableOptions": ""
   },
   "format": {
-    "email": "Please enter a valid email address",
-    "phone": "Please enter a valid phone number",
-    "url": "Please enter a valid URL",
-    "date": "Please enter a valid date",
-    "time": "Please enter a valid time",
-    "number": "Please enter a valid number",
-    "integer": "Please enter a whole number",
-    "decimal": "Please enter a valid decimal number",
-    "postalCode": "Please enter a valid postcode",
-    "creditCard": "Please enter a valid card number",
-    "cvv": "Please enter a valid CVV",
-    "expiryDate": "Please enter a valid expiry date (MM/YY)"
+    "email": "",
+    "phone": "",
+    "url": "",
+    "date": "",
+    "time": "",
+    "number": "",
+    "integer": "",
+    "decimal": "",
+    "postalCode": "",
+    "creditCard": "",
+    "cvv": "",
+    "expiryDate": ""
   },
   "length": {
-    "min": "Must be at least {{min}} characters",
-    "max": "Must be no more than {{max}} characters",
-    "exact": "Must be exactly {{length}} characters",
-    "between": "Must be between {{min}} and {{max}} characters"
+    "min": "",
+    "max": "",
+    "exact": "",
+    "between": ""
   },
   "range": {
-    "min": "Must be at least {{min}}",
-    "max": "Must be no more than {{max}}",
-    "between": "Must be between {{min}} and {{max}}"
+    "min": "",
+    "max": "",
+    "between": ""
   },
   "password": {
-    "tooShort": "Password must be at least {{min}} characters",
-    "tooWeak": "Password is too weak",
-    "requiresUppercase": "Password must contain at least one uppercase letter",
-    "requiresLowercase": "Password must contain at least one lowercase letter",
-    "requiresNumber": "Password must contain at least one number",
-    "requiresSpecial": "Password must contain at least one special character",
-    "noMatch": "Passwords do not match",
-    "sameAsCurrent": "New password must be different from current password"
+    "tooShort": "",
+    "tooWeak": "",
+    "requiresUppercase": "",
+    "requiresLowercase": "",
+    "requiresNumber": "",
+    "requiresSpecial": "",
+    "noMatch": "",
+    "sameAsCurrent": ""
   },
   "file": {
-    "required": "Please select a file",
-    "tooLarge": "File size must be less than {{maxSize}}",
-    "invalidType": "Invalid file type. Allowed types: {{allowedTypes}}",
-    "tooMany": "Maximum {{max}} files allowed"
+    "required": "",
+    "tooLarge": "",
+    "invalidType": "",
+    "tooMany": ""
   },
   "date": {
-    "invalid": "Please enter a valid date",
-    "past": "Date must be in the past",
-    "future": "Date must be in the future",
-    "before": "Date must be before {{date}}",
-    "after": "Date must be after {{date}}",
-    "range": "Date must be between {{startDate}} and {{endDate}}"
+    "invalid": "",
+    "past": "",
+    "future": "",
+    "before": "",
+    "after": "",
+    "range": ""
   },
   "custom": {
-    "unique": "This value is already in use",
-    "exists": "This value does not exist",
-    "mismatch": "Values do not match",
-    "invalid": "Invalid value",
-    "unavailable": "This value is not available"
+    "unique": "",
+    "exists": "",
+    "mismatch": "",
+    "invalid": "",
+    "unavailable": ""
   },
   "points": {
-    "insufficient": "Insufficient points. You need {{required}} but have {{available}}.",
-    "minimum": "Minimum {{min}} points required",
-    "maximum": "Maximum {{max}} points allowed"
+    "insufficient": "",
+    "minimum": "",
+    "maximum": ""
   },
   "member": {
-    "emailTaken": "This email is already registered",
-    "phoneTaken": "This phone number is already registered",
-    "invalidReferralCode": "Invalid referral code"
-  }
+    "emailTaken": "",
+    "phoneTaken": "",
+    "invalidReferralCode": ""
+  },
+  "common": {
+    "required": "",
+    "empty": "",
+    "invalid_format": "",
+    "too_long": "",
+    "too_short": "",
+    "invalid_url": "",
+    "invalid_phone": ""
+  },
+  "account": {
+    "email_required": "",
+    "email_invalid": "",
+    "password_required": "",
+    "password_too_short": "",
+    "password_empty": "",
+    "name_required": "",
+    "domain_required": "",
+    "domain_invalid": "",
+    "guid_required": "",
+    "guid_invalid": ""
+  },
+  "program": {
+    "program_id_required": "",
+    "program_not_found": "",
+    "program_inactive": ""
+  },
+  "customer": {
+    "customer_id_required": "",
+    "customer_not_found": "",
+    "customer_email_required": ""
+  },
+  "offer": {
+    "offer_id_required": "",
+    "offer_not_found": "",
+    "offer_not_active": "",
+    "missing_offer_or_reward": ""
+  },
+  "webhook": {
+    "missing_signature": "",
+    "invalid_signature": "",
+    "shopify_webhook_invalid": "",
+    "wordpress_webhook_invalid": "",
+    "body_too_large": ""
+  },
+  "integration": {
+    "shopify_domain_required": "",
+    "shopify_domain_invalid": "",
+    "shopify_hmac_invalid": "",
+    "clover_market_code_required": "",
+    "wordpress_site_url_required": "",
+    "wordpress_site_url_invalid": "",
+    "eposnow_shop_id_required": ""
+  },
+  "security": {
+    "invalid_session": "",
+    "session_expired": "",
+    "invalid_password": "",
+    "rate_limit_exceeded": "",
+    "forbidden": ""
+  },
+  "file_upload": {
+    "file_too_large": "",
+    "invalid_file_type": "",
+    "file_required": ""
+  },
+  "api": {
+    "invalid_version": "",
+    "endpoint_not_found": "",
+    "method_not_allowed": "",
+    "unsupported_media_type": "",
+    "request_timeout": "",
+    "too_many_requests": ""
+  },
+  "email": "",
+  "phone": "",
+  "required_field": "",
+  "min_length": "",
+  "shortPromotional": "",
+  "legalNameBusiness": ""
 }

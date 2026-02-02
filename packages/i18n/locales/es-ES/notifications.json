@@ -1,105 +1,105 @@
 {
   "sms": {
-    "welcome": "¡Bienvenido a {{merchantName}}! Se ha unido a nuestro programa de fidelización. ¡Gane puntos hoy!",
-    "pointsEarned": "{{points}} pts ganados en {{merchantName}}. Saldo: {{balance}}",
-    "rewardReady": "{{memberName}}, ¡su recompensa está lista! {{rewardName}} - muéstrelo en caja",
-    "rewardExpiring": "¡No se olvide! Su {{rewardName}} caduca el {{expiryDate}}. Visite {{merchantName}} pronto.",
-    "birthdayReward": "¡Feliz cumpleaños {{memberName}}! {{merchantName}} tiene un regalo para usted.",
-    "tierUpgrade": "{{memberName}} es ahora {{tierName}} en {{merchantName}}. Disfrute de sus nuevos beneficios.",
-    "pointsExpiring": "{{points}} pts caducan el {{expiryDate}} en {{merchantName}}. Úselos pronto.",
-    "inactivityReminder": "{{memberName}}, le extrañamos. Tiene {{points}} pts en {{merchantName}}. Visítenos.",
-    "promoAlert": "{{merchantName}}: {{promoMessage}}",
-    "verificationCode": "Código {{merchantName}}: {{code}}"
+    "welcome": "",
+    "pointsEarned": "",
+    "rewardReady": "",
+    "rewardExpiring": "",
+    "birthdayReward": "",
+    "tierUpgrade": "",
+    "pointsExpiring": "",
+    "inactivityReminder": "",
+    "promoAlert": "",
+    "verificationCode": ""
   },
   "push": {
     "welcome": {
-      "title": "¡Bienvenido a {{merchantName}}!",
-      "body": "Se ha unido a nuestro programa de fidelización. ¡Gane puntos hoy!"
+      "title": "",
+      "body": ""
     },
     "pointsEarned": {
-      "title": "¡Puntos Ganados!",
-      "body": "{{points}} puntos ganados. Saldo: {{balance}}"
+      "title": "",
+      "body": ""
     },
     "rewardReady": {
-      "title": "¡Recompensa Lista!",
-      "body": "{{rewardName}} está lista para canjear"
+      "title": "",
+      "body": ""
     },
     "rewardExpiring": {
-      "title": "Recompensa Caduca Pronto",
-      "body": "{{rewardName}} caduca el {{expiryDate}}"
+      "title": "",
+      "body": ""
     },
     "birthdayReward": {
-      "title": "¡Feliz Cumpleaños!",
-      "body": "{{merchantName}} tiene un regalo especial para usted"
+      "title": "",
+      "body": ""
     },
     "tierUpgrade": {
-      "title": "¡Subida de Nivel!",
-      "body": "Ahora es {{tierName}}. Disfrute de nuevos beneficios"
+      "title": "",
+      "body": ""
     },
     "pointsExpiring": {
-      "title": "Puntos Caducando",
-      "body": "{{points}} puntos caducan el {{expiryDate}}"
+      "title": "",
+      "body": ""
     },
     "nearbyStore": {
-      "title": "¡Está cerca de {{merchantName}}!",
-      "body": "Tiene {{points}} puntos. Visítenos."
+      "title": "",
+      "body": ""
     },
     "newReward": {
-      "title": "¡Nueva Recompensa Disponible!",
-      "body": "Consulte {{rewardName}} - {{pointsCost}} puntos"
+      "title": "",
+      "body": ""
     },
     "promoAlert": {
-      "title": "¡Oferta Especial!",
-      "body": "{{promoMessage}}"
+      "title": "",
+      "body": ""
     },
     "stampEarned": {
-      "title": "¡Sello Ganado!",
-      "body": "{{stampsCollected}}/{{stampsRequired}} - {{stampsRemaining}} más"
+      "title": "",
+      "body": ""
     },
     "stampCardComplete": {
-      "title": "¡Tarjeta Completa!",
-      "body": "Canjee su {{rewardName}} gratis"
+      "title": "",
+      "body": ""
     }
   },
   "inApp": {
-    "welcome": "¡Bienvenido! Gane puntos en cada compra.",
-    "pointsEarned": "+{{points}} puntos",
-    "rewardRedeemed": "{{rewardName}} canjeada",
-    "tierUpgrade": "Ha alcanzado el estatus {{tierName}}.",
-    "newRewardUnlocked": "Nueva recompensa: {{rewardName}}",
-    "goalProgress": "{{progress}}% para su próxima recompensa"
+    "welcome": "",
+    "pointsEarned": "",
+    "rewardRedeemed": "",
+    "tierUpgrade": "",
+    "newRewardUnlocked": "",
+    "goalProgress": ""
   },
-  "savedSuccessfully": "Saved successfully",
-  "customerDeleted": "Saved successfully",
-  "analyzing": "Analyzing...",
-  "hangTight": "Hang tight! We're getting everything ready for you...",
-  "welcomeDashboard": "Welcome to the Loyalty Dashboard!",
-  "rewardingExperience": "Embark on a rewarding experience with our Loyalty Dashboard!",
-  "beginJourney": "Begin your journey by effortlessly adding a Pass Type ID and kick-start your personalized loyalty program.",
-  "simplicity": "Discover the simplicity of getting started and enjoy exclusive benefits tailored just for you.",
-  "somethingWentWrong": "Something went wrong! We are already working to solve the problem.",
-  "loadingData": "Loading data...",
-  "pleaseWait": "Please wait...",
-  "submitOrSave": "Submit",
-  "noCancel": "No, cancel",
-  "yesConfirmDelete": "Yes, confirm delete",
-  "warning": "Warning",
-  "abort": "Abort",
-  "askAboutLoyalty": "Ask about your loyalty program...",
-  "retry": "Retry",
-  "welcomeAdvisor": "Welcome to your Loyalty Dog AI Business Advisor!",
-  "analyzedData": "I've analyzed your transaction data and I'm ready to help you optimize your loyalty program.",
-  "performanceAnalysis": "Performance Analysis - How your loyalty program is performing",
-  "campaignRecommendations": "Campaign Recommendations - Birthday sales, punch cards, holiday promotions",
-  "memberInsights": "Member Insights - Engagement patterns and retention strategies",
-  "productAnalysis": "Product Analysis - Which products drive loyalty sign-ups",
-  "wouldYouLike": "What would you like to know about your loyalty program?",
-  "totalTransactions": "Total Transactions",
-  "memberParticipation": "Member Participation",
-  "totalRevenue": "Total Revenue",
-  "dateRangeTx": "{count} tx",
-  "oopsError": "Ooops!",
-  "updatedSuccessfully": "Updated successfully",
-  "messageHasBeenSent": "Messsage has been sent!",
-  "loadingPleaseWait": "Loading, please wait..."
+  "savedSuccessfully": "",
+  "customerDeleted": "",
+  "analyzing": "",
+  "hangTight": "",
+  "welcomeDashboard": "",
+  "rewardingExperience": "",
+  "beginJourney": "",
+  "simplicity": "",
+  "somethingWentWrong": "",
+  "loadingData": "",
+  "pleaseWait": "",
+  "submitOrSave": "",
+  "noCancel": "",
+  "yesConfirmDelete": "",
+  "warning": "",
+  "abort": "",
+  "askAboutLoyalty": "",
+  "retry": "",
+  "welcomeAdvisor": "",
+  "analyzedData": "",
+  "performanceAnalysis": "",
+  "campaignRecommendations": "",
+  "memberInsights": "",
+  "productAnalysis": "",
+  "wouldYouLike": "",
+  "totalTransactions": "",
+  "memberParticipation": "",
+  "totalRevenue": "",
+  "dateRangeTx": "",
+  "oopsError": "",
+  "updatedSuccessfully": "",
+  "messageHasBeenSent": "",
+  "loadingPleaseWait": ""
 }
