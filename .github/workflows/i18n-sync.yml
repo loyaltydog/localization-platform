@@ -52,11 +52,11 @@ jobs:
             --project-id "$LOKALISE_PROJECT_ID" \
             file download \
             --format json \
-            --original-filenames=true \
-            --directory-prefix='' \
+            --original-filenames=false \
+            --bundle-structure=%LANG_ISO% \
             --export-empty-as=skip \
             --placeholder-format=icu \
-            --dest locales
+            --unzip-to locales
           echo "downloaded=true" >> $GITHUB_OUTPUT
 
       - name: Check for changes
