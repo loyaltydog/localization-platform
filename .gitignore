@@ -45,5 +45,10 @@ coverage/
 .next/
 out/
 
+# Claude Code metadata
+CLAUDE.md
+**/CLAUDE.md
+packages/
+
 _bmad*
 _bmad*
