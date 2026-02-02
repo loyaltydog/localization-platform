@@ -52,8 +52,7 @@ jobs:
             --project-id "$LOKALISE_PROJECT_ID" \
             file download \
             --format json \
-            --original-filenames=false \
-            --bundle-structure=%LANG_ISO% \
+            --original-filenames=true \
             --export-empty-as=skip \
             --placeholder-format=icu \
             --plural-format=i18next \
