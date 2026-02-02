@@ -59,13 +59,14 @@ jobs:
           fi
 
           # Upload each namespace file
-          # Note: --lang-iso omitted to let Lokalise auto-detect from directory structure
-          echo "Uploading common.json..."
+          # Using 'en' as lang-iso - Lokalise may use this internally for en-US
+          echo "Testing with 'en' language code..."
           lokalise2 \
             --token "$LOKALISE_API_TOKEN" \
             --project-id "$LOKALISE_PROJECT_ID" \
             file upload \
             --file locales/en-US/common.json \
+            --lang-iso en \
             --distinguish-by-file \
             $CLEANUP_FLAG
 
@@ -75,6 +76,7 @@ jobs:
             --project-id "$LOKALISE_PROJECT_ID" \
             file upload \
             --file locales/en-US/errors.json \
+            --lang-iso en \
             --distinguish-by-file \
             $CLEANUP_FLAG
 
@@ -84,6 +86,7 @@ jobs:
             --project-id "$LOKALISE_PROJECT_ID" \
             file upload \
             --file locales/en-US/emails.json \
+            --lang-iso en \
             --distinguish-by-file \
             $CLEANUP_FLAG
 
@@ -93,6 +96,7 @@ jobs:
             --project-id "$LOKALISE_PROJECT_ID" \
             file upload \
             --file locales/en-US/notifications.json \
+            --lang-iso en \
             --distinguish-by-file \
             $CLEANUP_FLAG
 
@@ -102,6 +106,7 @@ jobs:
             --project-id "$LOKALISE_PROJECT_ID" \
             file upload \
             --file locales/en-US/validation.json \
+            --lang-iso en \
             --distinguish-by-file \
             $CLEANUP_FLAG
 
