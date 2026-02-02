@@ -47,7 +47,16 @@ jobs:
         run: |
           set -e
           cd packages/i18n
-          npm run lokalise:download
+          lokalise2 \
+            --token "$LOKALISE_API_TOKEN" \
+            --project-id "$LOKALISE_PROJECT_ID" \
+            file download \
+            --format json \
+            --original-filenames=true \
+            --export-empty-as=skip \
+            --placeholder-format=icu \
+            --plural-format=i18next \
+            --unzip-to .
           echo "downloaded=true" >> $GITHUB_OUTPUT
 
       - name: Check for changes
