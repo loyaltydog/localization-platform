@@ -7,7 +7,8 @@
     "phone": "Phone number is required",
     "amount": "Amount is required",
     "date": "Date is required",
-    "selection": "Please make a selection"
+    "selection": "Please make a selection",
+    "enterAvailableOptions": "Enter available options as comma separated values"
   },
   "format": {
     "email": "Please enter a valid email address",
@@ -74,5 +75,84 @@
     "emailTaken": "This email is already registered",
     "phoneTaken": "This phone number is already registered",
     "invalidReferralCode": "Invalid referral code"
-  }
+  },
+  "common": {
+    "required": "This field is required",
+    "empty": "This field cannot be empty",
+    "invalid_format": "Invalid format",
+    "too_long": "Value exceeds maximum length",
+    "too_short": "Value is too short",
+    "invalid_url": "Invalid URL format",
+    "invalid_phone": "Invalid phone number format"
+  },
+  "account": {
+    "email_required": "Email address is required",
+    "email_invalid": "Invalid email address format",
+    "password_required": "Password is required",
+    "password_too_short": "Password must be at least 8 characters",
+    "password_empty": "Password cannot be empty",
+    "name_required": "Business name is required",
+    "domain_required": "Domain is required",
+    "domain_invalid": "Invalid domain format",
+    "guid_required": "GUID is required",
+    "guid_invalid": "Invalid GUID format"
+  },
+  "program": {
+    "program_id_required": "Program ID is required",
+    "program_not_found": "Program not found",
+    "program_inactive": "Program is not active"
+  },
+  "customer": {
+    "customer_id_required": "Customer ID is required",
+    "customer_not_found": "Customer not found",
+    "customer_email_required": "Customer email is required"
+  },
+  "offer": {
+    "offer_id_required": "Offer ID is required",
+    "offer_not_found": "Offer not found",
+    "offer_not_active": "Offer is not active",
+    "missing_offer_or_reward": "Missing required offer ID or reward ID"
+  },
+  "webhook": {
+    "missing_signature": "Missing x-loyaltydog-signature header",
+    "invalid_signature": "Invalid webhook signature",
+    "shopify_webhook_invalid": "Invalid Shopify webhook payload",
+    "wordpress_webhook_invalid": "Invalid WordPress webhook payload",
+    "body_too_large": "Request body exceeds maximum size"
+  },
+  "integration": {
+    "shopify_domain_required": "Shopify domain is required",
+    "shopify_domain_invalid": "Invalid Shopify domain format",
+    "shopify_hmac_invalid": "Shopify HMAC validation failed",
+    "clover_market_code_required": "Market code is required for Clover",
+    "wordpress_site_url_required": "WordPress site URL is required",
+    "wordpress_site_url_invalid": "Invalid WordPress site URL",
+    "eposnow_shop_id_required": "EPOS Now shop ID is required"
+  },
+  "security": {
+    "invalid_session": "Invalid session",
+    "session_expired": "Session expired",
+    "invalid_password": "Invalid password",
+    "rate_limit_exceeded": "Rate limit exceeded",
+    "forbidden": "Access forbidden"
+  },
+  "file_upload": {
+    "file_too_large": "File size exceeds maximum allowed size",
+    "invalid_file_type": "Invalid file type",
+    "file_required": "File is required"
+  },
+  "api": {
+    "invalid_version": "Invalid API version",
+    "endpoint_not_found": "API endpoint not found",
+    "method_not_allowed": "Method not allowed",
+    "unsupported_media_type": "Unsupported media type",
+    "request_timeout": "Request timeout",
+    "too_many_requests": "Too many requests"
+  },
+  "email": "Please enter a valid email address",
+  "phone": "Please enter a valid phone number",
+  "required_field": "{{field}} is required",
+  "min_length": "{{field}} must be at least {{min}} characters",
+  "shortPromotional": "Short promotional teaser for your program",
+  "legalNameBusiness": "Legal name of your business"
 }
