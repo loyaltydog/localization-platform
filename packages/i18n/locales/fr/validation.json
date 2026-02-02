@@ -1,78 +1,158 @@
 {
   "required": {
-    "field": "Ce champ est requis",
-    "email": "L'e-mail est requis",
-    "password": "Le mot de passe est requis",
-    "name": "Le nom est requis",
-    "phone": "Le numéro de téléphone est requis",
-    "amount": "Le montant est requis",
-    "date": "La date est requise",
-    "selection": "Veuillez faire une sélection"
+    "field": "",
+    "email": "",
+    "password": "",
+    "name": "",
+    "phone": "",
+    "amount": "",
+    "date": "",
+    "selection": "",
+    "enterAvailableOptions": ""
   },
   "format": {
-    "email": "Veuillez entrer une adresse e-mail valide",
-    "phone": "Veuillez entrer un numéro de téléphone valide",
-    "url": "Veuillez entrer une URL valide",
-    "date": "Veuillez entrer une date valide",
-    "time": "Veuillez entrer une heure valide",
-    "number": "Veuillez entrer un nombre valide",
-    "integer": "Veuillez entrer un nombre entier",
-    "decimal": "Veuillez entrer un nombre décimal valide",
-    "postalCode": "Veuillez entrer un code postal valide",
-    "creditCard": "Veuillez entrer un numéro de carte valide",
-    "cvv": "Veuillez entrer un CVV valide",
-    "expiryDate": "Veuillez entrer une date d'expiration valide (MM/AA)"
+    "email": "",
+    "phone": "",
+    "url": "",
+    "date": "",
+    "time": "",
+    "number": "",
+    "integer": "",
+    "decimal": "",
+    "postalCode": "",
+    "creditCard": "",
+    "cvv": "",
+    "expiryDate": ""
   },
   "length": {
-    "min": "Doit contenir au moins {{min}} caractères",
-    "max": "Ne doit pas dépasser {{max}} caractères",
-    "exact": "Doit contenir exactement {{length}} caractères",
-    "between": "Doit contenir entre {{min}} et {{max}} caractères"
+    "min": "",
+    "max": "",
+    "exact": "",
+    "between": ""
   },
   "range": {
-    "min": "Doit être au moins {{min}}",
-    "max": "Ne doit pas dépasser {{max}}",
-    "between": "Doit être entre {{min}} et {{max}}"
+    "min": "",
+    "max": "",
+    "between": ""
   },
   "password": {
-    "tooShort": "Le mot de passe doit contenir au moins {{min}} caractères",
-    "tooWeak": "Le mot de passe est trop faible",
-    "requiresUppercase": "Le mot de passe doit contenir au moins une majuscule",
-    "requiresLowercase": "Le mot de passe doit contenir au moins une minuscule",
-    "requiresNumber": "Le mot de passe doit contenir au moins un chiffre",
-    "requiresSpecial": "Le mot de passe doit contenir au moins un caractère spécial",
-    "noMatch": "Les mots de passe ne correspondent pas",
-    "sameAsCurrent": "Le nouveau mot de passe doit être différent du mot de passe actuel"
+    "tooShort": "",
+    "tooWeak": "",
+    "requiresUppercase": "",
+    "requiresLowercase": "",
+    "requiresNumber": "",
+    "requiresSpecial": "",
+    "noMatch": "",
+    "sameAsCurrent": ""
   },
   "file": {
-    "required": "Veuillez sélectionner un fichier",
-    "tooLarge": "La taille du fichier doit être inférieure à {{maxSize}}",
-    "invalidType": "Type de fichier invalide. Types autorisés : {{allowedTypes}}",
-    "tooMany": "Maximum {{max}} fichiers autorisés"
+    "required": "",
+    "tooLarge": "",
+    "invalidType": "",
+    "tooMany": ""
   },
   "date": {
-    "invalid": "Veuillez entrer une date valide",
-    "past": "La date doit être dans le passé",
-    "future": "La date doit être dans le futur",
-    "before": "La date doit être avant le {{date}}",
-    "after": "La date doit être après le {{date}}",
-    "range": "La date doit être entre le {{startDate}} et le {{endDate}}"
+    "invalid": "",
+    "past": "",
+    "future": "",
+    "before": "",
+    "after": "",
+    "range": ""
   },
   "custom": {
-    "unique": "Cette valeur est déjà utilisée",
-    "exists": "Cette valeur n'existe pas",
-    "mismatch": "Les valeurs ne correspondent pas",
-    "invalid": "Valeur invalide",
-    "unavailable": "Cette valeur n'est pas disponible"
+    "unique": "",
+    "exists": "",
+    "mismatch": "",
+    "invalid": "",
+    "unavailable": ""
   },
   "points": {
-    "insufficient": "Points insuffisants. Vous avez besoin de {{required}} mais vous avez {{available}}.",
-    "minimum": "Minimum de {{min}} points requis",
-    "maximum": "Maximum de {{max}} points autorisés"
+    "insufficient": "",
+    "minimum": "",
+    "maximum": ""
   },
   "member": {
-    "emailTaken": "Cet e-mail est déjà enregistré",
-    "phoneTaken": "Ce numéro de téléphone est déjà enregistré",
-    "invalidReferralCode": "Code de parrainage invalide"
-  }
+    "emailTaken": "",
+    "phoneTaken": "",
+    "invalidReferralCode": ""
+  },
+  "common": {
+    "required": "",
+    "empty": "",
+    "invalid_format": "",
+    "too_long": "",
+    "too_short": "",
+    "invalid_url": "",
+    "invalid_phone": ""
+  },
+  "account": {
+    "email_required": "",
+    "email_invalid": "",
+    "password_required": "",
+    "password_too_short": "",
+    "password_empty": "",
+    "name_required": "",
+    "domain_required": "",
+    "domain_invalid": "",
+    "guid_required": "",
+    "guid_invalid": ""
+  },
+  "program": {
+    "program_id_required": "",
+    "program_not_found": "",
+    "program_inactive": ""
+  },
+  "customer": {
+    "customer_id_required": "",
+    "customer_not_found": "",
+    "customer_email_required": ""
+  },
+  "offer": {
+    "offer_id_required": "",
+    "offer_not_found": "",
+    "offer_not_active": "",
+    "missing_offer_or_reward": ""
+  },
+  "webhook": {
+    "missing_signature": "",
+    "invalid_signature": "",
+    "shopify_webhook_invalid": "",
+    "wordpress_webhook_invalid": "",
+    "body_too_large": ""
+  },
+  "integration": {
+    "shopify_domain_required": "",
+    "shopify_domain_invalid": "",
+    "shopify_hmac_invalid": "",
+    "clover_market_code_required": "",
+    "wordpress_site_url_required": "",
+    "wordpress_site_url_invalid": "",
+    "eposnow_shop_id_required": ""
+  },
+  "security": {
+    "invalid_session": "",
+    "session_expired": "",
+    "invalid_password": "",
+    "rate_limit_exceeded": "",
+    "forbidden": ""
+  },
+  "file_upload": {
+    "file_too_large": "",
+    "invalid_file_type": "",
+    "file_required": ""
+  },
+  "api": {
+    "invalid_version": "",
+    "endpoint_not_found": "",
+    "method_not_allowed": "",
+    "unsupported_media_type": "",
+    "request_timeout": "",
+    "too_many_requests": ""
+  },
+  "email": "",
+  "phone": "",
+  "required_field": "",
+  "min_length": "",
+  "shortPromotional": "",
+  "legalNameBusiness": ""
 }

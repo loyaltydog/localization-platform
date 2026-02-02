@@ -1,158 +1,158 @@
 {
   "required": {
-    "field": "Este campo es obligatorio",
-    "email": "El correo electrónico es obligatorio",
-    "password": "La contraseña es obligatoria",
-    "name": "El nombre es obligatorio",
-    "phone": "El número de teléfono es obligatorio",
-    "amount": "El importe es obligatorio",
-    "date": "La fecha es obligatoria",
-    "selection": "Por favor, haga una selección",
-    "enterAvailableOptions": "Enter available options as comma separated values"
+    "field": "",
+    "email": "",
+    "password": "",
+    "name": "",
+    "phone": "",
+    "amount": "",
+    "date": "",
+    "selection": "",
+    "enterAvailableOptions": ""
   },
   "format": {
-    "email": "Por favor, introduzca una dirección de correo electrónico válida",
-    "phone": "Por favor, introduzca un número de teléfono válido",
-    "url": "Por favor, introduzca una URL válida",
-    "date": "Por favor, introduzca una fecha válida",
-    "time": "Por favor, introduzca una hora válida",
-    "number": "Por favor, introduzca un número válido",
-    "integer": "Por favor, introduzca un número entero",
-    "decimal": "Por favor, introduzca un número decimal válido",
-    "postalCode": "Por favor, introduzca un código postal válido",
-    "creditCard": "Por favor, introduzca un número de tarjeta válido",
-    "cvv": "Por favor, introduzca un CVV válido",
-    "expiryDate": "Por favor, introduzca una fecha de caducidad válida (MM/AA)"
+    "email": "",
+    "phone": "",
+    "url": "",
+    "date": "",
+    "time": "",
+    "number": "",
+    "integer": "",
+    "decimal": "",
+    "postalCode": "",
+    "creditCard": "",
+    "cvv": "",
+    "expiryDate": ""
   },
   "length": {
-    "min": "Debe tener al menos {{min}} caracteres",
-    "max": "No debe tener más de {{max}} caracteres",
-    "exact": "Debe tener exactamente {{length}} caracteres",
-    "between": "Debe tener entre {{min}} y {{max}} caracteres"
+    "min": "",
+    "max": "",
+    "exact": "",
+    "between": ""
   },
   "range": {
-    "min": "Debe ser al menos {{min}}",
-    "max": "No debe ser más de {{max}}",
-    "between": "Debe estar entre {{min}} y {{max}}"
+    "min": "",
+    "max": "",
+    "between": ""
   },
   "password": {
-    "tooShort": "La contraseña debe tener al menos {{min}} caracteres",
-    "tooWeak": "La contraseña es demasiado débil",
-    "requiresUppercase": "La contraseña debe contener al menos una letra mayúscula",
-    "requiresLowercase": "La contraseña debe contener al menos una letra minúscula",
-    "requiresNumber": "La contraseña debe contener al menos un número",
-    "requiresSpecial": "La contraseña debe contener al menos un carácter especial",
-    "noMatch": "Las contraseñas no coinciden",
-    "sameAsCurrent": "La nueva contraseña debe ser diferente de la contraseña actual"
+    "tooShort": "",
+    "tooWeak": "",
+    "requiresUppercase": "",
+    "requiresLowercase": "",
+    "requiresNumber": "",
+    "requiresSpecial": "",
+    "noMatch": "",
+    "sameAsCurrent": ""
   },
   "file": {
-    "required": "Por favor, seleccione un archivo",
-    "tooLarge": "El tamaño del archivo debe ser menor de {{maxSize}}",
-    "invalidType": "Tipo de archivo inválido. Tipos permitidos: {{allowedTypes}}",
-    "tooMany": "Máximo {{max}} archivos permitidos"
+    "required": "",
+    "tooLarge": "",
+    "invalidType": "",
+    "tooMany": ""
   },
   "date": {
-    "invalid": "Por favor, introduzca una fecha válida",
-    "past": "La fecha debe estar en el pasado",
-    "future": "La fecha debe estar en el futuro",
-    "before": "La fecha debe ser antes de {{date}}",
-    "after": "La fecha debe ser después de {{date}}",
-    "range": "La fecha debe estar entre {{startDate}} y {{endDate}}"
+    "invalid": "",
+    "past": "",
+    "future": "",
+    "before": "",
+    "after": "",
+    "range": ""
   },
   "custom": {
-    "unique": "Este valor ya está en uso",
-    "exists": "Este valor no existe",
-    "mismatch": "Los valores no coinciden",
-    "invalid": "Valor inválido",
-    "unavailable": "Este valor no está disponible"
+    "unique": "",
+    "exists": "",
+    "mismatch": "",
+    "invalid": "",
+    "unavailable": ""
   },
   "points": {
-    "insufficient": "Puntos insuficientes. Necesita {{required}} pero tiene {{available}}.",
-    "minimum": "Mínimo {{min}} puntos requeridos",
-    "maximum": "Máximo {{max}} puntos permitidos"
+    "insufficient": "",
+    "minimum": "",
+    "maximum": ""
   },
   "member": {
-    "emailTaken": "Este correo electrónico ya está registrado",
-    "phoneTaken": "Este número de teléfono ya está registrado",
-    "invalidReferralCode": "Código de referencia inválido"
+    "emailTaken": "",
+    "phoneTaken": "",
+    "invalidReferralCode": ""
   },
   "common": {
-    "required": "This field is required",
-    "empty": "This field cannot be empty",
-    "invalid_format": "Invalid format",
-    "too_long": "Value exceeds maximum length",
-    "too_short": "Value is too short",
-    "invalid_url": "Invalid URL format",
-    "invalid_phone": "Invalid phone number format"
+    "required": "",
+    "empty": "",
+    "invalid_format": "",
+    "too_long": "",
+    "too_short": "",
+    "invalid_url": "",
+    "invalid_phone": ""
   },
   "account": {
-    "email_required": "Email address is required",
-    "email_invalid": "Invalid email address format",
-    "password_required": "Password is required",
-    "password_too_short": "Password must be at least 8 characters",
-    "password_empty": "Password cannot be empty",
-    "name_required": "Business name is required",
-    "domain_required": "Domain is required",
-    "domain_invalid": "Invalid domain format",
-    "guid_required": "GUID is required",
-    "guid_invalid": "Invalid GUID format"
+    "email_required": "",
+    "email_invalid": "",
+    "password_required": "",
+    "password_too_short": "",
+    "password_empty": "",
+    "name_required": "",
+    "domain_required": "",
+    "domain_invalid": "",
+    "guid_required": "",
+    "guid_invalid": ""
   },
   "program": {
-    "program_id_required": "Program ID is required",
-    "program_not_found": "Program not found",
-    "program_inactive": "Program is not active"
+    "program_id_required": "",
+    "program_not_found": "",
+    "program_inactive": ""
   },
   "customer": {
-    "customer_id_required": "Customer ID is required",
-    "customer_not_found": "Customer not found",
-    "customer_email_required": "Customer email is required"
+    "customer_id_required": "",
+    "customer_not_found": "",
+    "customer_email_required": ""
   },
   "offer": {
-    "offer_id_required": "Offer ID is required",
-    "offer_not_found": "Offer not found",
-    "offer_not_active": "Offer is not active",
-    "missing_offer_or_reward": "Missing required offer ID or reward ID"
+    "offer_id_required": "",
+    "offer_not_found": "",
+    "offer_not_active": "",
+    "missing_offer_or_reward": ""
   },
   "webhook": {
-    "missing_signature": "Missing x-loyaltydog-signature header",
-    "invalid_signature": "Invalid webhook signature",
-    "shopify_webhook_invalid": "Invalid Shopify webhook payload",
-    "wordpress_webhook_invalid": "Invalid WordPress webhook payload",
-    "body_too_large": "Request body exceeds maximum size"
+    "missing_signature": "",
+    "invalid_signature": "",
+    "shopify_webhook_invalid": "",
+    "wordpress_webhook_invalid": "",
+    "body_too_large": ""
   },
   "integration": {
-    "shopify_domain_required": "Shopify domain is required",
-    "shopify_domain_invalid": "Invalid Shopify domain format",
-    "shopify_hmac_invalid": "Shopify HMAC validation failed",
-    "clover_market_code_required": "Market code is required for Clover",
-    "wordpress_site_url_required": "WordPress site URL is required",
-    "wordpress_site_url_invalid": "Invalid WordPress site URL",
-    "eposnow_shop_id_required": "EPOS Now shop ID is required"
+    "shopify_domain_required": "",
+    "shopify_domain_invalid": "",
+    "shopify_hmac_invalid": "",
+    "clover_market_code_required": "",
+    "wordpress_site_url_required": "",
+    "wordpress_site_url_invalid": "",
+    "eposnow_shop_id_required": ""
   },
   "security": {
-    "invalid_session": "Invalid session",
-    "session_expired": "Session expired",
-    "invalid_password": "Invalid password",
-    "rate_limit_exceeded": "Rate limit exceeded",
-    "forbidden": "Access forbidden"
+    "invalid_session": "",
+    "session_expired": "",
+    "invalid_password": "",
+    "rate_limit_exceeded": "",
+    "forbidden": ""
   },
   "file_upload": {
-    "file_too_large": "File size exceeds maximum allowed size",
-    "invalid_file_type": "Invalid file type",
-    "file_required": "File is required"
+    "file_too_large": "",
+    "invalid_file_type": "",
+    "file_required": ""
   },
   "api": {
-    "invalid_version": "Invalid API version",
-    "endpoint_not_found": "API endpoint not found",
-    "method_not_allowed": "Method not allowed",
-    "unsupported_media_type": "Unsupported media type",
-    "request_timeout": "Request timeout",
-    "too_many_requests": "Too many requests"
+    "invalid_version": "",
+    "endpoint_not_found": "",
+    "method_not_allowed": "",
+    "unsupported_media_type": "",
+    "request_timeout": "",
+    "too_many_requests": ""
   },
-  "email": "Please enter a valid email address",
-  "phone": "Please enter a valid phone number",
-  "required_field": "{{field}} is required",
-  "min_length": "{{field}} must be at least {{min}} characters",
-  "shortPromotional": "Short promotional teaser for your program",
-  "legalNameBusiness": "Legal name of your business"
+  "email": "",
+  "phone": "",
+  "required_field": "",
+  "min_length": "",
+  "shortPromotional": "",
+  "legalNameBusiness": ""
 }

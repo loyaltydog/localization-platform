@@ -1,72 +1,105 @@
 {
   "sms": {
-    "welcome": "Bem-vindo ao {{merchantName}}! Juntou-se ao nosso programa de fidelidade. Comece a ganhar pontos já!",
-    "pointsEarned": "Ganhou {{points}} pts no {{merchantName}}! Saldo: {{balance}} pts",
-    "rewardReady": "{{memberName}}, a sua recompensa está pronta! {{rewardName}} - apresente no balcão",
-    "rewardExpiring": "Não se esqueça! O seu {{rewardName}} expira em {{expiryDate}}. Visite o {{merchantName}} brevemente!",
-    "birthdayReward": "Feliz aniversário {{memberName}}! O {{merchantName}} tem um presente para si. Verifique as suas recompensas!",
-    "tierUpgrade": "Parabéns {{memberName}}! Agora é {{tierName}} no {{merchantName}}. Desfrute dos seus novos benefícios!",
-    "pointsExpiring": "{{points}} pts a expirar em {{expiryDate}} no {{merchantName}}. Utilize-os antes de desaparecerem!",
-    "inactivityReminder": "Sentimos a sua falta {{memberName}}! Tem {{points}} pts no {{merchantName}}. Venha visitar-nos!",
-    "promoAlert": "{{merchantName}}: {{promoMessage}}",
-    "verificationCode": "O seu código de verificação {{merchantName}} é: {{code}}"
+    "welcome": "",
+    "pointsEarned": "",
+    "rewardReady": "",
+    "rewardExpiring": "",
+    "birthdayReward": "",
+    "tierUpgrade": "",
+    "pointsExpiring": "",
+    "inactivityReminder": "",
+    "promoAlert": "",
+    "verificationCode": ""
   },
   "push": {
     "welcome": {
-      "title": "Bem-vindo ao {{merchantName}}!",
-      "body": "Juntou-se ao nosso programa de fidelidade. Comece a ganhar pontos já!"
+      "title": "",
+      "body": ""
     },
     "pointsEarned": {
-      "title": "Pontos ganhos!",
-      "body": "Ganhou {{points}} pontos. Saldo: {{balance}}"
+      "title": "",
+      "body": ""
     },
     "rewardReady": {
-      "title": "Recompensa pronta!",
-      "body": "{{rewardName}} está pronta para resgatar"
+      "title": "",
+      "body": ""
     },
     "rewardExpiring": {
-      "title": "Recompensa a expirar",
-      "body": "{{rewardName}} expira em {{expiryDate}}"
+      "title": "",
+      "body": ""
     },
     "birthdayReward": {
-      "title": "Feliz aniversário!",
-      "body": "{{merchantName}} tem um presente especial para si"
+      "title": "",
+      "body": ""
     },
     "tierUpgrade": {
-      "title": "Subiu de nível!",
-      "body": "Agora é {{tierName}}! Desfrute dos novos benefícios"
+      "title": "",
+      "body": ""
     },
     "pointsExpiring": {
-      "title": "Pontos a expirar",
-      "body": "{{points}} pontos expiram em {{expiryDate}}"
+      "title": "",
+      "body": ""
     },
     "nearbyStore": {
-      "title": "Está perto do {{merchantName}}!",
-      "body": "Tem {{points}} pontos. Venha visitar-nos!"
+      "title": "",
+      "body": ""
     },
     "newReward": {
-      "title": "Nova recompensa disponível!",
-      "body": "Descubra {{rewardName}} - {{pointsCost}} pontos"
+      "title": "",
+      "body": ""
     },
     "promoAlert": {
-      "title": "Oferta especial!",
-      "body": "{{promoMessage}}"
+      "title": "",
+      "body": ""
     },
     "stampEarned": {
-      "title": "Carimbo obtido!",
-      "body": "{{stampsCollected}}/{{stampsRequired}} - mais {{stampsRemaining}} a obter!"
+      "title": "",
+      "body": ""
     },
     "stampCardComplete": {
-      "title": "Cartão de carimbos completo!",
-      "body": "Parabéns! Reclame o seu {{rewardName}} grátis"
+      "title": "",
+      "body": ""
     }
   },
   "inApp": {
-    "welcome": "Bem-vindo! Ganhe pontos em todas as compras.",
-    "pointsEarned": "+{{points}} pontos ganhos",
-    "rewardRedeemed": "{{rewardName}} resgatado com sucesso",
-    "tierUpgrade": "Atingiu o estatuto {{tierName}}!",
-    "newRewardUnlocked": "Nova recompensa desbloqueada: {{rewardName}}",
-    "goalProgress": "{{progress}}% para a sua próxima recompensa"
-  }
+    "welcome": "",
+    "pointsEarned": "",
+    "rewardRedeemed": "",
+    "tierUpgrade": "",
+    "newRewardUnlocked": "",
+    "goalProgress": ""
+  },
+  "savedSuccessfully": "",
+  "customerDeleted": "",
+  "analyzing": "",
+  "hangTight": "",
+  "welcomeDashboard": "",
+  "rewardingExperience": "",
+  "beginJourney": "",
+  "simplicity": "",
+  "somethingWentWrong": "",
+  "loadingData": "",
+  "pleaseWait": "",
+  "submitOrSave": "",
+  "noCancel": "",
+  "yesConfirmDelete": "",
+  "warning": "",
+  "abort": "",
+  "askAboutLoyalty": "",
+  "retry": "",
+  "welcomeAdvisor": "",
+  "analyzedData": "",
+  "performanceAnalysis": "",
+  "campaignRecommendations": "",
+  "memberInsights": "",
+  "productAnalysis": "",
+  "wouldYouLike": "",
+  "totalTransactions": "",
+  "memberParticipation": "",
+  "totalRevenue": "",
+  "dateRangeTx": "",
+  "oopsError": "",
+  "updatedSuccessfully": "",
+  "messageHasBeenSent": "",
+  "loadingPleaseWait": ""
 }
