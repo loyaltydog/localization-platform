@@ -56,7 +56,8 @@ jobs:
             --bundle-structure=%LANG_ISO% \
             --export-empty-as=skip \
             --placeholder-format=icu \
-            --unzip-to locales
+            --plural-format=i18next \
+            --unzip-to .
           echo "downloaded=true" >> $GITHUB_OUTPUT
 
       - name: Check for changes
