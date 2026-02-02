@@ -33,8 +33,11 @@ jobs:
 
       - name: Install Lokalise CLI
         run: |
-          npm install -g @lokalise/cli
-          lokalise2 --version
+          curl -sfL https://raw.githubusercontent.com/lokalise/lokalise-cli-2-go/master/install.sh | sh
+          echo "$PWD/bin" >> $GITHUB_PATH
+
+      - name: Verify Lokalise CLI
+        run: lokalise2 --version
 
       - name: Download translations from Lokalise
         id: download
