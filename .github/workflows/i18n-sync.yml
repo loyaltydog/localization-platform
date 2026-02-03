@@ -62,7 +62,8 @@ jobs:
       - name: Check for changes
         id: check-changes
         run: |
-          if git diff --quiet packages/i18n/locales/ 2>/dev/null; then
+          # Check for any changes (including new untracked files in locales/)
+          if git diff --quiet packages/i18n/locales/ 2>/dev/null && [ -z "$(git ls-files --others --exclude-standard packages/i18n/locales/)" ]; then
             echo "has_changes=false" >> $GITHUB_OUTPUT
             echo "ℹ️ No translation updates found"
           else
