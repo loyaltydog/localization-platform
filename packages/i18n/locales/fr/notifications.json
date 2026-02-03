@@ -1,105 +1,128 @@
 {
+  "pointsEarned": {
+    "title": "Points gagnés !"
+  },
+  "rewardUnlocked": {
+    "title": "Récompense débloquée !",
+    "body": "Vous avez débloqué {{rewardName}} ! Montrez-le à la caisse pour en bénéficier."
+  },
+  "rewardExpiring": {
+    "title": "Récompense expirant bientôt"
+  },
+  "pointsExpiring": {
+    "title": "Les points expirent bientôt",
+    "body": "les points {{points}} expireront le {{date d'expiration}}. Utilisez-les avant qu'ils ne disparaissent !"
+  },
+  "welcome": {
+    "title": "Bienvenue à {{merchantName}} !"
+  },
+  "birthday": {
+    "title": "Joyeux anniversaire !"
+  },
   "sms": {
-    "welcome": "",
-    "pointsEarned": "",
-    "rewardReady": "",
-    "rewardExpiring": "",
-    "birthdayReward": "",
-    "tierUpgrade": "",
-    "pointsExpiring": "",
-    "inactivityReminder": "",
-    "promoAlert": "",
-    "verificationCode": ""
+    "welcome": "Bienvenue à {{merchantName}} ! Vous avez rejoint notre programme de fidélité. Commencez à gagner des points dès aujourd'hui !",
+    "pointsEarned": "Vous avez gagné {{points}} pts chez {{merchantName}} ! Équilibre : {{balance}} pts",
+    "rewardReady": "{{memberName}}, votre récompense est prête ! {{rewardName}} - montrez-le à la caisse",
+    "rewardExpiring": "N'oubliez pas ! Votre {{récompense}} expire {{date d'expiration}}. Visitez bientôt {{merchantName}} !",
+    "birthdayReward": "Joyeux anniversaire {{memberName}} ! {{merchantName}} a un cadeau pour vous. Vérifiez vos récompenses !",
+    "tierUpgrade": "Félicitations {{memberName}} ! Vous êtes maintenant {{tierName}} chez {{merchantName}}. Profitez de vos nouveaux avantages !",
+    "pointsExpiring": "pts {{points}} expirant {{date d'expiration}} chez {{nom du commerçant}}. Utilisez-les avant qu'ils ne disparaissent !",
+    "inactivityReminder": "Vous nous manquez {{memberName}} ! Vous avez {{points}} pts chez {{merchantName}}. Venez nous rendre visite !",
+    "promoAlert": "{{merchantName}} : {{promoMessage}}",
+    "verificationCode": "Votre code de vérification {{merchantName}} est : {{code}}"
   },
   "push": {
     "welcome": {
-      "title": "",
-      "body": ""
+      "title": "Bienvenue à {{merchantName}} !",
+      "body": "Vous avez adhéré à notre programme de fidélité. Commencez à gagner des points dès aujourd'hui !"
     },
     "pointsEarned": {
-      "title": "",
-      "body": ""
+      "title": "Points gagnés !",
+      "body": "Vous avez gagné des {{points}} points. Équilibre : {{balance}}"
     },
     "rewardReady": {
-      "title": "",
-      "body": ""
+      "title": "Récompenses prêtes !",
+      "body": "{{rewardName}} est prêt à être remboursé"
     },
     "rewardExpiring": {
-      "title": "",
-      "body": ""
+      "title": "Récompense expirant bientôt",
+      "body": "{{rewardName}} expire {{expiryDate}}"
     },
     "birthdayReward": {
-      "title": "",
-      "body": ""
+      "title": "Joyeux anniversaire !",
+      "body": "{{merchantName}} a un cadeau spécial pour vous"
     },
     "tierUpgrade": {
-      "title": "",
-      "body": ""
+      "title": "Montez d'un cran !",
+      "body": "Vous êtes maintenant {{tierName}} ! Profitez de nouveaux avantages"
     },
     "pointsExpiring": {
-      "title": "",
-      "body": ""
+      "title": "Expiration des points",
+      "body": "{{points}} les points expirent {{expiryDate}}"
     },
     "nearbyStore": {
-      "title": "",
-      "body": ""
+      "title": "Vous êtes près de {{merchantName}} !",
+      "body": "Vous avez {{points}} points. Venez nous rendre visite !"
     },
     "newReward": {
-      "title": "",
-      "body": ""
+      "title": "Nouvelle récompense disponible !",
+      "body": "Consultez {{rewardName}} - points {{pointsCost}}"
     },
     "promoAlert": {
-      "title": "",
-      "body": ""
+      "title": "Offre spéciale !",
+      "body": "{{promoMessage}}"
     },
     "stampEarned": {
-      "title": "",
-      "body": ""
+      "title": "Timbre gagné !",
+      "body": "{{stampsCollected}}/{stampsRequired}} - {{stampsRemaining}} encore à venir !"
     },
     "stampCardComplete": {
-      "title": "",
-      "body": ""
+      "title": "Carte de timbres complète !",
+      "body": "Félicitations ! Réclamez votre cadeau {{rewardName}}"
     }
   },
   "inApp": {
-    "welcome": "",
-    "pointsEarned": "",
-    "rewardRedeemed": "",
-    "tierUpgrade": "",
-    "newRewardUnlocked": "",
-    "goalProgress": ""
+    "welcome": "Bienvenue ! Commencez à gagner des points à chaque achat.",
+    "pointsEarned": "+{{points}} points gagnés",
+    "rewardRedeemed": "{{rewardName}} échangé avec succès",
+    "tierUpgrade": "Vous avez atteint le statut de {{tierName}} !",
+    "newRewardUnlocked": "Nouvelle récompense débloquée : {{rewardName}}",
+    "goalProgress": "{{progression}}% vers votre prochaine récompense"
   },
-  "savedSuccessfully": "",
-  "customerDeleted": "",
-  "analyzing": "",
-  "hangTight": "",
-  "welcomeDashboard": "",
-  "rewardingExperience": "",
-  "beginJourney": "",
-  "simplicity": "",
-  "somethingWentWrong": "",
-  "loadingData": "",
-  "pleaseWait": "",
-  "submitOrSave": "",
-  "noCancel": "",
-  "yesConfirmDelete": "",
-  "warning": "",
-  "abort": "",
-  "askAboutLoyalty": "",
-  "retry": "",
-  "welcomeAdvisor": "",
-  "analyzedData": "",
-  "performanceAnalysis": "",
-  "campaignRecommendations": "",
-  "memberInsights": "",
-  "productAnalysis": "",
-  "wouldYouLike": "",
-  "totalTransactions": "",
-  "memberParticipation": "",
-  "totalRevenue": "",
-  "dateRangeTx": "",
-  "oopsError": "",
-  "updatedSuccessfully": "",
-  "messageHasBeenSent": "",
-  "loadingPleaseWait": ""
+  "savedSuccessfully": "Sauvegardé avec succès",
+  "customerDeleted": "Sauvegardé avec succès",
+  "analyzing": "Analyser...",
+  "hangTight": "Tenez bon ! Nous préparons tout pour vous...",
+  "welcomeDashboard": "Bienvenue sur le tableau de bord de la fidélité !",
+  "rewardingExperience": "Lancez-vous dans une expérience enrichissante avec notre tableau de bord de fidélisation !",
+  "beginJourney": "Commencez votre voyage en ajoutant facilement un identifiant de type Pass et lancez votre programme de fidélisation personnalisé.",
+  "simplicity": "Découvrez la simplicité de la mise en œuvre et profitez d'avantages exclusifs conçus spécialement pour vous.",
+  "somethingWentWrong": "Il y a eu un problème ! Nous travaillons déjà à la résolution du problème.",
+  "loadingData": "Chargement des données...",
+  "pleaseWait": "Veuillez patienter...",
+  "submitOrSave": "Soumettre",
+  "noCancel": "Non, annuler",
+  "yesConfirmDelete": "Oui, confirmer la suppression",
+  "warning": "Avertissement",
+  "abort": "Abandonner",
+  "askAboutLoyalty": "Renseignez-vous sur votre programme de fidélisation...",
+  "retry": "Réessayer",
+  "welcomeAdvisor": "Bienvenue sur le site de Loyalty Dog AI Business Advisor !",
+  "analyzedData": "J'ai analysé vos données de transaction et je suis prêt à vous aider à optimiser votre programme de fidélisation.",
+  "performanceAnalysis": "Analyse des performances - Comment votre programme de fidélisation fonctionne-t-il ?",
+  "campaignRecommendations": "Recommandations de campagne - Ventes à l'occasion d'un anniversaire, cartes perforées, promotions pendant les vacances",
+  "memberInsights": "Connaissance des membres - Modèles d'engagement et stratégies de fidélisation",
+  "productAnalysis": "Analyse des produits - Quels sont les produits qui favorisent la fidélisation des clients ?",
+  "wouldYouLike": "Qu'aimeriez-vous savoir sur votre programme de fidélisation ?",
+  "totalTransactions": "Total des transactions",
+  "memberParticipation": "Participation des membres",
+  "totalRevenue": "Recettes totales",
+  "dateRangeTx": "{count} tx",
+  "oopsError": "Oups !",
+  "updatedSuccessfully": "Mise à jour réussie",
+  "messageHasBeenSent": "Le message a été envoyé !",
+  "loadingPleaseWait": "Chargement, veuillez patienter...",
+  "campaign": {
+    "title": "{{campaignName}}"
+  }
 }
