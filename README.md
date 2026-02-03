@@ -196,8 +196,8 @@ subject = translator.translate(
     merchantName='Acme Store'
 )
 
-# Get all translations for a language
-all_translations = translator.load_translations('en-US')
+# List available locales
+available_locales = translator.get_available_locales()
 ```
 
 **3. API endpoint for language switching:**
@@ -213,12 +213,12 @@ class LanguageUpdate(BaseModel):
 async def update_merchant_language(merchant_id: str, data: LanguageUpdate):
     """Update the preferred language for a merchant account."""
 
-    # Validate language code
-    supported = translator.get_supported_languages()
-    if data.language not in supported:
+    # Validate language code using available locales
+    available = translator.get_available_locales()
+    if data.language not in available:
         raise HTTPException(
             status_code=400,
-            detail=f"Unsupported language. Supported: {', '.join(supported)}"
+            detail=f"Unsupported language. Available: {', '.join(available)}"
         )
 
     # Update merchant preference in database
