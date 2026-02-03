@@ -95,7 +95,7 @@ jobs:
           # Get list of changed languages for commit message (using POSIX-compliant grep)
           CHANGED_LANGUAGES=$(
             git diff --cached --name-only \
-            | sed -n 's|^locales/\([^/]*\)/.*|\1|p' \
+            | sed -n 's|^packages/i18n/locales/\([^/]*\)/.*|\1|p' \
             | sort -u \
             | tr '\n' ',' \
             | sed 's/,$//'
