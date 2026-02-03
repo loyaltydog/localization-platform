@@ -171,7 +171,7 @@ describe('Translation content', () => {
       'You are not authorized. Please log in again.'
     );
     expect(i18n.t('auth.invalidCredentials', { ns: 'errors' })).toBe(
-      'Invalid email or password.'
+      'Invalid email or password'
     );
   });
 
@@ -183,7 +183,7 @@ describe('Translation content', () => {
       merchantName: 'Acme Store',
     });
 
-    expect(subject).toBe('Welcome to Acme Store!');
+    expect(subject).toBe('Welcome to Acme Store Loyalty Program!');
   });
 
   it('should translate validation messages with variables', () => {

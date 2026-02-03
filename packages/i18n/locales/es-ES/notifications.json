@@ -1,105 +1,128 @@
 {
-  "sms": {
-    "welcome": "",
-    "pointsEarned": "",
-    "rewardReady": "",
-    "rewardExpiring": "",
-    "birthdayReward": "",
-    "tierUpgrade": "",
-    "pointsExpiring": "",
-    "inactivityReminder": "",
-    "promoAlert": "",
-    "verificationCode": ""
-  },
-  "push": {
-    "welcome": {
-      "title": "",
-      "body": ""
-    },
     "pointsEarned": {
-      "title": "",
-      "body": ""
+        "title": "Puntos ganados"
     },
-    "rewardReady": {
-      "title": "",
-      "body": ""
+    "rewardUnlocked": {
+        "title": "¡Recompensa desbloqueada!",
+        "body": "¡Has desbloqueado {{rewardName}}! Muéstralo al pagar para canjearlo."
     },
     "rewardExpiring": {
-      "title": "",
-      "body": ""
-    },
-    "birthdayReward": {
-      "title": "",
-      "body": ""
-    },
-    "tierUpgrade": {
-      "title": "",
-      "body": ""
+        "title": "Recompensa que expira pronto"
     },
     "pointsExpiring": {
-      "title": "",
-      "body": ""
+        "title": "Puntos que expiran pronto",
+        "body": "los puntos {{points}} caducarán el {{expiryDate}}. ¡Utilízalos antes de que se acaben!"
     },
-    "nearbyStore": {
-      "title": "",
-      "body": ""
+    "welcome": {
+        "title": "¡Bienvenido a {{merchantName}}!"
     },
-    "newReward": {
-      "title": "",
-      "body": ""
+    "birthday": {
+        "title": "¡Feliz cumpleaños!"
     },
-    "promoAlert": {
-      "title": "",
-      "body": ""
+    "campaign": {
+        "title": "{{campaignName}}"
     },
-    "stampEarned": {
-      "title": "",
-      "body": ""
+    "sms": {
+        "welcome": "¡Bienvenido a {{merchantName}}! Te has unido a nuestro programa de fidelidad. ¡Empieza a ganar puntos hoy mismo!",
+        "pointsEarned": "¡Has ganado {{puntos}} pts en {{merchantName}}! Balance: {{balance}} pts",
+        "rewardReady": "{{memberName}}, ¡tu recompensa está lista! {{rewardName}} - mostrar esto en la caja",
+        "rewardExpiring": "No lo olvides Tu {{rewardName}} caduca el {{expiryDate}}. ¡Visita {{merchantName}} pronto!",
+        "birthdayReward": "¡Feliz cumpleaños {{memberName}}! {{merchantName}} tiene un regalo para ti. ¡Comprueba tus recompensas!",
+        "tierUpgrade": "¡Felicidades {{memberName}}! Ahora eres {{tierName}} en {{merchantName}}. ¡Disfruta de tus nuevos beneficios!",
+        "pointsExpiring": "{{points}} pts que caducan en {{expiryDate}} en {{merchantName}}. ¡Úsalos antes de que se acaben!",
+        "inactivityReminder": "¡Te echamos de menos {{memberName}}! Tienes {{puntos}} en {{merchantName}}. ¡Ven a visitarnos!",
+        "promoAlert": "{{merchantName}}: {{promoMensaje}}",
+        "verificationCode": "Su código de verificación {{merchantName}} es: {{code}}"
     },
-    "stampCardComplete": {
-      "title": "",
-      "body": ""
-    }
-  },
-  "inApp": {
-    "welcome": "",
-    "pointsEarned": "",
-    "rewardRedeemed": "",
-    "tierUpgrade": "",
-    "newRewardUnlocked": "",
-    "goalProgress": ""
-  },
-  "savedSuccessfully": "",
-  "customerDeleted": "",
-  "analyzing": "",
-  "hangTight": "",
-  "welcomeDashboard": "",
-  "rewardingExperience": "",
-  "beginJourney": "",
-  "simplicity": "",
-  "somethingWentWrong": "",
-  "loadingData": "",
-  "pleaseWait": "",
-  "submitOrSave": "",
-  "noCancel": "",
-  "yesConfirmDelete": "",
-  "warning": "",
-  "abort": "",
-  "askAboutLoyalty": "",
-  "retry": "",
-  "welcomeAdvisor": "",
-  "analyzedData": "",
-  "performanceAnalysis": "",
-  "campaignRecommendations": "",
-  "memberInsights": "",
-  "productAnalysis": "",
-  "wouldYouLike": "",
-  "totalTransactions": "",
-  "memberParticipation": "",
-  "totalRevenue": "",
-  "dateRangeTx": "",
-  "oopsError": "",
-  "updatedSuccessfully": "",
-  "messageHasBeenSent": "",
-  "loadingPleaseWait": ""
+    "push": {
+        "welcome": {
+            "title": "¡Bienvenido a {{merchantName}}!",
+            "body": "Se ha unido a nuestro programa de fidelidad. Empieza a ganar puntos hoy mismo"
+        },
+        "pointsEarned": {
+            "title": "Puntos ganados",
+            "body": "Has ganado {{puntos}} puntos. Balance: {{balance}}"
+        },
+        "rewardReady": {
+            "title": "¡Preparados para la recompensa!",
+            "body": "{{rewardName}} está listo para canjear"
+        },
+        "rewardExpiring": {
+            "title": "Recompensa que expira pronto",
+            "body": "{{rewardName}} expira {{expiryDate}}"
+        },
+        "birthdayReward": {
+            "title": "¡Feliz cumpleaños!",
+            "body": "{{merchantName}} tiene un regalo especial para ti"
+        },
+        "tierUpgrade": {
+            "title": "¡Sube de nivel!",
+            "body": "¡Ahora eres {{tierName}}! Disfruta de nuevas ventajas"
+        },
+        "pointsExpiring": {
+            "title": "Puntos que caducan",
+            "body": "{{puntos}} los puntos caducan {{expiryDate}}"
+        },
+        "nearbyStore": {
+            "title": "¡Estás cerca de {{merchantName}}!",
+            "body": "Tienes {{puntos}} puntos. ¡Ven a visitarnos!"
+        },
+        "newReward": {
+            "title": "Nueva recompensa disponible",
+            "body": "Echa un vistazo a {{rewardName}} - {{pointsCost}} puntos"
+        },
+        "promoAlert": {
+            "title": "Oferta especial",
+            "body": "{{promoMessage}}"
+        },
+        "stampEarned": {
+            "title": "Sello ganado",
+            "body": "{{sellosRecogidos}}\/{{sellosRequeridos}} - {{sellosRemanentes}} ¡faltan más!"
+        },
+        "stampCardComplete": {
+            "title": "Tarjeta Sello ¡Completada!",
+            "body": "¡Enhorabuena! Reclama tu {{rewardName}} gratis"
+        }
+    },
+    "inApp": {
+        "welcome": "Bienvenido Empieza a ganar puntos con cada compra.",
+        "pointsEarned": "+{{puntos}} puntos ganados",
+        "rewardRedeemed": "{{rewardName}} canjeado con éxito",
+        "tierUpgrade": "¡Has alcanzado el estado {{tierName}}!",
+        "newRewardUnlocked": "Nueva recompensa desbloqueada: {{rewardName}}",
+        "goalProgress": "{{progress}}% a tu próxima recompensa"
+    },
+    "savedSuccessfully": "Guardado correctamente",
+    "customerDeleted": "Guardado correctamente",
+    "analyzing": "Analizar...",
+    "hangTight": "¡Agarraos fuerte! Estamos preparándolo todo para ti...",
+    "welcomeDashboard": "Bienvenido al Cuadro de mandos de fidelización",
+    "rewardingExperience": "Embárquese en una experiencia gratificante con nuestro Cuadro de mandos de fidelización",
+    "beginJourney": "Comience su viaje añadiendo sin esfuerzo un identificador de tipo de pase y ponga en marcha su programa de fidelización personalizado.",
+    "simplicity": "Descubra la sencillez de empezar y disfrute de ventajas exclusivas hechas a su medida.",
+    "somethingWentWrong": "Algo ha salido mal Ya estamos trabajando para resolver el problema.",
+    "loadingData": "Cargando datos...",
+    "pleaseWait": "Por favor, espere...",
+    "submitOrSave": "Enviar",
+    "noCancel": "No, cancelar",
+    "yesConfirmDelete": "Sí, confirme la eliminación",
+    "warning": "Advertencia",
+    "abort": "Abortar",
+    "askAboutLoyalty": "Pregunte por su programa de fidelización...",
+    "retry": "Reintentar",
+    "welcomeAdvisor": "¡Bienvenido a su Asesor Comercial de Loyalty Dog AI!",
+    "analyzedData": "He analizado los datos de sus transacciones y estoy listo para ayudarle a optimizar su programa de fidelización.",
+    "performanceAnalysis": "Análisis del rendimiento - Cómo está funcionando su programa de fidelización",
+    "campaignRecommendations": "Recomendaciones de campaña - Ventas de cumpleaños, tarjetas perforadas, promociones navideñas",
+    "memberInsights": "Información sobre los afiliados: pautas de compromiso y estrategias de retención",
+    "productAnalysis": "Análisis de productos: qué productos impulsan la fidelización",
+    "wouldYouLike": "¿Qué le gustaría saber sobre su programa de fidelización?",
+    "totalTransactions": "Transacciones totales",
+    "memberParticipation": "Participación de los miembros",
+    "totalRevenue": "Ingresos totales",
+    "dateRangeTx": "{tx",
+    "oopsError": "¡Uy!",
+    "updatedSuccessfully": "Actualizado con éxito",
+    "messageHasBeenSent": "El mensaje ha sido enviado",
+    "loadingPleaseWait": "Cargando, por favor espere..."
 }
