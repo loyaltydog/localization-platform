@@ -62,7 +62,8 @@ jobs:
       - name: Check for changes
         id: check-changes
         run: |
-          if git diff --quiet packages/i18n/locales/ 2>/dev/null; then
+          # Check for any changes (including new untracked files in locales/)
+          if git diff --quiet packages/i18n/locales/ 2>/dev/null && [ -z "$(git ls-files --others --exclude-standard packages/i18n/locales/)" ]; then
             echo "has_changes=false" >> $GITHUB_OUTPUT
             echo "ℹ️ No translation updates found"
           else
@@ -94,7 +95,7 @@ jobs:
           # Get list of changed languages for commit message (using POSIX-compliant grep)
           CHANGED_LANGUAGES=$(
             git diff --cached --name-only \
-            | sed -n 's|^locales/\([^/]*\)/.*|\1|p' \
+            | sed -n 's|^packages/i18n/locales/\([^/]*\)/.*|\1|p' \
             | sort -u \
             | tr '\n' ',' \
             | sed 's/,$//'
