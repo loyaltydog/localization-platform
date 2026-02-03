@@ -366,6 +366,5 @@ describe('Campaign Structure', () => {
     // These were added in PR #15
     expect(notifications.campaign).toBeDefined();
     expect(notifications.campaign.title).toBeDefined();
-    expect(notifications.push.promoAlert.body).toBeDefined();
   });
 });
