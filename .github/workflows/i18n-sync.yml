@@ -1,14 +1,12 @@
 # Sync translations from Lokalise to the repository
 # This workflow runs automatically every 12 hours and can be triggered manually
-# TEMPORARILY DISABLED: Scheduled sync disabled during en-US source recreation
-# Re-enable after uploading clean en-US to Lokalise and receiving AI translations
 
 name: Sync Translations
 
 on:
-  # schedule:
-  #   # Run every 12 hours at minute 0 (00:00 and 12:00 UTC)
-  #   - cron: '0 */12 * * *'
+  schedule:
+    # Run every 12 hours at minute 0 (00:00 and 12:00 UTC)
+    - cron: '0 */12 * * *'
   workflow_dispatch:
 
 permissions:
@@ -134,3 +132,4 @@ jobs:
           else
             echo "ℹ️ No translation updates found - nothing to commit"
           fi
+
