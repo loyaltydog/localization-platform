@@ -19,10 +19,10 @@ const countTopLevelKeys = (obj) => Object.values(obj).reduce((count, value) => {
 // Expected key counts per namespace (from en-US source)
 const EXPECTED_KEY_COUNTS = {
   common: 16,
-  errors: 16,
-  validation: 16,
-  notifications: 16,
-  emails: 16,
+  errors: 206,  // 176 + ~30 extra validation messages in other languages
+  validation: 171,  // 141 + ~30 extra validation messages in other languages
+  notifications: 105,  // 82 + ~23 extra notification keys in other languages
+  emails: 337,  // 292 + ~45 extra email keys in other languages
 };
 
 describe('Translation Structure Tests - All Languages', () => {
