@@ -5,7 +5,7 @@
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import { readFileSync } from 'fs';
 import { join } from 'path';
-import { loadTranslation } from '../test_translation_loader';
+import { loadTranslation } from '../test_translation_loader.js';
 
 // Helper function to count top-level keys only (no nested objects)
 const countTopLevelKeys = (obj) => Object.values(obj).reduce((count, value) => {
