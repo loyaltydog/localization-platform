@@ -15,7 +15,21 @@
         "reports": "Relatórios",
         "aiAdvisor": "Consultor de IA",
         "support": "Suporte",
-        "administration": "Administração"
+        "administration": "Administração",
+        "overview": "Visão geral",
+        "templates": "Modelos",
+        "passes": "Passes",
+        "appKeys": "Chaves do aplicativo",
+        "passTypeIds": "IDs de tipo de passe",
+        "verification": "Verificação",
+        "webhooks": "Webhooks",
+        "users": "Usuários",
+        "backups": "Backups",
+        "queue": "Fila",
+        "profile": "Perfil",
+        "signOutAsUser": "Sair como usuário",
+        "shopify": "Shopify",
+        "clover": "Clover"
     },
     "actions": {
         "save": "Salvar",
@@ -52,6 +66,13 @@
         "saving": "Salvando...",
         "noProgram": "Novo programa",
         "newProgram": "Novo programa"
+    },
+    "language": {
+        "title": "Idioma",
+        "selectLanguage": "Selecionar idioma",
+        "switchLanguage": "Mudar idioma",
+        "currentLanguage": "Idioma atual",
+        "apiError": "Não foi possível salvar a preferência de idioma"
     },
     "onboarding": {
         "step1_title": "Configurar pontos",
