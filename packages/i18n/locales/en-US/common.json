@@ -15,7 +15,21 @@
         "reports": "Reports",
         "aiAdvisor": "AI Advisor",
         "support": "Support",
-        "administration": "Administration"
+        "administration": "Administration",
+        "overview": "Overview",
+        "templates": "Templates",
+        "passes": "Passes",
+        "appKeys": "App Keys",
+        "passTypeIds": "Pass Type IDs",
+        "verification": "Verification",
+        "webhooks": "Webhooks",
+        "users": "Users",
+        "backups": "Backups",
+        "queue": "Queue",
+        "profile": "Profile",
+        "signOutAsUser": "Sign out as user",
+        "shopify": "Shopify",
+        "clover": "Clover"
     },
     "actions": {
         "save": "Save",
@@ -52,6 +66,13 @@
         "saving": "Saving...",
         "noProgram": "New Program",
         "newProgram": "New Program"
+    },
+    "language": {
+        "title": "Language",
+        "selectLanguage": "Select Language",
+        "switchLanguage": "Switch Language",
+        "currentLanguage": "Current Language",
+        "apiError": "Could not save language preference"
     },
     "onboarding": {
         "step1_title": "Configure Points",
