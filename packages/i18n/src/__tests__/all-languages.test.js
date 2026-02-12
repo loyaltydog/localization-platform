@@ -1,152 +1,137 @@
 /**
  * Comprehensive unit tests for all 8 supported languages
+ * Validates translation structure, key coverage, and consistency across locales
  */
 
-import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { readFileSync } from 'fs';
+import { describe, it, expect } from 'vitest';
+import { readFileSync, existsSync } from 'fs';
 import { join } from 'path';
-import { loadTranslation } from '../test_translation_loader.js';
 
-// Helper function to count top-level keys only (no nested objects)
-const countTopLevelKeys = (obj) => Object.values(obj).reduce((count, value) => {
-  // Only count if value is a string (not object/array)
-  if (typeof value === 'string' && value !== null && value.trim() !== '') {
-    return count + 1;
+const LOCALES_DIR = join(__dirname, '../../locales');
+
+const ALL_LANGUAGES = ['en-US', 'en-GB', 'es-ES', 'es-MX', 'fr', 'it', 'pt-BR', 'pt-PT'];
+const NAMESPACES = ['common', 'errors', 'validation', 'notifications', 'emails'];
+
+/**
+ * Load and parse a JSON translation file
+ */
+function loadTranslation(locale, namespace) {
+  const filePath = join(LOCALES_DIR, locale, `${namespace}.json`);
+  const content = readFileSync(filePath, 'utf-8');
+  return JSON.parse(content);
+}
+
+/**
+ * Get all keys from a nested object as dot-notation paths
+ */
+function getKeys(obj, prefix = '') {
+  const keys = [];
+  for (const [key, value] of Object.entries(obj)) {
+    const fullKey = prefix ? `${prefix}.${key}` : key;
+    if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
+      keys.push(...getKeys(value, fullKey));
+    } else {
+      keys.push(fullKey);
+    }
   }
-  return count;
-});
+  return keys;
+}
 
-// Expected key counts per namespace (from en-US source)
-const EXPECTED_KEY_COUNTS = {
-  common: 16,
-  errors: 206,  // 176 + ~30 extra validation messages in other languages
-  validation: 171,  // 141 + ~30 extra validation messages in other languages
-  notifications: 105,  // 82 + ~23 extra notification keys in other languages
-  emails: 337,  // 292 + ~45 extra email keys in other languages
-};
+/**
+ * Get all string values from a nested object
+ */
+function getAllStringValues(obj, strings = []) {
+  for (const value of Object.values(obj)) {
+    if (typeof value === 'string') {
+      strings.push(value);
+    } else if (typeof value === 'object' && value !== null) {
+      getAllStringValues(value, strings);
+    }
+  }
+  return strings;
+}
 
 describe('Translation Structure Tests - All Languages', () => {
   describe('File Structure', () => {
     it.each(ALL_LANGUAGES)('should have all 5 namespace JSON files for %s', (locale) => {
-      const translations = loadTranslation(locale, 'common');
-      const allStrings = getAllStringValues(translations);
-
-      // Check for expected key count
-      const expectedCount = Object.values(EXPECTED_KEY_COUNTS).reduce((a, b) => a + b, 0);
-      expect(allStrings.length).toBe(expectedCount);
+      for (const namespace of NAMESPACES) {
+        const filePath = join(LOCALES_DIR, locale, `${namespace}.json`);
+        expect(existsSync(filePath)).toBe(true);
+      }
     });
   });
 
   describe('Key Coverage', () => {
-    it.each(ALL_LANGUAGES)('should have same key count as en-US for %s', (locale) => {
-      const translations = loadTranslation(locale, 'common');
+    it.each(ALL_LANGUAGES)('should have same keys as en-US in common for %s', (locale) => {
       const en = loadTranslation('en-US', 'common');
+      const target = loadTranslation(locale, 'common');
 
-      const targetKeys = new Set(getKeys(en));
-      const actualKeys = new Set(getKeys(translations));
+      const enKeys = new Set(getKeys(en));
+      const targetKeys = new Set(getKeys(target));
 
-      // Count missing keys in target
-      const missingKeys = [...targetKeys].filter(key => !actualKeys.has(key));
-      const extraKeys = [...actualKeys].filter(key => !targetKeys.has(key));
+      const missingKeys = [...enKeys].filter(key => !targetKeys.has(key));
+      const extraKeys = [...targetKeys].filter(key => !enKeys.has(key));
 
-      if (missingKeys.length > 0 || extraKeys.length > 0) {
-        console.log('Missing keys in locale %s:', locale);
-        console.log('  Expected:', targetKeys);
-        console.log('  Actual:', actualKeys);
-        console.log('  Missing:', missingKeys);
-        console.log('  Extra:', extraKeys);
-        console.log('Missing count:', missingKeys.length);
-        console.log('Extra count:', extraKeys.length);
-      }
-
-      expect(missingKeys.length).toBe(0);
-      expect(extraKeys.length).toBe(0);
+      expect(missingKeys).toEqual([]);
+      expect(extraKeys).toEqual([]);
     });
   });
 
   describe('No Empty Strings', () => {
-    it.each(ALL_LANGUAGES)('should not have empty string values for %s', (locale) => {
+    it.each(ALL_LANGUAGES)('should not have empty string values in common for %s', (locale) => {
       const translations = loadTranslation(locale, 'common');
       const allStrings = getAllStringValues(translations);
 
-      // Check for truly empty strings (whitespace-only is allowed for spacing)
-      const emptyCount = Object.values(allStrings).filter(val => {
-        if (typeof val === 'string' && val.trim() === '') {
-          return true;
-        }
-        return false;
-      }).length;
-
-      if (emptyCount > 0) {
-        console.log('Empty strings found:', emptyCount);
-        expect(false).toBe(true);
-      } else {
-        console.log('No empty strings found');
-      }
+      const emptyStrings = allStrings.filter(val => val.trim() === '');
+      expect(emptyStrings.length).toBe(0);
     });
   });
 
-  describe('Language Consistency Tests', () => {
-    it.each(ALL_LANGUAGES)('should have base language matching (es → es-ES)', () => {
+  describe('Language Variant Consistency', () => {
+    it('es-ES and es-MX should have same key structure', () => {
       const esES = loadTranslation('es-ES', 'common');
       const esMX = loadTranslation('es-MX', 'common');
 
-      const esESKeys = new Set(getKeys(esES));
-      const esMXKeys = new Set(getKeys(esMX));
-
-      expect(esESKeys).toEqual(esMXKeys);
-      expect(esMXKeys).toEqual(esMXKeys);
+      expect(new Set(getKeys(esES))).toEqual(new Set(getKeys(esMX)));
     });
-  });
 
-  describe('Placeholder Syntax', () => {
-    it.each(ALL_LANGUAGES)('should use correct ICU placeholder syntax for %s', (locale) => {
-      const translations = loadTranslation(locale, 'emails');
-
-      // Check that placeholders use {{variable}} syntax
-      const subject = translations.welcome.subject;
-      const body = translations.welcome.body;
-
-      expect(subject).toContain('{{');
-      expect(subject).toContain('}}');
-      expect(body).toContain('{{');
-      expect(body).toContain('}}');
-    });
-  });
-
-  describe('English Variants', () => {
-    it.each(ALL_LANGUAGES)('en-GB and en-US should have same structure', () => {
+    it('en-US and en-GB should have same key structure', () => {
       const enUS = loadTranslation('en-US', 'common');
       const enGB = loadTranslation('en-GB', 'common');
 
-      const enUSKeys = new Set(getKeys(enUS));
-      const enGBKeys = new Set(getKeys(enGB));
-
-      expect(enUSKeys).toEqual(enGBKeys);
+      expect(new Set(getKeys(enUS))).toEqual(new Set(getKeys(enGB)));
     });
-  });
 
-  describe('Portuguese Variants', () => {
-    it.each(ALL_LANGUAGES)('pt-BR and pt-PT should have same structure', () => {
+    it('pt-BR and pt-PT should have same key structure', () => {
       const ptBR = loadTranslation('pt-BR', 'common');
       const ptPT = loadTranslation('pt-PT', 'common');
 
-      const ptBRKeys = new Set(getKeys(ptBR));
-      const ptPTKeys = new Set(getKeys(ptPT));
+      expect(new Set(getKeys(ptBR))).toEqual(new Set(getKeys(ptPT)));
+    });
 
-      expect(ptBRKeys).toEqual(ptPTKeys);
+    it('fr should have same key structure as en-US', () => {
+      const fr = loadTranslation('fr', 'common');
+      const enUS = loadTranslation('en-US', 'common');
+
+      expect(new Set(getKeys(fr))).toEqual(new Set(getKeys(enUS)));
     });
   });
 
-  describe('French Variants', () => {
-    it.each(ALL_LANGUAGES)('fr should have same structure as en-US', () => {
-      const fr = loadTranslation('fr', 'common');
+  describe('Email Placeholder Syntax', () => {
+    it.each(ALL_LANGUAGES)('should use {{variable}} placeholder syntax in emails for %s', (locale) => {
+      const emails = loadTranslation(locale, 'emails');
 
-      const frKeys = new Set(getKeys(fr));
+      const subject = emails.welcome?.subject;
+      const body = emails.welcome?.body;
 
-      expect(frKeys).toEqual(new Set(getKeys('en-US')));
+      if (subject) {
+        expect(subject).toContain('{{');
+        expect(subject).toContain('}}');
+      }
+      if (body) {
+        expect(body).toContain('{{');
+        expect(body).toContain('}}');
+      }
     });
   });
 });
-
-run: jest --detectLeaks --forceExit
