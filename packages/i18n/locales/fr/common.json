@@ -15,7 +15,21 @@
         "reports": "Rapports",
         "aiAdvisor": "Conseiller en IA",
         "support": "Soutien",
-        "administration": "Administration"
+        "administration": "Administration",
+        "overview": "Vue d'ensemble",
+        "templates": "Modèles",
+        "passes": "Passes",
+        "appKeys": "Clés d'application",
+        "passTypeIds": "IDs de type de passe",
+        "verification": "Vérification",
+        "webhooks": "Webhooks",
+        "users": "Utilisateurs",
+        "backups": "Sauvegardes",
+        "queue": "File d'attente",
+        "profile": "Profil",
+        "signOutAsUser": "Se déconnecter en tant qu'utilisateur",
+        "shopify": "Shopify",
+        "clover": "Clover"
     },
     "actions": {
         "save": "Économiser",
@@ -52,6 +66,13 @@
         "saving": "Économiser...",
         "noProgram": "Nouveau programme",
         "newProgram": "Nouveau programme"
+    },
+    "language": {
+        "title": "Langue",
+        "selectLanguage": "Sélectionner la langue",
+        "switchLanguage": "Changer de langue",
+        "currentLanguage": "Langue actuelle",
+        "apiError": "Impossible d'enregistrer la préférence de langue"
     },
     "onboarding": {
         "step1_title": "Configurer les points",
