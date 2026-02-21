@@ -290,7 +290,13 @@
     "preferencesTitle": "Préférences de notification",
     "preferencesDesc": "Gérez comment vous recevez les alertes",
     "settings": "Paramètres",
-    "viewDetails": "Voir les détails →"
+    "viewDetails": "Voir les détails →",
+    "urgent": "Urgent",
+    "daysLeft": "{{days}} jours restants",
+    "actionNeeded": "Action requise",
+    "recently": "Récemment",
+    "tip": "Conseil",
+    "justNow": "À l'instant"
   },
   "settings": {
     "trustLevel": "Niveau de confiance : {{level}}",
