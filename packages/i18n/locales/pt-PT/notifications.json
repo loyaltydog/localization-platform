@@ -124,5 +124,46 @@
   "loadingPleaseWait": "A carregar, por favor aguarde...",
   "campaign": {
     "title": "{{campaignName}}"
+  },
+  "giftCard": {
+    "sms": {
+      "cardSold": "O seu cartão de oferta de {{currency}}{{amount}} está pronto! Cartão: {{cardNumber}}, Código: {{securityCode}}. Use em {{merchantName}}.",
+      "cardRedeemed": "{{currency}}{{amount}} utilizados do seu cartão de oferta que termina em {{lastFour}}. Saldo restante: {{currency}}{{remaining}}.",
+      "balanceCheck": "Cartão de oferta •••• {{lastFour}} — Saldo: {{currency}}{{balance}}. Expira em: {{expiryDate}}.",
+      "cardExpiringSoon": "O seu cartão de oferta que termina em {{lastFour}} expira em {{days}} dias. Saldo: {{currency}}{{balance}}. Use-o em breve!",
+      "cardActivated": "O seu cartão de oferta de {{currency}}{{amount}} está ativo. Cartão: {{cardNumber}}, Código: {{securityCode}}.",
+      "cardTopUp": "{{currency}}{{amount}} adicionados ao cartão de oferta que termina em {{lastFour}}. Novo saldo: {{currency}}{{balance}}.",
+      "cardConsolidated": "{{count}} cartões de oferta unidos. Novo cartão: {{cardNumber}}, Saldo: {{currency}}{{balance}}."
+    },
+    "push": {
+      "cardSold": {
+        "title": "Cartão de Oferta Criado",
+        "body": "Cartão de oferta de {{currency}}{{amount}} pronto para uso"
+      },
+      "cardRedeemed": {
+        "title": "Cartão de Oferta Utilizado",
+        "body": "{{currency}}{{amount}} utilizados. Saldo: {{currency}}{{remaining}}"
+      },
+      "balanceCheck": {
+        "title": "Saldo do Cartão de Oferta",
+        "body": "Cartão que termina em {{lastFour}}: {{currency}}{{balance}}"
+      },
+      "cardExpiringSoon": {
+        "title": "Cartão a Expirar em Breve",
+        "body": "Cartão que termina em {{lastFour}} expira em {{days}} dias. Saldo: {{currency}}{{balance}}"
+      },
+      "cardActivated": {
+        "title": "Cartão de Oferta Ativado",
+        "body": "O seu cartão de oferta de {{currency}}{{amount}} está pronto para uso"
+      },
+      "cardTopUp": {
+        "title": "Cartão de Oferta Recarregado",
+        "body": "{{currency}}{{amount}} adicionados. Novo saldo: {{currency}}{{balance}}"
+      },
+      "cardConsolidated": {
+        "title": "Cartões Unidos",
+        "body": "{{count}} cartões unidos. Novo saldo: {{currency}}{{balance}}"
+      }
+    }
   }
 }
