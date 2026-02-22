@@ -350,5 +350,44 @@
     "customer_phone": "Teléfono del cliente:",
     "requested_orders": "Órdenes solicitadas:",
     "gdpr_link": "Consulte <a href=\"https://help.shopify.com/en/manual/your-account/privacy/GDPR/processing-gdpr-data-requests\">Requisitos del GDPR</a> para obtener más información."
+  },
+  "giftCardPurchased": {
+    "subject": "Tu tarjeta regalo está lista — {{currency}}{{amount}}",
+    "greeting": "Hola {{recipientName}},",
+    "body": "{{senderName}} te ha enviado una tarjeta regalo de {{currency}}{{amount}}.",
+    "cardNumber": "Número de tarjeta: {{cardNumber}}",
+    "securityCode": "Código de seguridad: {{securityCode}}",
+    "balance": "Saldo: {{currency}}{{amount}}",
+    "expires": "Vence: {{expiryDate}}",
+    "personalMessage": "Mensaje de {{senderName}}: {{message}}",
+    "cta": "Consultar Saldo",
+    "footer": "Usa esta tarjeta en cualquier establecimiento participante de {{merchantName}}."
+  },
+  "giftCardExpiringSoon": {
+    "subject": "Tu tarjeta regalo vence pronto",
+    "greeting": "Hola {{recipientName}},",
+    "body": "Tu tarjeta regalo que termina en {{lastFour}} vencerá el {{expiryDate}}.",
+    "balance": "Saldo restante: {{currency}}{{balance}}",
+    "cta": "Usar Ahora",
+    "footer": "No dejes que tu saldo se pierda — úsalo antes del {{expiryDate}}."
+  },
+  "giftCardSoldReceipt": {
+    "subject": "Venta de tarjeta regalo — {{currency}}{{amount}}",
+    "greeting": "Hola {{cashierName}},",
+    "body": "Se ha creado una tarjeta regalo correctamente.",
+    "cardNumber": "Número de tarjeta: {{cardNumber}}",
+    "amount": "Importe: {{currency}}{{amount}}",
+    "cardType": "Tipo: {{cardType}}",
+    "recipient": "Destinatario: {{recipientName}}",
+    "timestamp": "Fecha: {{timestamp}}",
+    "footer": "Este es un recibo automático de LoyaltyDog."
+  },
+  "giftCardReloadReceipt": {
+    "subject": "Tarjeta regalo recargada — {{currency}}{{amount}} añadidos",
+    "greeting": "Hola {{recipientName}},",
+    "body": "Se han añadido {{currency}}{{amount}} a tu tarjeta regalo que termina en {{lastFour}}.",
+    "newBalance": "Nuevo saldo: {{currency}}{{balance}}",
+    "cta": "Consultar Saldo",
+    "footer": "Gracias por usar {{merchantName}}."
   }
 }

@@ -124,5 +124,46 @@
   "loadingPleaseWait": "Carregando, aguarde...",
   "campaign": {
     "title": "{{campaignName}}"
+  },
+  "giftCard": {
+    "sms": {
+      "cardSold": "Seu cartão presente de {{currency}}{{amount}} está pronto! Cartão: {{cardNumber}}, Código: {{securityCode}}. Use em {{merchantName}}.",
+      "cardRedeemed": "{{currency}}{{amount}} resgatados do seu cartão presente terminando em {{lastFour}}. Saldo restante: {{currency}}{{remaining}}.",
+      "balanceCheck": "Cartão presente •••• {{lastFour}} — Saldo: {{currency}}{{balance}}. Expira em: {{expiryDate}}.",
+      "cardExpiringSoon": "Seu cartão presente terminando em {{lastFour}} expira em {{days}} dias. Saldo: {{currency}}{{balance}}. Use logo!",
+      "cardActivated": "Seu cartão presente de {{currency}}{{amount}} está ativo. Cartão: {{cardNumber}}, Código: {{securityCode}}.",
+      "cardTopUp": "{{currency}}{{amount}} adicionados ao cartão presente terminando em {{lastFour}}. Novo saldo: {{currency}}{{balance}}.",
+      "cardConsolidated": "{{count}} cartões presentes unidos. Novo cartão: {{cardNumber}}, Saldo: {{currency}}{{balance}}."
+    },
+    "push": {
+      "cardSold": {
+        "title": "Cartão Presente Criado",
+        "body": "Cartão presente de {{currency}}{{amount}} pronto para uso"
+      },
+      "cardRedeemed": {
+        "title": "Cartão Presente Resgatado",
+        "body": "{{currency}}{{amount}} resgatados. Saldo: {{currency}}{{remaining}}"
+      },
+      "balanceCheck": {
+        "title": "Saldo do Cartão Presente",
+        "body": "Cartão terminando em {{lastFour}}: {{currency}}{{balance}}"
+      },
+      "cardExpiringSoon": {
+        "title": "Cartão Expirando em Breve",
+        "body": "Cartão terminando em {{lastFour}} expira em {{days}} dias. Saldo: {{currency}}{{balance}}"
+      },
+      "cardActivated": {
+        "title": "Cartão Presente Ativado",
+        "body": "Seu cartão presente de {{currency}}{{amount}} está pronto para uso"
+      },
+      "cardTopUp": {
+        "title": "Cartão Presente Recarregado",
+        "body": "{{currency}}{{amount}} adicionados. Novo saldo: {{currency}}{{balance}}"
+      },
+      "cardConsolidated": {
+        "title": "Cartões Unidos",
+        "body": "{{count}} cartões unidos. Novo saldo: {{currency}}{{balance}}"
+      }
+    }
   }
 }
