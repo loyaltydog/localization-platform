@@ -350,5 +350,44 @@
     "customer_phone": "Telefone do cliente:",
     "requested_orders": "Pedidos solicitados:",
     "gdpr_link": "Consulte <a href=\"https://help.shopify.com/en/manual/your-account/privacy/GDPR/processing-gdpr-data-requests\">Requisitos do GDPR</a> para saber mais."
+  },
+  "giftCardPurchased": {
+    "subject": "Seu cartão presente está pronto — {{currency}}{{amount}}",
+    "greeting": "Olá {{recipientName}},",
+    "body": "{{senderName}} enviou um cartão presente de {{currency}}{{amount}} para você.",
+    "cardNumber": "Número do cartão: {{cardNumber}}",
+    "securityCode": "Código de segurança: {{securityCode}}",
+    "balance": "Saldo: {{currency}}{{amount}}",
+    "expires": "Expira em: {{expiryDate}}",
+    "personalMessage": "Mensagem de {{senderName}}: {{message}}",
+    "cta": "Verificar Saldo",
+    "footer": "Use este cartão em qualquer loja participante da {{merchantName}}."
+  },
+  "giftCardExpiringSoon": {
+    "subject": "Seu cartão presente expira em breve",
+    "greeting": "Olá {{recipientName}},",
+    "body": "Seu cartão presente terminando em {{lastFour}} expirará em {{expiryDate}}.",
+    "balance": "Saldo restante: {{currency}}{{balance}}",
+    "cta": "Usar Agora",
+    "footer": "Não deixe seu saldo expirar — use-o antes de {{expiryDate}}."
+  },
+  "giftCardSoldReceipt": {
+    "subject": "Venda de cartão presente — {{currency}}{{amount}}",
+    "greeting": "Olá {{cashierName}},",
+    "body": "Um cartão presente foi criado com sucesso.",
+    "cardNumber": "Número do cartão: {{cardNumber}}",
+    "amount": "Valor: {{currency}}{{amount}}",
+    "cardType": "Tipo: {{cardType}}",
+    "recipient": "Destinatário: {{recipientName}}",
+    "timestamp": "Data: {{timestamp}}",
+    "footer": "Este é um recibo automático do LoyaltyDog."
+  },
+  "giftCardReloadReceipt": {
+    "subject": "Cartão presente recarregado — {{currency}}{{amount}} adicionados",
+    "greeting": "Olá {{recipientName}},",
+    "body": "{{currency}}{{amount}} foram adicionados ao seu cartão presente terminando em {{lastFour}}.",
+    "newBalance": "Novo saldo: {{currency}}{{balance}}",
+    "cta": "Verificar Saldo",
+    "footer": "Obrigado por usar {{merchantName}}."
   }
 }
