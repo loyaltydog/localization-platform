@@ -46,8 +46,8 @@ coverage/
 out/
 
 # Claude Code metadata
+.claude/
 CLAUDE.md
 **/CLAUDE.md
 
-_bmad*
 _bmad*

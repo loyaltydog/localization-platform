@@ -208,5 +208,22 @@
   "pleaseUpdateValidConfig": "Atualize a configuração válida primeiro.",
   "pleaseAddProductsFirst": "Adicione produtos primeiro para usar esse prêmio.",
   "databaseOutOfDate": "O banco de dados está DESATUALIZADO. O DESCONTO NÃO PODE SER APLICADO. Execute novamente o Cloud Sync para sincronizar os dados mais recentes. Muito obrigado!",
-  "anErrorHasOccurred": "Ocorreu um erro"
+  "anErrorHasOccurred": "Ocorreu um erro",
+  "giftCard": {
+    "notFound": "Cartão presente não encontrado",
+    "alreadyActivated": "O cartão presente já foi ativado",
+    "notActive": "O cartão presente não está ativo",
+    "voided": "O cartão presente foi cancelado",
+    "expired": "O cartão presente expirou",
+    "insufficientBalance": "Saldo insuficiente no cartão presente",
+    "invalidSecurityCode": "Código de segurança inválido",
+    "invalidAmount": "Valor inválido",
+    "amountExceedsBalance": "O valor excede o saldo disponível",
+    "maxValueExceeded": "O valor total excede o máximo permitido",
+    "programNotFound": "Programa de cartão presente não encontrado",
+    "consolidationFailed": "Falha ao consolidar os cartões",
+    "transferFailed": "Falha na transferência do cartão",
+    "reloadFailed": "Falha ao recarregar o cartão",
+    "activationFailed": "Falha na ativação do cartão"
+  }
 }

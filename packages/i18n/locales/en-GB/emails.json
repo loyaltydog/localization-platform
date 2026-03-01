@@ -350,5 +350,44 @@
     "customer_phone": "Customer Phone:",
     "requested_orders": "Requested Orders:",
     "gdpr_link": "See <a href=\"https://help.shopify.com/en/manual/your-account/privacy/GDPR/processing-gdpr-data-requests\">GDPR requirements</a> to learn more."
+  },
+  "giftCardPurchased": {
+    "subject": "Your Gift Card is Ready — {{currency}}{{amount}}",
+    "greeting": "Hi {{recipientName}},",
+    "body": "{{senderName}} has sent you a {{currency}}{{amount}} gift card.",
+    "cardNumber": "Card Number: {{cardNumber}}",
+    "securityCode": "Security Code: {{securityCode}}",
+    "balance": "Balance: {{currency}}{{amount}}",
+    "expires": "Expires: {{expiryDate}}",
+    "personalMessage": "Message from {{senderName}}: {{message}}",
+    "cta": "Check Your Balance",
+    "footer": "Use this card at any participating {{merchantName}} location."
+  },
+  "giftCardExpiringSoon": {
+    "subject": "Your Gift Card Expires Soon",
+    "greeting": "Hi {{recipientName}},",
+    "body": "Your gift card ending in {{lastFour}} will expire on {{expiryDate}}.",
+    "balance": "Remaining balance: {{currency}}{{balance}}",
+    "cta": "Use Your Card Now",
+    "footer": "Don't let your balance go to waste — use it before {{expiryDate}}."
+  },
+  "giftCardSoldReceipt": {
+    "subject": "Gift Card Sale — {{currency}}{{amount}}",
+    "greeting": "Hi {{cashierName}},",
+    "body": "A gift card has been successfully created.",
+    "cardNumber": "Card Number: {{cardNumber}}",
+    "amount": "Amount: {{currency}}{{amount}}",
+    "cardType": "Type: {{cardType}}",
+    "recipient": "Recipient: {{recipientName}}",
+    "timestamp": "Date: {{timestamp}}",
+    "footer": "This is an automated receipt from LoyaltyDog."
+  },
+  "giftCardReloadReceipt": {
+    "subject": "Gift Card Topped Up — {{currency}}{{amount}} Added",
+    "greeting": "Hi {{recipientName}},",
+    "body": "{{currency}}{{amount}} has been added to your gift card ending in {{lastFour}}.",
+    "newBalance": "New balance: {{currency}}{{balance}}",
+    "cta": "Check Your Balance",
+    "footer": "Thank you for using {{merchantName}}."
   }
 }

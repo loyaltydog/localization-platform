@@ -350,5 +350,44 @@
     "customer_phone": "Téléphone du client :",
     "requested_orders": "Ordres demandés :",
     "gdpr_link": "Voir <a href=\"https://help.shopify.com/en/manual/your-account/privacy/GDPR/processing-gdpr-data-requests\">Les exigences du RGPD</a> pour en savoir plus."
+  },
+  "giftCardPurchased": {
+    "subject": "Votre carte cadeau est prête — {{currency}}{{amount}}",
+    "greeting": "Bonjour {{recipientName}},",
+    "body": "{{senderName}} vous a envoyé une carte cadeau de {{currency}}{{amount}}.",
+    "cardNumber": "Numéro de carte : {{cardNumber}}",
+    "securityCode": "Code de sécurité : {{securityCode}}",
+    "balance": "Solde : {{currency}}{{amount}}",
+    "expires": "Expire le : {{expiryDate}}",
+    "personalMessage": "Message de {{senderName}} : {{message}}",
+    "cta": "Vérifier Mon Solde",
+    "footer": "Utilisez cette carte dans tout établissement {{merchantName}} participant."
+  },
+  "giftCardExpiringSoon": {
+    "subject": "Votre carte cadeau expire bientôt",
+    "greeting": "Bonjour {{recipientName}},",
+    "body": "Votre carte cadeau se terminant par {{lastFour}} expirera le {{expiryDate}}.",
+    "balance": "Solde restant : {{currency}}{{balance}}",
+    "cta": "Utiliser Ma Carte",
+    "footer": "Ne laissez pas votre solde expirer — utilisez-le avant le {{expiryDate}}."
+  },
+  "giftCardSoldReceipt": {
+    "subject": "Vente de carte cadeau — {{currency}}{{amount}}",
+    "greeting": "Bonjour {{cashierName}},",
+    "body": "Une carte cadeau a été créée avec succès.",
+    "cardNumber": "Numéro de carte : {{cardNumber}}",
+    "amount": "Montant : {{currency}}{{amount}}",
+    "cardType": "Type : {{cardType}}",
+    "recipient": "Destinataire : {{recipientName}}",
+    "timestamp": "Date : {{timestamp}}",
+    "footer": "Ceci est un reçu automatique de LoyaltyDog."
+  },
+  "giftCardReloadReceipt": {
+    "subject": "Carte cadeau rechargée — {{currency}}{{amount}} ajoutés",
+    "greeting": "Bonjour {{recipientName}},",
+    "body": "{{currency}}{{amount}} ont été ajoutés à votre carte cadeau se terminant par {{lastFour}}.",
+    "newBalance": "Nouveau solde : {{currency}}{{balance}}",
+    "cta": "Vérifier Mon Solde",
+    "footer": "Merci d'utiliser {{merchantName}}."
   }
 }
