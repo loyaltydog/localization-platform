@@ -124,5 +124,46 @@
   "loadingPleaseWait": "Chargement, veuillez patienter...",
   "campaign": {
     "title": "{{campaignName}}"
+  },
+  "giftCard": {
+    "sms": {
+      "cardSold": "Votre carte cadeau de {{currency}}{{amount}} est prête ! Carte : {{cardNumber}}, Code : {{securityCode}}. À utiliser chez {{merchantName}}.",
+      "cardRedeemed": "{{currency}}{{amount}} débités de votre carte cadeau se terminant par {{lastFour}}. Solde restant : {{currency}}{{remaining}}.",
+      "balanceCheck": "Carte cadeau •••• {{lastFour}} — Solde : {{currency}}{{balance}}. Expire le : {{expiryDate}}.",
+      "cardExpiringSoon": "Votre carte cadeau se terminant par {{lastFour}} expire dans {{days}} jours. Solde : {{currency}}{{balance}}. Utilisez-la vite !",
+      "cardActivated": "Votre carte cadeau de {{currency}}{{amount}} est maintenant active. Carte : {{cardNumber}}, Code : {{securityCode}}.",
+      "cardTopUp": "{{currency}}{{amount}} ajoutés à la carte cadeau se terminant par {{lastFour}}. Nouveau solde : {{currency}}{{balance}}.",
+      "cardConsolidated": "{{count}} cartes cadeaux fusionnées. Nouvelle carte : {{cardNumber}}, Solde : {{currency}}{{balance}}."
+    },
+    "push": {
+      "cardSold": {
+        "title": "Carte Cadeau Créée",
+        "body": "Carte cadeau de {{currency}}{{amount}} prête à l'emploi"
+      },
+      "cardRedeemed": {
+        "title": "Carte Cadeau Utilisée",
+        "body": "{{currency}}{{amount}} débités. Solde : {{currency}}{{remaining}}"
+      },
+      "balanceCheck": {
+        "title": "Solde Carte Cadeau",
+        "body": "Carte se terminant par {{lastFour}} : {{currency}}{{balance}}"
+      },
+      "cardExpiringSoon": {
+        "title": "Carte Bientôt Expirée",
+        "body": "La carte se terminant par {{lastFour}} expire dans {{days}} jours. Solde : {{currency}}{{balance}}"
+      },
+      "cardActivated": {
+        "title": "Carte Cadeau Activée",
+        "body": "Votre carte cadeau de {{currency}}{{amount}} est prête à l'emploi"
+      },
+      "cardTopUp": {
+        "title": "Carte Cadeau Rechargée",
+        "body": "{{currency}}{{amount}} ajoutés. Nouveau solde : {{currency}}{{balance}}"
+      },
+      "cardConsolidated": {
+        "title": "Cartes Fusionnées",
+        "body": "{{count}} cartes fusionnées. Nouveau solde : {{currency}}{{balance}}"
+      }
+    }
   }
 }

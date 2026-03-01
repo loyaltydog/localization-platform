@@ -124,5 +124,46 @@
   "loadingPleaseWait": "Caricamento, attendere prego...",
   "campaign": {
     "title": "{{campaignName}}"
+  },
+  "giftCard": {
+    "sms": {
+      "cardSold": "La tua carta regalo da {{currency}}{{amount}} è pronta! Carta: {{cardNumber}}, Codice: {{securityCode}}. Usala presso {{merchantName}}.",
+      "cardRedeemed": "{{currency}}{{amount}} riscattati dalla tua carta regalo che termina con {{lastFour}}. Saldo rimanente: {{currency}}{{remaining}}.",
+      "balanceCheck": "Carta regalo •••• {{lastFour}} — Saldo: {{currency}}{{balance}}. Scade: {{expiryDate}}.",
+      "cardExpiringSoon": "La tua carta regalo che termina con {{lastFour}} scade tra {{days}} giorni. Saldo: {{currency}}{{balance}}. Usala presto!",
+      "cardActivated": "La tua carta regalo da {{currency}}{{amount}} è ora attiva. Carta: {{cardNumber}}, Codice: {{securityCode}}.",
+      "cardTopUp": "{{currency}}{{amount}} aggiunti alla carta regalo che termina con {{lastFour}}. Nuovo saldo: {{currency}}{{balance}}.",
+      "cardConsolidated": "{{count}} carte regalo unite. Nuova carta: {{cardNumber}}, Saldo: {{currency}}{{balance}}."
+    },
+    "push": {
+      "cardSold": {
+        "title": "Carta Regalo Creata",
+        "body": "Carta regalo da {{currency}}{{amount}} pronta all'uso"
+      },
+      "cardRedeemed": {
+        "title": "Carta Regalo Riscattata",
+        "body": "{{currency}}{{amount}} riscattati. Saldo: {{currency}}{{remaining}}"
+      },
+      "balanceCheck": {
+        "title": "Saldo Carta Regalo",
+        "body": "Carta che termina con {{lastFour}}: {{currency}}{{balance}}"
+      },
+      "cardExpiringSoon": {
+        "title": "Carta in Scadenza",
+        "body": "La carta che termina con {{lastFour}} scade tra {{days}} giorni. Saldo: {{currency}}{{balance}}"
+      },
+      "cardActivated": {
+        "title": "Carta Regalo Attivata",
+        "body": "La tua carta regalo da {{currency}}{{amount}} è pronta all'uso"
+      },
+      "cardTopUp": {
+        "title": "Carta Regalo Ricaricata",
+        "body": "{{currency}}{{amount}} aggiunti. Nuovo saldo: {{currency}}{{balance}}"
+      },
+      "cardConsolidated": {
+        "title": "Carte Unite",
+        "body": "{{count}} carte unite. Nuovo saldo: {{currency}}{{balance}}"
+      }
+    }
   }
 }
