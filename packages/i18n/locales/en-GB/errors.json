@@ -208,5 +208,22 @@
   "pleaseUpdateValidConfig": "Please update valid config first.",
   "pleaseAddProductsFirst": "Please add products first to use this reward.",
   "databaseOutOfDate": "The database is OUT OF DATE. The DISCOUNT can NOT APPLIED. Please re-run Cloud Sync again to sync latest data. Thank you!",
-  "anErrorHasOccurred": "An error has occurred"
+  "anErrorHasOccurred": "An error has occurred",
+  "giftCard": {
+    "notFound": "Gift card not found",
+    "alreadyActivated": "Gift card has already been activated",
+    "notActive": "Gift card is not active",
+    "voided": "Gift card has been voided",
+    "expired": "Gift card has expired",
+    "insufficientBalance": "Insufficient gift card balance",
+    "invalidSecurityCode": "Invalid security code",
+    "invalidAmount": "Invalid amount",
+    "amountExceedsBalance": "Amount exceeds available balance",
+    "maxValueExceeded": "Total value exceeds maximum allowed",
+    "programNotFound": "Gift card programme not found",
+    "consolidationFailed": "Card consolidation failed",
+    "transferFailed": "Card transfer failed",
+    "reloadFailed": "Card reload failed",
+    "activationFailed": "Card activation failed"
+  }
 }

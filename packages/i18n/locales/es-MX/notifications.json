@@ -124,5 +124,46 @@
   "loadingPleaseWait": "Cargando, por favor espere...",
   "campaign": {
     "title": "{{campaignName}}"
+  },
+  "giftCard": {
+    "sms": {
+      "cardSold": "¡Tu tarjeta regalo de {{currency}}{{amount}} está lista! Tarjeta: {{cardNumber}}, Código: {{securityCode}}. Úsala en {{merchantName}}.",
+      "cardRedeemed": "{{currency}}{{amount}} canjeados de tu tarjeta regalo que termina en {{lastFour}}. Restante: {{currency}}{{remaining}}.",
+      "balanceCheck": "Tarjeta regalo •••• {{lastFour}} — Saldo: {{currency}}{{balance}}. Vence: {{expiryDate}}.",
+      "cardExpiringSoon": "Tu tarjeta regalo que termina en {{lastFour}} vence en {{days}} días. Saldo: {{currency}}{{balance}}. ¡Úsala pronto!",
+      "cardActivated": "Tu tarjeta regalo de {{currency}}{{amount}} ya está activa. Tarjeta: {{cardNumber}}, Código: {{securityCode}}.",
+      "cardTopUp": "{{currency}}{{amount}} añadidos a la tarjeta regalo que termina en {{lastFour}}. Nuevo saldo: {{currency}}{{balance}}.",
+      "cardConsolidated": "{{count}} tarjetas regalo fusionadas. Nueva tarjeta: {{cardNumber}}, Saldo: {{currency}}{{balance}}."
+    },
+    "push": {
+      "cardSold": {
+        "title": "Tarjeta Regalo Creada",
+        "body": "Tarjeta regalo de {{currency}}{{amount}} lista para usar"
+      },
+      "cardRedeemed": {
+        "title": "Tarjeta Regalo Canjeada",
+        "body": "{{currency}}{{amount}} canjeados. Saldo: {{currency}}{{remaining}}"
+      },
+      "balanceCheck": {
+        "title": "Saldo de Tarjeta Regalo",
+        "body": "Tarjeta que termina en {{lastFour}}: {{currency}}{{balance}}"
+      },
+      "cardExpiringSoon": {
+        "title": "Tarjeta Próxima a Vencer",
+        "body": "La tarjeta que termina en {{lastFour}} vence en {{days}} días. Saldo: {{currency}}{{balance}}"
+      },
+      "cardActivated": {
+        "title": "Tarjeta Regalo Activada",
+        "body": "Tu tarjeta regalo de {{currency}}{{amount}} está lista para usar"
+      },
+      "cardTopUp": {
+        "title": "Tarjeta Regalo Recargada",
+        "body": "{{currency}}{{amount}} añadidos. Nuevo saldo: {{currency}}{{balance}}"
+      },
+      "cardConsolidated": {
+        "title": "Tarjetas Fusionadas",
+        "body": "{{count}} tarjetas fusionadas. Nuevo saldo: {{currency}}{{balance}}"
+      }
+    }
   }
 }
