@@ -1,0 +1,169 @@
+{
+  "pointsEarned": {
+    "title": "Pontos ganhos!"
+  },
+  "rewardUnlocked": {
+    "title": "Recompensa desbloqueada!",
+    "body": "Desbloqueou {{rewardName}}! Mostre isto no checkout para resgatar."
+  },
+  "rewardExpiring": {
+    "title": "Recompensa a expirar em breve"
+  },
+  "pointsExpiring": {
+    "title": "Pontos a expirar em breve",
+    "body": "os pontos {{pontos}} expiram em {{data de expiração}}. Utilize-os antes que se esgotem!"
+  },
+  "welcome": {
+    "title": "Bem-vindo ao {{merchantName}}!"
+  },
+  "birthday": {
+    "title": "Feliz aniversário!"
+  },
+  "sms": {
+    "welcome": "Bem-vindo ao {{merchantName}}! Aderiu ao nosso programa de fidelização. Comece a ganhar pontos hoje mesmo!",
+    "pointsEarned": "Ganhou {{pontos}} pontos em {{merchantName}}! Saldo: {{equilíbrio}} pts",
+    "rewardReady": "{A tua recompensa está pronta! {{rewardName}} - mostrar isto no checkout",
+    "rewardExpiring": "Não se esqueça! A sua {{rewardName}} expira {{expiryDate}}. Visite {{merchantName}} em breve!",
+    "birthdayReward": "Feliz aniversário! {{merchantName}} tem um presente para si. Verifica as tuas recompensas!",
+    "tierUpgrade": "Parabéns {{memberName}}! Agora és {{tierName}} na {{merchantName}}. Desfruta dos teus novos benefícios!",
+    "pointsExpiring": "{{pontos}} pontos que expiram {{data de expiração}} em {{merchantName}}. Utilize-os antes que desapareçam!",
+    "inactivityReminder": "Sentimos a tua falta {{memberName}}! Tens {{pontos}} pontos em {{merchantName}}. Vem visitar-nos!",
+    "promoAlert": "{{merchantName}}: {{promoMessage}}",
+    "verificationCode": "O seu código de verificação {{merchantName}} é: {{código}}"
+  },
+  "push": {
+    "welcome": {
+      "title": "Bem-vindo ao {{merchantName}}!",
+      "body": "Aderiu ao nosso programa de fidelização. Comece a ganhar pontos hoje mesmo!"
+    },
+    "pointsEarned": {
+      "title": "Pontos ganhos!",
+      "body": "Ganhou {{pontos}} pontos. Saldo: {{balanço}}"
+    },
+    "rewardReady": {
+      "title": "Prémio pronto!",
+      "body": "{{rewardName}} está pronto para resgatar"
+    },
+    "rewardExpiring": {
+      "title": "Recompensa a expirar em breve",
+      "body": "{{rewardName}} expira {{expiryDate}}"
+    },
+    "birthdayReward": {
+      "title": "Feliz aniversário!",
+      "body": "{Tem um presente especial para si"
+    },
+    "tierUpgrade": {
+      "title": "Subir de nível!",
+      "body": "És agora {{tierName}}! Desfrutar de novas vantagens"
+    },
+    "pointsExpiring": {
+      "title": "Pontos a expirar",
+      "body": "{{pontos}} os pontos expiram {{expiryDate}}"
+    },
+    "nearbyStore": {
+      "title": "Estás perto de {{merchantName}}!",
+      "body": "Tem {{pontos}} pontos. Vem visitar-nos!"
+    },
+    "newReward": {
+      "title": "Nova recompensa disponível!",
+      "body": "Verificar {{rewardName}} - {{pointsCost}} pontos"
+    },
+    "promoAlert": {
+      "title": "Oferta especial!",
+      "body": "{{promoMessage}}"
+    },
+    "stampEarned": {
+      "title": "Selo conquistado!",
+      "body": "{{selosColhidos}}/{{selosRequeridos}} - {{selosRestantes}} mais para ir!"
+    },
+    "stampCardComplete": {
+      "title": "Cartão de carimbo completo!",
+      "body": "Parabéns! Reivindique a sua {{rewardName}} gratuita"
+    }
+  },
+  "inApp": {
+    "welcome": "Bem-vindo! Comece a ganhar pontos em cada compra.",
+    "pointsEarned": "+{{pontos}} pontos ganhos",
+    "rewardRedeemed": "{resgatado com sucesso",
+    "tierUpgrade": "Alcançou o estatuto de {{tierName}}!",
+    "newRewardUnlocked": "Nova recompensa desbloqueada: {{rewardName}}",
+    "goalProgress": "{{progresso}}% para a tua próxima recompensa"
+  },
+  "savedSuccessfully": "Guardado com sucesso",
+  "customerDeleted": "Guardado com sucesso",
+  "analyzing": "Analisar...",
+  "hangTight": "Aguardem! Estamos a preparar tudo para si...",
+  "welcomeDashboard": "Bem-vindo ao Painel de Controlo da Fidelidade!",
+  "rewardingExperience": "Embarque numa experiência gratificante com o nosso Painel de Fidelização!",
+  "beginJourney": "Comece a sua viagem adicionando sem esforço uma ID de tipo de passe e dê início ao seu programa de fidelização personalizado.",
+  "simplicity": "Descubra a simplicidade de começar e desfrute de vantagens exclusivas concebidas só para si.",
+  "somethingWentWrong": "Algo correu mal! Já estamos a trabalhar para resolver o problema.",
+  "loadingData": "Carregando dados...",
+  "pleaseWait": "Por favor, aguarde...",
+  "submitOrSave": "Enviar",
+  "noCancel": "Não, cancelar",
+  "yesConfirmDelete": "Sim, confirmar a eliminação",
+  "warning": "Aviso",
+  "abort": "Abortar",
+  "askAboutLoyalty": "Pergunte sobre o seu programa de fidelização...",
+  "retry": "Repetir",
+  "welcomeAdvisor": "Bem-vindo ao seu Loyalty Dog AI Business Advisor!",
+  "analyzedData": "Analisei os seus dados de transação e estou pronto para o ajudar a otimizar o seu programa de fidelização.",
+  "performanceAnalysis": "Análise de desempenho - Como está a funcionar o seu programa de fidelização",
+  "campaignRecommendations": "Recomendações de campanhas - Vendas de aniversário, cartões perfurados, promoções de férias",
+  "memberInsights": "Informações sobre os membros - Padrões de envolvimento e estratégias de retenção",
+  "productAnalysis": "Análise de produtos - Quais os produtos que impulsionam as inscrições de fidelização",
+  "wouldYouLike": "O que gostaria de saber sobre o seu programa de fidelização?",
+  "totalTransactions": "Total das transacções",
+  "memberParticipation": "Participação dos membros",
+  "totalRevenue": "Receitas totais",
+  "dateRangeTx": "{count} tx",
+  "oopsError": "Ooops!",
+  "updatedSuccessfully": "Atualizado com sucesso",
+  "messageHasBeenSent": "A mensagem foi enviada!",
+  "loadingPleaseWait": "A carregar, por favor aguarde...",
+  "campaign": {
+    "title": "{{campaignName}}"
+  },
+  "giftCard": {
+    "sms": {
+      "cardSold": "O seu cartão de oferta de {{currency}}{{amount}} está pronto! Cartão: {{cardNumber}}, Código: {{securityCode}}. Use em {{merchantName}}.",
+      "cardRedeemed": "{{currency}}{{amount}} utilizados do seu cartão de oferta que termina em {{lastFour}}. Saldo restante: {{currency}}{{remaining}}.",
+      "balanceCheck": "Cartão de oferta •••• {{lastFour}} — Saldo: {{currency}}{{balance}}. Expira em: {{expiryDate}}.",
+      "cardExpiringSoon": "O seu cartão de oferta que termina em {{lastFour}} expira em {{days}} dias. Saldo: {{currency}}{{balance}}. Use-o em breve!",
+      "cardActivated": "O seu cartão de oferta de {{currency}}{{amount}} está ativo. Cartão: {{cardNumber}}, Código: {{securityCode}}.",
+      "cardTopUp": "{{currency}}{{amount}} adicionados ao cartão de oferta que termina em {{lastFour}}. Novo saldo: {{currency}}{{balance}}.",
+      "cardConsolidated": "{{count}} cartões de oferta unidos. Novo cartão: {{cardNumber}}, Saldo: {{currency}}{{balance}}."
+    },
+    "push": {
+      "cardSold": {
+        "title": "Cartão de Oferta Criado",
+        "body": "Cartão de oferta de {{currency}}{{amount}} pronto para uso"
+      },
+      "cardRedeemed": {
+        "title": "Cartão de Oferta Utilizado",
+        "body": "{{currency}}{{amount}} utilizados. Saldo: {{currency}}{{remaining}}"
+      },
+      "balanceCheck": {
+        "title": "Saldo do Cartão de Oferta",
+        "body": "Cartão que termina em {{lastFour}}: {{currency}}{{balance}}"
+      },
+      "cardExpiringSoon": {
+        "title": "Cartão a Expirar em Breve",
+        "body": "Cartão que termina em {{lastFour}} expira em {{days}} dias. Saldo: {{currency}}{{balance}}"
+      },
+      "cardActivated": {
+        "title": "Cartão de Oferta Ativado",
+        "body": "O seu cartão de oferta de {{currency}}{{amount}} está pronto para uso"
+      },
+      "cardTopUp": {
+        "title": "Cartão de Oferta Recarregado",
+        "body": "{{currency}}{{amount}} adicionados. Novo saldo: {{currency}}{{balance}}"
+      },
+      "cardConsolidated": {
+        "title": "Cartões Unidos",
+        "body": "{{count}} cartões unidos. Novo saldo: {{currency}}{{balance}}"
+      }
+    }
+  }
+}

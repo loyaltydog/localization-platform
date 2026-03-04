@@ -1,0 +1,169 @@
+{
+  "pointsEarned": {
+    "title": "Punti guadagnati!"
+  },
+  "rewardUnlocked": {
+    "title": "Ricompensa sbloccata!",
+    "body": "Hai sbloccato {{rewardName}}! Mostra questo documento alla cassa per riscattarlo."
+  },
+  "rewardExpiring": {
+    "title": "Premio in scadenza a breve"
+  },
+  "pointsExpiring": {
+    "title": "Punti in scadenza a breve",
+    "body": "i punti {{punti}} scadranno il {{data di scadenza}}. Usali prima che finiscano!"
+  },
+  "welcome": {
+    "title": "Benvenuti a {{merchantName}}!"
+  },
+  "birthday": {
+    "title": "Buon compleanno!"
+  },
+  "sms": {
+    "welcome": "Benvenuti a {{merchantName}}! Sei entrato a far parte del nostro programma fedeltà. Inizia a guadagnare punti oggi stesso!",
+    "pointsEarned": "Hai guadagnato {{punti}} presso {{merchantName}}! Bilancio: {{bilancio}} punti",
+    "rewardReady": "{{memberName}}, la tua ricompensa è pronta! {{rewardName}} - mostralo alla cassa",
+    "rewardExpiring": "Non dimenticare! Il tuo {{rewardName}} scade il {{expiryDate}}. Visita presto {{merchantName}}!",
+    "birthdayReward": "Buon compleanno {{memberName}}! {{merchantName}} ha un regalo per te. Controlla le tue ricompense!",
+    "tierUpgrade": "Congratulazioni {{memberName}}! Sei diventato {{tierName}} presso {{merchantName}}. Goditi i tuoi nuovi vantaggi!",
+    "pointsExpiring": "punti {{punti}} con scadenza {{data di scadenza}} presso {{merchantName}}. Usali prima che finiscano!",
+    "inactivityReminder": "Ci manchi {{memberName}}! Hai {{punti}} presso {{merchantName}}. Vieni a trovarci!",
+    "promoAlert": "{{merchantName}}: {{promoMessage}}",
+    "verificationCode": "Il tuo codice di verifica {{merchantName}} è: {{code}}"
+  },
+  "push": {
+    "welcome": {
+      "title": "Benvenuti a {{merchantName}}!",
+      "body": "Siete entrati a far parte del nostro programma fedeltà. Iniziate a guadagnare punti oggi stesso!"
+    },
+    "pointsEarned": {
+      "title": "Punti guadagnati!",
+      "body": "Hai guadagnato {{punti}} punti. Equilibrio: {{equilibrio}}"
+    },
+    "rewardReady": {
+      "title": "Ricompensa pronta!",
+      "body": "{{rewardName}} è pronto per essere riscattato"
+    },
+    "rewardExpiring": {
+      "title": "Premio in scadenza a breve",
+      "body": "{{rewardName}} scade {{expiryDate}}"
+    },
+    "birthdayReward": {
+      "title": "Buon compleanno!",
+      "body": "{{merchantName}} ha un regalo speciale per te"
+    },
+    "tierUpgrade": {
+      "title": "Aumentate il livello!",
+      "body": "Sei ora {{tierName}}! Usufruite di nuovi vantaggi"
+    },
+    "pointsExpiring": {
+      "title": "Punti in scadenza",
+      "body": "{{punti}} i punti scadono {{data di scadenza}}"
+    },
+    "nearbyStore": {
+      "title": "Sei vicino a {{merchantName}}!",
+      "body": "Hai punti {{punti}}. Vieni a trovarci!"
+    },
+    "newReward": {
+      "title": "Nuova ricompensa disponibile!",
+      "body": "Controlla {{rewardName}} - punti {{pointsCost}}"
+    },
+    "promoAlert": {
+      "title": "Offerta speciale!",
+      "body": "{{promoMessage}}"
+    },
+    "stampEarned": {
+      "title": "Timbro guadagnato!",
+      "body": "{{stampsCollected}}/{{stampsRequired}} - {{stampsRemaining}} ancora da fare!"
+    },
+    "stampCardComplete": {
+      "title": "Carta da bollo completa!",
+      "body": "Congratulazioni! Richiedi il tuo {{rewardName}} gratuito"
+    }
+  },
+  "inApp": {
+    "welcome": "Benvenuti! Iniziate ad accumulare punti ad ogni acquisto.",
+    "pointsEarned": "+{punti}} punti guadagnati",
+    "rewardRedeemed": "{{rewardName}} riscattato con successo",
+    "tierUpgrade": "Hai raggiunto lo status di {{tierName}}!",
+    "newRewardUnlocked": "Nuova ricompensa sbloccata: {{rewardName}}",
+    "goalProgress": "{{progresso}}% alla prossima ricompensa"
+  },
+  "savedSuccessfully": "Salvato con successo",
+  "customerDeleted": "Salvato con successo",
+  "analyzing": "Analizzare...",
+  "hangTight": "Tenetevi forte! Stiamo preparando tutto per voi...",
+  "welcomeDashboard": "Benvenuti nel Cruscotto Fedeltà!",
+  "rewardingExperience": "Iniziate un'esperienza gratificante con la nostra Loyalty Dashboard!",
+  "beginJourney": "Iniziate il vostro viaggio aggiungendo facilmente un ID di tipo Pass e date il via al vostro programma fedeltà personalizzato.",
+  "simplicity": "Scoprite la semplicità di iniziare e godete di vantaggi esclusivi pensati su misura per voi.",
+  "somethingWentWrong": "Qualcosa è andato storto! Stiamo già lavorando per risolvere il problema.",
+  "loadingData": "Caricamento dati...",
+  "pleaseWait": "Attendere prego...",
+  "submitOrSave": "Invia",
+  "noCancel": "No, annullare",
+  "yesConfirmDelete": "Sì, confermare l'eliminazione",
+  "warning": "Avvertenze",
+  "abort": "Interruzione",
+  "askAboutLoyalty": "Chiedete del vostro programma di fidelizzazione...",
+  "retry": "Riprova",
+  "welcomeAdvisor": "Benvenuti nel vostro Loyalty Dog AI Business Advisor!",
+  "analyzedData": "Ho analizzato i dati delle vostre transazioni e sono pronto ad aiutarvi a ottimizzare il vostro programma fedeltà.",
+  "performanceAnalysis": "Analisi delle prestazioni: come si sta svolgendo il vostro programma di fidelizzazione",
+  "campaignRecommendations": "Raccomandazioni per le campagne - Vendite per i compleanni, schede perforate, promozioni per le festività",
+  "memberInsights": "Approfondimenti sui soci - Modelli di coinvolgimento e strategie di fidelizzazione",
+  "productAnalysis": "Analisi dei prodotti - Quali sono i prodotti che spingono le sottoscrizioni alla fedeltà?",
+  "wouldYouLike": "Cosa vorreste sapere sul vostro programma di fidelizzazione?",
+  "totalTransactions": "Totale transazioni",
+  "memberParticipation": "Partecipazione dei membri",
+  "totalRevenue": "Ricavi totali",
+  "dateRangeTx": "{conteggio} tx",
+  "oopsError": "Ooops!",
+  "updatedSuccessfully": "Aggiornato con successo",
+  "messageHasBeenSent": "Il messaggio è stato inviato!",
+  "loadingPleaseWait": "Caricamento, attendere prego...",
+  "campaign": {
+    "title": "{{campaignName}}"
+  },
+  "giftCard": {
+    "sms": {
+      "cardSold": "La tua carta regalo da {{currency}}{{amount}} è pronta! Carta: {{cardNumber}}, Codice: {{securityCode}}. Usala presso {{merchantName}}.",
+      "cardRedeemed": "{{currency}}{{amount}} riscattati dalla tua carta regalo che termina con {{lastFour}}. Saldo rimanente: {{currency}}{{remaining}}.",
+      "balanceCheck": "Carta regalo •••• {{lastFour}} — Saldo: {{currency}}{{balance}}. Scade: {{expiryDate}}.",
+      "cardExpiringSoon": "La tua carta regalo che termina con {{lastFour}} scade tra {{days}} giorni. Saldo: {{currency}}{{balance}}. Usala presto!",
+      "cardActivated": "La tua carta regalo da {{currency}}{{amount}} è ora attiva. Carta: {{cardNumber}}, Codice: {{securityCode}}.",
+      "cardTopUp": "{{currency}}{{amount}} aggiunti alla carta regalo che termina con {{lastFour}}. Nuovo saldo: {{currency}}{{balance}}.",
+      "cardConsolidated": "{{count}} carte regalo unite. Nuova carta: {{cardNumber}}, Saldo: {{currency}}{{balance}}."
+    },
+    "push": {
+      "cardSold": {
+        "title": "Carta Regalo Creata",
+        "body": "Carta regalo da {{currency}}{{amount}} pronta all'uso"
+      },
+      "cardRedeemed": {
+        "title": "Carta Regalo Riscattata",
+        "body": "{{currency}}{{amount}} riscattati. Saldo: {{currency}}{{remaining}}"
+      },
+      "balanceCheck": {
+        "title": "Saldo Carta Regalo",
+        "body": "Carta che termina con {{lastFour}}: {{currency}}{{balance}}"
+      },
+      "cardExpiringSoon": {
+        "title": "Carta in Scadenza",
+        "body": "La carta che termina con {{lastFour}} scade tra {{days}} giorni. Saldo: {{currency}}{{balance}}"
+      },
+      "cardActivated": {
+        "title": "Carta Regalo Attivata",
+        "body": "La tua carta regalo da {{currency}}{{amount}} è pronta all'uso"
+      },
+      "cardTopUp": {
+        "title": "Carta Regalo Ricaricata",
+        "body": "{{currency}}{{amount}} aggiunti. Nuovo saldo: {{currency}}{{balance}}"
+      },
+      "cardConsolidated": {
+        "title": "Carte Unite",
+        "body": "{{count}} carte unite. Nuovo saldo: {{currency}}{{balance}}"
+      }
+    }
+  }
+}
