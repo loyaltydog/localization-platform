@@ -660,5 +660,27 @@
         "passFooter": "Pass Footer",
         "passStrip": "Pass Strip",
         "passThumbnail": "Pass Thumbnail"
+    },
+    "components": {
+        "progressing": "Progressing...",
+        "success": "Success!",
+        "cancel": "Cancel",
+        "yesDeleteIt": "Yes, delete it",
+        "hangTight": "Hang tight! We're getting everything ready for you...",
+        "betaBannerTitle": "AI Business Advisor Beta Test",
+        "betaBannerText": "You are using the beta test version of the AI Business Advisor. Only the AI Advisor features are available in this environment. Your feedback is valuable to help us improve this feature before the full release.",
+        "welcomeAI": "👋 Welcome to your Loyalty Dog AI Business Advisor!",
+        "aiReadyToHelp": "I've analyzed your transaction data and I'm ready to help you optimize your loyalty program. Here's what I can help you with:",
+        "performanceAnalysis": "Performance Analysis - How your loyalty program is performing",
+        "campaignRecommendations": "Campaign Recommendations - Birthday sales, punch cards, holiday promotions",
+        "memberInsights": "Member Insights - Engagement patterns and retention strategies",
+        "productAnalysis": "Product Analysis - Which products drive loyalty sign-ups",
+        "whatWouldYouLike": "What would you like to know about your loyalty program?",
+        "prev": "Prev",
+        "next": "Next",
+        "page": "Page",
+        "of": "of",
+        "languagePreferenceSavedLocally": "Language preference saved locally only",
+        "failedToPersistLanguage": "Failed to persist merchant language preference"
     }
 }
