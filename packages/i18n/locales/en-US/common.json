@@ -726,5 +726,45 @@
         "failedToLoadChartData": "Failed to load chart data",
         "mobileTipTitle": "Tip:",
         "mobileTipContent": "Rotate your device to landscape for a better chart view. Tap event markers to see details."
+    },
+    "app": {
+        "auth": {
+            "forgotPassword": {
+                "title": "Forgot your password?",
+                "description": "Don't fret! Just type in your email and we'll email you instructions to reset your password.",
+                "emailLabel": "Email address",
+                "submitButton": "Reset password",
+                "submittingButton": "Please wait...",
+                "successMessage": "An email containing a password reset link has been sent to your email.",
+                "alreadyHaveAccount": "Already have an account?",
+                "signInLink": "Sign in",
+                "pageTitle": "Forgot Password"
+            },
+            "login": {
+                "usernameEmpty": "Username can not be empty.",
+                "invalidPassword": "Invalid password",
+                "passwordEmpty": "Password can not be empty.",
+                "invalidCredentials": "Invalid authentication credentials.",
+                "title": "Sign In",
+                "description": "Use your email and password to sign in",
+                "emailLabel": "Email address",
+                "passwordLabel": "Password",
+                "rememberMe": "Remember me",
+                "forgotPassword": "Forgot password?",
+                "submitButton": "Sign in",
+                "submittingButton": "Please wait...",
+                "defaultError": "Unable to sign in.",
+                "signinError": "Try signing in with a different account.",
+                "oAuthSigninError": "Try signing in with a different account.",
+                "oAuthCallbackError": "Try signing in with a different account.",
+                "oAuthCreateAccountError": "Try signing in with a different account.",
+                "emailCreateAccountError": "Try signing in with a different account.",
+                "callbackError": "Try signing in with a different account.",
+                "oAuthAccountNotLinkedError": "To confirm your identity, sign in with the same account you used originally.",
+                "emailSigninError": "The e-mail could not be sent.",
+                "credentialsSigninError": "Sign in failed. Check the details you provided are correct.",
+                "sessionRequiredError": "Please sign in to access this page."
+            }
+        }
     }
 }
