@@ -764,6 +764,60 @@
                 "emailSigninError": "The e-mail could not be sent.",
                 "credentialsSigninError": "Sign in failed. Check the details you provided are correct.",
                 "sessionRequiredError": "Please sign in to access this page."
+            },
+            "clover": {
+                "pageTitle": "Install LoyaltyDog ({{marketCode}})",
+                "merchantId": "Merchant ID: {{merchantId}}",
+                "continueWithEmail": "Continue with your Clover email",
+                "connectTo": "Connect to {{name}} ({{email}})",
+                "connectToExistingAccount": "Connect to existing account",
+                "back": "Back",
+                "loginHelperText": "Please enter your LoyaltyDog account credentials to connect to your Clover account",
+                "emailLabel": "Email address",
+                "passwordLabel": "Password",
+                "submittingButton": "Please wait...",
+                "loginAndContinue": "Login and continue"
+            },
+            "shopify": {
+                "pageTitle": "Install LoyaltyDog",
+                "continueWithEmail": "Continue with your Shopify email",
+                "connectTo": "Connect to {{name}} ({{email}})",
+                "connectToExistingAccount": "Connect to existing account",
+                "back": "Back",
+                "loginHelperText": "Please enter your LoyaltyDog account credentials to connect to your Shopify store",
+                "emailLabel": "Email address",
+                "passwordLabel": "Password",
+                "submittingButton": "Please wait...",
+                "loginAndContinue": "Login and continue",
+                "shopifyStoreLabel": "Your Shopify store",
+                "installButton": "Install"
+            },
+            "resetPassword": {
+                "title": "Reset Password",
+                "newPasswordLabel": "New Password",
+                "confirmPasswordLabel": "Confirm password",
+                "submitButton": "Reset password",
+                "submittingButton": "Please wait...",
+                "successMessage": "Your password has been successfully changed.",
+                "alreadyHaveAccount": "Already have an account?",
+                "signInLink": "Sign in"
+            },
+            "register": {
+                "title": "Sign Up",
+                "description": "Create an account with your email and password",
+                "otpSent": "A new OTP has been sent to {{email}}",
+                "somethingWentWrong": "Something went wrong. Please try again later.",
+                "resendOtp": "Click here to send a new one",
+                "businessNameLabel": "Business name",
+                "emailLabel": "Email address",
+                "passwordLabel": "Password",
+                "confirmPasswordLabel": "Confirm password",
+                "acceptTerms": "I accept the",
+                "termsAndConditions": "Terms and Conditions",
+                "submitButton": "Sign Up",
+                "submittingButton": "Please wait...",
+                "alreadyHaveAccount": "Already have an account?",
+                "signInLink": "Sign in"
             }
         }
     }
