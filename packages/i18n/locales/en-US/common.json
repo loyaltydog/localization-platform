@@ -728,7 +728,104 @@
         "mobileTipContent": "Rotate your device to landscape for a better chart view. Tap event markers to see details."
     },
     "app": {
-        "auth": {
+        "admin": {
+        "backups": {
+            "requestQueued": "Your request was successfully added to queue, it will be processed shortly.",
+            "searchPlaceholder": "Search backup...",
+            "totalBackups": "Total backups: {{total}}",
+            "recentRestores": "Recent Restores",
+            "noname": "(noname)",
+            "deleted": "(deleted)",
+            "createTitle": "Create Backup Task",
+            "updateTitle": "Update {{name}}",
+            "restoreTitle": "Restore {{name}}",
+            "targetUser": "Target User: {{user}}",
+            "table": {
+                "name": "Name",
+                "account": "Account",
+                "active": "Active",
+                "cron": "Cron",
+                "lastRun": "Last Run",
+                "info": "Info",
+                "status": "Status",
+                "actions": "Actions",
+                "noBackups": "No Backups",
+                "time": "Time",
+                "backupName": "Backup Name",
+                "backupTime": "Backup Time",
+                "restoredTime": "Restored Time",
+                "targetUser": "Target User",
+                "noRestores": "No Restores"
+            },
+            "status": {
+                "active": "True",
+                "inactive": "False",
+                "inactiveBadge": "Inactive",
+                "somethingWentWrong": "Something went wrong!"
+            },
+            "actions": {
+                "reRun": "Re-Run",
+                "reRunConfirm": "Re-run {{name}}",
+                "reRunMessage": "Are you sure you want to re-run this backup?",
+                "delete": "Delete",
+                "deleteConfirm": "Delete {{name}}",
+                "deleteMessage": "Are you sure you want to delete this backup?"
+            },
+            "form": {
+                "nameLabel": "Name",
+                "nameHelper": "The unique name of the backup for management.",
+                "userAccountLabel": "User Account",
+                "cronExpressionLabel": "Cron Expression",
+                "cronHelperBefore": "You can use",
+                "cronHelperAfter": "to define a cron expression.",
+                "keepRecentLabel": "Keep Recent",
+                "activeLabel": "Active",
+                "backupButton": "Backup",
+                "updateButton": "Update",
+                "cancelButton": "Cancel",
+                "submittingButton": "Please wait...",
+                "backupVersionLabel": "Backup Version",
+                "restoreButton": "Restore Backup"
+            },
+            "restore": {
+                "passTypeIds": "Pass Type IDs",
+                "passes": "Passes",
+                "vouchers": "Vouchers",
+                "programs": "Programs",
+                "orders": "Orders",
+                "eposnow": "Eposnow",
+                "webhooks": "Webhooks",
+                "customers": "Customers",
+                "shopifies": "Shopifies",
+                "templates": "Templates",
+                "offers": "Offers",
+                "clovers": "Clovers"
+            }
+        },
+        "aiAdvisor": {
+            "loadingTitle": "Loading Loyalty Data",
+            "loadingDescription": "Connecting to Loyalty Dog API...",
+            "errorTitle": "Connection Error",
+            "retryConnection": "Retry Connection",
+            "pageTitle": "AI Business Advisor",
+            "liveData": "Live Data",
+            "applied": "Applied: {{description}}",
+            "fromSource": " • from {{source}}",
+            "aiConnected": "Connected",
+            "aiDisconnected": "Disconnected",
+            "aiStatus": "AI: {{status}}",
+            "refreshData": "Refresh Data",
+            "noDataTitle": "No Data Available",
+            "noDataDescription": "Unable to load transaction summary",
+            "pocNotice": "🚧 POC Version - {{count}} transactions loaded",
+            "failedToFetchData": "Failed to fetch data",
+            "initialSummaryMessage": "Give me a quick summary of the selected date range"
+        },
+        "configuration": {
+            "title": "Configuration"
+        }
+    },
+    "auth": {
             "forgotPassword": {
                 "title": "Forgot your password?",
                 "description": "Don't fret! Just type in your email and we'll email you instructions to reset your password.",
@@ -764,6 +861,9 @@
                 "emailSigninError": "The e-mail could not be sent.",
                 "credentialsSigninError": "Sign in failed. Check the details you provided are correct.",
                 "sessionRequiredError": "Please sign in to access this page."
+            },
+            "layout": {
+                "maintenanceMessage": "Our service is currently undergoing maintenance. We'll be back soon!"
             },
             "clover": {
                 "pageTitle": "Install LoyaltyDog ({{marketCode}})",
