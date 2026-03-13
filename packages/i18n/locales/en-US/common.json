@@ -823,6 +823,103 @@
         },
         "configuration": {
             "title": "Configuration"
+        },
+        "reports": {
+            "title": "Reports",
+            "list": {
+                "eposnowTransactionsSummaryAll": "EposNow Transactions Summary for all programs",
+                "shopifyTransactionsSummaryAll": "Shopify Transactions Summary for all programs"
+            },
+            "processingPrefix": "Processing",
+            "processingSuffix": "report. It will be emailed to you soon"
+        },
+        "shopify": {
+            "plans": {
+                "title": "Shopify Plans",
+                "empty": "No Shopify Plan",
+                "table": {
+                    "name": "Name",
+                    "price": "Price",
+                    "type": "Type",
+                    "trialDays": "Trial Days",
+                    "actions": "Actions",
+                    "empty": "(Empty)"
+                },
+                "actions": {
+                    "edit": "Edit",
+                    "delete": "Delete"
+                },
+                "confirm": {
+                    "deleteTitle": "Delete",
+                    "deleteMessage": "Are you sure you want to delete this shopify plan?"
+                },
+                "form": {
+                    "title": "Shopify Plans",
+                    "newTitle": "New Shopify Plan",
+                    "updateTitle": "Update {{planName}}",
+                    "nameLabel": "Name",
+                    "typeLabel": "Type",
+                    "typeOneTimeFee": "One-Time Fee",
+                    "typeSubscriptionFee": "Subscription Fee",
+                    "priceLabel": "Price",
+                    "priceHelper": "Minimum price is $0.50",
+                    "trialDaysLabel": "Trial Days",
+                    "testingModeLabel": "Testing Mode",
+                    "testingModeHelper": "Enable testing mode for this plan",
+                    "testShopDomainsLabel": "Test Shop Domains",
+                    "testShopDomainsHelper": "Enter shop domains (one per line) that will use this test plan",
+                    "defaultPlanLabel": "Default Plan",
+                    "defaultPlanHelper": "Set as default plan for new shops",
+                    "submitButton": "Save Plan",
+                    "submittingButton": "Saving...",
+                    "cancelButton": "Cancel"
+                }
+            },
+            "users": {
+                "title": "Users",
+                "pages": {
+                    "list": "Users",
+                    "new": "New User",
+                    "edit": "Update User",
+                    "view": "User",
+                    "delete": "Delete User"
+                },
+                "table": {
+                    "id": "ID",
+                    "username": "Username",
+                    "email": "Email",
+                    "registeredAt": "Registered At",
+                    "pricePlan": "Price Plan",
+                    "roles": "Roles",
+                    "actions": "Actions",
+                    "empty": "No customers",
+                    "roleAdmin": "admin",
+                    "roleLoyalty": "loyalty"
+                },
+                "actions": {
+                    "signInAsUser": "Sign in as user",
+                    "signInAsUserLoading": "Signing in as {{email}} ...",
+                    "login": "Login",
+                    "edit": "Edit",
+                    "delete": "Delete",
+                    "view": "View"
+                },
+                "totalUsers": "Total users: {{total}}",
+                "createButton": "Create New User",
+                "deleteForm": {
+                    "title": "Delete {{userDisplayName}}"
+                },
+                "detail": {
+                    "business": "Business",
+                    "name": "Name",
+                    "email": "Email",
+                    "role": "Role",
+                    "betaUser": "Beta User",
+                    "location": "Location",
+                    "website": "Website",
+                    "registeredAt": "Registered At"
+                }
+            }
         }
     },
     "auth": {
@@ -920,5 +1017,8 @@
                 "signInLink": "Sign in"
             }
         }
+    },
+    "dashboard": {
+        "welcomeBack": "Welcome back, {{displayName}}"
     }
 }
