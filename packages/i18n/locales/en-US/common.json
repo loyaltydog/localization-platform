@@ -920,6 +920,213 @@
                     "registeredAt": "Registered At"
                 }
             }
+        },
+        "user": {
+            "appKeys": {
+                "title": "App Keys",
+                "pages": {
+                    "list": "App Keys",
+                    "new": "New App Key",
+                    "edit": "Edit App Key"
+                },
+                "table": {
+                    "name": "Name",
+                    "appKey": "App Key",
+                    "passTypeIds": "Pass Type IDs",
+                    "passTemplates": "Pass Templates",
+                    "actions": "Actions",
+                    "empty": "No App Key",
+                    "emptyName": "(Empty)"
+                },
+                "actions": {
+                    "edit": "Edit",
+                    "delete": "Delete"
+                },
+                "form": {
+                    "nameLabel": "Name",
+                    "fullAccessLabel": "Full Access",
+                    "allowedTemplatesLabel": "Allowed Templates",
+                    "allowedPassTypeIdsLabel": "Allowed Pass Type IDs",
+                    "submitButton": "Submit",
+                    "submitButtonLoading": "Please wait...",
+                    "cancelButton": "Cancel",
+                    "deleteConfirmMessage": "Are you sure you want to delete this app key?",
+                    "deleteConfirmNo": "No, cancel",
+                    "deleteConfirmYes": "Yes, confirm delete"
+                }
+            },
+            "passes": {
+                "title": "Passes",
+                "pages": {
+                    "list": "Passes",
+                    "view": "View Pass",
+                    "edit": "Edit Pass"
+                },
+                "analytics": "Analytics",
+                "recentPasses": "Recent Passes",
+                "table": {
+                    "serialNumber": "Serial Number",
+                    "template": "Template",
+                    "created": "Created",
+                    "status": "Status",
+                    "actions": "Actions"
+                },
+                "actions": {
+                    "download": "Download",
+                    "edit": "Edit",
+                    "delete": "Delete",
+                    "view": "View"
+                },
+                "noData": "No passes found",
+                "search": {
+                    "cardHeader": "Search Pass",
+                    "placeholder": "Enter pass pid, serial number, card number ...",
+                    "searchButton": "Search",
+                    "searchingButton": "Searching...",
+                    "errorMessage": "Incorrect value"
+                },
+                "form": {
+                    "submitButton": "Submit",
+                    "submitButtonLoading": "Saving...",
+                    "cancelButton": "Cancel"
+                },
+                "edit": {
+                    "title": "Edit Pass"
+                },
+                "status": {
+                    "title": "Update Status",
+                    "statusLabel": "Status",
+                    "statusValid": "Valid",
+                    "statusInvalid": "Invalid",
+                    "statusRedeemed": "Redeemed",
+                    "statusExpired": "Expired",
+                    "statusLocked": "Locked",
+                    "statusUnpaid": "Unpaid",
+                    "statusIncomplete": "Incomplete",
+                    "updateButton": "Update",
+                    "cancelButton": "Cancel"
+                },
+                "detail": {
+                    "passTitle": "Pass",
+                    "tabGeneral": "General",
+                    "tabData": "Data",
+                    "tabScanHistory": "Scan History",
+                    "tabImages": "Images",
+                    "tabSource": "Source",
+                    "deleteConfirm": "Confirm Action",
+                    "deleteMessage": "Are you sure you want to delete this pass?",
+                    "template": "Template",
+                    "passTypeId": "Pass Type ID",
+                    "serialNumber": "Serial Number",
+                    "createdAt": "Created At",
+                    "lastUpdated": "Last Updated",
+                    "expiresAt": "Expires At",
+                    "status": "Status",
+                    "updateStatusLink": "Update Status",
+                    "registrations": "Registrations",
+                    "shortlink": "Shortlink",
+                    "scanToAdd": "Scan to add",
+                    "noValues": "No values",
+                    "tableHeaderPidNumber": "PID Number",
+                    "tableHeaderTime": "Time",
+                    "tableHeaderScanner": "Scanner",
+                    "tableHeaderAction": "Action",
+                    "tableHeaderDetails": "Details",
+                    "noScans": "No scans",
+                    "unknownScanner": "Unknown",
+                    "saveButton": "Save"
+                }
+            },
+            "passTypes": {
+                "title": "Pass Type IDs",
+                "pages": {
+                    "list": "Pass Type IDs",
+                    "new": "New Pass Type ID",
+                    "edit": "Edit Pass Type ID",
+                    "delete": "Delete Pass Type ID"
+                },
+                "table": {
+                    "passTypeId": "Pass Type ID",
+                    "organization": "Organization",
+                    "teamIdentifier": "Team Identifier",
+                    "certificateExpiration": "Certificate Expiration",
+                    "actions": "Actions",
+                    "empty": "No Pass Type IDs"
+                },
+                "actions": {
+                    "edit": "Edit",
+                    "delete": "Delete",
+                    "renew": "Renew"
+                },
+                "renewConfirm": "Renew {{passTypeIdentifier}}",
+                "renewMessage": "Are you sure you want to renew this Pass Type Identifier? Apple support max 5 valid certificates per Pass Type Identifier. You don't need to renew if you have a valid certificate.",
+                "deleteConfirmTitle": "Delete {{passTypeIdentifier}}",
+                "deleteConfirmMessage": "CAUTION: You are about to delete a pass type id. Without a pass type id, passes can't be signed and are not usable. Because of this all associated pass templates and passes will be permanently deleted from our servers.",
+                "gettingStartedTitle": "Getting started by adding a Pass Type ID.",
+                "helperText": "Register a pass type identifier (Pass Type ID) for each kind of pass you create (i.e. gift cards). Registering your Pass Type IDs lets you generate Apple-issued certificates which are used to digitally sign and send updates to your passes, and allow your passes to be recognized by Apple Wallet/Passbook.",
+                "tabs": {
+                    "wizard": "Wizard",
+                    "assistedUpload": "Assisted Upload",
+                    "manualImport": "Manual Import"
+                },
+                "wizardTitle": "Create LoyaltyDog Certificate",
+                "uploadTitle": "Upload Certificate",
+                "importTitle": "Import Certificate",
+                "new": {
+                    "assistedUpload": {
+                        "step1": "Sign in with your Apple ID and go to",
+                        "step1Link": "Certificates, Identifiers & Profiles",
+                        "step2": "Register a new Pass Type ID if you don't have one",
+                        "step3": "Download your",
+                        "step3Link": "Certificate Signing Request (CSR)",
+                        "step4": "Locate the Pass Type ID in the Identifiers list and open it, then press Create Certificate",
+                        "step5": "Upload your Certificate Signing Request to the Apple Developer Portal, then press Continue",
+                        "step6": "Download your certificate from the Apple Developer Portal and upload it here."
+                    }
+                },
+                "sideCard": {
+                    "title": "New Pass Type ID",
+                    "helperText": "For production use, you are strongly encouraged to use your own Pass Type ID. You need an iOS Developer Account."
+                },
+                "edit": {
+                    "title": "Edit Pass Type ID",
+                    "infoLabel": "Note:",
+                    "infoText": "The organization name will be updated in your Pass Type ID. The current organization name is",
+                    "warningText": "The new organization name will be used for newly created passes. Passes issued with the old organization name might continue to use the old organization name even after being updated. You should not frequently change your organization name.",
+                    "submitButton": "Update"
+                },
+                "delete": {
+                    "confirmationLabel": "Confirmation",
+                    "confirmText": "Please type {{passTypeIdentifier}} to confirm the deletion.",
+                    "warningText": "All associated templates and passes will be permanently deleted!",
+                    "cautionLabel": "CAUTION:",
+                    "submitButton": "Submit",
+                    "cancelButton": "Cancel"
+                },
+                "newForm": {
+                    "upload": {
+                        "certificateLabel": "Certificate (*.cer)",
+                        "uploadButton": "Upload",
+                        "cancelButton": "Cancel"
+                    },
+                    "import": {
+                        "certificateLabel": "Pass Certificate (.p12 File)",
+                        "certificateHelper": "You can create your pass type manually, export and upload the p12 file here.",
+                        "passwordLabel": "Password",
+                        "importButton": "Import",
+                        "cancelButton": "Cancel"
+                    },
+                    "wizard": {
+                        "passTypeIdLabel": "Pass Type ID",
+                        "passTypeIdHelper": "We recommend using a reverse-domain name style string (i.e., pass.dog.loyalty.merchant).",
+                        "certificateNameLabel": "Certificate Name",
+                        "certificateNameHelper": "You cannot use special characters such as @, &, *, ', \", -.",
+                        "createButton": "Create",
+                        "creatingButton": "Please wait...",
+                        "cancelButton": "Cancel"
+                    }
+                }
+            }
         }
     },
     "auth": {
@@ -1020,5 +1227,112 @@
     },
     "dashboard": {
         "welcomeBack": "Welcome back, {{displayName}}"
+    },
+    "templates": {
+        "title": "Templates",
+        "pages": {
+            "list": "Templates",
+            "new": "New Template",
+            "view": "Template",
+            "edit": "Customize",
+            "delete": "Delete Template",
+            "newPass": "Create Pass from Template",
+            "push": "Send Push Notification",
+            "duplicate": "Duplicate Template"
+        },
+        "table": {
+            "id": "ID",
+            "name": "Name",
+            "passTypeId": "Pass Type ID",
+            "style": "Style",
+            "actions": "Actions"
+        },
+        "actions": {
+            "view": "View",
+            "edit": "Edit",
+            "newPass": "New Pass",
+            "duplicate": "Duplicate",
+            "delete": "Delete"
+        },
+        "form": {
+            "templateName": "Template Name",
+            "templateNameHelper": "For internal use, won't be visible to the outside",
+            "passDescription": "Pass Description",
+            "passDescriptionHelper": "Will be used as description for the passes that will be generated form this pass template. If you want to customize the description for each pass, add the description to the fields below",
+            "icon": "Icon",
+            "iconHelper": "The icon needs to be of square format",
+            "passTypeId": "Pass Type ID",
+            "passStyle": "Pass Style",
+            "disableAutoPush": "Disable Auto-Push",
+            "submitButton": "Create",
+            "cancelButton": "Cancel",
+            "savingButton": "Please wait..."
+        },
+        "edit": {
+            "tabs": {
+                "template": "Template",
+                "appearance": "Appearance",
+                "designer": "Designer",
+                "stripImage": "Strip Image",
+                "translation": "Translation",
+                "source": "Source",
+                "relevance": "Relevance",
+                "location": "Location",
+                "beacons": "Beacons",
+                "apps": "Apps",
+                "time": "Time",
+                "placeholder": "Placeholder",
+                "actions": "Actions",
+                "distribution": "Distribution",
+                "branding": "Branding",
+                "payment": "Payment",
+                "restriction": "Restriction"
+            },
+            "successMessage": "Template was saved successfully.",
+            "savingButton": "Saving...",
+            "saveAndCloseButton": "Save & Close"
+        },
+        "passStyles": {
+            "boardingPass": "Boarding Pass",
+            "coupon": "Coupon",
+            "eventTicket": "Event Ticket",
+            "storeCard": "Store Card",
+            "generic": "Generic"
+        },
+        "delete": {
+            "confirmMessage": "Are you sure you want to delete this template?",
+            "warningTitle": "Warning",
+            "warningMessage": "All passes from this template will be permanently deleted. This action cannot be undone.",
+            "cancelButton": "No, cancel",
+            "confirmButton": "Yes, confirm delete"
+        },
+        "detail": {
+            "analytics": "Analytics",
+            "distribution": "Distribution",
+            "shareQrCode": "Share this QR code to create passes or use",
+            "quantity": "Quantity",
+            "redemption": "Redemption",
+            "loadingData": "Loading data...",
+            "edit": "Edit",
+            "sendPushNotifications": "Send push notifications",
+            "editButtonTitle": "Edit",
+            "pushButtonTitle": "Send push notifications",
+            "deleteButton": "Delete {template.name}"
+        },
+        "push": {
+            "message1": "You are about to send push notifications to all registered devices.",
+            "message2": "Make sure that your pass template actually changed, otherwise notifications might not appear.",
+            "message3": "Note: Excessive usage of push notifications can lead to rate limiting or blocking of your pass type id!",
+            "successMessage": "A update notification was successfully sent, it will be delivered to your passes shortly.",
+            "sendButton": "Send"
+        },
+        "analytics": {
+            "totalCreated": "Total Created",
+            "totalInstalled": "Total Installed",
+            "totalActive": "Total Active"
+        },
+        "newpass": {
+            "values": "Values"
+        }
     }
 }
