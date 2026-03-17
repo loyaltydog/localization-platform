@@ -36,6 +36,8 @@ jobs:
           lokalise2 file download \
             --token "$LOKALISE_API_KEY" \
             --project-id "$LOKALISE_PROJECT_ID" \
+            --format json \
+            --original-filenames=true \
             --unzip-to locales
 
       - name: Show what changed
