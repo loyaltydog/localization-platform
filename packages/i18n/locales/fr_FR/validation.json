@@ -1,0 +1,183 @@
+{
+    "account": {
+        "domain_invalid": "Format de domaine non valide",
+        "domain_required": "Le domaine est requis",
+        "email_invalid": "Format d'adresse électronique non valide",
+        "email_required": "L'adresse électronique est requise",
+        "guid_invalid": "Format GUID incorrect",
+        "guid_required": "Le GUID est requis",
+        "name_required": "Le nom de l'entreprise est obligatoire",
+        "password_empty": "Le mot de passe ne peut pas être vide",
+        "password_required": "Le mot de passe est requis",
+        "password_too_short": "Le mot de passe doit comporter au moins 8 caractères"
+    },
+    "api": {
+        "endpoint_not_found": "Point de terminaison de l'API non trouvé",
+        "invalid_version": "Version de l'API non valide",
+        "method_not_allowed": "Méthode non autorisée",
+        "request_timeout": "Délai d'attente de la demande",
+        "too_many_requests": "Trop de demandes",
+        "unsupported_media_type": "Type de support non pris en charge"
+    },
+    "common": {
+        "empty": "Ce champ ne peut pas être vide",
+        "invalid_format": "Format non valide",
+        "invalid_phone": "Format de numéro de téléphone non valide",
+        "invalid_url": "Format d'URL non valide",
+        "required": "Ce champ est obligatoire",
+        "too_long": "La valeur dépasse la longueur maximale",
+        "too_short": "La valeur est trop courte"
+    },
+    "custom": {
+        "exists": "Cette valeur n'existe pas",
+        "invalid": "Valeur non valide",
+        "mismatch": "Les valeurs ne correspondent pas",
+        "unavailable": "Cette valeur n'est pas disponible",
+        "unique": "Cette valeur est déjà utilisée"
+    },
+    "customer": {
+        "customer_email_required": "L'adresse électronique du client est requise",
+        "customer_id_required": "L'identifiant du client est requis",
+        "customer_not_found": "Client non trouvé"
+    },
+    "date": {
+        "after": "La date doit être postérieure à {{date}}",
+        "before": "La date doit être antérieure à {{date}}",
+        "future": "La date doit se situer dans le futur",
+        "invalid": "Veuillez saisir une date valide",
+        "past": "La date doit se situer dans le passé",
+        "range": "La date doit être comprise entre {{startDate}} et {{endDate}}"
+    },
+    "email": "Veuillez saisir une adresse électronique valide",
+    "fields": {
+        "address": "Adresse",
+        "city": "Ville",
+        "confirmPassword": "Confirmer le mot de passe",
+        "country": "Pays",
+        "description": "Description",
+        "email": "Courriel",
+        "message": "Message",
+        "name": "Nom",
+        "password": "Mot de passe",
+        "phone": "Téléphone",
+        "points": "Points",
+        "rewardName": "Nom de la récompense",
+        "state": "État",
+        "zip": "Code postal"
+    },
+    "file": {
+        "invalidType": "Type de fichier non valide. Types autorisés : {{allowedTypes}}",
+        "required": "Veuillez sélectionner un fichier",
+        "tooLarge": "La taille du fichier doit être inférieure à {{maxSize}}",
+        "tooMany": "Nombre maximum de fichiers {{max}} autorisés"
+    },
+    "file_upload": {
+        "file_required": "Le fichier est requis",
+        "file_too_large": "La taille du fichier dépasse la taille maximale autorisée",
+        "invalid_file_type": "Type de fichier non valide"
+    },
+    "format": {
+        "creditCard": "Veuillez saisir un numéro de carte valide",
+        "cvv": "Veuillez saisir un CVV valide",
+        "date": "Veuillez saisir une date valide",
+        "decimal": "Veuillez saisir un nombre décimal valide",
+        "email": "Veuillez saisir une adresse électronique valide",
+        "expiryDate": "Veuillez saisir une date d'expiration valide (MM\/AA)",
+        "integer": "Veuillez saisir un nombre entier",
+        "number": "Veuillez saisir un numéro valide",
+        "phone": "Veuillez saisir un numéro de téléphone valide",
+        "postalCode": "Veuillez saisir un code postal valide",
+        "time": "Veuillez saisir une heure valide",
+        "url": "Veuillez saisir une URL valide"
+    },
+    "futureDate": "{{field}} doit être dans le futur",
+    "integration": {
+        "clover_market_code_required": "Le code du marché est requis pour Clover",
+        "eposnow_shop_id_required": "EPOS L'identification du magasin est maintenant requise",
+        "shopify_domain_invalid": "Format de domaine Shopify non valide",
+        "shopify_domain_required": "Le domaine Shopify est requis",
+        "shopify_hmac_invalid": "Échec de la validation HMAC de Shopify",
+        "wordpress_site_url_invalid": "URL du site WordPress invalide",
+        "wordpress_site_url_required": "L'URL du site WordPress est nécessaire"
+    },
+    "invalidDate": "Veuillez saisir une date valide",
+    "invalidEmail": "Veuillez saisir une adresse électronique valide",
+    "invalidNumber": "Veuillez saisir un numéro valide",
+    "invalidPhone": "Veuillez saisir un numéro de téléphone valide",
+    "invalidUrl": "Veuillez saisir une URL valide",
+    "legalNameBusiness": "Nom légal de votre entreprise",
+    "length": {
+        "between": "Doit être compris entre {{min}} et {{max}} caractères",
+        "exact": "Doit être exactement de {{longueur}} caractères",
+        "max": "Ne doit pas dépasser {{max}} caractères",
+        "min": "Doit comporter au moins {{min}} caractères"
+    },
+    "maxLength": "{{champ}} ne doit pas dépasser {{max}} caractères",
+    "maxValue": "{{champ}} ne doit pas dépasser {{valeur}}",
+    "member": {
+        "emailTaken": "Cet email est déjà enregistré",
+        "invalidReferralCode": "Code de référence invalide",
+        "phoneTaken": "Ce numéro de téléphone est déjà enregistré"
+    },
+    "minLength": "{{champ}} doit être composé d'au moins {{min}} caractères",
+    "minValue": "{{field}} doit être au moins {{value}}",
+    "min_length": "{{champ}} doit être composé d'au moins {{min}} caractères",
+    "offer": {
+        "missing_offer_or_reward": "ID de l'offre ou ID de la récompense manquant",
+        "offer_id_required": "L'identifiant de l'offre est requis",
+        "offer_not_active": "L'offre n'est pas active",
+        "offer_not_found": "Offre non trouvée"
+    },
+    "password": {
+        "noMatch": "Les mots de passe ne correspondent pas",
+        "requiresLowercase": "Le mot de passe doit contenir au moins une lettre minuscule",
+        "requiresNumber": "Le mot de passe doit contenir au moins un chiffre",
+        "requiresSpecial": "Le mot de passe doit contenir au moins un caractère spécial",
+        "requiresUppercase": "Le mot de passe doit contenir au moins une lettre majuscule",
+        "sameAsCurrent": "Le nouveau mot de passe doit être différent du mot de passe actuel",
+        "tooShort": "Le mot de passe doit comporter au moins {{min}} caractères",
+        "tooWeak": "Le mot de passe est trop faible"
+    },
+    "passwordMismatch": "Les mots de passe ne correspondent pas",
+    "pastDate": "{{field}} doit être dans le passé",
+    "phone": "Veuillez saisir un numéro de téléphone valide",
+    "points": {
+        "insufficient": "Points insuffisants. Vous avez besoin de {{required}} mais vous avez {{available}}.",
+        "maximum": "Maximum de points {{max}} autorisés",
+        "minimum": "Nombre minimum de points {{min}} requis"
+    },
+    "program": {
+        "program_id_required": "L'identifiant du programme est requis",
+        "program_inactive": "Le programme n'est pas actif",
+        "program_not_found": "Programme non trouvé"
+    },
+    "range": {
+        "between": "Doit être compris entre {{min}} et {{max}}",
+        "max": "Ne doit pas dépasser {{max}}",
+        "min": "Doit être au moins {{min}}"
+    },
+    "required": "{{field}} est obligatoire",
+    "required_amount": "Montant requis",
+    "required_date": "La date est requise",
+    "required_email": "L'adresse électronique est requise",
+    "required_field": "Ce champ est obligatoire",
+    "required_name": "Le nom est obligatoire",
+    "required_password": "Le mot de passe est requis",
+    "required_phone": "Le numéro de téléphone est requis",
+    "required_selection": "Veuillez faire une sélection",
+    "security": {
+        "forbidden": "Accès interdit",
+        "invalid_password": "Mot de passe invalide",
+        "invalid_session": "Session invalide",
+        "rate_limit_exceeded": "Limite de taux dépassée",
+        "session_expired": "Session expirée"
+    },
+    "shortPromotional": "Brève accroche promotionnelle pour votre programme",
+    "webhook": {
+        "body_too_large": "Le corps de la demande dépasse la taille maximale",
+        "invalid_signature": "Signature de webhook invalide",
+        "missing_signature": "En-tête x-loyaltydog-signature manquant",
+        "shopify_webhook_invalid": "Chargement invalide du webhook de Shopify",
+        "wordpress_webhook_invalid": "Chargement invalide du webhook de WordPress"
+    }
+}
