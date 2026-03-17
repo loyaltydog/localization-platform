@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
-          token: ${{ secrets.LOCALIZATION_PAT }}
+          token: ${{ secrets.I18N_SYNC_PAT }}
 
       - name: Install Lokalise CLI v2
         run: |
