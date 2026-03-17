@@ -5,6 +5,6 @@
   "main": "src/index.js",
   "scripts": {
     "lokalise:download": "lokalise2 file download --unzip-to locales",
-    "lokalise:upload": "lokalise2 file upload --file locales/en-US/common.json --lang-iso en"
+    "lokalise:upload": "for ns in common errors emails notifications validation giftCards; do lokalise2 file upload --file locales/en-US/$ns.json --lang-iso en-US; done"
   }
 }
