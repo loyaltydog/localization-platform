@@ -28,14 +28,11 @@ jobs:
           lokalise2 --help || true
 
       - name: Download translations from Lokalise
-        env:
-          LOKALISE_API_KEY: ${{ secrets.LOKALISE_API_KEY }}
-          LOKALISE_PROJECT_ID: ${{ secrets.LOKALISE_PROJECT_ID }}
         run: |
           cd packages/i18n
           lokalise2 file download \
-            --token "$LOKALISE_API_KEY" \
-            --project-id "$LOKALISE_PROJECT_ID" \
+            --token "${{ secrets.LOKALISE_API_KEY }}" \
+            --project-id "${{ secrets.LOKALISE_PROJECT_ID }}" \
             --format json \
             --original-filenames=true \
             --unzip-to locales
