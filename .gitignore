@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Build output
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Lokalise import staging (transient download dir)
+lokalise-import/*/
+
+# Env
+.env
+.env.local
