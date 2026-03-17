@@ -51,3 +51,12 @@ CLAUDE.md
 **/CLAUDE.md
 
 _bmad*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Lokalise import staging (transient download dir)
+lokalise-import/*/
