@@ -1,0 +1,169 @@
+{
+  "pointsEarned": {
+    "title": "Points Earned!"
+  },
+  "rewardUnlocked": {
+    "title": "Reward Unlocked!",
+    "body": "You've unlocked {{rewardName}}! Show this at checkout to redeem."
+  },
+  "rewardExpiring": {
+    "title": "Reward Expiring Soon"
+  },
+  "pointsExpiring": {
+    "title": "Points Expiring Soon",
+    "body": "{{points}} points will expire on {{expiryDate}}. Use them before they're gone!"
+  },
+  "welcome": {
+    "title": "Welcome to {{merchantName}}!"
+  },
+  "birthday": {
+    "title": "Happy Birthday!"
+  },
+  "campaign": {
+    "title": "{{campaignName}}"
+  },
+  "sms": {
+    "welcome": "Welcome to {{merchantName}}! You've joined our loyalty program. Start earning points today!",
+    "pointsEarned": "You earned {{points}} pts at {{merchantName}}! Balance: {{balance}} pts",
+    "rewardReady": "{{memberName}}, your reward is ready! {{rewardName}} - show this at checkout",
+    "rewardExpiring": "Don't forget! Your {{rewardName}} expires {{expiryDate}}. Visit {{merchantName}} soon!",
+    "birthdayReward": "Happy Birthday {{memberName}}! {{merchantName}} has a gift for you. Check your rewards!",
+    "tierUpgrade": "Congrats {{memberName}}! You're now {{tierName}} at {{merchantName}}. Enjoy your new benefits!",
+    "pointsExpiring": "{{points}} pts expiring {{expiryDate}} at {{merchantName}}. Use them before they're gone!",
+    "inactivityReminder": "We miss you {{memberName}}! You have {{points}} pts at {{merchantName}}. Come visit us!",
+    "promoAlert": "{{merchantName}}: {{promoMessage}}",
+    "verificationCode": "Your {{merchantName}} verification code is: {{code}}"
+  },
+  "push": {
+    "welcome": {
+      "title": "Welcome to {{merchantName}}!",
+      "body": "You've joined our loyalty program. Start earning points today!"
+    },
+    "pointsEarned": {
+      "title": "Points Earned!",
+      "body": "You earned {{points}} points. Balance: {{balance}}"
+    },
+    "rewardReady": {
+      "title": "Reward Ready!",
+      "body": "{{rewardName}} is ready to redeem"
+    },
+    "rewardExpiring": {
+      "title": "Reward Expiring Soon",
+      "body": "{{rewardName}} expires {{expiryDate}}"
+    },
+    "birthdayReward": {
+      "title": "Happy Birthday!",
+      "body": "{{merchantName}} has a special gift for you"
+    },
+    "tierUpgrade": {
+      "title": "Level Up!",
+      "body": "You're now {{tierName}}! Enjoy new benefits"
+    },
+    "pointsExpiring": {
+      "title": "Points Expiring",
+      "body": "{{points}} points expire {{expiryDate}}"
+    },
+    "nearbyStore": {
+      "title": "You're near {{merchantName}}!",
+      "body": "You have {{points}} points. Come visit us!"
+    },
+    "newReward": {
+      "title": "New Reward Available!",
+      "body": "Check out {{rewardName}} - {{pointsCost}} points"
+    },
+    "promoAlert": {
+      "title": "Special Offer!",
+      "body": "{{promoMessage}}"
+    },
+    "stampEarned": {
+      "title": "Stamp Earned!",
+      "body": "{{stampsCollected}}/{{stampsRequired}} - {{stampsRemaining}} more to go!"
+    },
+    "stampCardComplete": {
+      "title": "Stamp Card Complete!",
+      "body": "Congratulations! Claim your free {{rewardName}}"
+    }
+  },
+  "inApp": {
+    "welcome": "Welcome! Start earning points on every purchase.",
+    "pointsEarned": "+{{points}} points earned",
+    "rewardRedeemed": "{{rewardName}} redeemed successfully",
+    "tierUpgrade": "You've reached {{tierName}} status!",
+    "newRewardUnlocked": "New reward unlocked: {{rewardName}}",
+    "goalProgress": "{{progress}}% to your next reward"
+  },
+  "savedSuccessfully": "Saved successfully",
+  "customerDeleted": "Saved successfully",
+  "analyzing": "Analyzing...",
+  "hangTight": "Hang tight! We're getting everything ready for you...",
+  "welcomeDashboard": "Welcome to the Loyalty Dashboard!",
+  "rewardingExperience": "Embark on a rewarding experience with our Loyalty Dashboard!",
+  "beginJourney": "Begin your journey by effortlessly adding a Pass Type ID and kick-start your personalized loyalty program.",
+  "simplicity": "Discover the simplicity of getting started and enjoy exclusive benefits tailored just for you.",
+  "somethingWentWrong": "Something went wrong! We are already working to solve the problem.",
+  "loadingData": "Loading data...",
+  "pleaseWait": "Please wait...",
+  "submitOrSave": "Submit",
+  "noCancel": "No, cancel",
+  "yesConfirmDelete": "Yes, confirm delete",
+  "warning": "Warning",
+  "abort": "Abort",
+  "askAboutLoyalty": "Ask about your loyalty program...",
+  "retry": "Retry",
+  "welcomeAdvisor": "Welcome to your Loyalty Dog AI Business Advisor!",
+  "analyzedData": "I've analyzed your transaction data and I'm ready to help you optimize your loyalty program.",
+  "performanceAnalysis": "Performance Analysis - How your loyalty program is performing",
+  "campaignRecommendations": "Campaign Recommendations - Birthday sales, punch cards, holiday promotions",
+  "memberInsights": "Member Insights - Engagement patterns and retention strategies",
+  "productAnalysis": "Product Analysis - Which products drive loyalty sign-ups",
+  "wouldYouLike": "What would you like to know about your loyalty program?",
+  "totalTransactions": "Total Transactions",
+  "memberParticipation": "Member Participation",
+  "totalRevenue": "Total Revenue",
+  "dateRangeTx": "{count} tx",
+  "oopsError": "Ooops!",
+  "updatedSuccessfully": "Updated successfully",
+  "messageHasBeenSent": "Messsage has been sent!",
+  "loadingPleaseWait": "Loading, please wait...",
+  "giftCard": {
+    "sms": {
+      "cardSold": "Your {{currency}}{{amount}} gift card is ready! Card: {{cardNumber}}, Code: {{securityCode}}. Use at {{merchantName}}.",
+      "cardRedeemed": "{{currency}}{{amount}} redeemed from your gift card ending {{lastFour}}. Remaining: {{currency}}{{remaining}}.",
+      "balanceCheck": "Gift card •••• {{lastFour}} — Balance: {{currency}}{{balance}}. Expires: {{expiryDate}}.",
+      "cardExpiringSoon": "Your gift card ending {{lastFour}} expires in {{days}} days. Balance: {{currency}}{{balance}}. Use it soon!",
+      "cardActivated": "Your {{currency}}{{amount}} gift card is now active. Card: {{cardNumber}}, Code: {{securityCode}}.",
+      "cardTopUp": "{{currency}}{{amount}} added to gift card ending {{lastFour}}. New balance: {{currency}}{{balance}}.",
+      "cardConsolidated": "{{count}} gift cards merged. New card: {{cardNumber}}, Balance: {{currency}}{{balance}}."
+    },
+    "push": {
+      "cardSold": {
+        "title": "Gift Card Created",
+        "body": "{{currency}}{{amount}} gift card is ready to use"
+      },
+      "cardRedeemed": {
+        "title": "Gift Card Redeemed",
+        "body": "{{currency}}{{amount}} redeemed. Balance: {{currency}}{{remaining}}"
+      },
+      "balanceCheck": {
+        "title": "Gift Card Balance",
+        "body": "Card ending {{lastFour}}: {{currency}}{{balance}}"
+      },
+      "cardExpiringSoon": {
+        "title": "Card Expiring Soon",
+        "body": "Card ending {{lastFour}} expires in {{days}} days. Balance: {{currency}}{{balance}}"
+      },
+      "cardActivated": {
+        "title": "Gift Card Activated",
+        "body": "Your {{currency}}{{amount}} gift card is ready to use"
+      },
+      "cardTopUp": {
+        "title": "Gift Card Topped Up",
+        "body": "{{currency}}{{amount}} added. New balance: {{currency}}{{balance}}"
+      },
+      "cardConsolidated": {
+        "title": "Cards Merged",
+        "body": "{{count}} cards merged. New balance: {{currency}}{{balance}}"
+      }
+    }
+  }
+}

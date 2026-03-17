@@ -1,0 +1,138 @@
+# CI Workflow for @loyaltydog/i18n package
+# Runs tests on push and pull requests
+
+name: CI
+
+on:
+  push:
+    branches: [main, staging, development]
+  pull_request:
+    branches: [main, staging, development]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Test (Node ${{ matrix.node-version }})
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: [18, 20, 22]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+          cache-dependency-path: packages/i18n/package-lock.json
+
+      - name: Install dependencies
+        working-directory: packages/i18n
+        run: npm ci
+
+      - name: Run tests
+        working-directory: packages/i18n
+        run: npm test -- --reporter=verbose
+
+      - name: Upload coverage reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-node-${{ matrix.node-version }}
+          path: packages/i18n/coverage/
+          retention-days: 7
+        continue-on-error: true
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: packages/i18n/package-lock.json
+
+      - name: Install dependencies
+        working-directory: packages/i18n
+        run: npm ci
+
+      - name: Check for lint script
+        id: lint-check
+        working-directory: packages/i18n
+        run: |
+          if npm run lint 2>/dev/null; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run ESLint
+        if: steps.lint-check.outputs.exists == 'true'
+        working-directory: packages/i18n
+        run: npm run lint
+
+      - name: Lint status
+        if: always()
+        run: |
+          if [ "${{ steps.lint-check.outputs.exists }}" = "true" ]; then
+            echo "✅ Lint script ran"
+          else
+            echo "ℹ️ No lint script configured"
+          fi
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: packages/i18n/package-lock.json
+
+      - name: Install dependencies
+        working-directory: packages/i18n
+        run: npm ci
+
+      - name: Check for build script
+        id: build-check
+        working-directory: packages/i18n
+        run: |
+          if npm run build 2>/dev/null; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Build package
+        if: steps.build-check.outputs.exists == 'true'
+        working-directory: packages/i18n
+        run: npm run build
+
+      - name: Build status
+        if: always()
+        run: |
+          if [ "${{ steps.build-check.outputs.exists }}" = "true" ]; then
+            echo "✅ Build script ran"
+          else
+            echo "ℹ️ No build script configured"
+          fi

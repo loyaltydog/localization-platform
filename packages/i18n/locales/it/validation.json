@@ -1,0 +1,183 @@
+{
+    "required": "{{campo}} è richiesto",
+    "minLength": "{{campo}} deve essere di almeno {{min}} caratteri",
+    "maxLength": "{Il campo non deve superare i {{max}} caratteri",
+    "invalidEmail": "Inserire un indirizzo e-mail valido",
+    "invalidPhone": "Inserire un numero di telefono valido",
+    "invalidUrl": "Inserire un URL valido",
+    "passwordMismatch": "Le password non corrispondono",
+    "invalidNumber": "Inserire un numero valido",
+    "minValue": "{{campo}} deve essere almeno {{value}}",
+    "maxValue": "{{campo}} non deve essere superiore a {{valore}}",
+    "invalidDate": "Inserire una data valida",
+    "futureDate": "{{campo}} deve essere nel futuro",
+    "pastDate": "{{campo}} deve essere nel passato",
+    "fields": {
+        "name": "Nome",
+        "email": "Email",
+        "phone": "Telefono",
+        "address": "Indirizzo",
+        "city": "Città",
+        "state": "Stato",
+        "zip": "Codice postale",
+        "country": "Paese",
+        "password": "Password",
+        "confirmPassword": "Conferma la password",
+        "points": "Punti",
+        "rewardName": "Nome della ricompensa",
+        "description": "Descrizione",
+        "message": "Messaggio"
+    },
+    "required_field": "Questo campo è obbligatorio",
+    "required_email": "L'e-mail è necessaria",
+    "required_password": "La password è necessaria",
+    "required_name": "Il nome è obbligatorio",
+    "required_phone": "Il numero di telefono è richiesto",
+    "required_amount": "L'importo è richiesto",
+    "required_date": "La data è richiesta",
+    "required_selection": "Effettuare una selezione",
+    "format": {
+        "email": "Inserire un indirizzo e-mail valido",
+        "phone": "Inserire un numero di telefono valido",
+        "url": "Inserire un URL valido",
+        "date": "Inserire una data valida",
+        "time": "Inserire un orario valido",
+        "number": "Inserire un numero valido",
+        "integer": "Inserire un numero intero",
+        "decimal": "Inserire un numero decimale valido",
+        "postalCode": "Inserire un codice postale valido",
+        "creditCard": "Inserire un numero di carta valido",
+        "cvv": "Inserire un CVV valido",
+        "expiryDate": "Inserire una data di scadenza valida (MM\/AA)"
+    },
+    "length": {
+        "min": "Deve essere di almeno {{min}} caratteri",
+        "max": "Non deve essere superiore a {{max}} caratteri",
+        "exact": "Deve essere esattamente di {{lunghezza}} caratteri",
+        "between": "Deve essere compreso tra {{min}} e {{max}} caratteri"
+    },
+    "range": {
+        "min": "Deve essere almeno {{min}}",
+        "max": "Non deve essere superiore a {{max}}",
+        "between": "Deve essere compreso tra {{min}} e {{max}}"
+    },
+    "password": {
+        "tooShort": "La password deve essere composta da almeno {{min}} caratteri",
+        "tooWeak": "La password è troppo debole",
+        "requiresUppercase": "La password deve contenere almeno una lettera maiuscola",
+        "requiresLowercase": "La password deve contenere almeno una lettera minuscola",
+        "requiresNumber": "La password deve contenere almeno un numero",
+        "requiresSpecial": "La password deve contenere almeno un carattere speciale",
+        "noMatch": "Le password non corrispondono",
+        "sameAsCurrent": "La nuova password deve essere diversa da quella attuale"
+    },
+    "file": {
+        "required": "Selezionare un file",
+        "tooLarge": "La dimensione del file deve essere inferiore a {{maxSize}}",
+        "invalidType": "Tipo di file non valido. Tipi consentiti: {{Tipi ammessi}}",
+        "tooMany": "Massimo di file {{max}} consentiti"
+    },
+    "date": {
+        "invalid": "Inserire una data valida",
+        "past": "La data deve essere passata",
+        "future": "La data deve essere futura",
+        "before": "La data deve essere precedente a {{date}}",
+        "after": "La data deve essere successiva a {{date}}",
+        "range": "La data deve essere compresa tra {{datainizio}} e {{data fine}}"
+    },
+    "custom": {
+        "unique": "Questo valore è già in uso",
+        "exists": "Questo valore non esiste",
+        "mismatch": "I valori non corrispondono",
+        "invalid": "Valore non valido",
+        "unavailable": "Questo valore non è disponibile"
+    },
+    "points": {
+        "insufficient": "Punti insufficienti. Hai bisogno di {{richiesto}} ma hai {{disponibile}}.",
+        "minimum": "Punti minimi {{min}} richiesti",
+        "maximum": "Punti massimi {{max}} consentiti"
+    },
+    "member": {
+        "emailTaken": "Questa email è già registrata",
+        "phoneTaken": "Questo numero di telefono è già registrato",
+        "invalidReferralCode": "Codice di riferimento non valido"
+    },
+    "common": {
+        "required": "Questo campo è obbligatorio",
+        "empty": "Questo campo non può essere vuoto",
+        "invalid_format": "Formato non valido",
+        "too_long": "Il valore supera la lunghezza massima",
+        "too_short": "Il valore è troppo basso",
+        "invalid_url": "Formato URL non valido",
+        "invalid_phone": "Formato del numero di telefono non valido"
+    },
+    "account": {
+        "email_required": "L'indirizzo e-mail è richiesto",
+        "email_invalid": "Formato dell'indirizzo e-mail non valido",
+        "password_required": "La password è necessaria",
+        "password_too_short": "La password deve essere di almeno 8 caratteri",
+        "password_empty": "La password non può essere vuota",
+        "name_required": "Il nome dell'azienda è obbligatorio",
+        "domain_required": "Il dominio è necessario",
+        "domain_invalid": "Formato del dominio non valido",
+        "guid_required": "Il GUID è richiesto",
+        "guid_invalid": "Formato GUID non valido"
+    },
+    "program": {
+        "program_id_required": "È richiesto l'ID del programma",
+        "program_not_found": "Programma non trovato",
+        "program_inactive": "Il programma non è attivo"
+    },
+    "customer": {
+        "customer_id_required": "È richiesto l'ID cliente",
+        "customer_not_found": "Cliente non trovato",
+        "customer_email_required": "L'e-mail del cliente è necessaria"
+    },
+    "offer": {
+        "offer_id_required": "È richiesto l'ID dell'offerta",
+        "offer_not_found": "Offerta non trovata",
+        "offer_not_active": "L'offerta non è attiva",
+        "missing_offer_or_reward": "Manca l'ID offerta o l'ID ricompensa richiesti"
+    },
+    "webhook": {
+        "missing_signature": "Intestazione x-loyaltydog-signature mancante",
+        "invalid_signature": "Firma webhook non valida",
+        "shopify_webhook_invalid": "Carico di pagamento webhook di Shopify non valido",
+        "wordpress_webhook_invalid": "Carico utile del webhook di WordPress non valido",
+        "body_too_large": "Il corpo della richiesta supera la dimensione massima"
+    },
+    "integration": {
+        "shopify_domain_required": "È necessario un dominio Shopify",
+        "shopify_domain_invalid": "Formato del dominio Shopify non valido",
+        "shopify_hmac_invalid": "Convalida HMAC di Shopify non riuscita",
+        "clover_market_code_required": "Il codice del mercato è necessario per Clover",
+        "wordpress_site_url_required": "L'URL del sito WordPress è necessario",
+        "wordpress_site_url_invalid": "URL del sito WordPress non valido",
+        "eposnow_shop_id_required": "È richiesto l'ID del negozio EPOS Now"
+    },
+    "security": {
+        "invalid_session": "Sessione non valida",
+        "session_expired": "Sessione scaduta",
+        "invalid_password": "Password non valida",
+        "rate_limit_exceeded": "Limite di velocità superato",
+        "forbidden": "Accesso vietato"
+    },
+    "file_upload": {
+        "file_too_large": "La dimensione del file supera la dimensione massima consentita",
+        "invalid_file_type": "Tipo di file non valido",
+        "file_required": "Il file è necessario"
+    },
+    "api": {
+        "invalid_version": "Versione API non valida",
+        "endpoint_not_found": "Endpoint API non trovato",
+        "method_not_allowed": "Metodo non consentito",
+        "unsupported_media_type": "Tipo di supporto non supportato",
+        "request_timeout": "Timeout della richiesta",
+        "too_many_requests": "Troppe richieste"
+    },
+    "email": "Inserire un indirizzo e-mail valido",
+    "phone": "Inserire un numero di telefono valido",
+    "min_length": "{{campo}} deve essere di almeno {{min}} caratteri",
+    "shortPromotional": "Breve teaser promozionale per il vostro programma",
+    "legalNameBusiness": "Nome legale dell'azienda"
+}

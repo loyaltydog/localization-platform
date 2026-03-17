@@ -1,0 +1,119 @@
+# Upload translations to Lokalise
+# This workflow can be triggered manually to upload source translations
+
+name: Upload Translations to Lokalise
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch to upload from'
+        required: true
+        default: 'main'
+      cleanup_mode:
+        description: 'Cleanup mode (delete keys not in upload)'
+        required: false
+        default: 'false'
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  upload-translations:
+    name: Upload Source Translations
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.branch }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install Lokalise CLI
+        run: |
+          curl -sfL https://raw.githubusercontent.com/lokalise/lokalise-cli-2-go/master/install.sh | sh
+          echo "$PWD/bin" >> $GITHUB_PATH
+
+      - name: Verify Lokalise CLI
+        run: lokalise2 --version
+
+      - name: Upload translations to Lokalise
+        env:
+          LOKALISE_API_TOKEN: ${{ secrets.LOKALISE_API_TOKEN }}
+          LOKALISE_PROJECT_ID: ${{ secrets.LOKALISE_PROJECT_ID }}
+          CLEANUP_MODE: ${{ github.event.inputs.cleanup_mode || 'false' }}
+        run: |
+          set -e
+          cd packages/i18n
+
+          # Build cleanup flag
+          CLEANUP_FLAG=""
+          if [ "$CLEANUP_MODE" = "true" ]; then
+            CLEANUP_FLAG="--cleanup-mode"
+          fi
+
+          # Upload each namespace file
+          # Note: --lang-iso omitted to let Lokalise auto-detect from directory structure
+          echo "Uploading common.json..."
+          lokalise2 \
+            --token "$LOKALISE_API_TOKEN" \
+            --project-id "$LOKALISE_PROJECT_ID" \
+            file upload \
+            --file locales/en-US/common.json \
+            --distinguish-by-file \
+            $CLEANUP_FLAG
+
+          echo "Uploading errors.json..."
+          lokalise2 \
+            --token "$LOKALISE_API_TOKEN" \
+            --project-id "$LOKALISE_PROJECT_ID" \
+            file upload \
+            --file locales/en-US/errors.json \
+            --distinguish-by-file \
+            $CLEANUP_FLAG
+
+          echo "Uploading emails.json..."
+          lokalise2 \
+            --token "$LOKALISE_API_TOKEN" \
+            --project-id "$LOKALISE_PROJECT_ID" \
+            file upload \
+            --file locales/en-US/emails.json \
+            --distinguish-by-file \
+            $CLEANUP_FLAG
+
+          echo "Uploading notifications.json..."
+          lokalise2 \
+            --token "$LOKALISE_API_TOKEN" \
+            --project-id "$LOKALISE_PROJECT_ID" \
+            file upload \
+            --file locales/en-US/notifications.json \
+            --distinguish-by-file \
+            $CLEANUP_FLAG
+
+          echo "Uploading validation.json..."
+          lokalise2 \
+            --token "$LOKALISE_API_TOKEN" \
+            --project-id "$LOKALISE_PROJECT_ID" \
+            file upload \
+            --file locales/en-US/validation.json \
+            --distinguish-by-file \
+            $CLEANUP_FLAG
+
+          echo "✅ All translations uploaded successfully!"
+
+      - name: Summary
+        run: |
+          echo "✅ Source translations uploaded to Lokalise"
+          echo "Branch: ${{ github.event.inputs.branch }}"
+          echo "Cleanup mode: ${{ github.event.inputs.cleanup_mode || 'false' }}"
+          echo ""
+          echo "Next steps:"
+          echo "1. Verify uploads in Lokalise dashboard"
+          echo "2. Trigger AI translations via Lokalise UI or API"
+          echo "3. Use 'Sync Translations' workflow to download results"
