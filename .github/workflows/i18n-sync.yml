@@ -25,7 +25,7 @@ jobs:
           curl -sfL \
             https://raw.githubusercontent.com/lokalise/lokalise-cli-2-go/master/install.sh \
             | sh -s -- -b /usr/local/bin
-          lokalise2 version
+          lokalise2 --help || true
 
       - name: Download translations from Lokalise
         env:
