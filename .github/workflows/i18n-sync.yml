@@ -1,136 +1,56 @@
-# Sync translations from Lokalise to the repository
-# This workflow runs automatically every 12 hours and can be triggered manually
-
-name: Sync Translations
+name: Sync translations from Lokalise
 
 on:
   schedule:
-    # Run every 12 hours at minute 0 (00:00 and 12:00 UTC)
-    - cron: '0 */12 * * *'
-  workflow_dispatch:
+    - cron: '0 */12 * * *'   # every 12 hours at :00
+  workflow_dispatch:           # allow manual trigger
 
 permissions:
   contents: write
 
 jobs:
-  sync-translations:
-    name: Download and Sync Translations
+  sync:
+    name: Download translations and commit to main
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout main
         uses: actions/checkout@v4
         with:
-          # Explicitly fetch all history for proper branch operations
-          fetch-depth: 0
-          # Default branch for base reference
           ref: main
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-
-      - name: Install Lokalise CLI
+      - name: Install Lokalise CLI v2
         run: |
-          curl -sfL https://raw.githubusercontent.com/lokalise/lokalise-cli-2-go/master/install.sh | sh
-          echo "$PWD/bin" >> $GITHUB_PATH
-
-      - name: Verify Lokalise CLI
-        run: lokalise2 --version
+          curl -sfL \
+            https://raw.githubusercontent.com/lokalise/lokalise-cli-2-go/master/install.sh \
+            | sh -s -- -b /usr/local/bin
+          lokalise2 version
 
       - name: Download translations from Lokalise
-        id: download
         env:
-          LOKALISE_API_TOKEN: ${{ secrets.LOKALISE_API_TOKEN }}
-          LOKALISE_PROJECT_ID: ${{ secrets.LOKALISE_PROJECT_ID }}
+          LOKALISE_API_KEY: ${{ secrets.LOKALISE_API_KEY }}
         run: |
-          set -e
-          cd packages/i18n
-          lokalise2 \
-            --token "$LOKALISE_API_TOKEN" \
-            --project-id "$LOKALISE_PROJECT_ID" \
-            file download \
+          lokalise2 file download \
+            --token "$LOKALISE_API_KEY" \
+            --project-id "${{ secrets.LOKALISE_PROJECT_ID }}" \
             --format json \
             --original-filenames=true \
-            --export-empty-as=skip \
-            --placeholder-format=icu \
-            --plural-format=i18next \
-            --unzip-to .
-          echo "downloaded=true" >> $GITHUB_OUTPUT
+            --bundle-structure "%LANG_ISO%/%FILENAME%" \
+            --unzip-to packages/i18n/locales \
+            --dest /tmp/lokalise-download
 
-      - name: Check for changes
-        id: check-changes
+      - name: Show what changed
+        run: git diff --stat packages/i18n/locales/ || true
+
+      - name: Commit and push translation changes
         run: |
-          # Check for any changes (including new untracked files in locales/)
-          if git diff --quiet packages/i18n/locales/ 2>/dev/null && [ -z "$(git ls-files --others --exclude-standard packages/i18n/locales/)" ]; then
-            echo "has_changes=false" >> $GITHUB_OUTPUT
-            echo "ℹ️ No translation updates found"
-          else
-            echo "has_changes=true" >> $GITHUB_OUTPUT
-            echo "✅ Changes detected in translation files"
-            # List changed files for debugging
-            git status --short packages/i18n/locales/
-          fi
-
-      - name: Configure Git
-        if: steps.check-changes.outputs.has_changes == 'true'
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-
-      - name: Create branch and commit changes
-        if: steps.check-changes.outputs.has_changes == 'true'
-        run: |
-          # Ensure we're on main before branching
-          git checkout main || git checkout master
-
-          # Create timestamped branch name
-          BRANCH_NAME="i18n/sync-$(date +'%Y%m%d-%H%M%S')"
-          git checkout -b "$BRANCH_NAME"
-
-          # Stage translation files
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add packages/i18n/locales/
-
-          # Get list of changed languages for commit message (using POSIX-compliant grep)
-          CHANGED_LANGUAGES=$(
-            git diff --cached --name-only \
-            | sed -n 's|^packages/i18n/locales/\([^/]*\)/.*|\1|p' \
-            | sort -u \
-            | tr '\n' ',' \
-            | sed 's/,$//'
-          )
-
-          # Create commit message with conventional commit format
-          if [ -n "$CHANGED_LANGUAGES" ]; then
-            COMMIT_MSG="chore(i18n): update translations from Lokalise [$CHANGED_LANGUAGES]"
+          if git diff --staged --quiet; then
+            echo "No translation changes — nothing to commit."
           else
-            COMMIT_MSG="chore(i18n): update translations from Lokalise"
+            git commit -m "chore(i18n): sync translations from Lokalise [skip ci]"
+            git push origin main
           fi
-
-          # Create commit body
-          {
-            echo ""
-            echo "Synced via GitHub Actions workflow"
-            echo ""
-            echo "Run: #${{ github.run_number }}"
-            echo "Triggered by: ${{ github.event_name }}"
-            echo "Commit SHA: ${{ github.sha }}"
-          } | git commit -m "$COMMIT_MSG" -F -
-
-      - name: Push changes
-        if: steps.check-changes.outputs.has_changes == 'true'
-        run: |
-          BRANCH_NAME=$(git branch --show-current)
-          git push origin "$BRANCH_NAME"
-          echo "Branch pushed: $BRANCH_NAME"
-
-      - name: Summary
-        if: always()
-        run: |
-          if [ "${{ steps.check-changes.outputs.has_changes }}" == "true" ]; then
-            echo "✅ Translations synced successfully"
-          else
-            echo "ℹ️ No translation updates found - nothing to commit"
-          fi
-
