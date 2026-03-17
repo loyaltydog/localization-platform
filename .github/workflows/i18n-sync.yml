@@ -31,14 +31,8 @@ jobs:
         env:
           LOKALISE_API_KEY: ${{ secrets.LOKALISE_API_KEY }}
         run: |
-          lokalise2 file download \
-            --token "$LOKALISE_API_KEY" \
-            --project-id "${{ secrets.LOKALISE_PROJECT_ID }}" \
-            --format json \
-            --original-filenames=true \
-            --bundle-structure "%LANG_ISO%/%FILENAME%" \
-            --unzip-to packages/i18n/locales \
-            --dest /tmp/lokalise-download
+          cd packages/i18n
+          lokalise2 file download --token "$LOKALISE_API_KEY" --unzip-to locales
 
       - name: Show what changed
         run: git diff --stat packages/i18n/locales/ || true
