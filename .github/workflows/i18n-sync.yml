@@ -29,10 +29,10 @@ jobs:
 
       - name: Download translations from Lokalise
         env:
-          LOKALISE_API_KEY: ${{ secrets.LOKALISE_API_KEY }}
+          LOKALISE_API_TOKEN: ${{ secrets.LOKALISE_API_TOKEN }}
         run: |
           lokalise2 file download \
-            --token "$LOKALISE_API_KEY" \
+            --token "$LOKALISE_API_TOKEN" \
             --project-id "${{ secrets.LOKALISE_PROJECT_ID }}" \
             --format json \
             --original-filenames=true \
