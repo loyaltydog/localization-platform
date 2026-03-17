@@ -1,0 +1,128 @@
+{
+    "abort": "Abortar",
+    "analyzedData": "Analisei seus dados de transação e estou pronto para ajudá-lo a otimizar seu programa de fidelidade.",
+    "analyzing": "Analisando...",
+    "askAboutLoyalty": "Pergunte sobre seu programa de fidelidade...",
+    "beginJourney": "Comece sua jornada adicionando sem esforço uma ID de tipo de passe e dê o pontapé inicial em seu programa de fidelidade personalizado.",
+    "birthday": {
+        "title": "Feliz aniversário!"
+    },
+    "campaign": {
+        "title": ""
+    },
+    "campaignRecommendations": "Recomendações de campanhas - Vendas de aniversários, cartões perfurados, promoções de feriados",
+    "customerDeleted": "Salvo com sucesso",
+    "dateRangeTx": "{count} tx",
+    "hangTight": "Aguarde um pouco! Estamos preparando tudo para você...",
+    "inApp": {
+        "goalProgress": "{{progresso}}% para sua próxima recompensa",
+        "newRewardUnlocked": "Nova recompensa desbloqueada: {{rewardName}}",
+        "pointsEarned": "+{{pontos}} pontos ganhos",
+        "rewardRedeemed": "{{rewardName}} resgatado com sucesso",
+        "tierUpgrade": "Você alcançou o status {{tierName}}!",
+        "welcome": "Bem-vindo! Comece a ganhar pontos em cada compra."
+    },
+    "loadingData": "Carregando dados...",
+    "loadingPleaseWait": "Carregando, aguarde...",
+    "memberInsights": "Informações sobre os membros - Padrões de envolvimento e estratégias de retenção",
+    "memberParticipation": "Participação dos membros",
+    "messageHasBeenSent": "A mensagem foi enviada!",
+    "noCancel": "Não, cancelar",
+    "oopsError": "Ooops!",
+    "performanceAnalysis": "Análise de desempenho - Como está o desempenho do seu programa de fidelidade",
+    "pleaseWait": "Por favor, aguarde...",
+    "pointsEarned": {
+        "title": "Pontos ganhos!"
+    },
+    "pointsExpiring": {
+        "body": "os pontos {{points}} expirarão em {{expiryDate}}. Use-os antes que eles acabem!",
+        "title": "Pontos que expiram em breve"
+    },
+    "productAnalysis": "Análise de produtos - Quais produtos geram inscrições de fidelidade",
+    "push": {
+        "birthdayReward": {
+            "body": "{{merchantName}} tem um presente especial para você",
+            "title": "Feliz aniversário!"
+        },
+        "nearbyStore": {
+            "body": "Você tem {{pontos}} pontos. Venha nos visitar!",
+            "title": "Você está perto de {{merchantName}}!"
+        },
+        "newReward": {
+            "body": "Confira {{rewardName}} - {{pointsCost}} pontos",
+            "title": "Novo prêmio disponível!"
+        },
+        "pointsEarned": {
+            "body": "Você ganhou {{pontos}} pontos. Equilíbrio: {{balance}}",
+            "title": "Pontos ganhos!"
+        },
+        "pointsExpiring": {
+            "body": "{{points}} os pontos expiram {{expiryDate}}",
+            "title": "Pontos a expirar"
+        },
+        "promoAlert": {
+            "body": "",
+            "title": "Oferta especial!"
+        },
+        "rewardExpiring": {
+            "body": "{{rewardName}} expira {{expiryDate}}",
+            "title": "Recompensa que expira em breve"
+        },
+        "rewardReady": {
+            "body": "{{rewardName}} está pronto para resgatar",
+            "title": "Pronta para o prêmio!"
+        },
+        "stampCardComplete": {
+            "body": "Parabéns! Solicite seu {{rewardName}} gratuito",
+            "title": "Cartão de carimbo completo!"
+        },
+        "stampEarned": {
+            "body": "{{stampsCollected}}\/{{stampsRequired}} - {{stampsRemaining}} mais para o final!",
+            "title": "Selo conquistado!"
+        },
+        "tierUpgrade": {
+            "body": "Você agora é {{tierName}}! Aproveite os novos benefícios",
+            "title": "Suba de nível!"
+        },
+        "welcome": {
+            "body": "Você aderiu ao nosso programa de fidelidade. Comece a ganhar pontos hoje mesmo!",
+            "title": "Bem-vindo ao {{merchantName}}!"
+        }
+    },
+    "retry": "Repetir",
+    "rewardExpiring": {
+        "title": "Recompensa que expira em breve"
+    },
+    "rewardUnlocked": {
+        "body": "Você desbloqueou {{rewardName}}! Mostre isso no checkout para resgatar.",
+        "title": "Recompensa desbloqueada!"
+    },
+    "rewardingExperience": "Embarque em uma experiência gratificante com nosso Painel de Fidelidade!",
+    "savedSuccessfully": "Salvo com sucesso",
+    "simplicity": "Descubra a simplicidade de começar e aproveite os benefícios exclusivos feitos sob medida para você.",
+    "sms": {
+        "birthdayReward": "Feliz aniversário {{memberName}}! {{merchantName}} tem um presente para você. Confira suas recompensas!",
+        "inactivityReminder": "Sentimos sua falta {{memberName}}! Você tem {{pontos}} de pontos em {{merchantName}}. Venha nos visitar!",
+        "pointsEarned": "Você ganhou {{pontos}} pts na {{merchantName}}! Saldo: {{balance}} pts",
+        "pointsExpiring": "{{pontos}} pts expirando {{expiryDate}} em {{merchantName}}. Use-os antes que acabem!",
+        "promoAlert": "{{merchantName}}: {{promoMessage}}",
+        "rewardExpiring": "Não se esqueça! Sua {{rewardName}} expira {{expiryDate}}. Visite {{merchantName}} em breve!",
+        "rewardReady": "{{memberName}}, sua recompensa está pronta! {{rewardName}} - mostre isso no checkout",
+        "tierUpgrade": "Parabéns {{memberName}}! Você agora é {{tierName}} na {{merchantName}}. Aproveite seus novos benefícios!",
+        "verificationCode": "Seu código de verificação {{merchantName}} é: {{code}}",
+        "welcome": "Bem-vindo ao {{merchantName}}! Você aderiu ao nosso programa de fidelidade. Comece a ganhar pontos hoje mesmo!"
+    },
+    "somethingWentWrong": "Algo deu errado! Já estamos trabalhando para resolver o problema.",
+    "submitOrSave": "Enviar",
+    "totalRevenue": "Receita total",
+    "totalTransactions": "Total de transações",
+    "updatedSuccessfully": "Atualizado com sucesso",
+    "warning": "Advertência",
+    "welcome": {
+        "title": "Bem-vindo ao {{merchantName}}!"
+    },
+    "welcomeAdvisor": "Bem-vindo ao seu Loyalty Dog AI Business Advisor!",
+    "welcomeDashboard": "Bem-vindo ao Painel de controle de fidelidade!",
+    "wouldYouLike": "O que você gostaria de saber sobre seu programa de fidelidade?",
+    "yesConfirmDelete": "Sim, confirme a exclusão"
+}

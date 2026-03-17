@@ -1,0 +1,128 @@
+{
+    "abort": "Abort",
+    "analyzedData": "I've analyzed your transaction data and I'm ready to help you optimize your loyalty program.",
+    "analyzing": "Analyzing...",
+    "askAboutLoyalty": "Ask about your loyalty program...",
+    "beginJourney": "Begin your journey by effortlessly adding a Pass Type ID and kick-start your personalized loyalty program.",
+    "birthday": {
+        "title": "Happy Birthday!"
+    },
+    "campaign": {
+        "title": "{{campaignName}}"
+    },
+    "campaignRecommendations": "Campaign Recommendations - Birthday sales, punch cards, holiday promotions",
+    "customerDeleted": "Saved successfully",
+    "dateRangeTx": "{count} tx",
+    "hangTight": "Hang tight! We're getting everything ready for you...",
+    "inApp": {
+        "goalProgress": "{{progress}}% to your next reward",
+        "newRewardUnlocked": "New reward unlocked: {{rewardName}}",
+        "pointsEarned": "+{{points}} points earned",
+        "rewardRedeemed": "{{rewardName}} redeemed successfully",
+        "tierUpgrade": "You've reached {{tierName}} status!",
+        "welcome": "Welcome! Start earning points on every purchase."
+    },
+    "loadingData": "Loading data...",
+    "loadingPleaseWait": "Loading, please wait...",
+    "memberInsights": "Member Insights - Engagement patterns and retention strategies",
+    "memberParticipation": "Member Participation",
+    "messageHasBeenSent": "Messsage has been sent!",
+    "noCancel": "No, cancel",
+    "oopsError": "Ooops!",
+    "performanceAnalysis": "Performance Analysis - How your loyalty program is performing",
+    "pleaseWait": "Please wait...",
+    "pointsEarned": {
+        "title": "Points Earned!"
+    },
+    "pointsExpiring": {
+        "body": "{{points}} points will expire on {{expiryDate}}. Use them before they're gone!",
+        "title": "Points Expiring Soon"
+    },
+    "productAnalysis": "Product Analysis - Which products drive loyalty sign-ups",
+    "push": {
+        "birthdayReward": {
+            "body": "{{merchantName}} has a special gift for you",
+            "title": "Happy Birthday!"
+        },
+        "nearbyStore": {
+            "body": "You have {{points}} points. Come visit us!",
+            "title": "You're near {{merchantName}}!"
+        },
+        "newReward": {
+            "body": "Check out {{rewardName}} - {{pointsCost}} points",
+            "title": "New Reward Available!"
+        },
+        "pointsEarned": {
+            "body": "You earned {{points}} points. Balance: {{balance}}",
+            "title": "Points Earned!"
+        },
+        "pointsExpiring": {
+            "body": "{{points}} points expire {{expiryDate}}",
+            "title": "Points Expiring"
+        },
+        "promoAlert": {
+            "body": "{{promoMessage}}",
+            "title": "Special Offer!"
+        },
+        "rewardExpiring": {
+            "body": "{{rewardName}} expires {{expiryDate}}",
+            "title": "Reward Expiring Soon"
+        },
+        "rewardReady": {
+            "body": "{{rewardName}} is ready to redeem",
+            "title": "Reward Ready!"
+        },
+        "stampCardComplete": {
+            "body": "Congratulations! Claim your free {{rewardName}}",
+            "title": "Stamp Card Complete!"
+        },
+        "stampEarned": {
+            "body": "{{stampsCollected}}\/{{stampsRequired}} - {{stampsRemaining}} more to go!",
+            "title": "Stamp Earned!"
+        },
+        "tierUpgrade": {
+            "body": "You're now {{tierName}}! Enjoy new benefits",
+            "title": "Level Up!"
+        },
+        "welcome": {
+            "body": "You've joined our loyalty program. Start earning points today!",
+            "title": "Welcome to {{merchantName}}!"
+        }
+    },
+    "retry": "Retry",
+    "rewardExpiring": {
+        "title": "Reward Expiring Soon"
+    },
+    "rewardUnlocked": {
+        "body": "You've unlocked {{rewardName}}! Show this at checkout to redeem.",
+        "title": "Reward Unlocked!"
+    },
+    "rewardingExperience": "Embark on a rewarding experience with our Loyalty Dashboard!",
+    "savedSuccessfully": "Saved successfully",
+    "simplicity": "Discover the simplicity of getting started and enjoy exclusive benefits tailored just for you.",
+    "sms": {
+        "birthdayReward": "Happy Birthday {{memberName}}! {{merchantName}} has a gift for you. Check your rewards!",
+        "inactivityReminder": "We miss you {{memberName}}! You have {{points}} pts at {{merchantName}}. Come visit us!",
+        "pointsEarned": "You earned {{points}} pts at {{merchantName}}! Balance: {{balance}} pts",
+        "pointsExpiring": "{{points}} pts expiring {{expiryDate}} at {{merchantName}}. Use them before they're gone!",
+        "promoAlert": "{{merchantName}}: {{promoMessage}}",
+        "rewardExpiring": "Don't forget! Your {{rewardName}} expires {{expiryDate}}. Visit {{merchantName}} soon!",
+        "rewardReady": "{{memberName}}, your reward is ready! {{rewardName}} - show this at checkout",
+        "tierUpgrade": "Congrats {{memberName}}! You're now {{tierName}} at {{merchantName}}. Enjoy your new benefits!",
+        "verificationCode": "Your {{merchantName}} verification code is: {{code}}",
+        "welcome": "Welcome to {{merchantName}}! You've joined our loyalty program. Start earning points today!"
+    },
+    "somethingWentWrong": "Something went wrong! We are already working to solve the problem.",
+    "submitOrSave": "Submit",
+    "totalRevenue": "Total Revenue",
+    "totalTransactions": "Total Transactions",
+    "updatedSuccessfully": "Updated successfully",
+    "warning": "Warning",
+    "welcome": {
+        "title": "Welcome to {{merchantName}}!"
+    },
+    "welcomeAdvisor": "Welcome to your Loyalty Dog AI Business Advisor!",
+    "welcomeDashboard": "Welcome to the Loyalty Dashboard!",
+    "wouldYouLike": "What would you like to know about your loyalty program?",
+    "yesConfirmDelete": "Yes, confirm delete"
+}

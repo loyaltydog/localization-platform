@@ -1,0 +1,99 @@
+{
+    "author": "LoyaltyDog",
+    "dependencies": {
+        "i18next": "^23.7.0",
+        "i18next-browser-language-detector": "^7.2.0",
+        "i18next-http-backend": "^2.4.0",
+        "react-i18next": "^14.0.0"
+    },
+    "description": "Shared localization package for LoyaltyDog platform using i18next and Lokalise",
+    "devDependencies": {
+        "@anthropic-ai\/claude-code": "*",
+        "@lokalise\/cli": "^7.0.0",
+        "@testing-library\/react": "^14.0.0",
+        "@types\/jest": "^29.5.0",
+        "@types\/node": "^20.0.0",
+        "@types\/react": "^18.2.0",
+        "eslint": "^8.50.0",
+        "i18next": "^23.0.0",
+        "i18next-browser-languagedetector": "^7.0.0",
+        "i18next-http-backend": "^2.0.0",
+        "jest": "^29.5.0",
+        "jsdom": "^27.4.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-i18next": "^14.0.0",
+        "ts-jest": "^29.1.0",
+        "typescript": "^5.2.0",
+        "vitest": "^1.0.0"
+    },
+    "exports": {
+        ".": ".\/src\/index.js",
+        ".\/locales\/*": ".\/locales\/*",
+        ".\/node": ".\/dist\/node\/index.js",
+        ".\/react": ".\/dist\/react\/index.js",
+        ".\/rtl": ".\/dist\/rtl\/index.js"
+    },
+    "files": [
+        "dist",
+        "locales",
+        "README.md"
+    ],
+    "keywords": [
+        "i18n",
+        "localization",
+        "translation",
+        "loyaltydog",
+        "i18next"
+    ],
+    "license": "UNLICENSED",
+    "main": "dist\/node\/index.js",
+    "name": "@loyaltydog\/i18n",
+    "peerDependencies": {
+        "i18next": ">=23.0.0",
+        "i18next-browser-languagedetector": ">=7.0.0",
+        "i18next-http-backend": ">=2.0.0",
+        "react": ">=18.0.0",
+        "react-i18next": ">=14.0.0"
+    },
+    "peerDependenciesMeta": {
+        "i18next-browser-languagedetector": {
+            "optional": "1"
+        },
+        "i18next-http-backend": {
+            "optional": "1"
+        },
+        "i18next": {
+            "optional": "0"
+        },
+        "react-i18next": {
+            "optional": "1"
+        },
+        "react": {
+            "optional": "1"
+        }
+    },
+    "private": "1",
+    "publishConfig": {
+        "access": "restricted"
+    },
+    "repository": {
+        "directory": "packages\/i18n",
+        "type": "git",
+        "url": "https:\/\/github.com\/loyaltydog\/localization-platform.git"
+    },
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch",
+        "lint": "eslint src --ext .ts,.tsx",
+        "lokalise:download": "lokalise2 --config .lokalise.json download",
+        "lokalise:pull": "npm run lokalise:download",
+        "lokalise:push": "npm run lokalise:upload",
+        "lokalise:upload": "lokalise2 --config .lokalise.json upload",
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "typecheck": "tsc --noEmit"
+    },
+    "types": "dist\/types\/index.d.ts",
+    "version": "1.0.0"
+}
