@@ -1,0 +1,10 @@
+{
+  "name": "@loyaltydog/i18n",
+  "version": "1.0.0",
+  "description": "LoyaltyDog localization package",
+  "main": "src/index.js",
+  "scripts": {
+    "lokalise:download": "lokalise2 file download --unzip-to locales",
+    "lokalise:upload": "lokalise2 file upload --file locales/en-US/common.json --lang-iso en"
+  }
+}
