@@ -8,10 +8,10 @@ files:
     translation: "/packages/i18n/locales/%locale%/%original_file_name%"
     languages_mapping:
       locale:
-        "en-GB": "en_GB"
-        "es-ES": "es_ES"
-        "es-MX": "es_MX"
+        "en-GB": "en-GB"
+        "es-ES": "es-ES"
+        "es-MX": "es-MX"
         "fr":    "fr"
         "it":    "it"
-        "pt-BR": "pt_BR"
-        "pt-PT": "pt_PT"
+        "pt-BR": "pt-BR"
+        "pt-PT": "pt-PT"
