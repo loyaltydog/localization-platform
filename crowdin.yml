@@ -8,6 +8,7 @@ files:
     translation: "/packages/i18n/locales/%locale%/%original_file_name%"
     languages_mapping:
       locale:
+        "en-US": "en-US"
         "en-GB": "en-GB"
         "es-ES": "es-ES"
         "es-MX": "es-MX"
