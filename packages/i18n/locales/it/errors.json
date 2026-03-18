@@ -225,5 +225,77 @@
     "transferFailed": "Trasferimento carta non riuscito",
     "reloadFailed": "Ricarica carta non riuscita",
     "activationFailed": "Attivazione carta non riuscita"
+  },
+  "consumer": {
+    "programNotAvailable": "Questo programma fedeltà non è attualmente disponibile",
+    "enrollmentClosed": "L'iscrizione a questo programma è attualmente chiusa",
+    "alreadyEnrolled": "Sei già iscritto a questo programma",
+    "ineligibleForProgram": "Non sei idoneo per questo programma",
+    "accountSuspended": "Il tuo account è stato sospeso. Contatta il supporto",
+    "pendingApproval": "Il tuo account è in attesa di approvazione",
+    "maxMembersReached": "Questo programma ha raggiunto il numero massimo di membri",
+    "referralCodeInvalid": "Questo codice referral non è valido o è scaduto",
+    "referralCodeAlreadyUsed": "Hai già usato un codice referral",
+    "selfReferralNotAllowed": "Non puoi referirte te stesso"
+  },
+  "checkout": {
+    "rewardNotApplicable": "Questo premio non può essere applicato al tuo carrello",
+    "rewardExpired": "Questo premio è scaduto",
+    "rewardAlreadyRedeemed": "Questo premio è già stato riscattato",
+    "insufficientPoints": "Non hai punti sufficienti per riscattare questo premio",
+    "rewardNotAvailable": "Questo premio non è attualmente disponibile",
+    "minimumOrderNotMet": "Il tuo ordine non soddisfa il requisito minimo per questo premio",
+    "maximumOrderExceeded": "Il tuo ordine supera il limite massimo per questo premio",
+    "rewardCategoryMismatch": "Questo premio non può essere applicato a questi articoli",
+    "rewardStackingNotAllowed": "Solo un premio può essere utilizzato per ordine",
+    "rewardRequiresTier": "Questo premio richiede un livello di appartenenza più elevato"
+  },
+  "enrollment": {
+    "emailAlreadyExists": "Esiste già un account con questa email",
+    "phoneAlreadyExists": "Esiste già un account con questo numero di telefono",
+    "invalidEmailFormat": "Inserire un indirizzo email valido",
+    "invalidPhoneFormat": "Inserire un numero di telefono valido",
+    "passwordTooWeak": "La password è troppo debole. Includere maiuscole, minuscole e numeri",
+    "passwordsDoNotMatch": "Le password non corrispondono",
+    "termsNotAccepted": "Accettare i termini e condizioni per continuare",
+    "gdprConsentRequired": "Accettare l'informativa sulla privacy per continuare",
+    "verificationFailed": "Verifica fallita. Controlla il tuo codice e riprova",
+    "verificationCodeExpired": "Questo codice di verifica è scaduto. Richiedine uno nuovo"
+  },
+  "qrCode": {
+    "scanFailed": "Scansione codice QR fallita. Riprovare",
+    "invalidFormat": "Formato codice QR non valido",
+    "codeExpired": "Questo codice QR è scaduto",
+    "codeAlreadyUsed": "Questo codice QR è già stato utilizzato",
+    "codeNotRecognized": "Questo codice QR non è riconosciuto",
+    "cameraPermissionRequired": "È richiesto il permesso della fotocamera per scansionare i codici QR",
+    "cameraNotAvailable": "La fotocamera non è disponibile su questo dispositivo",
+    "unsupportedCodeType": "Questo tipo di codice QR non è supportato",
+    "checkInFailed": "Check-in fallito. Mostra questo codice al personale",
+    "redeemFailed": "Riscatto fallito. Mostra questo codice al personale"
+  },
+  "mobile": {
+    "pushNotificationDisabled": "Le notifiche push sono disattivate. Attivarle nelle impostazioni",
+    "locationServicesDisabled": "I servizi di localizzazione sono disattivati. Attivarli nelle impostazioni",
+    "cameraPermissionDenied": "Permesso fotocamera negato. Attivarlo nelle impostazioni",
+    "storagePermissionDenied": "Permesso di archiviazione negato. Attivarlo nelle impostazioni",
+    "biometricNotAvailable": "L'autenticazione biometrica non è disponibile su questo dispositivo",
+    "biometricEnrollmentRequired": "Per favore, registrati prima per l'autenticazione biometrica",
+    "biometricFailed": "Autenticazione biometrica fallita. Riprovare o usare la password",
+    "appUpdateRequired": "Aggiorna l'app per continuare a usare questa funzionalità",
+    "unsupportedOSVersion": "Questa funzionalità richiede una versione più recente del sistema operativo",
+    "networkConnectionLost": "Connessione di rete persa. Controllare la connessione Internet"
+  },
+  "subscription": {
+    "planExpired": "Il tuo piano di abbonamento è scaduto",
+    "paymentPastDue": "Il tuo pagamento è in ritardo. Aggiorna il metodo di pagamento",
+    "subscriptionCancelled": "Il tuo abbonamento è stato cancellato",
+    "subscriptionPaused": "Il tuo abbonamento è stato sospeso",
+    "planLimitReached": "Hai raggiunto il limite del tuo piano",
+    "featureRequiresUpgrade": "Questa funzionalità richiede un piano di abbonamento più alto",
+    "billingCycleChanged": "Il ciclo di fatturazione cambierà il {{effectiveDate}}",
+    "proratedCharge": "Sarà applicato un addebito proporzionale di {{amount}}",
+    "invoiceFailed": "Impossibile generare la tua fattura. Riprovare",
+    "paymentMethodExpired": "Il tuo metodo di pagamento è scaduto. Aggiornarlo"
   }
 }

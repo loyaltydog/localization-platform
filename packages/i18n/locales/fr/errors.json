@@ -225,5 +225,77 @@
     "transferFailed": "Échec du transfert de carte",
     "reloadFailed": "Échec du rechargement de la carte",
     "activationFailed": "Échec de l'activation de la carte"
+  },
+  "consumer": {
+    "programNotAvailable": "Ce programme de fidélité n'est pas actuellement disponible",
+    "enrollmentClosed": "L'inscription à ce programme est actuellement fermée",
+    "alreadyEnrolled": "Vous êtes déjà inscrit à ce programme",
+    "ineligibleForProgram": "Vous n'êtes pas éligible pour ce programme",
+    "accountSuspended": "Votre compte a été suspendu. Veuillez contacter le support",
+    "pendingApproval": "Votre compte est en attente d'approbation",
+    "maxMembersReached": "Ce programme a atteint son nombre maximum de membres",
+    "referralCodeInvalid": "Ce code de parrainage est invalide ou expiré",
+    "referralCodeAlreadyUsed": "Vous avez déjà utilisé un code de parrainage",
+    "selfReferralNotAllowed": "Vous ne pouvez pas vous parrainer vous-même"
+  },
+  "checkout": {
+    "rewardNotApplicable": "Cette récompense ne peut pas être appliquée à votre panier",
+    "rewardExpired": "Cette récompense a expiré",
+    "rewardAlreadyRedeemed": "Cette récompense a déjà été échangée",
+    "insufficientPoints": "Vous n'avez pas assez de points pour échanger cette récompense",
+    "rewardNotAvailable": "Cette récompense n'est actuellement pas disponible",
+    "minimumOrderNotMet": "Votre commande ne respecte pas le minimum requis pour cette récompense",
+    "maximumOrderExceeded": "Votre commande dépasse la limite maximale pour cette récompense",
+    "rewardCategoryMismatch": "Cette récompense ne peut pas être appliquée à ces articles",
+    "rewardStackingNotAllowed": "Une seule récompense peut être utilisée par commande",
+    "rewardRequiresTier": "Cette récompense nécessite un niveau d'adhésion plus élevé"
+  },
+  "enrollment": {
+    "emailAlreadyExists": "Un compte avec cet e-mail existe déjà",
+    "phoneAlreadyExists": "Un compte avec ce numéro de téléphone existe déjà",
+    "invalidEmailFormat": "Veuillez saisir une adresse e-mail valide",
+    "invalidPhoneFormat": "Veuillez saisir un numéro de téléphone valide",
+    "passwordTooWeak": "Le mot de passe est trop faible. Veuillez inclure des majuscules, des minuscules et des chiffres",
+    "passwordsDoNotMatch": "Les mots de passe ne correspondent pas",
+    "termsNotAccepted": "Veuillez accepter les conditions générales pour continuer",
+    "gdprConsentRequired": "Veuillez accepter la politique de confidentialité pour continuer",
+    "verificationFailed": "La vérification a échoué. Veuillez vérifier votre code et réessayer",
+    "verificationCodeExpired": "Ce code de vérification a expiré. Veuillez en demander un nouveau"
+  },
+  "qrCode": {
+    "scanFailed": "Échec du scan du code QR. Veuillez réessayer",
+    "invalidFormat": "Format de code QR invalide",
+    "codeExpired": "Ce code QR a expiré",
+    "codeAlreadyUsed": "Ce code QR a déjà été utilisé",
+    "codeNotRecognized": "Ce code QR n'est pas reconnu",
+    "cameraPermissionRequired": "La permission d'accès à l'appareil photo est requise pour scanner les codes QR",
+    "cameraNotAvailable": "L'appareil photo n'est pas disponible sur cet appareil",
+    "unsupportedCodeType": "Ce type de code QR n'est pas pris en charge",
+    "checkInFailed": "L'enregistrement a échoué. Veuillez présenter ce code au personnel",
+    "redeemFailed": "L'échange a échoué. Veuillez présenter ce code au personnel"
+  },
+  "mobile": {
+    "pushNotificationDisabled": "Les notifications push sont désactivées. Activez-les dans les paramètres",
+    "locationServicesDisabled": "Les services de localisation sont désactivés. Activez-les dans les paramètres",
+    "cameraPermissionDenied": "La permission de l'appareil photo a été refusée. Activez-la dans les paramètres",
+    "storagePermissionDenied": "La permission de stockage a été refusée. Activez-la dans les paramètres",
+    "biometricNotAvailable": "L'authentification biométrique n'est pas disponible sur cet appareil",
+    "biometricEnrollmentRequired": "Veuillez vous inscrire à l'authentification biométrique d'abord",
+    "biometricFailed": "L'authentification biométrique a échoué. Veuillez réessayer ou utiliser votre mot de passe",
+    "appUpdateRequired": "Veuillez mettre à jour l'application pour continuer à utiliser cette fonctionnalité",
+    "unsupportedOSVersion": "Cette fonctionnalité nécessite une version plus récente du système d'exploitation",
+    "networkConnectionLost": "La connexion réseau a été perdue. Veuillez vérifier votre connexion Internet"
+  },
+  "subscription": {
+    "planExpired": "Votre plan d'abonnement a expiré",
+    "paymentPastDue": "Votre paiement est en retard. Veuillez mettre à jour votre méthode de paiement",
+    "subscriptionCancelled": "Votre abonnement a été annulé",
+    "subscriptionPaused": "Votre abonnement a été mis en pause",
+    "planLimitReached": "Vous avez atteint la limite de votre plan",
+    "featureRequiresUpgrade": "Cette fonctionnalité nécessite un plan d'abonnement plus élevé",
+    "billingCycleChanged": "Votre cycle de facturation changera le {{effectiveDate}}",
+    "proratedCharge": "Un prorata de {{amount}} sera appliqué",
+    "invoiceFailed": "Nous n'avons pas pu générer votre facture. Veuillez réessayer",
+    "paymentMethodExpired": "Votre méthode de paiement a expiré. Veuillez la mettre à jour"
   }
 }
