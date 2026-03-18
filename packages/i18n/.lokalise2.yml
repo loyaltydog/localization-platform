@@ -1,7 +1,0 @@
-# packages/i18n/.lokalise2.yml
-# Lokalise CLI v2 config — see https://github.com/lokalise/lokalise-cli-2-go
-api_token: ""              # leave blank; set LOKALISE_API_KEY env var at runtime
-project_id: "71116905697c499a444c46.97764157"
-format: json
-original_filenames: true
-bundle_structure: "%LANG_ISO%/%FILENAME%"
