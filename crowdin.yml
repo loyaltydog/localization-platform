@@ -1,0 +1,17 @@
+project_id: "881724"
+api_token_env: "CROWDIN_PERSONAL_TOKEN"
+base_path: "."
+preserve_hierarchy: true
+
+files:
+  - source: "/packages/i18n/locales/en-US/*.json"
+    translation: "/packages/i18n/locales/%locale%/%original_file_name%"
+    languages_mapping:
+      locale:
+        "en-GB": "en-GB"
+        "es-ES": "es-ES"
+        "es-MX": "es-MX"
+        "fr":    "fr"
+        "it":    "it"
+        "pt-BR": "pt-BR"
+        "pt-PT": "pt-PT"
