@@ -236,7 +236,15 @@
     "maxMembersReached": "Ce programme a atteint son nombre maximum de membres",
     "referralCodeInvalid": "Ce code de parrainage est invalide ou expiré",
     "referralCodeAlreadyUsed": "Vous avez déjà utilisé un code de parrainage",
-    "selfReferralNotAllowed": "Vous ne pouvez pas vous parrainer vous-même"
+    "selfReferralNotAllowed": "Vous ne pouvez pas vous parrainer vous-même",
+    "enrollmentFailed": "Nous n'avons pas pu compléter votre inscription. Veuillez réessayer ou contacter le support",
+    "profileUpdateFailed": "Nous n'avons pas pu mettre à jour votre profil. Veuillez réessayer",
+    "passInstallFailed": "Nous n'avons pas pu installer votre pass. Veuillez réessayer ou contacter le support",
+    "locationRequired": "Les services de localisation sont requis pour gagner des points à cet endroit",
+    "locationPermissionDenied": "Veuillez activer les autorisations de localisation pour vous enregistrer à cet endroit",
+    "qrCodeScanFailed": "Nous n'avons pas pu scanner ce code QR. Veuillez réessayer",
+    "invalidQRCode": "Ce code QR n'est pas valide",
+    "expiredQRCode": "Ce code QR a expiré"
   },
   "checkout": {
     "rewardNotApplicable": "Cette récompense ne peut pas être appliquée à votre panier",
@@ -248,7 +256,9 @@
     "maximumOrderExceeded": "Votre commande dépasse la limite maximale pour cette récompense",
     "rewardCategoryMismatch": "Cette récompense ne peut pas être appliquée à ces articles",
     "rewardStackingNotAllowed": "Une seule récompense peut être utilisée par commande",
-    "rewardRequiresTier": "Cette récompense nécessite un niveau d'adhésion plus élevé"
+    "rewardRequiresTier": "Cette récompense nécessite un niveau d'adhésion plus élevé",
+    "pointsCalculationFailed": "Nous n'avons pas pu calculer vos points. Veuillez réessayer",
+    "rewardApplicationFailed": "Nous n'avons pas pu appliquer votre récompense. Veuillez réessayer ou contacter le support"
   },
   "enrollment": {
     "emailAlreadyExists": "Un compte avec cet e-mail existe déjà",
@@ -260,7 +270,13 @@
     "termsNotAccepted": "Veuillez accepter les conditions générales pour continuer",
     "gdprConsentRequired": "Veuillez accepter la politique de confidentialité pour continuer",
     "verificationFailed": "La vérification a échoué. Veuillez vérifier votre code et réessayer",
-    "verificationCodeExpired": "Ce code de vérification a expiré. Veuillez en demander un nouveau"
+    "verificationCodeExpired": "Ce code de vérification a expiré. Veuillez en demander un nouveau",
+    "verificationCodeInvalid": "Ce code de vérification est invalide",
+    "tooManyVerificationAttempts": "Trop de tentatives de vérification. Veuillez réessayer plus tard",
+    "memberIdRequired": "L'identifiant membre est requis",
+    "birthdayRequired": "La date d'anniversaire est requise pour la vérification de l'âge",
+    "underAgeRequired": "Vous devez avoir au moins {{age}} ans pour vous inscrire",
+    "parentalConsentRequired": "Le consentement parental est requis pour les membres de moins de {{age}} ans"
   },
   "qrCode": {
     "scanFailed": "Échec du scan du code QR. Veuillez réessayer",
@@ -272,7 +288,8 @@
     "cameraNotAvailable": "L'appareil photo n'est pas disponible sur cet appareil",
     "unsupportedCodeType": "Ce type de code QR n'est pas pris en charge",
     "checkInFailed": "L'enregistrement a échoué. Veuillez présenter ce code au personnel",
-    "redeemFailed": "L'échange a échoué. Veuillez présenter ce code au personnel"
+    "redeemFailed": "L'échange a échoué. Veuillez présenter ce code au personnel",
+    "generateFailed": "Échec de la génération du code QR. Veuillez réessayer"
   },
   "mobile": {
     "pushNotificationDisabled": "Les notifications push sont désactivées. Activez-les dans les paramètres",
@@ -284,7 +301,10 @@
     "biometricFailed": "L'authentification biométrique a échoué. Veuillez réessayer ou utiliser votre mot de passe",
     "appUpdateRequired": "Veuillez mettre à jour l'application pour continuer à utiliser cette fonctionnalité",
     "unsupportedOSVersion": "Cette fonctionnalité nécessite une version plus récente du système d'exploitation",
-    "networkConnectionLost": "La connexion réseau a été perdue. Veuillez vérifier votre connexion Internet"
+    "networkConnectionLost": "La connexion réseau a été perdue. Veuillez vérifier votre connexion Internet",
+    "serverUnreachable": "Impossible de contacter le serveur. Veuillez réessayer plus tard",
+    "maintenanceMode": "L'application est en maintenance. Veuillez réessayer plus tard",
+    "featureNotAvailable": "Cette fonctionnalité n'est pas disponible dans votre région"
   },
   "subscription": {
     "planExpired": "Votre plan d'abonnement a expiré",
@@ -296,6 +316,11 @@
     "billingCycleChanged": "Votre cycle de facturation changera le {{effectiveDate}}",
     "proratedCharge": "Un prorata de {{amount}} sera appliqué",
     "invoiceFailed": "Nous n'avons pas pu générer votre facture. Veuillez réessayer",
-    "paymentMethodExpired": "Votre méthode de paiement a expiré. Veuillez la mettre à jour"
+    "paymentMethodExpired": "Votre méthode de paiement a expiré. Veuillez la mettre à jour",
+    "paymentMethodDeclined": "Votre méthode de paiement a été refusée. Veuillez en essayer une autre",
+    "subscriptionRenewalFailed": "Nous n'avons pas pu renouveler votre abonnement. Veuillez mettre à jour les informations de paiement",
+    "downgradeNotAllowed": "La réduction de plan n'est pas autorisée jusqu'au {{date}}",
+    "upgradeInProgress": "La mise à niveau de votre plan est en cours. Veuillez patienter...",
+    "cancelationPending": "Votre abonnement sera annulé le {{effectiveDate}}"
   }
 }

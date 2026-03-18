@@ -221,7 +221,7 @@
     "amountExceedsBalance": "L'importo supera il saldo disponibile",
     "maxValueExceeded": "Il valore totale supera il massimo consentito",
     "programNotFound": "Programma carta regalo non trovato",
-    "consolidationFailed": "Consolidazione carte non riuscita",
+    "consolidationFailed": "Consolidamento carte non riuscita",
     "transferFailed": "Trasferimento carta non riuscito",
     "reloadFailed": "Ricarica carta non riuscita",
     "activationFailed": "Attivazione carta non riuscita"
@@ -236,7 +236,15 @@
     "maxMembersReached": "Questo programma ha raggiunto il numero massimo di membri",
     "referralCodeInvalid": "Questo codice referral non è valido o è scaduto",
     "referralCodeAlreadyUsed": "Hai già usato un codice referral",
-    "selfReferralNotAllowed": "Non puoi referirte te stesso"
+    "selfReferralNotAllowed": "Non puoi referirte te stesso",
+    "enrollmentFailed": "Non siamo riusciti a completare la tua iscrizione. Riprova o contatta il supporto",
+    "profileUpdateFailed": "Non siamo riusciti ad aggiornare il tuo profilo. Riprova",
+    "passInstallFailed": "Non siamo riusciti a installare il tuo pass. Riprova o contatta il supporto",
+    "locationRequired": "I servizi di localizzazione sono richiesti per guadagnare punti in questa posizione",
+    "locationPermissionDenied": "Abilita i permessi di localizzazione per effettuare il check-in in questa posizione",
+    "qrCodeScanFailed": "Non siamo riusciti a scansionare questo codice QR. Riprova",
+    "invalidQRCode": "Questo codice QR non è valido",
+    "expiredQRCode": "Questo codice QR è scaduto"
   },
   "checkout": {
     "rewardNotApplicable": "Questo premio non può essere applicato al tuo carrello",
@@ -248,7 +256,9 @@
     "maximumOrderExceeded": "Il tuo ordine supera il limite massimo per questo premio",
     "rewardCategoryMismatch": "Questo premio non può essere applicato a questi articoli",
     "rewardStackingNotAllowed": "Solo un premio può essere utilizzato per ordine",
-    "rewardRequiresTier": "Questo premio richiede un livello di appartenenza più elevato"
+    "rewardRequiresTier": "Questo premio richiede un livello di appartenenza più elevato",
+    "pointsCalculationFailed": "Non siamo riusciti a calcolare i tuoi punti. Riprova",
+    "rewardApplicationFailed": "Non siamo riusciti ad applicare il tuo premio. Riprova o contatta il supporto"
   },
   "enrollment": {
     "emailAlreadyExists": "Esiste già un account con questa email",
@@ -260,7 +270,13 @@
     "termsNotAccepted": "Accettare i termini e condizioni per continuare",
     "gdprConsentRequired": "Accettare l'informativa sulla privacy per continuare",
     "verificationFailed": "Verifica fallita. Controlla il tuo codice e riprova",
-    "verificationCodeExpired": "Questo codice di verifica è scaduto. Richiedine uno nuovo"
+    "verificationCodeExpired": "Questo codice di verifica è scaduto. Richiedine uno nuovo",
+    "verificationCodeInvalid": "Questo codice di verifica non è valido",
+    "tooManyVerificationAttempts": "Troppi tentativi di verifica. Riprova più tardi",
+    "memberIdRequired": "L'ID membro è richiesto",
+    "birthdayRequired": "Il compleanno è richiesto per la verifica dell'età",
+    "underAgeRequired": "Devi avere almeno {{age}} anni per iscriverti",
+    "parentalConsentRequired": "È richiesto il consenso dei genitori per i membri sotto i {{age}}"
   },
   "qrCode": {
     "scanFailed": "Scansione codice QR fallita. Riprovare",
@@ -272,7 +288,8 @@
     "cameraNotAvailable": "La fotocamera non è disponibile su questo dispositivo",
     "unsupportedCodeType": "Questo tipo di codice QR non è supportato",
     "checkInFailed": "Check-in fallito. Mostra questo codice al personale",
-    "redeemFailed": "Riscatto fallito. Mostra questo codice al personale"
+    "redeemFailed": "Riscatto fallito. Mostra questo codice al personale",
+    "generateFailed": "Impossibile generare il codice QR. Riprova"
   },
   "mobile": {
     "pushNotificationDisabled": "Le notifiche push sono disattivate. Attivarle nelle impostazioni",
@@ -284,7 +301,10 @@
     "biometricFailed": "Autenticazione biometrica fallita. Riprovare o usare la password",
     "appUpdateRequired": "Aggiorna l'app per continuare a usare questa funzionalità",
     "unsupportedOSVersion": "Questa funzionalità richiede una versione più recente del sistema operativo",
-    "networkConnectionLost": "Connessione di rete persa. Controllare la connessione Internet"
+    "networkConnectionLost": "Connessione di rete persa. Controllare la connessione Internet",
+    "serverUnreachable": "Impossibile raggiungere il server. Riprova più tardi",
+    "maintenanceMode": "L'app è in manutenzione. Riprova più tardi",
+    "featureNotAvailable": "Questa funzionalità non è disponibile nella tua regione"
   },
   "subscription": {
     "planExpired": "Il tuo piano di abbonamento è scaduto",
@@ -296,6 +316,11 @@
     "billingCycleChanged": "Il ciclo di fatturazione cambierà il {{effectiveDate}}",
     "proratedCharge": "Sarà applicato un addebito proporzionale di {{amount}}",
     "invoiceFailed": "Impossibile generare la tua fattura. Riprovare",
-    "paymentMethodExpired": "Il tuo metodo di pagamento è scaduto. Aggiornarlo"
+    "paymentMethodExpired": "Il tuo metodo di pagamento è scaduto. Aggiornarlo",
+    "paymentMethodDeclined": "Il tuo metodo di pagamento è stato rifiutato. Prova un altro",
+    "subscriptionRenewalFailed": "Non siamo riusciti a rinnovare il tuo abbonamento. Aggiorna le informazioni di pagamento",
+    "downgradeNotAllowed": "Il downgrade del piano non è consentito fino al {{date}}",
+    "upgradeInProgress": "L'aggiornamento del tuo piano è in corso. Attendi...",
+    "cancelationPending": "Il tuo abbonamento verrà cancellato il {{effectiveDate}}"
   }
 }
