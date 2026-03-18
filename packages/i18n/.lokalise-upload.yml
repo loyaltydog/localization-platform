@@ -1,2 +1,0 @@
-project_id: "${LOKALISE_PROJECT_ID}"
-token: "${LOKALISE_API_TOKEN}"

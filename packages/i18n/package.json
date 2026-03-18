@@ -16,10 +16,9 @@
     "locales"
   ],
   "scripts": {
-    "lokalise:download": "lokalise2 file download --unzip-to locales",
-    "lokalise:upload": "for ns in common errors emails notifications validation giftCards; do lokalise2 file upload --file locales/en-US/$ns.json --lang-iso en-US; done",
-    "lokalise:push": "npm run lokalise:upload",
-    "lokalise:pull": "npm run lokalise:download",
+    "crowdin:upload": "crowdin upload sources",
+    "crowdin:download": "crowdin download",
+    "crowdin:status": "crowdin status",
     "build": "echo 'No build step required'",
     "test": "vitest run",
     "test:watch": "vitest"
@@ -31,7 +30,7 @@
     "translations"
   ],
   "author": "LoyaltyDog <dev@loyalty.dog>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "private": false,
   "repository": {
     "type": "git",
