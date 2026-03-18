@@ -412,14 +412,13 @@ subject = translator.translate('es_ES', 'emails', 'welcome.subject',
 | `validation.json` | Form field validation messages |
 | `giftCards.json` | Gift card-specific strings |
 
-**2. Add the key** using dot-notation nesting:
+**2. Add the key** using dot-notation nesting in `packages/i18n/locales/en-US/common.json`:
 
 ```json
-// packages/i18n/locales/en-US/common.json
 {
   "nav": {
     "dashboard": "Dashboard",
-    "newSection": "My New Section"   // ← add here
+    "newSection": "My New Section"
   }
 }
 ```
