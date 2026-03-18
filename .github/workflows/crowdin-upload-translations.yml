@@ -24,4 +24,4 @@ jobs:
       - name: Upload existing translations (all locales)
         env:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
-        run: crowdin upload translations --auto-approve-imported --verbose
+        run: crowdin upload translations --import-eq-suggestions --auto-approve-imported --verbose
