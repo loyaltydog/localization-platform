@@ -1,16 +1,26 @@
-# LoyaltyDog Localization Platform
+# @loyaltydog/i18n
 
-Multi-language localization infrastructure for the LoyaltyDog platform using Lokalise + i18next + shared i18n package.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://img.shields.io/github/stars/loyaltydog/localization-platform?style=social)](https://github.com/loyaltydog/localization-platform)
+
+Multi-language localization infrastructure for modern web applications.
 
 ## Overview
 
-This repository contains the shared localization infrastructure used across all LoyaltyDog platforms:
-- Merchant Dashboard (core_api)
-- Square Integration
-- Shopify Integration
-- EPOSNow Integration
-- Clover Integration
-- WordPress Plugin
+Shared i18n package with translations for all LoyaltyDog platforms. Uses Crowdin for translation management with open-source collaboration support.
+
+**Perfect for:**
+- Multi-language SaaS applications
+- Merchant dashboards
+- E-commerce integrations
+- Customer-facing applications
+
+**Features:**
+- 8 pre-configured locales (en-US, en-GB, es-ES, es-MX, fr, it, pt-BR, pt-PT)
+- 1,063+ translation keys across 5 namespaces
+- React (i18next) and Python (FastAPI) support
+- RTL support hooks included
+- Automated CI/CD sync with Crowdin
 
 ## Architecture
 
@@ -98,9 +108,31 @@ This repository contains the shared localization infrastructure used across all 
 
 ### Installation
 
+### npm
+
 ```bash
-# Install the shared i18n package
-npm install @loyaltydog/i18n@latest
+npm install @loyaltydog/i18n
+```
+
+### yarn
+
+```bash
+yarn add @loyaltydog/i18n
+```
+
+### pnpm
+
+```bash
+pnpm add @loyaltydog/i18n
+```
+
+### Local Development
+
+```bash
+# Clone the repository
+git clone https://github.com/loyaltydog/localization-platform.git
+cd localization-platform/packages/i18n
+npm install
 ```
 
 ### Frontend Integration (React)
@@ -404,11 +436,32 @@ Manual sync: Go to Actions → "Sync Translations" → "Run workflow"
 
 ## Contributing
 
-See `docs/contributing.md` for guidelines on:
-- Adding new translation keys
-- Adding new languages
-- Lokalise best practices
+We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+### Translation Contributions
+
+Translations are managed via [Crowdin](https://crowdin.com/). Join our project to help translate:
+
+1. Visit our [Crowdin project](https://crowdin.com/project/loyaltydog-localization)
+2. Sign up for a free Crowdin account
+3. Start translating!
+
+### Code Contributions
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## License
 
-Copyright © 2025 LoyaltyDog. All rights reserved.
+MIT © [LoyaltyDog](https://github.com/loyaltydog)
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+**Built with ❤️ by the LoyaltyDog team**
+
+[GitHub](https://github.com/loyaltydog/localization-platform) • [Report Issue](https://github.com/loyaltydog/localization-platform/issues) • [Request Feature](https://github.com/loyaltydog/localization-platform/issues/new?template=feature_request.md)
