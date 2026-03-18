@@ -49,8 +49,15 @@ out/
 .claude/
 CLAUDE.md
 **/CLAUDE.md
+docs/**/CLAUDE.md
 
+# bmad
+_bmad*/
 _bmad*
+
+# macOS
+.DS_Store
+**/.DS_Store
 
 # Python
 __pycache__/
