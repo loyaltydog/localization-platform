@@ -1,0 +1,27 @@
+name: Upload Translations to Crowdin (one-off)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  upload:
+    name: Upload source + existing translations to Crowdin
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Crowdin CLI
+        run: npm install -g @crowdin/cli
+
+      - name: Upload source strings (en-US)
+        env:
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+        run: crowdin upload sources --verbose
+
+      - name: Upload existing translations (all locales)
+        env:
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+        run: crowdin upload translations --import-eq-suggestions --auto-approve-imported --verbose
