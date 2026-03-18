@@ -1,6 +1,9 @@
 # LoyaltyDog Localization Platform
 
-Multi-language localization infrastructure for the LoyaltyDog platform using Lokalise + i18next + shared i18n package.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
+[![Crowdin](https://badges.crowdin.net/loyaltydog/localized.svg)](https://crowdin.com/project/loyaltydog)
+
+Multi-language localization infrastructure for the LoyaltyDog platform using Crowdin + i18next + shared i18n package.
 
 ## Overview
 
@@ -16,7 +19,7 @@ This repository contains the shared localization infrastructure used across all 
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    Lokalise (SaaS)                              │
+│                    Crowdin (SaaS)                               │
 │  Translation Editor + AI Translation + QA                       │
 └─────────────────────────────────────────────────────────────────┘
                             ↕ CLI Sync
@@ -24,14 +27,14 @@ This repository contains the shared localization infrastructure used across all 
 │                   @loyaltydog/i18n (Shared Package)              │
 │  ┌──────────────────────────────────────────────────────────┐  │
 │  │  /locales                                                 │  │
-│  │    /en-US         # Source of truth (English - United States) │  │
-│  │    /en-GB         # English - United Kingdom (Target)         │  │
-│  │    /es-ES         # Spanish - Spain                          │  │
-│  │    /es-MX         # Spanish - Mexico                          │  │
+│  │    /en_US         # Source of truth (English - United States) │  │
+│  │    /en_GB         # English - United Kingdom (Target)         │  │
+│  │    /es_ES         # Spanish - Spain                          │  │
+│  │    /es_MX         # Spanish - Mexico                          │  │
 │  │    /fr            # French                                   │  │
 │  │    /it            # Italian                                  │  │
-│  │    /pt-BR         # Portuguese - Brazil                       │  │
-│  │    /pt-PT         # Portuguese - Portugal                     │  │
+│  │    /pt_BR         # Portuguese - Brazil                       │  │
+│  │    /pt_PT         # Portuguese - Portugal                     │  │
 │  │                                                          │  │
 │  │  /src                                                     │  │
 │  │    /react/     # i18next integration                      │  │
@@ -52,31 +55,31 @@ This repository contains the shared localization infrastructure used across all 
 
 | Layer | Technology |
 |-------|-----------|
-| **Translation Management** | Lokalise (AI Translation) |
+| **Translation Management** | Crowdin (AI Translation) |
 | **Shared Package** | `@loyaltydog/i18n` |
 | **Frontend** | i18next + React |
 | **Backend** | JSON loader for FastAPI |
-| **Sync** | Lokalise CLI + GitHub Actions |
+| **Sync** | Crowdin CLI + GitHub Actions |
 
 ## Target Languages
 
 | Language | Code | Status | Notes |
 |----------|------|--------|-------|
-| **English (US)** | `en-US` | ✅ Complete | Base language, source of truth |
-| **English (GB)** | `en-GB` | ✅ Complete | Ready for British spelling review |
-| **Spanish (Spain)** | `es-ES` | ✅ Complete | AI translated |
-| **Spanish (Mexico)** | `es-MX` | ✅ Complete | AI translated |
+| **English (US)** | `en_US` | ✅ Complete | Base language, source of truth |
+| **English (GB)** | `en_GB` | ✅ Complete | Ready for British spelling review |
+| **Spanish (Spain)** | `es_ES` | ✅ Complete | AI translated |
+| **Spanish (Mexico)** | `es_MX` | ✅ Complete | AI translated |
 | **French** | `fr` | ✅ Complete | AI translated (99%+) |
 | **Italian** | `it` | ✅ Complete | AI translated (99%+) |
-| **Portuguese (Brazil)** | `pt-BR` | ✅ Complete | AI translated |
-| **Portuguese (Portugal)** | `pt-PT` | ✅ Complete | AI translated |
+| **Portuguese (Brazil)** | `pt_BR` | ✅ Complete | AI translated |
+| **Portuguese (Portugal)** | `pt_PT` | ✅ Complete | AI translated |
 
 **Total:** 1,063 translation keys per language across 5 namespaces (common, errors, emails, notifications, validation).
 
 ## Project Links
 
 - **Linear Project:** [Localization of all platforms](https://linear.app/loyaltydog/project/localization-of-all-platforms-69e910b55561)
-- **Lokalise Project:** [LoyaltyDog Platform](https://app.lokalise.com/project/71116905697c499a444c46.97764157)
+- **Crowdin Project:** [LoyaltyDog Platform](https://crowdin.com/project/loyaltydog-platform)
 
 ---
 
@@ -84,11 +87,11 @@ This repository contains the shared localization infrastructure used across all 
 
 ### Initial Release Strategy
 
-**Important:** All platforms should release with **English (en-US) only** initially, but implement the localization mechanism from day one. This means:
+**Important:** All platforms should release with **English (en_US) only** initially, but implement the localization mechanism from day one. This means:
 
 1. ✅ Install and configure `@loyaltydog/i18n` package
 2. ✅ Replace hardcoded strings with translation function calls
-3. ✅ Use en-US as the default language
+3. ✅ Use en_US as the default language
 4. ⏸️ Do NOT expose language selector UI yet
 5. ⏸️ Do NOT support multiple languages in production yet
 
@@ -113,11 +116,11 @@ For React-based platforms (Core API Dashboard, EPOSNow, Square, Shopify, Clover)
 // src/i18n.ts or similar entry point
 import { initI18n } from '@loyaltydog/i18n/react';
 
-// Initialize with default language (en-US)
+// Initialize with default language (en_US)
 initI18n({
   // Override default config if needed
   detection: {
-    // For initial release, only support en-US
+    // For initial release, only support en_US
     lookupLocalStorage: 'loyaltydog_language',
     caches: ['localStorage'],
   },
@@ -190,7 +193,7 @@ translator = TranslationLoader()
 ```python
 # Get translation for a specific language
 subject = translator.translate(
-    language='en-US',  # or 'es-ES', 'fr', etc.
+    language='en_US',  # or 'es_ES', 'fr', etc.
     namespace='emails',
     key='welcome.subject',
     merchantName='Acme Store'
@@ -207,7 +210,7 @@ from fastapi import HTTPException
 from pydantic import BaseModel
 
 class LanguageUpdate(BaseModel):
-    language: str  # e.g., 'en-US', 'es-ES', 'fr'
+    language: str  # e.g., 'en_US', 'es_ES', 'fr'
 
 @router.put("/merchants/{merchant_id}/language")
 async def update_merchant_language(merchant_id: str, data: LanguageUpdate):
@@ -236,8 +239,8 @@ def send_welcome_email(member_email: str, member_name: str, merchant_name: str):
 
     # Get member's preferred language from database
     # member = db.query(Member).filter_by(email=member_email).first()
-    # language = member.language_preference or 'en-US'
-    language = 'en-US'  # Default for initial release
+    # language = member.language_preference or 'en_US'
+    language = 'en_US'  # Default for initial release
 
     subject = translator.translate(
         language, 'emails', 'welcome.subject',
@@ -273,7 +276,7 @@ curl -X PUT "https://api.loyalty.dog/v2/merchants/{merchant_id}/language" \
   -H "Authorization: Bearer {api_token}" \
   -H "Content-Type: application/json" \
   -d '{
-    "language": "es-ES"
+    "language": "es_ES"
   }'
 ```
 
@@ -281,25 +284,25 @@ curl -X PUT "https://api.loyalty.dog/v2/merchants/{merchant_id}/language" \
 
 ```sql
 UPDATE merchants
-SET language_preference = 'es-ES'
+SET language_preference = 'es_ES'
 WHERE id = '{merchant_id}';
 ```
 
 **Supported Language Codes:**
-- `en-US` - English (United States) - **Default**
-- `en-GB` - English (United Kingdom)
-- `es-ES` - Spanish (Spain)
-- `es-MX` - Spanish (Mexico)
+- `en_US` - English (United States) - **Default**
+- `en_GB` - English (United Kingdom)
+- `es_ES` - Spanish (Spain)
+- `es_MX` - Spanish (Mexico)
 - `fr` - French
 - `it` - Italian
-- `pt-BR` - Portuguese (Brazil)
-- `pt-PT` - Portuguese (Portugal)
+- `pt_BR` - Portuguese (Brazil)
+- `pt_PT` - Portuguese (Portugal)
 
 ### Language Fallback Behavior
 
 If a translation is missing for the merchant's preferred language, the system automatically falls back to:
-1. Base language variant (e.g., `es-MX` → `es`)
-2. English (en-US) as final fallback
+1. Base language variant (e.g., `es_MX` → `es`)
+2. English (en_US) as final fallback
 
 This ensures that users always see some text, never blank placeholders.
 
@@ -311,6 +314,7 @@ This ensures that users always see some text, never blank placeholders.
 localization-platform/
 ├── README.md                  # This file
 ├── CLAUDE.md                  # Project context for AI agents
+├── crowdin.yml                # Crowdin CLI config
 ├── docs/
 │   ├── architecture.md        # Technical architecture decisions
 │   ├── epics/                 # Epic breakdown
@@ -320,28 +324,27 @@ localization-platform/
 ├── packages/
 │   └── i18n/
 │       ├── package.json
-│       ├── .lokalise.json     # Lokalise CLI config
 │       ├── locales/
-│       │   ├── en-US/         # English - United States (source)
+│       │   ├── en_US/         # English - United States (source)
 │       │   │   ├── common.json      # 372 keys - UI strings
 │       │   │   ├── errors.json      # 176 keys - Error messages
 │       │   │   ├── emails.json      # 292 keys - Email templates
 │       │   │   ├── notifications.json # 82 keys - SMS/Push
 │       │   │   └── validation.json  # 141 keys - Form validation
-│       │   ├── en-GB/         # English - United Kingdom
-│       │   ├── es-ES/         # Spanish - Spain
-│       │   ├── es-MX/         # Spanish - Mexico
+│       │   ├── en_GB/         # English - United Kingdom
+│       │   ├── es_ES/         # Spanish - Spain
+│       │   ├── es_MX/         # Spanish - Mexico
 │       │   ├── fr/            # French
 │       │   ├── it/            # Italian
-│       │   ├── pt-BR/         # Portuguese - Brazil
-│       │   └── pt-PT/         # Portuguese - Portugal
+│       │   ├── pt_BR/         # Portuguese - Brazil
+│       │   └── pt_PT/         # Portuguese - Portugal
 │       └── src/
 │           ├── react/         # i18next integration
 │           ├── node/          # Python/FastAPI loader
 │           └── rtl/           # RTL support hooks
 └── .github/
     └── workflows/
-        └── i18n-sync.yml      # CI/CD sync with Lokalise
+        └── i18n-sync.yml      # CI/CD sync with Crowdin
 ```
 
 ## Getting Started
@@ -349,8 +352,8 @@ localization-platform/
 ### Prerequisites
 
 - Node.js 18+
-- Lokalise CLI: `npm install -g @lokalise/cli`
-- Access to Lokalise project: `71116905697c499a444c46.97764157`
+- Crowdin CLI: `npm install -g @crowdin/cli`
+- Access to the Crowdin project
 
 ### Installation
 
@@ -359,11 +362,11 @@ localization-platform/
 cd packages/i18n
 npm install
 
-# Download latest translations from Lokalise
-npm run lokalise:download
+# Download latest translations from Crowdin
+npm run crowdin:download
 
-# Upload English source files to Lokalise
-npm run lokalise:upload
+# Upload English source files to Crowdin
+npm run crowdin:upload
 ```
 
 ### Usage (React)
@@ -383,22 +386,22 @@ function Dashboard() {
 from loyaltydog_i18n import TranslationLoader
 
 translator = TranslationLoader()
-subject = translator.translate('es', 'emails', 'welcome.subject',
+subject = translator.translate('es_ES', 'emails', 'welcome.subject',
                                merchantName="Mi Tienda")
 ```
 
 ## Translation Workflow
 
-1. **Developer adds new keys** to `locales/en-US/*.json`
-2. **Upload to Lokalise:** `npm run lokalise:upload`
-3. **AI Translation** triggered in Lokalise for all target languages
-4. **CI/CD auto-syncs** every 12 hours (or manual trigger)
+1. **Developer adds new keys** to `locales/en_US/*.json`
+2. **Upload to Crowdin:** `npm run crowdin:upload`
+3. **AI Translation** triggered in Crowdin for all target languages
+4. **CI/CD auto-syncs** on merge via GitHub Actions
 5. **Translations downloaded** to `locales/{lang}/`
 6. **Consumer repos** update `@loyaltydog/i18n` dependency
 
 ## CI/CD
 
-Translations are automatically synced from Lokalise every 12 hours via GitHub Actions (00:00 and 12:00 UTC).
+Translations are automatically synced from Crowdin via GitHub Actions on push to `main`.
 
 Manual sync: Go to Actions → "Sync Translations" → "Run workflow"
 
@@ -407,8 +410,10 @@ Manual sync: Go to Actions → "Sync Translations" → "Run workflow"
 See `docs/contributing.md` for guidelines on:
 - Adding new translation keys
 - Adding new languages
-- Lokalise best practices
+- Crowdin best practices
 
 ## License
 
-Copyright © 2025 LoyaltyDog. All rights reserved.
+MIT License — see [LICENSE.md](LICENSE.md) for details.
+
+Copyright © 2026 LoyaltyDog.
