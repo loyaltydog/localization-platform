@@ -60,3 +60,11 @@ __pycache__/
 
 # Lokalise import staging (transient download dir)
 lokalise-import/*/
+
+# Memory and documentation
+_memory/
+docs/
+
+# BuildMAD / bmad workflow files
+bmad/
+_bmad*/
