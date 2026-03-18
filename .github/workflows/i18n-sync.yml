@@ -1,15 +1,17 @@
-name: Sync translations from Lokalise
+name: Sync Translations from Crowdin
 
 on:
-  workflow_dispatch:           # manual trigger only
+  workflow_dispatch: # manual trigger only
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   sync:
-    name: Download translations and commit to main
+    name: Download translations and open PR
     runs-on: ubuntu-latest
+    environment: production
 
     steps:
       - name: Checkout main
@@ -18,31 +20,20 @@ jobs:
           ref: main
           token: ${{ secrets.I18N_SYNC_PAT }}
 
-      - name: Install Lokalise CLI v2
-        run: |
-          curl -sfL \
-            https://raw.githubusercontent.com/lokalise/lokalise-cli-2-go/master/install.sh \
-            | sh -s -- -b /usr/local/bin
-          which lokalise2
+      - name: Install Crowdin CLI
+        run: npm install -g @crowdin/cli
 
-      - name: Download translations from Lokalise
+      - name: Download translations from Crowdin
         env:
-          LOKALISE_API_TOKEN: ${{ secrets.LOKALISE_API_TOKEN }}
-        run: |
-          mkdir -p /tmp/lokalise-download
-          lokalise2 file download \
-            --token "$LOKALISE_API_TOKEN" \
-            --project-id "${{ secrets.LOKALISE_PROJECT_ID }}" \
-            --format json \
-            --original-filenames=true \
-            --bundle-structure "%LANG_ISO%/%FILENAME%" \
-            --unzip-to packages/i18n/locales \
-            --dest /tmp/lokalise-download
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+        run: crowdin download
 
       - name: Show what changed
         run: git diff --stat packages/i18n/locales/ || true
 
-      - name: Commit and push translation changes
+      - name: Open PR with translation changes
+        env:
+          GH_TOKEN: ${{ secrets.I18N_SYNC_PAT }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -50,6 +41,13 @@ jobs:
           if git diff --staged --quiet; then
             echo "No translation changes — nothing to commit."
           else
-            git commit -m "chore(i18n): sync translations from Lokalise [skip ci]"
-            git push origin main
+            BRANCH="chore/sync-translations-$(date +%Y%m%d-%H%M%S)"
+            git checkout -b "$BRANCH"
+            git commit -m "chore(i18n): sync translations from Crowdin [skip ci]"
+            git push origin "$BRANCH"
+            gh pr create \
+              --title "chore(i18n): sync translations from Crowdin" \
+              --body "Automated translation sync from Crowdin." \
+              --base main \
+              --head "$BRANCH"
           fi
