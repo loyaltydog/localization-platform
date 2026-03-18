@@ -1,118 +1,60 @@
-# Open-Source Preparation - Quick Reference
+# Open-Source & Crowdin Migration — Completed ✅
 
-**Date:** March 18, 2026
-**Status:** Ready for Public Release
+**Date Completed:** March 18, 2026
 
-## Completed Tasks
-
-### ✅ Files Created/Modified
-
-1. **LICENSE** - MIT License
-   - Location: `/LICENSE`
-   - Standard MIT license with 2026 copyright
-
-2. **README.md** - Updated for open-source
-   - Location: `/README.md`
-   - Added badges (MIT License, GitHub stars)
-   - Updated project description
-   - Added installation instructions (npm, yarn, pnpm)
-   - Added contributing guidelines
-   - Added license section with attribution
-
-3. **Crowdin Migration Plan** - Comprehensive migration guide
-   - Location: `/docs/plans/2026-03-17-translation-sync-branch-cascade.md`
-   - 10 detailed tasks
-   - Timeline: 7-10 days
-   - Includes risk mitigation
-   - Success criteria checklist
-
-## Next Steps
-
-### 🚀 Immediate Actions Required
-
-1. **Make Repository Public** ✅ DONE (March 18, 2026)
-   - Repository is now public at https://github.com/loyaltydog/localization-platform
-
-2. **Submit Crowdin Open Source Application** ✅ DONE (March 18, 2026)
-   - Application submitted — awaiting approval (typical wait: 1-3 business days)
-
-3. **Prepare Configuration Files** ⏳ Pending Crowdin approval
-   - Create `.crowdin.yml` (template in migration plan)
-   - Update `.github/workflows/i18n-sync.yml`
-   - Update `package.json` scripts
-
-## Migration Plan Highlights
-
-### Phase 1: Open-Source (COMPLETE)
-- ✅ Add MIT license
-- ✅ Update README.md
-- ✅ Make repository public
-- ✅ Protect branches (main, staging, development) — loyaltydog/Development team only
-
-### Phase 2: Crowdin Setup
-- ✅ Apply for Open Source license (submitted March 18, 2026 — pending approval)
-- ⏳ Receive Crowdin approval
-- Create Crowdin project
-- Install Crowdin CLI
-- Configure file mappings
-
-### Phase 3: Migration
-- Export from Lokalise
-- Import to Crowdin
-- Test downloads
-- Update CI/CD workflow
-
-### Phase 4: Launch
-- Cleanup Lokalise references
-- Update documentation
-- Enable community translations
-
-## Key Benefits
-
-### Open Source
-- Community contributions
-- Transparency
-- Credibility
-- Free hosting on GitHub
-
-### Crowdin Migration
-- Free Open Source plan
-- Better community translation features
-- Improved workflow
-- Cost savings
-
-## Repository Information
-
-**Current Status:** Public ✅
-**Branch:** `chore/remove-cron-from-i18n-sync`
-**Commit:** `8b349ee`
-**License:** MIT
-**Languages:** 8 locales
-**Translation Keys:** 1,063
-
-## Contact
-
-**Maintainer:** Haim Barad (haim@loyalty.dog)
-**GitHub:** https://github.com/loyaltydog/localization-platform
-**Linear:** [Localization of all platforms](https://linear.app/loyaltydog/project/localization-of-all-platforms-69e910b55561)
+All phases of the open-source release and Lokalise → Crowdin migration are complete.
 
 ---
 
-## Quick Commands
+## Phase 1: Open-Source ✅
+- ✅ Add MIT license (`LICENSE`, `LICENSE.md`)
+- ✅ Update README.md with badges and Crowdin info
+- ✅ Make repository public
+- ✅ Protect branches (main, staging, development) — `loyaltydog/Development` team, admins can bypass
 
+## Phase 2: Crowdin Setup ✅
+- ✅ Crowdin open-source application approved (March 18, 2026)
+- ✅ Crowdin project created (ID: 881724)
+- ✅ `crowdin.yml` configured with correct locale mappings
+- ✅ GitHub environment secrets added (`CROWDIN_PERSONAL_TOKEN` in `production`)
+
+## Phase 3: Migration ✅
+- ✅ Source strings (en-US) uploaded to Crowdin
+- ✅ All 7 target language translations seeded (1,650 translations loaded, `--import-eq-suggestions`)
+- ✅ Export pattern warning resolved (en-US added to `languages_mapping`)
+- ✅ CI/CD sync workflow updated to Crowdin (creates PR on sync)
+
+## Phase 4: Cleanup ✅
+- ✅ Lokalise config files removed (`.lokalise2.yml`, `.lokalise.json`, `.lokalise-upload.yml`, `bin/lokalise2`)
+- ✅ Lokalise GitHub Actions workflow removed (`i18n-upload.yml`)
+- ✅ Underscore-format locale directories removed (en_US, en_GB, es_ES, es_MX, fr_FR, it_IT, pt_BR, pt_PT)
+- ✅ Lokalise npm scripts replaced with Crowdin scripts in `package.json`
+
+---
+
+## Remaining Work: Increase Translation Coverage
+
+Translation infrastructure is complete. Next phase is expanding string coverage:
+
+| Area | Status |
+|------|--------|
+| Navigation & core UI | ✅ Done |
+| Merchant dashboard pages & forms | ⏳ Pending |
+| Backend email templates | ⏳ Pending |
+| Consumer-facing error messages | ⏳ Pending |
+| Shopify / EPOSNow / Square strings | ⏳ Pending |
+
+**Quick commands:**
 ```bash
-# View changes
-git log --oneline -1
-
-# Push to remote (when ready)
-git push origin chore/remove-cron-from-i18n-sync
-
-# Create PR (when ready)
-gh pr create --title "chore: add MIT license and prepare for open-source" \
-  --body "Prepares repository for open-source release and Crowdin migration"
+# Add new keys to the right namespace file, then:
+npm run crowdin:upload    # push new source strings to Crowdin
+npm run crowdin:download  # pull translated strings back
+npm run crowdin:status    # check translation progress
 ```
 
 ---
 
-**Last Updated:** March 18, 2026
-**Document:** docs/plans/OPEN-SOURCE-CHECKLIST.md
+**Repository:** https://github.com/loyaltydog/localization-platform
+**Crowdin Project:** https://crowdin.com/project/loyaltydog
+**Linear:** [Localization of all platforms](https://linear.app/loyaltydog/project/localization-of-all-platforms-69e910b55561)
+**Maintainer:** Haim Barad (haim@loyalty.dog)
