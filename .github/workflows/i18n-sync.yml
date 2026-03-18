@@ -1,9 +1,7 @@
 name: Sync translations from Lokalise
 
 on:
-  schedule:
-    - cron: '0 */12 * * *'   # every 12 hours at :00
-  workflow_dispatch:           # allow manual trigger
+  workflow_dispatch:           # manual trigger only
 
 permissions:
   contents: write
