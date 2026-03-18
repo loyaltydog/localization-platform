@@ -1,0 +1,28 @@
+{
+    "shopify": {
+        "loyalty": {
+            "joinButton": "Iscriviti al programma fedeltà",
+            "viewRewardsButton": "Visualizza i miei premi",
+            "pointsBalance": "Saldo punti: {{points}}",
+            "pointsEarned": "Hai guadagnato {{points}} punti",
+            "rewardAvailable": "Premio disponibile: {{rewardName}}",
+            "redeemButton": "Riscatta il premio"
+        },
+        "storefront": {
+            "widgetTitle": "Premi fedeltà",
+            "signInPrompt": "Accedi per vedere i tuoi premi",
+            "enrollPrompt": "Iscriviti al nostro programma fedeltà e inizia a guadagnare premi"
+        },
+        "admin": {
+            "title": "LoyaltyDog",
+            "settingsTitle": "Impostazioni del programma fedeltà",
+            "saveButton": "Salva impostazioni",
+            "cancelButton": "Annulla"
+        },
+        "errors": {
+            "loadFailed": "Caricamento dei dati fedeltà non riuscito. Aggiorna la pagina.",
+            "enrollFailed": "Iscrizione al programma fedeltà non riuscita. Riprova.",
+            "redeemFailed": "Riscatto del premio non riuscito. Riprova."
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "clover": {
+        "pos": {
+            "title": "LoyaltyDog",
+            "enrollPrompt": "Enrol in our loyalty programme to start earning points",
+            "pointsBalance": "Points Balance: {{points}}",
+            "pointsEarned": "You earned {{points}} points",
+            "rewardAvailable": "Reward available: {{rewardName}}",
+            "redeemButton": "Redeem Reward",
+            "cancelButton": "Cancel"
+        },
+        "loyalty": {
+            "tier": "Tier: {{tierName}}",
+            "memberSince": "Member since {{date}}",
+            "lifetimePoints": "Lifetime Points: {{points}}"
+        },
+        "errors": {
+            "connectionFailed": "Failed to connect to Clover. Please try again.",
+            "enrollFailed": "Failed to enrol customer. Please try again.",
+            "transactionFailed": "Transaction could not be processed."
+        },
+        "success": {
+            "enrolled": "Successfully enrolled in the loyalty programme.",
+            "pointsAdded": "{{points}} points added to your account.",
+            "redeemed": "Reward redeemed successfully."
+        }
+    }
+}

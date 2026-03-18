@@ -1,0 +1,28 @@
+{
+    "shopify": {
+        "loyalty": {
+            "joinButton": "Join Loyalty Programme",
+            "viewRewardsButton": "View My Rewards",
+            "pointsBalance": "Points Balance: {{points}}",
+            "pointsEarned": "You earned {{points}} points",
+            "rewardAvailable": "Reward available: {{rewardName}}",
+            "redeemButton": "Redeem Reward"
+        },
+        "storefront": {
+            "widgetTitle": "Loyalty Rewards",
+            "signInPrompt": "Sign in to view your rewards",
+            "enrollPrompt": "Join our loyalty programme and start earning rewards"
+        },
+        "admin": {
+            "title": "LoyaltyDog",
+            "settingsTitle": "Loyalty Programme Settings",
+            "saveButton": "Save Settings",
+            "cancelButton": "Cancel"
+        },
+        "errors": {
+            "loadFailed": "Failed to load loyalty data. Please refresh the page.",
+            "enrollFailed": "Failed to enrol in the loyalty programme. Please try again.",
+            "redeemFailed": "Failed to redeem reward. Please try again."
+        }
+    }
+}
