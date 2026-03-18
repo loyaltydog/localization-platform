@@ -76,11 +76,11 @@ describe('Spanish (es-ES) Translations', () => {
 
   describe('Translation Coverage', () => {
     const expectedCounts = {
-      common: 391,
-      errors: 191,
+      common: 532,
+      errors: 276,
       validation: 141,
       notifications: 103,
-      emails: 323
+      emails: 409
     };
 
     it.each(Object.entries(expectedCounts))(

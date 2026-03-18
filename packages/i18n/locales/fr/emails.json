@@ -389,5 +389,111 @@
     "newBalance": "Nouveau solde : {{currency}}{{balance}}",
     "cta": "Vérifier Mon Solde",
     "footer": "Merci d'utiliser {{merchantName}}."
+  },
+  "merchant_monthly_summary": {
+    "subject": "Votre Monthly Loyalty Program Summary — {{month}} {{year}}",
+    "greeting": "Bonjour {{merchantName}},",
+    "body": "Voici votre résumé mensuel du programme de fidélité.",
+    "newMembers": "Nouveaux membres : {{count}}",
+    "pointsIssued": "Points émis : {{points}}",
+    "rewardsRedeemed": "Récompenses échangées : {{count}}",
+    "totalTransactions": "Total des transactions : {{count}}",
+    "cta": "Voir le rapport complet",
+    "footer": "Continuez le excellent travail d'engagement de vos clients !"
+  },
+  "integration_sync_failure": {
+    "subject": "⚠️ Échec de synchronisation de l'intégration — {{integrationName}}",
+    "greeting": "Bonjour {{merchantName}},",
+    "body": "Nous avons rencontré une erreur lors de la synchronisation avec {{integrationName}}.",
+    "errorMessage": "Erreur : {{errorMessage}}",
+    "lastSuccessfulSync": "Dernière synchronisation réussie : {{lastSyncTime}}",
+    "troubleshooting": "Veuillez vérifier vos paramètres d'intégration ou contacter le support.",
+    "cta": "Voir les paramètres d'intégration",
+    "footer": "Nous réessayerons la synchronisation automatiquement dans {{retryInterval}} minutes."
+  },
+  "low_gift_card_balance": {
+    "subject": "Alerte de solde faible de carte cadeau — {{currency}}{{balance}} restants",
+    "greeting": "Bonjour {{merchantName}},",
+    "body": "Le solde de l'inventaire de vos cartes cadeaux est faible.",
+    "currentBalance": "Solde actuel : {{currency}}{{balance}}",
+    "threshold": "Seuil d'alerte : {{currency}}{{threshold}}",
+    "recommendation": "Envisagez de recharger votre solde pour éviter de décevoir les clients.",
+    "cta": "Ajouter des fonds",
+    "footer": "Cette alerte a été déclenchée lorsque votre solde est tombé en dessous de {{currency}}{{threshold}}."
+  },
+  "tier_downgrade": {
+    "subject": "Votre statut de niveau va bientôt changer",
+    "greeting": "Bonjour {{memberName}},",
+    "body": "Nous souhaitions vous informer que votre statut de niveau changera le {{effectiveDate}}.",
+    "currentTier": "Niveau actuel : {{currentTier}}",
+    "newTier": "Nouveau niveau : {{newTier}}",
+    "reason": "Votre activité a été inférieure à la exigence {{currentTier}} pendant {{inactiveDays}} jours.",
+    "howToMaintain": "Gagnez {{pointsRequired}} points supplémentaires d'ici le {{deadline}} pour maintenir votre statut {{currentTier}}.",
+    "cta": "Voir les moyens de gagner des points",
+    "footer": "Merci d'être un membre fidèle de {{merchantName}}."
+  },
+  "referral_earned": {
+    "subject": "Vous avez gagné une prime de parrainage ! 🎉",
+    "greeting": "Bonjour {{referrerName}},",
+    "body": "Bonne nouvelle ! Votre ami {{referredFriendName}} vient de rejoindre en utilisant votre parrainage.",
+    "bonusPoints": "Bonus gagné : {{bonusPoints}} points",
+    "newBalance": "Votre nouveau solde : {{balance}} points",
+    "cta": "Parrainer plus d'amis",
+    "footer": "Continuez à partager l'amour et à gagner des récompenses chez {{merchantName}} !"
+  },
+  "account_suspended": {
+    "subject": "Votre compte a été suspendu",
+    "greeting": "Bonjour {{memberName}},",
+    "body": "Votre compte de fidélité {{merchantName}} a été suspendu.",
+    "reason": "Raison : {{suspensionReason}}",
+    "contactSupport": "Si vous pensez qu'il s'agit d'une erreur, veuillez contacter notre équipe d'assistance.",
+    "supportEmail": "Envoyez-nous un courriel à {{supportEmail}}",
+    "canAppeal": "Vous pouvez faire appel de cette suspension en fournissant des informations supplémentaires.",
+    "footer": "Nous apprécions votre adhésion et souhaitons résoudre ce problème rapidement."
+  },
+  "payment_failed": {
+    "subject": "Échec du paiement — Action requise",
+    "greeting": "Bonjour {{memberName}},",
+    "body": "Nous n'avons pas pu traiter votre paiement de {{amount}} pour {{description}}.",
+    "failureReason": "Raison : {{failureReason}}",
+    "retryDate": "Nous réessayerons le {{retryDate}}",
+    "updatePayment": "Veuillez mettre à jour vos informations de paiement pour éviter l'interruption du service.",
+    "cta": "Mettre à jour la méthode de paiement",
+    "footer": "Si vous pensez qu'il s'agit d'une erreur, contactez le support à {{supportEmail}}."
+  },
+  "subscription_renewing": {
+    "subject": "Votre abonnement renouvelle le {{renewalDate}}",
+    "greeting": "Bonjour {{memberName}},",
+    "body": "Ceci est un rappel que votre abonnement sera renouvelé automatiquement le {{renewalDate}}.",
+    "plan": "Plan : {{planName}}",
+    "amount": "Montant : {{amount}}",
+    "paymentMethod": "Méthode de paiement : {{paymentMethod}}",
+    "cancelOption": "Si vous souhaitez annuler, faites-le avant la date de renouvellement.",
+    "cta": "Gérer l'abonnement",
+    "footer": "Merci pour votre abonnement continu !"
+  },
+  "merchant_welcome": {
+    "subject": "Bienvenue sur LoyaltyDog — Commençons !",
+    "greeting": "Bonjour {{merchantName}},",
+    "body": "Bienvenue sur LoyaltyDog ! Votre compte est prêt et nous sommes ravis de vous aider à construire un programme de fidélité réussi.",
+    "nextSteps": "Étapes suivantes :",
+    "step1": "1. Configurez les paramètres de votre programme de fidélité",
+    "step2": "2. Créez des récompenses attrayantes pour vos clients",
+    "step3": "3. Intégrez avec votre plateforme de caisse ou de commerce électronique",
+    "step4": "4. Lancez et commencez à enregistrer les membres",
+    "cta": "Aller au tableau de bord",
+    "support": "Besoin d'aide ? Consultez nos guides ou contactez le support.",
+    "footer": "Construisons quelque chose d'incroyable ensemble !"
+  },
+  "api_rate_limit_warning": {
+    "subject": "⚠️ Avertissement de limite d'API — {{percentage}}% utilisé",
+    "greeting": "Bonjour {{developerName}},",
+    "body": "Votre application approche de la limite d'API.",
+    "currentUsage": "Utilisation actuelle : {{requestsMade}} / {{requestLimit}} requêtes",
+    "resetTime": "Réinitialisation à : {{resetTime}}",
+    "recommendation": "Envisagez d'implémenter un ralentissement des requêtes ou un cache pour réduire les appels API.",
+    "upgradeOption": "Pour des limites plus élevées, envisagez de mettre à niveau votre plan.",
+    "cta": "Voir le tableau de bord d'utilisation",
+    "footer": "Ceci est un avertissement automatisé pour éviter l'interruption du service."
   }
 }

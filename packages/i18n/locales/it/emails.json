@@ -161,7 +161,7 @@
     "alternative_access": "Se il pulsante qui sopra non funziona, potete anche copiare e incollare questo URL nel vostro browser:",
     "expiration_notice": "<strong>Importante:</strong> Questo link per la reimpostazione della password scadrà tra {{ expires_in_hours }} ore. Dopodiché, contattare l'assistenza per richiederne una nuova.",
     "dashboard_access": "Una volta impostata la password, potete accedere alla vostra dashboard qui:",
-    "next_steps_heading": "<strong>Quale sarà il prossimo passo?",
+    "next_steps_heading": "<strong>Quale sarà il prossimo passo?</strong>",
     "help_heading": "<strong>Hai bisogno di aiuto? </strong>",
     "help_contact": "Contattateci all'indirizzo <a href=\"mailto:support@loyalty.dog\">support@loyalty.dog</a> o visitate <a href=\"https://loyalty.dog/contact\">loyalty.dog/contact</a>.",
     "website": "www.loyalty.dog",
@@ -389,5 +389,111 @@
     "newBalance": "Nuovo saldo: {{currency}}{{balance}}",
     "cta": "Verifica il Saldo",
     "footer": "Grazie per aver usato {{merchantName}}."
+  },
+  "merchant_monthly_summary": {
+    "subject": "Il vostro riepilogo mensile del programma fedeltà — {{month}} {{year}}",
+    "greeting": "Salve {{merchantName}},",
+    "body": "Ecco il riepilogo delle prestazioni del programma fedeltà per {{month}} {{year}}.",
+    "newMembers": "Nuovi membri: {{count}}",
+    "pointsIssued": "Punti emessi: {{points}}",
+    "rewardsRedeemed": "Premi riscattati: {{count}}",
+    "totalTransactions": "Transazioni totali: {{count}}",
+    "cta": "Visualizza rapporto completo",
+    "footer": "Continuate il ottimo lavoro di coinvolgimento dei clienti!"
+  },
+  "integration_sync_failure": {
+    "subject": "⚠️ Sincronizzazione integrazione fallita — {{integrationName}}",
+    "greeting": "Salve {{merchantName}},",
+    "body": "Abbiamo riscontrato un errore durante la sincronizzazione con {{integrationName}}.",
+    "errorMessage": "Errore: {{errorMessage}}",
+    "lastSuccessfulSync": "Ultima sincronizzazione riuscita: {{lastSyncTime}}",
+    "troubleshooting": "Verificate le impostazioni di integrazione o contattate il supporto.",
+    "cta": "Visualizza impostazioni di integrazione",
+    "footer": "Riproveremo automaticamente la sincronizzazione tra {{retryInterval}} minuti."
+  },
+  "low_gift_card_balance": {
+    "subject": "Avviso saldo basso carta regalo — {{currency}}{{balance}} rimanenti",
+    "greeting": "Salve {{merchantName}},",
+    "body": "Il saldo delle vostre carte regalo in inventario è in esaurimento.",
+    "currentBalance": "Saldo attuale: {{currency}}{{balance}}",
+    "threshold": "Soglia di avviso: {{currency}}{{threshold}}",
+    "recommendation": "Valutate di ricaricare il saldo per evitare di deludere i clienti.",
+    "cta": "Aggiungi fondi",
+    "footer": "Questo avviso è stato attivato quando il vostro saldo è sceso al di sotto di {{currency}}{{threshold}}."
+  },
+  "tier_downgrade": {
+    "subject": "Il vostro stato di livello cambierà presto",
+    "greeting": "Ciao {{memberName}},",
+    "body": "Vi informiamo che il vostro stato di livello cambierà il {{effectiveDate}}.",
+    "currentTier": "Livello attuale: {{currentTier}}",
+    "newTier": "Nuovo livello: {{newTier}}",
+    "reason": "La vostra attività è stata inferiore al requisito {{currentTier}} per {{inactiveDays}} giorni.",
+    "howToMaintain": "Guadagnate {{pointsRequired}} punti in più entro {{deadline}} per mantenere il vostro stato {{currentTier}}.",
+    "cta": "Visualizza modi per guadagnare punti",
+    "footer": "Grazie per essere un membro fedele di {{merchantName}}."
+  },
+  "referral_earned": {
+    "subject": "Hai guadagnato un bonus referral! 🎉",
+    "greeting": "Ciao {{referrerName}},",
+    "body": "Ottime notizie! Il tuo amico {{referredFriendName}} si è appena iscritto usando il tuo referral.",
+    "bonusPoints": "Bonus guadagnato: {{bonusPoints}} punti",
+    "newBalance": "Il tuo nuovo saldo: {{balance}} punti",
+    "cta": "Invita altri amici",
+    "footer": "Continua a condividere l'amore e guadagnare premi su {{merchantName}}!"
+  },
+  "account_suspended": {
+    "subject": "Il tuo account è stato sospeso",
+    "greeting": "Ciao {{memberName}},",
+    "body": "Il tuo conto fedeltà {{merchantName}} è stato sospeso.",
+    "reason": "Motivo: {{suspensionReason}}",
+    "contactSupport": "Se ritieni che si tratti di un errore, contatta il nostro team di supporto.",
+    "supportEmail": "Inviaci un'e-mail a {{supportEmail}}",
+    "canAppeal": "Puoi fare appello a questa sospensione fornendo informazioni aggiuntive.",
+    "footer": "Apprezziamo la tua iscrizione e vogliamo risolvere questo problema rapidamente."
+  },
+  "payment_failed": {
+    "subject": "Pagamento fallito — Azione richiesta",
+    "greeting": "Ciao {{memberName}},",
+    "body": "Non siamo stati in grado di elaborare il tuo pagamento di {{amount}} per {{description}}.",
+    "failureReason": "Motivo: {{failureReason}}",
+    "retryDate": "Riproveremo il {{retryDate}}",
+    "updatePayment": "Aggiorna le tue informazioni di pagamento per evitare interruzioni del servizio.",
+    "cta": "Aggiorna metodo di pagamento",
+    "footer": "Se ritieni che si tratti di un errore, contatta il supporto a {{supportEmail}}."
+  },
+  "subscription_renewing": {
+    "subject": "Il tuo abbonamento si rinnova il {{renewalDate}}",
+    "greeting": "Ciao {{memberName}},",
+    "body": "Questo è un promemoria che il tuo abbonamento si rinnoverà automaticamente il {{renewalDate}}.",
+    "plan": "Piano: {{planName}}",
+    "amount": "Importo: {{amount}}",
+    "paymentMethod": "Metodo di pagamento: {{paymentMethod}}",
+    "cancelOption": "Se desideri annullare, fallo prima della data di rinnovo.",
+    "cta": "Gestisci abbonamento",
+    "footer": "Grazie per il tuo abbonamento continuativo!"
+  },
+  "merchant_welcome": {
+    "subject": "Benvenuti su LoyaltyDog — Iniziamo!",
+    "greeting": "Salve {{merchantName}},",
+    "body": "Benvenuti su LoyaltyDog! Il tuo account è pronto e siamo entusiasti di aiutarti a costruire un programma fedeltà di successo.",
+    "nextSteps": "Prossimi passi:",
+    "step1": "1. Configura le impostazioni del tuo programma fedeltà",
+    "step2": "2. Crea premi attraenti per i tuoi clienti",
+    "step3": "3. Integra con la tua piattaforma POS o e-commerce",
+    "step4": "4. Avvia e inizia a iscrivere i membri",
+    "cta": "Vai alla dashboard",
+    "support": "Hai bisogno di aiuto? Consulta le nostre guide o contatta il supporto.",
+    "footer": "Costruiamo qualcosa di incredibile insieme!"
+  },
+  "api_rate_limit_warning": {
+    "subject": "⚠️ Avviso limite tasso API — {{percentage}}% Utilizzato",
+    "greeting": "Ciao {{developerName}},",
+    "body": "La tua applicazione si sta avvicinando al limite di tasso API.",
+    "currentUsage": "Utilizzo attuale: {{requestsMade}} / {{requestLimit}} richieste",
+    "resetTime": "Reseta a: {{resetTime}}",
+    "recommendation": "Valuta l'implementazione della limitazione delle richieste o del caching per ridurre le chiamate API.",
+    "upgradeOption": "Per limiti più elevati, valuta l'aggiornamento del tuo piano.",
+    "cta": "Visualizza dashboard di utilizzo",
+    "footer": "Questo è un avviso automatico per prevenire interruzioni del servizio."
   }
 }

@@ -389,5 +389,111 @@
     "newBalance": "Nuevo saldo: {{currency}}{{balance}}",
     "cta": "Consultar Saldo",
     "footer": "Gracias por usar {{merchantName}}."
+  },
+  "merchant_monthly_summary": {
+    "subject": "Resumen Mensual de su Programa de Fidelidad — {{month}} {{year}}",
+    "greeting": "Hola {{merchantName}},",
+    "body": "Aquí tiene el resumen de rendimiento de su programa de fidelidad para {{month}} {{year}}.",
+    "newMembers": "Nuevos Miembros: {{count}}",
+    "pointsIssued": "Puntos Expedidos: {{points}}",
+    "rewardsRedeemed": "Recompensas Canjeadas: {{count}}",
+    "totalTransactions": "Transacciones Totales: {{count}}",
+    "cta": "Ver Informe Completo",
+    "footer": "¡Siga haciendo un gran trabajo involucrando a sus clientes!"
+  },
+  "integration_sync_failure": {
+    "subject": "⚠️ Falló la Sincronización de Integración — {{integrationName}}",
+    "greeting": "Hola {{merchantName}},",
+    "body": "Hemos encontrado un error mientras sincronizábamos con {{integrationName}}.",
+    "errorMessage": "Error: {{errorMessage}}",
+    "lastSuccessfulSync": "Última sincronización exitosa: {{lastSyncTime}}",
+    "troubleshooting": "Por favor, verifique su configuración de integración o contacte al soporte.",
+    "cta": "Ver Configuración de Integración",
+    "footer": "Reintentaremos la sincronización automáticamente en {{retryInterval}} minutos."
+  },
+  "low_gift_card_balance": {
+    "subject": "Alerta de Baja Saldo de Tarjeta Regalo — {{currency}}{{balance}} restantes",
+    "greeting": "Hola {{merchantName}},",
+    "body": "El saldo de su inventario de tarjetas regalo está disminuyendo.",
+    "currentBalance": "Saldo actual: {{currency}}{{balance}}",
+    "threshold": "Umbral de alerta: {{currency}}{{threshold}}",
+    "recommendation": "Considere recargar su saldo para evitar decepcionar a los clientes.",
+    "cta": "Agregar Fondos",
+    "footer": "Esta alerta se activó cuando su saldo cayó por debajo de {{currency}}{{threshold}}."
+  },
+  "tier_downgrade": {
+    "subject": "Su nivel de estado cambiará pronto",
+    "greeting": "Hola {{memberName}},",
+    "body": "Queríamos informarle que su nivel de estado cambiará el {{effectiveDate}}.",
+    "currentTier": "Nivel actual: {{currentTier}}",
+    "newTier": "Nuevo nivel: {{newTier}}",
+    "reason": "Su actividad ha estado por debajo del requisito de {{currentTier}} durante {{inactiveDays}} días.",
+    "howToMaintain": "Gane {{pointsRequired}} puntos más antes del {{deadline}} para mantener su estatus {{currentTier}}.",
+    "cta": "Ver Cómo Ganar Puntos",
+    "footer": "Gracias por ser un miembro leal de {{merchantName}}."
+  },
+  "referral_earned": {
+    "subject": "¡Ganaste un bono de referido! 🎉",
+    "greeting": "Hola {{referrerName}},",
+    "body": "¡Buenas noticias! Tu amigo {{referredFriendName}} se acaba de unir usando tu referido.",
+    "bonusPoints": "Bono ganado: {{bonusPoints}} puntos",
+    "newBalance": "Su nuevo saldo: {{balance}} puntos",
+    "cta": "Referir Más Amigos",
+    "footer": "¡Sigue compartiendo el amor y ganando recompensas en {{merchantName}}!"
+  },
+  "account_suspended": {
+    "subject": "Su cuenta ha sido suspendida",
+    "greeting": "Hola {{memberName}},",
+    "body": "Su cuenta de fidelidad de {{merchantName}} ha sido suspendida.",
+    "reason": "Razón: {{suspensionReason}}",
+    "contactSupport": "Si cree que esto es un error, por favor contacte a nuestro equipo de soporte.",
+    "supportEmail": "Envíenos un correo electrónico a {{supportEmail}}",
+    "canAppeal": "Puedes apelar esta suspensión proporcionando información adicional.",
+    "footer": "Valoramos su membresía y queremos resolver esto rápidamente."
+  },
+  "payment_failed": {
+    "subject": "Pago Fallido — Acción Requerida",
+    "greeting": "Hola {{memberName}},",
+    "body": "No pudimos procesar su pago de {{amount}} para {{description}}.",
+    "failureReason": "Razón: {{failureReason}}",
+    "retryDate": "Reintentaremos el {{retryDate}}",
+    "updatePayment": "Por favor, actualice su información de pago para evitar interrupciones en el servicio.",
+    "cta": "Actualizar Método de Pago",
+    "footer": "Si cree que esto es un error, contacte al soporte en {{supportEmail}}."
+  },
+  "subscription_renewing": {
+    "subject": "Su suscripción se renueva el {{renewalDate}}",
+    "greeting": "Hola {{memberName}},",
+    "body": "Este es un recordatorio de que su suscripción se renovará automáticamente el {{renewalDate}}.",
+    "plan": "Plan: {{planName}}",
+    "amount": "Monto: {{amount}}",
+    "paymentMethod": "Método de pago: {{paymentMethod}}",
+    "cancelOption": "Si desea cancelar, hágalo antes de la fecha de renovación.",
+    "cta": "Gestionar Suscripción",
+    "footer": "¡Gracias por su continua suscripción!"
+  },
+  "merchant_welcome": {
+    "subject": "Bienvenido a LoyaltyDog — ¡Vamos a Empezar!",
+    "greeting": "Hola {{merchantName}},",
+    "body": "¡Bienvenido a LoyaltyDog! Su cuenta está lista y estamos emocionados de ayudarle a construir un programa de fidelidad exitoso.",
+    "nextSteps": "Próximos Pasos:",
+    "step1": "1. Configure la configuración de su programa de fidelidad",
+    "step2": "2. Cree recompensas atractivas para sus clientes",
+    "step3": "3. Integre con su plataforma de Punto de Venta o comercio electrónico",
+    "step4": "4. Lance y comience a inscribir miembros",
+    "cta": "Ir al Panel de Control",
+    "support": "¿Necesita ayuda? Consulte nuestras guías o contacte al soporte.",
+    "footer": "¡Construyamos algo increíble juntos!"
+  },
+  "api_rate_limit_warning": {
+    "subject": "⚠️ Advertencia de Límite de Tasa de API — {{percentage}}% Usado",
+    "greeting": "Hola {{developerName}},",
+    "body": "Su aplicación se está acercando al límite de tasa de API.",
+    "currentUsage": "Uso actual: {{requestsMade}} / {{requestLimit}} solicitudes",
+    "resetTime": "Se restablece a las: {{resetTime}}",
+    "recommendation": "Considere implementar limitación de solicitudes o caché para reducir las llamadas a la API.",
+    "upgradeOption": "Para límites más altos, considere actualizar su plan.",
+    "cta": "Ver Panel de Uso",
+    "footer": "Esta es una advertencia automática para evitar interrupciones en el servicio."
   }
 }
