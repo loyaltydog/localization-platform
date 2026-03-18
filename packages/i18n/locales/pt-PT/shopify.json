@@ -23,6 +23,15 @@
             "loadFailed": "Falha ao carregar dados de fidelização. Por favor, atualize a página.",
             "enrollFailed": "Falha ao inscrever no programa de fidelização. Por favor, tente novamente.",
             "redeemFailed": "Falha ao resgatar recompensa. Por favor, tente novamente."
+        },
+        "widget": {
+            "pointsBalance": "Saldo de pontos",
+            "points": "pontos",
+            "availableOffers": "Ofertas disponíveis",
+            "claim": "Resgatar",
+            "error": "Erro",
+            "confirmClaimNewOffer": "Já tem uma oferta ativa. Resgatar esta substituirá a atual. Continuar?",
+            "welcomeTo": "Bem-vindo a"
         }
     }
 }

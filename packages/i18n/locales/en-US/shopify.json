@@ -23,6 +23,15 @@
             "loadFailed": "Failed to load loyalty data. Please refresh the page.",
             "enrollFailed": "Failed to enroll in the loyalty program. Please try again.",
             "redeemFailed": "Failed to redeem reward. Please try again."
+        },
+        "widget": {
+            "pointsBalance": "Points Balance",
+            "points": "points",
+            "availableOffers": "Available Offers",
+            "claim": "Claim",
+            "error": "Error",
+            "confirmClaimNewOffer": "You already have an active offer. Claiming this will replace it. Continue?",
+            "welcomeTo": "Welcome to"
         }
     }
 }

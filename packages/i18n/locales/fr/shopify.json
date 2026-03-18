@@ -23,6 +23,15 @@
             "loadFailed": "Échec du chargement des données de fidélité. Veuillez actualiser la page.",
             "enrollFailed": "Échec de l'inscription au programme de fidélité. Veuillez réessayer.",
             "redeemFailed": "Échec de l'utilisation de la récompense. Veuillez réessayer."
+        },
+        "widget": {
+            "pointsBalance": "Solde de points",
+            "points": "points",
+            "availableOffers": "Offres disponibles",
+            "claim": "Utiliser",
+            "error": "Erreur",
+            "confirmClaimNewOffer": "Vous avez déjà une offre active. La réclamer la remplacera. Continuer ?",
+            "welcomeTo": "Bienvenue chez"
         }
     }
 }

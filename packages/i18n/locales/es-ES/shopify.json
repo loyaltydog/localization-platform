@@ -23,6 +23,15 @@
             "loadFailed": "No se pudieron cargar los datos de fidelización. Por favor, actualiza la página.",
             "enrollFailed": "No se pudo inscribir en el programa de fidelización. Por favor, inténtalo de nuevo.",
             "redeemFailed": "No se pudo canjear la recompensa. Por favor, inténtalo de nuevo."
+        },
+        "widget": {
+            "pointsBalance": "Saldo de puntos",
+            "points": "puntos",
+            "availableOffers": "Ofertas disponibles",
+            "claim": "Canjear",
+            "error": "Error",
+            "confirmClaimNewOffer": "Ya tienes una oferta activa. Reclamar esta la reemplazará. ¿Continuar?",
+            "welcomeTo": "Bienvenido a"
         }
     }
 }

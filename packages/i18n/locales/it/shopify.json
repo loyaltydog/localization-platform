@@ -23,6 +23,15 @@
             "loadFailed": "Caricamento dei dati fedeltà non riuscito. Aggiorna la pagina.",
             "enrollFailed": "Iscrizione al programma fedeltà non riuscita. Riprova.",
             "redeemFailed": "Riscatto del premio non riuscito. Riprova."
+        },
+        "widget": {
+            "pointsBalance": "Saldo punti",
+            "points": "punti",
+            "availableOffers": "Offerte disponibili",
+            "claim": "Riscatta",
+            "error": "Errore",
+            "confirmClaimNewOffer": "Hai già un'offerta attiva. Riscattare questa la sostituirà. Continuare?",
+            "welcomeTo": "Benvenuto da"
         }
     }
 }
