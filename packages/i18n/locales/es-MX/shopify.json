@@ -1,0 +1,37 @@
+{
+    "shopify": {
+        "loyalty": {
+            "joinButton": "Unirse al programa de lealtad",
+            "viewRewardsButton": "Ver mis premios",
+            "pointsBalance": "Saldo de puntos: {{points}}",
+            "pointsEarned": "Ganaste {{points}} puntos",
+            "rewardAvailable": "Premio disponible: {{rewardName}}",
+            "redeemButton": "Canjear premio"
+        },
+        "storefront": {
+            "widgetTitle": "Premios de lealtad",
+            "signInPrompt": "Inicia sesión para ver tus premios",
+            "enrollPrompt": "Únete a nuestro programa de lealtad y empieza a ganar premios"
+        },
+        "admin": {
+            "title": "LoyaltyDog",
+            "settingsTitle": "Configuración del programa de lealtad",
+            "saveButton": "Guardar configuración",
+            "cancelButton": "Cancelar"
+        },
+        "errors": {
+            "loadFailed": "No se pudieron cargar los datos de lealtad. Por favor, actualiza la página.",
+            "enrollFailed": "No se pudo inscribir en el programa de lealtad. Por favor, intenta de nuevo.",
+            "redeemFailed": "No se pudo canjear el premio. Por favor, intenta de nuevo."
+        },
+        "widget": {
+            "pointsBalance": "Saldo de puntos",
+            "points": "puntos",
+            "availableOffers": "Ofertas disponibles",
+            "claim": "Canjear",
+            "error": "Error",
+            "confirmClaimNewOffer": "Ya tienes una oferta activa. Reclamar esta la reemplazará. ¿Continuar?",
+            "welcomeTo": "Bienvenido a"
+        }
+    }
+}

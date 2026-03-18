@@ -1,0 +1,37 @@
+{
+    "shopify": {
+        "loyalty": {
+            "joinButton": "Join Loyalty Program",
+            "viewRewardsButton": "View My Rewards",
+            "pointsBalance": "Points Balance: {{points}}",
+            "pointsEarned": "You earned {{points}} points",
+            "rewardAvailable": "Reward available: {{rewardName}}",
+            "redeemButton": "Redeem Reward"
+        },
+        "storefront": {
+            "widgetTitle": "Loyalty Rewards",
+            "signInPrompt": "Sign in to view your rewards",
+            "enrollPrompt": "Join our loyalty program and start earning rewards"
+        },
+        "admin": {
+            "title": "LoyaltyDog",
+            "settingsTitle": "Loyalty Program Settings",
+            "saveButton": "Save Settings",
+            "cancelButton": "Cancel"
+        },
+        "errors": {
+            "loadFailed": "Failed to load loyalty data. Please refresh the page.",
+            "enrollFailed": "Failed to enroll in the loyalty program. Please try again.",
+            "redeemFailed": "Failed to redeem reward. Please try again."
+        },
+        "widget": {
+            "pointsBalance": "Points Balance",
+            "points": "points",
+            "availableOffers": "Available Offers",
+            "claim": "Claim",
+            "error": "Error",
+            "confirmClaimNewOffer": "You already have an active offer. Claiming this will replace it. Continue?",
+            "welcomeTo": "Welcome to"
+        }
+    }
+}

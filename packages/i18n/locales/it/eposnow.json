@@ -1,0 +1,30 @@
+{
+    "eposnow": {
+        "pos": {
+            "title": "Integrazione EPOSNow",
+            "subtitle": "Collega il tuo sistema di punto vendita EPOSNow",
+            "connectButton": "Collega EPOSNow",
+            "disconnectButton": "Scollega EPOSNow",
+            "connectedStatus": "Collegato",
+            "disconnectedStatus": "Scollegato"
+        },
+        "loyalty": {
+            "enrollPrompt": "Iscriviti al nostro programma fedeltà per iniziare a guadagnare punti",
+            "pointsBalance": "Saldo punti: {{points}}",
+            "pointsEarned": "Hai guadagnato {{points}} punti",
+            "rewardAvailable": "Premio disponibile: {{rewardName}}",
+            "redeemButton": "Riscatta il premio",
+            "cancelButton": "Annulla"
+        },
+        "errors": {
+            "connectionFailed": "Connessione a EPOSNow non riuscita. Riprova.",
+            "syncFailed": "Sincronizzazione dei dati con EPOSNow non riuscita.",
+            "transactionFailed": "Impossibile elaborare la transazione."
+        },
+        "success": {
+            "connected": "Connessione a EPOSNow stabilita con successo.",
+            "enrolled": "Iscrizione al programma fedeltà completata con successo.",
+            "redeemed": "Premio riscattato con successo."
+        }
+    }
+}

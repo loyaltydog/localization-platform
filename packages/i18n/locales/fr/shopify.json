@@ -1,0 +1,37 @@
+{
+    "shopify": {
+        "loyalty": {
+            "joinButton": "Rejoindre le programme de fidélité",
+            "viewRewardsButton": "Voir mes récompenses",
+            "pointsBalance": "Solde de points : {{points}}",
+            "pointsEarned": "Vous avez gagné {{points}} points",
+            "rewardAvailable": "Récompense disponible : {{rewardName}}",
+            "redeemButton": "Utiliser la récompense"
+        },
+        "storefront": {
+            "widgetTitle": "Récompenses fidélité",
+            "signInPrompt": "Connectez-vous pour voir vos récompenses",
+            "enrollPrompt": "Rejoignez notre programme de fidélité et commencez à gagner des récompenses"
+        },
+        "admin": {
+            "title": "LoyaltyDog",
+            "settingsTitle": "Paramètres du programme de fidélité",
+            "saveButton": "Enregistrer les paramètres",
+            "cancelButton": "Annuler"
+        },
+        "errors": {
+            "loadFailed": "Échec du chargement des données de fidélité. Veuillez actualiser la page.",
+            "enrollFailed": "Échec de l'inscription au programme de fidélité. Veuillez réessayer.",
+            "redeemFailed": "Échec de l'utilisation de la récompense. Veuillez réessayer."
+        },
+        "widget": {
+            "pointsBalance": "Solde de points",
+            "points": "points",
+            "availableOffers": "Offres disponibles",
+            "claim": "Utiliser",
+            "error": "Erreur",
+            "confirmClaimNewOffer": "Vous avez déjà une offre active. La réclamer la remplacera. Continuer ?",
+            "welcomeTo": "Bienvenue chez"
+        }
+    }
+}

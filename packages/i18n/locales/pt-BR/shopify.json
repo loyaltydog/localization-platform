@@ -1,0 +1,37 @@
+{
+    "shopify": {
+        "loyalty": {
+            "joinButton": "Participar do programa de fidelidade",
+            "viewRewardsButton": "Ver minhas recompensas",
+            "pointsBalance": "Saldo de pontos: {{points}}",
+            "pointsEarned": "Você ganhou {{points}} pontos",
+            "rewardAvailable": "Recompensa disponível: {{rewardName}}",
+            "redeemButton": "Resgatar recompensa"
+        },
+        "storefront": {
+            "widgetTitle": "Recompensas de fidelidade",
+            "signInPrompt": "Faça login para ver suas recompensas",
+            "enrollPrompt": "Participe do nosso programa de fidelidade e comece a ganhar recompensas"
+        },
+        "admin": {
+            "title": "LoyaltyDog",
+            "settingsTitle": "Configurações do programa de fidelidade",
+            "saveButton": "Salvar configurações",
+            "cancelButton": "Cancelar"
+        },
+        "errors": {
+            "loadFailed": "Falha ao carregar dados de fidelidade. Por favor, atualize a página.",
+            "enrollFailed": "Falha ao cadastrar no programa de fidelidade. Por favor, tente novamente.",
+            "redeemFailed": "Falha ao resgatar recompensa. Por favor, tente novamente."
+        },
+        "widget": {
+            "pointsBalance": "Saldo de pontos",
+            "points": "pontos",
+            "availableOffers": "Ofertas disponíveis",
+            "claim": "Resgatar",
+            "error": "Erro",
+            "confirmClaimNewOffer": "Você já tem uma oferta ativa. Resgatar esta a substituirá. Continuar?",
+            "welcomeTo": "Bem-vindo a"
+        }
+    }
+}

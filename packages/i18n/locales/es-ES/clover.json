@@ -1,0 +1,28 @@
+{
+    "clover": {
+        "pos": {
+            "title": "LoyaltyDog",
+            "enrollPrompt": "Inscríbete en nuestro programa de fidelización para empezar a ganar puntos",
+            "pointsBalance": "Saldo de puntos: {{points}}",
+            "pointsEarned": "Has ganado {{points}} puntos",
+            "rewardAvailable": "Recompensa disponible: {{rewardName}}",
+            "redeemButton": "Canjear recompensa",
+            "cancelButton": "Cancelar"
+        },
+        "loyalty": {
+            "tier": "Nivel: {{tierName}}",
+            "memberSince": "Miembro desde {{date}}",
+            "lifetimePoints": "Puntos totales: {{points}}"
+        },
+        "errors": {
+            "connectionFailed": "No se pudo conectar con Clover. Por favor, inténtalo de nuevo.",
+            "enrollFailed": "No se pudo inscribir al cliente. Por favor, inténtalo de nuevo.",
+            "transactionFailed": "No se pudo procesar la transacción."
+        },
+        "success": {
+            "enrolled": "Cliente inscrito en el programa de fidelización correctamente.",
+            "pointsAdded": "{{points}} puntos añadidos a tu cuenta.",
+            "redeemed": "Recompensa canjeada correctamente."
+        }
+    }
+}
