@@ -30,13 +30,21 @@ export const SUPPORTED_LANGUAGES = [
 // Default/fallback language
 export const DEFAULT_LANGUAGE = 'en-US';
 
-// Translation namespaces
+// Core translation namespaces (loaded by default in all consumers)
 export const NAMESPACES = [
   'common',
   'errors',
   'emails',
   'notifications',
   'validation',
+];
+
+// Extended namespaces — opt-in for specific consumers
+export const PLATFORM_NAMESPACES = [
+  'giftCards',
+  'eposnow',
+  'shopify',
+  'clover',
 ];
 
 /**

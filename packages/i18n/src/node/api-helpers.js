@@ -188,7 +188,7 @@ export function getSupportedLanguagesForAPI() {
  */
 export function getTranslationsForAPI(languageCode, localesPath = null) {
   const translations = {};
-  const namespaces = ['common', 'errors', 'validation', 'notifications', 'emails'];
+  const namespaces = ['common', 'errors', 'validation', 'notifications', 'emails', 'giftCards', 'eposnow', 'shopify', 'clover'];
 
   for (const namespace of namespaces) {
     translations[namespace] = loadNamespaceJSON(languageCode, namespace, localesPath);

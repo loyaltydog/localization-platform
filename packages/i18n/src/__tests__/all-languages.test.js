@@ -10,7 +10,7 @@ import { join } from 'path';
 const LOCALES_DIR = join(__dirname, '../../locales');
 
 const ALL_LANGUAGES = ['en-US', 'en-GB', 'es-ES', 'es-MX', 'fr', 'it', 'pt-BR', 'pt-PT'];
-const NAMESPACES = ['common', 'errors', 'validation', 'notifications', 'emails'];
+const NAMESPACES = ['common', 'errors', 'validation', 'notifications', 'emails', 'giftCards', 'eposnow', 'shopify', 'clover'];
 
 /**
  * Load and parse a JSON translation file
