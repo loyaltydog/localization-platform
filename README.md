@@ -392,12 +392,69 @@ subject = translator.translate('es_ES', 'emails', 'welcome.subject',
 
 ## Translation Workflow
 
-1. **Developer adds new keys** to `locales/en_US/*.json`
+1. **Developer adds new keys** to `locales/en-US/*.json`
 2. **Upload to Crowdin:** `npm run crowdin:upload`
 3. **AI Translation** triggered in Crowdin for all target languages
 4. **CI/CD auto-syncs** on merge via GitHub Actions
 5. **Translations downloaded** to `locales/{lang}/`
 6. **Consumer repos** update `@loyaltydog/i18n` dependency
+
+### Adding New Translation Keys
+
+**1. Choose the right namespace file** in `packages/i18n/locales/en-US/`:
+
+| File | Use for |
+|------|---------|
+| `common.json` | UI labels, navigation, buttons, general strings |
+| `errors.json` | Error messages and validation feedback |
+| `emails.json` | Email subject lines and body templates |
+| `notifications.json` | SMS and push notification templates |
+| `validation.json` | Form field validation messages |
+| `giftCards.json` | Gift card-specific strings |
+
+**2. Add the key** using dot-notation nesting:
+
+```json
+// packages/i18n/locales/en-US/common.json
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "newSection": "My New Section"   // ← add here
+  }
+}
+```
+
+**3. Upload the source file to Crowdin:**
+
+```bash
+cd packages/i18n
+npm run crowdin:upload
+```
+
+This uploads all `en-US` source files. Crowdin will auto-translate the new key into all 7 target languages using AI translation.
+
+**4. Pull translations back** (once Crowdin has processed them):
+
+```bash
+npm run crowdin:download
+```
+
+Or trigger the sync manually via GitHub Actions: **Actions → "Sync Translations from Crowdin" → Run workflow**. This opens a PR with the updated translation files.
+
+**5. Use the key in code:**
+
+```tsx
+// React
+const { t } = useTranslation('common');
+t('nav.newSection')  // → "My New Section"
+```
+
+```python
+# Python
+translator.translate('es-ES', 'common', 'nav.newSection')
+```
+
+> **Note:** Never add keys directly to non-`en-US` locale files. All translation authoring happens in Crowdin.
 
 ## CI/CD
 
