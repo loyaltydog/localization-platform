@@ -389,5 +389,111 @@
     "newBalance": "New balance: {{currency}}{{balance}}",
     "cta": "Check Your Balance",
     "footer": "Thank you for using {{merchantName}}."
+  },
+  "merchant_monthly_summary": {
+    "subject": "Your Monthly Loyalty Program Summary — {{month}} {{year}}",
+    "greeting": "Hi {{merchantName}},",
+    "body": "Here's your loyalty program performance summary for {{month}} {{year}}.",
+    "newMembers": "New Members: {{count}}",
+    "pointsIssued": "Points Issued: {{points}}",
+    "rewardsRedeemed": "Rewards Redeemed: {{count}}",
+    "totalTransactions": "Total Transactions: {{count}}",
+    "cta": "View Full Report",
+    "footer": "Keep up the great work engaging your customers!"
+  },
+  "integration_sync_failure": {
+    "subject": "⚠️ Integration Sync Failed — {{integrationName}}",
+    "greeting": "Hi {{merchantName}},",
+    "body": "We encountered an error while syncing with {{integrationName}}.",
+    "errorMessage": "Error: {{errorMessage}}",
+    "lastSuccessfulSync": "Last successful sync: {{lastSyncTime}}",
+    "troubleshooting": "Please check your integration settings or contact support.",
+    "cta": "View Integration Settings",
+    "footer": "We'll retry the sync automatically in {{retryInterval}} minutes."
+  },
+  "low_gift_card_balance": {
+    "subject": "Low Gift Card Balance Alert — {{currency}}{{balance}} remaining",
+    "greeting": "Hi {{merchantName}},",
+    "body": "Your gift card inventory balance is running low.",
+    "currentBalance": "Current balance: {{currency}}{{balance}}",
+    "threshold": "Alert threshold: {{currency}}{{threshold}}",
+    "recommendation": "Consider topping up your balance to avoid disappointing customers.",
+    "cta": "Add Funds",
+    "footer": "This alert was triggered when your balance fell below {{currency}}{{threshold}}."
+  },
+  "tier_downgrade": {
+    "subject": "Your tier status will change soon",
+    "greeting": "Hi {{memberName}},",
+    "body": "We wanted to let you know that your tier status will change on {{effectiveDate}}.",
+    "currentTier": "Current tier: {{currentTier}}",
+    "newTier": "New tier: {{newTier}}",
+    "reason": "Your activity has been below the {{currentTier}} requirement for {{inactiveDays}} days.",
+    "howToMaintain": "Earn {{pointsRequired}} more points by {{deadline}} to maintain your {{currentTier}} status.",
+    "cta": "View Ways to Earn Points",
+    "footer": "Thank you for being a loyal member of {{merchantName}}."
+  },
+  "referral_earned": {
+    "subject": "You earned a referral bonus! 🎉",
+    "greeting": "Hi {{referrerName}},",
+    "body": "Great news! Your friend {{referredFriendName}} just joined using your referral.",
+    "bonusPoints": "Bonus earned: {{bonusPoints}} points",
+    "newBalance": "Your new balance: {{balance}} points",
+    "cta": "Refer More Friends",
+    "footer": "Keep sharing the love and earning rewards at {{merchantName}}!"
+  },
+  "account_suspended": {
+    "subject": "Your account has been suspended",
+    "greeting": "Hi {{memberName}},",
+    "body": "Your {{merchantName}} loyalty account has been suspended.",
+    "reason": "Reason: {{suspensionReason}}",
+    "contactSupport": "If you believe this is an error, please contact our support team.",
+    "supportEmail": "Email us at {{supportEmail}}",
+    "canAppeal": "You can appeal this suspension by providing additional information.",
+    "footer": "We value your membership and want to resolve this quickly."
+  },
+  "payment_failed": {
+    "subject": "Payment Failed — Action Required",
+    "greeting": "Hi {{memberName}},",
+    "body": "We were unable to process your payment of {{amount}} for {{description}}.",
+    "failureReason": "Reason: {{failureReason}}",
+    "retryDate": "We'll retry on {{retryDate}}",
+    "updatePayment": "Please update your payment information to avoid service interruption.",
+    "cta": "Update Payment Method",
+    "footer": "If you believe this is an error, contact support at {{supportEmail}}."
+  },
+  "subscription_renewing": {
+    "subject": "Your subscription renews on {{renewalDate}}",
+    "greeting": "Hi {{memberName}},",
+    "body": "This is a reminder that your subscription will renew automatically on {{renewalDate}}.",
+    "plan": "Plan: {{planName}}",
+    "amount": "Amount: {{amount}}",
+    "paymentMethod": "Payment method: {{paymentMethod}}",
+    "cancelOption": "If you wish to cancel, do so before the renewal date.",
+    "cta": "Manage Subscription",
+    "footer": "Thank you for your continued subscription!"
+  },
+  "merchant_welcome": {
+    "subject": "Welcome to LoyaltyDog — Let's Get Started!",
+    "greeting": "Hi {{merchantName}},",
+    "body": "Welcome to LoyaltyDog! Your account is ready and we're excited to help you build a successful loyalty program.",
+    "nextSteps": "Next Steps:",
+    "step1": "1. Configure your loyalty program settings",
+    "step2": "2. Create attractive rewards for your customers",
+    "step3": "3. Integrate with your POS or e-commerce platform",
+    "step4": "4. Launch and start enrolling members",
+    "cta": "Go to Dashboard",
+    "support": "Need help? Check our guides or contact support.",
+    "footer": "Let's build something amazing together!"
+  },
+  "api_rate_limit_warning": {
+    "subject": "⚠️ API Rate Limit Warning — {{percentage}}% Used",
+    "greeting": "Hi {{developerName}},",
+    "body": "Your application is approaching the API rate limit.",
+    "currentUsage": "Current usage: {{requestsMade}} / {{requestLimit}} requests",
+    "resetTime": "Resets at: {{resetTime}}",
+    "recommendation": "Consider implementing request throttling or caching to reduce API calls.",
+    "upgradeOption": "For higher limits, consider upgrading your plan.",
+    "cta": "View Usage Dashboard",
+    "footer": "This is an automated warning to prevent service interruption."
   }
 }
