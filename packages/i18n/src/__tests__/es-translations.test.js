@@ -75,20 +75,12 @@ describe('Spanish (es-ES) Translations', () => {
   });
 
   describe('Translation Coverage', () => {
-    const expectedCounts = {
-      common: 998,
-      errors: 276,
-      validation: 141,
-      notifications: 103,
-      emails: 409
-    };
-
-    it.each(Object.entries(expectedCounts))(
-      '%s should have exactly %d translation keys',
-      (namespace, expectedCount) => {
+    it.each(namespaces)(
+      '%s key count should match en-US',
+      (namespace) => {
+        const en = loadTranslation('en-US', namespace);
         const es = loadTranslation('es-ES', namespace);
-        const actualCount = countKeys(es);
-        expect(actualCount).toBe(expectedCount);
+        expect(countKeys(es)).toBe(countKeys(en));
       }
     );
   });
