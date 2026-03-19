@@ -134,6 +134,7 @@
         "custom": "Custom Range"
     },
     "labels": {
+        "preview": "Preview",
         "name": "Name",
         "email": "Email",
         "phone": "Phone",
@@ -365,23 +366,6 @@
         "applyCustomRange": "Apply Custom Range",
         "startDate": "Start Date",
         "endDate": "End Date"
-    },
-    "loyalty": {
-        "member": "Member",
-        "members": "Members",
-        "reward": "Reward",
-        "rewards": "Rewards",
-        "points": "Points",
-        "stamps": "Stamps",
-        "tier": "Tier",
-        "tiers": "Tiers",
-        "program": "Loyalty Program",
-        "card": "Loyalty Card",
-        "earnPoints": "Earn Points",
-        "redeemPoints": "Redeem Points",
-        "pointsBalance": "Points Balance",
-        "lifetimePoints": "Lifetime Points",
-        "memberSince": "Member Since"
     },
     "_comment": "Traduções portuguesas (Portugal) - a completar via Lokalise AI Translation",
     "tableHeaders": {
@@ -802,25 +786,6 @@
                 "clovers": "Clovers"
             }
         },
-        "aiAdvisor": {
-            "loadingTitle": "Loading Loyalty Data",
-            "loadingDescription": "Connecting to Loyalty Dog API...",
-            "errorTitle": "Connection Error",
-            "retryConnection": "Retry Connection",
-            "pageTitle": "AI Business Advisor",
-            "liveData": "Live Data",
-            "applied": "Applied: {{description}}",
-            "fromSource": " • from {{source}}",
-            "aiConnected": "Connected",
-            "aiDisconnected": "Disconnected",
-            "aiStatus": "AI: {{status}}",
-            "refreshData": "Refresh Data",
-            "noDataTitle": "No Data Available",
-            "noDataDescription": "Unable to load transaction summary",
-            "pocNotice": "🚧 POC Version - {{count}} transactions loaded",
-            "failedToFetchData": "Failed to fetch data",
-            "initialSummaryMessage": "Give me a quick summary of the selected date range"
-        },
         "configuration": {
             "title": "Configuration"
         },
@@ -1225,9 +1190,6 @@
             }
         }
     },
-    "dashboard": {
-        "welcomeBack": "Welcome back, {{displayName}}"
-    },
     "templates": {
         "title": "Templates",
         "pages": {
@@ -1422,6 +1384,224 @@
                 "passTypeIdsHelper": "For production use, you are strongly encouraged to use your own Pass Type ID. You need an iOS Developer Account.",
                 "appKeys": "App Keys",
                 "empty": "(empty)"
+            }
+        }
+    },
+    "aiAdvisor": {
+        "title": "AI Business Advisor",
+        "subtitle": "Get AI-powered insights about your loyalty program",
+        "loading": "Loading AI Advisor",
+        "connecting": "Connecting to your loyalty data...",
+        "error": "Connection Error",
+        "retryButton": "Retry Connection",
+        "noData": "No Data Available",
+        "noDataDescription": "Unable to load transaction summary",
+        "transactionsLabel": "transactions",
+        "summaryPrompt": "Give me a quick summary of the selected date range",
+        "loadingTitle": "Loading Loyalty Data",
+        "loadingDescription": "Connecting to Loyalty Dog API...",
+        "errorTitle": "Connection Error",
+        "liveData": "Live Data",
+        "applied": "Applied: {{description}}",
+        "fromSource": " • from {{source}}",
+        "aiConnected": "Connected",
+        "aiDisconnected": "Disconnected",
+        "aiStatus": "AI: {{status}}",
+        "refreshData": "Refresh Data",
+        "pocNotice": "🚧 POC Version - {{count}} transactions loaded",
+        "initialSummaryMessage": "Give me a quick summary of the selected date range"
+    },
+    "loyalty": {
+        "dashboard": {
+            "welcome": "Welcome to the Loyalty Dashboard!",
+            "loyaltyHighlight": "Loyalty",
+            "subtitle": "Embark on a rewarding experience with our Loyalty Dashboard!",
+            "description1": "Begin your journey by effortlessly adding a Pass Type ID and kick-starting your personalized loyalty program.",
+            "description2": "Discover the simplicity of getting started and enjoy exclusive benefits tailored just for you.",
+            "pageTitle": "Dashboard",
+            "reportsButton": "Reports",
+            "performScan": "Perform Scan",
+            "availableOffers": "Available Offers",
+            "noOffers": "No offers",
+            "allOffers": "All Offers",
+            "analytics": "Analytics",
+            "loadingData": "Loading data...",
+            "pointsEarned": "Points Earned",
+            "rewardsEarned": "Rewards Earned",
+            "activities": "Activities",
+            "customers": "Customers",
+            "newestCustomers": "Newest Customers",
+            "joinedAt": "Joined At",
+            "name": "Name",
+            "email": "Email",
+            "phoneNumber": "Phone Number",
+            "points": "Points",
+            "viewButton": "View",
+            "noNewCustomers": "No new customers",
+            "allCustomers": "All Customers"
+        },
+        "programs": {
+            "loyaltyProgram": "Loyalty Program",
+            "name": "Name",
+            "icon": "Icon",
+            "shareURL": "Share URL",
+            "addEmail": "Add Email",
+            "addPhone": "Add Phone Number",
+            "installPass": "Install Pass",
+            "customerReferral": "Customer Referral",
+            "scanner": "Scanner",
+            "pointsLabel": "Points",
+            "configure": "Configure",
+            "customerCard": "Customer Card",
+            "customize": "Customize",
+            "referralSuffix": "points after referred customer has",
+            "exportCustomerData": "Customer Data",
+            "exportActivityData": "Activity Data"
+        },
+        "customers": {
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "email": "Email",
+            "phone": "Phone Number",
+            "points": "Points",
+            "phonePrefix": "+...",
+            "savedSuccess": "Saved successfully",
+            "deleteConfirm": "Are you sure you want to delete this customer from the loyalty program?",
+            "warning": "Warning",
+            "deleteWarning": "All content from this customer will be permanently deleted. This action cannot be undone.",
+            "noCancel": "No, cancel",
+            "yesConfirmDelete": "Yes, confirm delete",
+            "submitButton": "Submit",
+            "pleaseWait": "Please wait...",
+            "cancelButton": "Cancel",
+            "searchPlaceholder": "Email / Phone / Card ID / Last Name",
+            "tableHeaderCustomer": "Customer",
+            "tableHeaderEmail": "Email",
+            "tableHeaderMobileNumber": "Mobile Number",
+            "tableHeaderPoints": "Points",
+            "tableHeaderActions": "Actions",
+            "noCustomers": "No customers",
+            "viewButton": "View",
+            "editButton": "Edit",
+            "deleteButton": "Delete",
+            "totalCustomers": "Total customers"
+        },
+        "offers": {
+            "title": "Offers",
+            "noOffers": "No offers",
+            "tableHeaderName": "Name",
+            "tableHeaderStatus": "Status",
+            "tableHeaderStartDate": "Start Date",
+            "tableHeaderEndDate": "End Date",
+            "noStartScheduled": "No Start scheduled yet",
+            "noEndScheduled": "No End scheduled yet",
+            "viewButton": "View",
+            "configureButton": "Configure",
+            "customizeButton": "Customize",
+            "duplicateButton": "Duplicate",
+            "deleteButton": "Delete",
+            "publishButton": "Publish",
+            "cancelButton": "Cancel",
+            "publish": "Publish",
+            "cancel": "Cancel"
+        },
+        "vouchers": {
+            "title": "Vouchers",
+            "noVouchers": "No vouchers",
+            "tableHeaderName": "Name",
+            "tableHeaderStatus": "Status",
+            "tableHeaderType": "Type",
+            "viewButton": "View",
+            "configureButton": "Configure",
+            "customizeButton": "Customize",
+            "deleteButton": "Delete",
+            "publishButton": "Publish",
+            "cancelButton": "Cancel",
+            "publish": "Publish",
+            "cancel": "Cancel"
+        },
+        "reports": {
+            "title": "Reports",
+            "noReports": "No reports"
+        },
+        "analytics": {
+            "title": "Analytics",
+            "customerJoined": "Customer Joined",
+            "customerActivities": "Customer Activities",
+            "cardInstalled": "Card Installed",
+            "pointsEarned": "Points Earned",
+            "pointsSpent": "Points Spent",
+            "offersClaimed": "Offers Claimed",
+            "offersRedeemed": "Offers Redeemed",
+            "activities": "Activities",
+            "customers": "Customers",
+            "eventsLabel": "# of events",
+            "customersLabel": "# of customers",
+            "totalFormat": "Total: {{total}}",
+            "totalPointsFormat": "Total: {{total}} points",
+            "pointsEarnedTitle": "Points Earned",
+            "rewardsEarned": "Rewards Earned"
+        },
+        "forms": {
+            "scanForm": {
+                "placeholder": "0300 4545 2820 5",
+                "helper": "This will automatically redeem offers or add scan points (if configured)",
+                "scanButton": "Scan",
+                "scanPerformed": "Scan performed.",
+                "showCustomer": "Show Customer #{id}",
+                "pointsLabel": "Points:",
+                "rewardButton": "Reward"
+            },
+            "scanPassForm": {
+                "placeholder": "Pass, Email, Phone, Card Number, Card PID",
+                "helper": "This will automatically add scan points (if configured)",
+                "searchButton": "Search",
+                "searching": "Searching...",
+                "manualEntry": "Manual Entry"
+            },
+            "customerModal": {
+                "title": "Perform Scan",
+                "idLabel": "ID",
+                "nameLabel": "Name",
+                "pointsLabel": "Points",
+                "amountSpent": "Amount spent",
+                "redeemOffer": "Redeem offer",
+                "activeLabel": "Active",
+                "true": "True",
+                "false": "False",
+                "activeOffer": "Active Offer",
+                "none": "None",
+                "redeemSuccess": "Customer offer have been successfully redeemed!",
+                "redeemButton": "Redeem",
+                "closeButton": "Close",
+                "updateSuccess": "Customer points have been successfully updated!"
+            }
+        },
+        "clover": {
+            "statusBanner": {
+                "configuring": "Hang tight! We're getting everything ready for you...",
+                "uninstalledTitle": "You uninstalled the Loyalty Dog app.",
+                "uninstalledDescription": "It looks like you've uninstalled the Loyalty Dog app. We're sad to see you go! If this was a mistake or if you'd like to continue enjoying our loyalty rewards and special offers, you can easily reinstall the app with just one click.",
+                "reinstallButton": "Reinstall Loyalty Dog"
+            },
+            "settingsForm": {
+                "apiVersion": "API Version",
+                "versionV2": "Version 2 (Mangers Portal)",
+                "versionV1": "Version 1 (Scanning Portal)",
+                "loyaltyProgram": "Loyalty Program",
+                "programRequired": "required",
+                "programHelper": "You have to configure the loyalty program to use full functionality. You can't change the program after saved!",
+                "addNewProgram": "Add new program",
+                "selectProgram": "Select program",
+                "syncAllButton": "Sync all Clover customers",
+                "syncConfirmTitle": "Sync",
+                "syncConfirmMessage": "Are you sure you want to sync all customers from Clover to LoyaltyDog system? It can take some time to process.",
+                "syncConfirmButton": "Sync customers",
+                "syncSuccessMessage": "You request has been added to queue! We will process your request soon.",
+                "saveButton": "Save Settings",
+                "savingButton": "Saving...",
+                "cancelButton": "Cancel",
+                "savedSuccess": "Saved successfully!"
             }
         }
     }
