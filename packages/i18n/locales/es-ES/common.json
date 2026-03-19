@@ -344,7 +344,18 @@
     "thisWeek": "Esta semana",
     "lastWeek": "Última semana",
     "thisMonth": "Este mes",
-    "lastMonth": "Último mes"
+    "lastMonth": "Último mes",
+    "last7Days": "Last 7 Days",
+    "last30Days": "Last 30 Days",
+    "last6Months": "Last 6 Months",
+    "lastYear": "Last Year",
+    "thisYear": "This Year",
+    "pastDays": "Past {{count}} days",
+    "customRange": "Custom Range",
+    "customRangeLabel": "CUSTOM RANGE",
+    "applyCustomRange": "Apply",
+    "startDate": "Start Date",
+    "endDate": "End Date"
   },
   "loyalty": {
     "member": "Miembro",
@@ -1080,6 +1091,106 @@
         },
         "title": "Title"
       }
+    }
+  },
+  "templates": {
+    "title": "Templates",
+    "actions": {
+      "view": "View",
+      "edit": "Edit",
+      "delete": "Delete",
+      "duplicate": "Duplicate",
+      "newPass": "New Pass"
+    },
+    "analytics": {
+      "totalActive": "Active",
+      "totalCreated": "Created",
+      "totalInstalled": "Installed"
+    },
+    "table": {
+      "id": "ID",
+      "name": "Name",
+      "passTypeId": "Pass Type ID",
+      "style": "Style",
+      "actions": "Actions"
+    },
+    "pages": {
+      "new": "New",
+      "duplicate": "Duplicate",
+      "newPass": "New Pass",
+      "push": "Push"
+    },
+    "passStyles": {
+      "boardingPass": "Boarding Pass",
+      "coupon": "Coupon",
+      "eventTicket": "Event Ticket",
+      "generic": "Generic",
+      "storeCard": "Store Card"
+    },
+    "detail": {
+      "analytics": "Analytics",
+      "distribution": "Distribution",
+      "quantity": "Quantity",
+      "redemption": "Redemption",
+      "shareQrCode": "Share QR Code",
+      "loadingData": "Loading...",
+      "editButtonTitle": "Edit",
+      "pushButtonTitle": "Push",
+      "deleteButton": "Delete"
+    },
+    "edit": {
+      "saveAndCloseButton": "Save & Close",
+      "savingButton": "Saving...",
+      "successMessage": "Template saved successfully.",
+      "tabs": {
+        "designer": "Designer",
+        "appearance": "Appearance",
+        "branding": "Branding",
+        "template": "Template",
+        "stripImage": "Strip Image",
+        "translation": "Translation",
+        "placeholder": "Placeholder",
+        "relevance": "Relevance",
+        "location": "Location",
+        "beacons": "Beacons",
+        "time": "Time",
+        "restriction": "Restriction",
+        "distribution": "Distribution",
+        "payment": "Payment",
+        "apps": "Apps",
+        "actions": "Actions",
+        "source": "Source"
+      }
+    },
+    "form": {
+      "templateName": "Template Name",
+      "templateNameHelper": "Template name helper",
+      "passStyle": "Pass Style",
+      "passTypeId": "Pass Type ID",
+      "passDescription": "Description",
+      "passDescriptionHelper": "Description helper",
+      "icon": "Icon",
+      "iconHelper": "Icon helper",
+      "disableAutoPush": "Disable auto push",
+      "cancelButton": "Cancel",
+      "submitButton": "Save"
+    },
+    "delete": {
+      "warningTitle": "Warning",
+      "warningMessage": "Warning Message",
+      "confirmMessage": "Are you sure you want to delete this template?",
+      "confirmButton": "Delete",
+      "cancelButton": "Cancel"
+    },
+    "newpass": {
+      "values": "Values"
+    },
+    "push": {
+      "message1": "Push Message 1",
+      "message2": "Push Message 2",
+      "message3": "Push Message 3",
+      "sendButton": "Send",
+      "successMessage": "Push sent successfully."
     }
   }
 }
