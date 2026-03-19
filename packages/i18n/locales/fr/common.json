@@ -221,7 +221,7 @@
         "hasVisited": "ont visité",
         "notHaveVisited": "n'ont pas visité",
         "birthdays": "anniversaires",
-        "commonTime": "jour de la semaine\/heure de la journée les plus fréquents pour les membres",
+        "commonTime": "jour de la semaine/heure de la journée les plus fréquents pour les membres",
         "commonJoinTime": "moment de la journée le plus fréquent pour les membres",
         "lastPeriod": "dernière période",
         "referrals": "les référents",
@@ -384,7 +384,7 @@
         "cardNo": "N° de carte"
     },
     "placeholders": {
-        "searchEmailPhoneCardID": "Email \/ Téléphone \/ Carte d'identité \/ Nom de famille",
+        "searchEmailPhoneCardID": "Email / Téléphone / Carte d'identité / Nom de famille",
         "askAboutLoyalty": "Renseignez-vous sur votre programme de fidélisation..."
     },
     "eposnow": {
@@ -400,7 +400,7 @@
         "enterLoyaltyDogPass": "Entrer le Pass LoyaltyDog",
         "passEnterHelp": "Vous pouvez saisir votre mot de passe, votre adresse électronique, votre numéro de téléphone ou l'identifiant de votre carte.",
         "customerDetails": "COORDONNÉES DU CLIENT",
-        "availableOffers": "OFFRES \/ RÉCOMPENSES DISPONIBLES",
+        "availableOffers": "OFFRES / RÉCOMPENSES DISPONIBLES",
         "advancedSettings": "Paramètres avancés",
         "unsupportedOffer": "Offre non soutenue.",
         "currentListEmpty": "La liste actuelle est vide.",
@@ -578,5 +578,508 @@
         "webhooks": "Les webhooks envoient des notifications en temps réel à votre serveur lorsque des événements de fidélisation se produisent, permettant une automatisation personnalisée.",
         "apiKeys": "Les clés API permettent aux applications externes d'accéder à vos données de programme de fidélité en toute sécurité. Gardez-les secrètes et changez-les régulièrement.",
         "twoFactor": "L'authentification à deux facteurs ajoute une couche de sécurité supplémentaire en exigeant un code de votre téléphone lors de la connexion."
+    },
+    "app": {
+        "admin": {
+            "aiAdvisor": {
+                "aiConnected": "Ai Connected",
+                "aiDisconnected": "Ai Disconnected",
+                "aiStatus": "Ai Status",
+                "applied": "Applied",
+                "errorTitle": "Error Title",
+                "failedToFetchData": "Failed To Fetch Data",
+                "fromSource": "From Source",
+                "initialSummaryMessage": "Initial Summary Message",
+                "liveData": "Live Data",
+                "loadingDescription": "Loading Description",
+                "loadingTitle": "Loading Title",
+                "noDataDescription": "No Data Description",
+                "noDataTitle": "No Data Title",
+                "pageTitle": "Page Title",
+                "pocNotice": "Poc Notice",
+                "refreshData": "Refresh Data",
+                "retryConnection": "Retry Connection"
+            },
+            "backups": {
+                "actions": {
+                    "delete": "Delete",
+                    "deleteConfirm": "Delete Confirm",
+                    "deleteMessage": "Delete Message",
+                    "reRun": "Re Run",
+                    "reRunConfirm": "Re Run Confirm",
+                    "reRunMessage": "Re Run Message"
+                },
+                "createTitle": "Create Title",
+                "deleted": "Deleted",
+                "form": {
+                    "activeLabel": "Active Label",
+                    "backupButton": "Backup Button",
+                    "backupVersionLabel": "Backup Version Label",
+                    "cancelButton": "Cancel Button",
+                    "cronExpressionLabel": "Cron Expression Label",
+                    "cronHelperAfter": "Cron Helper After",
+                    "cronHelperBefore": "Cron Helper Before",
+                    "keepRecentLabel": "Keep Recent Label",
+                    "nameHelper": "Name Helper",
+                    "nameLabel": "Name Label",
+                    "restoreButton": "Restore Button",
+                    "submittingButton": "Submitting Button",
+                    "updateButton": "Update Button",
+                    "userAccountLabel": "User Account Label"
+                },
+                "noname": "Noname",
+                "recentRestores": "Recent Restores",
+                "requestQueued": "Request Queued",
+                "restore": {
+                    "clovers": "Clovers",
+                    "customers": "Customers",
+                    "eposnow": "Eposnow",
+                    "offers": "Offers",
+                    "orders": "Orders",
+                    "passTypeIds": "Pass Type Ids",
+                    "passes": "Passes",
+                    "programs": "Programs",
+                    "shopifies": "Shopifies",
+                    "templates": "Templates",
+                    "vouchers": "Vouchers",
+                    "webhooks": "Webhooks"
+                },
+                "restoreTitle": "Restore Title",
+                "searchPlaceholder": "Search Placeholder",
+                "status": {
+                    "active": "Active",
+                    "inactive": "Inactive",
+                    "inactiveBadge": "Inactive Badge"
+                },
+                "table": {
+                    "account": "Account",
+                    "actions": "Actions",
+                    "active": "Active",
+                    "backupName": "Backup Name",
+                    "backupTime": "Backup Time",
+                    "cron": "Cron",
+                    "info": "Info",
+                    "lastRun": "Last Run",
+                    "name": "Name",
+                    "noBackups": "No Backups",
+                    "noRestores": "No Restores",
+                    "restoredTime": "Restored Time",
+                    "status": "Status",
+                    "targetUser": "Target User",
+                    "time": "Time"
+                },
+                "targetUser": "Target User",
+                "totalBackups": "Total Backups",
+                "updateTitle": "Update Title"
+            },
+            "configuration": {
+                "title": "Title"
+            },
+            "reports": {
+                "processingPrefix": "Processing Prefix",
+                "processingSuffix": "Processing Suffix",
+                "title": "Title"
+            },
+            "shopify": {
+                "plans": {
+                    "actions": {
+                        "delete": "Delete",
+                        "edit": "Edit"
+                    },
+                    "confirm": {
+                        "deleteMessage": "Delete Message",
+                        "deleteTitle": "Delete Title"
+                    },
+                    "empty": "Empty",
+                    "form": {
+                        "cancelButton": "Cancel Button",
+                        "defaultPlanHelper": "Default Plan Helper",
+                        "defaultPlanLabel": "Default Plan Label",
+                        "nameLabel": "Name Label",
+                        "newTitle": "New Title",
+                        "priceHelper": "Price Helper",
+                        "priceLabel": "Price Label",
+                        "submitButton": "Submit Button",
+                        "submittingButton": "Submitting Button",
+                        "testShopDomainsHelper": "Test Shop Domains Helper",
+                        "testShopDomainsLabel": "Test Shop Domains Label",
+                        "testingModeHelper": "Testing Mode Helper",
+                        "testingModeLabel": "Testing Mode Label",
+                        "trialDaysLabel": "Trial Days Label",
+                        "typeLabel": "Type Label",
+                        "typeOneTimeFee": "Type One Time Fee",
+                        "typeSubscriptionFee": "Type Subscription Fee",
+                        "updateTitle": "Update Title"
+                    },
+                    "table": {
+                        "actions": "Actions",
+                        "empty": "Empty",
+                        "name": "Name",
+                        "price": "Price",
+                        "trialDays": "Trial Days",
+                        "type": "Type"
+                    },
+                    "title": "Title"
+                }
+            },
+            "users": {
+                "actions": {
+                    "delete": "Delete",
+                    "edit": "Edit",
+                    "login": "Login",
+                    "signInAsUser": "Sign In As User",
+                    "signInAsUserLoading": "Sign In As User Loading",
+                    "view": "View"
+                },
+                "createButton": "Create Button",
+                "delete": {
+                    "cancelButton": "Cancel Button",
+                    "confirmButton": "Confirm Button",
+                    "confirmCheckboxLabel": "Confirm Checkbox Label",
+                    "confirmation": "Confirmation",
+                    "warningDescription": "Warning Description",
+                    "warningItemEvents": "Warning Item Events",
+                    "warningItemPassTypeIds": "Warning Item Pass Type Ids",
+                    "warningItemPrograms": "Warning Item Programs",
+                    "warningItemTemplates": "Warning Item Templates",
+                    "warningTitle": "Warning Title"
+                },
+                "deleteForm": {
+                    "title": "Title"
+                },
+                "detail": {
+                    "betaUser": "Beta User",
+                    "business": "Business",
+                    "email": "Email",
+                    "location": "Location",
+                    "name": "Name",
+                    "registeredAt": "Registered At",
+                    "role": "Role",
+                    "website": "Website"
+                },
+                "form": {
+                    "activeLabel": "Active Label",
+                    "administratorLabel": "Administrator Label",
+                    "betaUserLabel": "Beta User Label",
+                    "businessLabel": "Business Label",
+                    "cancelButton": "Cancel Button",
+                    "emailLabel": "Email Label",
+                    "firstNameLabel": "First Name Label",
+                    "lastNameLabel": "Last Name Label",
+                    "locationLabel": "Location Label",
+                    "passwordHelper": "Password Helper",
+                    "passwordLabel": "Password Label",
+                    "scheduledBackupLabel": "Scheduled Backup Label",
+                    "sendLoginCredentialsLabel": "Send Login Credentials Label",
+                    "submitButton": "Submit Button",
+                    "submittingButton": "Submitting Button",
+                    "usernameLabel": "Username Label",
+                    "websiteLabel": "Website Label"
+                },
+                "pages": {
+                    "edit": "Edit",
+                    "new": "New"
+                },
+                "searchPlaceholder": "Search Placeholder",
+                "table": {
+                    "actions": "Actions",
+                    "email": "Email",
+                    "empty": "Empty",
+                    "id": "Id",
+                    "pricePlan": "Price Plan",
+                    "roleAdmin": "Role Admin",
+                    "roleLoyalty": "Role Loyalty",
+                    "roles": "Roles",
+                    "username": "Username"
+                },
+                "totalUsers": "Total Users"
+            }
+        },
+        "auth": {
+            "clover": {
+                "back": "Back",
+                "connectTo": "Connect To",
+                "connectToExistingAccount": "Connect To Existing Account",
+                "continueWithEmail": "Continue With Email",
+                "emailLabel": "Email address",
+                "loginAndContinue": "Sign in and continue",
+                "loginHelperText": "Please enter your LoyaltyDog account credentials to connect to your Clover account",
+                "merchantId": "Merchant Id",
+                "pageTitle": "Connect to Clover",
+                "passwordLabel": "Password",
+                "submittingButton": "Please wait..."
+            },
+            "forgotPassword": {
+                "alreadyHaveAccount": "Already Have Account",
+                "description": "Description",
+                "emailLabel": "Email address",
+                "signInLink": "Sign in",
+                "submitButton": "Reset password",
+                "submittingButton": "Please wait...",
+                "successMessage": "Password reset link sent to your email.",
+                "title": "Enter your email to reset your password"
+            },
+            "layout": {
+                "maintenanceMessage": "Maintenance Message"
+            },
+            "login": {
+                "callbackError": "Try signing in with a different account.",
+                "credentialsSigninError": "Sign in failed. Check the details you provided are correct.",
+                "defaultError": "Unable to sign in.",
+                "description": "Description",
+                "emailCreateAccountError": "Try signing in with a different account.",
+                "emailLabel": "Email address",
+                "emailSigninError": "The e-mail could not be sent.",
+                "forgotPassword": "Forgot password?",
+                "oAuthAccountNotLinkedError": "To confirm your identity, sign in with the same account you used originally.",
+                "oAuthCallbackError": "Try signing in with a different account.",
+                "oAuthCreateAccountError": "Try signing in with a different account.",
+                "oAuthSigninError": "Try signing in with a different account.",
+                "passwordLabel": "Password",
+                "rememberMe": "Remember me",
+                "sessionRequiredError": "Please sign in to access this page.",
+                "signinError": "Try signing in with a different account.",
+                "submitButton": "Sign in",
+                "submittingButton": "Please wait...",
+                "title": "Use your email and password to sign in"
+            },
+            "register": {
+                "acceptTerms": "I accept the",
+                "alreadyHaveAccount": "Already have an account?",
+                "businessNameLabel": "Business name",
+                "confirmPasswordLabel": "Confirm password",
+                "dataProcessingAgreement": "Data Processing Agreement",
+                "description": "Description",
+                "emailLabel": "Email address",
+                "otpSent": "Otp Sent",
+                "passwordLabel": "Password",
+                "privacyPolicy": "Privacy Policy",
+                "resendOtp": "Resend Otp",
+                "signInLink": "Sign in",
+                "somethingWentWrong": "Something went wrong. Please try again later.",
+                "submitButton": "Sign up",
+                "submittingButton": "Please wait...",
+                "termsOfService": "Terms of Service",
+                "title": "Create an account with your email and password"
+            },
+            "resetPassword": {
+                "alreadyHaveAccount": "Already Have Account",
+                "confirmPasswordLabel": "Confirm password",
+                "newPasswordLabel": "New Password",
+                "signInLink": "Sign In Link",
+                "submitButton": "Reset password",
+                "submittingButton": "Please wait...",
+                "successMessage": "Your password has been successfully changed.",
+                "title": "Title"
+            },
+            "shopify": {
+                "back": "Back",
+                "connectTo": "Connect To",
+                "connectToExistingAccount": "Connect To Existing Account",
+                "continueWithEmail": "Continue With Email",
+                "emailLabel": "Email address",
+                "installButton": "Install app",
+                "loginAndContinue": "Sign in and continue",
+                "loginHelperText": "Please enter your LoyaltyDog account credentials to connect to your Shopify store",
+                "pageTitle": "Connect to Shopify",
+                "passwordLabel": "Password",
+                "shopifyStoreLabel": "Shopify Store Label",
+                "submittingButton": "Please wait..."
+            }
+        },
+        "user": {
+            "appKeys": {
+                "actions": {
+                    "delete": "Delete",
+                    "edit": "Edit"
+                },
+                "form": {
+                    "allowedPassTypeIdsLabel": "Allowed Pass Type Ids Label",
+                    "allowedTemplatesLabel": "Allowed Templates Label",
+                    "cancelButton": "Cancel Button",
+                    "deleteConfirmMessage": "Delete Confirm Message",
+                    "deleteConfirmNo": "Delete Confirm No",
+                    "deleteConfirmYes": "Delete Confirm Yes",
+                    "fullAccessLabel": "Full Access Label",
+                    "nameLabel": "Name Label",
+                    "submitButton": "Submit Button",
+                    "submitButtonLoading": "Submit Button Loading"
+                },
+                "pages": {
+                    "edit": "Edit",
+                    "new": "New"
+                },
+                "table": {
+                    "actions": "Actions",
+                    "appKey": "App Key",
+                    "empty": "Empty",
+                    "emptyName": "Empty Name",
+                    "name": "Name",
+                    "passTemplates": "Pass Templates",
+                    "passTypeIds": "Pass Type Ids"
+                },
+                "title": "Title"
+            },
+            "passTypes": {
+                "actions": {
+                    "delete": "Delete",
+                    "renew": "Renew"
+                },
+                "delete": {
+                    "cancelButton": "Cancel Button",
+                    "cautionLabel": "Caution Label",
+                    "confirmText": "Confirm Text",
+                    "confirmationLabel": "Confirmation Label",
+                    "submitButton": "Submit Button",
+                    "warningText": "Warning Text"
+                },
+                "deleteConfirmMessage": "Delete Confirm Message",
+                "deleteConfirmTitle": "Delete Confirm Title",
+                "edit": {
+                    "infoLabel": "Info Label",
+                    "infoText": "Info Text",
+                    "submitButton": "Submit Button",
+                    "warningText": "Warning Text"
+                },
+                "gettingStartedTitle": "Getting Started Title",
+                "helperText": "Helper Text",
+                "importTitle": "Import Title",
+                "new": {
+                    "assistedUpload": {
+                        "step1": "Step1",
+                        "step1Link": "Step1 Link",
+                        "step2": "Step2",
+                        "step3": "Step3",
+                        "step3Link": "Step3 Link",
+                        "step4": "Step4",
+                        "step5": "Step5",
+                        "step6": "Step6"
+                    }
+                },
+                "newForm": {
+                    "import": {
+                        "cancelButton": "Cancel Button",
+                        "certificateHelper": "Certificate Helper",
+                        "certificateLabel": "Certificate Label",
+                        "importButton": "Import Button",
+                        "passwordLabel": "Password Label"
+                    },
+                    "upload": {
+                        "cancelButton": "Cancel Button",
+                        "certificateLabel": "Certificate Label",
+                        "uploadButton": "Upload Button"
+                    },
+                    "wizard": {
+                        "cancelButton": "Cancel Button",
+                        "certificateNameHelper": "Certificate Name Helper",
+                        "certificateNameLabel": "Certificate Name Label",
+                        "createButton": "Create Button",
+                        "creatingButton": "Creating Button",
+                        "passTypeIdHelper": "Pass Type Id Helper",
+                        "passTypeIdLabel": "Pass Type Id Label"
+                    }
+                },
+                "pages": {
+                    "new": "New"
+                },
+                "renewConfirm": "Renew Confirm",
+                "renewMessage": "Renew Message",
+                "sideCard": {
+                    "helperText": "Helper Text",
+                    "title": "Title"
+                },
+                "table": {
+                    "actions": "Actions",
+                    "certificateExpiration": "Certificate Expiration",
+                    "empty": "Empty",
+                    "organization": "Organization",
+                    "passTypeId": "Pass Type Id",
+                    "teamIdentifier": "Team Identifier"
+                },
+                "tabs": {
+                    "assistedUpload": "Assisted Upload",
+                    "manualImport": "Manual Import",
+                    "wizard": "Wizard"
+                },
+                "title": "Title",
+                "uploadTitle": "Upload Title",
+                "wizardTitle": "Wizard Title"
+            },
+            "passes": {
+                "actions": {
+                    "delete": "Delete",
+                    "download": "Download",
+                    "edit": "Edit",
+                    "view": "View"
+                },
+                "analytics": "Analytics",
+                "detail": {
+                    "createdAt": "Created At",
+                    "deleteConfirm": "Delete Confirm",
+                    "deleteMessage": "Delete Message",
+                    "expiresAt": "Expires At",
+                    "lastUpdated": "Last Updated",
+                    "noScans": "No Scans",
+                    "noValues": "No Values",
+                    "passTitle": "Pass Title",
+                    "passTypeId": "Pass Type Id",
+                    "registrations": "Registrations",
+                    "saveButton": "Save Button",
+                    "scanToAdd": "Scan To Add",
+                    "serialNumber": "Serial Number",
+                    "shortlink": "Shortlink",
+                    "status": "Status",
+                    "tabData": "Tab Data",
+                    "tabGeneral": "Tab General",
+                    "tabImages": "Tab Images",
+                    "tabScanHistory": "Tab Scan History",
+                    "tabSource": "Tab Source",
+                    "tableHeaderAction": "Table Header Action",
+                    "tableHeaderDetails": "Table Header Details",
+                    "tableHeaderPidNumber": "Table Header Pid Number",
+                    "tableHeaderScanner": "Table Header Scanner",
+                    "tableHeaderTime": "Table Header Time",
+                    "template": "Template",
+                    "unknownScanner": "Unknown Scanner",
+                    "updateStatusLink": "Update Status Link"
+                },
+                "edit": {
+                    "title": "Title"
+                },
+                "form": {
+                    "cancelButton": "Cancel Button",
+                    "submitButton": "Submit Button",
+                    "submitButtonLoading": "Submit Button Loading"
+                },
+                "noData": "No Data",
+                "recentPasses": "Recent Passes",
+                "search": {
+                    "cardHeader": "Card Header",
+                    "errorMessage": "Error Message",
+                    "placeholder": "Placeholder",
+                    "searchButton": "Search Button",
+                    "searchingButton": "Searching Button"
+                },
+                "status": {
+                    "cancelButton": "Cancel Button",
+                    "statusExpired": "Status Expired",
+                    "statusIncomplete": "Status Incomplete",
+                    "statusInvalid": "Status Invalid",
+                    "statusLabel": "Status Label",
+                    "statusLocked": "Status Locked",
+                    "statusRedeemed": "Status Redeemed",
+                    "statusUnpaid": "Status Unpaid",
+                    "statusValid": "Status Valid",
+                    "updateButton": "Update Button"
+                },
+                "table": {
+                    "created": "Created",
+                    "serialNumber": "Serial Number",
+                    "status": "Status",
+                    "template": "Template"
+                },
+                "title": "Title"
+            }
+        }
     }
 }

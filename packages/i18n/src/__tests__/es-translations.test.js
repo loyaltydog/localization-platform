@@ -76,7 +76,7 @@ describe('Spanish (es-ES) Translations', () => {
 
   describe('Translation Coverage', () => {
     const expectedCounts = {
-      common: 532,
+      common: 913,
       errors: 276,
       validation: 141,
       notifications: 103,
