@@ -1,7 +1,15 @@
-name: Sync Translations from Crowdin
+name: Sync Translations with Crowdin
 
 on:
-  workflow_dispatch: # manual trigger only
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "Direction: upload (local → Crowdin) or download (Crowdin → local PR)"
+        required: true
+        type: choice
+        options:
+          - upload
+          - download
 
 permissions:
   contents: write
@@ -9,7 +17,7 @@ permissions:
 
 jobs:
   sync:
-    name: Download translations and open PR
+    name: ${{ github.event.inputs.action == 'upload' && 'Upload translations to Crowdin' || 'Download translations and open PR' }}
     runs-on: ubuntu-latest
     environment: production
 
@@ -23,15 +31,34 @@ jobs:
       - name: Install Crowdin CLI
         run: npm install -g @crowdin/cli
 
+      # ── UPLOAD ────────────────────────────────────────────────────────────
+
+      - name: Upload source files (en-US → Crowdin)
+        if: github.event.inputs.action == 'upload'
+        env:
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+        run: crowdin upload sources
+
+      - name: Upload existing translations (all locales → Crowdin)
+        if: github.event.inputs.action == 'upload'
+        env:
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+        run: crowdin upload translations
+
+      # ── DOWNLOAD ──────────────────────────────────────────────────────────
+
       - name: Download translations from Crowdin
+        if: github.event.inputs.action == 'download'
         env:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
         run: crowdin download
 
       - name: Show what changed
+        if: github.event.inputs.action == 'download'
         run: git diff --stat packages/i18n/locales/ || true
 
       - name: Open PR with translation changes
+        if: github.event.inputs.action == 'download'
         env:
           GH_TOKEN: ${{ secrets.I18N_SYNC_PAT }}
         run: |
