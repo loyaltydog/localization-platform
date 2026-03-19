@@ -14,10 +14,33 @@
             "memberSince": "Member since {{date}}",
             "lifetimePoints": "Lifetime Points: {{points}}"
         },
+        "ui": {
+            "confirm": "Confirm",
+            "ok": "OK",
+            "cancel": "Cancel",
+            "search": "Search",
+            "searchHint": "You can enter pass, email, phone, card number, \u2026",
+            "customerDetails": "CUSTOMER DETAILS",
+            "noCustomerName": "(no name)",
+            "noOfferName": "(none)"
+        },
+        "offers": {
+            "confirmUseOffer": "Do you really want to use this offer?",
+            "confirmUseOtherOffer": "Do you really want to use this offer? Your current active offer will be lost.",
+            "costTemplate": "Costs %d points",
+            "redeemButton": "REDEEM",
+            "doNotRedeemButton": "DO NOT REDEEM",
+            "useButton": "USE",
+            "doNotUseButton": "DO NOT USE",
+            "activeLabel": "ACTIVE"
+        },
         "errors": {
             "connectionFailed": "Failed to connect to Clover. Please try again.",
             "enrollFailed": "Failed to enroll customer. Please try again.",
-            "transactionFailed": "Transaction could not be processed."
+            "transactionFailed": "Transaction could not be processed.",
+            "unableToLoadCustomer": "Unable to load customer details with your entered value.",
+            "unableToUseOffer": "Unable to use the selected offer. Please try again later.",
+            "unexpectedError": "Unexpected error. Please try again later."
         },
         "success": {
             "enrolled": "Successfully enrolled in the loyalty program.",
