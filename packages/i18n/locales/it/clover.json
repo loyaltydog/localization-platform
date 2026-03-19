@@ -2,24 +2,37 @@
     "clover": {
         "pos": {
             "title": "LoyaltyDog",
-            "enrollPrompt": "Enroll in our loyalty program to start earning points",
-            "pointsBalance": "Points Balance: {{points}}",
-            "pointsEarned": "You earned {{points}} points",
-            "rewardAvailable": "Reward available: {{rewardName}}",
-            "redeemButton": "Redeem Reward",
-            "cancelButton": "Cancel"
+            "enrollPrompt": "Iscriviti al nostro programma fedeltà per iniziare a guadagnare punti",
+            "pointsBalance": "Saldo punti: {{points}}",
+            "pointsEarned": "Hai guadagnato {{points}} punti",
+            "rewardAvailable": "Premio disponibile: {{rewardName}}",
+            "redeemButton": "Riscatta il premio",
+            "cancelButton": "Annulla"
         },
         "loyalty": {
-            "tier": "Tier: {{tierName}}",
-            "memberSince": "Member since {{date}}",
-            "lifetimePoints": "Lifetime Points: {{points}}"
+            "tier": "Livello: {{tierName}}",
+            "memberSince": "Membro dal {{date}}",
+            "lifetimePoints": "Punti totali: {{points}}"
+        },
+        "errors": {
+            "connectionFailed": "Connessione a Clover non riuscita. Riprova.",
+            "enrollFailed": "Iscrizione del cliente non riuscita. Riprova.",
+            "transactionFailed": "Impossibile elaborare la transazione.",
+            "unableToLoadCustomer": "Unable to load customer details with your entered value.",
+            "unableToUseOffer": "Unable to use the selected offer. Please try again later.",
+            "unexpectedError": "Unexpected error. Please try again later."
+        },
+        "success": {
+            "enrolled": "Cliente iscritto al programma fedeltà con successo.",
+            "pointsAdded": "{{points}} punti aggiunti al tuo account.",
+            "redeemed": "Premio riscattato con successo."
         },
         "ui": {
             "confirm": "Confirm",
             "ok": "OK",
             "cancel": "Cancel",
             "search": "Search",
-            "searchHint": "You can enter pass, email, phone, card number, \u2026",
+            "searchHint": "You can enter pass, email, phone, card number, …",
             "customerDetails": "CUSTOMER DETAILS",
             "noCustomerName": "(no name)",
             "noOfferName": "(none)"
@@ -33,19 +46,6 @@
             "useButton": "USE",
             "doNotUseButton": "DO NOT USE",
             "activeLabel": "ACTIVE"
-        },
-        "errors": {
-            "connectionFailed": "Failed to connect to Clover. Please try again.",
-            "enrollFailed": "Failed to enroll customer. Please try again.",
-            "transactionFailed": "Transaction could not be processed.",
-            "unableToLoadCustomer": "Unable to load customer details with your entered value.",
-            "unableToUseOffer": "Unable to use the selected offer. Please try again later.",
-            "unexpectedError": "Unexpected error. Please try again later."
-        },
-        "success": {
-            "enrolled": "Successfully enrolled in the loyalty program.",
-            "pointsAdded": "{{points}} points added to your account.",
-            "redeemed": "Reward redeemed successfully."
         }
     }
 }

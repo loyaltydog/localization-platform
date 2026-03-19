@@ -2,7 +2,7 @@
     "clover": {
         "pos": {
             "title": "LoyaltyDog",
-            "enrollPrompt": "Enroll in our loyalty program to start earning points",
+            "enrollPrompt": "Enrol in our loyalty programme to start earning points",
             "pointsBalance": "Points Balance: {{points}}",
             "pointsEarned": "You earned {{points}} points",
             "rewardAvailable": "Reward available: {{rewardName}}",
@@ -14,12 +14,25 @@
             "memberSince": "Member since {{date}}",
             "lifetimePoints": "Lifetime Points: {{points}}"
         },
+        "errors": {
+            "connectionFailed": "Failed to connect to Clover. Please try again.",
+            "enrollFailed": "Failed to enrol customer. Please try again.",
+            "transactionFailed": "Transaction could not be processed.",
+            "unableToLoadCustomer": "Unable to load customer details with your entered value.",
+            "unableToUseOffer": "Unable to use the selected offer. Please try again later.",
+            "unexpectedError": "Unexpected error. Please try again later."
+        },
+        "success": {
+            "enrolled": "Successfully enrolled in the loyalty programme.",
+            "pointsAdded": "{{points}} points added to your account.",
+            "redeemed": "Reward redeemed successfully."
+        },
         "ui": {
             "confirm": "Confirm",
             "ok": "OK",
             "cancel": "Cancel",
             "search": "Search",
-            "searchHint": "You can enter pass, email, phone, card number, \u2026",
+            "searchHint": "You can enter pass, email, phone, card number, …",
             "customerDetails": "CUSTOMER DETAILS",
             "noCustomerName": "(no name)",
             "noOfferName": "(none)"
@@ -33,19 +46,6 @@
             "useButton": "USE",
             "doNotUseButton": "DO NOT USE",
             "activeLabel": "ACTIVE"
-        },
-        "errors": {
-            "connectionFailed": "Failed to connect to Clover. Please try again.",
-            "enrollFailed": "Failed to enroll customer. Please try again.",
-            "transactionFailed": "Transaction could not be processed.",
-            "unableToLoadCustomer": "Unable to load customer details with your entered value.",
-            "unableToUseOffer": "Unable to use the selected offer. Please try again later.",
-            "unexpectedError": "Unexpected error. Please try again later."
-        },
-        "success": {
-            "enrolled": "Successfully enrolled in the loyalty program.",
-            "pointsAdded": "{{points}} points added to your account.",
-            "redeemed": "Reward redeemed successfully."
         }
     }
 }
