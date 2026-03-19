@@ -311,7 +311,7 @@
     "totalTransactions": "Transacciones totales",
     "memberParticipation": "Participación de los miembros",
     "totalRevenue": "Ingresos totales",
-    "dateRangeTx": "{tx",
+    "dateRangeTx": "{count} tx",
     "retry": "Reintentar",
     "dontHaveQualified": "No tiene clientes cualificados.",
     "today": "hoy",
