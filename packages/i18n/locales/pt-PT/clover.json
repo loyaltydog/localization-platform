@@ -2,27 +2,50 @@
     "clover": {
         "pos": {
             "title": "LoyaltyDog",
-            "enrollPrompt": "Inscreva-se no nosso programa de fidelização para começar a ganhar pontos",
-            "pointsBalance": "Saldo de pontos: {{points}}",
-            "pointsEarned": "Ganhou {{points}} pontos",
-            "rewardAvailable": "Recompensa disponível: {{rewardName}}",
-            "redeemButton": "Resgatar recompensa",
-            "cancelButton": "Cancelar"
+            "enrollPrompt": "Enroll in our loyalty program to start earning points",
+            "pointsBalance": "Points Balance: {{points}}",
+            "pointsEarned": "You earned {{points}} points",
+            "rewardAvailable": "Reward available: {{rewardName}}",
+            "redeemButton": "Redeem Reward",
+            "cancelButton": "Cancel"
         },
         "loyalty": {
-            "tier": "Nível: {{tierName}}",
-            "memberSince": "Membro desde {{date}}",
-            "lifetimePoints": "Pontos acumulados: {{points}}"
+            "tier": "Tier: {{tierName}}",
+            "memberSince": "Member since {{date}}",
+            "lifetimePoints": "Lifetime Points: {{points}}"
+        },
+        "ui": {
+            "confirm": "Confirm",
+            "ok": "OK",
+            "cancel": "Cancel",
+            "search": "Search",
+            "searchHint": "You can enter pass, email, phone, card number, \u2026",
+            "customerDetails": "CUSTOMER DETAILS",
+            "noCustomerName": "(no name)",
+            "noOfferName": "(none)"
+        },
+        "offers": {
+            "confirmUseOffer": "Do you really want to use this offer?",
+            "confirmUseOtherOffer": "Do you really want to use this offer? Your current active offer will be lost.",
+            "costTemplate": "Costs %d points",
+            "redeemButton": "REDEEM",
+            "doNotRedeemButton": "DO NOT REDEEM",
+            "useButton": "USE",
+            "doNotUseButton": "DO NOT USE",
+            "activeLabel": "ACTIVE"
         },
         "errors": {
-            "connectionFailed": "Falha ao ligar ao Clover. Por favor, tente novamente.",
-            "enrollFailed": "Falha ao inscrever o cliente. Por favor, tente novamente.",
-            "transactionFailed": "Não foi possível processar a transação."
+            "connectionFailed": "Failed to connect to Clover. Please try again.",
+            "enrollFailed": "Failed to enroll customer. Please try again.",
+            "transactionFailed": "Transaction could not be processed.",
+            "unableToLoadCustomer": "Unable to load customer details with your entered value.",
+            "unableToUseOffer": "Unable to use the selected offer. Please try again later.",
+            "unexpectedError": "Unexpected error. Please try again later."
         },
         "success": {
-            "enrolled": "Cliente inscrito no programa de fidelização com sucesso.",
-            "pointsAdded": "{{points}} pontos adicionados à sua conta.",
-            "redeemed": "Recompensa resgatada com sucesso."
+            "enrolled": "Successfully enrolled in the loyalty program.",
+            "pointsAdded": "{{points}} points added to your account.",
+            "redeemed": "Reward redeemed successfully."
         }
     }
 }
