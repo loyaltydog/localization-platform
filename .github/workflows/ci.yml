@@ -38,9 +38,9 @@ jobs:
         working-directory: packages/i18n
         run: npm ci
 
-      - name: Run tests
+      - name: Run tests with coverage
         working-directory: packages/i18n
-        run: npm test -- --reporter=verbose
+        run: npm run test:coverage -- --reporter=verbose
 
       - name: Upload coverage reports
         if: always()
