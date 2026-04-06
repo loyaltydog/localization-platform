@@ -434,8 +434,7 @@
       "tableHeaderPoints": "Pontos",
       "viewButton": "Ver",
       "warning": "Aviso",
-      "yesConfirmDelete": "Sim, Excluir",
-      "saveButton": "Guardar"
+      "yesConfirmDelete": "Sim, Excluir"
     },
     "dashboard": {
       "activities": "Atividade Recente",
