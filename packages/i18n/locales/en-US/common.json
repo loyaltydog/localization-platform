@@ -1,4 +1,7 @@
 {
+    "dashboard": {
+        "welcomeBack": "Welcome back, {{displayName}}"
+    },
     "nav": {
         "dashboard": "Dashboard",
         "dashboards": "Dashboards",
