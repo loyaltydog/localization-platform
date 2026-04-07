@@ -10,6 +10,7 @@
         "help": "Help",
         "logout": "Log Out",
         "programs": "Programs",
+        "newProgram": "New Program",
         "customers": "Customers",
         "offers": "Offers",
         "vouchers": "Vouchers",
@@ -30,7 +31,8 @@
         "profile": "Profile",
         "signOutAsUser": "Sign out as user",
         "shopify": "Shopify",
-        "clover": "Clover"
+        "clover": "Clover",
+        "loyalty": "Loyalty"
     },
     "actions": {
         "save": "Save",
@@ -79,6 +81,8 @@
     "footer": {
         "status": "Status",
         "knowledgeBase": "Knowledge Base",
+        "contact": "Contact",
+        "termsOfService": "Terms of Service",
         "privacyPolicy": "Terms of Service",
         "cookiePolicy": "Privacy Policy",
         "helpCenter": "Contact"
@@ -713,132 +717,90 @@
     },
     "app": {
         "admin": {
-        "backups": {
-            "requestQueued": "Your request was successfully added to queue, it will be processed shortly.",
-            "searchPlaceholder": "Search backup...",
-            "totalBackups": "Total backups: {{total}}",
-            "recentRestores": "Recent Restores",
-            "noname": "(noname)",
-            "deleted": "(deleted)",
-            "createTitle": "Create Backup Task",
-            "updateTitle": "Update {{name}}",
-            "restoreTitle": "Restore {{name}}",
-            "targetUser": "Target User: {{user}}",
-            "table": {
-                "name": "Name",
-                "account": "Account",
-                "active": "Active",
-                "cron": "Cron",
-                "lastRun": "Last Run",
-                "info": "Info",
-                "status": "Status",
-                "actions": "Actions",
-                "noBackups": "No Backups",
-                "time": "Time",
-                "backupName": "Backup Name",
-                "backupTime": "Backup Time",
-                "restoredTime": "Restored Time",
-                "targetUser": "Target User",
-                "noRestores": "No Restores"
-            },
-            "status": {
-                "active": "True",
-                "inactive": "False",
-                "inactiveBadge": "Inactive",
-                "somethingWentWrong": "Something went wrong!"
-            },
-            "actions": {
-                "reRun": "Re-Run",
-                "reRunConfirm": "Re-run {{name}}",
-                "reRunMessage": "Are you sure you want to re-run this backup?",
-                "delete": "Delete",
-                "deleteConfirm": "Delete {{name}}",
-                "deleteMessage": "Are you sure you want to delete this backup?"
-            },
-            "form": {
-                "nameLabel": "Name",
-                "nameHelper": "The unique name of the backup for management.",
-                "userAccountLabel": "User Account",
-                "cronExpressionLabel": "Cron Expression",
-                "cronHelperBefore": "You can use",
-                "cronHelperAfter": "to define a cron expression.",
-                "keepRecentLabel": "Keep Recent",
-                "activeLabel": "Active",
-                "backupButton": "Backup",
-                "updateButton": "Update",
-                "cancelButton": "Cancel",
-                "submittingButton": "Please wait...",
-                "backupVersionLabel": "Backup Version",
-                "restoreButton": "Restore Backup"
-            },
-            "restore": {
-                "passTypeIds": "Pass Type IDs",
-                "passes": "Passes",
-                "vouchers": "Vouchers",
-                "programs": "Programs",
-                "orders": "Orders",
-                "eposnow": "Eposnow",
-                "webhooks": "Webhooks",
-                "customers": "Customers",
-                "shopifies": "Shopifies",
-                "templates": "Templates",
-                "offers": "Offers",
-                "clovers": "Clovers"
-            }
-        },
-        "configuration": {
-            "title": "Configuration"
-        },
-        "reports": {
-            "title": "Reports",
-            "list": {
-                "eposnowTransactionsSummaryAll": "EposNow Transactions Summary for all programs",
-                "shopifyTransactionsSummaryAll": "Shopify Transactions Summary for all programs"
-            },
-            "processingPrefix": "Processing",
-            "processingSuffix": "report. It will be emailed to you soon"
-        },
-        "shopify": {
-            "plans": {
-                "title": "Shopify Plans",
-                "empty": "No Shopify Plan",
+            "backups": {
+                "requestQueued": "Your request was successfully added to queue, it will be processed shortly.",
+                "searchPlaceholder": "Search backup...",
+                "totalBackups": "Total backups: {{total}}",
+                "recentRestores": "Recent Restores",
+                "noname": "(noname)",
+                "deleted": "(deleted)",
+                "createTitle": "Create Backup Task",
+                "updateTitle": "Update {{name}}",
+                "restoreTitle": "Restore {{name}}",
+                "targetUser": "Target User: {{user}}",
                 "table": {
                     "name": "Name",
-                    "price": "Price",
-                    "type": "Type",
-                    "trialDays": "Trial Days",
+                    "account": "Account",
+                    "active": "Active",
+                    "cron": "Cron",
+                    "lastRun": "Last Run",
+                    "info": "Info",
+                    "status": "Status",
                     "actions": "Actions",
-                    "empty": "(Empty)"
+                    "noBackups": "No Backups",
+                    "time": "Time",
+                    "backupName": "Backup Name",
+                    "backupTime": "Backup Time",
+                    "restoredTime": "Restored Time",
+                    "targetUser": "Target User",
+                    "noRestores": "No Restores"
+                },
+                "status": {
+                    "active": "True",
+                    "inactive": "False",
+                    "inactiveBadge": "Inactive",
+                    "somethingWentWrong": "Something went wrong!"
                 },
                 "actions": {
-                    "edit": "Edit",
-                    "delete": "Delete"
-                },
-                "confirm": {
-                    "deleteTitle": "Delete",
-                    "deleteMessage": "Are you sure you want to delete this shopify plan?"
+                    "reRun": "Re-Run",
+                    "reRunConfirm": "Re-run {{name}}",
+                    "reRunMessage": "Are you sure you want to re-run this backup?",
+                    "delete": "Delete",
+                    "deleteConfirm": "Delete {{name}}",
+                    "deleteMessage": "Are you sure you want to delete this backup?"
                 },
                 "form": {
-                    "title": "Shopify Plans",
-                    "newTitle": "New Shopify Plan",
-                    "updateTitle": "Update {{planName}}",
                     "nameLabel": "Name",
-                    "typeLabel": "Type",
-                    "typeOneTimeFee": "One-Time Fee",
-                    "typeSubscriptionFee": "Subscription Fee",
-                    "priceLabel": "Price",
-                    "priceHelper": "Minimum price is $0.50",
-                    "trialDaysLabel": "Trial Days",
-                    "testingModeLabel": "Testing Mode",
-                    "testingModeHelper": "Enable testing mode for this plan",
-                    "testShopDomainsLabel": "Test Shop Domains",
-                    "testShopDomainsHelper": "Enter shop domains (one per line) that will use this test plan",
-                    "defaultPlanLabel": "Default Plan",
-                    "defaultPlanHelper": "Set as default plan for new shops",
-                    "submitButton": "Save Plan",
-                    "submittingButton": "Saving...",
-                    "cancelButton": "Cancel"
+                    "nameHelper": "The unique name of the backup for management.",
+                    "userAccountLabel": "User Account",
+                    "cronExpressionLabel": "Cron Expression",
+                    "cronHelperBefore": "You can use",
+                    "cronHelperAfter": "to define a cron expression.",
+                    "keepRecentLabel": "Keep Recent",
+                    "activeLabel": "Active",
+                    "backupButton": "Backup",
+                    "updateButton": "Update",
+                    "cancelButton": "Cancel",
+                    "submittingButton": "Please wait...",
+                    "backupVersionLabel": "Backup Version",
+                    "restoreButton": "Restore Backup"
+                },
+                "restore": {
+                    "passTypeIds": "Pass Type IDs",
+                    "passes": "Passes",
+                    "vouchers": "Vouchers",
+                    "programs": "Programs",
+                    "orders": "Orders",
+                    "eposnow": "Eposnow",
+                    "webhooks": "Webhooks",
+                    "customers": "Customers",
+                    "shopifies": "Shopifies",
+                    "templates": "Templates",
+                    "offers": "Offers",
+                    "clovers": "Clovers"
                 }
+            },
+            "configuration": {
+                "title": "Configuration"
+            },
+            "reports": {
+                "title": "Reports",
+                "list": {
+                    "eposnowTransactionsSummaryAll": "EposNow Transactions Summary for all programs",
+                    "shopifyTransactionsSummaryAll": "Shopify Transactions Summary for all programs"
+                },
+                "processingPrefix": "Processing",
+                "processingSuffix": "report. It will be emailed to you soon"
             },
             "users": {
                 "title": "Users",
@@ -871,6 +833,7 @@
                 },
                 "totalUsers": "Total users: {{total}}",
                 "createButton": "Create New User",
+                "searchPlaceholder": "Search user...",
                 "deleteForm": {
                     "title": "Delete {{userDisplayName}}"
                 },
@@ -883,7 +846,182 @@
                     "location": "Location",
                     "website": "Website",
                     "registeredAt": "Registered At"
+                },
+                "form": {
+                    "businessLabel": "Business",
+                    "firstNameLabel": "First Name",
+                    "lastNameLabel": "Last Name",
+                    "locationLabel": "Location",
+                    "websiteLabel": "Website",
+                    "usernameLabel": "Username",
+                    "emailLabel": "Email Address",
+                    "passwordLabel": "Password",
+                    "passwordHelper": "Leave blank to keep existing password",
+                    "administratorLabel": "Administrator",
+                    "activeLabel": "Active",
+                    "betaUserLabel": "Beta User",
+                    "sendLoginCredentialsLabel": "Send Login Credentials",
+                    "scheduledBackupLabel": "Scheduled Backup",
+                    "submitButton": "Submit",
+                    "submittingButton": "Please wait...",
+                    "cancelButton": "Cancel"
+                },
+                "delete": {
+                    "confirmation": "Please confirm the deletion",
+                    "warningTitle": "Warning",
+                    "warningDescription": "All associated data will be permanently deleted. This action cannot be undone.",
+                    "warningItemPassTypeIds": "Pass Type IDs",
+                    "warningItemPrograms": "Programs",
+                    "warningItemEvents": "Events",
+                    "warningItemTemplates": "Templates",
+                    "confirmCheckboxLabel": "Confirm deletion",
+                    "cancelButton": "Cancel",
+                    "confirmButton": "Delete"
                 }
+            },
+            "aiAdvisor": {
+                "errorTitle": "Connection Error",
+                "retryConnection": "Retry Connection",
+                "loadingTitle": "Loading Loyalty Data",
+                "loadingDescription": "Connecting to Loyalty Dog API..."
+            },
+            "shopify": {
+                "plans": {
+                    "title": "Shopify Plans",
+                    "empty": "No Shopify Plan",
+                    "table": {
+                        "name": "Name",
+                        "price": "Price",
+                        "type": "Type",
+                        "trialDays": "Trial Days",
+                        "actions": "Actions",
+                        "empty": "(Empty)"
+                    },
+                    "actions": {
+                        "edit": "Edit",
+                        "delete": "Delete"
+                    },
+                    "confirm": {
+                        "deleteTitle": "Delete",
+                        "deleteMessage": "Are you sure you want to delete this shopify plan?"
+                    },
+                    "form": {
+                        "title": "Shopify Plans",
+                        "newTitle": "New Shopify Plan",
+                        "updateTitle": "Update {{planName}}",
+                        "nameLabel": "Name",
+                        "typeLabel": "Type",
+                        "typeOneTimeFee": "One-Time Fee",
+                        "typeSubscriptionFee": "Subscription Fee",
+                        "priceLabel": "Price",
+                        "priceHelper": "Minimum price is $0.50",
+                        "trialDaysLabel": "Trial Days",
+                        "testingModeLabel": "Testing Mode",
+                        "testingModeHelper": "Enable testing mode for this plan",
+                        "testShopDomainsLabel": "Test Shop Domains",
+                        "testShopDomainsHelper": "Enter shop domains (one per line) that will use this test plan",
+                        "defaultPlanLabel": "Default Plan",
+                        "defaultPlanHelper": "Set as default plan for new shops",
+                        "submitButton": "Save Plan",
+                        "submittingButton": "Saving...",
+                        "cancelButton": "Cancel"
+                    }
+                }
+            }
+        },
+        "auth": {
+            "forgotPassword": {
+                "title": "Forgot your password?",
+                "description": "Don't fret! Just type in your email and we'll email you instructions to reset your password.",
+                "emailLabel": "Email address",
+                "submitButton": "Reset password",
+                "submittingButton": "Please wait...",
+                "successMessage": "An email containing a password reset link has been sent to your email.",
+                "alreadyHaveAccount": "Already have an account?",
+                "signInLink": "Sign in",
+                "pageTitle": "Forgot Password"
+            },
+            "login": {
+                "usernameEmpty": "Username can not be empty.",
+                "invalidPassword": "Invalid password",
+                "passwordEmpty": "Password can not be empty.",
+                "invalidCredentials": "Invalid authentication credentials.",
+                "title": "Sign In",
+                "description": "Use your email and password to sign in",
+                "emailLabel": "Email address",
+                "passwordLabel": "Password",
+                "rememberMe": "Remember me",
+                "forgotPassword": "Forgot password?",
+                "submitButton": "Sign in",
+                "submittingButton": "Please wait...",
+                "defaultError": "Unable to sign in.",
+                "signinError": "Try signing in with a different account.",
+                "oAuthSigninError": "Try signing in with a different account.",
+                "oAuthCallbackError": "Try signing in with a different account.",
+                "oAuthCreateAccountError": "Try signing in with a different account.",
+                "emailCreateAccountError": "Try signing in with a different account.",
+                "callbackError": "Try signing in with a different account.",
+                "oAuthAccountNotLinkedError": "To confirm your identity, sign in with the same account you used originally.",
+                "emailSigninError": "The e-mail could not be sent.",
+                "credentialsSigninError": "Sign in failed. Check the details you provided are correct.",
+                "sessionRequiredError": "Please sign in to access this page."
+            },
+            "layout": {
+                "maintenanceMessage": "Our service is currently undergoing maintenance. We'll be back soon!"
+            },
+            "clover": {
+                "pageTitle": "Install LoyaltyDog ({{marketCode}})",
+                "merchantId": "Merchant ID: {{merchantId}}",
+                "continueWithEmail": "Continue with your Clover email",
+                "connectTo": "Connect to {{name}} ({{email}})",
+                "connectToExistingAccount": "Connect to existing account",
+                "back": "Back",
+                "loginHelperText": "Please enter your LoyaltyDog account credentials to connect to your Clover account",
+                "emailLabel": "Email address",
+                "passwordLabel": "Password",
+                "submittingButton": "Please wait...",
+                "loginAndContinue": "Login and continue"
+            },
+            "shopify": {
+                "pageTitle": "Install LoyaltyDog",
+                "continueWithEmail": "Continue with your Shopify email",
+                "connectTo": "Connect to {{name}} ({{email}})",
+                "connectToExistingAccount": "Connect to existing account",
+                "back": "Back",
+                "loginHelperText": "Please enter your LoyaltyDog account credentials to connect to your Shopify store",
+                "emailLabel": "Email address",
+                "passwordLabel": "Password",
+                "submittingButton": "Please wait...",
+                "loginAndContinue": "Login and continue",
+                "shopifyStoreLabel": "Your Shopify store",
+                "installButton": "Install"
+            },
+            "resetPassword": {
+                "title": "Reset Password",
+                "newPasswordLabel": "New Password",
+                "confirmPasswordLabel": "Confirm password",
+                "submitButton": "Reset password",
+                "submittingButton": "Please wait...",
+                "successMessage": "Your password has been successfully changed.",
+                "alreadyHaveAccount": "Already have an account?",
+                "signInLink": "Sign in"
+            },
+            "register": {
+                "title": "Sign Up",
+                "description": "Create an account with your email and password",
+                "otpSent": "A new OTP has been sent to {{email}}",
+                "somethingWentWrong": "Something went wrong. Please try again later.",
+                "resendOtp": "Click here to send a new one",
+                "businessNameLabel": "Business name",
+                "emailLabel": "Email address",
+                "passwordLabel": "Password",
+                "confirmPasswordLabel": "Confirm password",
+                "acceptTerms": "I accept the",
+                "termsAndConditions": "Terms and Conditions",
+                "submitButton": "Sign Up",
+                "submittingButton": "Please wait...",
+                "alreadyHaveAccount": "Already have an account?",
+                "signInLink": "Sign in"
             }
         },
         "user": {
@@ -1091,102 +1229,6 @@
                         "cancelButton": "Cancel"
                     }
                 }
-            }
-        }
-    },
-    "auth": {
-            "forgotPassword": {
-                "title": "Forgot your password?",
-                "description": "Don't fret! Just type in your email and we'll email you instructions to reset your password.",
-                "emailLabel": "Email address",
-                "submitButton": "Reset password",
-                "submittingButton": "Please wait...",
-                "successMessage": "An email containing a password reset link has been sent to your email.",
-                "alreadyHaveAccount": "Already have an account?",
-                "signInLink": "Sign in",
-                "pageTitle": "Forgot Password"
-            },
-            "login": {
-                "usernameEmpty": "Username can not be empty.",
-                "invalidPassword": "Invalid password",
-                "passwordEmpty": "Password can not be empty.",
-                "invalidCredentials": "Invalid authentication credentials.",
-                "title": "Sign In",
-                "description": "Use your email and password to sign in",
-                "emailLabel": "Email address",
-                "passwordLabel": "Password",
-                "rememberMe": "Remember me",
-                "forgotPassword": "Forgot password?",
-                "submitButton": "Sign in",
-                "submittingButton": "Please wait...",
-                "defaultError": "Unable to sign in.",
-                "signinError": "Try signing in with a different account.",
-                "oAuthSigninError": "Try signing in with a different account.",
-                "oAuthCallbackError": "Try signing in with a different account.",
-                "oAuthCreateAccountError": "Try signing in with a different account.",
-                "emailCreateAccountError": "Try signing in with a different account.",
-                "callbackError": "Try signing in with a different account.",
-                "oAuthAccountNotLinkedError": "To confirm your identity, sign in with the same account you used originally.",
-                "emailSigninError": "The e-mail could not be sent.",
-                "credentialsSigninError": "Sign in failed. Check the details you provided are correct.",
-                "sessionRequiredError": "Please sign in to access this page."
-            },
-            "layout": {
-                "maintenanceMessage": "Our service is currently undergoing maintenance. We'll be back soon!"
-            },
-            "clover": {
-                "pageTitle": "Install LoyaltyDog ({{marketCode}})",
-                "merchantId": "Merchant ID: {{merchantId}}",
-                "continueWithEmail": "Continue with your Clover email",
-                "connectTo": "Connect to {{name}} ({{email}})",
-                "connectToExistingAccount": "Connect to existing account",
-                "back": "Back",
-                "loginHelperText": "Please enter your LoyaltyDog account credentials to connect to your Clover account",
-                "emailLabel": "Email address",
-                "passwordLabel": "Password",
-                "submittingButton": "Please wait...",
-                "loginAndContinue": "Login and continue"
-            },
-            "shopify": {
-                "pageTitle": "Install LoyaltyDog",
-                "continueWithEmail": "Continue with your Shopify email",
-                "connectTo": "Connect to {{name}} ({{email}})",
-                "connectToExistingAccount": "Connect to existing account",
-                "back": "Back",
-                "loginHelperText": "Please enter your LoyaltyDog account credentials to connect to your Shopify store",
-                "emailLabel": "Email address",
-                "passwordLabel": "Password",
-                "submittingButton": "Please wait...",
-                "loginAndContinue": "Login and continue",
-                "shopifyStoreLabel": "Your Shopify store",
-                "installButton": "Install"
-            },
-            "resetPassword": {
-                "title": "Reset Password",
-                "newPasswordLabel": "New Password",
-                "confirmPasswordLabel": "Confirm password",
-                "submitButton": "Reset password",
-                "submittingButton": "Please wait...",
-                "successMessage": "Your password has been successfully changed.",
-                "alreadyHaveAccount": "Already have an account?",
-                "signInLink": "Sign in"
-            },
-            "register": {
-                "title": "Sign Up",
-                "description": "Create an account with your email and password",
-                "otpSent": "A new OTP has been sent to {{email}}",
-                "somethingWentWrong": "Something went wrong. Please try again later.",
-                "resendOtp": "Click here to send a new one",
-                "businessNameLabel": "Business name",
-                "emailLabel": "Email address",
-                "passwordLabel": "Password",
-                "confirmPasswordLabel": "Confirm password",
-                "acceptTerms": "I accept the",
-                "termsAndConditions": "Terms and Conditions",
-                "submitButton": "Sign Up",
-                "submittingButton": "Please wait...",
-                "alreadyHaveAccount": "Already have an account?",
-                "signInLink": "Sign in"
             }
         }
     },
