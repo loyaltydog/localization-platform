@@ -227,7 +227,7 @@
     "selection": "Selection",
     "addField": "Add Field",
     "loadingData": "Loading data...",
-    "totalRecordsFormat": "Total Records {count}",
+    "totalRecordsFormat": "Total Records {{count}}",
     "joinProgram": "join program",
     "useLoyaltyProgram": "use Loyalty program",
     "redeemed": "Redeemed",
@@ -328,7 +328,7 @@
     "totalTransactions": "Total Transactions",
     "memberParticipation": "Member Participation",
     "totalRevenue": "Total Revenue",
-    "dateRangeTx": "{count} tx",
+    "dateRangeTx": "{{count}} tx",
     "retry": "Retry",
     "dontHaveQualified": "Don't have any qualified customers.",
     "today": "today",
@@ -374,7 +374,6 @@
     "startDate": "Start Date",
     "endDate": "End Date"
   },
-  "_comment": "Traduções portuguesas (Portugal) - a completar via Lokalise AI Translation",
   "tableHeaders": {
     "customer": "Customer",
     "email": "Email",

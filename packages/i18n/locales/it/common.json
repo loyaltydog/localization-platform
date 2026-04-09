@@ -227,7 +227,7 @@
     "selection": "Selezione",
     "addField": "Aggiungi campo",
     "loadingData": "Caricamento dati...",
-    "totalRecordsFormat": "Totale record {conteggio}",
+    "totalRecordsFormat": "Totale record {{count}}",
     "joinProgram": "aderire al programma",
     "useLoyaltyProgram": "utilizzare il programma fedeltà",
     "redeemed": "Riscattato",
@@ -328,7 +328,7 @@
     "totalTransactions": "Totale transazioni",
     "memberParticipation": "Partecipazione dei membri",
     "totalRevenue": "Ricavi totali",
-    "dateRangeTx": "{conteggio} tx",
+    "dateRangeTx": "{{count}} tx",
     "retry": "Riprova",
     "dontHaveQualified": "Non avete clienti qualificati.",
     "today": "oggi",
@@ -347,7 +347,7 @@
     "chooseScheme": "Scegliete uno dei nostri schemi già pronti o costruite il vostro schema di fidelizzazione personalizzato"
   },
   "pagination": {
-    "showing": "Da {{inizio}} a {{fine}} di {{totale}}",
+    "showing": "Mostra da {{start}} a {{end}} di {{total}}",
     "itemsPerPage": "Articoli per pagina",
     "previous": "Precedente",
     "next": "Avanti",
@@ -374,7 +374,6 @@
     "startDate": "Data inizio",
     "endDate": "Data fine"
   },
-  "_comment": "Traduções portuguesas (Portogallo) - a completar via Lokalise AI Translation",
   "tableHeaders": {
     "customer": "Cliente",
     "email": "Email",
@@ -724,14 +723,14 @@
       "backups": {
         "requestQueued": "Request Queued",
         "searchPlaceholder": "Search Placeholder",
-        "totalBackups": "Total Backups",
+        "totalBackups": "Totale backup: {{total}}",
         "recentRestores": "Ripristini recenti",
         "noname": "Noname",
         "deleted": "Deleted",
         "createTitle": "Create Title",
-        "updateTitle": "Update Title",
-        "restoreTitle": "Restore Title",
-        "targetUser": "Target User",
+        "updateTitle": "Aggiorna {{name}}",
+        "restoreTitle": "Ripristina {{name}}",
+        "targetUser": "Utente destinatario: {{user}}",
         "table": {
           "name": "Nome",
           "account": "Account",
@@ -757,10 +756,10 @@
         },
         "actions": {
           "reRun": "Re Run",
-          "reRunConfirm": "Re Run Confirm",
+          "reRunConfirm": "Esegui di nuovo {{name}}",
           "reRunMessage": "Re Run Message",
           "delete": "Elimina",
-          "deleteConfirm": "Delete Confirm",
+          "deleteConfirm": "Elimina {{name}}",
           "deleteMessage": "Delete Message"
         },
         "form": {
@@ -829,17 +828,17 @@
         },
         "actions": {
           "signInAsUser": "Sign In As User",
-          "signInAsUserLoading": "Sign In As User Loading",
+          "signInAsUserLoading": "Accesso come {{email}} in corso...",
           "login": "Accedi",
           "edit": "Modifica",
           "delete": "Elimina",
           "view": "Visualizza"
         },
-        "totalUsers": "Total Users",
+        "totalUsers": "Totale utenti: {{total}}",
         "createButton": "Create Button",
         "searchPlaceholder": "Search Placeholder",
         "deleteForm": {
-          "title": "Title"
+          "title": "Elimina {{userDisplayName}}"
         },
         "detail": {
           "business": "Azienda",
@@ -912,7 +911,7 @@
           "form": {
             "title": "Piani Shopify",
             "newTitle": "New Title",
-            "updateTitle": "Update Title",
+            "updateTitle": "Aggiorna {{planName}}",
             "nameLabel": "Name Label",
             "typeLabel": "Type Label",
             "typeOneTimeFee": "Type One Time Fee",
@@ -974,10 +973,10 @@
         "maintenanceMessage": "Maintenance Message"
       },
       "clover": {
-        "pageTitle": "Connect to Clover",
-        "merchantId": "Merchant Id",
+        "pageTitle": "Installa LoyaltyDog ({{marketCode}})",
+        "merchantId": "ID commerciante: {{merchantId}}",
         "continueWithEmail": "Continue With Email",
-        "connectTo": "Connect To",
+        "connectTo": "Connetti a {{name}} ({{email}})",
         "connectToExistingAccount": "Connect To Existing Account",
         "back": "Indietro",
         "loginHelperText": "Inserisci le credenziali del tuo account LoyaltyDog per connetterti al tuo account Clover",
@@ -989,7 +988,7 @@
       "shopify": {
         "pageTitle": "Connect to Shopify",
         "continueWithEmail": "Continue With Email",
-        "connectTo": "Connect To",
+        "connectTo": "Connetti a {{name}} ({{email}})",
         "connectToExistingAccount": "Connect To Existing Account",
         "back": "Indietro",
         "loginHelperText": "Inserisci le credenziali del tuo account LoyaltyDog per connetterti al tuo negozio Shopify",
@@ -1013,7 +1012,7 @@
       "register": {
         "title": "Create an account with your email and password",
         "description": "Description",
-        "otpSent": "Otp Sent",
+        "otpSent": "Un nuovo OTP è stato inviato a {{email}}",
         "somethingWentWrong": "Qualcosa è andato storto. Riprova più tardi.",
         "resendOtp": "Resend Otp",
         "businessNameLabel": "Nome azienda",
@@ -1165,9 +1164,9 @@
           "delete": "Elimina",
           "renew": "Rinnova"
         },
-        "renewConfirm": "Renew Confirm",
+        "renewConfirm": "Rinnova {{passTypeIdentifier}}",
         "renewMessage": "Renew Message",
-        "deleteConfirmTitle": "Delete Confirm Title",
+        "deleteConfirmTitle": "Elimina {{passTypeIdentifier}}",
         "deleteConfirmMessage": "Delete Confirm Message",
         "gettingStartedTitle": "Getting Started Title",
         "helperText": "Helper Text",
@@ -1204,7 +1203,7 @@
         },
         "delete": {
           "confirmationLabel": "Confirmation Label",
-          "confirmText": "Confirm Text",
+          "confirmText": "Digita {{passTypeIdentifier}} per confermare l'eliminazione.",
           "warningText": "Warning Text",
           "cautionLabel": "Caution Label",
           "submitButton": "Submit Button",

@@ -227,7 +227,7 @@
     "selection": "Seleção",
     "addField": "Adicionar campo",
     "loadingData": "Carregando dados...",
-    "totalRecordsFormat": "Total de registos {count}",
+    "totalRecordsFormat": "Total de registos {{count}}",
     "joinProgram": "aderir ao programa",
     "useLoyaltyProgram": "utilizar o programa de fidelização",
     "redeemed": "Redimido",
@@ -328,7 +328,7 @@
     "totalTransactions": "Total das transacções",
     "memberParticipation": "Participação dos membros",
     "totalRevenue": "Receitas totais",
-    "dateRangeTx": "{count} transações",
+    "dateRangeTx": "{{count}} transações",
     "retry": "Repetir",
     "dontHaveQualified": "Não tem clientes qualificados.",
     "today": "hoje",
@@ -347,7 +347,7 @@
     "chooseScheme": "Escolha um dos nossos esquemas prontos acima ou crie o seu próprio esquema de fidelização personalizado"
   },
   "pagination": {
-    "showing": "Mostrando de {{início}} a {{fim}} de {{total}}",
+    "showing": "A mostrar {{start}} a {{end}} de {{total}}",
     "itemsPerPage": "Itens por página",
     "previous": "Anterior",
     "next": "Seguinte",
@@ -374,7 +374,6 @@
     "startDate": "Data de início",
     "endDate": "Data de fim"
   },
-  "_comment": "Traduções portuguesas (Portugal) - a completar via Lokalise AI Translation",
   "tableHeaders": {
     "customer": "Cliente",
     "email": "Correio eletrónico",
@@ -579,7 +578,7 @@
     "publicKey": "Chave Pública",
     "privateKey": "Chave Privada",
     "info": "INFORMAÇÃO",
-    "placeholderInfo": "Pode utilizar placeholders em qualquer lugar do seu passe utilizando a sintaxe {{fieldName}}.",
+    "placeholderInfo": "Pode utilizar placeholders em qualquer local do seu passe utilizando ${Name}. O titular do passe será solicitado a preencher os placeholders ao criar um passe, caso não tenham um valor predefinido. Pode também utilizar alguns placeholders predefinidos, consulte a lista abaixo.",
     "displayName": "Nome de Apresentação",
     "defaultValue": "Valor Padrão",
     "settings": "Definições",
@@ -724,14 +723,14 @@
       "backups": {
         "requestQueued": "Request Queued",
         "searchPlaceholder": "Search Placeholder",
-        "totalBackups": "Total Backups",
+        "totalBackups": "Cópias de segurança totais: {{total}}",
         "recentRestores": "Restaurações recentes",
         "noname": "Noname",
         "deleted": "Deleted",
         "createTitle": "Create Title",
-        "updateTitle": "Update Title",
-        "restoreTitle": "Restore Title",
-        "targetUser": "Target User",
+        "updateTitle": "Atualizar {{name}}",
+        "restoreTitle": "Restaurar {{name}}",
+        "targetUser": "Utilizador Alvo: {{user}}",
         "table": {
           "name": "Nome",
           "account": "Conta",
@@ -757,10 +756,10 @@
         },
         "actions": {
           "reRun": "Re Run",
-          "reRunConfirm": "Re Run Confirm",
+          "reRunConfirm": "Executar novamente {{name}}",
           "reRunMessage": "Re Run Message",
           "delete": "Eliminar",
-          "deleteConfirm": "Delete Confirm",
+          "deleteConfirm": "Eliminar {{name}}",
           "deleteMessage": "Delete Message"
         },
         "form": {
@@ -829,17 +828,17 @@
         },
         "actions": {
           "signInAsUser": "Sign In As User",
-          "signInAsUserLoading": "Sign In As User Loading",
+          "signInAsUserLoading": "A iniciar sessão como {{email}} ...",
           "login": "Iniciar sessão",
           "edit": "Editar",
           "delete": "Eliminar",
           "view": "Ver"
         },
-        "totalUsers": "Total Users",
+        "totalUsers": "Utilizadores totais: {{total}}",
         "createButton": "Create Button",
         "searchPlaceholder": "Search Placeholder",
         "deleteForm": {
-          "title": "Title"
+          "title": "Eliminar {{userDisplayName}}"
         },
         "detail": {
           "business": "Negócio",
@@ -912,7 +911,7 @@
           "form": {
             "title": "Planos Shopify",
             "newTitle": "New Title",
-            "updateTitle": "Update Title",
+            "updateTitle": "Atualizar {{planName}}",
             "nameLabel": "Name Label",
             "typeLabel": "Type Label",
             "typeOneTimeFee": "Type One Time Fee",
@@ -974,10 +973,10 @@
         "maintenanceMessage": "Maintenance Message"
       },
       "clover": {
-        "pageTitle": "Connect to Clover",
-        "merchantId": "Merchant Id",
+        "pageTitle": "Instalar LoyaltyDog ({{marketCode}})",
+        "merchantId": "ID do Comerciante: {{merchantId}}",
         "continueWithEmail": "Continue With Email",
-        "connectTo": "Connect To",
+        "connectTo": "Conectar a {{name}} ({{email}})",
         "connectToExistingAccount": "Connect To Existing Account",
         "back": "Voltar",
         "loginHelperText": "Introduza as suas credenciais da conta LoyaltyDog para ligar à sua conta Clover",
@@ -989,7 +988,7 @@
       "shopify": {
         "pageTitle": "Connect to Shopify",
         "continueWithEmail": "Continue With Email",
-        "connectTo": "Connect To",
+        "connectTo": "Conectar a {{name}} ({{email}})",
         "connectToExistingAccount": "Connect To Existing Account",
         "back": "Voltar",
         "loginHelperText": "Introduza as suas credenciais da conta LoyaltyDog para ligar à sua loja Shopify",
@@ -1013,7 +1012,7 @@
       "register": {
         "title": "Create an account with your email and password",
         "description": "Description",
-        "otpSent": "Otp Sent",
+        "otpSent": "Um novo OTP foi enviado para {{email}}",
         "somethingWentWrong": "Algo correu mal. Tente novamente mais tarde.",
         "resendOtp": "Resend Otp",
         "businessNameLabel": "Nome do negócio",
@@ -1165,9 +1164,9 @@
           "delete": "Eliminar",
           "renew": "Renovar"
         },
-        "renewConfirm": "Renew Confirm",
+        "renewConfirm": "Renovar {{passTypeIdentifier}}",
         "renewMessage": "Renew Message",
-        "deleteConfirmTitle": "Delete Confirm Title",
+        "deleteConfirmTitle": "Eliminar {{passTypeIdentifier}}",
         "deleteConfirmMessage": "Delete Confirm Message",
         "gettingStartedTitle": "Getting Started Title",
         "helperText": "Helper Text",
@@ -1204,7 +1203,7 @@
         },
         "delete": {
           "confirmationLabel": "Confirmation Label",
-          "confirmText": "Confirm Text",
+          "confirmText": "Por favor, digite {{passTypeIdentifier}} para confirmar a eliminação.",
           "warningText": "Warning Text",
           "cautionLabel": "Caution Label",
           "submitButton": "Submit Button",
@@ -1397,7 +1396,7 @@
     "webhooks": {
       "pages": {
         "new": "Novo Webhook",
-        "view": "Webhook"
+        "view": "Webhook #{{webhookId}}"
       },
       "table": {
         "url": "URL",

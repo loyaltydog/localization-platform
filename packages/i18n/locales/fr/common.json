@@ -227,7 +227,7 @@
     "selection": "La sélection",
     "addField": "Ajouter un champ",
     "loadingData": "Chargement des données...",
-    "totalRecordsFormat": "Total des enregistrements {count}",
+    "totalRecordsFormat": "Total des enregistrements {{count}}",
     "joinProgram": "adhérer au programme",
     "useLoyaltyProgram": "utiliser le programme de fidélisation",
     "redeemed": "Rachetés",
@@ -328,7 +328,7 @@
     "totalTransactions": "Total des transactions",
     "memberParticipation": "Participation des membres",
     "totalRevenue": "Recettes totales",
-    "dateRangeTx": "{count} tx",
+    "dateRangeTx": "{{count}} tx",
     "retry": "Réessayer",
     "dontHaveQualified": "Ne pas avoir de clients qualifiés.",
     "today": "aujourd'hui",
@@ -374,7 +374,6 @@
     "startDate": "Date de début",
     "endDate": "Date de fin"
   },
-  "_comment": "Traduções portuguesas (Portugal) - a completar via Lokalise AI Translation",
   "tableHeaders": {
     "customer": "Client",
     "email": "Courriel",
@@ -724,14 +723,14 @@
       "backups": {
         "requestQueued": "Request Queued",
         "searchPlaceholder": "Search Placeholder",
-        "totalBackups": "Total Backups",
+        "totalBackups": "Nombre total de sauvegardes : {{total}}",
         "recentRestores": "Restaurations récentes",
         "noname": "Noname",
         "deleted": "Deleted",
         "createTitle": "Create Title",
-        "updateTitle": "Update Title",
-        "restoreTitle": "Restore Title",
-        "targetUser": "Target User",
+        "updateTitle": "Mettre à jour {{name}}",
+        "restoreTitle": "Restaurer {{name}}",
+        "targetUser": "Utilisateur cible : {{user}}",
         "table": {
           "name": "Nom",
           "account": "Compte",
@@ -757,10 +756,10 @@
         },
         "actions": {
           "reRun": "Re Run",
-          "reRunConfirm": "Re Run Confirm",
+          "reRunConfirm": "Réexécuter {{name}}",
           "reRunMessage": "Re Run Message",
           "delete": "Supprimer",
-          "deleteConfirm": "Delete Confirm",
+          "deleteConfirm": "Supprimer {{name}}",
           "deleteMessage": "Delete Message"
         },
         "form": {
@@ -829,17 +828,17 @@
         },
         "actions": {
           "signInAsUser": "Sign In As User",
-          "signInAsUserLoading": "Sign In As User Loading",
+          "signInAsUserLoading": "Connexion en tant que {{email}} ...",
           "login": "Connexion",
           "edit": "Modifier",
           "delete": "Supprimer",
           "view": "Afficher"
         },
-        "totalUsers": "Total Users",
+        "totalUsers": "Nombre total d'utilisateurs : {{total}}",
         "createButton": "Create Button",
         "searchPlaceholder": "Search Placeholder",
         "deleteForm": {
-          "title": "Title"
+          "title": "Supprimer {{userDisplayName}}"
         },
         "detail": {
           "business": "Entreprise",
@@ -912,7 +911,7 @@
           "form": {
             "title": "Plans Shopify",
             "newTitle": "New Title",
-            "updateTitle": "Update Title",
+            "updateTitle": "Mettre à jour {{planName}}",
             "nameLabel": "Name Label",
             "typeLabel": "Type Label",
             "typeOneTimeFee": "Type One Time Fee",
@@ -974,10 +973,10 @@
         "maintenanceMessage": "Maintenance Message"
       },
       "clover": {
-        "pageTitle": "Connect to Clover",
-        "merchantId": "Merchant Id",
+        "pageTitle": "Installer LoyaltyDog ({{marketCode}})",
+        "merchantId": "ID Marchand : {{merchantId}}",
         "continueWithEmail": "Continue With Email",
-        "connectTo": "Connect To",
+        "connectTo": "Se connecter à {{name}} ({{email}})",
         "connectToExistingAccount": "Connect To Existing Account",
         "back": "Retour",
         "loginHelperText": "Veuillez entrer vos identifiants de compte LoyaltyDog pour vous connecter à votre compte Clover",
@@ -989,7 +988,7 @@
       "shopify": {
         "pageTitle": "Connect to Shopify",
         "continueWithEmail": "Continue With Email",
-        "connectTo": "Connect To",
+        "connectTo": "Se connecter à {{name}} ({{email}})",
         "connectToExistingAccount": "Connect To Existing Account",
         "back": "Retour",
         "loginHelperText": "Veuillez entrer vos identifiants de compte LoyaltyDog pour vous connecter à votre boutique Shopify",
@@ -1013,7 +1012,7 @@
       "register": {
         "title": "Create an account with your email and password",
         "description": "Description",
-        "otpSent": "Otp Sent",
+        "otpSent": "Un nouveau code OTP a été envoyé à {{email}}",
         "somethingWentWrong": "Une erreur s'est produite. Veuillez réessayer plus tard.",
         "resendOtp": "Resend Otp",
         "businessNameLabel": "Nom de l'entreprise",
@@ -1165,9 +1164,9 @@
           "delete": "Supprimer",
           "renew": "Renouveler"
         },
-        "renewConfirm": "Renew Confirm",
+        "renewConfirm": "Renouveler {{passTypeIdentifier}}",
         "renewMessage": "Renew Message",
-        "deleteConfirmTitle": "Delete Confirm Title",
+        "deleteConfirmTitle": "Supprimer {{passTypeIdentifier}}",
         "deleteConfirmMessage": "Delete Confirm Message",
         "gettingStartedTitle": "Getting Started Title",
         "helperText": "Helper Text",
@@ -1204,7 +1203,7 @@
         },
         "delete": {
           "confirmationLabel": "Confirmation Label",
-          "confirmText": "Confirm Text",
+          "confirmText": "Veuillez taper {{passTypeIdentifier}} pour confirmer la suppression.",
           "warningText": "Warning Text",
           "cautionLabel": "Caution Label",
           "submitButton": "Submit Button",
