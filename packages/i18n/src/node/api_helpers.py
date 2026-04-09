@@ -30,7 +30,12 @@ def getLanguage(code: str):
         if lang["code"].lower() == code:
             return lang
 
-    return None
+    base_code = code.split("-")[0]
+    for lang in SUPPORTED_LANGUAGES:
+        lang_code = lang["code"].lower()
+        if lang_code == base_code or lang_code.startswith(f"{base_code}-"):
+            return lang
+
 
 
 # -------------------------------------------------------------------
