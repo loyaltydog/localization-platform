@@ -13,7 +13,8 @@
     "reports": "Reports",
     "cardList": "Card List",
     "consolidate": "Consolidate",
-    "transferOwnership": "Transfer Ownership"
+    "transferOwnership": "Transfer Ownership",
+    "reloadCard": "Reload Card"
   },
   "layout": {
     "giftCards": "Gift Cards",
@@ -149,7 +150,10 @@
     "showing50": "Showing 50 most recent transactions",
     "cardDetails": "Card Details",
     "cardTransactions": "Transactions for this card",
-    "close": "Close"
+    "close": "Close",
+    "columnCard": "Card Information",
+    "columnBalance": "Balance",
+    "columnStatus": "Status"
   },
   "consolidate": {
     "rulesTitle": "Consolidation Rules",
@@ -350,11 +354,11 @@
     "cardType": "Gift Card Type",
     "digital": "Digital Gift Card",
     "physical": "Physical Gift Card",
-    "topUpSection": "Existing Card Top-up (Optional)",
+    "topUpSection": "Existing Card Top-up",
     "topUpLabel": "Top up existing card",
     "topUpPlaceholder": "Enter or scan gift card number",
     "scan": "Scan",
-    "topUpHint": "Scan or enter an existing gift card number to add value. Leave empty to create a new gift card.",
+    "topUpHint": "Scan or enter an existing gift card number to add value.",
     "amount": "Gift Card Amount",
     "usePresets": "Use preset amounts",
     "recipient": "Recipient Details",
@@ -385,7 +389,25 @@
     "errorNoSender": "Sender name is required",
     "successTopUp": "Card topped up with {{currency}}{{amount}}",
     "successCreate": "Gift card created for {{currency}}{{amount}}",
-    "errorFailed": "Failed to process"
+    "errorFailed": "Failed to process",
+    "resendCodeButton": "Resend Card",
+    "resendCodeTitle": "Resend Gift Card",
+    "resendCodeDesc": "Update the recipient details and resend the notification. A new security code will be generated.",
+    "resendSuccess": "Card resent successfully",
+    "successModalTitle": "Gift Card Created!",
+    "successModalDesc": "Your gift card is ready",
+    "notificationSentEmail": "Notification sent to",
+    "notificationSentSms": "SMS notification sent to",
+    "addToWallet": "Add to Wallet",
+    "closeModal": "Done",
+    "topUpFind": "Find",
+    "topUpErrorEmpty": "Please enter a card number",
+    "topUpNotFound": "No card found with that number",
+    "topUpInactiveCard": "This card is {{status}} and cannot be topped up",
+    "topUpSearchFailed": "Failed to search for card",
+    "topUpFindFirst": "Please find a card first before topping up",
+    "topUpNewBalance": "Balance after top-up",
+    "topUpChangeCard": "Change card"
   },
   "redeem": {
     "findCard": "Find Gift Card",
@@ -404,7 +426,8 @@
     "errorSearch": "Search failed",
     "errorInvalidAmount": "Enter a valid amount",
     "success": "Redeemed {{amount}}. Remaining: {{remaining}}",
-    "errorFailed": "Redemption failed"
+    "errorFailed": "Redemption failed",
+    "scanQr": "Scan QR Code"
   },
   "manage": {
     "cardDetails": "Card Details",
@@ -450,7 +473,9 @@
     "storeNameValue": "EPOS Now Demo Store",
     "storeAddress": "Store Address",
     "storeAddressValue": "123 High Street, London",
-    "saveSettings": "Save Settings"
+    "saveSettings": "Save Settings",
+    "merchantIdRequired": "Merchant ID is required.",
+    "merchantSettings": "Merchant Configuration"
   },
   "merchantDashboard": {
     "totalActiveCards": "Total Active Cards",

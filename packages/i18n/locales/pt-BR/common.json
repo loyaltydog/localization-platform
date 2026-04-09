@@ -65,7 +65,8 @@
     "loading": "Carregando...",
     "saving": "Salvando...",
     "noProgram": "Novo programa",
-    "newProgram": "Novo programa"
+    "newProgram": "Novo programa",
+    "loadMore": "Carregar mais"
   },
   "language": {
     "title": "Idioma",

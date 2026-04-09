@@ -65,7 +65,8 @@
     "loading": "Chargement...",
     "saving": "Économiser...",
     "noProgram": "Nouveau programme",
-    "newProgram": "Nouveau programme"
+    "newProgram": "Nouveau programme",
+    "loadMore": "Charger plus"
   },
   "language": {
     "title": "Langue",

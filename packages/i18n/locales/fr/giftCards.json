@@ -149,7 +149,10 @@
     "showing50": "Affichage des 50 transactions les plus récentes",
     "cardDetails": "Détails de la carte",
     "cardTransactions": "Transactions pour cette carte",
-    "close": "Fermer"
+    "close": "Fermer",
+    "columnCard": "Informations sur la Carte",
+    "columnBalance": "Solde",
+    "columnStatus": "Statut"
   },
   "consolidate": {
     "rulesTitle": "Règles de consolidation",
@@ -350,11 +353,11 @@
     "cardType": "Type de carte cadeau",
     "digital": "Carte cadeau numérique",
     "physical": "Carte cadeau physique",
-    "topUpSection": "Rechargement de carte existante (optionnel)",
+    "topUpSection": "Rechargement de carte existante",
     "topUpLabel": "Recharger une carte existante",
     "topUpPlaceholder": "Saisissez ou scannez le numéro de carte cadeau",
     "scan": "Scanner",
-    "topUpHint": "Scannez ou saisissez un numéro de carte cadeau existant pour ajouter de la valeur. Laissez vide pour créer une nouvelle carte cadeau.",
+    "topUpHint": "Scannez ou saisissez un numéro de carte cadeau existant pour ajouter de la valeur.",
     "amount": "Montant de la carte cadeau",
     "usePresets": "Utiliser les montants prédéfinis",
     "recipient": "Coordonnées du destinataire",
@@ -385,7 +388,25 @@
     "errorNoSender": "Le nom de l'expéditeur est obligatoire",
     "successTopUp": "Carte rechargée avec {{currency}}{{amount}}",
     "successCreate": "Carte cadeau créée pour {{currency}}{{amount}}",
-    "errorFailed": "Échec du traitement"
+    "errorFailed": "Échec du traitement",
+    "resendCodeButton": "Renvoyer la carte",
+    "resendCodeTitle": "Renvoyer la carte-cadeau",
+    "resendCodeDesc": "Mettez à jour les détails du destinataire et renvoyez la notification. Un nouveau code de sécurité sera généré.",
+    "resendSuccess": "Carte renvoyée avec succès",
+    "successModalTitle": "Carte cadeau créée !",
+    "successModalDesc": "Votre carte cadeau est prête",
+    "notificationSentEmail": "Notification envoyée à",
+    "notificationSentSms": "SMS envoyé à",
+    "addToWallet": "Ajouter au portefeuille",
+    "closeModal": "Terminé",
+    "topUpFind": "Chercher la carte",
+    "topUpErrorEmpty": "Veuillez entrer un numéro de carte",
+    "topUpNotFound": "Aucune carte trouvée avec ce numéro",
+    "topUpInactiveCard": "Cette carte est {{status}} et ne peut pas être rechargée",
+    "topUpSearchFailed": "Échec de la recherche de carte",
+    "topUpFindFirst": "Veuillez d'abord trouver une carte avant de recharger",
+    "topUpNewBalance": "Solde après recharge",
+    "topUpChangeCard": "Changer de carte"
   },
   "redeem": {
     "findCard": "Trouver la carte cadeau",
@@ -404,7 +425,8 @@
     "errorSearch": "Échec de la recherche",
     "errorInvalidAmount": "Saisissez un montant valide",
     "success": "{{amount}} utilisés. Restant : {{remaining}}",
-    "errorFailed": "Échec de l'utilisation"
+    "errorFailed": "Échec de l'utilisation",
+    "scanQr": "Scanner le code QR"
   },
   "manage": {
     "cardDetails": "Détails de la carte",
@@ -450,7 +472,9 @@
     "storeNameValue": "Magasin de démonstration EPOS Now",
     "storeAddress": "Adresse du magasin",
     "storeAddressValue": "123 rue de la Paix, Paris",
-    "saveSettings": "Enregistrer les paramètres"
+    "saveSettings": "Enregistrer les paramètres",
+    "merchantIdRequired": "L'ID marchand est requis.",
+    "merchantSettings": "Configuration du marchand"
   },
   "merchantDashboard": {
     "totalActiveCards": "Total des cartes actives",

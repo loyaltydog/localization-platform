@@ -149,7 +149,10 @@
     "showing50": "Mostrando las 50 transacciones más recientes",
     "cardDetails": "Detalles de Tarjeta",
     "cardTransactions": "Transacciones de esta tarjeta",
-    "close": "Cerrar"
+    "close": "Cerrar",
+    "columnCard": "Información de la Tarjeta",
+    "columnBalance": "Saldo",
+    "columnStatus": "Estado"
   },
   "consolidate": {
     "rulesTitle": "Normas de Consolidación",
@@ -350,11 +353,11 @@
     "cardType": "Tipo de Tarjeta Regalo",
     "digital": "Tarjeta Regalo Digital",
     "physical": "Tarjeta Regalo Física",
-    "topUpSection": "Recarga de Tarjeta Existente (Opcional)",
+    "topUpSection": "Recarga de Tarjeta Existente",
     "topUpLabel": "Recargar tarjeta existente",
     "topUpPlaceholder": "Introduce o escanea el número de tarjeta regalo",
     "scan": "Escanear",
-    "topUpHint": "Escanea o introduce un número de tarjeta regalo existente para añadir valor. Deja vacío para crear una nueva tarjeta regalo.",
+    "topUpHint": "Escanea o introduce un número de tarjeta regalo existente para añadir valor.",
     "amount": "Importe de la Tarjeta Regalo",
     "usePresets": "Usar importes predefinidos",
     "recipient": "Datos del Destinatario",
@@ -385,7 +388,25 @@
     "errorNoSender": "El nombre del remitente es obligatorio",
     "successTopUp": "Tarjeta recargada con {{currency}}{{amount}}",
     "successCreate": "Tarjeta regalo creada por {{currency}}{{amount}}",
-    "errorFailed": "Error al procesar"
+    "errorFailed": "Error al procesar",
+    "resendCodeButton": "Reenviar tarjeta",
+    "resendCodeTitle": "Reenviar tarjeta de regalo",
+    "resendCodeDesc": "Actualice los detalles del destinatario y reenvíe la notificación. Se generará un nuevo código de seguridad.",
+    "resendSuccess": "Tarjeta reenviada con éxito",
+    "successModalTitle": "¡Tarjeta de regalo creada!",
+    "successModalDesc": "Tu tarjeta de regalo está lista",
+    "notificationSentEmail": "Notificación enviada a",
+    "notificationSentSms": "SMS enviado a",
+    "addToWallet": "Agregar a la billetera",
+    "closeModal": "Listo",
+    "topUpFind": "Buscar tarjeta",
+    "topUpErrorEmpty": "Ingrese un número de tarjeta",
+    "topUpNotFound": "No se encontró tarjeta con ese número",
+    "topUpInactiveCard": "Esta tarjeta está {{status}} y no se puede recargar",
+    "topUpSearchFailed": "Error al buscar tarjeta",
+    "topUpFindFirst": "Busque una tarjeta antes de recargar",
+    "topUpNewBalance": "Saldo después de recarga",
+    "topUpChangeCard": "Cambiar tarjeta"
   },
   "redeem": {
     "findCard": "Buscar Tarjeta Regalo",
@@ -404,7 +425,8 @@
     "errorSearch": "Búsqueda fallida",
     "errorInvalidAmount": "Introduce un importe válido",
     "success": "Canjeados {{amount}}. Restante: {{remaining}}",
-    "errorFailed": "Canje fallido"
+    "errorFailed": "Canje fallido",
+    "scanQr": "Escanear código QR"
   },
   "manage": {
     "cardDetails": "Detalles de Tarjeta",
@@ -450,7 +472,9 @@
     "storeNameValue": "Tienda Demo EPOS Now",
     "storeAddress": "Dirección de la Tienda",
     "storeAddressValue": "Calle Mayor 123, Madrid",
-    "saveSettings": "Guardar Configuración"
+    "saveSettings": "Guardar Configuración",
+    "merchantIdRequired": "El ID de comercio es obligatorio.",
+    "merchantSettings": "Configuración de Comercio"
   },
   "merchantDashboard": {
     "totalActiveCards": "Total de Tarjetas Activas",

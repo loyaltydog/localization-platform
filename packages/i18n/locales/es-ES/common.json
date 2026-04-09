@@ -65,7 +65,8 @@
     "loading": "Cargando...",
     "saving": "Ahorrar...",
     "noProgram": "Nuevo programa",
-    "newProgram": "Nuevo programa"
+    "newProgram": "Nuevo programa",
+    "loadMore": "Cargar más"
   },
   "language": {
     "title": "Idioma",
@@ -312,7 +313,7 @@
     "totalTransactions": "Transacciones totales",
     "memberParticipation": "Participación de los miembros",
     "totalRevenue": "Ingresos totales",
-    "dateRangeTx": "{count} tx",
+    "dateRangeTx": "{tx",
     "retry": "Reintentar",
     "dontHaveQualified": "No tiene clientes cualificados.",
     "today": "hoy",

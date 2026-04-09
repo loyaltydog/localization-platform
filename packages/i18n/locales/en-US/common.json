@@ -65,7 +65,8 @@
     "loading": "Loading...",
     "saving": "Saving...",
     "noProgram": "New Program",
-    "newProgram": "New Program"
+    "newProgram": "New Program",
+    "loadMore": "Load More"
   },
   "language": {
     "title": "Language",
