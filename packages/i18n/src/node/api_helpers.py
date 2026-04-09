@@ -11,7 +11,7 @@ SUPPORTED_LANGUAGES = [
     {"code": "en-US", "name": "English (US)", "flag": "🇺🇸", "nativeName": "English (US)"},
     {"code": "en-GB", "name": "English (UK)", "flag": "🇬🇧", "nativeName": "English (UK)"},
     {"code": "es-ES", "name": "Spanish (Spain)", "flag": "🇪🇸", "nativeName": "Español (España)"},
-    {"code": "fr", "name": "French", "flag": "🇫🇷", "nativeName": "Français"},
+    {"code": "es-MX", "name": "Spanish (Mexico)", "flag": "🇲🇽", "nativeName": "Español (México)"},
     {"code": "it", "name": "Italian", "flag": "🇮🇹", "nativeName": "Italiano"},
     {"code": "pt-PT", "name": "Portuguese (Portugal)", "flag": "🇵🇹", "nativeName": "Português (Portugal)"},
     {"code": "pt-BR", "name": "Portuguese (Brazil)", "flag": "🇧🇷", "nativeName": "Português (Brasil)"},
