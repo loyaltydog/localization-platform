@@ -176,7 +176,11 @@ DEFAULT_NAMESPACES = [
     "errors",
     "validation",
     "notifications",
-    "emails"
+    "emails",
+    "giftCards",
+    "eposnow",
+    "shopify",
+    "clover",
 ]
 
 
