@@ -1,24 +1,24 @@
 {
   "welcome": {
     "subject": "Benvenuti al {{merchantName}} Programma fedeltà!",
-    "body": "Ciao {{memberName}}, Ora sei un membro del programma fedeltà {{merchantName}} con {{punti}} per iniziare. Scarica il tuo pass: {{passUrl}} Inizia a guadagnare premi oggi stesso!",
+    "body": "Ciao {{memberName}}, Ora sei un membro del programma fedeltà {{merchantName}} con {{points}} per iniziare. Scarica il tuo pass: {{passUrl}} Inizia a guadagnare premi oggi stesso!",
     "greeting": "Ciao {{memberName}},",
-    "pointsInfo": "Attualmente hai {{punti}} punti nel tuo account.",
+    "pointsInfo": "Attualmente hai {{points}} punti nel tuo account.",
     "cta": "Visualizza i tuoi premi",
     "footer": "Iniziate a guadagnare punti ad ogni acquisto!"
   },
   "rewardEarned": {
     "subject": "Vi siete guadagnati una ricompensa!",
-    "body": "Congratulazioni {{memberName}}! Hai sbloccato: {{rewardName}} Mostralo alla cassa per riscattare la ricompensa. La ricompensa scade: {{Data di scadenza}}"
+    "body": "Congratulazioni {{memberName}}! Hai sbloccato: {{rewardName}} Mostralo alla cassa per riscattare la ricompensa. La ricompensa scade: {{expiryDate}}"
   },
   "pointsEarned": {
-    "subject": "Hai guadagnato {{punti}} punti!",
-    "body": "Ottime notizie, {{memberName}}! Hai appena guadagnato {{punti}} presso {{merchantName}}. Saldo attuale: {{bilancio}} punti Continua a guadagnare per sbloccare i premi!",
+    "subject": "Hai guadagnato {{points}} punti!",
+    "body": "Ottime notizie, {{memberName}}! Hai appena guadagnato {{points}} presso {{merchantName}}. Saldo attuale: {{balance}} punti Continua a guadagnare per sbloccare i premi!",
     "greeting": "Ciao {{memberName}},",
     "transactionDetails": "Dettagli della transazione",
-    "amount": "Importo: {{importo}}",
+    "amount": "Importo: {{amount}}",
     "date": "Data: {{date}}",
-    "newBalance": "Il nuovo saldo è di {{bilancio}} punti.",
+    "newBalance": "Il nuovo saldo è di {{balance}} punti.",
     "cta": "Controllare i premi"
   },
   "rewardExpiring": {
@@ -34,14 +34,14 @@
   },
   "birthday": {
     "subject": "Buon compleanno da {{merchantName}}!",
-    "body": "Buon compleanno, {{memberName}}! Goditi i punti bonus di {{bonusPoints}} come nostro regalo. Saldo attuale: {{bilancio}} punti Buon compleanno!"
+    "body": "Buon compleanno, {{memberName}}! Goditi i punti bonus di {{bonusPoints}} come nostro regalo. Saldo attuale: {{balance}} punti Buon compleanno!"
   },
   "passwordReset": {
     "subject": "Reimpostare la password",
     "body": "Ciao {{memberName}}, Clicca sul link sottostante per reimpostare la tua password: {{resetUrl}} Questo link scadrà tra 24 ore. Se non l'hai richiesto, ignora questa e-mail.",
     "greeting": "Ciao {{memberName}},",
     "cta": "Reimpostare la password",
-    "expiryNote": "Questo link scade tra {{ore di scadenza}} ore.",
+    "expiryNote": "Questo link scade tra {{expiryHours}} ore.",
     "ignoreNote": "Se non l'avete richiesto, potete tranquillamente ignorare questa e-mail."
   },
   "rewardRedeemed": {
@@ -49,10 +49,10 @@
     "greeting": "Ciao {{memberName}},",
     "body": "Hai riscattato con successo la tua ricompensa!",
     "rewardDetails": "Dettagli della ricompensa",
-    "pointsUsed": "Punti utilizzati: {{punti}}",
-    "remainingBalance": "Saldo rimanente: punti {{bilancio}}",
+    "pointsUsed": "Punti utilizzati: {{points}}",
+    "remainingBalance": "Saldo rimanente: punti {{balance}}",
     "instructions": "Mostrate questa e-mail alla cassa per richiedere il vostro premio.",
-    "expiryNote": "Questa ricompensa scade il {{Data di scadenza}}.",
+    "expiryNote": "Questa ricompensa scade il {{expiryDate}}.",
     "cta": "Visualizza la ricompensa",
     "rewardName": "{{rewardName}}"
   },
@@ -70,20 +70,20 @@
     "body": "Vi auguriamo una splendida giornata! Ecco un regalo speciale per voi.",
     "rewardInfo": "Hai ricevuto: {{rewardName}}",
     "cta": "Richiedete il vostro dono",
-    "expiryNote": "Valido fino a {{Data di scadenza}}"
+    "expiryNote": "Valido fino a {{expiryDate}}"
   },
   "inactivityReminder": {
     "subject": "Ci manchi al {{merchantName}}!",
     "greeting": "Ciao {{memberName}},",
     "body": "È passato un po' di tempo dalla vostra ultima visita. Ci farebbe piacere rivederla!",
-    "pointsReminder": "Hai {{punti}} punti in attesa di essere utilizzati.",
+    "pointsReminder": "Hai {{points}} punti in attesa di essere utilizzati.",
     "cta": "Venite a trovarci",
     "footer": "I vostri punti sono preziosi: non sprecateli!"
   },
   "pointsExpiring": {
-    "subject": "{I punti scadono presto!",
+    "subject": "{{points}} points expiring soon!",
     "greeting": "Ciao {{memberName}},",
-    "currentBalance": "Bilancio attuale: punti {{bilancio}}",
+    "currentBalance": "Bilancio attuale: punti {{balance}}",
     "cta": "Utilizzate i vostri punti",
     "footer": "Visita {{merchantName}} prima che scadano!"
   },
@@ -92,19 +92,19 @@
     "greeting": "Ciao {{memberName}},",
     "body": "Per completare la registrazione, verificare l'indirizzo e-mail.",
     "cta": "Verifica dell'e-mail",
-    "expiryNote": "Questo link scade tra {{ore di scadenza}} ore."
+    "expiryNote": "Questo link scade tra {{expiryHours}} ore."
   },
   "footer": {
     "unsubscribe": "Annullamento dell'iscrizione a queste e-mail",
     "privacyPolicy": "Informativa sulla privacy",
     "termsOfService": "Termini di servizio",
     "contactUs": "Contatto",
-    "copyright": "© {{anno}} {{merchantName}}. Tutti i diritti riservati.",
+    "copyright": "© {{year}} {{merchantName}}. Tutti i diritti riservati.",
     "poweredBy": "Alimentato da LoyaltyDog"
   },
   "welcome_new_user": {
     "subject": "Benvenuti a LoyaltyDog",
-    "greeting": "Ciao {{ nome }},",
+    "greeting": "Ciao {{ name }},",
     "welcome_message": "Benvenuti su <strong>LoyaltyDog</strong> - siamo sinceramente entusiasti che siate qui.",
     "acknowledgment": "Sappiamo che il vostro piatto è pieno, che il vostro tempo è poco e che avete un milione di cose da fare, per cui non faremo confusione.",
     "setup_call_heading": "Anticipate la folla!",
@@ -142,7 +142,7 @@
   },
   "welcome_new_user_verify": {
     "subject": "Benvenuti a LoyaltyDog",
-    "greeting": "Ciao {{ nome }},",
+    "greeting": "Ciao {{ name }},",
     "welcome_message": "Benvenuti su <strong>LoyaltyDog</strong> - siamo sinceramente entusiasti che siate qui.",
     "acknowledgment": "Sappiamo che il vostro piatto è pieno, che il vostro tempo è poco e che avete un milione di cose da fare, per cui non faremo confusione.",
     "setup_call_heading": "Anticipate la folla!",
@@ -154,7 +154,7 @@
   },
   "password_reset_wordpress": {
     "subject": "Integrazione del negozio WordPress completata - Impostare la password",
-    "greeting": "Ciao {{ nome }},",
+    "greeting": "Ciao {{ name }},",
     "welcome_message": "Benvenuti su LoyaltyDog! Il vostro negozio WordPress è stato integrato con successo nella nostra piattaforma di programmi fedeltà.",
     "instructions": "Per completare la configurazione e accedere al cruscotto del programma fedeltà, impostare la password facendo clic sul link sottostante:",
     "reset_button": "Impostare la password",
@@ -193,8 +193,8 @@
   },
   "voucher_received": {
     "subject": "Avete ricevuto un buono speciale!",
-    "greeting": "Ciao {{ nome }},",
-    "voucher_heading": "🎁 Hai ricevuto un buono speciale da {{ nome programma }}!",
+    "greeting": "Ciao {{ name }},",
+    "voucher_heading": "🎁 Hai ricevuto un buono speciale da {{ programName }}!",
     "voucher_intro": "Siamo entusiasti di condividere con voi questa offerta esclusiva. Utilizzate il voucher qui sotto per il vostro prossimo acquisto e godetevi un risparmio extra!",
     "expiration_label": "Scade:",
     "redemption_steps_heading": "<strong>Ecco come iniziare:</strong>",
@@ -208,8 +208,8 @@
     "signoff": "Cordiali saluti,"
   },
   "welcome_voucher": {
-    "subject": "Benvenuti a {{ nome programma }}! Il tuo voucher di benvenuto è pronto",
-    "greeting": "Ciao {{ nome }},",
+    "subject": "Benvenuti a {{ programName }}! Il tuo voucher di benvenuto è pronto",
+    "greeting": "Ciao {{ name }},",
     "welcome_message": "Benvenuti a bordo! Per ringraziarvi di esservi uniti a noi, abbiamo preparato un regalo speciale per voi:",
     "expiration_label": "Scade:",
     "voucher_intro": "Ora potete scaricare il vostro voucher pass digitale e iniziare a godere di risparmi esclusivi, premi fedeltà e altro ancora.",
@@ -220,13 +220,13 @@
     "voucher_restriction": "Nota: questo buono è valido solo per l'utilizzo in negozio.",
     "redemption_button": "Aggiungi al portafoglio",
     "help_contact": "Se avete bisogno di aiuto per riscattare il vostro voucher o installare il pass? Contattateci in qualsiasi momento all'indirizzo <a href=\"mailto:{{ programEmail }}\">{{ programEmail }}</a>.",
-    "closing_message": "Grazie ancora per esserti unito a {{ nome del programma }} - siamo entusiasti di averti con noi!",
+    "closing_message": "Grazie ancora per esserti unito a {{ programName }} - siamo entusiasti di averti con noi!",
     "signoff": "Cordiali saluti,"
   },
   "birthday_voucher": {
-    "subject": "Buon compleanno da {{ nome programma }}!",
-    "greeting": "Ciao {{ nome }},",
-    "birthday_wish": "🎉 Buon compleanno da tutti noi di {{ nome programma }}!",
+    "subject": "Buon compleanno da {{ programName }}!",
+    "greeting": "Ciao {{ name }},",
+    "birthday_wish": "🎉 Buon compleanno da tutti noi di {{ programName }}!",
     "birthday_message": "Ci auguriamo che la vostra giornata sia piena di gioia, risate e ricordi meravigliosi.",
     "gift_intro": "Per rendere la vostra festa ancora più speciale, abbiamo preparato un piccolo regalo per voi:",
     "expiration_label": "Scade:",
@@ -256,8 +256,8 @@
     "footer_copyright": "2025 LoyaltyDog. Tutti i diritti riservati."
   },
   "transaction_summary": {
-    "subject": "{{ fornitore }}} Riepilogo transazioni",
-    "message_1": "{{ fornitore }} Riepilogo delle transazioni per tutti i programmi",
+    "subject": "{{ provider }}} Riepilogo transazioni",
+    "message_1": "{{ provider }} Riepilogo delle transazioni per tutti i programmi",
     "message_2": "È possibile scaricare il rapporto dal seguente link",
     "download_link": "{{ url }}",
     "footer_copyright": "2025 LoyaltyDog. Tutti i diritti riservati."

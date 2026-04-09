@@ -269,7 +269,7 @@
   },
   "notifications": {
     "title": "Notifications",
-    "newCount": "{{count}} nouvelle{{plural}}",
+    "newCount": "{{count}} nouvelles",
     "markAllRead": "Tout marquer comme lu",
     "cardCount": "{{count}} carte{{plural}} cadeau",
     "expiringSoon": "{{count}} expirant bientôt",

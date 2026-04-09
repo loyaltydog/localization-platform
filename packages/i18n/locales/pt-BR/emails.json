@@ -3,7 +3,7 @@
     "subject": "Bem-vindo ao {{merchantName}} Programa de fidelidade!",
     "body": "Hi {{memberName}}, Agora você é membro do programa de fidelidade {{merchantName}} com {{points}} pontos para começar. Baixe seu passe: {{passUrl}} Comece a ganhar prêmios hoje mesmo!",
     "greeting": "Olá {{memberName}},",
-    "pointsInfo": "Atualmente, você tem {{pontos}} pontos em sua conta.",
+    "pointsInfo": "Atualmente, você tem {{points}} pontos em sua conta.",
     "cta": "Ver seus prêmios",
     "footer": "Comece a ganhar pontos em cada compra!"
   },
@@ -12,8 +12,8 @@
     "body": "Parabéns {{memberName}}! Você desbloqueou: {{rewardName}} Mostre isso no checkout para resgatar sua recompensa. A recompensa expira: {{expiryDate}}"
   },
   "pointsEarned": {
-    "subject": "Você ganhou {{pontos}} pontos!",
-    "body": "Ótimas notícias, {{memberName}}! Você acabou de ganhar {{pontos}} pontos na {{merchantName}}. Saldo atual: {{balance}} pontos Continue ganhando para desbloquear prêmios!",
+    "subject": "Você ganhou {{points}} pontos!",
+    "body": "Ótimas notícias, {{memberName}}! Você acabou de ganhar {{points}} pontos na {{merchantName}}. Saldo atual: {{balance}} pontos Continue ganhando para desbloquear prêmios!",
     "greeting": "Olá {{memberName}},",
     "transactionDetails": "Detalhes da transação",
     "amount": "Valor: {{amount}}",
@@ -29,7 +29,7 @@
     "footer": "Visite {{merchantName}} para usar seu prêmio antes que ele expire."
   },
   "campaign": {
-    "body": "{Veja suas recompensas: {{rewardsUrl}}",
+    "body": "{{campaignBody}}\n\nView your rewards: {{rewardsUrl}}",
     "subject": "{{campaignName}}"
   },
   "birthday": {
@@ -49,8 +49,8 @@
     "greeting": "Olá {{memberName}},",
     "body": "Você resgatou sua recompensa com sucesso!",
     "rewardDetails": "Detalhes do prêmio",
-    "pointsUsed": "Pontos utilizados: {{pontos}}",
-    "remainingBalance": "Saldo remanescente: {{balanço}} pontos",
+    "pointsUsed": "Pontos utilizados: {{points}}",
+    "remainingBalance": "Saldo remanescente: {{balance}} pontos",
     "instructions": "Mostre este e-mail na finalização da compra para solicitar seu prêmio.",
     "expiryNote": "Esse prêmio expira em {{expiryDate}}.",
     "cta": "Ver recompensa",
@@ -76,14 +76,14 @@
     "subject": "Sentimos sua falta em {{merchantName}}!",
     "greeting": "Olá {{memberName}},",
     "body": "Já faz algum tempo desde sua última visita. Gostaríamos muito de vê-lo novamente!",
-    "pointsReminder": "Você tem {{pontos}} pontos esperando para serem usados.",
+    "pointsReminder": "Você tem {{points}} pontos esperando para serem usados.",
     "cta": "Venha nos visitar",
     "footer": "Seus pontos são valiosos - não os desperdice!"
   },
   "pointsExpiring": {
-    "subject": "{Os pontos expiram em breve!",
+    "subject": "{{points}} points expiring soon!",
     "greeting": "Olá {{memberName}},",
-    "currentBalance": "Saldo atual: {{balanço}} pontos",
+    "currentBalance": "Saldo atual: {{balance}} pontos",
     "cta": "Use seus pontos",
     "footer": "Visite {{merchantName}} antes que eles expirem!"
   },
@@ -104,7 +104,7 @@
   },
   "welcome_new_user": {
     "subject": "Bem-vindo à LoyaltyDog",
-    "greeting": "Oi {{nome }},",
+    "greeting": "Oi {{ name }},",
     "welcome_message": "Bem-vindo ao <strong>LoyaltyDog</strong> - estamos realmente entusiasmados por você estar aqui.",
     "acknowledgment": "Sabemos que seu prato é cheio, que seu tempo é curto e que você tem um milhão de coisas para fazer, portanto, vamos simplificar.",
     "setup_call_heading": "Fique à frente da multidão!",
@@ -142,7 +142,7 @@
   },
   "welcome_new_user_verify": {
     "subject": "Bem-vindo à LoyaltyDog",
-    "greeting": "Oi {{nome }},",
+    "greeting": "Oi {{ name }},",
     "welcome_message": "Bem-vindo ao <strong>LoyaltyDog</strong> - estamos realmente entusiasmados por você estar aqui.",
     "acknowledgment": "Sabemos que seu prato é cheio, que seu tempo é curto e que você tem um milhão de coisas para fazer, portanto, vamos simplificar.",
     "setup_call_heading": "Fique à frente da multidão!",
@@ -154,7 +154,7 @@
   },
   "password_reset_wordpress": {
     "subject": "Integração completa da loja do WordPress - Defina sua senha",
-    "greeting": "Oi {{nome }},",
+    "greeting": "Oi {{ name }},",
     "welcome_message": "Bem-vindo ao LoyaltyDog! Sua loja WordPress foi integrada com sucesso à nossa plataforma de programa de fidelidade.",
     "instructions": "Para concluir a configuração e acessar o painel de controle do programa de fidelidade, defina sua senha clicando no link abaixo:",
     "reset_button": "Definir sua senha",
@@ -165,7 +165,7 @@
     "help_heading": "<strong>Precisa de ajuda?</strong>",
     "help_contact": "Entre em contato conosco em <a href=\"mailto:support@loyalty.dog\">support@loyalty.dog</a> ou visite <a href=\"https://loyalty.dog/contact\">loyalty.dog/contact</a>.",
     "website": "www.loyalty.dog",
-    "footer_copyright": "&copy; {{ano_atual }} LoyaltyDog. Todos os direitos reservados."
+    "footer_copyright": "&copy; {{ current_year }} LoyaltyDog. Todos os direitos reservados."
   },
   "password_reset": {
     "subject": "Redefinir sua senha",
@@ -193,7 +193,7 @@
   },
   "voucher_received": {
     "subject": "Você recebeu um voucher especial!",
-    "greeting": "Oi {{nome }},",
+    "greeting": "Oi {{ name }},",
     "voucher_heading": "você recebeu um voucher especial de {{ programName }}!",
     "voucher_intro": "Estamos felizes em compartilhar essa oferta exclusiva com você. Use o voucher abaixo em sua próxima compra e aproveite uma economia extra!",
     "expiration_label": "Expira:",
@@ -209,7 +209,7 @@
   },
   "welcome_voucher": {
     "subject": "Bem-vindo ao {{ programName }}! Seu voucher de boas-vindas está pronto",
-    "greeting": "Oi {{nome }},",
+    "greeting": "Oi {{ name }},",
     "welcome_message": "Bem-vindo a bordo! Para agradecê-lo por se juntar a nós, preparamos um presente especial só para você:",
     "expiration_label": "Expira:",
     "voucher_intro": "Agora você pode fazer o download do seu voucher digital e começar a aproveitar economias exclusivas, prêmios de fidelidade e muito mais.",
@@ -225,7 +225,7 @@
   },
   "birthday_voucher": {
     "subject": "Feliz aniversário de {{ programName }}!",
-    "greeting": "Oi {{nome }},",
+    "greeting": "Oi {{ name }},",
     "birthday_wish": "🎉 Feliz aniversário de todos nós da {{ programName }}!",
     "birthday_message": "Esperamos que seu dia seja repleto de alegria, risadas e lembranças maravilhosas.",
     "gift_intro": "Para tornar sua comemoração ainda mais especial, preparamos um pequeno presente para você:",
@@ -256,8 +256,8 @@
     "footer_copyright": "&copy; 2025 LoyaltyDog. Todos os direitos reservados."
   },
   "transaction_summary": {
-    "subject": "{{ provedor }} Resumo das transações",
-    "message_1": "{{ provedor }} Resumo das transações de todos os programas",
+    "subject": "{{ provider }} Resumo das transações",
+    "message_1": "{{ provider }} Resumo das transações de todos os programas",
     "message_2": "Você pode fazer o download do relatório no link abaixo",
     "download_link": "{{ url }}",
     "footer_copyright": "&copy; 2025 LoyaltyDog. Todos os direitos reservados."

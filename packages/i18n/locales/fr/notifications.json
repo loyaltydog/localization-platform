@@ -11,7 +11,7 @@
   },
   "pointsExpiring": {
     "title": "Les points expirent bientôt",
-    "body": "les points {{points}} expireront le {{date d'expiration}}. Utilisez-les avant qu'ils ne disparaissent !"
+    "body": "les points {{points}} expireront le {{expiryDate}}. Utilisez-les avant qu'ils ne disparaissent !"
   },
   "welcome": {
     "title": "Bienvenue à {{merchantName}} !"
@@ -23,10 +23,10 @@
     "welcome": "Bienvenue à {{merchantName}} ! Vous avez rejoint notre programme de fidélité. Commencez à gagner des points dès aujourd'hui !",
     "pointsEarned": "Vous avez gagné {{points}} pts chez {{merchantName}} ! Équilibre : {{balance}} pts",
     "rewardReady": "{{memberName}}, votre récompense est prête ! {{rewardName}} - montrez-le à la caisse",
-    "rewardExpiring": "N'oubliez pas ! Votre {{récompense}} expire {{date d'expiration}}. Visitez bientôt {{merchantName}} !",
+    "rewardExpiring": "N'oubliez pas ! Votre {{rewardName}} expire {{expiryDate}}. Visitez bientôt {{merchantName}} !",
     "birthdayReward": "Joyeux anniversaire {{memberName}} ! {{merchantName}} a un cadeau pour vous. Vérifiez vos récompenses !",
     "tierUpgrade": "Félicitations {{memberName}} ! Vous êtes maintenant {{tierName}} chez {{merchantName}}. Profitez de vos nouveaux avantages !",
-    "pointsExpiring": "pts {{points}} expirant {{date d'expiration}} chez {{nom du commerçant}}. Utilisez-les avant qu'ils ne disparaissent !",
+    "pointsExpiring": "pts {{points}} expirant {{expiryDate}} chez {{merchantName}}. Utilisez-les avant qu'ils ne disparaissent !",
     "inactivityReminder": "Vous nous manquez {{memberName}} ! Vous avez {{points}} pts chez {{merchantName}}. Venez nous rendre visite !",
     "promoAlert": "{{merchantName}} : {{promoMessage}}",
     "verificationCode": "Votre code de vérification {{merchantName}} est : {{code}}"
@@ -74,7 +74,7 @@
     },
     "stampEarned": {
       "title": "Timbre gagné !",
-      "body": "{{stampsCollected}}/{stampsRequired}} - {{stampsRemaining}} encore à venir !"
+      "body": "{{stampsCollected}}/{{stampsRequired}} - {{stampsRemaining}} more to go!"
     },
     "stampCardComplete": {
       "title": "Carte de timbres complète !",
@@ -87,7 +87,7 @@
     "rewardRedeemed": "{{rewardName}} échangé avec succès",
     "tierUpgrade": "Vous avez atteint le statut de {{tierName}} !",
     "newRewardUnlocked": "Nouvelle récompense débloquée : {{rewardName}}",
-    "goalProgress": "{{progression}}% vers votre prochaine récompense"
+    "goalProgress": "{{progress}}% vers votre prochaine récompense"
   },
   "savedSuccessfully": "Sauvegardé avec succès",
   "customerDeleted": "Sauvegardé avec succès",
