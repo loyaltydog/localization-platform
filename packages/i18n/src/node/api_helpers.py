@@ -55,8 +55,13 @@ def loadNamespaceJSON(language_code: str, namespace: str, locales_path=None):
     Load a JSON namespace file for a language
     """
 
-    base_path = Path(locales_path) if locales_path else LOCALES_BASE
-    file_path = base_path / language_code / f"{namespace}.json"
+    base_path = (Path(locales_path) if locales_path else LOCALES_BASE).resolve()
+    file_path = (base_path / language_code / f"{namespace}.json").resolve()
+
+    try:
+        file_path.relative_to(base_path)
+    except ValueError:
+        return {}
 
     try:
         with open(file_path, "r", encoding="utf-8") as f:
