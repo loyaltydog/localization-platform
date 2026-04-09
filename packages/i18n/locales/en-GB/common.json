@@ -653,7 +653,8 @@
     "relevanceDate": "Relevance Date",
     "translationHelperText": "If you would like to localize the pass for multiple languages please select the base language and provide translation below. Dates, numbers and currency data types will always be displayed according to the users' language and region preference.",
     "associatedStoreId": "iTunes Store item identifier for the associated app on the back of the pass",
-    "associatedPlayId": "Google Play Store package name for the associated app on the back of the pass"
+    "associatedPlayId": "Google Play Store package name for the associated app on the back of the pass",
+    "barcodeType": "Barcode Type"
   },
   "editor": {
     "done": "Done",

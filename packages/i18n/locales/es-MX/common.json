@@ -58,7 +58,7 @@
     "viewAll": "Ver todos",
     "learnMore": "Más información",
     "saveChanges": "Guardar cambios",
-    "configure": "Configure",
+    "configure": "Configurar",
     "customize": "Personalice",
     "duplicate": "Duplicar",
     "publish": "Publique",
@@ -328,7 +328,7 @@
     "totalTransactions": "Transacciones totales",
     "memberParticipation": "Participación de los miembros",
     "totalRevenue": "Ingresos totales",
-    "dateRangeTx": "{count} tx",
+    "dateRangeTx": "{{count}} tx",
     "retry": "Reintentar",
     "dontHaveQualified": "No tiene clientes cualificados.",
     "today": "hoy",
@@ -362,17 +362,17 @@
     "lastWeek": "Última semana",
     "thisMonth": "Este mes",
     "lastMonth": "Último mes",
-    "last7Days": "Last 7 Days",
-    "last30Days": "Last 30 Days",
+    "last7Days": "Últimos 7 días",
+    "last30Days": "Últimos 30 días",
     "pastDays": "Past {{count}} days",
-    "last6Months": "Last 6 Months",
-    "thisYear": "This Year",
-    "lastYear": "Last Year",
-    "customRange": "Custom Range",
+    "last6Months": "Últimos 6 meses",
+    "thisYear": "Este año",
+    "lastYear": "Año pasado",
+    "customRange": "Rango personalizado",
     "customRangeLabel": "CUSTOM RANGE",
-    "applyCustomRange": "Apply",
-    "startDate": "Start Date",
-    "endDate": "End Date"
+    "applyCustomRange": "Aplicar",
+    "startDate": "Fecha de inicio",
+    "endDate": "Fecha de fin"
   },
   "_comment": "Traduções portuguesas (Portugal) - a completar via Lokalise AI Translation",
   "tableHeaders": {
@@ -653,7 +653,8 @@
     "relevanceDate": "Fecha de relevancia",
     "translationHelperText": "Si deseas localizar el pase para varios idiomas, selecciona el idioma base y proporciona la traducción a continuación. Los datos de fechas, números y moneda siempre se mostrarán según la preferencia de idioma y región del usuario.",
     "associatedStoreId": "Identificador de artículo de tienda de iTunes para la aplicación asociada en el reverso del pase",
-    "associatedPlayId": "Nombre del paquete de Google Play Store para la aplicación asociada en el reverso del pase"
+    "associatedPlayId": "Nombre del paquete de Google Play Store para la aplicación asociada en el reverso del pase",
+    "barcodeType": "Tipo de código de barras"
   },
   "editor": {
     "done": "Hecho",
@@ -724,7 +725,7 @@
         "requestQueued": "Request Queued",
         "searchPlaceholder": "Search Placeholder",
         "totalBackups": "Total Backups",
-        "recentRestores": "Recent Restores",
+        "recentRestores": "Restauraciones recientes",
         "noname": "Noname",
         "deleted": "Deleted",
         "createTitle": "Create Title",
@@ -732,21 +733,21 @@
         "restoreTitle": "Restore Title",
         "targetUser": "Target User",
         "table": {
-          "name": "Name",
-          "account": "Account",
-          "active": "Active",
+          "name": "Nombre",
+          "account": "Cuenta",
+          "active": "Activo",
           "cron": "Cron",
-          "lastRun": "Last Run",
-          "info": "Info",
-          "status": "Status",
-          "actions": "Actions",
-          "noBackups": "No Backups",
-          "time": "Time",
-          "backupName": "Backup Name",
-          "backupTime": "Backup Time",
-          "restoredTime": "Restored Time",
-          "targetUser": "Target User",
-          "noRestores": "No Restores"
+          "lastRun": "Última ejecución",
+          "info": "Información",
+          "status": "Estado",
+          "actions": "Acciones",
+          "noBackups": "Sin copias de seguridad",
+          "time": "Hora",
+          "backupName": "Nombre de copia de seguridad",
+          "backupTime": "Hora de copia de seguridad",
+          "restoredTime": "Hora de restauración",
+          "targetUser": "Usuario destino",
+          "noRestores": "Sin restauraciones"
         },
         "status": {
           "active": "Active",
@@ -758,7 +759,7 @@
           "reRun": "Re Run",
           "reRunConfirm": "Re Run Confirm",
           "reRunMessage": "Re Run Message",
-          "delete": "Delete",
+          "delete": "Eliminar",
           "deleteConfirm": "Delete Confirm",
           "deleteMessage": "Delete Message"
         },
@@ -780,16 +781,16 @@
         },
         "restore": {
           "passTypeIds": "Pass Type Ids",
-          "passes": "Passes",
-          "vouchers": "Vouchers",
-          "programs": "Programs",
-          "orders": "Orders",
+          "passes": "Pases",
+          "vouchers": "Cupones",
+          "programs": "Programas",
+          "orders": "Órdenes",
           "eposnow": "Eposnow",
           "webhooks": "Webhooks",
-          "customers": "Customers",
+          "customers": "Clientes",
           "shopifies": "Shopifies",
-          "templates": "Templates",
-          "offers": "Offers",
+          "templates": "Plantillas",
+          "offers": "Ofertas",
           "clovers": "Clovers"
         }
       },
@@ -816,12 +817,12 @@
         },
         "table": {
           "id": "Id",
-          "username": "Username",
-          "email": "Email",
+          "username": "Nombre de usuario",
+          "email": "Correo electrónico",
           "registeredAt": "Registrado el",
-          "pricePlan": "Price Plan",
-          "roles": "Roles",
-          "actions": "Actions",
+          "pricePlan": "Plan de precios",
+          "roles": "Funciones",
+          "actions": "Acciones",
           "empty": "Empty",
           "roleAdmin": "Role Admin",
           "roleLoyalty": "Role Loyalty"
@@ -829,10 +830,10 @@
         "actions": {
           "signInAsUser": "Sign In As User",
           "signInAsUserLoading": "Sign In As User Loading",
-          "login": "Login",
-          "edit": "Edit",
-          "delete": "Delete",
-          "view": "View"
+          "login": "Iniciar sesión",
+          "edit": "Editar",
+          "delete": "Eliminar",
+          "view": "Ver"
         },
         "totalUsers": "Total Users",
         "createButton": "Create Button",
@@ -841,14 +842,14 @@
           "title": "Title"
         },
         "detail": {
-          "business": "Business",
-          "name": "Name",
-          "email": "Email",
-          "role": "Role",
-          "betaUser": "Beta User",
-          "location": "Location",
-          "website": "Website",
-          "registeredAt": "Registered At"
+          "business": "Negocio",
+          "name": "Nombre",
+          "email": "Correo electrónico",
+          "role": "Función",
+          "betaUser": "Usuario beta",
+          "location": "Ubicación",
+          "website": "Sitio web",
+          "registeredAt": "Registrado el"
         },
         "form": {
           "businessLabel": "Business Label",
@@ -884,7 +885,7 @@
       },
       "aiAdvisor": {
         "errorTitle": "Error Title",
-        "retryConnection": "Retry Connection",
+        "retryConnection": "Reintentar conexión",
         "loadingTitle": "Loading Title",
         "loadingDescription": "Loading Description"
       },
@@ -893,16 +894,16 @@
           "title": "Title",
           "empty": "Empty",
           "table": {
-            "name": "Name",
-            "price": "Price",
-            "type": "Type",
-            "trialDays": "Trial Days",
-            "actions": "Actions",
+            "name": "Nombre",
+            "price": "Precio",
+            "type": "Tipo",
+            "trialDays": "Días de prueba",
+            "actions": "Acciones",
             "empty": "Empty"
           },
           "actions": {
-            "edit": "Edit",
-            "delete": "Delete"
+            "edit": "Editar",
+            "delete": "Eliminar"
           },
           "confirm": {
             "deleteTitle": "Delete Title",
@@ -936,12 +937,12 @@
       "forgotPassword": {
         "title": "Enter your email to reset your password",
         "description": "Description",
-        "emailLabel": "Email address",
-        "submitButton": "Reset password",
-        "submittingButton": "Please wait...",
+        "emailLabel": "Dirección de correo electrónico",
+        "submitButton": "Restablecer contraseña",
+        "submittingButton": "Por favor espera...",
         "successMessage": "Password reset link sent to your email.",
         "alreadyHaveAccount": "Already Have Account",
-        "signInLink": "Sign in",
+        "signInLink": "Iniciar sesión",
         "pageTitle": "Olvidé mi contraseña"
       },
       "login": {
@@ -951,23 +952,23 @@
         "invalidCredentials": "Credenciales de autenticación no válidas.",
         "title": "Use your email and password to sign in",
         "description": "Description",
-        "emailLabel": "Email address",
-        "passwordLabel": "Password",
-        "rememberMe": "Remember me",
-        "forgotPassword": "Forgot password?",
-        "submitButton": "Sign in",
-        "submittingButton": "Please wait...",
-        "defaultError": "Unable to sign in.",
-        "signinError": "Try signing in with a different account.",
-        "oAuthSigninError": "Try signing in with a different account.",
-        "oAuthCallbackError": "Try signing in with a different account.",
-        "oAuthCreateAccountError": "Try signing in with a different account.",
-        "emailCreateAccountError": "Try signing in with a different account.",
-        "callbackError": "Try signing in with a different account.",
-        "oAuthAccountNotLinkedError": "To confirm your identity, sign in with the same account you used originally.",
-        "emailSigninError": "The e-mail could not be sent.",
-        "credentialsSigninError": "Sign in failed. Check the details you provided are correct.",
-        "sessionRequiredError": "Please sign in to access this page."
+        "emailLabel": "Dirección de correo electrónico",
+        "passwordLabel": "Contraseña",
+        "rememberMe": "Recuérdame",
+        "forgotPassword": "¿Olvidaste tu contraseña?",
+        "submitButton": "Iniciar sesión",
+        "submittingButton": "Por favor espera...",
+        "defaultError": "No se puede iniciar sesión.",
+        "signinError": "Intenta iniciar sesión con una cuenta diferente.",
+        "oAuthSigninError": "Intenta iniciar sesión con una cuenta diferente.",
+        "oAuthCallbackError": "Intenta iniciar sesión con una cuenta diferente.",
+        "oAuthCreateAccountError": "Intenta iniciar sesión con una cuenta diferente.",
+        "emailCreateAccountError": "Intenta iniciar sesión con una cuenta diferente.",
+        "callbackError": "Intenta iniciar sesión con una cuenta diferente.",
+        "oAuthAccountNotLinkedError": "Para confirmar tu identidad, inicia sesión con la misma cuenta que usaste originalmente.",
+        "emailSigninError": "No se pudo enviar el correo electrónico.",
+        "credentialsSigninError": "Error al iniciar sesión. Verifica que los datos proporcionados sean correctos.",
+        "sessionRequiredError": "Por favor, inicia sesión para acceder a esta página."
       },
       "layout": {
         "maintenanceMessage": "Maintenance Message"
@@ -978,11 +979,11 @@
         "continueWithEmail": "Continue With Email",
         "connectTo": "Connect To",
         "connectToExistingAccount": "Connect To Existing Account",
-        "back": "Back",
-        "loginHelperText": "Please enter your LoyaltyDog account credentials to connect to your Clover account",
-        "emailLabel": "Email address",
-        "passwordLabel": "Password",
-        "submittingButton": "Please wait...",
+        "back": "Atrás",
+        "loginHelperText": "Por favor, ingresa tus credenciales de cuenta de LoyaltyDog para conectar a tu cuenta de Clover",
+        "emailLabel": "Dirección de correo electrónico",
+        "passwordLabel": "Contraseña",
+        "submittingButton": "Por favor espera...",
         "loginAndContinue": "Sign in and continue"
       },
       "shopify": {
@@ -990,22 +991,22 @@
         "continueWithEmail": "Continue With Email",
         "connectTo": "Connect To",
         "connectToExistingAccount": "Connect To Existing Account",
-        "back": "Back",
-        "loginHelperText": "Please enter your LoyaltyDog account credentials to connect to your Shopify store",
-        "emailLabel": "Email address",
-        "passwordLabel": "Password",
-        "submittingButton": "Please wait...",
+        "back": "Atrás",
+        "loginHelperText": "Por favor, ingresa tus credenciales de cuenta de LoyaltyDog para conectar a tu tienda de Shopify",
+        "emailLabel": "Dirección de correo electrónico",
+        "passwordLabel": "Contraseña",
+        "submittingButton": "Por favor espera...",
         "loginAndContinue": "Sign in and continue",
         "shopifyStoreLabel": "Shopify Store Label",
         "installButton": "Install app"
       },
       "resetPassword": {
         "title": "Title",
-        "newPasswordLabel": "New Password",
-        "confirmPasswordLabel": "Confirm password",
-        "submitButton": "Reset password",
-        "submittingButton": "Please wait...",
-        "successMessage": "Your password has been successfully changed.",
+        "newPasswordLabel": "Nueva contraseña",
+        "confirmPasswordLabel": "Confirmar contraseña",
+        "submitButton": "Restablecer contraseña",
+        "submittingButton": "Por favor espera...",
+        "successMessage": "Tu contraseña se ha cambiado exitosamente.",
         "alreadyHaveAccount": "Already Have Account",
         "signInLink": "Sign In Link"
       },
@@ -1013,18 +1014,18 @@
         "title": "Create an account with your email and password",
         "description": "Description",
         "otpSent": "Otp Sent",
-        "somethingWentWrong": "Something went wrong. Please try again later.",
+        "somethingWentWrong": "Algo salió mal. Por favor, intenta más tarde.",
         "resendOtp": "Resend Otp",
-        "businessNameLabel": "Business name",
-        "emailLabel": "Email address",
-        "passwordLabel": "Password",
-        "confirmPasswordLabel": "Confirm password",
-        "acceptTerms": "I accept the",
+        "businessNameLabel": "Nombre del negocio",
+        "emailLabel": "Dirección de correo electrónico",
+        "passwordLabel": "Contraseña",
+        "confirmPasswordLabel": "Confirmar contraseña",
+        "acceptTerms": "Acepto los",
         "termsAndConditions": "Términos y condiciones",
         "submitButton": "Sign up",
-        "submittingButton": "Please wait...",
-        "alreadyHaveAccount": "Already have an account?",
-        "signInLink": "Sign in"
+        "submittingButton": "Por favor espera...",
+        "alreadyHaveAccount": "¿Ya tienes una cuenta?",
+        "signInLink": "Iniciar sesión"
       }
     },
     "user": {
@@ -1036,17 +1037,17 @@
           "edit": "Edit"
         },
         "table": {
-          "name": "Name",
-          "appKey": "App Key",
+          "name": "Nombre",
+          "appKey": "Clave de aplicación",
           "passTypeIds": "Pass Type Ids",
-          "passTemplates": "Pass Templates",
-          "actions": "Actions",
+          "passTemplates": "Plantillas de pases",
+          "actions": "Acciones",
           "empty": "Empty",
           "emptyName": "Empty Name"
         },
         "actions": {
-          "edit": "Edit",
-          "delete": "Delete"
+          "edit": "Editar",
+          "delete": "Eliminar"
         },
         "form": {
           "nameLabel": "Name Label",
@@ -1068,20 +1069,20 @@
           "view": "Ver pase",
           "edit": "Editar pase"
         },
-        "analytics": "Analytics",
-        "recentPasses": "Recent Passes",
+        "analytics": "Análisis",
+        "recentPasses": "Pases recientes",
         "table": {
-          "serialNumber": "Serial Number",
-          "template": "Template",
-          "created": "Created",
-          "status": "Status",
+          "serialNumber": "Número de serie",
+          "template": "Plantilla",
+          "created": "Creado",
+          "status": "Estado",
           "actions": "Acciones"
         },
         "actions": {
-          "download": "Download",
-          "edit": "Edit",
-          "delete": "Delete",
-          "view": "View"
+          "download": "Descargar",
+          "edit": "Editar",
+          "delete": "Eliminar",
+          "view": "Ver"
         },
         "noData": "No Data",
         "search": {
@@ -1121,16 +1122,16 @@
           "tabSource": "Tab Source",
           "deleteConfirm": "Delete Confirm",
           "deleteMessage": "Delete Message",
-          "template": "Template",
+          "template": "Plantilla",
           "passTypeId": "Pass Type Id",
-          "serialNumber": "Serial Number",
-          "createdAt": "Created At",
-          "lastUpdated": "Last Updated",
-          "expiresAt": "Expires At",
-          "status": "Status",
+          "serialNumber": "Número de serie",
+          "createdAt": "Creado el",
+          "lastUpdated": "Última actualización",
+          "expiresAt": "Vence el",
+          "status": "Estado",
           "updateStatusLink": "Update Status Link",
-          "registrations": "Registrations",
-          "shortlink": "Shortlink",
+          "registrations": "Registros",
+          "shortlink": "Enlace corto",
           "scanToAdd": "Scan To Add",
           "noValues": "No Values",
           "tableHeaderPidNumber": "Table Header Pid Number",
@@ -1153,16 +1154,16 @@
         },
         "table": {
           "passTypeId": "Pass Type Id",
-          "organization": "Organization",
-          "teamIdentifier": "Team Identifier",
-          "certificateExpiration": "Certificate Expiration",
-          "actions": "Actions",
+          "organization": "Organización",
+          "teamIdentifier": "Identificador de equipo",
+          "certificateExpiration": "Vencimiento de certificado",
+          "actions": "Acciones",
           "empty": "Empty"
         },
         "actions": {
           "edit": "Editar",
-          "delete": "Delete",
-          "renew": "Renew"
+          "delete": "Eliminar",
+          "renew": "Renovar"
         },
         "renewConfirm": "Renew Confirm",
         "renewMessage": "Renew Message",
@@ -1171,9 +1172,9 @@
         "gettingStartedTitle": "Getting Started Title",
         "helperText": "Helper Text",
         "tabs": {
-          "wizard": "Wizard",
-          "assistedUpload": "Assisted Upload",
-          "manualImport": "Manual Import"
+          "wizard": "Asistente",
+          "assistedUpload": "Carga asistida",
+          "manualImport": "Importación manual"
         },
         "wizardTitle": "Wizard Title",
         "uploadTitle": "Upload Title",
@@ -1236,7 +1237,7 @@
     }
   },
   "templates": {
-    "title": "Templates",
+    "title": "Plantillas",
     "pages": {
       "list": "Plantillas",
       "new": "New",
@@ -1249,80 +1250,80 @@
     },
     "table": {
       "id": "ID",
-      "name": "Name",
-      "passTypeId": "Pass Type ID",
-      "style": "Style",
-      "actions": "Actions"
+      "name": "Nombre",
+      "passTypeId": "ID de tipo de pase",
+      "style": "Estilo",
+      "actions": "Acciones"
     },
     "actions": {
-      "view": "View",
-      "edit": "Edit",
-      "newPass": "New Pass",
-      "duplicate": "Duplicate",
-      "delete": "Delete"
+      "view": "Ver",
+      "edit": "Editar",
+      "newPass": "Nuevo pase",
+      "duplicate": "Duplicar",
+      "delete": "Eliminar"
     },
     "form": {
-      "templateName": "Template Name",
+      "templateName": "Nombre de plantilla",
       "templateNameHelper": "Template name helper",
       "passDescription": "Description",
       "passDescriptionHelper": "Description helper",
-      "icon": "Icon",
+      "icon": "Icono",
       "iconHelper": "Icon helper",
-      "passTypeId": "Pass Type ID",
-      "passStyle": "Pass Style",
+      "passTypeId": "ID de tipo de pase",
+      "passStyle": "Estilo de pase",
       "disableAutoPush": "Disable auto push",
       "submitButton": "Save",
-      "cancelButton": "Cancel",
+      "cancelButton": "Cancelar",
       "savingButton": "Por favor espera..."
     },
     "edit": {
       "tabs": {
-        "template": "Template",
-        "appearance": "Appearance",
-        "designer": "Designer",
-        "stripImage": "Strip Image",
-        "translation": "Translation",
-        "source": "Source",
-        "relevance": "Relevance",
-        "location": "Location",
-        "beacons": "Beacons",
-        "apps": "Apps",
-        "time": "Time",
-        "placeholder": "Placeholder",
-        "actions": "Actions",
-        "distribution": "Distribution",
-        "branding": "Branding",
-        "payment": "Payment",
-        "restriction": "Restriction"
+        "template": "Plantilla",
+        "appearance": "Apariencia",
+        "designer": "Diseñador",
+        "stripImage": "Imagen de franja",
+        "translation": "Traducción",
+        "source": "Origen",
+        "relevance": "Relevancia",
+        "location": "Ubicación",
+        "beacons": "Balizas",
+        "apps": "Aplicaciones",
+        "time": "Hora",
+        "placeholder": "Marcador de posición",
+        "actions": "Acciones",
+        "distribution": "Distribución",
+        "branding": "Marca",
+        "payment": "Pago",
+        "restriction": "Restricción"
       },
       "successMessage": "Template saved successfully.",
-      "savingButton": "Saving...",
-      "saveAndCloseButton": "Save & Close"
+      "savingButton": "Guardando...",
+      "saveAndCloseButton": "Guardar y cerrar"
     },
     "passStyles": {
-      "boardingPass": "Boarding Pass",
-      "coupon": "Coupon",
-      "eventTicket": "Event Ticket",
-      "storeCard": "Store Card",
-      "generic": "Generic"
+      "boardingPass": "Pase de abordaje",
+      "coupon": "Cupón",
+      "eventTicket": "Boleto de evento",
+      "storeCard": "Tarjeta de tienda",
+      "generic": "Genérico"
     },
     "delete": {
-      "confirmMessage": "Are you sure you want to delete this template?",
-      "warningTitle": "Warning",
+      "confirmMessage": "¿Estás seguro de que deseas eliminar esta plantilla?",
+      "warningTitle": "Advertencia",
       "warningMessage": "Warning Message",
       "cancelButton": "Cancel",
       "confirmButton": "Delete"
     },
     "detail": {
-      "analytics": "Analytics",
-      "distribution": "Distribution",
+      "analytics": "Análisis",
+      "distribution": "Distribución",
       "shareQrCode": "Share QR Code",
-      "quantity": "Quantity",
-      "redemption": "Redemption",
+      "quantity": "Cantidad",
+      "redemption": "Canje",
       "loadingData": "Loading...",
       "edit": "Editar",
       "sendPushNotifications": "Enviar notificaciones push",
-      "editButtonTitle": "Edit",
+      "editButtonTitle": "Editar",
       "pushButtonTitle": "Push",
       "deleteButton": "Delete"
     },
@@ -1331,7 +1332,7 @@
       "message2": "Push Message 2",
       "message3": "Push Message 3",
       "successMessage": "Push sent successfully.",
-      "sendButton": "Send"
+      "sendButton": "Enviar"
     },
     "analytics": {
       "totalCreated": "Created",
@@ -1339,7 +1340,7 @@
       "totalActive": "Active"
     },
     "newpass": {
-      "values": "Values"
+      "values": "Valores"
     },
     "verification": {
       "title": "Emisores",
