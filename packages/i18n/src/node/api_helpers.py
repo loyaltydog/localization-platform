@@ -12,6 +12,7 @@ SUPPORTED_LANGUAGES = [
     {"code": "en-GB", "name": "English (UK)", "flag": "🇬🇧", "nativeName": "English (UK)"},
     {"code": "es-ES", "name": "Spanish (Spain)", "flag": "🇪🇸", "nativeName": "Español (España)"},
     {"code": "es-MX", "name": "Spanish (Mexico)", "flag": "🇲🇽", "nativeName": "Español (México)"},
+    {"code": "fr", "name": "French", "flag": "🇫🇷", "nativeName": "Français"},
     {"code": "it", "name": "Italian", "flag": "🇮🇹", "nativeName": "Italiano"},
     {"code": "pt-PT", "name": "Portuguese (Portugal)", "flag": "🇵🇹", "nativeName": "Português (Portugal)"},
     {"code": "pt-BR", "name": "Portuguese (Brazil)", "flag": "🇧🇷", "nativeName": "Português (Brasil)"},
@@ -281,7 +282,7 @@ ON merchants(default_language);
 
 ALTER TABLE merchants
 ADD CONSTRAINT chk_merchants_default_language
-CHECK (default_language IN ('en-US', 'en-GB', 'es-ES', 'fr', 'it', 'pt-PT', 'pt-BR'));
+CHECK (default_language IN ('en-US', 'en-GB', 'es-ES', 'es-MX', 'fr', 'it', 'pt-PT', 'pt-BR'));
 """.strip()
 
     customers_sql = """
@@ -294,7 +295,7 @@ ON customers(preferred_language);
 
 ALTER TABLE customers
 ADD CONSTRAINT chk_customers_preferred_language
-CHECK (preferred_language IS NULL OR preferred_language IN ('en-US', 'en-GB', 'es-ES', 'fr', 'it', 'pt-PT', 'pt-BR'));
+CHECK (preferred_language IS NULL OR preferred_language IN ('en-US', 'en-GB', 'es-ES', 'es-MX', 'fr', 'it', 'pt-PT', 'pt-BR'));
 """.strip()
 
     return {

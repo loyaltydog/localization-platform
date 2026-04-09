@@ -86,9 +86,9 @@
         "knowledgeBase": "Knowledge Base",
         "contact": "Contact",
         "termsOfService": "Terms of Service",
-        "privacyPolicy": "Terms of Service",
-        "cookiePolicy": "Privacy Policy",
-        "helpCenter": "Contact"
+        "privacyPolicy": "Privacy Policy",
+        "cookiePolicy": "Cookie Policy",
+        "helpCenter": "Help Center"
     },
     "onboarding": {
         "step1_title": "Configure Points",
