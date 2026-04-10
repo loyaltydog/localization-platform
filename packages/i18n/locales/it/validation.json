@@ -1,7 +1,7 @@
 {
   "required": "{{field}} è richiesto",
   "minLength": "{{field}} deve essere di almeno {{min}} caratteri",
-  "maxLength": "{{field}} must be no more than {{max}} characters",
+  "maxLength": "{{field}} non deve superare i {{max}} caratteri",
   "invalidEmail": "Inserire un indirizzo e-mail valido",
   "invalidPhone": "Inserire un numero di telefono valido",
   "invalidUrl": "Inserire un URL valido",

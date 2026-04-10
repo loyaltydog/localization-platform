@@ -322,5 +322,6 @@
     "downgradeNotAllowed": "A degradação do plano não é permitida até {{date}}",
     "upgradeInProgress": "A sua atualização de plano está em curso. Por favor, aguarde...",
     "cancelationPending": "A sua subscrição será cancelada a {{effectiveDate}}"
-  }
+  },
+  "invalidSession": "Your session is invalid or has expired. Please launch the application again from your EPOS Now terminal."
 }

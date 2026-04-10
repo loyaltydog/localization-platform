@@ -10,7 +10,7 @@
   "minValue": "{{field}} deve ter pelo menos {{value}}",
   "maxValue": "{{field}} não deve ser mais do que {{value}}",
   "invalidDate": "Introduzir uma data válida",
-  "futureDate": "{{field}} must be in the future",
+  "futureDate": "{{field}} deve ser no futuro",
   "pastDate": "{{field}} deve estar no passado",
   "fields": {
     "name": "Nome",
@@ -95,7 +95,7 @@
   "points": {
     "insufficient": "Pontos insuficientes. Precisa de {{required}} mas tem {{available}}.",
     "minimum": "Mínimo de {{min}} pontos necessários",
-    "maximum": "Maximum {{max}} points allowed"
+    "maximum": "Máximo de {{max}} pontos permitidos"
   },
   "member": {
     "emailTaken": "Este e-mail já está registado",

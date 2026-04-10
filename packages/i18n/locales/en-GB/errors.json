@@ -146,7 +146,7 @@
     "contactSupport": "If this problem persists, please contact support."
   },
   "resources": {
-    "program_not_found": "Program not found",
+    "program_not_found": "Programme not found",
     "customer_not_found": "Customer not found",
     "member_not_found": "Member not found.",
     "pass_not_found": "Pass not found",
@@ -157,7 +157,7 @@
     "voucher_not_found": "Voucher not found",
     "shop_not_found": "Shop not found",
     "shop_not_active": "Shop not found or not active",
-    "shop_program_not_found": "Shop program not found",
+    "shop_program_not_found": "Shop programme not found",
     "eposnow_shop_not_found": "Shop not found",
     "wordpress_account_not_found": "WordPress account not found",
     "backup_not_found": "Backup not found",
@@ -174,7 +174,7 @@
     "order_data_not_found": "Order data not found",
     "generate_code_error": "Generate code error",
     "failed_to_renew_certificate": "Failed to renew certificate: {message}",
-    "certificate_not_found": "Program template not found",
+    "certificate_not_found": "Programme template not found",
     "unsupported_pass_style": "Unsupported pass style: {style}",
     "invalid_attempt_rate_limit": "Too many account creation attempts for this email address. Please try again in 7 days.",
     "installation_rate_limit": "Too many account creation attempts for this WordPress installation. Please try again in 7 days.",
@@ -200,7 +200,7 @@
   "unexpectedError": "Unexpected error occurred",
   "noTextResponse": "No text response from Mistral",
   "mistralApiKey": "Mistral API key not configured",
-  "programIdRequired": "Program ID is required",
+  "programIdRequired": "Programme ID is required",
   "messageRequired": "Message is required",
   "healthCheckFailed": "Health check failed",
   "noTransactionsFound": "No transactions found",
@@ -322,5 +322,6 @@
     "downgradeNotAllowed": "Plan downgrade is not allowed until {{date}}",
     "upgradeInProgress": "Your plan upgrade is in progress. Please wait...",
     "cancelationPending": "Your subscription will be cancelled on {{effectiveDate}}"
-  }
+  },
+  "invalidSession": "Your session is invalid or has expired. Please launch the application again from your EPOS Now terminal."
 }

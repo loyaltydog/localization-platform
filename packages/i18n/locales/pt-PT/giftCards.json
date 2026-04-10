@@ -149,7 +149,10 @@
     "showing50": "A mostrar as 50 transacções mais recentes",
     "cardDetails": "Detalhes do Cartão",
     "cardTransactions": "Transacções deste cartão",
-    "close": "Fechar"
+    "close": "Fechar",
+    "columnCard": "Informações sobre o Cartão",
+    "columnBalance": "Saldo",
+    "columnStatus": "Estado"
   },
   "consolidate": {
     "rulesTitle": "Regras de Consolidação",
@@ -350,11 +353,11 @@
     "cardType": "Tipo de Cartão de Oferta",
     "digital": "Cartão de Oferta Digital",
     "physical": "Cartão de Oferta Físico",
-    "topUpSection": "Recarga de Cartão Existente (Opcional)",
+    "topUpSection": "Recarga de Cartão Existente",
     "topUpLabel": "Recarregar cartão existente",
     "topUpPlaceholder": "Introduza ou digitalize o número do cartão de oferta",
     "scan": "Digitalizar",
-    "topUpHint": "Digitalize ou introduza um número de cartão de oferta existente para adicionar valor. Deixe vazio para criar um novo cartão de oferta.",
+    "topUpHint": "Digitalize ou introduza um número de cartão de oferta existente para adicionar valor.",
     "amount": "Valor do Cartão de Oferta",
     "usePresets": "Usar valores predefinidos",
     "recipient": "Dados do Destinatário",
@@ -385,7 +388,25 @@
     "errorNoSender": "O nome do remetente é obrigatório",
     "successTopUp": "Cartão recarregado com {{currency}}{{amount}}",
     "successCreate": "Cartão de oferta criado por {{currency}}{{amount}}",
-    "errorFailed": "Falha ao processar"
+    "errorFailed": "Falha ao processar",
+    "resendCodeButton": "Reenviar cartão",
+    "resendCodeTitle": "Reenviar cartão-presente",
+    "resendCodeDesc": "Atualize os detalhes do destinatário e reenvie a notificação. Um novo código de segurança será gerado.",
+    "resendSuccess": "Cartão reenviado com sucesso",
+    "successModalTitle": "Cartão presente criado!",
+    "successModalDesc": "O seu cartão presente está pronto",
+    "notificationSentEmail": "Notificação enviada para",
+    "notificationSentSms": "SMS enviado para",
+    "addToWallet": "Adicionar à carteira",
+    "closeModal": "Concluído",
+    "topUpFind": "Procurar cartão",
+    "topUpErrorEmpty": "Introduza um número de cartão",
+    "topUpNotFound": "Nenhum cartão encontrado com esse número",
+    "topUpInactiveCard": "Este cartão está {{status}} e não pode ser recarregado",
+    "topUpSearchFailed": "Falha ao procurar cartão",
+    "topUpFindFirst": "Procure um cartão antes de recarregar",
+    "topUpNewBalance": "Saldo após recarga",
+    "topUpChangeCard": "Alterar cartão"
   },
   "redeem": {
     "findCard": "Encontrar Cartão de Oferta",
@@ -404,7 +425,8 @@
     "errorSearch": "Pesquisa falhou",
     "errorInvalidAmount": "Introduza um valor válido",
     "success": "{{amount}} resgatados. Restante: {{remaining}}",
-    "errorFailed": "Resgate falhou"
+    "errorFailed": "Resgate falhou",
+    "scanQr": "Digitalizar código QR"
   },
   "manage": {
     "cardDetails": "Detalhes do Cartão",
@@ -450,7 +472,9 @@
     "storeNameValue": "Loja Demo EPOS Now",
     "storeAddress": "Morada da Loja",
     "storeAddressValue": "Rua Augusta 123, Lisboa",
-    "saveSettings": "Guardar Definições"
+    "saveSettings": "Guardar Definições",
+    "merchantIdRequired": "O ID do comerciante é obrigatório.",
+    "merchantSettings": "Configuração de Comerciante"
   },
   "merchantDashboard": {
     "totalActiveCards": "Total de Cartões Activos",

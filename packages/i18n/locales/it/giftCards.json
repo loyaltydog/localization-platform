@@ -149,7 +149,10 @@
     "showing50": "Visualizzazione delle 50 transazioni più recenti",
     "cardDetails": "Dettagli Carta",
     "cardTransactions": "Transazioni per questa carta",
-    "close": "Chiudi"
+    "close": "Chiudi",
+    "columnCard": "Informazioni sulla Carta",
+    "columnBalance": "Saldo",
+    "columnStatus": "Stato"
   },
   "consolidate": {
     "rulesTitle": "Regole di Consolidamento",
@@ -350,11 +353,11 @@
     "cardType": "Tipo di Carta Regalo",
     "digital": "Carta Regalo Digitale",
     "physical": "Carta Regalo Fisica",
-    "topUpSection": "Ricarica Carta Esistente (Opzionale)",
+    "topUpSection": "Ricarica Carta Esistente",
     "topUpLabel": "Ricarica carta esistente",
     "topUpPlaceholder": "Inserisci o scansiona il numero della carta regalo",
     "scan": "Scansiona",
-    "topUpHint": "Scansiona o inserisci un numero di carta regalo esistente per aggiungere valore. Lascia vuoto per creare una nuova carta regalo.",
+    "topUpHint": "Scansiona o inserisci un numero di carta regalo esistente per aggiungere valore.",
     "amount": "Importo Carta Regalo",
     "usePresets": "Usa importi predefiniti",
     "recipient": "Dati Destinatario",
@@ -385,7 +388,25 @@
     "errorNoSender": "Il nome del mittente è obbligatorio",
     "successTopUp": "Carta ricaricata con {{currency}}{{amount}}",
     "successCreate": "Carta regalo creata per {{currency}}{{amount}}",
-    "errorFailed": "Elaborazione non riuscita"
+    "errorFailed": "Elaborazione non riuscita",
+    "resendCodeButton": "Invia di nuovo la carta",
+    "resendCodeTitle": "Invia di nuovo la carta regalo",
+    "resendCodeDesc": "Aggiorna i dettagli del destinatario e invia di nuovo la notifica. Verrà generato un nuovo codice di sicurezza.",
+    "resendSuccess": "Carta inviata di nuovo con successo",
+    "successModalTitle": "Carta regalo creata!",
+    "successModalDesc": "La tua carta regalo è pronta",
+    "notificationSentEmail": "Notifica inviata a",
+    "notificationSentSms": "SMS inviato a",
+    "addToWallet": "Aggiungi al portafoglio",
+    "closeModal": "Fatto",
+    "topUpFind": "Cerca carta",
+    "topUpErrorEmpty": "Inserisci un numero di carta",
+    "topUpNotFound": "Nessuna carta trovata con quel numero",
+    "topUpInactiveCard": "Questa carta è {{status}} e non può essere ricaricata",
+    "topUpSearchFailed": "Ricerca carta non riuscita",
+    "topUpFindFirst": "Cerca prima una carta prima di ricaricare",
+    "topUpNewBalance": "Saldo dopo la ricarica",
+    "topUpChangeCard": "Cambia carta"
   },
   "redeem": {
     "findCard": "Trova Carta Regalo",
@@ -404,7 +425,8 @@
     "errorSearch": "Ricerca non riuscita",
     "errorInvalidAmount": "Inserisci un importo valido",
     "success": "Riscattati {{amount}}. Rimanente: {{remaining}}",
-    "errorFailed": "Riscatto non riuscito"
+    "errorFailed": "Riscatto non riuscito",
+    "scanQr": "Scansiona il codice QR"
   },
   "manage": {
     "cardDetails": "Dettagli Carta",
@@ -450,7 +472,9 @@
     "storeNameValue": "Negozio Demo EPOS Now",
     "storeAddress": "Indirizzo Negozio",
     "storeAddressValue": "Via Roma 123, Milano",
-    "saveSettings": "Salva Impostazioni"
+    "saveSettings": "Salva Impostazioni",
+    "merchantIdRequired": "L'ID esercente è obbligatorio.",
+    "merchantSettings": "Configurazione commerciante"
   },
   "merchantDashboard": {
     "totalActiveCards": "Totale Carte Attive",

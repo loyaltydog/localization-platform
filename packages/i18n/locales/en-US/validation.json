@@ -1,183 +1,183 @@
 {
-    "required": "{{field}} is required",
-    "minLength": "{{field}} must be at least {{min}} characters",
-    "maxLength": "{{field}} must be no more than {{max}} characters",
-    "invalidEmail": "Please enter a valid email address",
-    "invalidPhone": "Please enter a valid phone number",
-    "invalidUrl": "Please enter a valid URL",
-    "passwordMismatch": "Passwords do not match",
-    "invalidNumber": "Please enter a valid number",
-    "minValue": "{{field}} must be at least {{value}}",
-    "maxValue": "{{field}} must be no more than {{value}}",
-    "invalidDate": "Please enter a valid date",
-    "futureDate": "{{field}} must be in the future",
-    "pastDate": "{{field}} must be in the past",
-    "fields": {
-        "name": "Name",
-        "email": "Email",
-        "phone": "Phone",
-        "address": "Address",
-        "city": "City",
-        "state": "State",
-        "zip": "ZIP Code",
-        "country": "Country",
-        "password": "Password",
-        "confirmPassword": "Confirm Password",
-        "points": "Points",
-        "rewardName": "Reward Name",
-        "description": "Description",
-        "message": "Message"
-    },
-    "required_field": "This field is required",
-    "required_email": "Email is required",
-    "required_password": "Password is required",
-    "required_name": "Name is required",
-    "required_phone": "Phone number is required",
-    "required_amount": "Amount is required",
-    "required_date": "Date is required",
-    "required_selection": "Please make a selection",
-    "format": {
-        "email": "Please enter a valid email address",
-        "phone": "Please enter a valid phone number",
-        "url": "Please enter a valid URL",
-        "date": "Please enter a valid date",
-        "time": "Please enter a valid time",
-        "number": "Please enter a valid number",
-        "integer": "Please enter a whole number",
-        "decimal": "Please enter a valid decimal number",
-        "postalCode": "Please enter a valid postal code",
-        "creditCard": "Please enter a valid card number",
-        "cvv": "Please enter a valid CVV",
-        "expiryDate": "Please enter a valid expiry date (MM\/YY)"
-    },
-    "length": {
-        "min": "Must be at least {{min}} characters",
-        "max": "Must be no more than {{max}} characters",
-        "exact": "Must be exactly {{length}} characters",
-        "between": "Must be between {{min}} and {{max}} characters"
-    },
-    "range": {
-        "min": "Must be at least {{min}}",
-        "max": "Must be no more than {{max}}",
-        "between": "Must be between {{min}} and {{max}}"
-    },
-    "password": {
-        "tooShort": "Password must be at least {{min}} characters",
-        "tooWeak": "Password is too weak",
-        "requiresUppercase": "Password must contain at least one uppercase letter",
-        "requiresLowercase": "Password must contain at least one lowercase letter",
-        "requiresNumber": "Password must contain at least one number",
-        "requiresSpecial": "Password must contain at least one special character",
-        "noMatch": "Passwords do not match",
-        "sameAsCurrent": "New password must be different from current password"
-    },
-    "file": {
-        "required": "Please select a file",
-        "tooLarge": "File size must be less than {{maxSize}}",
-        "invalidType": "Invalid file type. Allowed types: {{allowedTypes}}",
-        "tooMany": "Maximum {{max}} files allowed"
-    },
-    "date": {
-        "invalid": "Please enter a valid date",
-        "past": "Date must be in the past",
-        "future": "Date must be in the future",
-        "before": "Date must be before {{date}}",
-        "after": "Date must be after {{date}}",
-        "range": "Date must be between {{startDate}} and {{endDate}}"
-    },
-    "custom": {
-        "unique": "This value is already in use",
-        "exists": "This value does not exist",
-        "mismatch": "Values do not match",
-        "invalid": "Invalid value",
-        "unavailable": "This value is not available"
-    },
-    "points": {
-        "insufficient": "Insufficient points. You need {{required}} but have {{available}}.",
-        "minimum": "Minimum {{min}} points required",
-        "maximum": "Maximum {{max}} points allowed"
-    },
-    "member": {
-        "emailTaken": "This email is already registered",
-        "phoneTaken": "This phone number is already registered",
-        "invalidReferralCode": "Invalid referral code"
-    },
-    "common": {
-        "required": "This field is required",
-        "empty": "This field cannot be empty",
-        "invalid_format": "Invalid format",
-        "too_long": "Value exceeds maximum length",
-        "too_short": "Value is too short",
-        "invalid_url": "Invalid URL format",
-        "invalid_phone": "Invalid phone number format"
-    },
-    "account": {
-        "email_required": "Email address is required",
-        "email_invalid": "Invalid email address format",
-        "password_required": "Password is required",
-        "password_too_short": "Password must be at least 8 characters",
-        "password_empty": "Password cannot be empty",
-        "name_required": "Business name is required",
-        "domain_required": "Domain is required",
-        "domain_invalid": "Invalid domain format",
-        "guid_required": "GUID is required",
-        "guid_invalid": "Invalid GUID format"
-    },
-    "program": {
-        "program_id_required": "Program ID is required",
-        "program_not_found": "Program not found",
-        "program_inactive": "Program is not active"
-    },
-    "customer": {
-        "customer_id_required": "Customer ID is required",
-        "customer_not_found": "Customer not found",
-        "customer_email_required": "Customer email is required"
-    },
-    "offer": {
-        "offer_id_required": "Offer ID is required",
-        "offer_not_found": "Offer not found",
-        "offer_not_active": "Offer is not active",
-        "missing_offer_or_reward": "Missing required offer ID or reward ID"
-    },
-    "webhook": {
-        "missing_signature": "Missing x-loyaltydog-signature header",
-        "invalid_signature": "Invalid webhook signature",
-        "shopify_webhook_invalid": "Invalid Shopify webhook payload",
-        "wordpress_webhook_invalid": "Invalid WordPress webhook payload",
-        "body_too_large": "Request body exceeds maximum size"
-    },
-    "integration": {
-        "shopify_domain_required": "Shopify domain is required",
-        "shopify_domain_invalid": "Invalid Shopify domain format",
-        "shopify_hmac_invalid": "Shopify HMAC validation failed",
-        "clover_market_code_required": "Market code is required for Clover",
-        "wordpress_site_url_required": "WordPress site URL is required",
-        "wordpress_site_url_invalid": "Invalid WordPress site URL",
-        "eposnow_shop_id_required": "EPOS Now shop ID is required"
-    },
-    "security": {
-        "invalid_session": "Invalid session",
-        "session_expired": "Session expired",
-        "invalid_password": "Invalid password",
-        "rate_limit_exceeded": "Rate limit exceeded",
-        "forbidden": "Access forbidden"
-    },
-    "file_upload": {
-        "file_too_large": "File size exceeds maximum allowed size",
-        "invalid_file_type": "Invalid file type",
-        "file_required": "File is required"
-    },
-    "api": {
-        "invalid_version": "Invalid API version",
-        "endpoint_not_found": "API endpoint not found",
-        "method_not_allowed": "Method not allowed",
-        "unsupported_media_type": "Unsupported media type",
-        "request_timeout": "Request timeout",
-        "too_many_requests": "Too many requests"
-    },
+  "required": "{{field}} is required",
+  "minLength": "{{field}} must be at least {{min}} characters",
+  "maxLength": "{{field}} must be no more than {{max}} characters",
+  "invalidEmail": "Please enter a valid email address",
+  "invalidPhone": "Please enter a valid phone number",
+  "invalidUrl": "Please enter a valid URL",
+  "passwordMismatch": "Passwords do not match",
+  "invalidNumber": "Please enter a valid number",
+  "minValue": "{{field}} must be at least {{value}}",
+  "maxValue": "{{field}} must be no more than {{value}}",
+  "invalidDate": "Please enter a valid date",
+  "futureDate": "{{field}} must be in the future",
+  "pastDate": "{{field}} must be in the past",
+  "fields": {
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "city": "City",
+    "state": "State",
+    "zip": "ZIP Code",
+    "country": "Country",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "points": "Points",
+    "rewardName": "Reward Name",
+    "description": "Description",
+    "message": "Message"
+  },
+  "required_field": "This field is required",
+  "required_email": "Email is required",
+  "required_password": "Password is required",
+  "required_name": "Name is required",
+  "required_phone": "Phone number is required",
+  "required_amount": "Amount is required",
+  "required_date": "Date is required",
+  "required_selection": "Please make a selection",
+  "format": {
     "email": "Please enter a valid email address",
     "phone": "Please enter a valid phone number",
-    "min_length": "{{field}} must be at least {{min}} characters",
-    "shortPromotional": "Short promotional teaser for your program",
-    "legalNameBusiness": "Legal name of your business"
+    "url": "Please enter a valid URL",
+    "date": "Please enter a valid date",
+    "time": "Please enter a valid time",
+    "number": "Please enter a valid number",
+    "integer": "Please enter a whole number",
+    "decimal": "Please enter a valid decimal number",
+    "postalCode": "Please enter a valid postal code",
+    "creditCard": "Please enter a valid card number",
+    "cvv": "Please enter a valid CVV",
+    "expiryDate": "Please enter a valid expiry date (MM/YY)"
+  },
+  "length": {
+    "min": "Must be at least {{min}} characters",
+    "max": "Must be no more than {{max}} characters",
+    "exact": "Must be exactly {{length}} characters",
+    "between": "Must be between {{min}} and {{max}} characters"
+  },
+  "range": {
+    "min": "Must be at least {{min}}",
+    "max": "Must be no more than {{max}}",
+    "between": "Must be between {{min}} and {{max}}"
+  },
+  "password": {
+    "tooShort": "Password must be at least {{min}} characters",
+    "tooWeak": "Password is too weak",
+    "requiresUppercase": "Password must contain at least one uppercase letter",
+    "requiresLowercase": "Password must contain at least one lowercase letter",
+    "requiresNumber": "Password must contain at least one number",
+    "requiresSpecial": "Password must contain at least one special character",
+    "noMatch": "Passwords do not match",
+    "sameAsCurrent": "New password must be different from current password"
+  },
+  "file": {
+    "required": "Please select a file",
+    "tooLarge": "File size must be less than {{maxSize}}",
+    "invalidType": "Invalid file type. Allowed types: {{allowedTypes}}",
+    "tooMany": "Maximum {{max}} files allowed"
+  },
+  "date": {
+    "invalid": "Please enter a valid date",
+    "past": "Date must be in the past",
+    "future": "Date must be in the future",
+    "before": "Date must be before {{date}}",
+    "after": "Date must be after {{date}}",
+    "range": "Date must be between {{startDate}} and {{endDate}}"
+  },
+  "custom": {
+    "unique": "This value is already in use",
+    "exists": "This value does not exist",
+    "mismatch": "Values do not match",
+    "invalid": "Invalid value",
+    "unavailable": "This value is not available"
+  },
+  "points": {
+    "insufficient": "Insufficient points. You need {{required}} but have {{available}}.",
+    "minimum": "Minimum {{min}} points required",
+    "maximum": "Maximum {{max}} points allowed"
+  },
+  "member": {
+    "emailTaken": "This email is already registered",
+    "phoneTaken": "This phone number is already registered",
+    "invalidReferralCode": "Invalid referral code"
+  },
+  "common": {
+    "required": "This field is required",
+    "empty": "This field cannot be empty",
+    "invalid_format": "Invalid format",
+    "too_long": "Value exceeds maximum length",
+    "too_short": "Value is too short",
+    "invalid_url": "Invalid URL format",
+    "invalid_phone": "Invalid phone number format"
+  },
+  "account": {
+    "email_required": "Email address is required",
+    "email_invalid": "Invalid email address format",
+    "password_required": "Password is required",
+    "password_too_short": "Password must be at least 8 characters",
+    "password_empty": "Password cannot be empty",
+    "name_required": "Business name is required",
+    "domain_required": "Domain is required",
+    "domain_invalid": "Invalid domain format",
+    "guid_required": "GUID is required",
+    "guid_invalid": "Invalid GUID format"
+  },
+  "program": {
+    "program_id_required": "Program ID is required",
+    "program_not_found": "Program not found",
+    "program_inactive": "Program is not active"
+  },
+  "customer": {
+    "customer_id_required": "Customer ID is required",
+    "customer_not_found": "Customer not found",
+    "customer_email_required": "Customer email is required"
+  },
+  "offer": {
+    "offer_id_required": "Offer ID is required",
+    "offer_not_found": "Offer not found",
+    "offer_not_active": "Offer is not active",
+    "missing_offer_or_reward": "Missing required offer ID or reward ID"
+  },
+  "webhook": {
+    "missing_signature": "Missing x-loyaltydog-signature header",
+    "invalid_signature": "Invalid webhook signature",
+    "shopify_webhook_invalid": "Invalid Shopify webhook payload",
+    "wordpress_webhook_invalid": "Invalid WordPress webhook payload",
+    "body_too_large": "Request body exceeds maximum size"
+  },
+  "integration": {
+    "shopify_domain_required": "Shopify domain is required",
+    "shopify_domain_invalid": "Invalid Shopify domain format",
+    "shopify_hmac_invalid": "Shopify HMAC validation failed",
+    "clover_market_code_required": "Market code is required for Clover",
+    "wordpress_site_url_required": "WordPress site URL is required",
+    "wordpress_site_url_invalid": "Invalid WordPress site URL",
+    "eposnow_shop_id_required": "EPOS Now shop ID is required"
+  },
+  "security": {
+    "invalid_session": "Invalid session",
+    "session_expired": "Session expired",
+    "invalid_password": "Invalid password",
+    "rate_limit_exceeded": "Rate limit exceeded",
+    "forbidden": "Access forbidden"
+  },
+  "file_upload": {
+    "file_too_large": "File size exceeds maximum allowed size",
+    "invalid_file_type": "Invalid file type",
+    "file_required": "File is required"
+  },
+  "api": {
+    "invalid_version": "Invalid API version",
+    "endpoint_not_found": "API endpoint not found",
+    "method_not_allowed": "Method not allowed",
+    "unsupported_media_type": "Unsupported media type",
+    "request_timeout": "Request timeout",
+    "too_many_requests": "Too many requests"
+  },
+  "email": "Please enter a valid email address",
+  "phone": "Please enter a valid phone number",
+  "min_length": "{{field}} must be at least {{min}} characters",
+  "shortPromotional": "Short promotional teaser for your program",
+  "legalNameBusiness": "Legal name of your business"
 }
