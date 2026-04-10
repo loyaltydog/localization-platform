@@ -23,7 +23,7 @@
     "title": "{{campaignName}}"
   },
   "sms": {
-    "welcome": "Welcome to {{merchantName}}! You've joined our loyalty program. Start earning points today!",
+    "welcome": "Welcome to {{merchantName}}! You've joined our loyalty programme. Start earning points today!",
     "pointsEarned": "You earned {{points}} pts at {{merchantName}}! Balance: {{balance}} pts",
     "rewardReady": "{{memberName}}, your reward is ready! {{rewardName}} - show this at checkout",
     "rewardExpiring": "Don't forget! Your {{rewardName}} expires {{expiryDate}}. Visit {{merchantName}} soon!",
@@ -37,7 +37,7 @@
   "push": {
     "welcome": {
       "title": "Welcome to {{merchantName}}!",
-      "body": "You've joined our loyalty program. Start earning points today!"
+      "body": "You've joined our loyalty programme. Start earning points today!"
     },
     "pointsEarned": {
       "title": "Points Earned!",
@@ -98,7 +98,7 @@
   "hangTight": "Hang tight! We're getting everything ready for you...",
   "welcomeDashboard": "Welcome to the Loyalty Dashboard!",
   "rewardingExperience": "Embark on a rewarding experience with our Loyalty Dashboard!",
-  "beginJourney": "Begin your journey by effortlessly adding a Pass Type ID and kick-start your personalized loyalty program.",
+  "beginJourney": "Begin your journey by effortlessly adding a Pass Type ID and kick-start your personalized loyalty programme.",
   "simplicity": "Discover the simplicity of getting started and enjoy exclusive benefits tailored just for you.",
   "somethingWentWrong": "Something went wrong! We are already working to solve the problem.",
   "loadingData": "Loading data...",
@@ -108,15 +108,15 @@
   "yesConfirmDelete": "Yes, confirm delete",
   "warning": "Warning",
   "abort": "Abort",
-  "askAboutLoyalty": "Ask about your loyalty program...",
+  "askAboutLoyalty": "Ask about your loyalty programme...",
   "retry": "Retry",
   "welcomeAdvisor": "Welcome to your Loyalty Dog AI Business Advisor!",
-  "analyzedData": "I've analyzed your transaction data and I'm ready to help you optimize your loyalty program.",
-  "performanceAnalysis": "Performance Analysis - How your loyalty program is performing",
+  "analyzedData": "I've analyzed your transaction data and I'm ready to help you optimize your loyalty programme.",
+  "performanceAnalysis": "Performance Analysis - How your loyalty programme is performing",
   "campaignRecommendations": "Campaign Recommendations - Birthday sales, punch cards, holiday promotions",
   "memberInsights": "Member Insights - Engagement patterns and retention strategies",
   "productAnalysis": "Product Analysis - Which products drive loyalty sign-ups",
-  "wouldYouLike": "What would you like to know about your loyalty program?",
+  "wouldYouLike": "What would you like to know about your loyalty programme?",
   "totalTransactions": "Total Transactions",
   "memberParticipation": "Member Participation",
   "totalRevenue": "Total Revenue",

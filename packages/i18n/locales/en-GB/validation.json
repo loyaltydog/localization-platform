@@ -124,9 +124,9 @@
     "guid_invalid": "Invalid GUID format"
   },
   "program": {
-    "program_id_required": "Program ID is required",
-    "program_not_found": "Program not found",
-    "program_inactive": "Program is not active"
+    "program_id_required": "Programme ID is required",
+    "program_not_found": "Programme not found",
+    "program_inactive": "Programme is not active"
   },
   "customer": {
     "customer_id_required": "Customer ID is required",
@@ -178,6 +178,6 @@
   "email": "Please enter a valid email address",
   "phone": "Please enter a valid phone number",
   "min_length": "{{field}} must be at least {{min}} characters",
-  "shortPromotional": "Short promotional teaser for your program",
+  "shortPromotional": "Short promotional teaser for your programme",
   "legalNameBusiness": "Legal name of your business"
 }
