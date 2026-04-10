@@ -62,7 +62,6 @@
     "customize": "Personalizzazione",
     "duplicate": "Duplicato",
     "publish": "Pubblicare",
-    "cancelAction": "Annullamento",
     "view": "Vista",
     "returnHome": "Ritorno a casa",
     "open": "Aperto",
@@ -280,71 +279,71 @@
   },
   "messages": {
     "loading": "Caricamento...",
-    "saving": "Risparmio...",
+    "saving": "Salvataggio...",
     "noResults": "Nessun risultato trovato",
     "noData": "Nessun dato disponibile",
-    "confirmDelete": "Sei sicuro di volerlo cancellare?",
-    "unsavedChanges": "Ci sono cambiamenti non salvati. È sicuro di volersene andare?",
+    "confirmDelete": "Sei sicuro di voler eliminare questo elemento?",
+    "unsavedChanges": "Hai modifiche non salvate. Sei sicuro di voler uscire?",
     "success": "Operazione completata con successo",
-    "error": "Si è verificato un errore. Si prega di riprovare.",
-    "welcome": "Benvenuti su LoyaltyDog!",
-    "thankYou": "Grazie per aver scelto di aggiungere LoyaltyDog.",
-    "settingUp": "Stiamo predisponendo il portale di gestione LoyaltyDog per il vostro utilizzo.",
-    "contactManager": "Non appena sarà pronto, il vostro Account Manager dedicato vi contatterà per assicurarsi che siate configurati e pronti a partire.",
-    "contactEmail": "Se nel frattempo avete domande, non esitate a inviarmi un'e-mail all'indirizzo",
-    "moreMoney": "Più soldi, più clienti, più transazioni",
+    "error": "Si è verificato un errore. Riprova.",
+    "welcome": "Benvenuto in LoyaltyDog!",
+    "thankYou": "Grazie per aver scelto LoyaltyDog.",
+    "settingUp": "Stiamo configurando il portale di gestione LoyaltyDog per il tuo utilizzo.",
+    "contactManager": "Non appena sarà pronto, il tuo account manager dedicato ti contatterà e si assicurerà che tutto sia configurato e pronto per iniziare.",
+    "contactEmail": "Se nel frattempo hai domande, non esitare a inviarmi un'e-mail a",
+    "moreMoney": "Più soldi; più clienti; più transazioni",
     "loyaltyTeam": "Il team di LoyaltyDog",
-    "oops": "Ooops!",
+    "oops": "Oops!",
     "somethingWentWrong": "Qualcosa è andato storto! Stiamo già lavorando per risolvere il problema.",
-    "noQualifiedCustomers": "Non avete clienti qualificati.",
+    "noQualifiedCustomers": "Non hai clienti qualificati.",
     "customerDeleted": "Salvato con successo",
     "submitOrSave": "Invia",
-    "noCancel": "No, annullare",
-    "yesConfirmDelete": "Sì, confermare l'eliminazione",
-    "confirmDeleteCustomer": "Siete sicuri di voler eliminare questo cliente dal programma fedeltà?",
-    "confirmDeleteOffer": "È sicuro di voler eliminare questa offerta?",
-    "warning": "Avvertenze",
-    "deleteWarning": "Tutti i contenuti di questo cliente saranno eliminati in modo permanente. Questa azione non può essere annullata.",
-    "analyzing": "Analizzare...",
-    "abort": "Interruzione",
-    "askAboutLoyalty": "Chiedete del vostro programma di fidelizzazione...",
-    "tryAsking": "Provate a chiedere:",
-    "howIsProgram": "Come si comporta il mio programma fedeltà?",
-    "whatCampaign": "Che campagna devo fare per i membri inattivi?",
-    "analyzeSpending": "Analizzare i modelli di spesa dei miei membri",
-    "birthdayCampaign": "Consigliare una strategia per la campagna di compleanno",
+    "noCancel": "No, annulla",
+    "yesConfirmDelete": "Sì, conferma eliminazione",
+    "confirmDeleteCustomer": "Sei sicuro di voler eliminare questo cliente dal programma fedeltà?",
+    "confirmDeleteOffer": "Sei sicuro di voler eliminare questa offerta?",
+    "warning": "Avviso",
+    "deleteWarning": "Tutti i contenuti di questo cliente saranno eliminati definitivamente. Questa azione non può essere annullata.",
+    "analyzing": "Analisi in corso...",
+    "abort": "Annulla",
+    "askAboutLoyalty": "Chiedi informazioni sul tuo programma fedeltà...",
+    "tryAsking": "Prova a chiedere:",
+    "howIsProgram": "Come sta andando il mio programma fedeltà?",
+    "whatCampaign": "Quale campagna dovrei lanciare per i membri inattivi?",
+    "analyzeSpending": "Analizza i modelli di spesa dei miei membri",
+    "birthdayCampaign": "Consigliami una strategia per una campagna di compleanno",
     "whichProducts": "Quali prodotti funzionano meglio per la fidelizzazione?",
-    "improveRetention": "Come posso migliorare la fidelizzazione dei soci?",
-    "welcomeAdvisor": "Benvenuti nel vostro Loyalty Dog AI Business Advisor!",
-    "analyzedData": "Ho analizzato i dati delle vostre transazioni e sono pronto ad aiutarvi a ottimizzare il vostro programma fedeltà. Ecco come posso aiutarvi:",
-    "performanceAnalysis": "Analisi delle prestazioni: come si sta svolgendo il vostro programma di fidelizzazione",
-    "campaignRecommendations": "Raccomandazioni per le campagne - Vendite per i compleanni, schede perforate, promozioni per le festività",
-    "memberInsights": "Approfondimenti sui soci - Modelli di coinvolgimento e strategie di fidelizzazione",
-    "productAnalysis": "Analisi dei prodotti - Quali sono i prodotti che spingono le sottoscrizioni alla fedeltà?",
-    "wouldYouLike": "Cosa vorreste sapere sul vostro programma di fidelizzazione?",
+    "improveRetention": "Come posso migliorare la fidelizzazione dei membri?",
+    "welcomeAdvisor": "Benvenuto nel tuo Consulente Aziendale IA Loyalty Dog!",
+    "analyzedData": "Ho analizzato i dati delle tue transazioni e sono pronto ad aiutarti a ottimizzare il tuo programma fedeltà. Ecco in cosa posso aiutarti:",
+    "performanceAnalysis": "Analisi delle prestazioni - Come sta andando il tuo programma fedeltà",
+    "campaignRecommendations": "Raccomandazioni per le campagne - Vendite di compleanno, carte a timbri, promozioni festive",
+    "memberInsights": "Approfondimenti sui membri - Modelli di coinvolgimento e strategie di fidelizzazione",
+    "productAnalysis": "Analisi dei prodotti - Quali prodotti favoriscono le iscrizioni al programma fedeltà",
+    "wouldYouLike": "Cosa ti piacerebbe sapere sul tuo programma fedeltà?",
     "failedResponse": "Impossibile ottenere una risposta dall'IA",
-    "unexpectedError": "Si è verificato un errore inatteso.",
-    "aiResponse": "🐕 Consulente aziendale AI cane fedele",
-    "totalTransactions": "Totale transazioni",
+    "unexpectedError": "Si è verificato un errore imprevisto.",
+    "aiResponse": "🐕 Consulente Aziendale IA Loyalty Dog",
+    "totalTransactions": "Transazioni totali",
     "memberParticipation": "Partecipazione dei membri",
     "totalRevenue": "Ricavi totali",
     "dateRangeTx": "{{count}} tx",
     "retry": "Riprova",
-    "dontHaveQualified": "Non avete clienti qualificati.",
+    "dontHaveQualified": "Non hai clienti qualificati.",
     "today": "oggi",
     "yesterday": "ieri",
     "thisWeek": "questa settimana",
     "days": "giorni",
     "warningMessage": "⚠️",
     "last": "ultimo",
-    "oopsError": "Ooops!",
-    "welcomeDashboard": "Benvenuti nel Cruscotto Fedeltà!",
-    "rewardingExperience": "Iniziate un'esperienza gratificante con la nostra Loyalty Dashboard!",
-    "beginJourney": "Iniziate il vostro viaggio aggiungendo facilmente un ID di tipo Pass e date il via al vostro programma fedeltà personalizzato.",
-    "simplicity": "Scoprite la semplicità di iniziare e godete di vantaggi esclusivi pensati su misura per voi.",
-    "hangTight": "Tenetevi forte! Stiamo preparando tutto per voi...",
+    "oopsError": "Oops!",
+    "welcomeDashboard": "Benvenuto nella Dashboard Fedeltà!",
+    "rewardingExperience": "Vivi un'esperienza gratificante con la nostra Dashboard Fedeltà!",
+    "beginJourney": "Inizia il tuo percorso aggiungendo facilmente un ID tipo pass e avvia il tuo programma fedeltà personalizzato.",
+    "simplicity": "Scopri quanto è semplice iniziare e goditi vantaggi esclusivi pensati apposta per te.",
+    "hangTight": "Aspetta un attimo! Stiamo preparando tutto per te...",
     "pleaseWait": "Attendere prego...",
-    "chooseScheme": "Scegliete uno dei nostri schemi già pronti o costruite il vostro schema di fidelizzazione personalizzato"
+    "chooseScheme": "Scegli uno dei nostri schemi già pronti oppure crea il tuo programma fedeltà personalizzato"
   },
   "pagination": {
     "showing": "Mostra da {{start}} a {{end}} di {{total}}",
@@ -1341,86 +1340,6 @@
     "newpass": {
       "values": "Valori"
     },
-    "verification": {
-      "title": "Issuers",
-      "scanners": {
-        "title": "Scanners",
-        "pages": {
-          "list": "Elenco",
-          "new": "Nuovo scanner",
-          "view": "Scanner"
-        },
-        "table": {
-          "type": "Tipo",
-          "name": "Nome",
-          "authToken": "Token autenticazione / PIN",
-          "allowedTemplates": "Modelli consentiti",
-          "actions": "Azioni"
-        },
-        "actions": {
-          "create": "Crea",
-          "edit": "Modifica",
-          "delete": "Elimina"
-        },
-        "form": {
-          "type": "Tipo",
-          "name": "Nome",
-          "pin": "PIN",
-          "fullAccess": "Accesso completo",
-          "allowedTemplates": "Modelli consentiti",
-          "submitButton": "Invia",
-          "savingButton": "Attendi...",
-          "cancelButton": "Annulla"
-        },
-        "delete": {
-          "title": "Elimina",
-          "message": "Sei sicuro di voler eliminare questo scanner di tessere?"
-        },
-        "empty": "Vuoto",
-        "scannerTypes": {
-          "browser": "Browser",
-          "codereadr": "CodeReadr"
-        }
-      },
-      "recentScans": {
-        "title": "Scansioni recenti",
-        "pidNumber": "Numero PID",
-        "time": "Ora",
-        "scanner": "Scanner",
-        "action": "Azione",
-        "details": "Dettagli",
-        "noScans": "Nessuna scansione",
-        "unknown": "Sconosciuto"
-      }
-    },
-    "webhooks": {
-      "pages": {
-        "new": "Nuovo webhook",
-        "view": "Webhook #{{webhookId}}"
-      },
-      "table": {
-        "url": "URL",
-        "sharedSecret": "Segreto condiviso",
-        "status": "Stato",
-        "actions": "Azioni",
-        "noWebhooks": "Nessun webhook",
-        "disabled": "Disabilitato",
-        "enabled": "Abilitato",
-        "pendingVerification": "Verifica in sospeso",
-        "disable": "Disabilita",
-        "enable": "Abilita",
-        "deleteConfirm": "Sei sicuro di voler eliminare questo webhook?"
-      },
-      "form": {
-        "url": "URL",
-        "allPassTemplates": "Tutti i modelli di tessera",
-        "passTemplates": "Modelli tessera",
-        "allEventTypes": "Tutti i tipi di evento",
-        "eventTypes": "Tipi di evento",
-        "sharedSecret": "Segreto condiviso",
-        "pleaseWait": "Attendi..."
-      }
-    },
     "account": {
       "overview": {
         "passTemplates": "Modelli tessera",
@@ -1548,7 +1467,14 @@
       "publishButton": "Pubblica",
       "cancelButton": "Annulla Offerta",
       "publish": "Pubblica",
-      "cancel": "Annulla"
+      "cancel": "Annulla",
+      "status": {
+        "draft": "Bozza",
+        "scheduled": "Pianificata",
+        "live": "Attiva",
+        "canceled": "Annullata",
+        "ended": "Terminata"
+      }
     },
     "vouchers": {
       "title": "Buoni",
@@ -1563,7 +1489,14 @@
       "publishButton": "Pubblica",
       "cancelButton": "Annulla Buono",
       "publish": "Pubblica",
-      "cancel": "Annulla"
+      "cancel": "Annulla",
+      "status": {
+        "draft": "Bozza",
+        "scheduled": "Pianificato",
+        "live": "Attivo",
+        "canceled": "Annullato",
+        "ended": "Terminato"
+      }
     },
     "reports": {
       "title": "Report",
@@ -1651,11 +1584,85 @@
     }
   },
   "verification": {
+    "title": "Issuers",
     "scanners": {
+      "title": "Scanners",
       "pages": {
+        "list": "Elenco",
+        "new": "Nuovo scanner",
         "view": "Aggiorna Scanner",
         "notFound": "Scanner non trovato."
+      },
+      "table": {
+        "type": "Tipo",
+        "name": "Nome",
+        "authToken": "Token autenticazione / PIN",
+        "allowedTemplates": "Modelli consentiti",
+        "actions": "Azioni"
+      },
+      "actions": {
+        "create": "Crea",
+        "edit": "Modifica",
+        "delete": "Elimina"
+      },
+      "form": {
+        "type": "Tipo",
+        "name": "Nome",
+        "pin": "PIN",
+        "fullAccess": "Accesso completo",
+        "allowedTemplates": "Modelli consentiti",
+        "submitButton": "Invia",
+        "savingButton": "Attendi...",
+        "cancelButton": "Annulla"
+      },
+      "delete": {
+        "title": "Elimina",
+        "message": "Sei sicuro di voler eliminare questo scanner di tessere?"
+      },
+      "empty": "Vuoto",
+      "scannerTypes": {
+        "browser": "Browser",
+        "codereadr": "CodeReadr"
       }
+    },
+    "recentScans": {
+      "title": "Scansioni recenti",
+      "pidNumber": "Numero PID",
+      "time": "Ora",
+      "scanner": "Scanner",
+      "action": "Azione",
+      "details": "Dettagli",
+      "noScans": "Nessuna scansione",
+      "unknown": "Sconosciuto"
+    },
+    "fetchError": "Failed to load data. Please try again."
+  },
+  "webhooks": {
+    "pages": {
+      "new": "Nuovo webhook",
+      "view": "Webhook #{{webhookId}}"
+    },
+    "table": {
+      "url": "URL",
+      "sharedSecret": "Segreto condiviso",
+      "status": "Stato",
+      "actions": "Azioni",
+      "noWebhooks": "Nessun webhook",
+      "disabled": "Disabilitato",
+      "enabled": "Abilitato",
+      "pendingVerification": "Verifica in sospeso",
+      "disable": "Disabilita",
+      "enable": "Abilita",
+      "deleteConfirm": "Sei sicuro di voler eliminare questo webhook?"
+    },
+    "form": {
+      "url": "URL",
+      "allPassTemplates": "Tutti i modelli di tessera",
+      "passTemplates": "Modelli tessera",
+      "allEventTypes": "Tutti i tipi di evento",
+      "eventTypes": "Tipi di evento",
+      "sharedSecret": "Segreto condiviso",
+      "pleaseWait": "Attendi..."
     }
   }
 }

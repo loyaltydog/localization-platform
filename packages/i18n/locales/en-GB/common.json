@@ -62,7 +62,6 @@
     "customize": "Customize",
     "duplicate": "Duplicate",
     "publish": "Publish",
-    "cancelAction": "Cancel",
     "view": "View",
     "returnHome": "Return Home",
     "open": "Open",
@@ -288,10 +287,10 @@
     "success": "Operation completed successfully",
     "error": "An error occurred. Please try again.",
     "welcome": "Welcome to LoyaltyDog!",
-    "thankYou": "Thank you for choosing to add LoyaltyDog.",
+    "thankYou": "Thank you for choosing LoyaltyDog.",
     "settingUp": "We are now setting up the LoyaltyDog Management Portal for your use.",
-    "contactManager": "As soon as it is ready your dedicated Account Manager will contact you and make sure that you are set up and ready to go.",
-    "contactEmail": "If you have any questions in the meantime please feel free to email me at",
+    "contactManager": "As soon as it is ready, your dedicated Account Manager will contact you and make sure that you are set up and ready to go.",
+    "contactEmail": "If you have any questions in the meantime, please feel free to email me at",
     "moreMoney": "More Money; More Customers; More Transactions",
     "loyaltyTeam": "The LoyaltyDog Team",
     "oops": "Ooops!",
@@ -344,7 +343,7 @@
     "simplicity": "Discover the simplicity of getting started and enjoy exclusive benefits tailored just for you.",
     "hangTight": "Hang tight! We're getting everything ready for you...",
     "pleaseWait": "Please wait...",
-    "chooseScheme": "Choose from one of our ready made schemes above or build your own custom loyalty scheme"
+    "chooseScheme": "Choose from one of our ready-made schemes above or build your own custom loyalty scheme"
   },
   "pagination": {
     "showing": "Showing {{start}} to {{end}} of {{total}}",
@@ -1341,86 +1340,6 @@
     "newpass": {
       "values": "Values"
     },
-    "verification": {
-      "title": "Issuers",
-      "scanners": {
-        "title": "Scanners",
-        "pages": {
-          "list": "Scanners",
-          "new": "New Scanner",
-          "view": "Scanner"
-        },
-        "table": {
-          "type": "Type",
-          "name": "Name",
-          "authToken": "Authentication Token / PIN",
-          "allowedTemplates": "Allowed Templates",
-          "actions": "Actions"
-        },
-        "actions": {
-          "create": "Create Scanner",
-          "edit": "Edit Scanner",
-          "delete": "Delete"
-        },
-        "form": {
-          "type": "Type",
-          "name": "Name",
-          "pin": "PIN",
-          "fullAccess": "Full Access",
-          "allowedTemplates": "Allowed Templates",
-          "submitButton": "Submit",
-          "savingButton": "Please wait...",
-          "cancelButton": "Cancel"
-        },
-        "delete": {
-          "title": "Delete",
-          "message": "Are you sure you want to delete this pass scanner?"
-        },
-        "empty": "No Scanner",
-        "scannerTypes": {
-          "browser": "Browser",
-          "codereadr": "CodeReadr"
-        }
-      },
-      "recentScans": {
-        "title": "Recent Scans",
-        "pidNumber": "PID Number",
-        "time": "Time",
-        "scanner": "Scanner",
-        "action": "Action",
-        "details": "Details",
-        "noScans": "No scans",
-        "unknown": "Unknown"
-      }
-    },
-    "webhooks": {
-      "pages": {
-        "new": "New Webhook",
-        "view": "Webhook #{{webhookId}}"
-      },
-      "table": {
-        "url": "URL",
-        "sharedSecret": "Shared Secret",
-        "status": "Status",
-        "actions": "Actions",
-        "noWebhooks": "No Webhooks",
-        "disabled": "Disabled",
-        "enabled": "Enabled",
-        "pendingVerification": "Pending Verification",
-        "disable": "Disable",
-        "enable": "Enable",
-        "deleteConfirm": "Are you sure you want to delete this webhook?"
-      },
-      "form": {
-        "url": "URL",
-        "allPassTemplates": "All Pass Templates",
-        "passTemplates": "Pass Templates",
-        "allEventTypes": "All Event Types",
-        "eventTypes": "Event Types",
-        "sharedSecret": "Shared Secret",
-        "pleaseWait": "Please wait..."
-      }
-    },
     "account": {
       "overview": {
         "passTemplates": "Pass Templates",
@@ -1548,7 +1467,14 @@
       "publishButton": "Publish",
       "cancelButton": "Cancel Offer",
       "publish": "Publish",
-      "cancel": "Cancel"
+      "cancel": "Cancel",
+      "status": {
+        "draft": "Draft",
+        "scheduled": "Scheduled",
+        "live": "Live",
+        "canceled": "Cancelled",
+        "ended": "Ended"
+      }
     },
     "vouchers": {
       "title": "Vouchers",
@@ -1563,7 +1489,14 @@
       "publishButton": "Publish",
       "cancelButton": "Cancel Voucher",
       "publish": "Publish",
-      "cancel": "Cancel"
+      "cancel": "Cancel",
+      "status": {
+        "draft": "Draft",
+        "scheduled": "Scheduled",
+        "live": "Live",
+        "canceled": "Cancelled",
+        "ended": "Ended"
+      }
     },
     "reports": {
       "title": "Reports",
@@ -1651,11 +1584,85 @@
     }
   },
   "verification": {
+    "title": "Issuers",
     "scanners": {
+      "title": "Scanners",
       "pages": {
+        "list": "Scanners",
+        "new": "New Scanner",
         "view": "Update Scanner",
         "notFound": "Scanner not found."
+      },
+      "table": {
+        "type": "Type",
+        "name": "Name",
+        "authToken": "Authentication Token / PIN",
+        "allowedTemplates": "Allowed Templates",
+        "actions": "Actions"
+      },
+      "actions": {
+        "create": "Create Scanner",
+        "edit": "Edit Scanner",
+        "delete": "Delete"
+      },
+      "form": {
+        "type": "Type",
+        "name": "Name",
+        "pin": "PIN",
+        "fullAccess": "Full Access",
+        "allowedTemplates": "Allowed Templates",
+        "submitButton": "Submit",
+        "savingButton": "Please wait...",
+        "cancelButton": "Cancel"
+      },
+      "delete": {
+        "title": "Delete",
+        "message": "Are you sure you want to delete this pass scanner?"
+      },
+      "empty": "No Scanner",
+      "scannerTypes": {
+        "browser": "Browser",
+        "codereadr": "CodeReadr"
       }
+    },
+    "recentScans": {
+      "title": "Recent Scans",
+      "pidNumber": "PID Number",
+      "time": "Time",
+      "scanner": "Scanner",
+      "action": "Action",
+      "details": "Details",
+      "noScans": "No scans",
+      "unknown": "Unknown"
+    },
+    "fetchError": "Failed to load data. Please try again."
+  },
+  "webhooks": {
+    "pages": {
+      "new": "New Webhook",
+      "view": "Webhook #{{webhookId}}"
+    },
+    "table": {
+      "url": "URL",
+      "sharedSecret": "Shared Secret",
+      "status": "Status",
+      "actions": "Actions",
+      "noWebhooks": "No Webhooks",
+      "disabled": "Disabled",
+      "enabled": "Enabled",
+      "pendingVerification": "Pending Verification",
+      "disable": "Disable",
+      "enable": "Enable",
+      "deleteConfirm": "Are you sure you want to delete this webhook?"
+    },
+    "form": {
+      "url": "URL",
+      "allPassTemplates": "All Pass Templates",
+      "passTemplates": "Pass Templates",
+      "allEventTypes": "All Event Types",
+      "eventTypes": "Event Types",
+      "sharedSecret": "Shared Secret",
+      "pleaseWait": "Please wait..."
     }
   }
 }
