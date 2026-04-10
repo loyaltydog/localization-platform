@@ -1341,34 +1341,6 @@
     "newpass": {
       "values": "Values"
     },
-    "webhooks": {
-      "pages": {
-        "new": "New Webhook",
-        "view": "Webhook #{{webhookId}}"
-      },
-      "table": {
-        "url": "URL",
-        "sharedSecret": "Shared Secret",
-        "status": "Status",
-        "actions": "Actions",
-        "noWebhooks": "No Webhooks",
-        "disabled": "Disabled",
-        "enabled": "Enabled",
-        "pendingVerification": "Pending Verification",
-        "disable": "Disable",
-        "enable": "Enable",
-        "deleteConfirm": "Are you sure you want to delete this webhook?"
-      },
-      "form": {
-        "url": "URL",
-        "allPassTemplates": "All Pass Templates",
-        "passTemplates": "Pass Templates",
-        "allEventTypes": "All Event Types",
-        "eventTypes": "Event Types",
-        "sharedSecret": "Shared Secret",
-        "pleaseWait": "Please wait..."
-      }
-    },
     "account": {
       "overview": {
         "passTemplates": "Pass Templates",
@@ -1651,5 +1623,33 @@
       "unknown": "Unknown"
     },
     "fetchError": "Failed to load data. Please try again."
+  },
+  "webhooks": {
+    "pages": {
+      "new": "New Webhook",
+      "view": "Webhook #{{webhookId}}"
+    },
+    "table": {
+      "url": "URL",
+      "sharedSecret": "Shared Secret",
+      "status": "Status",
+      "actions": "Actions",
+      "noWebhooks": "No Webhooks",
+      "disabled": "Disabled",
+      "enabled": "Enabled",
+      "pendingVerification": "Pending Verification",
+      "disable": "Disable",
+      "enable": "Enable",
+      "deleteConfirm": "Are you sure you want to delete this webhook?"
+    },
+    "form": {
+      "url": "URL",
+      "allPassTemplates": "All Pass Templates",
+      "passTemplates": "Pass Templates",
+      "allEventTypes": "All Event Types",
+      "eventTypes": "Event Types",
+      "sharedSecret": "Shared Secret",
+      "pleaseWait": "Please wait..."
+    }
   }
 }
