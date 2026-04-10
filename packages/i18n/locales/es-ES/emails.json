@@ -3,7 +3,7 @@
     "subject": "Bienvenido a {{merchantName}} ¡Programa de Fidelidad!",
     "body": "Hola {{memberName}}, Ya eres miembro del programa de fidelidad {{merchantName}} con {{points}} puntos para empezar. Descarga tu pase: {{passUrl}} ¡Empieza a ganar recompensas hoy mismo!",
     "greeting": "Hola {{memberName}},",
-    "pointsInfo": "Actualmente tienes {{puntos}} puntos en tu cuenta.",
+    "pointsInfo": "Actualmente tienes {{points}} puntos en tu cuenta.",
     "cta": "Ver sus premios",
     "footer": "¡Empieza a ganar puntos con cada compra!"
   },
@@ -12,11 +12,11 @@
     "body": "Enhorabuena {{memberName}} Has desbloqueado: {{rewardName}} Muéstralo al pagar para canjear tu recompensa. La recompensa caduca: {{expiryDate}}"
   },
   "pointsEarned": {
-    "subject": "¡Ganaste {{puntos}} puntos!",
+    "subject": "¡Ganaste {{points}} puntos!",
     "body": "¡Grandes noticias, {{memberName}}! Acabas de ganar {{points}} puntos en {{merchantName}}. Saldo actual: {{balance}} puntos ¡Sigue ganando para desbloquear recompensas!",
     "greeting": "Hola {{memberName}},",
     "transactionDetails": "Detalles de la transacción",
-    "amount": "Importe: {{importe}}",
+    "amount": "Importe: {{amount}}",
     "date": "Fecha: {{date}}",
     "newBalance": "Tu nuevo saldo es de {{balance}} puntos.",
     "cta": "Compruebe sus recompensas"
@@ -49,7 +49,7 @@
     "greeting": "Hola {{memberName}},",
     "body": "¡Has canjeado con éxito tu recompensa!",
     "rewardDetails": "Detalles de la recompensa",
-    "pointsUsed": "Puntos utilizados: {{puntos}}",
+    "pointsUsed": "Puntos utilizados: {{points}}",
     "remainingBalance": "Saldo restante: {{balance}} puntos",
     "instructions": "Muestre este correo electrónico al pagar para reclamar su recompensa.",
     "expiryNote": "Esta recompensa caduca el {{expiryDate}}.",
@@ -76,7 +76,7 @@
     "subject": "¡Te echamos de menos en {{merchantName}}!",
     "greeting": "Hola {{memberName}},",
     "body": "Ha pasado tiempo desde su última visita. Nos encantaría volver a verte",
-    "pointsReminder": "Tienes {{puntos}} puntos esperando a ser utilizados.",
+    "pointsReminder": "Tienes {{points}} puntos esperando a ser utilizados.",
     "cta": "Visítenos",
     "footer": "Tus puntos son valiosos: ¡no los desaproveches!"
   },
@@ -165,7 +165,7 @@
     "help_heading": "<strong>¿Necesita ayuda?</strong>",
     "help_contact": "Póngase en contacto con nosotros en <a href=\"mailto:support@loyalty.dog\">support@loyalty.dog</a> o visite <a href=\"https://loyalty.dog/contact\">loyalty.dog/contact</a>.",
     "website": "www.loyalty.dog",
-    "footer_copyright": "&copy; {{ año_actual }} LoyaltyDog. Todos los derechos reservados."
+    "footer_copyright": "&copy; {{ current_year }} LoyaltyDog. Todos los derechos reservados."
   },
   "password_reset": {
     "subject": "Restablecer contraseña",
@@ -256,8 +256,8 @@
     "footer_copyright": "&copy; 2025 LoyaltyDog. Todos los derechos reservados."
   },
   "transaction_summary": {
-    "subject": "{{ proveedor }} Resumen de transacciones",
-    "message_1": "{{ proveedor }} Resumen de transacciones para todos los programas",
+    "subject": "{{ provider }} Resumen de transacciones",
+    "message_1": "{{ provider }} Resumen de transacciones para todos los programas",
     "message_2": "Puede descargar el informe en el siguiente enlace",
     "download_link": "{{ url }}",
     "footer_copyright": "&copy; 2025 LoyaltyDog. Todos los derechos reservados."

@@ -24,14 +24,14 @@
   },
   "sms": {
     "welcome": "¡Bienvenido a {{merchantName}}! Te has unido a nuestro programa de fidelidad. ¡Empieza a ganar puntos hoy mismo!",
-    "pointsEarned": "¡Has ganado {{puntos}} pts en {{merchantName}}! Balance: {{balance}} pts",
+    "pointsEarned": "¡Has ganado {{points}} pts en {{merchantName}}! Balance: {{balance}} pts",
     "rewardReady": "{{memberName}}, ¡tu recompensa está lista! {{rewardName}} - mostrar esto en la caja",
     "rewardExpiring": "No lo olvides Tu {{rewardName}} caduca el {{expiryDate}}. ¡Visita {{merchantName}} pronto!",
     "birthdayReward": "¡Feliz cumpleaños {{memberName}}! {{merchantName}} tiene un regalo para ti. ¡Comprueba tus recompensas!",
     "tierUpgrade": "¡Felicidades {{memberName}}! Ahora eres {{tierName}} en {{merchantName}}. ¡Disfruta de tus nuevos beneficios!",
     "pointsExpiring": "{{points}} pts que caducan en {{expiryDate}} en {{merchantName}}. ¡Úsalos antes de que se acaben!",
-    "inactivityReminder": "¡Te echamos de menos {{memberName}}! Tienes {{puntos}} en {{merchantName}}. ¡Ven a visitarnos!",
-    "promoAlert": "{{merchantName}}: {{promoMensaje}}",
+    "inactivityReminder": "¡Te echamos de menos {{memberName}}! Tienes {{points}} en {{merchantName}}. ¡Ven a visitarnos!",
+    "promoAlert": "{{merchantName}}: {{promoMessage}}",
     "verificationCode": "Su código de verificación {{merchantName}} es: {{code}}"
   },
   "push": {
@@ -41,7 +41,7 @@
     },
     "pointsEarned": {
       "title": "Puntos ganados",
-      "body": "Has ganado {{puntos}} puntos. Balance: {{balance}}"
+      "body": "Has ganado {{points}} puntos. Balance: {{balance}}"
     },
     "rewardReady": {
       "title": "¡Preparados para la recompensa!",
@@ -61,11 +61,11 @@
     },
     "pointsExpiring": {
       "title": "Puntos que caducan",
-      "body": "{{puntos}} los puntos caducan {{expiryDate}}"
+      "body": "{{points}} los puntos caducan {{expiryDate}}"
     },
     "nearbyStore": {
       "title": "¡Estás cerca de {{merchantName}}!",
-      "body": "Tienes {{puntos}} puntos. ¡Ven a visitarnos!"
+      "body": "Tienes {{points}} puntos. ¡Ven a visitarnos!"
     },
     "newReward": {
       "title": "Nueva recompensa disponible",
@@ -77,7 +77,7 @@
     },
     "stampEarned": {
       "title": "Sello ganado",
-      "body": "{{sellosRecogidos}}/{{sellosRequeridos}} - {{sellosRemanentes}} ¡faltan más!"
+      "body": "{{stampsCollected}}/{{stampsRequired}} - {{stampsRemaining}} ¡faltan más!"
     },
     "stampCardComplete": {
       "title": "Tarjeta Sello ¡Completada!",
@@ -86,7 +86,7 @@
   },
   "inApp": {
     "welcome": "Bienvenido Empieza a ganar puntos con cada compra.",
-    "pointsEarned": "+{{puntos}} puntos ganados",
+    "pointsEarned": "+{{points}} puntos ganados",
     "rewardRedeemed": "{{rewardName}} canjeado con éxito",
     "tierUpgrade": "¡Has alcanzado el estado {{tierName}}!",
     "newRewardUnlocked": "Nueva recompensa desbloqueada: {{rewardName}}",

@@ -11,7 +11,7 @@
   },
   "pointsExpiring": {
     "title": "Punti in scadenza a breve",
-    "body": "i punti {{punti}} scadranno il {{data di scadenza}}. Usali prima che finiscano!"
+    "body": "i punti {{points}} scadranno il {{expiryDate}}. Usali prima che finiscano!"
   },
   "welcome": {
     "title": "Benvenuti a {{merchantName}}!"
@@ -21,13 +21,13 @@
   },
   "sms": {
     "welcome": "Benvenuti a {{merchantName}}! Sei entrato a far parte del nostro programma fedeltà. Inizia a guadagnare punti oggi stesso!",
-    "pointsEarned": "Hai guadagnato {{punti}} presso {{merchantName}}! Bilancio: {{bilancio}} punti",
+    "pointsEarned": "Hai guadagnato {{points}} presso {{merchantName}}! Bilancio: {{balance}} punti",
     "rewardReady": "{{memberName}}, la tua ricompensa è pronta! {{rewardName}} - mostralo alla cassa",
     "rewardExpiring": "Non dimenticare! Il tuo {{rewardName}} scade il {{expiryDate}}. Visita presto {{merchantName}}!",
     "birthdayReward": "Buon compleanno {{memberName}}! {{merchantName}} ha un regalo per te. Controlla le tue ricompense!",
     "tierUpgrade": "Congratulazioni {{memberName}}! Sei diventato {{tierName}} presso {{merchantName}}. Goditi i tuoi nuovi vantaggi!",
-    "pointsExpiring": "punti {{punti}} con scadenza {{data di scadenza}} presso {{merchantName}}. Usali prima che finiscano!",
-    "inactivityReminder": "Ci manchi {{memberName}}! Hai {{punti}} presso {{merchantName}}. Vieni a trovarci!",
+    "pointsExpiring": "punti {{points}} con scadenza {{expiryDate}} presso {{merchantName}}. Usali prima che finiscano!",
+    "inactivityReminder": "Ci manchi {{memberName}}! Hai {{points}} presso {{merchantName}}. Vieni a trovarci!",
     "promoAlert": "{{merchantName}}: {{promoMessage}}",
     "verificationCode": "Il tuo codice di verifica {{merchantName}} è: {{code}}"
   },
@@ -38,7 +38,7 @@
     },
     "pointsEarned": {
       "title": "Punti guadagnati!",
-      "body": "Hai guadagnato {{punti}} punti. Equilibrio: {{equilibrio}}"
+      "body": "Hai guadagnato {{points}} punti. Equilibrio: {{balance}}"
     },
     "rewardReady": {
       "title": "Ricompensa pronta!",
@@ -58,11 +58,11 @@
     },
     "pointsExpiring": {
       "title": "Punti in scadenza",
-      "body": "{{punti}} i punti scadono {{data di scadenza}}"
+      "body": "{{points}} i punti scadono {{expiryDate}}"
     },
     "nearbyStore": {
       "title": "Sei vicino a {{merchantName}}!",
-      "body": "Hai punti {{punti}}. Vieni a trovarci!"
+      "body": "Hai punti {{points}}. Vieni a trovarci!"
     },
     "newReward": {
       "title": "Nuova ricompensa disponibile!",
@@ -83,11 +83,11 @@
   },
   "inApp": {
     "welcome": "Benvenuti! Iniziate ad accumulare punti ad ogni acquisto.",
-    "pointsEarned": "+{punti}} punti guadagnati",
+    "pointsEarned": "+{{points}} points earned",
     "rewardRedeemed": "{{rewardName}} riscattato con successo",
     "tierUpgrade": "Hai raggiunto lo status di {{tierName}}!",
     "newRewardUnlocked": "Nuova ricompensa sbloccata: {{rewardName}}",
-    "goalProgress": "{{progresso}}% alla prossima ricompensa"
+    "goalProgress": "{{progress}}% alla prossima ricompensa"
   },
   "savedSuccessfully": "Salvato con successo",
   "customerDeleted": "Salvato con successo",
@@ -117,7 +117,7 @@
   "totalTransactions": "Totale transazioni",
   "memberParticipation": "Partecipazione dei membri",
   "totalRevenue": "Ricavi totali",
-  "dateRangeTx": "{conteggio} tx",
+  "dateRangeTx": "{count} tx",
   "oopsError": "Ooops!",
   "updatedSuccessfully": "Aggiornato con successo",
   "messageHasBeenSent": "Il messaggio è stato inviato!",
