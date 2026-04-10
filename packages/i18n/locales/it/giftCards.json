@@ -135,7 +135,8 @@
     "statusUnavailable": "Non Disponibile",
     "expires": "Scade il",
     "cardDetails": "Dettagli Carta",
-    "demoHint": "Suggerimento: Prova la carta 4000123456781234 con il codice 123456"
+    "demoHint": "Suggerimento: Prova la carta 4000123456781234 con il codice 123456",
+    "addToWallet": "Aggiungi al portafoglio"
   },
   "history": {
     "yourCards": "Le Tue Carte",

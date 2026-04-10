@@ -135,7 +135,8 @@
     "statusUnavailable": "No Disponible",
     "expires": "Vence",
     "cardDetails": "Detalles de Tarjeta",
-    "demoHint": "Pista: Prueba la tarjeta 4000123456781234 con el código 123456"
+    "demoHint": "Pista: Prueba la tarjeta 4000123456781234 con el código 123456",
+    "addToWallet": "Agregar a la cartera"
   },
   "history": {
     "yourCards": "Tus Tarjetas",

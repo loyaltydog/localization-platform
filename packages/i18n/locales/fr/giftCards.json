@@ -135,7 +135,8 @@
     "statusUnavailable": "Non disponible",
     "expires": "Expire le",
     "cardDetails": "Détails de la carte",
-    "demoHint": "Indice : Essayez la carte 4000123456781234 avec le code 123456"
+    "demoHint": "Indice : Essayez la carte 4000123456781234 avec le code 123456",
+    "addToWallet": "Ajouter au portefeuille"
   },
   "history": {
     "yourCards": "Vos cartes",

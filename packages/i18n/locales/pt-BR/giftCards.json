@@ -135,7 +135,8 @@
     "statusUnavailable": "Não Disponível",
     "expires": "Vence em",
     "cardDetails": "Detalhes do Cartão",
-    "demoHint": "Dica: Experimente o cartão 4000123456781234 com o código 123456"
+    "demoHint": "Dica: Experimente o cartão 4000123456781234 com o código 123456",
+    "addToWallet": "Adicionar à carteira"
   },
   "history": {
     "yourCards": "Seus Cartões",
