@@ -315,7 +315,7 @@ ON merchants(default_language);
 -- Add check constraint to ensure only supported languages
 ALTER TABLE merchants
 ADD CONSTRAINT chk_merchants_default_language
-CHECK (default_language IN ('en-US', 'en-GB', 'es-ES', 'fr', 'it', 'pt-PT', 'pt-BR'));
+CHECK (default_language IN ('en-US', 'en-GB', 'es-ES', 'es-MX', 'fr', 'it', 'pt-PT', 'pt-BR'));
     `.trim(),
 
     customers: `
@@ -330,7 +330,7 @@ ON customers(preferred_language);
 -- Add check constraint to ensure only supported languages
 ALTER TABLE customers
 ADD CONSTRAINT chk_customers_preferred_language
-CHECK (preferred_language IS NULL OR preferred_language IN ('en-US', 'en-GB', 'es-ES', 'fr', 'it', 'pt-PT', 'pt-BR'));
+CHECK (preferred_language IS NULL OR preferred_language IN ('en-US', 'en-GB', 'es-ES', 'es-MX', 'fr', 'it', 'pt-PT', 'pt-BR'));
     `.trim(),
   };
 }

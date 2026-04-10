@@ -1,14 +1,14 @@
 {
   "required": "{{field}} est obligatoire",
-  "minLength": "{{champ}} doit être composé d'au moins {{min}} caractères",
-  "maxLength": "{{champ}} ne doit pas dépasser {{max}} caractères",
+  "minLength": "{{field}} doit être composé d'au moins {{min}} caractères",
+  "maxLength": "{{field}} ne doit pas dépasser {{max}} caractères",
   "invalidEmail": "Veuillez saisir une adresse électronique valide",
   "invalidPhone": "Veuillez saisir un numéro de téléphone valide",
   "invalidUrl": "Veuillez saisir une URL valide",
   "passwordMismatch": "Les mots de passe ne correspondent pas",
   "invalidNumber": "Veuillez saisir un numéro valide",
   "minValue": "{{field}} doit être au moins {{value}}",
-  "maxValue": "{{champ}} ne doit pas dépasser {{valeur}}",
+  "maxValue": "{{field}} ne doit pas dépasser {{value}}",
   "invalidDate": "Veuillez saisir une date valide",
   "futureDate": "{{field}} doit être dans le futur",
   "pastDate": "{{field}} doit être dans le passé",
@@ -53,7 +53,7 @@
   "length": {
     "min": "Doit comporter au moins {{min}} caractères",
     "max": "Ne doit pas dépasser {{max}} caractères",
-    "exact": "Doit être exactement de {{longueur}} caractères",
+    "exact": "Doit être exactement de {{length}} caractères",
     "between": "Doit être compris entre {{min}} et {{max}} caractères"
   },
   "range": {
@@ -177,7 +177,7 @@
   },
   "email": "Veuillez saisir une adresse électronique valide",
   "phone": "Veuillez saisir un numéro de téléphone valide",
-  "min_length": "{{champ}} doit être composé d'au moins {{min}} caractères",
+  "min_length": "{{field}} doit être composé d'au moins {{min}} caractères",
   "shortPromotional": "Brève accroche promotionnelle pour votre programme",
   "legalNameBusiness": "Nom légal de votre entreprise"
 }

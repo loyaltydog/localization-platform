@@ -272,7 +272,7 @@
   },
   "notifications": {
     "title": "Notificações",
-    "newCount": "{{count}} nova{{plural}}",
+    "newCount": "{{count}} novas",
     "markAllRead": "Marcar tudo como lido",
     "cardCount": "{{count}} vale{{plural}}-presente",
     "expiringSoon": "{{count}} vencendo em breve",

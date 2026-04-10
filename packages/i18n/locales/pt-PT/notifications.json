@@ -11,7 +11,7 @@
   },
   "pointsExpiring": {
     "title": "Pontos a expirar em breve",
-    "body": "os pontos {{pontos}} expiram em {{data de expiração}}. Utilize-os antes que se esgotem!"
+    "body": "os pontos {{points}} expiram em {{expiryDate}}. Utilize-os antes que se esgotem!"
   },
   "welcome": {
     "title": "Bem-vindo ao {{merchantName}}!"
@@ -21,15 +21,15 @@
   },
   "sms": {
     "welcome": "Bem-vindo ao {{merchantName}}! Aderiu ao nosso programa de fidelização. Comece a ganhar pontos hoje mesmo!",
-    "pointsEarned": "Ganhou {{pontos}} pontos em {{merchantName}}! Saldo: {{equilíbrio}} pts",
-    "rewardReady": "{A tua recompensa está pronta! {{rewardName}} - mostrar isto no checkout",
+    "pointsEarned": "Ganhou {{points}} pontos em {{merchantName}}! Saldo: {{balance}} pts",
+    "rewardReady": "{{memberName}}, your reward is ready! {{rewardName}} - show this at checkout",
     "rewardExpiring": "Não se esqueça! A sua {{rewardName}} expira {{expiryDate}}. Visite {{merchantName}} em breve!",
-    "birthdayReward": "Feliz aniversário! {{merchantName}} tem um presente para si. Verifica as tuas recompensas!",
+    "birthdayReward": "Happy Birthday {{memberName}}! {{merchantName}} has a gift for you. Check your rewards!",
     "tierUpgrade": "Parabéns {{memberName}}! Agora és {{tierName}} na {{merchantName}}. Desfruta dos teus novos benefícios!",
-    "pointsExpiring": "{{pontos}} pontos que expiram {{data de expiração}} em {{merchantName}}. Utilize-os antes que desapareçam!",
-    "inactivityReminder": "Sentimos a tua falta {{memberName}}! Tens {{pontos}} pontos em {{merchantName}}. Vem visitar-nos!",
+    "pointsExpiring": "{{points}} pontos que expiram {{expiryDate}} em {{merchantName}}. Utilize-os antes que desapareçam!",
+    "inactivityReminder": "Sentimos a tua falta {{memberName}}! Tens {{points}} pontos em {{merchantName}}. Vem visitar-nos!",
     "promoAlert": "{{merchantName}}: {{promoMessage}}",
-    "verificationCode": "O seu código de verificação {{merchantName}} é: {{código}}"
+    "verificationCode": "O seu código de verificação {{merchantName}} é: {{code}}"
   },
   "push": {
     "welcome": {
@@ -38,7 +38,7 @@
     },
     "pointsEarned": {
       "title": "Pontos ganhos!",
-      "body": "Ganhou {{pontos}} pontos. Saldo: {{balanço}}"
+      "body": "Ganhou {{points}} pontos. Saldo: {{balance}}"
     },
     "rewardReady": {
       "title": "Prémio pronto!",
@@ -50,7 +50,7 @@
     },
     "birthdayReward": {
       "title": "Feliz aniversário!",
-      "body": "{Tem um presente especial para si"
+      "body": "{{merchantName}} has a special gift for you"
     },
     "tierUpgrade": {
       "title": "Subir de nível!",
@@ -58,11 +58,11 @@
     },
     "pointsExpiring": {
       "title": "Pontos a expirar",
-      "body": "{{pontos}} os pontos expiram {{expiryDate}}"
+      "body": "{{points}} os pontos expiram {{expiryDate}}"
     },
     "nearbyStore": {
       "title": "Estás perto de {{merchantName}}!",
-      "body": "Tem {{pontos}} pontos. Vem visitar-nos!"
+      "body": "Tem {{points}} pontos. Vem visitar-nos!"
     },
     "newReward": {
       "title": "Nova recompensa disponível!",
@@ -74,7 +74,7 @@
     },
     "stampEarned": {
       "title": "Selo conquistado!",
-      "body": "{{selosColhidos}}/{{selosRequeridos}} - {{selosRestantes}} mais para ir!"
+      "body": "{{stampsCollected}}/{{stampsRequired}} - {{stampsRemaining}} mais para ir!"
     },
     "stampCardComplete": {
       "title": "Cartão de carimbo completo!",
@@ -83,11 +83,11 @@
   },
   "inApp": {
     "welcome": "Bem-vindo! Comece a ganhar pontos em cada compra.",
-    "pointsEarned": "+{{pontos}} pontos ganhos",
-    "rewardRedeemed": "{resgatado com sucesso",
+    "pointsEarned": "+{{points}} pontos ganhos",
+    "rewardRedeemed": "{{rewardName}} redeemed successfully",
     "tierUpgrade": "Alcançou o estatuto de {{tierName}}!",
     "newRewardUnlocked": "Nova recompensa desbloqueada: {{rewardName}}",
-    "goalProgress": "{{progresso}}% para a tua próxima recompensa"
+    "goalProgress": "{{progress}}% para a tua próxima recompensa"
   },
   "savedSuccessfully": "Guardado com sucesso",
   "customerDeleted": "Guardado com sucesso",

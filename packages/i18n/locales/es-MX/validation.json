@@ -1,6 +1,6 @@
 {
-  "required": "{{campo}} es obligatorio",
-  "minLength": "{{campo}} debe tener al menos {{min}} caracteres",
+  "required": "{{field}} es obligatorio",
+  "minLength": "{{field}} debe tener al menos {{min}} caracteres",
   "maxLength": "{{field}} no debe tener más de {{max}} caracteres",
   "invalidEmail": "Introduzca una dirección de correo electrónico válida",
   "invalidPhone": "Introduzca un número de teléfono válido",
@@ -177,7 +177,7 @@
   },
   "email": "Introduzca una dirección de correo electrónico válida",
   "phone": "Introduzca un número de teléfono válido",
-  "min_length": "{{campo}} debe tener al menos {{min}} caracteres",
+  "min_length": "{{field}} debe tener al menos {{min}} caracteres",
   "shortPromotional": "Breve teaser promocional de su programa",
   "legalNameBusiness": "Nombre legal de su empresa"
 }

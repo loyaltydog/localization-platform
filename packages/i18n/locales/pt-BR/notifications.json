@@ -21,13 +21,13 @@
   },
   "sms": {
     "welcome": "Bem-vindo ao {{merchantName}}! Você aderiu ao nosso programa de fidelidade. Comece a ganhar pontos hoje mesmo!",
-    "pointsEarned": "Você ganhou {{pontos}} pts na {{merchantName}}! Saldo: {{balance}} pts",
+    "pointsEarned": "Você ganhou {{points}} pts na {{merchantName}}! Saldo: {{balance}} pts",
     "rewardReady": "{{memberName}}, sua recompensa está pronta! {{rewardName}} - mostre isso no checkout",
     "rewardExpiring": "Não se esqueça! Sua {{rewardName}} expira {{expiryDate}}. Visite {{merchantName}} em breve!",
     "birthdayReward": "Feliz aniversário {{memberName}}! {{merchantName}} tem um presente para você. Confira suas recompensas!",
     "tierUpgrade": "Parabéns {{memberName}}! Você agora é {{tierName}} na {{merchantName}}. Aproveite seus novos benefícios!",
-    "pointsExpiring": "{{pontos}} pts expirando {{expiryDate}} em {{merchantName}}. Use-os antes que acabem!",
-    "inactivityReminder": "Sentimos sua falta {{memberName}}! Você tem {{pontos}} de pontos em {{merchantName}}. Venha nos visitar!",
+    "pointsExpiring": "{{points}} pts expirando {{expiryDate}} em {{merchantName}}. Use-os antes que acabem!",
+    "inactivityReminder": "Sentimos sua falta {{memberName}}! Você tem {{points}} de pontos em {{merchantName}}. Venha nos visitar!",
     "promoAlert": "{{merchantName}}: {{promoMessage}}",
     "verificationCode": "Seu código de verificação {{merchantName}} é: {{code}}"
   },
@@ -38,7 +38,7 @@
     },
     "pointsEarned": {
       "title": "Pontos ganhos!",
-      "body": "Você ganhou {{pontos}} pontos. Equilíbrio: {{balance}}"
+      "body": "Você ganhou {{points}} pontos. Equilíbrio: {{balance}}"
     },
     "rewardReady": {
       "title": "Pronta para o prêmio!",
@@ -62,7 +62,7 @@
     },
     "nearbyStore": {
       "title": "Você está perto de {{merchantName}}!",
-      "body": "Você tem {{pontos}} pontos. Venha nos visitar!"
+      "body": "Você tem {{points}} pontos. Venha nos visitar!"
     },
     "newReward": {
       "title": "Novo prêmio disponível!",
@@ -83,11 +83,11 @@
   },
   "inApp": {
     "welcome": "Bem-vindo! Comece a ganhar pontos em cada compra.",
-    "pointsEarned": "+{{pontos}} pontos ganhos",
+    "pointsEarned": "+{{points}} pontos ganhos",
     "rewardRedeemed": "{{rewardName}} resgatado com sucesso",
     "tierUpgrade": "Você alcançou o status {{tierName}}!",
     "newRewardUnlocked": "Nova recompensa desbloqueada: {{rewardName}}",
-    "goalProgress": "{{progresso}}% para sua próxima recompensa"
+    "goalProgress": "{{progress}}% para sua próxima recompensa"
   },
   "savedSuccessfully": "Salvo com sucesso",
   "customerDeleted": "Salvo com sucesso",

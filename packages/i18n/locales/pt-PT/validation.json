@@ -1,7 +1,7 @@
 {
-  "required": "{{campo}} é necessário",
-  "minLength": "{{campo}} deve ter pelo menos {{min}} caracteres",
-  "maxLength": "o {{campo}} não deve ter mais do que {{máx}} caracteres",
+  "required": "{{field}} é necessário",
+  "minLength": "{{field}} deve ter pelo menos {{min}} caracteres",
+  "maxLength": "o {{field}} não deve ter mais do que {{max}} caracteres",
   "invalidEmail": "Introduza um endereço de correio eletrónico válido",
   "invalidPhone": "Introduzir um número de telefone válido",
   "invalidUrl": "Introduzir um URL válido",
@@ -10,8 +10,8 @@
   "minValue": "{{field}} deve ter pelo menos {{value}}",
   "maxValue": "{{field}} não deve ser mais do que {{value}}",
   "invalidDate": "Introduzir uma data válida",
-  "futureDate": "{O campo deve estar no futuro",
-  "pastDate": "{{campo}} deve estar no passado",
+  "futureDate": "{{field}} deve ser no futuro",
+  "pastDate": "{{field}} deve estar no passado",
   "fields": {
     "name": "Nome",
     "email": "Correio eletrónico",
@@ -53,7 +53,7 @@
   "length": {
     "min": "Deve ter pelo menos {{min}} caracteres",
     "max": "Não deve ter mais do que {{max}} caracteres",
-    "exact": "Deve ter exatamente {{comprimento}} caracteres",
+    "exact": "Deve ter exatamente {{length}} caracteres",
     "between": "Deve ter entre {{min}} e {{max}} caracteres"
   },
   "range": {
@@ -93,9 +93,9 @@
     "unavailable": "Este valor não está disponível"
   },
   "points": {
-    "insufficient": "Pontos insuficientes. Precisa de {{necessário}} mas tem {{disponível}}.",
+    "insufficient": "Pontos insuficientes. Precisa de {{required}} mas tem {{available}}.",
     "minimum": "Mínimo de {{min}} pontos necessários",
-    "maximum": "Máximo de pontos permitidos"
+    "maximum": "Máximo de {{max}} pontos permitidos"
   },
   "member": {
     "emailTaken": "Este e-mail já está registado",
@@ -177,7 +177,7 @@
   },
   "email": "Introduza um endereço de correio eletrónico válido",
   "phone": "Introduzir um número de telefone válido",
-  "min_length": "{{campo}} deve ter pelo menos {{min}} caracteres",
+  "min_length": "{{field}} deve ter pelo menos {{min}} caracteres",
   "shortPromotional": "Pequeno teaser promocional para o seu programa",
   "legalNameBusiness": "Nome legal da sua empresa"
 }

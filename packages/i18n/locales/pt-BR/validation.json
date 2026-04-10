@@ -53,7 +53,7 @@
   "length": {
     "min": "Deve ter pelo menos {{min}} caracteres",
     "max": "Não deve ter mais do que {{max}} caracteres",
-    "exact": "Deve ter exatamente {{comprimento}} caracteres",
+    "exact": "Deve ter exatamente {{length}} caracteres",
     "between": "Deve ter entre {{min}} e {{max}} caracteres"
   },
   "range": {
@@ -93,7 +93,7 @@
     "unavailable": "Esse valor não está disponível"
   },
   "points": {
-    "insufficient": "Pontos insuficientes. Você precisa de {{necessário}}, mas tem {{disponível}}.",
+    "insufficient": "Pontos insuficientes. Você precisa de {{required}}, mas tem {{available}}.",
     "minimum": "Mínimo de {{min}} pontos necessários",
     "maximum": "Máximo de pontos {{max}} permitidos"
   },
