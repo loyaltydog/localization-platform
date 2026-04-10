@@ -62,7 +62,6 @@
     "customize": "Customize",
     "duplicate": "Duplicate",
     "publish": "Publish",
-    "cancelAction": "Cancel",
     "view": "View",
     "returnHome": "Return Home",
     "open": "Open",
@@ -70,7 +69,7 @@
     "scan": "Scan",
     "loading": "Loading...",
     "saving": "Saving...",
-    "noProgram": "New Program",
+    "noProgram": "No Program Selected",
     "newProgram": "New Program",
     "reactivate": "Reactivate"
   },
@@ -1468,7 +1467,14 @@
       "publishButton": "Publish",
       "cancelButton": "Cancel",
       "publish": "Publish",
-      "cancel": "Cancel"
+      "cancel": "Cancel",
+      "status": {
+        "draft": "Draft",
+        "scheduled": "Scheduled",
+        "live": "Live",
+        "canceled": "Canceled",
+        "ended": "Ended"
+      }
     },
     "vouchers": {
       "title": "Vouchers",
@@ -1483,7 +1489,14 @@
       "publishButton": "Publish",
       "cancelButton": "Cancel",
       "publish": "Publish",
-      "cancel": "Cancel"
+      "cancel": "Cancel",
+      "status": {
+        "draft": "Draft",
+        "scheduled": "Scheduled",
+        "live": "Live",
+        "canceled": "Canceled",
+        "ended": "Ended"
+      }
     },
     "reports": {
       "title": "Reports",
