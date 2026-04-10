@@ -1341,58 +1341,6 @@
         "newpass": {
             "values": "Values"
         },
-        "verification": {
-            "title": "Issuers",
-            "scanners": {
-                "title": "Scanners",
-                "pages": {
-                    "list": "Scanners",
-                    "new": "New Scanner",
-                    "view": "Scanner"
-                },
-                "table": {
-                    "type": "Type",
-                    "name": "Name",
-                    "authToken": "Authentication Token / PIN",
-                    "allowedTemplates": "Allowed Templates",
-                    "actions": "Actions"
-                },
-                "actions": {
-                    "create": "Create Scanner",
-                    "edit": "Edit Scanner",
-                    "delete": "Delete"
-                },
-                "form": {
-                    "type": "Type",
-                    "name": "Name",
-                    "pin": "PIN",
-                    "fullAccess": "Full Access",
-                    "allowedTemplates": "Allowed Templates",
-                    "submitButton": "Submit",
-                    "savingButton": "Please wait...",
-                    "cancelButton": "Cancel"
-                },
-                "delete": {
-                    "title": "Delete",
-                    "message": "Are you sure you want to delete this pass scanner?"
-                },
-                "empty": "No Scanner",
-                "scannerTypes": {
-                    "browser": "Browser",
-                    "codereadr": "CodeReadr"
-                }
-            },
-            "recentScans": {
-                "title": "Recent Scans",
-                "pidNumber": "PID Number",
-                "time": "Time",
-                "scanner": "Scanner",
-                "action": "Action",
-                "details": "Details",
-                "noScans": "No scans",
-                "unknown": "Unknown"
-            }
-        },
         "webhooks": {
             "pages": {
                 "new": "New Webhook",
@@ -1651,11 +1599,56 @@
         }
     },
     "verification": {
+        "title": "Issuers",
         "scanners": {
+            "title": "Scanners",
             "pages": {
-                "view": "Edit Scanner",
+                "list": "Scanners",
+                "new": "New Scanner",
+                "view": "Scanner",
                 "notFound": "Scanner not found."
+            },
+            "table": {
+                "type": "Type",
+                "name": "Name",
+                "authToken": "Authentication Token / PIN",
+                "allowedTemplates": "Allowed Templates",
+                "actions": "Actions"
+            },
+            "actions": {
+                "create": "Create Scanner",
+                "edit": "Edit Scanner",
+                "delete": "Delete"
+            },
+            "form": {
+                "type": "Type",
+                "name": "Name",
+                "pin": "PIN",
+                "fullAccess": "Full Access",
+                "allowedTemplates": "Allowed Templates",
+                "submitButton": "Submit",
+                "savingButton": "Please wait...",
+                "cancelButton": "Cancel"
+            },
+            "delete": {
+                "title": "Delete",
+                "message": "Are you sure you want to delete this pass scanner?"
+            },
+            "empty": "No Scanner",
+            "scannerTypes": {
+                "browser": "Browser",
+                "codereadr": "CodeReadr"
             }
+        },
+        "recentScans": {
+            "title": "Recent Scans",
+            "pidNumber": "PID Number",
+            "time": "Time",
+            "scanner": "Scanner",
+            "action": "Action",
+            "details": "Details",
+            "noScans": "No scans",
+            "unknown": "Unknown"
         }
     }
 }
