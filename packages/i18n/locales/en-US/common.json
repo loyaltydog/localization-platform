@@ -1649,6 +1649,7 @@
       "details": "Details",
       "noScans": "No scans",
       "unknown": "Unknown"
-    }
+    },
+    "fetchError": "Failed to load data. Please try again."
   }
 }
