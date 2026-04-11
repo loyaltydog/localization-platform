@@ -1635,7 +1635,7 @@
       "noScans": "Aucun scan",
       "unknown": "Inconnu"
     },
-    "fetchError": "Failed to load data. Please try again."
+    "fetchError": "Impossible de charger les données. Veuillez réessayer."
   },
   "webhooks": {
     "pages": {

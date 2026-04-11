@@ -69,7 +69,7 @@
     "scan": "Escanear",
     "loading": "Cargando...",
     "saving": "Ahorrar...",
-    "noProgram": "Nuevo programa",
+    "noProgram": "Ningún programa seleccionado",
     "newProgram": "Nuevo programa",
     "reactivate": "Reactivar"
   },
@@ -1584,7 +1584,7 @@
     }
   },
   "verification": {
-    "title": "Verificación",
+    "title": "Emisores",
     "scanners": {
       "title": "Escáneres",
       "pages": {
@@ -1635,7 +1635,7 @@
       "noScans": "Sin escaneos",
       "unknown": "Desconocido"
     },
-    "fetchError": "Failed to load data. Please try again."
+    "fetchError": "No se pudieron cargar los datos. Por favor, inténtelo de nuevo."
   },
   "webhooks": {
     "pages": {

@@ -69,7 +69,7 @@
     "scan": "Scansione",
     "loading": "Caricamento...",
     "saving": "Risparmio...",
-    "noProgram": "Nuovo programma",
+    "noProgram": "Nessun programma selezionato",
     "newProgram": "Nuovo programma",
     "reactivate": "Riattiva"
   },
@@ -1584,7 +1584,7 @@
     }
   },
   "verification": {
-    "title": "Issuers",
+    "title": "Emittenti",
     "scanners": {
       "title": "Scanners",
       "pages": {
@@ -1635,7 +1635,7 @@
       "noScans": "Nessuna scansione",
       "unknown": "Sconosciuto"
     },
-    "fetchError": "Failed to load data. Please try again."
+    "fetchError": "Impossibile caricare i dati. Riprovare."
   },
   "webhooks": {
     "pages": {
