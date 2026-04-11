@@ -6,26 +6,26 @@
     "dashboard": "Tableau de bord",
     "dashboards": "Tableaux de bord",
     "rewards": "Récompenses",
-    "members": "Les membres",
+    "members": "Membres",
     "campaigns": "Campagnes",
-    "analytics": "Analyse",
+    "analytics": "Analytique",
     "settings": "Paramètres",
     "help": "Aide",
     "logout": "Se déconnecter",
-    "programs": "Les programmes",
+    "programs": "Programmes",
     "newProgram": "Nouveau programme",
     "customers": "Clients",
     "offers": "Offres",
-    "vouchers": "Chèques",
+    "vouchers": "Bons",
     "reports": "Rapports",
-    "aiAdvisor": "Conseiller en IA",
-    "support": "Soutien",
+    "aiAdvisor": "Conseiller IA",
+    "support": "Assistance",
     "administration": "Administration",
-    "overview": "Vue d'ensemble",
+    "overview": "Aperçu",
     "templates": "Modèles",
-    "passes": "Passages",
+    "passes": "Cartes",
     "appKeys": "Clés d'application",
-    "passTypeIds": "IDs de type de passe",
+    "passTypeIds": "IDs de type de carte",
     "verification": "Vérification",
     "webhooks": "Webhooks",
     "users": "Utilisateurs",
@@ -41,43 +41,42 @@
     "save": "Enregistrer",
     "cancel": "Annuler",
     "delete": "Supprimer",
-    "edit": "Editer",
+    "edit": "Modifier",
     "create": "Créer",
-    "update": "Mise à jour",
+    "update": "Mettre à jour",
     "submit": "Soumettre",
     "confirm": "Confirmer",
     "close": "Fermer",
     "back": "Retour",
     "next": "Suivant",
-    "search": "Recherche",
-    "filter": "Filtre",
-    "export": "Exportation",
-    "import": "Importation",
-    "refresh": "Rafraîchir",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "export": "Exporter",
+    "import": "Importer",
+    "refresh": "Actualiser",
     "retry": "Réessayer",
     "viewAll": "Voir tout",
     "learnMore": "En savoir plus",
     "saveChanges": "Enregistrer les modifications",
     "configure": "Configurer",
     "customize": "Personnaliser",
-    "duplicate": "Duplicata",
+    "duplicate": "Dupliquer",
     "publish": "Publier",
-    "cancelAction": "Annuler",
     "view": "Voir",
     "returnHome": "Retour à l'accueil",
     "open": "Ouvrir",
-    "redeem": "Racheter",
+    "redeem": "Utiliser",
     "scan": "Scanner",
     "loading": "Chargement...",
-    "saving": "Économiser...",
-    "noProgram": "Nouveau programme",
+    "saving": "Enregistrement...",
+    "noProgram": "Aucun programme sélectionné",
     "newProgram": "Nouveau programme",
     "loadMore": "Charger plus",
     "reactivate": "Réactiver"
   },
   "language": {
     "title": "Langue",
-    "selectLanguage": "Sélectionner la langue",
+    "selectLanguage": "Choisir la langue",
     "switchLanguage": "Changer de langue",
     "currentLanguage": "Langue actuelle",
     "apiError": "Impossible d'enregistrer la préférence de langue"
@@ -1342,86 +1341,6 @@
     "newpass": {
       "values": "Valeurs"
     },
-    "verification": {
-      "title": "Émetteurs",
-      "scanners": {
-        "title": "Scanners",
-        "pages": {
-          "list": "Scanners",
-          "new": "Nouveau scanner",
-          "view": "Scanner"
-        },
-        "table": {
-          "type": "Type",
-          "name": "Nom",
-          "authToken": "Jeton d'authentification / PIN",
-          "allowedTemplates": "Modèles autorisés",
-          "actions": "Actions"
-        },
-        "actions": {
-          "create": "Créer un scanner",
-          "edit": "Modifier le scanner",
-          "delete": "Supprimer"
-        },
-        "form": {
-          "type": "Type",
-          "name": "Nom",
-          "pin": "PIN",
-          "fullAccess": "Accès complet",
-          "allowedTemplates": "Modèles autorisés",
-          "submitButton": "Soumettre",
-          "savingButton": "Veuillez patienter...",
-          "cancelButton": "Annuler"
-        },
-        "delete": {
-          "title": "Supprimer",
-          "message": "Êtes-vous sûr de vouloir supprimer ce scanner de passage?"
-        },
-        "empty": "Aucun scanner",
-        "scannerTypes": {
-          "browser": "Navigateur",
-          "codereadr": "CodeReadr"
-        }
-      },
-      "recentScans": {
-        "title": "Scans récents",
-        "pidNumber": "Numéro PID",
-        "time": "Heure",
-        "scanner": "Scanner",
-        "action": "Action",
-        "details": "Détails",
-        "noScans": "Aucun scan",
-        "unknown": "Inconnu"
-      }
-    },
-    "webhooks": {
-      "pages": {
-        "new": "Nouveau Webhook",
-        "view": "Webhook #{{webhookId}}"
-      },
-      "table": {
-        "url": "URL",
-        "sharedSecret": "Secret partagé",
-        "status": "Statut",
-        "actions": "Actions",
-        "noWebhooks": "Pas de webhooks",
-        "disabled": "Désactivé",
-        "enabled": "Activé",
-        "pendingVerification": "Vérification en attente",
-        "disable": "Désactiver",
-        "enable": "Activer",
-        "deleteConfirm": "Êtes-vous sûr de vouloir supprimer ce webhook?"
-      },
-      "form": {
-        "url": "URL",
-        "allPassTemplates": "Tous les modèles de passage",
-        "passTemplates": "Modèles de passage",
-        "allEventTypes": "Tous les types d'événements",
-        "eventTypes": "Types d'événements",
-        "sharedSecret": "Secret partagé",
-        "pleaseWait": "Veuillez patienter..."
-      }
-    },
     "account": {
       "overview": {
         "passTemplates": "Modèles de passage",
@@ -1549,7 +1468,14 @@
       "publishButton": "Publier",
       "cancelButton": "Annuler l'Offre",
       "publish": "Publier",
-      "cancel": "Annuler"
+      "cancel": "Annuler",
+      "status": {
+        "draft": "Brouillon",
+        "scheduled": "Planifiée",
+        "live": "Active",
+        "canceled": "Annulée",
+        "ended": "Terminée"
+      }
     },
     "vouchers": {
       "title": "Bons",
@@ -1564,7 +1490,14 @@
       "publishButton": "Publier",
       "cancelButton": "Annuler le Bon",
       "publish": "Publier",
-      "cancel": "Annuler"
+      "cancel": "Annuler",
+      "status": {
+        "draft": "Brouillon",
+        "scheduled": "Planifié",
+        "live": "Actif",
+        "canceled": "Annulé",
+        "ended": "Terminé"
+      }
     },
     "reports": {
       "title": "Rapports",
@@ -1652,11 +1585,85 @@
     }
   },
   "verification": {
+    "title": "Émetteurs",
     "scanners": {
+      "title": "Scanners",
       "pages": {
+        "list": "Scanners",
+        "new": "Nouveau scanner",
         "view": "Mettre à Jour le Scanner",
         "notFound": "Scanner non trouvé."
+      },
+      "table": {
+        "type": "Type",
+        "name": "Nom",
+        "authToken": "Jeton d'authentification / PIN",
+        "allowedTemplates": "Modèles autorisés",
+        "actions": "Actions"
+      },
+      "actions": {
+        "create": "Créer un scanner",
+        "edit": "Modifier le scanner",
+        "delete": "Supprimer"
+      },
+      "form": {
+        "type": "Type",
+        "name": "Nom",
+        "pin": "PIN",
+        "fullAccess": "Accès complet",
+        "allowedTemplates": "Modèles autorisés",
+        "submitButton": "Soumettre",
+        "savingButton": "Veuillez patienter...",
+        "cancelButton": "Annuler"
+      },
+      "delete": {
+        "title": "Supprimer",
+        "message": "Êtes-vous sûr de vouloir supprimer ce scanner de passage?"
+      },
+      "empty": "Aucun scanner",
+      "scannerTypes": {
+        "browser": "Navigateur",
+        "codereadr": "CodeReadr"
       }
+    },
+    "recentScans": {
+      "title": "Scans récents",
+      "pidNumber": "Numéro PID",
+      "time": "Heure",
+      "scanner": "Scanner",
+      "action": "Action",
+      "details": "Détails",
+      "noScans": "Aucun scan",
+      "unknown": "Inconnu"
+    },
+    "fetchError": "Impossible de charger les données. Veuillez réessayer."
+  },
+  "webhooks": {
+    "pages": {
+      "new": "Nouveau Webhook",
+      "view": "Webhook #{{webhookId}}"
+    },
+    "table": {
+      "url": "URL",
+      "sharedSecret": "Secret partagé",
+      "status": "Statut",
+      "actions": "Actions",
+      "noWebhooks": "Pas de webhooks",
+      "disabled": "Désactivé",
+      "enabled": "Activé",
+      "pendingVerification": "Vérification en attente",
+      "disable": "Désactiver",
+      "enable": "Activer",
+      "deleteConfirm": "Êtes-vous sûr de vouloir supprimer ce webhook?"
+    },
+    "form": {
+      "url": "URL",
+      "allPassTemplates": "Tous les modèles de passage",
+      "passTemplates": "Modèles de passage",
+      "allEventTypes": "Tous les types d'événements",
+      "eventTypes": "Types d'événements",
+      "sharedSecret": "Secret partagé",
+      "pleaseWait": "Veuillez patienter..."
     }
   }
 }

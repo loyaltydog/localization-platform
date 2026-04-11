@@ -62,7 +62,6 @@
     "customize": "Customize",
     "duplicate": "Duplicate",
     "publish": "Publish",
-    "cancelAction": "Cancel",
     "view": "View",
     "returnHome": "Return Home",
     "open": "Open",
@@ -70,7 +69,7 @@
     "scan": "Scan",
     "loading": "Loading...",
     "saving": "Saving...",
-    "noProgram": "New Program",
+    "noProgram": "No Program Selected",
     "newProgram": "New Program",
     "loadMore": "Load More",
     "reactivate": "Reactivate"
@@ -1342,86 +1341,6 @@
     "newpass": {
       "values": "Values"
     },
-    "verification": {
-      "title": "Issuers",
-      "scanners": {
-        "title": "Scanners",
-        "pages": {
-          "list": "Scanners",
-          "new": "New Scanner",
-          "view": "Scanner"
-        },
-        "table": {
-          "type": "Type",
-          "name": "Name",
-          "authToken": "Authentication Token / PIN",
-          "allowedTemplates": "Allowed Templates",
-          "actions": "Actions"
-        },
-        "actions": {
-          "create": "Create Scanner",
-          "edit": "Edit Scanner",
-          "delete": "Delete"
-        },
-        "form": {
-          "type": "Type",
-          "name": "Name",
-          "pin": "PIN",
-          "fullAccess": "Full Access",
-          "allowedTemplates": "Allowed Templates",
-          "submitButton": "Submit",
-          "savingButton": "Please wait...",
-          "cancelButton": "Cancel"
-        },
-        "delete": {
-          "title": "Delete",
-          "message": "Are you sure you want to delete this pass scanner?"
-        },
-        "empty": "No Scanner",
-        "scannerTypes": {
-          "browser": "Browser",
-          "codereadr": "CodeReadr"
-        }
-      },
-      "recentScans": {
-        "title": "Recent Scans",
-        "pidNumber": "PID Number",
-        "time": "Time",
-        "scanner": "Scanner",
-        "action": "Action",
-        "details": "Details",
-        "noScans": "No scans",
-        "unknown": "Unknown"
-      }
-    },
-    "webhooks": {
-      "pages": {
-        "new": "New Webhook",
-        "view": "Webhook #{{webhookId}}"
-      },
-      "table": {
-        "url": "URL",
-        "sharedSecret": "Shared Secret",
-        "status": "Status",
-        "actions": "Actions",
-        "noWebhooks": "No Webhooks",
-        "disabled": "Disabled",
-        "enabled": "Enabled",
-        "pendingVerification": "Pending Verification",
-        "disable": "Disable",
-        "enable": "Enable",
-        "deleteConfirm": "Are you sure you want to delete this webhook?"
-      },
-      "form": {
-        "url": "URL",
-        "allPassTemplates": "All Pass Templates",
-        "passTemplates": "Pass Templates",
-        "allEventTypes": "All Event Types",
-        "eventTypes": "Event Types",
-        "sharedSecret": "Shared Secret",
-        "pleaseWait": "Please wait..."
-      }
-    },
     "account": {
       "overview": {
         "passTemplates": "Pass Templates",
@@ -1549,7 +1468,14 @@
       "publishButton": "Publish",
       "cancelButton": "Cancel",
       "publish": "Publish",
-      "cancel": "Cancel"
+      "cancel": "Cancel",
+      "status": {
+        "draft": "Draft",
+        "scheduled": "Scheduled",
+        "live": "Live",
+        "canceled": "Canceled",
+        "ended": "Ended"
+      }
     },
     "vouchers": {
       "title": "Vouchers",
@@ -1564,7 +1490,14 @@
       "publishButton": "Publish",
       "cancelButton": "Cancel",
       "publish": "Publish",
-      "cancel": "Cancel"
+      "cancel": "Cancel",
+      "status": {
+        "draft": "Draft",
+        "scheduled": "Scheduled",
+        "live": "Live",
+        "canceled": "Canceled",
+        "ended": "Ended"
+      }
     },
     "reports": {
       "title": "Reports",
@@ -1652,11 +1585,85 @@
     }
   },
   "verification": {
+    "title": "Issuers",
     "scanners": {
+      "title": "Scanners",
       "pages": {
-        "view": "Edit Scanner",
+        "list": "Scanners",
+        "new": "New Scanner",
+        "view": "Scanner",
         "notFound": "Scanner not found."
+      },
+      "table": {
+        "type": "Type",
+        "name": "Name",
+        "authToken": "Authentication Token / PIN",
+        "allowedTemplates": "Allowed Templates",
+        "actions": "Actions"
+      },
+      "actions": {
+        "create": "Create Scanner",
+        "edit": "Edit Scanner",
+        "delete": "Delete"
+      },
+      "form": {
+        "type": "Type",
+        "name": "Name",
+        "pin": "PIN",
+        "fullAccess": "Full Access",
+        "allowedTemplates": "Allowed Templates",
+        "submitButton": "Submit",
+        "savingButton": "Please wait...",
+        "cancelButton": "Cancel"
+      },
+      "delete": {
+        "title": "Delete",
+        "message": "Are you sure you want to delete this pass scanner?"
+      },
+      "empty": "No Scanner",
+      "scannerTypes": {
+        "browser": "Browser",
+        "codereadr": "CodeReadr"
       }
+    },
+    "recentScans": {
+      "title": "Recent Scans",
+      "pidNumber": "PID Number",
+      "time": "Time",
+      "scanner": "Scanner",
+      "action": "Action",
+      "details": "Details",
+      "noScans": "No scans",
+      "unknown": "Unknown"
+    },
+    "fetchError": "Failed to load data. Please try again."
+  },
+  "webhooks": {
+    "pages": {
+      "new": "New Webhook",
+      "view": "Webhook #{{webhookId}}"
+    },
+    "table": {
+      "url": "URL",
+      "sharedSecret": "Shared Secret",
+      "status": "Status",
+      "actions": "Actions",
+      "noWebhooks": "No Webhooks",
+      "disabled": "Disabled",
+      "enabled": "Enabled",
+      "pendingVerification": "Pending Verification",
+      "disable": "Disable",
+      "enable": "Enable",
+      "deleteConfirm": "Are you sure you want to delete this webhook?"
+    },
+    "form": {
+      "url": "URL",
+      "allPassTemplates": "All Pass Templates",
+      "passTemplates": "Pass Templates",
+      "allEventTypes": "All Event Types",
+      "eventTypes": "Event Types",
+      "sharedSecret": "Shared Secret",
+      "pleaseWait": "Please wait..."
     }
   }
 }
