@@ -1,0 +1,16 @@
+{
+  "wordpress": {
+    "auth": {
+      "activateCta": "Activate LoyaltyDog",
+      "subtitle": "Connect your loyalty program to WooCommerce.",
+      "activating": "Activating your LoyaltyDog account — hold on tight!",
+      "success": "All set! Taking you to your dashboard…",
+      "settingUp": "Setting up your loyalty program… won't be long!",
+      "manualToggle": "Having trouble? Contact support",
+      "manualLabel": "Activation key",
+      "manualPlaceholder": "Paste your activation key here",
+      "manualCta": "Activate",
+      "tryAgain": "Try Again"
+    }
+  }
+}
