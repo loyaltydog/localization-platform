@@ -63,3 +63,6 @@ __pycache__/
 
 # Lokalise import staging (transient download dir)
 lokalise-import/*/
+.gitnexus
+
+AGENTS.md
