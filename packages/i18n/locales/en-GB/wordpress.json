@@ -1,0 +1,62 @@
+{
+  "wordpress": {
+    "admin": {
+      "dashboard": {
+        "title": "LoyaltyDog Dashboard",
+        "account": "Account",
+        "notConnected": "Not connected",
+        "program": "Programme",
+        "noProgramSelected": "No programme selected",
+        "openDashboard": "Open LoyaltyDog Dashboard",
+        "connectStore": "Connect Your Store"
+      },
+      "connection": {
+        "title": "LoyaltyDog Connection",
+        "apiKey": "API Key",
+        "configured": "Configured",
+        "notConfigured": "Not configured",
+        "connectionStatus": "Connection Status",
+        "connected": "Connected",
+        "connectionError": "Connection error",
+        "unknown": "Unknown",
+        "lastChecked": "Last checked: {{date}}",
+        "registrationId": "Registration ID",
+        "testConnection": "Test Connection",
+        "activationPrompt": "Complete the activation flow to configure your connection.",
+        "apiKeyNotConfigured": "API key not configured",
+        "httpError": "HTTP {{code}} from API",
+        "connectionSuccessful": "Connection successful",
+        "unauthorized": "Unauthorised"
+      },
+      "widget": {
+        "title": "LoyaltyDog Widget",
+        "shortcode": "Shortcode",
+        "shortcodeDescription": "Place the widget anywhere using this shortcode:",
+        "copy": "Copy",
+        "copied": "Copied!",
+        "gutenbergNote": "Also available as a Gutenberg block and Elementor widget.",
+        "wcTab": "WooCommerce My Account Tab",
+        "enableWcTab": "Enable Loyalty tab in My Account",
+        "save": "Save",
+        "settingsSaved": "Settings saved.",
+        "preview": "Preview",
+        "previewPlaceholder": "[LoyaltyDog widget renders here for logged-in customers]"
+      },
+      "systemInfo": {
+        "title": "LoyaltyDog System Info",
+        "component": "Component",
+        "value": "Value",
+        "phpVersion": "PHP Version",
+        "wordpressVersion": "WordPress Version",
+        "woocommerceVersion": "WooCommerce Version",
+        "pluginVersion": "Plugin Version",
+        "pendingActions": "Pending AS Actions",
+        "notActive": "Not active"
+      }
+    },
+    "widget": {
+      "joinCta": "Join our loyalty programme",
+      "loginPrompt": "Please log in to view your loyalty programme."
+    }
+  }
+}
