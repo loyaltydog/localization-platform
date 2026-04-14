@@ -1,0 +1,62 @@
+{
+  "wordpress": {
+    "admin": {
+      "dashboard": {
+        "title": "Painel LoyaltyDog",
+        "account": "Conta",
+        "notConnected": "Não conectado",
+        "program": "Programa",
+        "noProgramSelected": "Nenhum programa selecionado",
+        "openDashboard": "Abrir o Painel LoyaltyDog",
+        "connectStore": "Conectar a sua loja"
+      },
+      "connection": {
+        "title": "Conexão LoyaltyDog",
+        "apiKey": "Chave API",
+        "configured": "Configurado",
+        "notConfigured": "Não configurado",
+        "connectionStatus": "Estado da conexão",
+        "connected": "Conectado",
+        "connectionError": "Erro de conexão",
+        "unknown": "Desconhecido",
+        "lastChecked": "Última verificação: {{date}}",
+        "registrationId": "ID de registo",
+        "testConnection": "Testar conexão",
+        "activationPrompt": "Complete o fluxo de ativação para configurar a sua conexão.",
+        "apiKeyNotConfigured": "Chave API não configurada",
+        "httpError": "HTTP {{code}} da API",
+        "connectionSuccessful": "Conexão bem-sucedida",
+        "unauthorized": "Não autorizado"
+      },
+      "widget": {
+        "title": "Widget LoyaltyDog",
+        "shortcode": "Código curto",
+        "shortcodeDescription": "Coloque o widget em qualquer lugar usando este código curto:",
+        "copy": "Copiar",
+        "copied": "Copiado!",
+        "gutenbergNote": "Também disponível como bloco Gutenberg e widget Elementor.",
+        "wcTab": "Separador A Minha Conta WooCommerce",
+        "enableWcTab": "Ativar separador de Fidelidade em A Minha Conta",
+        "save": "Guardar",
+        "settingsSaved": "Definições guardadas.",
+        "preview": "Pré-visualização",
+        "previewPlaceholder": "[O widget LoyaltyDog é apresentado aqui para clientes com sessão iniciada]"
+      },
+      "systemInfo": {
+        "title": "Informações do sistema LoyaltyDog",
+        "component": "Componente",
+        "value": "Valor",
+        "phpVersion": "Versão do PHP",
+        "wordpressVersion": "Versão do WordPress",
+        "woocommerceVersion": "Versão do WooCommerce",
+        "pluginVersion": "Versão do plugin",
+        "pendingActions": "Ações AS pendentes",
+        "notActive": "Inativo"
+      }
+    },
+    "widget": {
+      "joinCta": "Junte-se ao nosso programa de fidelidade",
+      "loginPrompt": "Por favor, inicie sessão para ver o seu programa de fidelidade."
+    }
+  }
+}
