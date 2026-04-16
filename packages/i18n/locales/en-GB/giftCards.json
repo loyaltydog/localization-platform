@@ -136,7 +136,8 @@
     "statusUnavailable": "Not Available",
     "expires": "Expires",
     "cardDetails": "Card Details",
-    "demoHint": "Hint: Try card 4000123456781234 with code 123456"
+    "demoHint": "Hint: Try card 4000123456781234 with code 123456",
+    "addToWallet": "Add to Wallet"
   },
   "history": {
     "yourCards": "Your Cards",

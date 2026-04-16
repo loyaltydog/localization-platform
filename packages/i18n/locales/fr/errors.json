@@ -323,5 +323,14 @@
     "upgradeInProgress": "La mise à niveau de votre plan est en cours. Veuillez patienter...",
     "cancelationPending": "Votre abonnement sera annulé le {{effectiveDate}}"
   },
-  "invalidSession": "Your session is invalid or has expired. Please launch the application again from your EPOS Now terminal."
+  "invalidSession": "Your session is invalid or has expired. Please launch the application again from your EPOS Now terminal.",
+  "wordpress": {
+    "sessionExpired": "Activation échouée — session expirée. Veuillez réessayer.",
+    "activationFailed": "Une erreur s'est produite lors de l'activation. Veuillez réessayer ou contacter le support.",
+    "tokenExpired": "Ce lien d'activation a expiré. Veuillez retourner à LoyaltyDog pour en générer un nouveau.",
+    "rateLimited": "Trop de tentatives. Veuillez attendre quelques minutes et réessayer.",
+    "networkError": "Impossible d'atteindre LoyaltyDog pour le moment. Veuillez réessayer dans quelques instants.",
+    "invalidKey": "Clé d'activation invalide. Veuillez contacter le support.",
+    "genericError": "Une erreur s'est produite. Veuillez réessayer ou contacter le support."
+  }
 }

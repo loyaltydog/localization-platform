@@ -1665,5 +1665,19 @@
       "sharedSecret": "Secreto compartido",
       "pleaseWait": "Por favor espera..."
     }
+  },
+  "wordpress": {
+    "auth": {
+      "activateCta": "Activar LoyaltyDog",
+      "subtitle": "Conecte su programa de fidelidad a WooCommerce.",
+      "activating": "Activando su cuenta de LoyaltyDog — ¡aguante firme!",
+      "success": "¡Todo listo! Llevándole a su panel de control…",
+      "settingUp": "Configurando su programa de fidelidad… ¡será rápido!",
+      "manualToggle": "¿Tiene problemas? Póngase en contacto con soporte",
+      "manualLabel": "Clave de activación",
+      "manualPlaceholder": "Pegue su clave de activación aquí",
+      "manualCta": "Activar",
+      "tryAgain": "Reintentar"
+    }
   }
 }
