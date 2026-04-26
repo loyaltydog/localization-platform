@@ -1,0 +1,67 @@
+{
+  "hero": {
+    "headline": "Un programa de fidelización que funciona donde quiera que vendas",
+    "subhead": "Un único programa de lealtad en vuestro TPV, tienda online y panel de control. Comienza en minutos.",
+    "cta_primary": "Inicia vuestra prueba gratuita de 30 días",
+    "cta_disclaimer": "Se requiere tarjeta de crédito. Podéis cancelar en cualquier momento antes de que finalice la prueba a través de Stripe.",
+    "cta_login": "¿Ya eres comerciante? Accede aquí"
+  },
+  "nav": {
+    "login": "Acceder",
+    "trial": "Iniciar prueba"
+  },
+  "pricing": {
+    "amount": "$29",
+    "period": "/mes",
+    "disclaimer": "Prueba gratuita de 30 días. Se requiere tarjeta. Cancelad en cualquier momento a través de Stripe.",
+    "channel_note": "Socios de canal — facturación por su parte. Consultad el mercado de aplicaciones del socio para conocer el precio."
+  },
+  "faq": {
+    "items": {
+      "cc": {
+        "q": "¿Por qué necesitáis mi tarjeta de crédito por adelantado?",
+        "a": "La tarjeta guardada bloquea el spam de registro y permite que la prueba se convierta en una suscripción de pago sin problemas. No se os cobrará hasta que finalice la prueba, y podéis cancelar en cualquier momento a través de Stripe."
+      },
+      "charge": {
+        "q": "¿Cuándo se me cobra?",
+        "a": "Vuestra tarjeta se autoriza hoy (sin cargo), y el primer cargo de $29 ocurre 30 días después del registro a menos que canceléis antes."
+      }
+    }
+  },
+  "cookies": {
+    "banner": "Utilizamos cookies esenciales para operar este sitio, y análisis opcionales para medir el rendimiento del registro.",
+    "accept_all": "Aceptar todo",
+    "essentials_only": "Solo lo esencial",
+    "customize": "Personalizar",
+    "manage_prefs": "Gestionar preferencias de cookies"
+  },
+  "footer": {
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "dpa": "DPA",
+    "cookies": "Política de cookies"
+  },
+  "integrations": {
+    "wordpress": {
+      "desc": "Complemento integrado para tiendas WordPress y WooCommerce."
+    },
+    "shopify": {
+      "desc": "Instalación con un clic desde la Shopify App Store."
+    },
+    "eposnow": {
+      "desc": "Integración nativa de EPOS Now para comercio minorista y hostelería."
+    },
+    "zapier": {
+      "desc": "Conéctate con 6.000+ aplicaciones sin escribir código."
+    },
+    "standalone": {
+      "desc": "¿Sin tienda aún? Ejecuta un programa de fidelización desde tu panel."
+    },
+    "clover": {
+      "desc": "Próximamente — Integración Clover POS."
+    },
+    "square": {
+      "desc": "Próximamente — Integración Square POS."
+    }
+  }
+}
