@@ -42,6 +42,7 @@
     "cookies": "Cookie Policy"
   },
   "integrations": {
+    "coming_soon": "Coming soon",
     "wordpress": {
       "desc": "Drop-in plugin for WordPress and WooCommerce stores."
     },

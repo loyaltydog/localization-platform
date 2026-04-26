@@ -42,6 +42,7 @@
     "cookies": "Informativa sui cookie"
   },
   "integrations": {
+    "coming_soon": "In arrivo",
     "wordpress": {
       "desc": "Estensione plug-and-play per negozi WordPress e WooCommerce."
     },
