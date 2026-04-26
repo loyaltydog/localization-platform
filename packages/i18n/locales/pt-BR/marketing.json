@@ -1,0 +1,44 @@
+{
+  "hero": {
+    "headline": "Um programa de fidelidade que funciona em qualquer lugar onde você vende",
+    "subhead": "Um único programa de fidelidade em seu PDV, loja online e painel. Comece em minutos.",
+    "cta_primary": "Inicie sua avaliação gratuita de 30 dias",
+    "cta_disclaimer": "Cartão de crédito obrigatório. Cancele a qualquer momento antes do término da avaliação via Stripe.",
+    "cta_login": "Já é um comerciante? Faça login"
+  },
+  "nav": {
+    "login": "Fazer login",
+    "trial": "Iniciar avaliação"
+  },
+  "pricing": {
+    "amount": "$29",
+    "period": "/mês",
+    "disclaimer": "Avaliação gratuita de 30 dias. Cartão obrigatório. Cancele a qualquer momento via Stripe.",
+    "channel_note": "Parceiros de canal — cobrança do seu lado. Veja a loja de aplicativos do parceiro para precificação."
+  },
+  "faq": {
+    "items": {
+      "cc": {
+        "q": "Por que você precisa do meu cartão de crédito antecipadamente?",
+        "a": "O cartão registrado bloqueia spam de inscrição e permite que a avaliação se transforme em uma assinatura paga sem problemas. Você não será cobrado até o término da avaliação, e pode cancelar a qualquer momento via Stripe."
+      },
+      "charge": {
+        "q": "Quando serei cobrado?",
+        "a": "Seu cartão é autorizado hoje (sem cobrança), e a primeira cobrança de $29 ocorre 30 dias após a inscrição, a menos que você cancele antes."
+      }
+    }
+  },
+  "cookies": {
+    "banner": "Usamos cookies essenciais para operar este site e análises opcionais para medir o desempenho da inscrição.",
+    "accept_all": "Aceitar tudo",
+    "essentials_only": "Apenas essenciais",
+    "customize": "Personalizar",
+    "manage_prefs": "Gerenciar preferências de cookies"
+  },
+  "footer": {
+    "privacy": "Privacidade",
+    "terms": "Termos",
+    "dpa": "DPA",
+    "cookies": "Política de Cookies"
+  }
+}

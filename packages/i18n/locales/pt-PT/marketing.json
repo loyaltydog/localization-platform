@@ -1,0 +1,44 @@
+{
+  "hero": {
+    "headline": "Um programa de fidelização que funciona em qualquer lugar onde vende",
+    "subhead": "Um único programa de fidelização na sua caixa, loja online e painel. Comece em minutos.",
+    "cta_primary": "Inicie a sua avaliação gratuita de 30 dias",
+    "cta_disclaimer": "Cartão de crédito obrigatório. Cancele a qualquer momento antes do término da avaliação através do Stripe.",
+    "cta_login": "Já é um comerciante? Iniciar sessão"
+  },
+  "nav": {
+    "login": "Iniciar sessão",
+    "trial": "Iniciar avaliação"
+  },
+  "pricing": {
+    "amount": "$29",
+    "period": "/mês",
+    "disclaimer": "Avaliação gratuita de 30 dias. Cartão obrigatório. Cancele a qualquer momento através do Stripe.",
+    "channel_note": "Parceiros de canal — faturação da sua parte. Consulte a loja de aplicações do parceiro para preços."
+  },
+  "faq": {
+    "items": {
+      "cc": {
+        "q": "Por que precisa do meu cartão de crédito antecipadamente?",
+        "a": "O cartão guardado bloqueia spam de registo e permite que a avaliação se transforme numa subscrição paga sem problemas. Não lhe será cobrado até ao término da avaliação, e pode cancelar a qualquer momento através do Stripe."
+      },
+      "charge": {
+        "q": "Quando serei cobrado?",
+        "a": "O seu cartão é autorizado hoje (sem cobrança), e o primeiro débito de $29 ocorre 30 dias após o registo, a menos que cancele antes."
+      }
+    }
+  },
+  "cookies": {
+    "banner": "Utilizamos cookies essenciais para operar este site e análises opcionais para medir o desempenho do registo.",
+    "accept_all": "Aceitar tudo",
+    "essentials_only": "Apenas essenciais",
+    "customize": "Personalizar",
+    "manage_prefs": "Gerir preferências de cookies"
+  },
+  "footer": {
+    "privacy": "Privacidade",
+    "terms": "Termos",
+    "dpa": "DPA",
+    "cookies": "Política de Cookies"
+  }
+}

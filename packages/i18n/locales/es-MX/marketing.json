@@ -1,0 +1,44 @@
+{
+  "hero": {
+    "headline": "Un programa de fidelización que funciona dondequiera que vendas",
+    "subhead": "Un único programa de lealtad en tu TPV, tienda en línea y panel. Comienza en minutos.",
+    "cta_primary": "Inicia tu prueba gratuita de 30 días",
+    "cta_disclaimer": "Se requiere tarjeta de crédito. Puedes cancelar en cualquier momento antes de que finalice la prueba a través de Stripe.",
+    "cta_login": "¿Ya eres comerciante? Inicia sesión"
+  },
+  "nav": {
+    "login": "Iniciar sesión",
+    "trial": "Iniciar prueba"
+  },
+  "pricing": {
+    "amount": "$29",
+    "period": "/mes",
+    "disclaimer": "Prueba gratuita de 30 días. Se requiere tarjeta. Cancela en cualquier momento a través de Stripe.",
+    "channel_note": "Socios de canal — facturación de su parte. Consulta la tienda de aplicaciones del socio para conocer los precios."
+  },
+  "faq": {
+    "items": {
+      "cc": {
+        "q": "¿Por qué necesitas mi tarjeta de crédito por adelantado?",
+        "a": "La tarjeta guardada bloquea el spam de registro y permite que la prueba se convierta en una suscripción de pago sin problemas. No se te cobrará hasta que finalice la prueba, y puedes cancelar en cualquier momento a través de Stripe."
+      },
+      "charge": {
+        "q": "¿Cuándo se me cobra?",
+        "a": "Tu tarjeta se autoriza hoy (sin cargo), y el primer cargo de $29 ocurre 30 días después del registro a menos que canceles antes."
+      }
+    }
+  },
+  "cookies": {
+    "banner": "Utilizamos cookies esenciales para operar este sitio, y análisis opcionales para medir el rendimiento del registro.",
+    "accept_all": "Aceptar todo",
+    "essentials_only": "Solo lo esencial",
+    "customize": "Personalizar",
+    "manage_prefs": "Administrar preferencias de cookies"
+  },
+  "footer": {
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "dpa": "DPA",
+    "cookies": "Política de cookies"
+  }
+}
