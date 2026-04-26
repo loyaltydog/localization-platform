@@ -1,0 +1,44 @@
+{
+  "hero": {
+    "headline": "Un programma fedeltà che funziona ovunque vendi",
+    "subhead": "Un unico programma fedeltà nel vostro POS, negozio online e dashboard. Iniziate in pochi minuti.",
+    "cta_primary": "Iniziate la vostra prova gratuita di 30 giorni",
+    "cta_disclaimer": "Carta di credito richiesta. Potete cancellare in qualsiasi momento prima della fine della prova tramite Stripe.",
+    "cta_login": "Siete già un commerciante? Accedi"
+  },
+  "nav": {
+    "login": "Accedi",
+    "trial": "Avvia prova"
+  },
+  "pricing": {
+    "amount": "$29",
+    "period": "/mese",
+    "disclaimer": "Prova gratuita di 30 giorni. Carta richiesta. Cancellate in qualsiasi momento tramite Stripe.",
+    "channel_note": "Partner di canale — fatturazione da loro. Consultate il marketplace dell'app del partner per i prezzi."
+  },
+  "faq": {
+    "items": {
+      "cc": {
+        "q": "Perché avete bisogno della mia carta di credito in anticipo?",
+        "a": "La carta memorizzata blocca lo spam di registrazione e consente alla prova di trasformarsi in un abbonamento a pagamento senza intoppi. Non vi verrà addebitato fino al termine della prova, e potete cancellare in qualsiasi momento tramite Stripe."
+      },
+      "charge": {
+        "q": "Quando mi viene addebitato?",
+        "a": "La vostra carta è autorizzata oggi (nessun addebito), e il primo addebito di $29 avviene 30 giorni dopo l'iscrizione a meno che non cancelliate prima."
+      }
+    }
+  },
+  "cookies": {
+    "banner": "Utilizziamo cookie essenziali per gestire questo sito e analitiche facoltative per misurare le prestazioni dell'iscrizione.",
+    "accept_all": "Accetta tutto",
+    "essentials_only": "Solo essenziali",
+    "customize": "Personalizza",
+    "manage_prefs": "Gestisci preferenze cookie"
+  },
+  "footer": {
+    "privacy": "Privacy",
+    "terms": "Termini",
+    "dpa": "DPA",
+    "cookies": "Informativa sui cookie"
+  }
+}
