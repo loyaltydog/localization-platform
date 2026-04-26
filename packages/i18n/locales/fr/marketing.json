@@ -1,0 +1,67 @@
+{
+  "hero": {
+    "headline": "Un programme de fidélité qui fonctionne partout où vous vendez",
+    "subhead": "Un unique programme de fidélité dans votre point de vente, boutique en ligne et tableau de bord. Commencez en quelques minutes.",
+    "cta_primary": "Lancez votre essai gratuit de 30 jours",
+    "cta_disclaimer": "Carte bancaire requise. Vous pouvez annuler à tout moment avant la fin de l'essai via Stripe.",
+    "cta_login": "Vous êtes déjà commerçant ? Connectez-vous"
+  },
+  "nav": {
+    "login": "Se connecter",
+    "trial": "Lancer l'essai"
+  },
+  "pricing": {
+    "amount": "$29",
+    "period": "/mois",
+    "disclaimer": "Essai gratuit de 30 jours. Carte requise. Annulez à tout moment via Stripe.",
+    "channel_note": "Partenaires de canal — facturation de leur côté. Consultez la place de marché de l'application du partenaire pour la tarification."
+  },
+  "faq": {
+    "items": {
+      "cc": {
+        "q": "Pourquoi avez-vous besoin de ma carte bancaire à l'avance ?",
+        "a": "L'enregistrement de la carte bloque le spam d'inscription et permet à l'essai de se transformer en abonnement payant sans friction. Vous ne serez débité que lorsque l'essai prendra fin, et vous pouvez annuler à tout moment via Stripe."
+      },
+      "charge": {
+        "q": "Quand serai-je débité ?",
+        "a": "Votre carte est autorisée aujourd'hui (sans débit), et le premier débit de $29 intervient 30 jours après l'inscription, sauf si vous annulez avant."
+      }
+    }
+  },
+  "cookies": {
+    "banner": "Nous utilisons des cookies essentiels pour exploiter ce site, et des analyses optionnelles pour mesurer les performances des inscriptions.",
+    "accept_all": "Tout accepter",
+    "essentials_only": "Essentiels uniquement",
+    "customize": "Personnaliser",
+    "manage_prefs": "Gérer les préférences de cookies"
+  },
+  "footer": {
+    "privacy": "Confidentialité",
+    "terms": "Conditions",
+    "dpa": "DPA",
+    "cookies": "Politique relative aux cookies"
+  },
+  "integrations": {
+    "wordpress": {
+      "desc": "Extension clé en main pour les boutiques WordPress et WooCommerce."
+    },
+    "shopify": {
+      "desc": "Installation en un clic depuis la Shopify App Store."
+    },
+    "eposnow": {
+      "desc": "Intégration native EPOS Now pour le commerce de détail et l'hôtellerie."
+    },
+    "zapier": {
+      "desc": "Connectez-vous à 6 000+ applications sans coder."
+    },
+    "standalone": {
+      "desc": "Pas encore de boutique ? Lancez un programme de fidélité depuis votre tableau de bord."
+    },
+    "clover": {
+      "desc": "Bientôt disponible — Intégration Clover POS."
+    },
+    "square": {
+      "desc": "Bientôt disponible — Intégration Square POS."
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "hero": {
+    "headline": "Loyalty that works wherever you sell",
+    "subhead": "One loyalty program across your POS, online store, and dashboard. Start in minutes.",
+    "cta_primary": "Start your 30-day free trial",
+    "cta_disclaimer": "Credit card required. Cancel anytime before trial ends via Stripe.",
+    "cta_login": "Already a merchant? Log in"
+  },
+  "nav": {
+    "login": "Log in",
+    "trial": "Start trial"
+  },
+  "pricing": {
+    "amount": "$29",
+    "period": "/month",
+    "disclaimer": "30-day free trial. Card required. Cancel anytime via Stripe.",
+    "channel_note": "Channel partners — billing on their side. See the partner's app market for pricing."
+  },
+  "faq": {
+    "items": {
+      "cc": {
+        "q": "Why do you need my credit card up front?",
+        "a": "Card-on-file blocks signup spam and lets the trial roll into a paid subscription cleanly. You're not charged until the trial ends, and you can cancel anytime via Stripe."
+      },
+      "charge": {
+        "q": "When am I charged?",
+        "a": "Your card is authorized today (no charge), and the first $29 charge happens 30 days after signup unless you cancel before then."
+      }
+    }
+  },
+  "cookies": {
+    "banner": "We use essential cookies to operate this site, and optional analytics to measure signup performance.",
+    "accept_all": "Accept all",
+    "essentials_only": "Essentials only",
+    "customize": "Customize",
+    "manage_prefs": "Manage cookie preferences"
+  },
+  "footer": {
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "dpa": "DPA",
+    "cookies": "Cookie Policy"
+  },
+  "integrations": {
+    "wordpress": {
+      "desc": "Drop-in plugin for WordPress and WooCommerce stores."
+    },
+    "shopify": {
+      "desc": "One-click install from the Shopify App Store."
+    },
+    "eposnow": {
+      "desc": "Native EPOS Now integration for in-person retail and hospitality."
+    },
+    "zapier": {
+      "desc": "Connect to 6,000+ apps without writing code."
+    },
+    "standalone": {
+      "desc": "No store yet? Run a loyalty program directly from your dashboard."
+    },
+    "clover": {
+      "desc": "Coming soon — Clover POS integration."
+    },
+    "square": {
+      "desc": "Coming soon — Square POS integration."
+    }
+  }
+}
