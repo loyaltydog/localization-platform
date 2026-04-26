@@ -42,6 +42,7 @@
     "cookies": "Politique relative aux cookies"
   },
   "integrations": {
+    "coming_soon": "Bientôt disponible",
     "wordpress": {
       "desc": "Extension clé en main pour les boutiques WordPress et WooCommerce."
     },

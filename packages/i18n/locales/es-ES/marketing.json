@@ -42,6 +42,7 @@
     "cookies": "Política de cookies"
   },
   "integrations": {
+    "coming_soon": "Próximamente",
     "wordpress": {
       "desc": "Complemento integrado para tiendas WordPress y WooCommerce."
     },
