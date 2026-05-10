@@ -238,16 +238,18 @@
       },
       "trialNotices": {
         "trialExpired": "Trial expired",
-        "trialDayRemaining": "Trial: {{count}} day remaining",
         "welcomeToLoyaltydog": "Welcome to LoyaltyDog.",
         "signUpForAFree30": "Sign up for a free 30-day trial to activate your points program. No credit card required.",
         "startYourFreeTrial": "Start your free trial",
-        "yourLoyaltydogTrialEndsInDay": "Your LoyaltyDog trial ends in {{count}} day.",
         "upgradeNowToKeepAwardingPoints": "Upgrade now to keep awarding points after the trial ends.",
         "upgradeNow": "Upgrade now",
         "remindMeLater": "Remind me later",
         "yourLoyaltydogTrialHasEnded": "Your LoyaltyDog trial has ended.",
-        "yourStorefrontContinuesToWorkBut": "Your storefront continues to work, but new points will not be awarded until you upgrade. Existing balances remain intact."
+        "yourStorefrontContinuesToWorkBut": "Your storefront continues to work, but new points will not be awarded until you upgrade. Existing balances remain intact.",
+        "trialDayRemaining_one": "Trial: {{count}} day remaining",
+        "trialDayRemaining_other": "Trial: {{count}} days remaining",
+        "yourLoyaltydogTrialEndsInDay_one": "Your LoyaltyDog trial ends in {{count}} day.",
+        "yourLoyaltydogTrialEndsInDay_other": "Your LoyaltyDog trial ends in {{count}} days."
       },
       "activation": {
         "securityCheckFailed": "Security check failed.",
@@ -452,7 +454,6 @@
       },
       "diagnostics": {
         "pluginWonTActivate": "Plugin won't activate",
-        "checkPhpVersionRequires74": "Check PHP version (requires 7.4+)",
         "verifyMysqlVersionRequires57": "Verify MySQL version (requires 5.7+)",
         "checkErrorLogsForSpecificErrors": "Check error logs for specific errors",
         "disableOtherPluginsAndTryAgain": "Disable other plugins and try again",
@@ -466,7 +467,8 @@
         "checkSslCertificateValidity": "Check SSL certificate validity",
         "reviewWebhookEventLogs": "Review webhook event logs",
         "testWithManualWebhookDispatch": "Test with manual webhook dispatch",
-        "ticketCreatedWeLlRespondWithin": "Ticket {{value}} created. We'll respond within 4 hours."
+        "ticketCreatedWeLlRespondWithin": "Ticket {{value}} created. We'll respond within 4 hours.",
+        "checkPhpVersionRequires82": "Check PHP version (requires 8.2+)"
       },
       "settingsSync": {
         "serverReturnedAnUnexpectedResponseShape": "Server returned an unexpected response shape."
@@ -484,12 +486,12 @@
       "httpsLoyaltyDog": "https://loyalty.dog",
       "loyaltydogRequiresWordpress69Or": "LoyaltyDog requires WordPress 6.9 or newer.",
       "youAreCurrentlyRunningWordpress": "You are currently running WordPress {{value}}.",
-      "loyaltydogRequiresPhp80Or": "LoyaltyDog requires PHP 8.0 or newer.",
       "youAreCurrentlyRunningPhp": "You are currently running PHP {{value}}.",
       "loyaltydogRequiresWoocommerceToBeInstalled": "LoyaltyDog requires WooCommerce to be installed and activated.",
       "loyaltydogRequiresWoocommerce70Or": "LoyaltyDog requires WooCommerce 7.0 or newer.",
       "youAreCurrentlyRunningWoocommerce": "You are currently running WooCommerce {{value}}.",
-      "loyaltydogActivationFailedSystemRequirementsNot": "LoyaltyDog activation failed: system requirements not met."
+      "loyaltydogActivationFailedSystemRequirementsNot": "LoyaltyDog activation failed: system requirements not met.",
+      "loyaltydogRequiresPhp82OrNewer": "LoyaltyDog requires PHP 8.2 or newer."
     },
     "misc": {
       "invalidProgram": "Invalid program",
@@ -680,5 +682,8 @@
       "enrolledAt": "Enrolled at",
       "whenYouUseLoyaltydogYourEmail": "When you use LoyaltyDog, your email address and order totals are sent to the LoyaltyDog cloud service (api.loyalty.dog) to calculate and store loyalty points. Loyalty transaction history may be retained locally in de-identified form (linked only to an internal member ID) after an erasure request. See <a href=\\\"https://loyalty.dog/privacy\\\">loyalty.dog/privacy</a> for details."
     }
+  },
+  "admin": {
+    "trialNotices": {}
   }
 }
