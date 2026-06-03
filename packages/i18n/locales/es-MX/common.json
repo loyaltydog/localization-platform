@@ -2145,6 +2145,26 @@
         "delete": {
           "confirm": "Eliminar Regla de Precio",
           "message": "¿Estás seguro de que deseas eliminar esta regla de precio?"
+        },
+        "form": {
+          "name": "Nombre",
+          "namePlaceholder": "Nombre de regla, p. ej. Regla 1",
+          "description": "Descripción",
+          "conversionRatio": "Ratio de conversión",
+          "pointsPerCurrencyUnit": "Puntos por unidad monetaria",
+          "creditValueFormula": "Valor del crédito pendiente = Número de puntos asignados * Valor de puntos",
+          "minimumPointsRequired": "Puntos mínimos requeridos",
+          "dateRange": "Rango de fechas",
+          "dateRangeHelper1": "Especifica un rango de fechas si deseas que tu regla comience/termine en una fecha programada.",
+          "dateRangeHelper2": "Si no especificas un rango de fechas, la regla comenzará cuando la publiques.",
+          "platform": "Plataforma",
+          "locations": "Ubicaciones",
+          "locationsHelper1": "Selecciona ubicaciones donde se aplicará esta regla.",
+          "locationsHelper2": "Deja en blanco para todas las ubicaciones.",
+          "active": "Activo",
+          "saving": "Guardando...",
+          "saveChanges": "Guardar cambios",
+          "cancel": "Cancelar"
         }
       },
       "addNewRule": "Agregar nueva regla",
@@ -2171,6 +2191,41 @@
         "delete": {
           "confirm": "Eliminar Regla de Puntos",
           "message": "¿Estás seguro de que deseas eliminar esta regla de puntos?"
+        },
+        "edit": {
+          "metaTitle": "Editar regla de puntos",
+          "heading": "Editar regla de puntos"
+        },
+        "form": {
+          "name": "Nombre",
+          "namePlaceholder": "Nombre de regla, p. ej. Regla 1",
+          "description": "Descripción",
+          "conversionRatio": "Ratio de conversión",
+          "ratioHelper": "El número de puntos ganados por una unidad monetaria de descuento no utilizado",
+          "ignoreCustomerRatio": "Ignorar la relación de conversión del cliente incluso si es una relación más alta (incluida la relación de conversión del programa y la relación de beneficio)",
+          "minPoints": "Puntos mínimos requeridos",
+          "dateRange": "Rango de fechas",
+          "dateRangeHelper1": "Especifica un rango de fechas si deseas que tu regla comience/termine en una fecha programada.",
+          "dateRangeHelper2": "Si no especificas un rango de fechas, la regla comenzará cuando la publiques.",
+          "platform": "Plataforma",
+          "locations": "Ubicaciones",
+          "locationsHelper1": "Selecciona ubicaciones donde se aplicará esta regla.",
+          "locationsHelper2": "Deja en blanco para todas las ubicaciones.",
+          "categoryNames": "Nombres de categoría",
+          "productNames": "Nombres de productos",
+          "namesHelper": "Ingresa nombres de productos, separados por coma \",\"",
+          "categories": "Categorías",
+          "products": "Productos",
+          "categoryProductHelper1": "Especifica categorías/productos si deseas que tu regla se aplique.",
+          "categoryProductHelper2": "Si no especificas una categoría/producto, la regla se aplicará en orden.",
+          "active": "Activo",
+          "saving": "Guardando...",
+          "saveChanges": "Guardar cambios",
+          "cancel": "Cancelar"
+        },
+        "new": {
+          "metaTitle": "Nueva regla de puntos",
+          "heading": "Nueva regla de puntos"
         }
       },
       "bundle": {
@@ -2182,6 +2237,44 @@
         "delete": {
           "confirm": "Eliminar Regla de Paquete",
           "message": "¿Estás seguro de que deseas eliminar esta regla de paquete?"
+        },
+        "form": {
+          "name": "Nombre",
+          "namePlaceholder": "Nombre de regla, p. ej. Regla 1",
+          "description": "Descripción",
+          "discountType": "Tipo de descuento",
+          "discountTypePercentage": "Porcentaje",
+          "discountTypeFixed": "Cantidad fija",
+          "discountValue": "Valor del descuento",
+          "discountValueHelper": "Porcentaje (0-100) o valor fijo en unidad monetaria",
+          "conversionRatio": "Ratio de conversión",
+          "conversionRatioHelper": "El número de puntos ganados por una unidad monetaria de descuento no utilizado",
+          "ignorePointRule": "Ignorar reglas de puntos si están disponibles. El cliente solo recibirá puntos de bonificación correspondientes al precio con descuento",
+          "minPoints": "Puntos mínimos requeridos",
+          "bundleSize": "Tamaño del lote",
+          "samePrice": "Requiere que los productos tengan el mismo precio",
+          "dateRange": "Rango de fechas",
+          "dateRangeHelperLine1": "Especifica un rango de fechas si deseas que tu regla comience/termine en una fecha programada.",
+          "dateRangeHelperLine2": "Si no especificas un rango de fechas, la regla comenzará cuando la publiques.",
+          "notToUseInConjunction": "No usar en conjunción con otras reglas",
+          "platform": "Plataforma",
+          "locations": "Ubicaciones",
+          "locationsHelperLine1": "Selecciona ubicaciones donde se aplicará esta regla.",
+          "locationsHelperLine2": "Deja en blanco para todas las ubicaciones.",
+          "categoryNames": "Nombres de categoría",
+          "productNames": "Nombres de productos",
+          "enterNamesHelper": "Ingresa nombres de productos, separados por coma \",\"",
+          "categories": "Categorías",
+          "products": "Productos",
+          "categoriesProductsHelperLine1": "Especifica categorías/productos si deseas que tu regla se aplique.",
+          "categoriesProductsHelperLine2": "Si no especificas una categoría/producto, la regla se aplicará en orden.",
+          "active": "Activo",
+          "saving": "Guardando...",
+          "saveChanges": "Guardar cambios",
+          "cancel": "Cancelar"
+        },
+        "new": {
+          "title": "Nueva regla de lote"
         }
       },
       "deal": {
@@ -2193,6 +2286,61 @@
         "delete": {
           "confirm": "Eliminar Regla de Oferta",
           "message": "¿Estás seguro de que deseas eliminar esta regla de oferta?"
+        },
+        "form": {
+          "name": "Nombre",
+          "namePlaceholder": "Nombre de regla, p. ej. Regla 1",
+          "description": "Descripción",
+          "discountType": "Tipo de descuento",
+          "discountTypePercentage": "Porcentaje",
+          "discountTypeFixed": "Cantidad fija",
+          "discountTypeXForY": "X por Y",
+          "discountValue": "Valor del descuento",
+          "discountValueHelp": "Porcentaje (0-100) o valor fijo en unidad monetaria o número de artículos gratuitos",
+          "conversionRatio": "Ratio de conversión",
+          "conversionRatioHelp": "El número de puntos ganados por una unidad monetaria de descuento no utilizado",
+          "ignorePointRule": "Ignorar reglas de puntos si están disponibles. El cliente solo recibirá puntos de bonificación correspondientes al precio con descuento",
+          "minPoints": "Puntos mínimos requeridos",
+          "dateRange": "Rango de fechas",
+          "dateRangeHelpLine1": "Especifica un rango de fechas si deseas que tu regla comience/termine en una fecha programada.",
+          "dateRangeHelpLine2": "Si no especificas un rango de fechas, la regla comenzará cuando la publiques.",
+          "notToUseInConjunction": "No usar en conjunción con otras reglas",
+          "platform": "Plataforma",
+          "locations": "Ubicaciones",
+          "locationsHelpLine1": "Selecciona ubicaciones donde se aplicará esta regla.",
+          "locationsHelpLine2": "Deja en blanco para todas las ubicaciones.",
+          "groups": "Grupos",
+          "active": "Activo",
+          "saving": "Guardando...",
+          "saveChanges": "Guardar cambios",
+          "cancel": "Cancelar"
+        },
+        "group": {
+          "editTitle": "Editar grupo de ofertas",
+          "form": {
+            "name": "Nombre",
+            "namePlaceholder": "Nombre de grupo, p. ej. Grupo 1",
+            "description": "Descripción",
+            "platform": "Plataforma",
+            "categoryNames": "Nombres de categoría",
+            "productNames": "Nombres de productos",
+            "namesHelper": "Ingresa nombres de productos, separados por coma \",\"",
+            "categories": "Categorías",
+            "products": "Productos",
+            "specifyHelperLine1": "Especifica categorías/productos si deseas que tu regla se aplique.",
+            "specifyHelperLine2": "Si no especificas una categoría/producto, la regla se aplicará en orden.",
+            "saving": "Guardando...",
+            "saveChanges": "Guardar cambios",
+            "cancel": "Cancelar"
+          },
+          "new": {
+            "metaTitle": "Nuevo grupo de ofertas",
+            "title": "Nuevo grupo de ofertas"
+          }
+        },
+        "new": {
+          "metaTitle": "Nueva regla de oferta",
+          "heading": "Nueva regla de oferta"
         }
       },
       "dealGroups": {
@@ -3238,8 +3386,31 @@
       "table": {
         "totalRecords": "Total de Registros",
         "date": "Fecha",
-        "displayName": "Nombre Visible"
+        "displayName": "Nombre Visible",
+        "email": "Correo electrónico",
+        "telephone": "Teléfono",
+        "location": "Ubicación",
+        "device": "Dispositivo",
+        "itemsPurchased": "Artículos comprados",
+        "amountSpent": "Cantidad gastada",
+        "rewardsRedeemed": "Recompensas canjeadas",
+        "noOrders": "No tienen órdenes calificadas."
       }
+    },
+    "voucherSummary": {
+      "subtitle": "Informe de resumen de cupones",
+      "loading": "Cargando datos...",
+      "table": {
+        "voucherName": "Nombre del cupón",
+        "voucherType": "Tipo de cupón",
+        "issued": "Emitido",
+        "redeemed": "Canjeado",
+        "redemptionRate": "Tasa de canje",
+        "revenue": "Ingresos",
+        "avgSpend": "Gasto promedio",
+        "topDayForRedemptions": "Día principal para canjes"
+      },
+      "empty": "No tienes registros calificados."
     }
   },
   "customerInfo": {
@@ -3308,6 +3479,36 @@
       "save": "Guardar",
       "saveAndClose": "Guardar y Cerrar",
       "cancel": "Cancelar"
+    }
+  },
+  "account": {
+    "overview": {
+      "passTemplates": "Plantillas de pase",
+      "passes": "Pases",
+      "passTypeIds": "IDs de tipo de pase",
+      "passTypeIdsHelper": "Para uso en producción, se recomienda encarecidamente usar tu propio ID de tipo de pase. Necesitas una cuenta de desarrollador de iOS.",
+      "appKeys": "Claves de aplicación",
+      "empty": "(vacío)"
+    }
+  },
+  "rules": {
+    "bundle": {
+      "edit": {
+        "metaTitle": "Editar regla de lote",
+        "title": "Editar regla de lote"
+      }
+    },
+    "deal": {
+      "edit": {
+        "metaTitle": "Editar regla de oferta",
+        "title": "Editar regla de oferta"
+      }
+    },
+    "price": {
+      "edit": {
+        "metaTitle": "Editar regla de precio",
+        "title": "Editar regla de precio"
+      }
     }
   }
 }
