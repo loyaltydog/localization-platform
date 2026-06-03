@@ -1,4 +1,14 @@
 {
+  "account": {
+    "overview": {
+      "passTemplates": "Modelos de Passe",
+      "passes": "Passes",
+      "passTypeIds": "IDs de Tipo de Passe",
+      "passTypeIdsHelper": "Para uso em produção, você é fortemente encorajado a usar seu próprio ID de Tipo de Passe. Você precisa de uma Conta de Desenvolvedor iOS.",
+      "appKeys": "Chaves de Aplicativo",
+      "empty": "(vazio)"
+    }
+  },
   "dashboard": {
     "welcomeBack": "Bem-vindo de volta, {{displayName}}"
   },
@@ -3070,11 +3080,11 @@
       "noQualifiedCustomers": "Você não possui clientes qualificados."
     },
     "listMembersOptingIn": {
-      "totalRecords": "Total de Registros {total}",
+      "totalRecords": "Total de Registros {{total}}",
       "noQualifiedCustomers": "Você não possui clientes qualificados."
     },
     "listMembersOptingOut": {
-      "totalRecords": "Total de Registros {total}",
+      "totalRecords": "Total de Registros {{total}}",
       "noQualifiedCustomers": "Você não possui clientes qualificados."
     },
     "listMembersRecentVisitedPeriod": {
@@ -3154,7 +3164,7 @@
       "offerActiveSuffix": " (ativa)"
     },
     "membersWithRewards": {
-      "totalRecords": "Total de Registros {total}",
+      "totalRecords": "Total de Registros {{total}}",
       "noQualifiedCustomers": "Você não possui clientes qualificados."
     },
     "signUpSourcePeriod": {
@@ -3221,7 +3231,7 @@
     "otherVouchersSent": {
       "metaTitle": "Relatório de Resumo de Voucher",
       "subtitle": "Outros Vouchers Enviados",
-      "totalRecords": "Total de Registros {total}",
+      "totalRecords": "Total de Registros {{total}}",
       "table": {
         "voucherName": "Nome do Voucher",
         "voucherType": "Tipo de Voucher",

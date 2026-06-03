@@ -3070,11 +3070,11 @@
       "noQualifiedCustomers": "No tienes clientes cualificados."
     },
     "listMembersOptingIn": {
-      "totalRecords": "Total de registros {total}",
+      "totalRecords": "Total de registros {{total}}",
       "noQualifiedCustomers": "No tienes clientes cualificados."
     },
     "listMembersOptingOut": {
-      "totalRecords": "Total de registros {total}",
+      "totalRecords": "Total de registros {{total}}",
       "noQualifiedCustomers": "No tienes clientes cualificados."
     },
     "listMembersRecentVisitedPeriod": {
@@ -3154,7 +3154,7 @@
       "offerActiveSuffix": " (activa)"
     },
     "membersWithRewards": {
-      "totalRecords": "Total de registros {total}",
+      "totalRecords": "Total de registros {{total}}",
       "noQualifiedCustomers": "No tienes clientes cualificados."
     },
     "signUpSourcePeriod": {
@@ -3221,7 +3221,7 @@
     "otherVouchersSent": {
       "metaTitle": "Informe de resumen de vales",
       "subtitle": "Otros vales enviados",
-      "totalRecords": "Total de registros {total}",
+      "totalRecords": "Total de registros {{total}}",
       "table": {
         "voucherName": "Nombre del vale",
         "voucherType": "Tipo de vale",
@@ -3499,6 +3499,16 @@
         "metaTitle": "Editar regla de precio",
         "title": "Editar regla de precio"
       }
+    }
+  },
+  "account": {
+    "overview": {
+      "appKeys": "Claves de aplicación",
+      "empty": "(vacío)",
+      "passTemplates": "Plantillas de pase",
+      "passTypeIds": "ID de tipo de pase",
+      "passTypeIdsHelper": "Para uso en producción, se recomienda encarecidamente que utilice su propio ID de tipo de pase. Necesita una cuenta de desarrollador de iOS.",
+      "passes": "Pases"
     }
   }
 }

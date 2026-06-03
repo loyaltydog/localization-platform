@@ -3070,11 +3070,11 @@
       "noQualifiedCustomers": "No hay clientes calificados."
     },
     "listMembersOptingIn": {
-      "totalRecords": "Total de Registros {total}",
+      "totalRecords": "Total de Registros {{total}}",
       "noQualifiedCustomers": "No hay clientes calificados."
     },
     "listMembersOptingOut": {
-      "totalRecords": "Total de Registros {total}",
+      "totalRecords": "Total de Registros {{total}}",
       "noQualifiedCustomers": "No hay clientes calificados."
     },
     "listMembersRecentVisitedPeriod": {
@@ -3154,7 +3154,7 @@
       "offerActiveSuffix": " (activa)"
     },
     "membersWithRewards": {
-      "totalRecords": "Total de Registros {total}",
+      "totalRecords": "Total de Registros {{total}}",
       "noQualifiedCustomers": "No hay clientes calificados."
     },
     "signUpSourcePeriod": {
@@ -3221,7 +3221,7 @@
     "otherVouchersSent": {
       "metaTitle": "Informe Resumen de Cupones",
       "subtitle": "Otros Cupones Enviados",
-      "totalRecords": "Total de Registros {total}",
+      "totalRecords": "Total de Registros {{total}}",
       "table": {
         "voucherName": "Nombre del Cupón",
         "voucherType": "Tipo de Cupón",

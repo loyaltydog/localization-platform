@@ -3070,11 +3070,11 @@
       "noQualifiedCustomers": "Aucun client qualifié."
     },
     "listMembersOptingIn": {
-      "totalRecords": "Nombre total d'enregistrements {total}",
+      "totalRecords": "Nombre total d'enregistrements {{total}}",
       "noQualifiedCustomers": "Aucun client qualifié."
     },
     "listMembersOptingOut": {
-      "totalRecords": "Nombre total d'enregistrements {total}",
+      "totalRecords": "Nombre total d'enregistrements {{total}}",
       "noQualifiedCustomers": "Aucun client qualifié."
     },
     "listMembersRecentVisitedPeriod": {
@@ -3154,7 +3154,7 @@
       "offerActiveSuffix": " (actif)"
     },
     "membersWithRewards": {
-      "totalRecords": "Nombre total d'enregistrements {total}",
+      "totalRecords": "Nombre total d'enregistrements {{total}}",
       "noQualifiedCustomers": "Aucun client qualifié."
     },
     "signUpSourcePeriod": {
@@ -3221,7 +3221,7 @@
     "otherVouchersSent": {
       "metaTitle": "Rapport de synthèse des bons",
       "subtitle": "Autres bons envoyés",
-      "totalRecords": "Nombre total d'enregistrements {total}",
+      "totalRecords": "Nombre total d'enregistrements {{total}}",
       "table": {
         "voucherName": "Nom du bon",
         "voucherType": "Type de bon",
@@ -3499,6 +3499,16 @@
         "metaTitle": "Modifier la règle de prix",
         "title": "Modifier la règle de prix"
       }
+    }
+  },
+  "account": {
+    "overview": {
+      "appKeys": "App Keys",
+      "empty": "(empty)",
+      "passTemplates": "Pass Templates",
+      "passTypeIds": "Pass Type IDs",
+      "passTypeIdsHelper": "For production use, you are strongly encouraged to use your own Pass Type ID. You need an iOS Developer Account.",
+      "passes": "Passes"
     }
   }
 }

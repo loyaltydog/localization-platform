@@ -3080,11 +3080,11 @@
       "noQualifiedCustomers": "Don't have any qualified customers."
     },
     "listMembersOptingIn": {
-      "totalRecords": "Total Records {total}",
+      "totalRecords": "Total Records {{total}}",
       "noQualifiedCustomers": "Don't have any qualified customers."
     },
     "listMembersOptingOut": {
-      "totalRecords": "Total Records {total}",
+      "totalRecords": "Total Records {{total}}",
       "noQualifiedCustomers": "Don't have any qualified customers."
     },
     "listMembersRecentVisitedPeriod": {
@@ -3110,7 +3110,7 @@
       }
     },
     "listMembersRedeemedMostRewards": {
-      "totalRecords": "Total Records ",
+      "totalRecords": "Total Records",
       "noQualifiedCustomers": "Don't have any qualified customers.",
       "times": "times",
       "loading": "Loading data...",
@@ -3164,7 +3164,7 @@
       "offerActiveSuffix": " (active)"
     },
     "membersWithRewards": {
-      "totalRecords": "Total Records {total}",
+      "totalRecords": "Total Records {{total}}",
       "noQualifiedCustomers": "Don't have any qualified customers."
     },
     "signUpSourcePeriod": {
@@ -3231,7 +3231,7 @@
     "otherVouchersSent": {
       "metaTitle": "Voucher Summary Report",
       "subtitle": "Other Vouchers Sent",
-      "totalRecords": "Total Records {total}",
+      "totalRecords": "Total Records {{total}}",
       "table": {
         "voucherName": "Voucher Name",
         "voucherType": "Voucher Type",

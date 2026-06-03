@@ -3070,11 +3070,11 @@
       "noQualifiedCustomers": "Não tem clientes qualificados."
     },
     "listMembersOptingIn": {
-      "totalRecords": "Total de Registos {total}",
+      "totalRecords": "Total de Registos {{total}}",
       "noQualifiedCustomers": "Não tem clientes qualificados."
     },
     "listMembersOptingOut": {
-      "totalRecords": "Total de Registos {total}",
+      "totalRecords": "Total de Registos {{total}}",
       "noQualifiedCustomers": "Não tem clientes qualificados."
     },
     "listMembersRecentVisitedPeriod": {
@@ -3154,7 +3154,7 @@
       "offerActiveSuffix": " (ativo)"
     },
     "membersWithRewards": {
-      "totalRecords": "Total de Registos {total}",
+      "totalRecords": "Total de Registos {{total}}",
       "noQualifiedCustomers": "Não tem clientes qualificados."
     },
     "signUpSourcePeriod": {
@@ -3221,7 +3221,7 @@
     "otherVouchersSent": {
       "metaTitle": "Relatório de Resumo de Vale",
       "subtitle": "Outros Vales Enviados",
-      "totalRecords": "Total de Registos {total}",
+      "totalRecords": "Total de Registos {{total}}",
       "table": {
         "voucherName": "Nome do Vale",
         "voucherType": "Tipo de Vale",
@@ -3499,6 +3499,16 @@
         "metaTitle": "Editar Regra de Preço",
         "title": "Editar Regra de Preço"
       }
+    }
+  },
+  "account": {
+    "overview": {
+      "appKeys": "App Keys",
+      "empty": "(vazio)",
+      "passTemplates": "Modelos de Pass",
+      "passes": "Passes",
+      "passTypeIds": "IDs de Tipo de Pass",
+      "passTypeIdsHelper": "Para uso em produção, é altamente recomendado usar seu próprio ID de Tipo de Pass. Você precisa de uma Conta de Desenvolvedor iOS."
     }
   }
 }
