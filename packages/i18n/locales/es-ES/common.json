@@ -760,7 +760,9 @@
           "reRunMessage": "Re Run Message",
           "delete": "Eliminar",
           "deleteConfirm": "Eliminar {{name}}",
-          "deleteMessage": "Delete Message"
+          "deleteMessage": "Delete Message",
+          "editTitle": "Editar copia de seguridad",
+          "restoreTitle": "Restaurar copia de seguridad"
         },
         "form": {
           "nameLabel": "Name Label",
@@ -791,6 +793,9 @@
           "templates": "Plantillas",
           "offers": "Ofertas",
           "clovers": "Clovers"
+        },
+        "error": {
+          "generic": "¡Algo salió mal!"
         }
       },
       "configuration": {
@@ -1140,7 +1145,9 @@
           "tableHeaderDetails": "Table Header Details",
           "noScans": "No Scans",
           "unknownScanner": "Unknown Scanner",
-          "saveButton": "Save Button"
+          "saveButton": "Save Button",
+          "devicePrefix": "Dispositivo",
+          "previewAlt": "Vista previa"
         }
       },
       "passTypes": {
@@ -1427,7 +1434,14 @@
       "customize": "Personalizar",
       "referralSuffix": "referido",
       "exportCustomerData": "Exportar Datos de Clientes",
-      "exportActivityData": "Exportar Datos de Actividad"
+      "exportActivityData": "Exportar Datos de Actividad",
+      "benefits": {
+        "edit": {
+          "metaTitle": "Editar beneficio",
+          "heading": "Editar beneficio"
+        }
+      },
+      "iconAlt": "icono"
     },
     "customers": {
       "firstName": "Nombre",
@@ -1961,7 +1975,8 @@
       "detail": {
         "pageTitle": "Beneficio",
         "backToBenefits": "Beneficios del Programa",
-        "heading": "Beneficio:"
+        "heading": "Beneficio:",
+        "backToProgramBenefits": "Beneficios del programa"
       },
       "description": "Con la función Beneficios, puedes agregar múltiples beneficios para clientes, cada beneficio puede tener múltiples recompensas y una proporción de puntos diferente por unidad de moneda.",
       "activate": "Activar Beneficios",
@@ -1969,11 +1984,54 @@
       "add": "Agregar beneficio",
       "empty": "No se encontraron beneficios.",
       "deleteConfirm": "Eliminar Beneficio",
-      "deleteMessage": "¿Estás seguro de que deseas eliminar este beneficio?"
+      "deleteMessage": "¿Estás seguro de que deseas eliminar este beneficio?",
+      "form": {
+        "name": "Nombre",
+        "namePlaceholder": "Nombre del beneficio, p. ej. Beneficio 1",
+        "color": "Color",
+        "backgroundColor": "Color de fondo",
+        "foregroundColor": "Color de primer plano",
+        "labelColor": "Color de la etiqueta",
+        "description": "Descripción",
+        "autoAssign": "Asignación automática",
+        "autoAssignHelp": "Los nuevos miembros se asignarán a este nivel automáticamente",
+        "conversionRatio": "Ratio de conversión",
+        "conversionRatioHelp": "Puntos por unidad de moneda",
+        "excludedCategories": "Categorías excluidas",
+        "separateCategoriesPrefix": "Separe varias categorías por coma ",
+        "rewards": "Recompensas",
+        "unset": "(sin establecer)",
+        "rewardName": "Nombre de la recompensa",
+        "rewardDescription": "Descripción de la recompensa",
+        "rewardType": "Tipo de recompensa",
+        "rewardTypePercentage": "Porcentaje",
+        "rewardTypeFixed": "Cantidad fija",
+        "rewardValue": "Valor de la recompensa",
+        "rewardValueHelp": "Importe o porcentaje de descuento (0-100)",
+        "specialCategories": "Categorías especiales",
+        "separateCategoriesByComma": "Separe varias categorías por coma \",\"",
+        "categoriesApplyConditionHelp": "Si hay muchos productos seleccionados en estas categorías, solo se seleccionará un producto que cumpla la condición de aplicación como descuento.",
+        "specialProducts": "Productos especiales",
+        "separateProductsByComma": "Separe varios productos por coma \",\"",
+        "productsApplyConditionHelp": "Si hay muchos productos seleccionados, solo se seleccionará un producto que cumpla la condición de aplicación como descuento.",
+        "applyCondition": "Condición de aplicación",
+        "conditionMax": "El valor del artículo más caro",
+        "conditionMin": "El valor del artículo más barato",
+        "birthdayOnly": "¿Solo disponible en cumpleaños?",
+        "removeReward": "Eliminar esta recompensa",
+        "addReward": "Agregar más recompensa",
+        "saving": "Guardando...",
+        "saveChanges": "Guardar cambios",
+        "cancel": "Cancelar"
+      },
+      "new": {
+        "title": "Nuevo beneficio"
+      }
     },
     "customers": {
       "new": {
-        "title": "Nuevo Cliente"
+        "title": "Nuevo Cliente",
+        "heading": "Nuevo cliente"
       }
     },
     "design": {
@@ -2082,7 +2140,32 @@
         "title": "Reglas de Precio",
         "helper": "Esta página permite configurar reglas para un valor monetario real, de modo que el miembro del Programa de Fidelización pueda utilizar los puntos en su saldo como parte del pago completo de bienes en la Caja/TPV.",
         "deleteConfirm": "Eliminar Regla de Precio",
-        "deleteMessage": "¿Está seguro de que desea eliminar esta regla de precio?"
+        "deleteMessage": "¿Está seguro de que desea eliminar esta regla de precio?",
+        "heading": "Reglas de precio",
+        "delete": {
+          "confirm": "Eliminar regla de precio",
+          "message": "¿Está seguro de que desea eliminar esta regla de precio?"
+        },
+        "form": {
+          "name": "Nombre",
+          "namePlaceholder": "Nombre de la regla, p. ej. Regla 1",
+          "description": "Descripción",
+          "conversionRatio": "Ratio de conversión",
+          "pointsPerCurrencyUnit": "Puntos por unidad de moneda",
+          "creditValueFormula": "Valor del crédito pendiente = Número de puntos asignados * Valor de los puntos",
+          "minimumPointsRequired": "Puntos mínimos requeridos",
+          "dateRange": "Rango de fechas",
+          "dateRangeHelper1": "Especifique un rango de fechas si desea que su regla comience/termine en una fecha programada.",
+          "dateRangeHelper2": "Si no especifica un rango de fechas, la regla comenzará cuando la publique.",
+          "platform": "Plataforma",
+          "locations": "Ubicaciones",
+          "locationsHelper1": "Seleccione ubicaciones donde se aplicará esta regla.",
+          "locationsHelper2": "Dejar en blanco para todas las ubicaciones.",
+          "active": "Activo",
+          "saving": "Guardando...",
+          "saveChanges": "Guardar cambios",
+          "cancel": "Cancelar"
+        }
       },
       "addNewRule": "Añadir nueva regla",
       "table": {
@@ -2103,19 +2186,162 @@
         "title": "Reglas de Puntos",
         "helper": "Esta página permite configurar reglas para otorgar puntos, de modo que el miembro del Programa de Fidelización pueda recibir puntos a una tasa global única de puntos por unidad de moneda gastada.",
         "deleteConfirm": "Eliminar Regla de Puntos",
-        "deleteMessage": "¿Está seguro de que desea eliminar esta regla de puntos?"
+        "deleteMessage": "¿Está seguro de que desea eliminar esta regla de puntos?",
+        "heading": "Reglas de puntos",
+        "delete": {
+          "confirm": "Eliminar regla de puntos",
+          "message": "¿Está seguro de que desea eliminar esta regla de puntos?"
+        },
+        "edit": {
+          "metaTitle": "Editar regla de puntos",
+          "heading": "Editar regla de puntos"
+        },
+        "form": {
+          "name": "Nombre",
+          "namePlaceholder": "Nombre de la regla, p. ej. Regla 1",
+          "description": "Descripción",
+          "conversionRatio": "Ratio de conversión",
+          "ratioHelper": "El número de puntos ganados por unidad de moneda para descuento no utilizado",
+          "ignoreCustomerRatio": "Ignorar ratio de conversión del cliente incluso si es un ratio más alto (incluye ratio de conversión del programa y ratio de beneficio)",
+          "minPoints": "Puntos mínimos requeridos",
+          "dateRange": "Rango de fechas",
+          "dateRangeHelper1": "Especifique un rango de fechas si desea que su regla comience/termine en una fecha programada.",
+          "dateRangeHelper2": "Si no especifica un rango de fechas, la regla comenzará cuando la publique.",
+          "platform": "Plataforma",
+          "locations": "Ubicaciones",
+          "locationsHelper1": "Seleccione ubicaciones donde se aplicará esta regla.",
+          "locationsHelper2": "Dejar en blanco para todas las ubicaciones.",
+          "categoryNames": "Nombres de categorías",
+          "productNames": "Nombres de productos",
+          "namesHelper": "Ingrese nombres de productos, separados por coma \",\"",
+          "categories": "Categorías",
+          "products": "Productos",
+          "categoryProductHelper1": "Especifique categorías/productos si desea que se aplique su regla.",
+          "categoryProductHelper2": "Si no especifica una categoría/producto, la regla se aplicará en orden.",
+          "active": "Activo",
+          "saving": "Guardando...",
+          "saveChanges": "Guardar cambios",
+          "cancel": "Cancelar"
+        },
+        "new": {
+          "metaTitle": "Nueva regla de puntos",
+          "heading": "Nueva regla de puntos"
+        }
       },
       "bundle": {
         "title": "Reglas de Paquete",
         "helper": "El objetivo de la Promoción de Paquete es permitir al Comerciante agrupar un paquete de tres Productos especificados dentro de una Categoría específica de Productos que generará un bonus adicional en puntos que pueden ser traducidos en efectivo en la Caja/TPV.",
         "deleteConfirm": "Eliminar Regla de Paquete",
-        "deleteMessage": "¿Está seguro de que desea eliminar esta regla de paquete?"
+        "deleteMessage": "¿Está seguro de que desea eliminar esta regla de paquete?",
+        "heading": "Reglas de paquete",
+        "delete": {
+          "confirm": "Eliminar regla de paquete",
+          "message": "¿Está seguro de que desea eliminar esta regla de paquete?"
+        },
+        "form": {
+          "name": "Nombre",
+          "namePlaceholder": "Nombre de la regla, p. ej. Regla 1",
+          "description": "Descripción",
+          "discountType": "Tipo de descuento",
+          "discountTypePercentage": "Porcentaje",
+          "discountTypeFixed": "Cantidad fija",
+          "discountValue": "Valor de descuento",
+          "discountValueHelper": "Porcentaje (0-100) o valor fijo en unidad de moneda",
+          "conversionRatio": "Ratio de conversión",
+          "conversionRatioHelper": "El número de puntos ganados por unidad de moneda para descuento no utilizado",
+          "ignorePointRule": "Ignorar reglas de puntos si está disponible. El cliente solo recibirá puntos de bonificación correspondientes al precio con descuento",
+          "minPoints": "Puntos mínimos requeridos",
+          "bundleSize": "Tamaño del paquete",
+          "samePrice": "Requerir que los productos tengan el mismo precio",
+          "dateRange": "Rango de fechas",
+          "dateRangeHelperLine1": "Especifique un rango de fechas si desea que su regla comience/termine en una fecha programada.",
+          "dateRangeHelperLine2": "Si no especifica un rango de fechas, la regla comenzará cuando la publique.",
+          "notToUseInConjunction": "No usar junto con otras reglas",
+          "platform": "Plataforma",
+          "locations": "Ubicaciones",
+          "locationsHelperLine1": "Seleccione ubicaciones donde se aplicará esta regla.",
+          "locationsHelperLine2": "Dejar en blanco para todas las ubicaciones.",
+          "categoryNames": "Nombres de categorías",
+          "productNames": "Nombres de productos",
+          "enterNamesHelper": "Ingrese nombres de productos, separados por coma \",\"",
+          "categories": "Categorías",
+          "products": "Productos",
+          "categoriesProductsHelperLine1": "Especifique categorías/productos si desea que se aplique su regla.",
+          "categoriesProductsHelperLine2": "Si no especifica una categoría/producto, la regla se aplicará en orden.",
+          "active": "Activo",
+          "saving": "Guardando...",
+          "saveChanges": "Guardar cambios",
+          "cancel": "Cancelar"
+        },
+        "new": {
+          "title": "Nueva regla de paquete"
+        }
       },
       "deal": {
         "title": "Reglas de Oferta",
         "helper": "El objetivo de la Promoción de Oferta es permitir al Comerciante agrupar múltiples Productos dentro de una Categoría específica de Productos que generará un bonus adicional en puntos que pueden ser traducidos en efectivo en la Caja/TPV.",
         "deleteConfirm": "Eliminar Regla de Oferta",
-        "deleteMessage": "¿Está seguro de que desea eliminar esta regla de oferta?"
+        "deleteMessage": "¿Está seguro de que desea eliminar esta regla de oferta?",
+        "heading": "Reglas de oferta",
+        "delete": {
+          "confirm": "Eliminar regla de oferta",
+          "message": "¿Está seguro de que desea eliminar esta regla de oferta?"
+        },
+        "form": {
+          "name": "Nombre",
+          "namePlaceholder": "Nombre de la regla, p. ej. Regla 1",
+          "description": "Descripción",
+          "discountType": "Tipo de descuento",
+          "discountTypePercentage": "Porcentaje",
+          "discountTypeFixed": "Cantidad fija",
+          "discountTypeXForY": "X por Y",
+          "discountValue": "Valor de descuento",
+          "discountValueHelp": "Porcentaje (0-100) o valor fijo en unidad de moneda o número de artículos gratis",
+          "conversionRatio": "Ratio de conversión",
+          "conversionRatioHelp": "El número de puntos ganados por unidad de moneda para descuento no utilizado",
+          "ignorePointRule": "Ignorar reglas de puntos si está disponible. El cliente solo recibirá puntos de bonificación correspondientes al precio con descuento",
+          "minPoints": "Puntos mínimos requeridos",
+          "dateRange": "Rango de fechas",
+          "dateRangeHelpLine1": "Especifique un rango de fechas si desea que su regla comience/termine en una fecha programada.",
+          "dateRangeHelpLine2": "Si no especifica un rango de fechas, la regla comenzará cuando la publique.",
+          "notToUseInConjunction": "No usar junto con otras reglas",
+          "platform": "Plataforma",
+          "locations": "Ubicaciones",
+          "locationsHelpLine1": "Seleccione ubicaciones donde se aplicará esta regla.",
+          "locationsHelpLine2": "Dejar en blanco para todas las ubicaciones.",
+          "groups": "Grupos",
+          "active": "Activo",
+          "saving": "Guardando...",
+          "saveChanges": "Guardar cambios",
+          "cancel": "Cancelar"
+        },
+        "group": {
+          "editTitle": "Editar grupo de ofertas",
+          "form": {
+            "name": "Nombre",
+            "namePlaceholder": "Nombre del grupo, p. ej. Grupo 1",
+            "description": "Descripción",
+            "platform": "Plataforma",
+            "categoryNames": "Nombres de categorías",
+            "productNames": "Nombres de productos",
+            "namesHelper": "Ingrese nombres de productos, separados por coma \",\"",
+            "categories": "Categorías",
+            "products": "Productos",
+            "specifyHelperLine1": "Especifique categorías/productos si desea que se aplique su regla.",
+            "specifyHelperLine2": "Si no especifica una categoría/producto, la regla se aplicará en orden.",
+            "saving": "Guardando...",
+            "saveChanges": "Guardar cambios",
+            "cancel": "Cancelar"
+          },
+          "new": {
+            "metaTitle": "Nuevo grupo de ofertas",
+            "title": "Nuevo grupo de ofertas"
+          }
+        },
+        "new": {
+          "metaTitle": "Nueva regla de oferta",
+          "heading": "Nueva regla de oferta"
+        }
       },
       "dealGroups": {
         "title": "Grupos de Oferta",
@@ -2123,12 +2349,171 @@
         "deleteConfirm": "Eliminar Grupo de Oferta",
         "deleteMessage": "¿Está seguro de que desea eliminar este grupo de oferta?"
       },
-      "addNewGroup": "Añadir nuevo grupo"
+      "addNewGroup": "Añadir nuevo grupo",
+      "empty": "Sin reglas",
+      "emptyGroups": "Sin grupos",
+      "delete": {
+        "title": "Eliminar"
+      },
+      "dealGroup": {
+        "heading": "Grupos de ofertas",
+        "helper": "Esta página le permite configurar grupos para rellenar las reglas de oferta del programa de fidelidad.",
+        "delete": {
+          "confirm": "Eliminar grupo de ofertas",
+          "message": "¿Está seguro de que desea eliminar este grupo de ofertas?"
+        }
+      }
     },
     "export": {
       "exportingDataAriaLabel": "Exportando datos",
       "exportingData": "Exportando datos...",
-      "thisCanTakeSomeTime": "Esto puede tardar algún tiempo"
+      "thisCanTakeSomeTime": "Esto puede tardar algún tiempo",
+      "error": {
+        "generic": "¡Algo salió mal! Intente más tarde."
+      },
+      "download": "Descargar",
+      "exportingAriaLabel": "Exportando datos",
+      "exporting": "Exportando datos...",
+      "takesTime": "Esto puede tardar un tiempo"
+    },
+    "edit": {
+      "tabs": {
+        "rules": "Reglas"
+      },
+      "loyaltyProgram": "Programa de fidelidad",
+      "name": "Nombre",
+      "description": "Descripción",
+      "descriptionHelper": "Breve teaser promocional para su programa",
+      "country": "País",
+      "selectCountry": "Seleccionar país",
+      "icon": "Icono",
+      "iconHelper": "El icono debe estar en formato cuadrado",
+      "pointsForActivities": "Puntos por actividades",
+      "pointsForActivitiesHelper": "Recompense a sus clientes con puntos por determinadas actividades",
+      "addEmail": "Añadir correo electrónico",
+      "addPhoneNumber": "Añadir número de teléfono",
+      "installPass": "Pase de instalación",
+      "passScanned": "Pase escaneado",
+      "dynamic": "Dinámico",
+      "dynamicScanHelper": "Elija dinámico si desea recompensar un número personalizado de puntos por cada escaneo.",
+      "customerReferral": "Referencia de clientes",
+      "pointsAfterReferredCustomerHas": "puntos después de que el cliente referido tenga",
+      "points": "puntos",
+      "contactLegal": "Contacto y legal",
+      "companyName": "Nombre de la empresa",
+      "companyNameHelper": "Nombre legal de su empresa",
+      "address": "Dirección",
+      "website": "Sitio web",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "termsAndConditions": "Términos y condiciones",
+      "termsHelper": "Puede especificar términos para su programa de fidelidad",
+      "scanningRedemption": "Escaneo e canje",
+      "scanner": "Escáner",
+      "scannerBrowser": "Navegador: Quiero utilizar otra solución de escaneo que pueda abrir URLs.",
+      "scannerNone": "Ninguno: No necesito escanear las tarjetas.",
+      "pointsChangeMessage": "Mensaje de cambio de puntos",
+      "disableMessage": "Desactivar mensaje",
+      "defaultMessageIs": "El mensaje predeterminado es",
+      "defaultMessageExample": "Nuevos puntos: %@",
+      "pointNames": "Nombres de los puntos",
+      "one": "Uno",
+      "many": "Muchos",
+      "pointNamesDefaultPrefix": "Los valores predeterminados son Uno:",
+      "pointNameSingularExample": "Punto",
+      "pointNamePluralExample": "Puntos",
+      "customerFields": "Campos de cliente",
+      "requiredFields": "Campos obligatorios",
+      "customFields": {
+        "type": "Tipo",
+        "name": "Nombre",
+        "displayName": "Nombre para mostrar",
+        "points": "Puntos",
+        "required": "Obligatorio",
+        "settings": "Configuración",
+        "edit": "Editar",
+        "typeText": "Texto",
+        "typeNumber": "Número",
+        "typeDate": "Fecha",
+        "typeSelection": "Selección",
+        "empty": "Vacío",
+        "sameAsName": "Igual que el nombre",
+        "optionsHelper": "Ingrese las opciones disponibles como valores separados por comas",
+        "addField": "Añadir campo"
+      },
+      "saving": "Guardando...",
+      "saveProgram": "Guardar programa",
+      "cancel": "Cancelar",
+      "savedSuccessfully": "Guardado correctamente",
+      "roundingMode": "Modo de redondeo",
+      "roundingTypeAmountSpent": "Redondear cantidad gastada, luego multiplicar por ratio",
+      "roundingTypeResult": "Multiplicar cantidad gastada por ratio, luego redondear el resultado final",
+      "roundingModeRound": "Redondear al entero más próximo",
+      "roundingModeFloor": "Siempre redondear hacia abajo",
+      "roundingModeCeil": "Siempre redondear hacia arriba",
+      "conversionType": "Tipo de conversión",
+      "conversionTypeSimple": "Usar ratio de conversión simple",
+      "conversionTypeTiers": "Usar configuración de niveles",
+      "tiers": {
+        "configuration": "Configuración de niveles",
+        "name": "Nombre",
+        "displayName": "Nombre para mostrar",
+        "colors": "Colores",
+        "points": "Puntos",
+        "pointsPerCurrencyUnit": "Puntos por unidad de moneda",
+        "background": "Fondo",
+        "foreground": "Primer plano",
+        "label": "Etiqueta",
+        "from": "De",
+        "to": "Hasta",
+        "addTier": "Agregar nivel"
+      },
+      "conversionRatio": "Ratio de conversión",
+      "welcomeMessageTemplate": "Plantilla de mensaje de bienvenida",
+      "enableWelcomeMessage": "Habilitar mensaje de bienvenida",
+      "welcomeMessageHelper": "Se enviará un mensaje de bienvenida a los nuevos clientes vía SMS.",
+      "eposnowCustomersSync": "Sincronización de clientes EposNow",
+      "eposnowCustomersSyncLabel": "Habilitar sincronización de clientes desde y hacia EposNow",
+      "customersAdditionalDetails": "Detalles adicionales de clientes",
+      "customersAdditionalDetailsLabel": "Permitir mostrar más detalles de clientes en la caja registradora",
+      "customerSyncFilter": "Filtro de sincronización de clientes",
+      "customerSyncFilterLabel": "Solo sincronizar clientes que tengan correo electrónico o número de teléfono",
+      "features": "Características",
+      "featuresHelper": "Habilitar o deshabilitar características específicas para este programa por administradores.",
+      "canSearchCustomersFromOtherPrograms": "Puede buscar clientes de otros programas",
+      "allowOtherProgramsToSearchCustomers": "Permitir que otros programas busquen clientes",
+      "supportMultiplePassColors": "Soporte de múltiples colores de pase",
+      "note": "Nota:",
+      "multiplePassColorsNote": "Esta característica es experimental e inestable.",
+      "isGDPR": "Es GDPR",
+      "isGDPRLabel": "Marque esto si este programa tiene un campo GDPR",
+      "activeAccount": "Cuenta activa",
+      "activeAccountNote": "Las cuentas activas sincronizarán todos los datos. Las cuentas inactivas solo sincronizarán pedidos",
+      "saveAdvancedSettings": "Guardar configuración avanzada",
+      "active": "Activo",
+      "updating": "Actualizando...",
+      "update": "Actualizar",
+      "platform": {
+        "all": "Todas las plataformas",
+        "eposnow": "EposNow",
+        "shopify": "Shopify"
+      },
+      "dataTools": {
+        "eposnowPlatform": "Plataforma EposNow",
+        "shopifyPlatform": "Plataforma Shopify",
+        "syncEposnowCustomers": "Sincronizar todos los clientes de EposNow",
+        "syncEposnowCustomersConfirm": "¿Está seguro de que desea sincronizar todos los clientes de EposNow con el sistema LoyaltyDog? Puede tardar un tiempo en procesarse.",
+        "syncEposnowCategoriesProducts": "Sincronizar todas las categorías y productos de EposNow",
+        "syncEposnowCategoriesProductsConfirm": "¿Está seguro de que desea sincronizar todas las categorías y productos de EposNow con el sistema LoyaltyDog? Puede tardar un tiempo en procesarse.",
+        "syncShopifyCustomers": "Sincronizar todos los clientes de Shopify",
+        "syncShopifyCustomersConfirm": "¿Está seguro de que desea sincronizar todos los clientes de Shopify con el sistema LoyaltyDog? Puede tardar un tiempo en procesarse.",
+        "syncShopifyCategoriesProducts": "Sincronizar todas las colecciones y productos de Shopify",
+        "syncShopifyCategoriesProductsConfirm": "¿Está seguro de que desea sincronizar todas las colecciones y productos de Shopify con el sistema LoyaltyDog? Puede tardar un tiempo en procesarse.",
+        "syncQueued": "¡Su solicitud ha sido añadida a la cola! Procesaremos su solicitud pronto.",
+        "confirmSyncCustomers": "Sincronizar clientes",
+        "confirmSyncCategoriesProducts": "Sincronizar categorías y productos",
+        "confirmSyncCollectionsProducts": "Sincronizar colecciones y productos"
+      }
     }
   },
   "managersPortal": {
@@ -2161,7 +2546,8 @@
         "gdpr": "RGPD",
         "points": "Puntos",
         "cardInstalled": "Tarjeta Instalada",
-        "joinedAt": "Fecha de Unión"
+        "joinedAt": "Fecha de Unión",
+        "actions": "Acciones"
       },
       "empty": "Sin clientes",
       "actions": {
@@ -2170,13 +2556,24 @@
       "confirm": {
         "title": "Desasignar Cliente",
         "message": "¿Estás seguro de que deseas desasignar al cliente de este beneficio?"
+      },
+      "yes": "Verdadero",
+      "anonymous": "Anónimo #{{id}}",
+      "unassign": {
+        "title": "Desasignar",
+        "confirm": "Desasignar cliente",
+        "message": "¿Está seguro de que desea desasignar al cliente de este beneficio?"
       }
     },
     "assignCustomer": {
       "button": "Asignar cliente",
       "modalTitle": "Asignar Cliente",
       "searchPlaceholder": "Introduce Correo, Teléfono, Número de Tarjeta, PID de Tarjeta",
-      "addedBadge": "añadido"
+      "addedBadge": "añadido",
+      "searching": "Buscando...",
+      "search": "Buscar",
+      "added": "añadido",
+      "somethingWentWrong": "¡Algo salió mal!"
     },
     "form": {
       "name": "Nombre",
@@ -2214,6 +2611,16 @@
     "new": {
       "metaTitle": "Nuevo Beneficio",
       "heading": "Nuevo Beneficio"
+    },
+    "intro": "Con la función Beneficios, puede agregar múltiples beneficios para clientes, cada beneficio puede tener múltiples recompensas y un ratio de puntos diferente por unidad de moneda.",
+    "activate": "Activar beneficios",
+    "heading": "Beneficios",
+    "add": "Agregar beneficio",
+    "empty": "No se encontraron beneficios.",
+    "delete": {
+      "title": "Eliminar",
+      "confirm": "Eliminar beneficio",
+      "message": "¿Está seguro de que desea eliminar este beneficio?"
     }
   },
   "customers": {
@@ -2244,7 +2651,9 @@
       "actions": {
         "pushNotification": "Notificación Push",
         "passCard": "Tarjeta de Pase",
-        "checkNewOffers": "Verificar Nuevas Ofertas"
+        "checkNewOffers": "Verificar Nuevas Ofertas",
+        "update": "Actualizar",
+        "delete": "Eliminar"
       },
       "availableOffers": {
         "heading": "Ofertas Disponibles",
@@ -2263,13 +2672,38 @@
           "actions": "Acciones",
           "totalPoints": "Total de Puntos"
         },
-        "empty": "Sin acciones"
+        "empty": "Sin acciones",
+        "order": {
+          "transaction": "Transacción",
+          "total": "Total:",
+          "time": "Hora:",
+          "platform": "Plataforma:"
+        }
       },
       "order": {
         "transactionNumberPrefix": "Transacción #",
         "totalLabel": "Total: ",
         "timeLabel": "Hora: ",
         "platformLabel": "Plataforma: "
+      },
+      "metaTitle": "Cliente {{name}}",
+      "events": {
+        "joined": "Se unió",
+        "referral": "Referencia",
+        "addEmail": "Añadir correo electrónico",
+        "addPhone": "Añadir teléfono",
+        "addCustomField": "Añadir campo personalizado",
+        "changePoints": "Cambiar puntos",
+        "offerReceived": "Oferta recibida",
+        "offerRedeemed": "Oferta canjeada",
+        "voucherReceived": "Vale recibido",
+        "voucherRedeemed": "Vale canjeado",
+        "voucherExpired": "Vale expirado",
+        "pointsRedeemed": "Puntos canjeados",
+        "rewardRedeemed": "Recompensa canjeada",
+        "offerExpired": "Oferta expirada",
+        "passInstalled": "Pase instalado",
+        "scan": "Escanear"
       }
     },
     "eventType": {
@@ -2289,6 +2723,19 @@
       "offerExpired": "Oferta Expirada",
       "passInstalled": "Pase Instalado",
       "scan": "Escaneo"
+    },
+    "message": {
+      "form": {
+        "sendSuccess": "Su mensaje se envió correctamente, se entregará a su cliente en breve.",
+        "currentMessageLabel": "Mensaje actual:",
+        "emptyMessage": "(vacío)",
+        "messageLabel": "Mensaje",
+        "messageHelper": "Nota: El uso excesivo de notificaciones push puede provocar limitaciones o bloqueos de sus tarjetas.",
+        "confirmLabel": "Estoy seguro",
+        "sending": "Por favor, espere...",
+        "send": "Enviar",
+        "cancel": "Cancelar"
+      }
     }
   },
   "broadcast": {
@@ -2300,12 +2747,17 @@
       "messageHelper": "Nota: El uso excesivo de notificaciones push puede provocar limitación de velocidad o bloqueo de tus tarjetas.",
       "confirmLabel": "Estoy seguro",
       "message": "Mensaje",
-      "confirm": "Estoy seguro"
+      "confirm": "Estoy seguro",
+      "sending": "Por favor, espere...",
+      "send": "Enviar",
+      "cancel": "Cancelar"
     },
     "page": {
       "title": "Transmisiones",
       "heading": "Enviar Notificación Push a Todos los Clientes"
-    }
+    },
+    "metadataTitle": "Transmisiones",
+    "heading": "Enviar notificación push a todos los clientes"
   },
   "offers": {
     "design": {
@@ -2398,7 +2850,40 @@
       },
       "notifyMessage": {
         "placeholder": "Mensaje"
-      }
+      },
+      "percentageWarning": "ADVERTENCIA: El valor de porcentaje de descuento es {{percent}}%. Asegúrese de que esta es la tasa de descuento prevista.",
+      "categoriesHelperLine1": "Separe varias categorías por coma \",\"",
+      "categoriesHelperLine2": "Si hay muchos productos seleccionados en estas categorías, solo se seleccionará un producto que cumpla la condición de aplicación como descuento.",
+      "productsHelperLine1": "Separe varios productos por coma \",\"",
+      "productsHelperLine2": "Si hay muchos productos seleccionados, solo se seleccionará un producto que cumpla la condición de aplicación como descuento.",
+      "eposNowOnlyLine1": "Las categorías y productos especiales actualmente solo se admiten en EPOS Now.",
+      "eposNowOnlyLine2": "Se agregará soporte para plataformas adicionales en el futuro.",
+      "autoClaimOverwriteHelperLine1": "Habilite esto si sus clientes deben obtener automáticamente la oferta, incluso si tienen otra oferta activa (úselo con cuidado)",
+      "autoClaimOverwriteHelperLine2": "Deshabilite esto si sus clientes solo deben ser notificados (si está habilitado) cuando tengan otra oferta activa",
+      "saving": "Guardando...",
+      "duplicate": "Duplicar",
+      "cancel": "Cancelar",
+      "discountAmountAndConditions": "Importe de descuento y condiciones",
+      "discountTypePercent": "Porcentaje",
+      "eposNowOnlyWarning": "Las categorías y productos especiales actualmente solo se admiten en EPOS Now.",
+      "additionalPlatformsSoon": "Se agregará soporte para plataformas adicionales en el futuro.",
+      "pointsAndLimitations": "Puntos y limitaciones",
+      "behaviorAndMessages": "Comportamiento y mensajes",
+      "save": "Guardar",
+      "delete": {
+        "confirm": "¿Está seguro de que desea eliminar esta oferta?",
+        "cancel": "No, cancelar",
+        "confirmButton": "Sí, confirmar eliminación"
+      },
+      "categoriesHelperDiscount": "Si hay muchos productos seleccionados en estas categorías, solo se seleccionará un producto que cumpla la condición de aplicación como descuento.",
+      "productsHelperDiscount": "Si hay muchos productos seleccionados, solo se seleccionará un producto que cumpla la condición de aplicación como descuento.",
+      "eposOnlyWarningLine1": "Las categorías y productos especiales actualmente solo se admiten en EPOS Now.",
+      "eposOnlyWarningLine2": "Se agregará soporte para plataformas adicionales en el futuro.",
+      "messagePlaceholder": "Mensaje",
+      "automaticClaimHelper": "Habilite esto si sus clientes deben obtener automáticamente la oferta cuando esté disponible (el pase se actualizará)",
+      "overwriteHelperEnable": "Habilite esto si sus clientes deben obtener automáticamente la oferta, incluso si tienen otra oferta activa (úselo con cuidado)",
+      "overwriteHelperDisable": "Deshabilite esto si sus clientes solo deben ser notificados (si está habilitado) cuando tengan otra oferta activa",
+      "create": "Crear"
     },
     "duplicate": {
       "title": "Duplicar Oferta"
@@ -2406,7 +2891,10 @@
     "detail": {
       "metaTitle": "Oferta",
       "actions": {
-        "publish": "Publicar"
+        "publish": "Publicar",
+        "cancel": "Cancelar",
+        "configure": "Configurar",
+        "customize": "Personalizar"
       },
       "fields": {
         "name": "Nombre",
@@ -2428,13 +2916,17 @@
       },
       "units": {
         "points": "Puntos"
+      },
+      "values": {
+        "points": "{{count}} Puntos"
       }
     },
     "delete": {
       "confirmPrompt": "¿Estás seguro de que deseas eliminar esta oferta?"
     },
     "new": {
-      "title": "Nueva Oferta"
+      "title": "Nueva Oferta",
+      "metaTitle": "Nueva oferta"
     },
     "page": {
       "title": "Ofertas"
@@ -2521,7 +3013,22 @@
         "homeStore": "Tienda Principal",
         "cardNo": "Nº de Tarjeta"
       },
-      "noQualifiedCustomers": "No tienes clientes calificados."
+      "noQualifiedCustomers": "No tienes clientes calificados.",
+      "loading": "Cargando datos...",
+      "table": {
+        "totalRecords": "Registros totales",
+        "firstName": "Nombre",
+        "familyName": "Apellidos",
+        "email": "Correo electrónico",
+        "telephone": "Teléfono",
+        "gdpr": "RGPD",
+        "totalPoints": "Puntos totales",
+        "birthday": "Cumpleaños",
+        "homeStore": "Tienda principal",
+        "cardNo": "Nº de tarjeta",
+        "noCustomers": "No tiene ningún cliente cualificado.",
+        "gdprYes": "Sí"
+      }
     },
     "common": {
       "loadingData": "Cargando datos...",
@@ -2572,12 +3079,40 @@
     },
     "listMembersRecentVisitedPeriod": {
       "totalRecords": "Total de registros",
-      "noQualifiedCustomers": "No tienes clientes cualificados."
+      "noQualifiedCustomers": "No tienes clientes cualificados.",
+      "loading": "Cargando datos...",
+      "table": {
+        "totalRecords": "Registros totales",
+        "firstName": "Nombre",
+        "familyName": "Apellidos",
+        "email": "Correo electrónico",
+        "telephone": "Teléfono",
+        "gdpr": "RGPD",
+        "totalPoints": "Puntos totales",
+        "visitDateTime": "Fecha/hora de cada visita",
+        "pointsEarned": "Puntos ganados",
+        "reward": "Recompensa",
+        "costOfReward": "Costo de la recompensa",
+        "cardInstalled": "Tarjeta instalada",
+        "joinedAt": "Se unió el",
+        "noCustomers": "No tiene ningún cliente cualificado.",
+        "yes": "Sí"
+      }
     },
     "listMembersRedeemedMostRewards": {
       "totalRecords": "Total de registros",
       "noQualifiedCustomers": "No tienes clientes cualificados.",
-      "times": "veces"
+      "times": "veces",
+      "loading": "Cargando datos...",
+      "table": {
+        "name": "Nombre",
+        "email": "Correo electrónico",
+        "points": "Puntos",
+        "gdpr": "RGPD",
+        "mostOffers": "La mayoría de las ofertas"
+      },
+      "empty": "No tiene ningún cliente cualificado.",
+      "gdprYes": "Sí"
     },
     "listMembersSortedByPoints": {
       "totalRecords": "Total de registros",
@@ -2597,7 +3132,22 @@
         "active": "Activo",
         "cardUrl": "URL de tarjeta"
       },
-      "noCustomers": "No tienes clientes cualificados."
+      "noCustomers": "No tienes clientes cualificados.",
+      "loading": "Cargando datos...",
+      "table": {
+        "firstName": "Nombre",
+        "familyName": "Apellidos",
+        "email": "Correo electrónico",
+        "telephone": "Teléfono",
+        "gdpr": "RGPD",
+        "totalPoints": "Puntos totales",
+        "birthday": "Cumpleaños",
+        "homeStore": "Tienda principal",
+        "active": "Activo",
+        "cardUrl": "URL de tarjeta"
+      },
+      "emptyState": "No tiene ningún cliente cualificado.",
+      "yes": "Sí"
     },
     "rewardsClaimedNotRedeemed": {
       "noQualifiedCustomers": "No tienes clientes cualificados.",
@@ -2620,7 +3170,16 @@
       "dayOfWeek": "Día de la semana",
       "activities": "Actividades",
       "timeOfDay": "Hora del día",
-      "dayOfWeekAxis": "Día de la semana"
+      "dayOfWeekAxis": "Día de la semana",
+      "days": {
+        "sun": "Dom",
+        "mon": "Lun",
+        "tue": "Mar",
+        "wed": "Mié",
+        "thu": "Jue",
+        "fri": "Vie",
+        "sat": "Sab"
+      }
     },
     "listMostRewardsRedeemed": {
       "table": {
@@ -2643,7 +3202,21 @@
     "listNewMembersReferralsPeriod": {
       "loadingData": "Cargando datos...",
       "totalRecords": "Total de registros",
-      "noQualifiedCustomers": "No tienes clientes cualificados."
+      "noQualifiedCustomers": "No tienes clientes cualificados.",
+      "loading": "Cargando datos...",
+      "table": {
+        "totalRecords": "Registros totales",
+        "firstName": "Nombre",
+        "familyName": "Apellidos",
+        "email": "Correo electrónico",
+        "telephone": "Teléfono",
+        "gdpr": "RGPD",
+        "totalPoints": "Puntos totales",
+        "signupPoints": "Puntos de registro",
+        "referredBy": "Referido por",
+        "noCustomers": "No tiene ningún cliente cualificado.",
+        "yes": "Sí"
+      }
     },
     "otherVouchersSent": {
       "metaTitle": "Informe de resumen de vales",
@@ -2655,8 +3228,12 @@
         "emailAddress": "Correo electrónico",
         "sent": "Enviado",
         "failedReason": "Razón del fallo",
-        "noRecords": "No tienes registros cualificados."
-      }
+        "noRecords": "No tienes registros cualificados.",
+        "totalRecords": "Registros totales",
+        "yes": "Verdadero",
+        "no": "Falso"
+      },
+      "loading": "Cargando datos..."
     },
     "shopifyTransactions": {
       "totalRecords": "Total de registros",
@@ -2681,6 +3258,247 @@
     "shopifyMembersTransactions": {
       "totalRecords": "Total de registros {{total}}",
       "noQualifiedOrders": "No tienes pedidos cualificados."
+    },
+    "eposnowFullTransactionsSummary": {
+      "loading": "Cargando datos...",
+      "totalRecords": "Registros totales {{total}}",
+      "noQualifiedOrders": "No tiene ningún pedido cualificado.",
+      "headers": {
+        "orderNumber": "Pedido #",
+        "date": "Fecha",
+        "firstName": "Nombre",
+        "lastName": "Apellido",
+        "displayName": "Nombre para mostrar",
+        "email": "Correo electrónico",
+        "telephone": "Teléfono",
+        "location": "Ubicación",
+        "till": "Caja",
+        "staff": "Personal",
+        "pointsBeforePurchase": "Puntos antes de la compra",
+        "tenderType": "Tipo de pago",
+        "itemDescription": "Descripción del artículo",
+        "itemQuantity": "Cantidad del artículo",
+        "itemValue": "Valor del artículo",
+        "rewardsRedeemed": "Recompensas canjeadas"
+      }
+    },
+    "eposnowMembersWithTransactionsSummary": {
+      "loading": "Cargando datos...",
+      "table": {
+        "totalRecords": "Registros totales",
+        "orderNumber": "Pedido #",
+        "date": "Fecha",
+        "displayName": "Nombre para mostrar",
+        "email": "Correo electrónico",
+        "telephone": "Teléfono",
+        "location": "Ubicación",
+        "till": "Caja",
+        "staff": "Personal",
+        "itemsPurchased": "Artículos comprados",
+        "amountSpent": "Cantidad gastada",
+        "pointsBeforePurchase": "Puntos antes de la compra",
+        "rewardsRedeemed": "Recompensas canjeadas",
+        "noOrders": "No tiene ningún pedido cualificado.",
+        "quantity": "Cant.",
+        "notAvailable": "N/A"
+      }
+    },
+    "listMembersSortedByLargestPointsInSingleTransaction": {
+      "loading": "Cargando datos...",
+      "totalRecords": "Registros totales",
+      "table": {
+        "name": "Nombre",
+        "email": "Correo electrónico",
+        "phone": "Teléfono",
+        "points": "Puntos",
+        "gdpr": "RGPD",
+        "largestPoints": "Mayor número de puntos"
+      },
+      "noQualifiedCustomers": "No tiene ningún cliente cualificado.",
+      "gdprYes": "Sí"
+    },
+    "listMembersWithActivitiesSortedByCountDesc": {
+      "loading": "Cargando datos...",
+      "totalRecords": "Registros totales",
+      "table": {
+        "name": "Nombre",
+        "email": "Correo electrónico",
+        "phone": "Teléfono",
+        "points": "Puntos",
+        "gdpr": "RGPD",
+        "totalActivities": "Actividades totales"
+      },
+      "empty": "No tiene ningún cliente cualificado.",
+      "gdprYes": "Sí"
+    },
+    "listMembersWithRewardsQualifyCurrentPoints": {
+      "loading": "Cargando datos...",
+      "table": {
+        "totalRecords": "Registros totales",
+        "name": "Nombre",
+        "email": "Correo electrónico",
+        "points": "Puntos",
+        "gdpr": "RGPD",
+        "availableOffers": "Ofertas disponibles",
+        "noCustomers": "No tiene ningún cliente cualificado.",
+        "yes": "Sí"
+      }
+    },
+    "listMembersWithSignUpSourcePeriod": {
+      "loadingData": "Cargando datos...",
+      "totalRecords": "Registros totales",
+      "table": {
+        "firstName": "Nombre",
+        "familyName": "Apellidos",
+        "email": "Correo electrónico",
+        "telephone": "Teléfono",
+        "gdpr": "RGPD",
+        "totalPoints": "Puntos totales",
+        "signUpSource": "Fuente de registro",
+        "signUpDate": "Fecha de registro"
+      },
+      "noQualifiedCustomers": "No tiene ningún cliente cualificado.",
+      "gdprYes": "Sí"
+    },
+    "shopifyFullTransactionsSummary": {
+      "loading": "Cargando datos...",
+      "table": {
+        "totalRecords": "Registros totales",
+        "orderNumber": "Pedido #",
+        "date": "Fecha",
+        "firstName": "Nombre",
+        "lastName": "Apellido",
+        "displayName": "Nombre para mostrar",
+        "email": "Correo electrónico",
+        "telephone": "Teléfono",
+        "location": "Ubicación",
+        "device": "Dispositivo",
+        "pointsBeforePurchase": "Puntos antes de la compra",
+        "itemDescription": "Descripción del artículo",
+        "itemQuantity": "Cantidad del artículo",
+        "itemValue": "Valor del artículo",
+        "rewardsRedeemed": "Recompensas canjeadas",
+        "noOrders": "No tiene ningún pedido cualificado."
+      }
+    },
+    "shopifyMembersWithTransactionsSummary": {
+      "loading": "Cargando datos...",
+      "table": {
+        "totalRecords": "Registros totales",
+        "date": "Fecha",
+        "displayName": "Nombre para mostrar",
+        "email": "Correo electrónico",
+        "telephone": "Teléfono",
+        "location": "Ubicación",
+        "device": "Dispositivo",
+        "itemsPurchased": "Artículos comprados",
+        "amountSpent": "Cantidad gastada",
+        "rewardsRedeemed": "Recompensas canjeadas",
+        "noOrders": "No tiene ningún pedido cualificado."
+      }
+    },
+    "voucherSummary": {
+      "subtitle": "Informe de resumen de vales",
+      "loading": "Cargando datos...",
+      "table": {
+        "voucherName": "Nombre del vale",
+        "voucherType": "Tipo de vale",
+        "issued": "Emitido",
+        "redeemed": "Canjeado",
+        "redemptionRate": "Tasa de canje",
+        "revenue": "Ingresos",
+        "avgSpend": "Gasto promedio",
+        "topDayForRedemptions": "Día principal para canjes"
+      },
+      "empty": "No tiene ningún registro cualificado."
+    }
+  },
+  "customerInfo": {
+    "title": "Usuario",
+    "tabs": {
+      "default": "Predeterminado",
+      "custom": "Personalizado"
+    },
+    "fields": {
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Correo electrónico",
+      "phoneNumber": "Número de teléfono",
+      "cardNumber": "Número de tarjeta",
+      "installed": "Instalado",
+      "points": "Puntos",
+      "activeOffer": "Oferta activa",
+      "joinedAt": "Se unió el"
+    },
+    "values": {
+      "true": "Verdadero",
+      "false": "Falso",
+      "none": "Ninguno",
+      "reserved": "(+{{count}} reservado)"
+    },
+    "actions": {
+      "redeem": "Canjear"
+    }
+  },
+  "message": {
+    "send": {
+      "metadataTitle": "Enviar mensaje",
+      "heading": "Enviar notificación push a {{name}}"
+    }
+  },
+  "programDesign": {
+    "tabs": {
+      "appearance": "Apariencia",
+      "location": "Ubicación",
+      "beacons": "Balizas",
+      "apps": "Aplicaciones",
+      "stampsGenerator": "Generador de sellos"
+    },
+    "toast": {
+      "saveSuccess": "La plantilla se guardó correctamente."
+    },
+    "buttons": {
+      "saving": "Guardando...",
+      "save": "Guardar",
+      "saveAndClose": "Guardar y cerrar",
+      "cancel": "Cancelar"
+    }
+  },
+  "offerDesign": {
+    "tabs": {
+      "appearance": "Apariencia",
+      "location": "Ubicación",
+      "beacons": "Balizas",
+      "apps": "Aplicaciones"
+    },
+    "toast": {
+      "saved": "La plantilla se guardó correctamente."
+    },
+    "buttons": {
+      "saving": "Guardando...",
+      "save": "Guardar",
+      "saveAndClose": "Guardar y cerrar",
+      "cancel": "Cancelar"
+    }
+  },
+  "rules": {
+    "bundle": {
+      "edit": {
+        "metaTitle": "Editar regla de paquete",
+        "title": "Editar regla de paquete"
+      }
+    },
+    "deal": {
+      "edit": {
+        "metaTitle": "Editar regla de oferta",
+        "title": "Editar regla de oferta"
+      }
+    },
+    "price": {
+      "edit": {
+        "metaTitle": "Editar regla de precio",
+        "title": "Editar regla de precio"
+      }
     }
   }
 }

@@ -425,7 +425,14 @@
       "customize": "Customise",
       "referralSuffix": "referral",
       "exportCustomerData": "Export Customer Data",
-      "exportActivityData": "Export Activity Data"
+      "exportActivityData": "Export Activity Data",
+      "benefits": {
+        "edit": {
+          "metaTitle": "Edit Benefit",
+          "heading": "Edit Benefit"
+        }
+      },
+      "iconAlt": "icon"
     },
     "customers": {
       "firstName": "First Name",
@@ -974,7 +981,9 @@
           "reRunMessage": "Re Run Message",
           "delete": "Delete",
           "deleteConfirm": "Delete {{name}}",
-          "deleteMessage": "Delete Message"
+          "deleteMessage": "Delete Message",
+          "editTitle": "Edit Backup",
+          "restoreTitle": "Restore Backup"
         },
         "form": {
           "nameLabel": "Name Label",
@@ -1005,6 +1014,9 @@
           "templates": "Templates",
           "offers": "Offers",
           "clovers": "Clovers"
+        },
+        "error": {
+          "generic": "Something went wrong!"
         }
       },
       "configuration": {
@@ -1354,7 +1366,9 @@
           "tableHeaderDetails": "Table Header Details",
           "noScans": "No Scans",
           "unknownScanner": "Unknown Scanner",
-          "saveButton": "Save Button"
+          "saveButton": "Save Button",
+          "devicePrefix": "Device",
+          "previewAlt": "Preview"
         }
       },
       "passTypes": {
@@ -1961,7 +1975,8 @@
       "detail": {
         "pageTitle": "Benefit",
         "backToBenefits": "Programme Benefits",
-        "heading": "Benefit:"
+        "heading": "Benefit:",
+        "backToProgramBenefits": "Programme Benefits"
       },
       "description": "With the Benefits feature, you can add multiple customer benefits, each benefit can have multiple rewards, and a different points ratio per currency unit.",
       "activate": "Activate Benefits",
@@ -1969,11 +1984,54 @@
       "add": "Add benefit",
       "empty": "No benefits found.",
       "deleteConfirm": "Delete Benefit",
-      "deleteMessage": "Are you sure you want to delete this benefit?"
+      "deleteMessage": "Are you sure you want to delete this benefit?",
+      "form": {
+        "name": "Name",
+        "namePlaceholder": "Benefit Name, e.g Benefit 1",
+        "color": "Colour",
+        "backgroundColor": "Background Colour",
+        "foregroundColor": "Foreground Colour",
+        "labelColor": "Label Colour",
+        "description": "Description",
+        "autoAssign": "Auto Assign",
+        "autoAssignHelp": "New members will be assigned to this level automatically",
+        "conversionRatio": "Conversion Ratio",
+        "conversionRatioHelp": "Points per currency unit",
+        "excludedCategories": "Excluded Categories",
+        "separateCategoriesPrefix": "Separate multiple categories by comma ",
+        "rewards": "Rewards",
+        "unset": "(unset)",
+        "rewardName": "Reward Name",
+        "rewardDescription": "Reward Description",
+        "rewardType": "Reward Type",
+        "rewardTypePercentage": "Percentage",
+        "rewardTypeFixed": "Fixed amount",
+        "rewardValue": "Reward Value",
+        "rewardValueHelp": "Discount amount or percentage (0-100)",
+        "specialCategories": "Special Categories",
+        "separateCategoriesByComma": "Separate multiple categories by comma \",\"",
+        "categoriesApplyConditionHelp": "If there are many selected products in these categories, only one product which satisfies the apply condition will be selected as a discount.",
+        "specialProducts": "Special Products",
+        "separateProductsByComma": "Separate multiple products by comma \",\"",
+        "productsApplyConditionHelp": "If there are many selected products, only one product which satisfies the apply condition will be selected as a discount.",
+        "applyCondition": "Apply condition",
+        "conditionMax": "The value of the most expensive item",
+        "conditionMin": "The value of the cheapest item",
+        "birthdayOnly": "Only available on Birthday?",
+        "removeReward": "Remove this reward",
+        "addReward": "Add more reward",
+        "saving": "Saving...",
+        "saveChanges": "Save Changes",
+        "cancel": "Cancel"
+      },
+      "new": {
+        "title": "New Benefit"
+      }
     },
     "customers": {
       "new": {
-        "title": "New Customer"
+        "title": "New Customer",
+        "heading": "New Customer"
       }
     },
     "design": {
@@ -2082,7 +2140,32 @@
         "title": "Price Rules",
         "helper": "This page allows you to set up rules for a real monetary value so that members of the Loyalty Programme can use the points in their balance as part of full payment for goods at the Till/PoS.",
         "deleteConfirm": "Delete Price Rule",
-        "deleteMessage": "Are you sure you want to delete this price rule?"
+        "deleteMessage": "Are you sure you want to delete this price rule?",
+        "heading": "Price Rules",
+        "delete": {
+          "confirm": "Delete Price Rule",
+          "message": "Are you sure you want to delete this price rule?"
+        },
+        "form": {
+          "name": "Name",
+          "namePlaceholder": "Rule Name, e.g Rule 1",
+          "description": "Description",
+          "conversionRatio": "Conversion Ratio",
+          "pointsPerCurrencyUnit": "Points per currency unit",
+          "creditValueFormula": "Value of outstanding credit = Number of points allocated * Value of points",
+          "minimumPointsRequired": "Minimum points required",
+          "dateRange": "Date range",
+          "dateRangeHelper1": "Specify a date range if you want your rule to start/stop at a scheduled date.",
+          "dateRangeHelper2": "If you do not specify a date range, the rule will start when you publish it.",
+          "platform": "Platform",
+          "locations": "Locations",
+          "locationsHelper1": "Select locations where this rule will be applied.",
+          "locationsHelper2": "Leave blank for all locations.",
+          "active": "Active",
+          "saving": "Saving...",
+          "saveChanges": "Save Changes",
+          "cancel": "Cancel"
+        }
       },
       "addNewRule": "Add new rule",
       "table": {
@@ -2103,19 +2186,162 @@
         "title": "Point Rules",
         "helper": "This page allows you to set up rules for awarding points so that members of the Loyalty Programme can receive points at a single global rate of points per unit of currency spent.",
         "deleteConfirm": "Delete Point Rule",
-        "deleteMessage": "Are you sure you want to delete this point rule?"
+        "deleteMessage": "Are you sure you want to delete this point rule?",
+        "heading": "Point Rules",
+        "delete": {
+          "confirm": "Delete Point Rule",
+          "message": "Are you sure you want to delete this point rule?"
+        },
+        "edit": {
+          "metaTitle": "Edit Point Rule",
+          "heading": "Edit Point Rule"
+        },
+        "form": {
+          "name": "Name",
+          "namePlaceholder": "Rule Name, e.g Rule 1",
+          "description": "Description",
+          "conversionRatio": "Conversion Ratio",
+          "ratioHelper": "The number of earned points per a currency unit for unused discount",
+          "ignoreCustomerRatio": "Ignore customer conversion ratio even it is higher ratio (including program conversion ratio and benefit ratio)",
+          "minPoints": "Minimum points required",
+          "dateRange": "Date range",
+          "dateRangeHelper1": "Specify a date range if you want your rule to start/stop at a scheduled date.",
+          "dateRangeHelper2": "If you do not specify a date range, the rule will start when you publish it.",
+          "platform": "Platform",
+          "locations": "Locations",
+          "locationsHelper1": "Select locations where this rule will be applied.",
+          "locationsHelper2": "Leave blank for all locations.",
+          "categoryNames": "Category Names",
+          "productNames": "Product Names",
+          "namesHelper": "Enter product names, separated by comma \",\"",
+          "categories": "Categories",
+          "products": "Products",
+          "categoryProductHelper1": "Specify categories/products if you want your rule to be applied.",
+          "categoryProductHelper2": "If you do not specify a category/product, the rule will applied in order.",
+          "active": "Active",
+          "saving": "Saving...",
+          "saveChanges": "Save Changes",
+          "cancel": "Cancel"
+        },
+        "new": {
+          "metaTitle": "New Point Rule",
+          "heading": "New Point Rule"
+        }
       },
       "bundle": {
         "title": "Bundle Rules",
         "helper": "The objective of the Bundle Promotion is to give the Merchant the ability to group together a bundle of three specified Products from within a specific Category of Products that will draw an extra bonus in points that can be translated into cash at the Till/PoS.",
         "deleteConfirm": "Delete Bundle Rule",
-        "deleteMessage": "Are you sure you want to delete this bundle rule?"
+        "deleteMessage": "Are you sure you want to delete this bundle rule?",
+        "heading": "Bundle Rules",
+        "delete": {
+          "confirm": "Delete Bundle Rule",
+          "message": "Are you sure you want to delete this bundle rule?"
+        },
+        "form": {
+          "name": "Name",
+          "namePlaceholder": "Rule Name, e.g Rule 1",
+          "description": "Description",
+          "discountType": "Discount Type",
+          "discountTypePercentage": "Percentage",
+          "discountTypeFixed": "Fixed amount",
+          "discountValue": "Discount Value",
+          "discountValueHelper": "Percent (0-100) or fixed value in currency unit",
+          "conversionRatio": "Conversion Ratio",
+          "conversionRatioHelper": "The number of earned points per a currency unit for unused discount",
+          "ignorePointRule": "Ignore point rules if available. The customer will only receive bonus points corresponding to the discounted price",
+          "minPoints": "Minimum points required",
+          "bundleSize": "Bundle Size",
+          "samePrice": "Require products have the same price",
+          "dateRange": "Date range",
+          "dateRangeHelperLine1": "Specify a date range if you want your rule to start/stop at a scheduled date.",
+          "dateRangeHelperLine2": "If you do not specify a date range, the rule will start when you publish it.",
+          "notToUseInConjunction": "Do not use in conjunction with other rules",
+          "platform": "Platform",
+          "locations": "Locations",
+          "locationsHelperLine1": "Select locations where this rule will be applied.",
+          "locationsHelperLine2": "Leave blank for all locations.",
+          "categoryNames": "Category Names",
+          "productNames": "Product Names",
+          "enterNamesHelper": "Enter product names, separated by comma \",\"",
+          "categories": "Categories",
+          "products": "Products",
+          "categoriesProductsHelperLine1": "Specify categories/products if you want your rule to be applied.",
+          "categoriesProductsHelperLine2": "If you do not specify a category/product, the rule will applied in order.",
+          "active": "Active",
+          "saving": "Saving...",
+          "saveChanges": "Save Changes",
+          "cancel": "Cancel"
+        },
+        "new": {
+          "title": "New Bundle Rule"
+        }
       },
       "deal": {
         "title": "Deal Rules",
         "helper": "The objective of the Deal Promotion is to give the Merchant the ability to group together multiple Products from within a specific Category of Products that will draw an extra bonus in points that can be translated into cash at the Till/PoS.",
         "deleteConfirm": "Delete Deal Rule",
-        "deleteMessage": "Are you sure you want to delete this deal rule?"
+        "deleteMessage": "Are you sure you want to delete this deal rule?",
+        "heading": "Deal Rules",
+        "delete": {
+          "confirm": "Delete Deal Rule",
+          "message": "Are you sure you want to delete this deal rule?"
+        },
+        "form": {
+          "name": "Name",
+          "namePlaceholder": "Rule Name, e.g Rule 1",
+          "description": "Description",
+          "discountType": "Discount Type",
+          "discountTypePercentage": "Percentage",
+          "discountTypeFixed": "Fixed amount",
+          "discountTypeXForY": "X for Y",
+          "discountValue": "Discount Value",
+          "discountValueHelp": "Percent (0-100) or fixed value in currency unit or no. of free item",
+          "conversionRatio": "Conversion Ratio",
+          "conversionRatioHelp": "The number of earned points per a currency unit for unused discount",
+          "ignorePointRule": "Ignore point rules if available. The customer will only receive bonus points corresponding to the discounted price",
+          "minPoints": "Minimum points required",
+          "dateRange": "Date range",
+          "dateRangeHelpLine1": "Specify a date range if you want your rule to start/stop at a scheduled date.",
+          "dateRangeHelpLine2": "If you do not specify a date range, the rule will start when you publish it.",
+          "notToUseInConjunction": "Do not use in conjunction with other rules",
+          "platform": "Platform",
+          "locations": "Locations",
+          "locationsHelpLine1": "Select locations where this rule will be applied.",
+          "locationsHelpLine2": "Leave blank for all locations.",
+          "groups": "Groups",
+          "active": "Active",
+          "saving": "Saving...",
+          "saveChanges": "Save Changes",
+          "cancel": "Cancel"
+        },
+        "group": {
+          "editTitle": "Edit Deal Group",
+          "form": {
+            "name": "Name",
+            "namePlaceholder": "Group Name, e.g Group 1",
+            "description": "Description",
+            "platform": "Platform",
+            "categoryNames": "Category Names",
+            "productNames": "Product Names",
+            "namesHelper": "Enter product names, separated by comma \",\"",
+            "categories": "Categories",
+            "products": "Products",
+            "specifyHelperLine1": "Specify categories/products if you want your rule to be applied.",
+            "specifyHelperLine2": "If you do not specify a category/product, the rule will applied in order.",
+            "saving": "Saving...",
+            "saveChanges": "Save Changes",
+            "cancel": "Cancel"
+          },
+          "new": {
+            "metaTitle": "New Deal Group",
+            "title": "New Deal Group"
+          }
+        },
+        "new": {
+          "metaTitle": "New Deal Rule",
+          "heading": "New Deal Rule"
+        }
       },
       "dealGroups": {
         "title": "Deal Groups",
@@ -2123,12 +2349,171 @@
         "deleteConfirm": "Delete Deal Group",
         "deleteMessage": "Are you sure you want to delete this deal group?"
       },
-      "addNewGroup": "Add new group"
+      "addNewGroup": "Add new group",
+      "empty": "No rules",
+      "emptyGroups": "No groups",
+      "delete": {
+        "title": "Delete"
+      },
+      "dealGroup": {
+        "heading": "Deal Groups",
+        "helper": "This page allows you to set up groups for populating the deal rules of the Loyalty Programme.",
+        "delete": {
+          "confirm": "Delete Deal Group",
+          "message": "Are you sure you want to delete this deal group?"
+        }
+      }
     },
     "export": {
       "exportingDataAriaLabel": "Exporting data",
       "exportingData": "Exporting data...",
-      "thisCanTakeSomeTime": "This can take some time"
+      "thisCanTakeSomeTime": "This can take some time",
+      "error": {
+        "generic": "Something went wrong! Please try again later."
+      },
+      "download": "Download",
+      "exportingAriaLabel": "Exporting data",
+      "exporting": "Exporting data...",
+      "takesTime": "This can take some time"
+    },
+    "edit": {
+      "tabs": {
+        "rules": "Rules"
+      },
+      "loyaltyProgram": "Loyalty Programme",
+      "name": "Name",
+      "description": "Description",
+      "descriptionHelper": "Short promotional teaser for your program",
+      "country": "Country",
+      "selectCountry": "Select country",
+      "icon": "Icon",
+      "iconHelper": "The icon needs to be of square format",
+      "pointsForActivities": "Points for Activities",
+      "pointsForActivitiesHelper": "Reward your customer points for certain activities",
+      "addEmail": "Add Email",
+      "addPhoneNumber": "Add Phone Number",
+      "installPass": "Install Pass",
+      "passScanned": "Pass Scanned",
+      "dynamic": "Dynamic",
+      "dynamicScanHelper": "Chose dynamic if you want to reward a custom number of points for each scan.",
+      "customerReferral": "Customer Referral",
+      "pointsAfterReferredCustomerHas": "points after referred customer has",
+      "points": "points",
+      "contactLegal": "Contact & Legal",
+      "companyName": "Company Name",
+      "companyNameHelper": "Legal name of your business",
+      "address": "Address",
+      "website": "Website",
+      "email": "Email",
+      "phone": "Phone",
+      "termsAndConditions": "Terms & Conditions",
+      "termsHelper": "You can specify terms for your loyalty program",
+      "scanningRedemption": "Scanning & Redemption",
+      "scanner": "Scanner",
+      "scannerBrowser": "Browser: I want to use another scanning solution that can open URLs.",
+      "scannerNone": "None: I don't need to scan the cards.",
+      "pointsChangeMessage": "Points Change Message",
+      "disableMessage": "Disable Message",
+      "defaultMessageIs": "The default message is",
+      "defaultMessageExample": "New points: %@",
+      "pointNames": "Point Names",
+      "one": "One",
+      "many": "Many",
+      "pointNamesDefaultPrefix": "The default values are One:",
+      "pointNameSingularExample": "Point",
+      "pointNamePluralExample": "Points",
+      "customerFields": "Customer Fields",
+      "requiredFields": "Required Fields",
+      "customFields": {
+        "type": "Type",
+        "name": "Name",
+        "displayName": "Display Name",
+        "points": "Points",
+        "required": "Required",
+        "settings": "Settings",
+        "edit": "Edit",
+        "typeText": "Text",
+        "typeNumber": "Number",
+        "typeDate": "Date",
+        "typeSelection": "Selection",
+        "empty": "Empty",
+        "sameAsName": "Same as Name",
+        "optionsHelper": "Enter available options as comma separated values",
+        "addField": "Add Field"
+      },
+      "saving": "Saving...",
+      "saveProgram": "Save Programme",
+      "cancel": "Cancel",
+      "savedSuccessfully": "Saved successfully",
+      "roundingMode": "Rounding Mode",
+      "roundingTypeAmountSpent": "Round amount spent, then multiply by ratio",
+      "roundingTypeResult": "Multiply amount spent by ratio, then round the final result",
+      "roundingModeRound": "Round to nearest integer",
+      "roundingModeFloor": "Always round down",
+      "roundingModeCeil": "Always round up",
+      "conversionType": "Conversion Type",
+      "conversionTypeSimple": "Use simple conversion ratio",
+      "conversionTypeTiers": "Use tiers configuration",
+      "tiers": {
+        "configuration": "Tiers configuration",
+        "name": "Name",
+        "displayName": "Display Name",
+        "colors": "Colours",
+        "points": "Points",
+        "pointsPerCurrencyUnit": "Points per currency unit",
+        "background": "Background",
+        "foreground": "Foreground",
+        "label": "Label",
+        "from": "From",
+        "to": "To",
+        "addTier": "Add Tier"
+      },
+      "conversionRatio": "Conversion Ratio",
+      "welcomeMessageTemplate": "Welcome Message Template",
+      "enableWelcomeMessage": "Enable welcome message",
+      "welcomeMessageHelper": "A welcome message will be sent to the new customers via SMS.",
+      "eposnowCustomersSync": "EposNow Customers Sync",
+      "eposnowCustomersSyncLabel": "Enable syncing customers from and to EposNow",
+      "customersAdditionalDetails": "Customers Additional Details",
+      "customersAdditionalDetailsLabel": "Allow to show more customer details on the till",
+      "customerSyncFilter": "Customer Sync Filter",
+      "customerSyncFilterLabel": "Only sync customers who have an email or phone number",
+      "features": "Features",
+      "featuresHelper": "Enable or disable specific features for this program by administrators.",
+      "canSearchCustomersFromOtherPrograms": "Can Search Customers from Other Programmes",
+      "allowOtherProgramsToSearchCustomers": "Allow Other Programmes to Search Customers",
+      "supportMultiplePassColors": "Support Multiple Pass Colours",
+      "note": "Note:",
+      "multiplePassColorsNote": "This feature is experimental and unstable.",
+      "isGDPR": "Is GDPR",
+      "isGDPRLabel": "Check this if this program has a GDPR field",
+      "activeAccount": "Active Account",
+      "activeAccountNote": "Active accounts will sync all data. In-active accounts will only sync orders",
+      "saveAdvancedSettings": "Save Advanced Settings",
+      "active": "Active",
+      "updating": "Updating...",
+      "update": "Update",
+      "platform": {
+        "all": "All Platforms",
+        "eposnow": "EposNow",
+        "shopify": "Shopify"
+      },
+      "dataTools": {
+        "eposnowPlatform": "EposNow Platform",
+        "shopifyPlatform": "Shopify Platform",
+        "syncEposnowCustomers": "Sync all EposNow customers",
+        "syncEposnowCustomersConfirm": "Are you sure you want to sync all customers from EposNow to LoyaltyDog system? It can take some time to process.",
+        "syncEposnowCategoriesProducts": "Sync all EposNow categories and products",
+        "syncEposnowCategoriesProductsConfirm": "Are you sure you want to sync all categories and products from EposNow to LoyaltyDog system? It can take some time to process.",
+        "syncShopifyCustomers": "Sync all Shopify customers",
+        "syncShopifyCustomersConfirm": "Are you sure you want to sync all customers from Shopify to LoyaltyDog system? It can take some time to process.",
+        "syncShopifyCategoriesProducts": "Sync all Shopify categories and products",
+        "syncShopifyCategoriesProductsConfirm": "Are you sure you want to sync all collections and products from Shopify to LoyaltyDog system? It can take some time to process.",
+        "syncQueued": "You request has been added to queue! We will process your request soon.",
+        "confirmSyncCustomers": "Sync customers",
+        "confirmSyncCategoriesProducts": "Sync categories and products",
+        "confirmSyncCollectionsProducts": "Sync collections and products"
+      }
     }
   },
   "managersPortal": {
@@ -2161,7 +2546,8 @@
         "gdpr": "GDPR",
         "points": "Points",
         "cardInstalled": "Card Installed",
-        "joinedAt": "Joined At"
+        "joinedAt": "Joined At",
+        "actions": "Actions"
       },
       "empty": "No customers",
       "actions": {
@@ -2170,13 +2556,24 @@
       "confirm": {
         "title": "Unassign Customer",
         "message": "Are you sure you want to unassign the customer from this benefit?"
+      },
+      "yes": "True",
+      "anonymous": "Anonymous #{{id}}",
+      "unassign": {
+        "title": "Unassign",
+        "confirm": "Unassign Customer",
+        "message": "Are you sure you want to unassign the customer from this benefit?"
       }
     },
     "assignCustomer": {
       "button": "Assign customer",
       "modalTitle": "Assign Customer",
       "searchPlaceholder": "Enter Email, Phone, Card Number, Card PID",
-      "addedBadge": "added"
+      "addedBadge": "added",
+      "searching": "Searching...",
+      "search": "Search",
+      "added": "added",
+      "somethingWentWrong": "Something went wrong!"
     },
     "form": {
       "name": "Name",
@@ -2214,6 +2611,16 @@
     "new": {
       "metaTitle": "New Benefit",
       "heading": "New Benefit"
+    },
+    "intro": "With the Benefits feature, you can add multiple customer benefits, each benefit can have multiple rewards, and different a points ratio per currency unit.",
+    "activate": "Activate Benefits",
+    "heading": "Benefits",
+    "add": "Add benefit",
+    "empty": "No benefits found.",
+    "delete": {
+      "title": "Delete",
+      "confirm": "Delete Benefit",
+      "message": "Are you sure you want to delete this benefit?"
     }
   },
   "customers": {
@@ -2244,7 +2651,9 @@
       "actions": {
         "pushNotification": "Push Notification",
         "passCard": "Pass Card",
-        "checkNewOffers": "Check New Offers"
+        "checkNewOffers": "Check New Offers",
+        "update": "Update",
+        "delete": "Delete"
       },
       "availableOffers": {
         "heading": "Available Offers",
@@ -2263,13 +2672,38 @@
           "actions": "Actions",
           "totalPoints": "Total Points"
         },
-        "empty": "No actions"
+        "empty": "No actions",
+        "order": {
+          "transaction": "Transaction",
+          "total": "Total:",
+          "time": "Time:",
+          "platform": "Platform:"
+        }
       },
       "order": {
         "transactionNumberPrefix": "Transaction #",
         "totalLabel": "Total: ",
         "timeLabel": "Time: ",
         "platformLabel": "Platform: "
+      },
+      "metaTitle": "Customer {{name}}",
+      "events": {
+        "joined": "Joined",
+        "referral": "Referral",
+        "addEmail": "Add Email",
+        "addPhone": "Add Phone",
+        "addCustomField": "Add Custom Field",
+        "changePoints": "Change Points",
+        "offerReceived": "Offer Received",
+        "offerRedeemed": "Offer Redeemed",
+        "voucherReceived": "Voucher Received",
+        "voucherRedeemed": "Voucher Redeemed",
+        "voucherExpired": "Voucher Expired",
+        "pointsRedeemed": "Points Redeemed",
+        "rewardRedeemed": "Reward Redeemed",
+        "offerExpired": "Offer Expired",
+        "passInstalled": "Pass Installed",
+        "scan": "Scan"
       }
     },
     "eventType": {
@@ -2289,6 +2723,19 @@
       "offerExpired": "Offer Expired",
       "passInstalled": "Pass Installed",
       "scan": "Scan"
+    },
+    "message": {
+      "form": {
+        "sendSuccess": "Your message was successfully sent, it will be delivered to your customer shortly.",
+        "currentMessageLabel": "Current Message:",
+        "emptyMessage": "(empty)",
+        "messageLabel": "Message",
+        "messageHelper": "Note: Excessive usage of push notifications can lead to rate limiting or blocking of your cards!",
+        "confirmLabel": "I'm sure",
+        "sending": "Please wait...",
+        "send": "Send",
+        "cancel": "Cancel"
+      }
     }
   },
   "broadcast": {
@@ -2300,12 +2747,17 @@
       "messageHelper": "Note: Excessive usage of push notifications can lead to rate limiting or blocking of your cards!",
       "confirmLabel": "I'm sure",
       "message": "Message",
-      "confirm": "I'm sure"
+      "confirm": "I'm sure",
+      "sending": "Please wait...",
+      "send": "Send",
+      "cancel": "Cancel"
     },
     "page": {
       "title": "Broadcasts",
       "heading": "Send Push Notification to all Customers"
-    }
+    },
+    "metadataTitle": "Broadcasts",
+    "heading": "Send Push Notification to all Customers"
   },
   "offers": {
     "design": {
@@ -2398,7 +2850,40 @@
       },
       "notifyMessage": {
         "placeholder": "Message"
-      }
+      },
+      "percentageWarning": "WARNING: The discount percentage value is {{percent}}%. Ensure this is the intended discount rate.",
+      "categoriesHelperLine1": "Separate multiple categories by comma \",\"",
+      "categoriesHelperLine2": "If there are many selected products in these categories, only one product which satisfies the apply condition will be selected as a discount.",
+      "productsHelperLine1": "Separate multiple products by comma \",\"",
+      "productsHelperLine2": "If there are many selected products, only one product which satisfies the apply condition will be selected as a discount.",
+      "eposNowOnlyLine1": "Special Categories & Products are currently supported on EPOS Now only.",
+      "eposNowOnlyLine2": "Support for additional platforms will be added in the future.",
+      "autoClaimOverwriteHelperLine1": "Enable this if your customers should automatically get the offer, even if they have another active offer (use with care)",
+      "autoClaimOverwriteHelperLine2": "Disable this if your customers should only be notified (if enabled) when they have another active offer",
+      "saving": "Saving...",
+      "duplicate": "Duplicate",
+      "cancel": "Cancel",
+      "discountAmountAndConditions": "Discount Amount & Conditions",
+      "discountTypePercent": "Percentage",
+      "eposNowOnlyWarning": "Special Categories & Products are currently supported on EPOS Now only.",
+      "additionalPlatformsSoon": "Support for additional platforms will be added in the future.",
+      "pointsAndLimitations": "Points & Limitations",
+      "behaviorAndMessages": "Behaviour & Messages",
+      "save": "Save",
+      "delete": {
+        "confirm": "Are you sure you want to delete this offer?",
+        "cancel": "No, cancel",
+        "confirmButton": "Yes, confirm delete"
+      },
+      "categoriesHelperDiscount": "If there are many selected products in these categories, only one product which satisfies the apply condition will be selected as a discount.",
+      "productsHelperDiscount": "If there are many selected products, only one product which satisfies the apply condition will be selected as a discount.",
+      "eposOnlyWarningLine1": "Special Categories & Products are currently supported on EPOS Now only.",
+      "eposOnlyWarningLine2": "Support for additional platforms will be added in the future.",
+      "messagePlaceholder": "Message",
+      "automaticClaimHelper": "Enable this if your customers should automatically get the offer when it becomes available (pass will update)",
+      "overwriteHelperEnable": "Enable this if your customers should automatically get the offer, even if they have another active offer (use with care)",
+      "overwriteHelperDisable": "Disable this if your customers should only be notified (if enabled) when they have another active offer",
+      "create": "Create"
     },
     "duplicate": {
       "title": "Duplicate Offer"
@@ -2406,7 +2891,10 @@
     "detail": {
       "metaTitle": "Offer",
       "actions": {
-        "publish": "Publish"
+        "publish": "Publish",
+        "cancel": "Cancel",
+        "configure": "Configure",
+        "customize": "Customise"
       },
       "fields": {
         "name": "Name",
@@ -2428,13 +2916,17 @@
       },
       "units": {
         "points": "Points"
+      },
+      "values": {
+        "points": "{{count}} Points"
       }
     },
     "delete": {
       "confirmPrompt": "Are you sure you want to delete this offer?"
     },
     "new": {
-      "title": "New Offer"
+      "title": "New Offer",
+      "metaTitle": "New Offer"
     },
     "page": {
       "title": "Offers"
@@ -2521,7 +3013,22 @@
         "homeStore": "Home Store",
         "cardNo": "Card No."
       },
-      "noQualifiedCustomers": "Don't have any qualified customers."
+      "noQualifiedCustomers": "Don't have any qualified customers.",
+      "loading": "Loading data...",
+      "table": {
+        "totalRecords": "Total Records",
+        "firstName": "First Name",
+        "familyName": "Family Name",
+        "email": "Email",
+        "telephone": "Telephone",
+        "gdpr": "GDPR",
+        "totalPoints": "Total Points",
+        "birthday": "Birthday",
+        "homeStore": "Home Store",
+        "cardNo": "Card No.",
+        "noCustomers": "Don't have any qualified customers.",
+        "gdprYes": "Yes"
+      }
     },
     "common": {
       "loadingData": "Loading data...",
@@ -2572,12 +3079,40 @@
     },
     "listMembersRecentVisitedPeriod": {
       "totalRecords": "Total Records",
-      "noQualifiedCustomers": "Don't have any qualified customers."
+      "noQualifiedCustomers": "Don't have any qualified customers.",
+      "loading": "Loading data...",
+      "table": {
+        "totalRecords": "Total Records",
+        "firstName": "First Name",
+        "familyName": "Family Name",
+        "email": "Email",
+        "telephone": "Telephone",
+        "gdpr": "GDPR",
+        "totalPoints": "Total Points",
+        "visitDateTime": "Date/Time for Each Visit",
+        "pointsEarned": "Points Earned",
+        "reward": "Reward",
+        "costOfReward": "Cost of Reward",
+        "cardInstalled": "Card Installed",
+        "joinedAt": "Joined At",
+        "noCustomers": "Don't have any qualified customers.",
+        "yes": "Yes"
+      }
     },
     "listMembersRedeemedMostRewards": {
       "totalRecords": "Total Records",
       "noQualifiedCustomers": "Don't have any qualified customers.",
-      "times": "times"
+      "times": "times",
+      "loading": "Loading data...",
+      "table": {
+        "name": "Name",
+        "email": "Email",
+        "points": "Points",
+        "gdpr": "GDPR",
+        "mostOffers": "Most Offers"
+      },
+      "empty": "Don't have any qualified customers.",
+      "gdprYes": "Yes"
     },
     "listMembersSortedByPoints": {
       "totalRecords": "Total Records",
@@ -2597,7 +3132,22 @@
         "active": "Active",
         "cardUrl": "Card URL"
       },
-      "noCustomers": "Don't have any qualified customers."
+      "noCustomers": "Don't have any qualified customers.",
+      "loading": "Loading data...",
+      "table": {
+        "firstName": "First Name",
+        "familyName": "Family Name",
+        "email": "Email",
+        "telephone": "Telephone",
+        "gdpr": "GDPR",
+        "totalPoints": "Total Points",
+        "birthday": "Birthday",
+        "homeStore": "Home Store",
+        "active": "Active",
+        "cardUrl": "Card URL"
+      },
+      "emptyState": "Don't have any qualified customers.",
+      "yes": "Yes"
     },
     "rewardsClaimedNotRedeemed": {
       "noQualifiedCustomers": "Don't have any qualified customers.",
@@ -2620,7 +3170,16 @@
       "dayOfWeek": "Day of Week",
       "activities": "Activities",
       "timeOfDay": "Time of day",
-      "dayOfWeekAxis": "Day of week"
+      "dayOfWeekAxis": "Day of week",
+      "days": {
+        "sun": "Sun",
+        "mon": "Mon",
+        "tue": "Tue",
+        "wed": "Wed",
+        "thu": "Thu",
+        "fri": "Fri",
+        "sat": "Sat"
+      }
     },
     "listMostRewardsRedeemed": {
       "table": {
@@ -2643,7 +3202,21 @@
     "listNewMembersReferralsPeriod": {
       "loadingData": "Loading data…",
       "totalRecords": "Total Records",
-      "noQualifiedCustomers": "Don't have any qualified customers."
+      "noQualifiedCustomers": "Don't have any qualified customers.",
+      "loading": "Loading data...",
+      "table": {
+        "totalRecords": "Total Records",
+        "firstName": "First Name",
+        "familyName": "Family Name",
+        "email": "Email",
+        "telephone": "Telephone",
+        "gdpr": "GDPR",
+        "totalPoints": "Total Points",
+        "signupPoints": "Sign-up Points",
+        "referredBy": "Referred By",
+        "noCustomers": "Don't have any qualified customers.",
+        "yes": "Yes"
+      }
     },
     "otherVouchersSent": {
       "metaTitle": "Voucher Summary Report",
@@ -2655,8 +3228,12 @@
         "emailAddress": "Email Address",
         "sent": "Sent",
         "failedReason": "Failed Reason",
-        "noRecords": "Don't have any qualified records."
-      }
+        "noRecords": "Don't have any qualified records.",
+        "totalRecords": "Total Records",
+        "yes": "True",
+        "no": "False"
+      },
+      "loading": "Loading data..."
     },
     "shopifyTransactions": {
       "totalRecords": "Total Records",
@@ -2681,6 +3258,247 @@
     "shopifyMembersTransactions": {
       "totalRecords": "Total Records {{total}}",
       "noQualifiedOrders": "Don't have any qualified orders."
+    },
+    "eposnowFullTransactionsSummary": {
+      "loading": "Loading data...",
+      "totalRecords": "Total Records {{total}}",
+      "noQualifiedOrders": "Don't have any qualified orders.",
+      "headers": {
+        "orderNumber": "Order #",
+        "date": "Date",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "displayName": "Display Name",
+        "email": "Email",
+        "telephone": "Telephone",
+        "location": "Location",
+        "till": "Till",
+        "staff": "Staff",
+        "pointsBeforePurchase": "Points Before Purchase",
+        "tenderType": "Tender Type",
+        "itemDescription": "Item Description",
+        "itemQuantity": "Item Quantity",
+        "itemValue": "Item Value",
+        "rewardsRedeemed": "Rewards Redeemed"
+      }
+    },
+    "eposnowMembersWithTransactionsSummary": {
+      "loading": "Loading data...",
+      "table": {
+        "totalRecords": "Total Records",
+        "orderNumber": "Order #",
+        "date": "Date",
+        "displayName": "Display Name",
+        "email": "Email",
+        "telephone": "Telephone",
+        "location": "Location",
+        "till": "Till",
+        "staff": "Staff",
+        "itemsPurchased": "Items Purchased",
+        "amountSpent": "Amount Spent",
+        "pointsBeforePurchase": "Points Before Purchase",
+        "rewardsRedeemed": "Rewards Redeemed",
+        "noOrders": "Don't have any qualified orders.",
+        "quantity": "Qty",
+        "notAvailable": "N/A"
+      }
+    },
+    "listMembersSortedByLargestPointsInSingleTransaction": {
+      "loading": "Loading data...",
+      "totalRecords": "Total Records",
+      "table": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "points": "Points",
+        "gdpr": "GDPR",
+        "largestPoints": "Largest Points"
+      },
+      "noQualifiedCustomers": "Don't have any qualified customers.",
+      "gdprYes": "Yes"
+    },
+    "listMembersWithActivitiesSortedByCountDesc": {
+      "loading": "Loading data...",
+      "totalRecords": "Total Records",
+      "table": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "points": "Points",
+        "gdpr": "GDPR",
+        "totalActivities": "Total Activities"
+      },
+      "empty": "Don't have any qualified customers.",
+      "gdprYes": "Yes"
+    },
+    "listMembersWithRewardsQualifyCurrentPoints": {
+      "loading": "Loading data...",
+      "table": {
+        "totalRecords": "Total Records",
+        "name": "Name",
+        "email": "Email",
+        "points": "Points",
+        "gdpr": "GDPR",
+        "availableOffers": "Available Offers",
+        "noCustomers": "Don't have any qualified customers.",
+        "yes": "Yes"
+      }
+    },
+    "listMembersWithSignUpSourcePeriod": {
+      "loadingData": "Loading data...",
+      "totalRecords": "Total Records",
+      "table": {
+        "firstName": "First Name",
+        "familyName": "Family Name",
+        "email": "Email",
+        "telephone": "Telephone",
+        "gdpr": "GDPR",
+        "totalPoints": "Total Points",
+        "signUpSource": "Sign Up Source",
+        "signUpDate": "Sign Up Date"
+      },
+      "noQualifiedCustomers": "Don't have any qualified customers.",
+      "gdprYes": "Yes"
+    },
+    "shopifyFullTransactionsSummary": {
+      "loading": "Loading data...",
+      "table": {
+        "totalRecords": "Total Records",
+        "orderNumber": "Order #",
+        "date": "Date",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "displayName": "Display Name",
+        "email": "Email",
+        "telephone": "Telephone",
+        "location": "Location",
+        "device": "Device",
+        "pointsBeforePurchase": "Points Before Purchase",
+        "itemDescription": "Item Description",
+        "itemQuantity": "Item Quantity",
+        "itemValue": "Item Value",
+        "rewardsRedeemed": "Rewards Redeemed",
+        "noOrders": "Don't have any qualified orders."
+      }
+    },
+    "shopifyMembersWithTransactionsSummary": {
+      "loading": "Loading data...",
+      "table": {
+        "totalRecords": "Total Records",
+        "date": "Date",
+        "displayName": "Display Name",
+        "email": "Email",
+        "telephone": "Telephone",
+        "location": "Location",
+        "device": "Device",
+        "itemsPurchased": "Items Purchased",
+        "amountSpent": "Amount Spent",
+        "rewardsRedeemed": "Rewards Redeemed",
+        "noOrders": "Don't have any qualified orders."
+      }
+    },
+    "voucherSummary": {
+      "subtitle": "Voucher Summary Report",
+      "loading": "Loading data...",
+      "table": {
+        "voucherName": "Voucher Name",
+        "voucherType": "Voucher Type",
+        "issued": "Issued",
+        "redeemed": "Redeemed",
+        "redemptionRate": "Redemption Rate",
+        "revenue": "Revenue",
+        "avgSpend": "Avg Spend",
+        "topDayForRedemptions": "Top Day for Redemptions"
+      },
+      "empty": "Don't have any qualified records."
+    }
+  },
+  "customerInfo": {
+    "title": "User",
+    "tabs": {
+      "default": "Default",
+      "custom": "Custom"
+    },
+    "fields": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phoneNumber": "Phone Number",
+      "cardNumber": "Card Number",
+      "installed": "Installed",
+      "points": "Points",
+      "activeOffer": "Active Offer",
+      "joinedAt": "Joined At"
+    },
+    "values": {
+      "true": "True",
+      "false": "False",
+      "none": "None",
+      "reserved": "(+{{count}} reserved)"
+    },
+    "actions": {
+      "redeem": "Redeem"
+    }
+  },
+  "message": {
+    "send": {
+      "metadataTitle": "Send Message",
+      "heading": "Send Push Notification to {{name}}"
+    }
+  },
+  "programDesign": {
+    "tabs": {
+      "appearance": "Appearance",
+      "location": "Location",
+      "beacons": "Beacons",
+      "apps": "Apps",
+      "stampsGenerator": "Stamps Generator"
+    },
+    "toast": {
+      "saveSuccess": "Template was saved successfully."
+    },
+    "buttons": {
+      "saving": "Saving...",
+      "save": "Save",
+      "saveAndClose": "Save & Close",
+      "cancel": "Cancel"
+    }
+  },
+  "offerDesign": {
+    "tabs": {
+      "appearance": "Appearance",
+      "location": "Location",
+      "beacons": "Beacons",
+      "apps": "Apps"
+    },
+    "toast": {
+      "saved": "Template was saved successfully."
+    },
+    "buttons": {
+      "saving": "Saving...",
+      "save": "Save",
+      "saveAndClose": "Save & Close",
+      "cancel": "Cancel"
+    }
+  },
+  "rules": {
+    "bundle": {
+      "edit": {
+        "metaTitle": "Edit Bundle Rule",
+        "title": "Edit Bundle Rule"
+      }
+    },
+    "deal": {
+      "edit": {
+        "metaTitle": "Edit Deal Rule",
+        "title": "Edit Deal Rule"
+      }
+    },
+    "price": {
+      "edit": {
+        "metaTitle": "Edit Price Rule",
+        "title": "Edit Price Rule"
+      }
     }
   }
 }

@@ -1,6 +1,22 @@
 {
   "dashboard": {
-    "welcomeBack": "Bentornato, {{displayName}}"
+    "welcomeBack": "Bentornato, {{displayName}}",
+    "title": "Pannello di Controllo",
+    "welcome": "Benvenuto",
+    "overview": "Panoramica",
+    "stats": "Statistiche",
+    "recentActivity": "Attività Recente",
+    "quickActions": "Azioni Rapide",
+    "totalCustomers": "Clienti Totali",
+    "activePrograms": "Programmi Attivi",
+    "totalRewards": "Premi Totali",
+    "totalPoints": "Punti Totali",
+    "revenue": "Entrate",
+    "growthRate": "Tasso di Crescita",
+    "topProgram": "Programma Principale",
+    "topReward": "Premio Principale",
+    "recentCustomers": "Clienti Recenti",
+    "recentOrders": "Ordini Recenti"
   },
   "nav": {
     "dashboard": "Cruscotto",
@@ -79,7 +95,15 @@
     "selectLanguage": "Seleziona lingua",
     "switchLanguage": "Cambia lingua",
     "currentLanguage": "Lingua attuale",
-    "apiError": "Impossibile salvare la preferenza della lingua"
+    "apiError": "Impossibile salvare la preferenza della lingua",
+    "en": "English",
+    "it": "Italiano",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "pt": "Português",
+    "ja": "日本語",
+    "zh": "中文"
   },
   "footer": {
     "status": "Stato",
@@ -88,7 +112,10 @@
     "termsOfService": "Termini di servizio",
     "privacyPolicy": "Informativa sulla privacy",
     "cookiePolicy": "Politica dei cookie",
-    "helpCenter": "Centro assistenza"
+    "helpCenter": "Centro assistenza",
+    "copyright": "© 2024 LoyaltyDog. Tutti i diritti riservati.",
+    "privacy": "Privacy",
+    "terms": "Termini"
   },
   "onboarding": {
     "step1_title": "Configurare i punti",
@@ -110,7 +137,37 @@
     "pointsRequired": "Punti richiesti",
     "description": "Descrizione",
     "available": "Disponibile",
-    "unlocked": "Sbloccato"
+    "unlocked": "Sbloccato",
+    "detail": {
+      "title": "Dettagli Premio",
+      "backToList": "Torna all'Elenco",
+      "edit": "Modifica",
+      "delete": "Elimina",
+      "value": "Valore",
+      "type": "Tipo",
+      "maxRedemptions": "Rimborsi Massimi"
+    },
+    "form": {
+      "name": "Nome Premio",
+      "namePlaceholder": "Nome Premio",
+      "description": "Descrizione",
+      "descriptionPlaceholder": "Descrizione premio",
+      "type": "Tipo Premio",
+      "value": "Valore",
+      "valuePlaceholder": "es. 10",
+      "maxRedemptions": "Rimborsi Massimi",
+      "maxRedemptionsPlaceholder": "Illimitato se vuoto",
+      "submit": "Salva Premio",
+      "cancel": "Annulla"
+    },
+    "list": {
+      "title": "Premi",
+      "createNew": "Crea Nuovo Premio",
+      "empty": "Nessun premio trovato",
+      "deleteConfirm": "Sei sicuro di voler eliminare questo premio?",
+      "deleted": "Premio eliminato con successo",
+      "error": "Errore nel caricamento dei premi"
+    }
   },
   "members": {
     "title": "Membri",
@@ -760,7 +817,12 @@
           "reRunMessage": "Re Run Message",
           "delete": "Elimina",
           "deleteConfirm": "Elimina {{name}}",
-          "deleteMessage": "Delete Message"
+          "deleteMessage": "Delete Message",
+          "editTitle": "Modifica Backup",
+          "restoreTitle": "Ripristina Backup",
+          "download": "Scarica",
+          "share": "Condividi",
+          "restoreConfirm": "Sei sicuro di voler ripristinare questo backup? Questa azione non può essere annullata."
         },
         "form": {
           "nameLabel": "Name Label",
@@ -776,7 +838,11 @@
           "cancelButton": "Cancel Button",
           "submittingButton": "Submitting Button",
           "backupVersionLabel": "Backup Version Label",
-          "restoreButton": "Restore Button"
+          "restoreButton": "Restore Button",
+          "name": "Nome Backup",
+          "description": "Descrizione",
+          "submit": "Crea Backup",
+          "cancel": "Annulla"
         },
         "restore": {
           "passTypeIds": "Pass Type Ids",
@@ -791,6 +857,32 @@
           "templates": "Modelli",
           "offers": "Offerte",
           "clovers": "Clover"
+        },
+        "error": {
+          "generic": "Qualcosa è andato storto!"
+        },
+        "title": "Backup",
+        "create": "Crea Backup",
+        "list": {
+          "title": "Elenco Backup",
+          "empty": "Nessun backup disponibile",
+          "error": "Errore nel caricamento dei backup",
+          "size": "Dimensione",
+          "created": "Creato",
+          "actions": "Azioni"
+        },
+        "detail": {
+          "title": "Dettagli Backup",
+          "name": "Nome",
+          "size": "Dimensione",
+          "created": "Creato",
+          "modified": "Modificato"
+        },
+        "success": {
+          "created": "Backup creato con successo",
+          "restored": "Backup ripristinato con successo",
+          "deleted": "Backup eliminato con successo",
+          "shared": "Backup condiviso con successo"
         }
       },
       "configuration": {
@@ -1081,7 +1173,11 @@
           "download": "Scarica",
           "edit": "Modifica",
           "delete": "Elimina",
-          "view": "Visualizza"
+          "view": "Visualizza",
+          "share": "Condividi Passaggio",
+          "deleteConfirm": "Sei sicuro di voler eliminare questo passaggio?",
+          "revoke": "Revoca Passaggio",
+          "revokeConfirm": "Sei sicuro di voler revocare questo passaggio?"
         },
         "noData": "No Data",
         "search": {
@@ -1140,7 +1236,37 @@
           "tableHeaderDetails": "Table Header Details",
           "noScans": "No Scans",
           "unknownScanner": "Unknown Scanner",
-          "saveButton": "Save Button"
+          "saveButton": "Save Button",
+          "devicePrefix": "Dispositivo",
+          "previewAlt": "Anteprima",
+          "title": "Dettagli Passaggio",
+          "code": "Codice",
+          "issueDate": "Data di Emissione",
+          "expiryDate": "Data di Scadenza",
+          "download": "Scarica",
+          "share": "Condividi",
+          "delete": "Elimina",
+          "active": "Attivo",
+          "expired": "Scaduto",
+          "revoked": "Revocato",
+          "preview": "Anteprima"
+        },
+        "list": {
+          "empty": "Nessun passaggio disponibile",
+          "error": "Errore nel caricamento dei passaggi",
+          "search": "Cerca passaggi"
+        },
+        "success": {
+          "created": "Passaggio creato con successo",
+          "deleted": "Passaggio eliminato con successo",
+          "revoked": "Passaggio revocato con successo",
+          "shared": "Passaggio condiviso con successo"
+        },
+        "error": {
+          "create": "Errore nella creazione del passaggio",
+          "delete": "Errore nell'eliminazione del passaggio",
+          "revoke": "Errore nella revoca del passaggio",
+          "share": "Errore nella condivisione del passaggio"
         }
       },
       "passTypes": {
@@ -1427,7 +1553,60 @@
       "customize": "Personalizza",
       "referralSuffix": "referral",
       "exportCustomerData": "Esporta Dati Clienti",
-      "exportActivityData": "Esporta Dati Attività"
+      "exportActivityData": "Esporta Dati Attività",
+      "benefits": {
+        "edit": {
+          "metaTitle": "Modifica Vantaggio",
+          "heading": "Modifica Vantaggio",
+          "title": "Modifica Vantaggio"
+        },
+        "title": "Vantaggi Programma",
+        "list": {
+          "title": "Elenco Vantaggi",
+          "empty": "Nessun vantaggio disponibile",
+          "error": "Errore nel caricamento dei vantaggi",
+          "create": "Crea Vantaggio"
+        },
+        "detail": {
+          "title": "Dettagli Vantaggio"
+        },
+        "form": {
+          "title": "Crea Vantaggio",
+          "submit": "Salva Vantaggio",
+          "cancel": "Annulla"
+        }
+      },
+      "title": "Programmi Fedeltà",
+      "list": {
+        "title": "Elenco Programmi",
+        "empty": "Nessun programma fedeltà disponibile",
+        "error": "Errore nel caricamento dei programmi",
+        "search": "Cerca programmi",
+        "filter": "Filtra programmi",
+        "sort": "Ordina programmi",
+        "create": "Crea Programma"
+      },
+      "detail": {
+        "title": "Dettagli Programma",
+        "overview": "Panoramica",
+        "levels": "Livelli",
+        "benefits": "Vantaggi",
+        "rewards": "Premi",
+        "members": "Membri",
+        "rules": "Regole",
+        "settings": "Impostazioni"
+      },
+      "form": {
+        "name": "Nome Programma",
+        "description": "Descrizione",
+        "status": "Stato",
+        "pointsLabel": "Etichetta Punti",
+        "currency": "Valuta",
+        "startDate": "Data Inizio",
+        "endDate": "Data Fine",
+        "submit": "Salva Programma",
+        "cancel": "Annulla"
+      }
     },
     "customers": {
       "firstName": "Nome",
@@ -1803,7 +1982,77 @@
       "friShort": "Ven",
       "satShort": "Sab"
     },
-    "loadingData": "Caricamento dei dati..."
+    "loadingData": "Caricamento dei dati...",
+    "save": "Salva",
+    "cancel": "Annulla",
+    "delete": "Elimina",
+    "edit": "Modifica",
+    "close": "Chiudi",
+    "loading": "Caricamento...",
+    "error": "Errore",
+    "success": "Successo",
+    "confirm": "Conferma",
+    "back": "Indietro",
+    "next": "Avanti",
+    "previous": "Precedente",
+    "finish": "Fine",
+    "skip": "Salta",
+    "search": "Cerca",
+    "filter": "Filtra",
+    "sort": "Ordina",
+    "settings": "Impostazioni",
+    "help": "Aiuto",
+    "about": "Informazioni",
+    "logout": "Esci",
+    "login": "Accedi",
+    "signup": "Registrati",
+    "forgotPassword": "Password dimenticata?",
+    "rememberMe": "Ricordami",
+    "or": "O",
+    "and": "E",
+    "with": "Con",
+    "from": "Da",
+    "to": "A",
+    "in": "In",
+    "on": "Su",
+    "at": "A",
+    "by": "Da",
+    "for": "Per",
+    "of": "Di",
+    "no": "No",
+    "all": "Tutti",
+    "other": "Altro",
+    "unknown": "Sconosciuto",
+    "empty": "Vuoto",
+    "full": "Completo",
+    "active": "Attivo",
+    "inactive": "Inattivo",
+    "enabled": "Abilitato",
+    "disabled": "Disabilitato",
+    "visible": "Visibile",
+    "hidden": "Nascosto",
+    "public": "Pubblico",
+    "private": "Privato",
+    "pending": "In sospeso",
+    "approved": "Approvato",
+    "rejected": "Rifiutato",
+    "completed": "Completato",
+    "failed": "Non riuscito",
+    "warning": "Avviso",
+    "info": "Informazioni",
+    "success_message": "Operazione completata con successo",
+    "error_message": "Si è verificato un errore. Riprova.",
+    "confirm_delete": "Sei sicuro di voler eliminare?",
+    "confirm_action": "Sei sicuro di voler procedere?",
+    "unsaved_changes": "Hai modifiche non salvate. Vuoi proseguire?",
+    "loading_data": "Caricamento dati...",
+    "no_data": "Nessun dato disponibile",
+    "required_field": "Campo obbligatorio",
+    "invalid_email": "Email non valida",
+    "invalid_phone": "Numero di telefono non valido",
+    "invalid_url": "URL non valido",
+    "password_mismatch": "Le password non corrispondono",
+    "field_required": "Questo campo è obbligatorio"
   },
   "admin": {
     "backups": {
@@ -1952,7 +2201,16 @@
       "defaultPointNameOne": "Punto",
       "defaultPointNameMany": "Punti",
       "customerFieldsHeading": "Campi Cliente",
-      "requiredFields": "Campi Obbligatori"
+      "requiredFields": "Campi Obbligatori",
+      "namePlaceholder": "Nome Programma",
+      "descriptionPlaceholder": "Descrizione programma",
+      "type": "Tipo Programma",
+      "currency": "Valuta",
+      "currencyPlaceholder": "es. EUR",
+      "pointsLabel": "Etichetta Punti",
+      "pointsLabelPlaceholder": "es. Punti",
+      "submit": "Salva Programma",
+      "cancel": "Annulla"
     },
     "benefits": {
       "edit": {
@@ -1961,7 +2219,22 @@
       "detail": {
         "pageTitle": "Vantaggio",
         "backToBenefits": "Vantaggi Programma",
-        "heading": "Vantaggio:"
+        "heading": "Vantaggio:",
+        "backToProgramBenefits": "Vantaggi Programma",
+        "title": "Dettagli Vantaggio",
+        "edit": "Modifica",
+        "delete": "Elimina",
+        "rewards": "Premi",
+        "actions": "Azioni",
+        "noRewards": "Nessun premio",
+        "noActions": "Nessuna azione",
+        "deleteConfirm": "Sei sicuro di voler eliminare questo vantaggio?",
+        "success": {
+          "deleted": "Vantaggio eliminato con successo"
+        },
+        "error": {
+          "delete": "Errore nell'eliminazione del vantaggio"
+        }
       },
       "description": "Con la funzione Vantaggi puoi aggiungere più vantaggi per i clienti, ogni vantaggio può avere più premi e un rapporto di punti diverso per unità di valuta.",
       "activate": "Attiva Vantaggi",
@@ -1969,7 +2242,57 @@
       "add": "Aggiungi vantaggio",
       "empty": "Nessun vantaggio trovato.",
       "deleteConfirm": "Elimina Vantaggio",
-      "deleteMessage": "Sei sicuro di voler eliminare questo vantaggio?"
+      "deleteMessage": "Sei sicuro di voler eliminare questo vantaggio?",
+      "form": {
+        "name": "Nome",
+        "namePlaceholder": "Nome Vantaggio, ad es. Vantaggio 1",
+        "color": "Colore",
+        "backgroundColor": "Colore Sfondo",
+        "foregroundColor": "Colore Primo Piano",
+        "labelColor": "Colore Etichetta",
+        "description": "Descrizione",
+        "autoAssign": "Assegnazione Automatica",
+        "autoAssignHelp": "I nuovi membri verranno assegnati automaticamente a questo livello",
+        "conversionRatio": "Rapporto di Conversione",
+        "conversionRatioHelp": "Punti per unità di valuta",
+        "excludedCategories": "Categorie Escluse",
+        "separateCategoriesPrefix": "Separa più categorie con una virgola ",
+        "rewards": "Premi",
+        "benefitDetails": "Dettagli Vantaggio",
+        "benefitActions": "Azioni Vantaggio",
+        "benefitRewards": "Premi Vantaggio",
+        "createNewReward": "Crea Nuovo Premio",
+        "rewardName": "Nome Premio",
+        "rewardDescription": "Descrizione Premio",
+        "rewardType": "Tipo Premio",
+        "rewardValue": "Valore Premio",
+        "rewardValuePlaceholder": "es. 10",
+        "rewardMaxRedemptions": "Rimborsi Massimi",
+        "rewardMaxRedemptionsPlaceholder": "Illimitato se vuoto",
+        "rewardCurrency": "Valuta",
+        "rewardCurrencyPlaceholder": "es. EUR",
+        "deleteReward": "Elimina Premio",
+        "deleteRewardConfirm": "Sei sicuro di voler eliminare questo premio?",
+        "addAction": "Aggiungi Azione",
+        "selectAction": "Seleziona Azione",
+        "actionName": "Nome Azione",
+        "actionDescription": "Descrizione Azione",
+        "actionType": "Tipo Azione",
+        "actionValue": "Valore Azione",
+        "actionValuePlaceholder": "es. 5",
+        "deleteAction": "Elimina Azione",
+        "deleteActionConfirm": "Sei sicuro di voler eliminare questa azione?",
+        "submit": "Salva Vantaggio",
+        "cancel": "Annulla"
+      },
+      "list": {
+        "title": "Vantaggi",
+        "createNew": "Crea Nuovo Vantaggio",
+        "empty": "Nessun vantaggio trovato",
+        "deleteConfirm": "Sei sicuro di voler eliminare questo vantaggio?",
+        "deleted": "Vantaggio eliminato con successo",
+        "error": "Errore nel caricamento dei vantaggi"
+      }
     },
     "customers": {
       "new": {
@@ -2129,6 +2452,53 @@
       "exportingDataAriaLabel": "Esportazione dati in corso",
       "exportingData": "Esportazione dati in corso...",
       "thisCanTakeSomeTime": "Questa operazione potrebbe richiedere del tempo"
+    },
+    "levels": {
+      "title": "Livelli",
+      "createNew": "Crea Nuovo Livello",
+      "list": {
+        "empty": "Nessun livello trovato",
+        "deleteConfirm": "Sei sicuro di voler eliminare questo livello?",
+        "deleted": "Livello eliminato con successo",
+        "error": "Errore nel caricamento dei livelli"
+      },
+      "detail": {
+        "title": "Dettagli Livello",
+        "backToProgram": "Torna al Programma",
+        "edit": "Modifica",
+        "delete": "Elimina"
+      },
+      "form": {
+        "name": "Nome",
+        "namePlaceholder": "Nome Livello, ad es. Livello 1",
+        "description": "Descrizione",
+        "descriptionPlaceholder": "Descrizione livello",
+        "minPoints": "Punti Minimi",
+        "minPointsPlaceholder": "es. 0",
+        "maxPoints": "Punti Massimi",
+        "maxPointsPlaceholder": "es. 1000",
+        "rewards": "Premi",
+        "submit": "Salva Livello",
+        "cancel": "Annulla"
+      }
+    },
+    "detail": {
+      "title": "Dettagli Programma",
+      "edit": "Modifica",
+      "delete": "Elimina",
+      "levels": "Livelli",
+      "benefits": "Vantaggi",
+      "rewards": "Premi",
+      "members": "Membri",
+      "settings": "Impostazioni"
+    },
+    "list": {
+      "title": "Programmi",
+      "createNew": "Crea Nuovo Programma",
+      "empty": "Nessun programma trovato",
+      "deleteConfirm": "Sei sicuro di voler eliminare questo programma?",
+      "deleted": "Programma eliminato con successo",
+      "error": "Errore nel caricamento dei programmi"
     }
   },
   "managersPortal": {
@@ -2161,7 +2531,12 @@
         "gdpr": "GDPR",
         "points": "Punti",
         "cardInstalled": "Carta Installata",
-        "joinedAt": "Iscritto Dal"
+        "joinedAt": "Iscritto Dal",
+        "actions": "Azioni",
+        "name": "Nome",
+        "phone": "Telefono",
+        "joinDate": "Data di Iscrizione",
+        "status": "Stato"
       },
       "empty": "Nessun cliente",
       "actions": {
@@ -2170,13 +2545,43 @@
       "confirm": {
         "title": "Annulla Assegnazione Cliente",
         "message": "Sei sicuro di voler annullare l'assegnazione del cliente da questo vantaggio?"
-      }
+      },
+      "yes": "Sì",
+      "anonymous": "Anonimo #{{id}}",
+      "unassign": {
+        "title": "Rimuovi assegnazione",
+        "confirm": "Rimuovi assegnazione cliente",
+        "message": "Sei sicuro di voler rimuovere l'assegnazione del cliente da questo vantaggio?",
+        "description": "Rimuovi questa assegnazione dal cliente"
+      },
+      "title": "Clienti con Vantaggi",
+      "list": {
+        "empty": "Nessun cliente con questo vantaggio",
+        "error": "Errore nel caricamento dei clienti"
+      },
+      "no": "No",
+      "assigned": "Assegnato"
     },
     "assignCustomer": {
       "button": "Assegna cliente",
       "modalTitle": "Assegna Cliente",
       "searchPlaceholder": "Inserisci Email, Telefono, Numero Carta, Card PID",
-      "addedBadge": "aggiunto"
+      "addedBadge": "aggiunto",
+      "searching": "Ricerca in corso...",
+      "search": "Cerca",
+      "added": "aggiunto",
+      "somethingWentWrong": "Qualcosa è andato storto!",
+      "title": "Assegna Cliente a Vantaggio",
+      "description": "Seleziona i clienti da assegnare a questo vantaggio",
+      "selectCustomer": "Seleziona Cliente",
+      "selectCustomerPlaceholder": "Seleziona cliente...",
+      "noResults": "Nessun cliente trovato",
+      "noCustomers": "Nessun cliente disponibile",
+      "removeSelected": "Rimuovi Selezionati",
+      "cancel": "Annulla",
+      "assign": "Assegna",
+      "success": "Cliente assegnato con successo",
+      "error": "Errore nell'assegnazione del cliente"
     },
     "form": {
       "name": "Nome",
@@ -2214,6 +2619,23 @@
     "new": {
       "metaTitle": "Nuovo Vantaggio",
       "heading": "Nuovo Vantaggio"
+    },
+    "title": "Vantaggi",
+    "list": {
+      "title": "Elenco Vantaggi",
+      "empty": "Nessun vantaggio disponibile",
+      "error": "Errore nel caricamento dei vantaggi",
+      "search": "Cerca vantaggi",
+      "filter": "Filtra vantaggi",
+      "sort": "Ordina vantaggi",
+      "create": "Crea Vantaggio"
+    },
+    "detail": {
+      "title": "Dettagli Vantaggio",
+      "benefits": "Vantaggi",
+      "customers": "Clienti",
+      "totalAssigned": "Totale Assegnato",
+      "activeCustomers": "Clienti Attivi"
     }
   },
   "customers": {
@@ -2270,7 +2692,16 @@
         "totalLabel": "Totale: ",
         "timeLabel": "Orario: ",
         "platformLabel": "Piattaforma: "
-      }
+      },
+      "title": "Dettagli Cliente",
+      "backToList": "Torna all'Elenco",
+      "edit": "Modifica",
+      "delete": "Elimina",
+      "points": "Punti",
+      "tier": "Livello",
+      "joinDate": "Data di Iscrizione",
+      "lastActivity": "Ultima Attività",
+      "orders": "Ordini"
     },
     "eventType": {
       "joined": "Iscritto",
@@ -2289,6 +2720,24 @@
       "offerExpired": "Offerta Scaduta",
       "passInstalled": "Pass Installato",
       "scan": "Scansione"
+    },
+    "form": {
+      "name": "Nome",
+      "namePlaceholder": "Nome Cliente",
+      "email": "Email",
+      "emailPlaceholder": "email@esempio.com",
+      "phone": "Telefono",
+      "phonePlaceholder": "+39 000 0000000",
+      "submit": "Salva Cliente",
+      "cancel": "Annulla"
+    },
+    "list": {
+      "title": "Clienti",
+      "search": "Cerca clienti",
+      "empty": "Nessun cliente trovato",
+      "deleteConfirm": "Sei sicuro di voler eliminare questo cliente?",
+      "deleted": "Cliente eliminato con successo",
+      "error": "Errore nel caricamento dei clienti"
     }
   },
   "broadcast": {
@@ -2681,6 +3130,260 @@
     "shopifyMembersTransactions": {
       "totalRecords": "Totale Record {{total}}",
       "noQualifiedOrders": "Nessun ordine qualificato."
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Accedi",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Accedi",
+      "forgotPassword": "Password dimenticata?",
+      "noAccount": "Non hai un account?",
+      "signup": "Registrati",
+      "error": "Email o password non valida",
+      "success": "Accesso effettuato con successo"
+    },
+    "signup": {
+      "title": "Registrati",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Conferma Password",
+      "businessName": "Nome Azienda",
+      "submit": "Registrati",
+      "haveAccount": "Hai già un account?",
+      "login": "Accedi",
+      "error": "Errore nella registrazione",
+      "success": "Registrazione effettuata con successo",
+      "terms": "Accetto i termini e le condizioni"
+    },
+    "forgotPassword": {
+      "title": "Password Dimenticata",
+      "email": "Email",
+      "submit": "Invia Email di Ripristino",
+      "success": "Email di ripristino inviata",
+      "error": "Errore nell'invio dell'email"
+    },
+    "resetPassword": {
+      "title": "Ripristina Password",
+      "password": "Nuova Password",
+      "confirmPassword": "Conferma Password",
+      "submit": "Ripristina Password",
+      "success": "Password ripristinata con successo",
+      "error": "Errore nel ripristino della password"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "dashboard": "Pannello",
+    "programs": "Programmi",
+    "customers": "Clienti",
+    "rewards": "Premi",
+    "reports": "Rapporti",
+    "settings": "Impostazioni",
+    "help": "Aiuto",
+    "logout": "Esci"
+  },
+  "header": {
+    "title": "LoyaltyDog",
+    "profile": "Profilo",
+    "notifications": "Notifiche",
+    "settings": "Impostazioni"
+  },
+  "sidebar": {
+    "menu": "Menu",
+    "collapse": "Comprimi",
+    "expand": "Espandi"
+  },
+  "modal": {
+    "title": "Finestra di Dialogo",
+    "close": "Chiudi",
+    "confirm": "Conferma",
+    "cancel": "Annulla"
+  },
+  "table": {
+    "rows": "Righe",
+    "of": "di",
+    "showing": "Mostrando {{from}} a {{to}} di {{total}}",
+    "noData": "Nessun dato",
+    "loading": "Caricamento...",
+    "error": "Errore nel caricamento dei dati",
+    "search": "Cerca",
+    "filter": "Filtra",
+    "sort": "Ordina",
+    "export": "Esporta",
+    "print": "Stampa"
+  },
+  "form": {
+    "required": "Obbligatorio",
+    "optional": "Facoltativo",
+    "submit": "Invia",
+    "cancel": "Annulla",
+    "reset": "Ripristina",
+    "save": "Salva",
+    "delete": "Elimina",
+    "edit": "Modifica",
+    "add": "Aggiungi",
+    "remove": "Rimuovi",
+    "clear": "Cancella",
+    "search": "Cerca",
+    "filter": "Filtra",
+    "sort": "Ordina"
+  },
+  "validation": {
+    "required": "Questo campo è obbligatorio",
+    "email": "Inserisci un'email valida",
+    "phone": "Inserisci un numero di telefono valido",
+    "url": "Inserisci un URL valido",
+    "min": "Il valore minimo è {{min}}",
+    "max": "Il valore massimo è {{max}}",
+    "minLength": "La lunghezza minima è {{minLength}}",
+    "maxLength": "La lunghezza massima è {{maxLength}}",
+    "pattern": "Il formato non è valido",
+    "match": "I campi non corrispondono"
+  },
+  "notification": {
+    "success": "Operazione completata con successo",
+    "error": "Si è verificato un errore",
+    "warning": "Avviso",
+    "info": "Informazione",
+    "close": "Chiudi"
+  },
+  "filter": {
+    "title": "Filtri",
+    "apply": "Applica Filtri",
+    "reset": "Ripristina Filtri",
+    "cancel": "Annulla"
+  },
+  "sort": {
+    "title": "Ordina Per",
+    "ascending": "Crescente",
+    "descending": "Decrescente"
+  },
+  "export": {
+    "title": "Esporta",
+    "csv": "CSV",
+    "excel": "Excel",
+    "pdf": "PDF",
+    "json": "JSON"
+  },
+  "import": {
+    "title": "Importa",
+    "selectFile": "Seleziona File",
+    "upload": "Carica",
+    "cancel": "Annulla"
+  },
+  "print": {
+    "title": "Stampa",
+    "print": "Stampa",
+    "cancel": "Annulla"
+  },
+  "search": {
+    "placeholder": "Cerca...",
+    "noResults": "Nessun risultato trovato",
+    "clear": "Cancella ricerca"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "back": "Indietro"
+  },
+  "error": {
+    "notFound": "Pagina non trovata",
+    "unauthorized": "Non autorizzato",
+    "forbidden": "Accesso negato",
+    "serverError": "Errore del server",
+    "badRequest": "Richiesta non valida",
+    "timeout": "Timeout della richiesta",
+    "networkError": "Errore di rete",
+    "unknown": "Errore sconosciuto"
+  },
+  "success": {
+    "created": "Creato con successo",
+    "updated": "Aggiornato con successo",
+    "deleted": "Eliminato con successo",
+    "saved": "Salvato con successo"
+  },
+  "warning": {
+    "unsavedChanges": "Hai modifiche non salvate",
+    "confirmDelete": "Sei sicuro di voler eliminare?",
+    "confirmAction": "Sei sicuro di voler procedere?"
+  },
+  "info": {
+    "loading": "Caricamento...",
+    "noData": "Nessun dato disponibile",
+    "comingSoon": "Presto disponibile"
+  },
+  "date": {
+    "today": "Oggi",
+    "yesterday": "Ieri",
+    "tomorrow": "Domani",
+    "thisWeek": "Questa Settimana",
+    "lastWeek": "La Settimana Scorsa",
+    "thisMonth": "Questo Mese",
+    "lastMonth": "Il Mese Scorso",
+    "thisYear": "Quest'Anno",
+    "lastYear": "L'Anno Scorso"
+  },
+  "time": {
+    "now": "Adesso",
+    "minutesAgo": "{{minutes}} minuti fa",
+    "hoursAgo": "{{hours}} ore fa",
+    "daysAgo": "{{days}} giorni fa",
+    "weeksAgo": "{{weeks}} settimane fa",
+    "monthsAgo": "{{months}} mesi fa",
+    "yearsAgo": "{{years}} anni fa"
+  },
+  "currency": {
+    "eur": "EUR",
+    "usd": "USD",
+    "gbp": "GBP",
+    "jpy": "JPY",
+    "symbol": {
+      "eur": "€",
+      "usd": "$",
+      "gbp": "£",
+      "jpy": "¥"
+    }
+  },
+  "status": {
+    "active": "Attivo",
+    "inactive": "Inattivo",
+    "pending": "In sospeso",
+    "approved": "Approvato",
+    "rejected": "Rifiutato",
+    "completed": "Completato",
+    "failed": "Non riuscito",
+    "cancelled": "Annullato"
+  },
+  "role": {
+    "admin": "Amministratore",
+    "manager": "Gestore",
+    "user": "Utente",
+    "guest": "Ospite"
+  },
+  "permission": {
+    "read": "Leggi",
+    "write": "Scrivi",
+    "delete": "Elimina",
+    "admin": "Amministra"
+  },
+  "theme": {
+    "light": "Chiaro",
+    "dark": "Scuro",
+    "auto": "Automatico"
+  },
+  "email": {
+    "subject": {
+      "welcome": "Benvenuto su LoyaltyDog",
+      "resetPassword": "Ripristina la tua password",
+      "confirmEmail": "Conferma il tuo indirizzo email",
+      "notification": "Notifica Importante"
+    },
+    "body": {
+      "welcome": "Benvenuto su LoyaltyDog! Siamo entusiasti di averti con noi.",
+      "resetPassword": "Clicca il link qui sotto per ripristinare la tua password.",
+      "confirmEmail": "Clicca il link qui sotto per confermare il tuo indirizzo email.",
+      "notification": "Hai una notifica importante. Accedi al tuo account per visualizzarla."
     }
   }
 }
