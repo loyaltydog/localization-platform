@@ -1,0 +1,2837 @@
+{
+  "summary": {
+    "generatedAt": "2026-06-04T17:29:42.161Z",
+    "inputs": {
+      "frontendSrc": "/tmp/wt-core_api-i18n/frontend/src",
+      "tsModule": "/tmp/wt-core_api-i18n/frontend/node_modules/typescript"
+    },
+    "filesScanned": 661,
+    "filesAffected": 66,
+    "totalFindings": 469,
+    "byKind": {
+      "attr:alt": 16,
+      "jsx-text": 401,
+      "attr:helpertext": 16,
+      "attr:title": 26,
+      "attr:aria-label": 4,
+      "attr:placeholder": 5,
+      "attr:label": 1
+    }
+  },
+  "findings": [
+    {
+      "file": "src/app/(auth)/auth/layout.tsx",
+      "line": 12,
+      "kind": "attr:alt",
+      "text": "LoyaltyDog Logo"
+    },
+    {
+      "file": "src/app/(auth)/wordpress/auth/form.tsx",
+      "line": 18,
+      "kind": "jsx-text",
+      "text": "Connect LoyaltyDog"
+    },
+    {
+      "file": "src/app/(auth)/wordpress/auth/form.tsx",
+      "line": 19,
+      "kind": "jsx-text",
+      "text": "Sign in to your LoyaltyDog account to activate your WordPress plugin."
+    },
+    {
+      "file": "src/app/(auth)/wordpress/auth/form.tsx",
+      "line": 36,
+      "kind": "jsx-text",
+      "text": "Email address"
+    },
+    {
+      "file": "src/app/(auth)/wordpress/auth/form.tsx",
+      "line": 63,
+      "kind": "jsx-text",
+      "text": "Activation Error"
+    },
+    {
+      "file": "src/app/(auth)/wordpress/auth/form.tsx",
+      "line": 67,
+      "kind": "jsx-text",
+      "text": "Go to Dashboard"
+    },
+    {
+      "file": "src/app/(auth)/wordpress/auth/form.tsx",
+      "line": 105,
+      "kind": "jsx-text",
+      "text": "Select a WordPress Site"
+    },
+    {
+      "file": "src/app/(auth)/wordpress/auth/form.tsx",
+      "line": 106,
+      "kind": "jsx-text",
+      "text": "Choose which LoyaltyDog program to connect to your WordPress plugin."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/account/templates/[templateId]/client.tsx",
+      "line": 137,
+      "kind": "jsx-text",
+      "text": "Date reached"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/account/templates/[templateId]/client.tsx",
+      "line": 151,
+      "kind": "jsx-text",
+      "text": "Pass Yourself"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/giftcard/programs/new/form.tsx",
+      "line": 156,
+      "kind": "jsx-text",
+      "text": "Company Name"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/giftcard/programs/new/form.tsx",
+      "line": 159,
+      "kind": "attr:helpertext",
+      "text": "Legal name of your business"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/giftcard/programs/new/form.tsx",
+      "line": 190,
+      "kind": "jsx-text",
+      "text": "Terms & Conditions"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/giftcard/programs/new/form.tsx",
+      "line": 193,
+      "kind": "attr:helpertext",
+      "text": "You can specify terms for your gift card program"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/layout.tsx",
+      "line": 81,
+      "kind": "jsx-text",
+      "text": "We are now setting up the LoyaltyDog Management Portal for your use."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/layout.tsx",
+      "line": 83,
+      "kind": "jsx-text",
+      "text": "As soon as it is ready your dedicated Account Manager will contact you and make…"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/layout.tsx",
+      "line": 85,
+      "kind": "jsx-text",
+      "text": "If you have any questions in the meantime please feel free to email me at"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/layout.tsx",
+      "line": 87,
+      "kind": "jsx-text",
+      "text": "lee@loyalty.dog"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/layout.tsx",
+      "line": 91,
+      "kind": "jsx-text",
+      "text": "More Money; More Customers; More Transactions"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/layout.tsx",
+      "line": 94,
+      "kind": "jsx-text",
+      "text": "Thank you"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/layout.tsx",
+      "line": 96,
+      "kind": "jsx-text",
+      "text": "The LoyaltyDog Team"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/layout.tsx",
+      "line": 100,
+      "kind": "jsx-text",
+      "text": "Welcome to LoyaltyDog!"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/layout.tsx",
+      "line": 100,
+      "kind": "jsx-text",
+      "text": "Thank you for choosing to add LoyaltyDog."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/customers/page.tsx",
+      "line": 39,
+      "kind": "jsx-text",
+      "text": "Total customers:"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-members-birthday-period/page.tsx",
+      "line": 47,
+      "kind": "jsx-text",
+      "text": "Loading data..."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-members-birthday-period/page.tsx",
+      "line": 97,
+      "kind": "jsx-text",
+      "text": "Total Records"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-members-birthday-period/page.tsx",
+      "line": 113,
+      "kind": "jsx-text",
+      "text": "Don&apos;t have any qualified customers."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-members-email-phone-not-installed/page.tsx",
+      "line": 37,
+      "kind": "jsx-text",
+      "text": "Loading data..."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-members-email-phone-not-installed/page.tsx",
+      "line": 56,
+      "kind": "jsx-text",
+      "text": "Total Records"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-members-email-phone-not-installed/page.tsx",
+      "line": 71,
+      "kind": "jsx-text",
+      "text": "Don&apos;t have any qualified customers."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-members-name-email/page.tsx",
+      "line": 37,
+      "kind": "jsx-text",
+      "text": "Loading data..."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-members-name-email/page.tsx",
+      "line": 56,
+      "kind": "jsx-text",
+      "text": "Total Records"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-members-name-email/page.tsx",
+      "line": 70,
+      "kind": "jsx-text",
+      "text": "Don&apos;t have any qualified customers."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-members-name-phone/page.tsx",
+      "line": 37,
+      "kind": "jsx-text",
+      "text": "Loading data..."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-members-name-phone/page.tsx",
+      "line": 56,
+      "kind": "jsx-text",
+      "text": "Total Records"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-members-name-phone/page.tsx",
+      "line": 70,
+      "kind": "jsx-text",
+      "text": "Don&apos;t have any qualified customers."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-members-opting-in/page.tsx",
+      "line": 37,
+      "kind": "jsx-text",
+      "text": "Loading data..."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-members-opting-in/page.tsx",
+      "line": 56,
+      "kind": "jsx-text",
+      "text": "Total Records"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-members-opting-in/page.tsx",
+      "line": 70,
+      "kind": "jsx-text",
+      "text": "Don&apos;t have any qualified customers."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-members-opting-out/page.tsx",
+      "line": 37,
+      "kind": "jsx-text",
+      "text": "Loading data..."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-members-opting-out/page.tsx",
+      "line": 56,
+      "kind": "jsx-text",
+      "text": "Total Records"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-members-opting-out/page.tsx",
+      "line": 70,
+      "kind": "jsx-text",
+      "text": "Don&apos;t have any qualified customers."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-members-recent-not-visited-period/page.tsx",
+      "line": 45,
+      "kind": "jsx-text",
+      "text": "Loading data..."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-members-recent-not-visited-period/page.tsx",
+      "line": 67,
+      "kind": "jsx-text",
+      "text": "Total Records"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-members-recent-not-visited-period/page.tsx",
+      "line": 82,
+      "kind": "jsx-text",
+      "text": "Don&apos;t have any qualified customers."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-members-sorted-by-points/page.tsx",
+      "line": 43,
+      "kind": "jsx-text",
+      "text": "Loading data..."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-members-sorted-by-points/page.tsx",
+      "line": 62,
+      "kind": "jsx-text",
+      "text": "Total Records"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-members-sorted-by-points/page.tsx",
+      "line": 77,
+      "kind": "jsx-text",
+      "text": "Don&apos;t have any qualified customers."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-members-with-rewards-claimed-not-redeemed/page.tsx",
+      "line": 43,
+      "kind": "jsx-text",
+      "text": "Loading data..."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-members-with-rewards-claimed-not-redeemed/page.tsx",
+      "line": 62,
+      "kind": "jsx-text",
+      "text": "Total Records"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-members-with-rewards-claimed-not-redeemed/page.tsx",
+      "line": 77,
+      "kind": "jsx-text",
+      "text": "Don&apos;t have any qualified customers."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-most-common-time-members-join-program/page.tsx",
+      "line": 24,
+      "kind": "jsx-text",
+      "text": "* Click on a column to download the list of customers"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-most-common-time-members-join-program/page.tsx",
+      "line": 36,
+      "kind": "jsx-text",
+      "text": "Loading data..."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-most-common-time-members-use-program/page.tsx",
+      "line": 37,
+      "kind": "jsx-text",
+      "text": "Loading data..."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-most-popular-rewards-period/page.tsx",
+      "line": 37,
+      "kind": "jsx-text",
+      "text": "Loading data..."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-most-rewards-redeemed/form.tsx",
+      "line": 29,
+      "kind": "jsx-text",
+      "text": "count of offers"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-most-rewards-redeemed/page.tsx",
+      "line": 41,
+      "kind": "jsx-text",
+      "text": "Loading data..."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-most-rewards-redeemed/page.tsx",
+      "line": 68,
+      "kind": "jsx-text",
+      "text": "Don&apos;t have any qualified offers."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-most-rewards/page.tsx",
+      "line": 42,
+      "kind": "jsx-text",
+      "text": "Loading data..."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-most-rewards/page.tsx",
+      "line": 61,
+      "kind": "jsx-text",
+      "text": "Total Records"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/reports/list-most-rewards/page.tsx",
+      "line": 75,
+      "kind": "jsx-text",
+      "text": "Don&apos;t have any qualified offers."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/rules/price/new/page.tsx",
+      "line": 16,
+      "kind": "jsx-text",
+      "text": "New Price Rule"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 71,
+      "kind": "jsx-text",
+      "text": "Pass Type"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 88,
+      "kind": "jsx-text",
+      "text": "Discount Amount & Conditions"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 91,
+      "kind": "jsx-text",
+      "text": "Discount Type"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 96,
+      "kind": "jsx-text",
+      "text": "Fixed amount"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 103,
+      "kind": "jsx-text",
+      "text": "Discount Value"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 113,
+      "kind": "attr:helpertext",
+      "text": "Discount amount or percentage (0.00-1.00)"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 121,
+      "kind": "jsx-text",
+      "text": "WARNING: The discount percentage value is"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 121,
+      "kind": "jsx-text",
+      "text": "%. Ensure this is the intended discount rate."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 131,
+      "kind": "jsx-text",
+      "text": "Currency Code"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 134,
+      "kind": "attr:helpertext",
+      "text": "For discount amount display"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 146,
+      "kind": "jsx-text",
+      "text": "Apply Condition"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 150,
+      "kind": "jsx-text",
+      "text": "No condition applied"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 151,
+      "kind": "jsx-text",
+      "text": "The value of the most expensive item"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 152,
+      "kind": "jsx-text",
+      "text": "The value of the cheapest item"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 158,
+      "kind": "jsx-text",
+      "text": "Special Categories"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 167,
+      "kind": "jsx-text",
+      "text": "Separate multiple categories by comma &quot;,&quot;"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 169,
+      "kind": "jsx-text",
+      "text": "If there are many selected products in these categories, only one product which…"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 179,
+      "kind": "jsx-text",
+      "text": "Special Products"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 188,
+      "kind": "jsx-text",
+      "text": "Separate multiple products by comma &quot;,&quot;"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 190,
+      "kind": "jsx-text",
+      "text": "If there are many selected products, only one product which satisfies the apply…"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 197,
+      "kind": "jsx-text",
+      "text": "Points & Limitations"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 207,
+      "kind": "jsx-text",
+      "text": "Issue Before Birthday (hours)"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 216,
+      "kind": "attr:helpertext",
+      "text": "The voucher will be issued this many hours before the customer’s birthday."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 225,
+      "kind": "jsx-text",
+      "text": "Expires In (hours)"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 235,
+      "kind": "attr:helpertext",
+      "text": "The voucher will expire after this duration (in hours) from the time it is issu…"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 241,
+      "kind": "jsx-text",
+      "text": "Limit per Customer"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 262,
+      "kind": "jsx-text",
+      "text": "How many times a customer can get this voucher."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 267,
+      "kind": "jsx-text",
+      "text": "Availability Count"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 288,
+      "kind": "jsx-text",
+      "text": "Restrict how often this voucher can be claimed in total by all customers."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 293,
+      "kind": "jsx-text",
+      "text": "Require Fields"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/edit/form.tsx",
+      "line": 314,
+      "kind": "jsx-text",
+      "text": "The customer must complete all required fields to receive the voucher."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/page.tsx",
+      "line": 60,
+      "kind": "jsx-text",
+      "text": "Pass Type"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/page.tsx",
+      "line": 68,
+      "kind": "jsx-text",
+      "text": "Discount Amount"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/page.tsx",
+      "line": 78,
+      "kind": "jsx-text",
+      "text": "Apply Condition"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/page.tsx",
+      "line": 84,
+      "kind": "jsx-text",
+      "text": "Start Date"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/page.tsx",
+      "line": 92,
+      "kind": "jsx-text",
+      "text": "End Date"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/page.tsx",
+      "line": 100,
+      "kind": "jsx-text",
+      "text": "Limit per Customer"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/[voucherId]/page.tsx",
+      "line": 106,
+      "kind": "jsx-text",
+      "text": "Availability Count"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/forms.tsx",
+      "line": 24,
+      "kind": "jsx-text",
+      "text": "Are you sure you want to delete this voucher?"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/forms.tsx",
+      "line": 28,
+      "kind": "jsx-text",
+      "text": "No, cancel"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/forms.tsx",
+      "line": 31,
+      "kind": "jsx-text",
+      "text": "Yes, confirm delete"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/forms.tsx",
+      "line": 60,
+      "kind": "attr:helpertext",
+      "text": "Multiple emails can be separated by commas."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 66,
+      "kind": "jsx-text",
+      "text": "Pass Type"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 83,
+      "kind": "jsx-text",
+      "text": "Discount Amount & Conditions"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 86,
+      "kind": "jsx-text",
+      "text": "Discount Type"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 91,
+      "kind": "jsx-text",
+      "text": "Fixed amount"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 98,
+      "kind": "jsx-text",
+      "text": "Discount Value"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 108,
+      "kind": "attr:helpertext",
+      "text": "Discount amount or percentage (0.00-1.00)"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 116,
+      "kind": "jsx-text",
+      "text": "WARNING: The discount percentage value is"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 116,
+      "kind": "jsx-text",
+      "text": "%. Ensure this is the intended discount rate."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 126,
+      "kind": "jsx-text",
+      "text": "Currency Code"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 129,
+      "kind": "attr:helpertext",
+      "text": "For discount amount display"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 141,
+      "kind": "jsx-text",
+      "text": "Apply Condition"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 145,
+      "kind": "jsx-text",
+      "text": "No condition applied"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 146,
+      "kind": "jsx-text",
+      "text": "The value of the most expensive item"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 147,
+      "kind": "jsx-text",
+      "text": "The value of the cheapest item"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 153,
+      "kind": "jsx-text",
+      "text": "Special Categories"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 162,
+      "kind": "jsx-text",
+      "text": "Separate multiple categories by comma &quot;,&quot;"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 164,
+      "kind": "jsx-text",
+      "text": "If there are many selected products in these categories, only one product which…"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 174,
+      "kind": "jsx-text",
+      "text": "Special Products"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 183,
+      "kind": "jsx-text",
+      "text": "Separate multiple products by comma &quot;,&quot;"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 185,
+      "kind": "jsx-text",
+      "text": "If there are many selected products, only one product which satisfies the apply…"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 202,
+      "kind": "jsx-text",
+      "text": "Issue Before Birthday (hours)"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 211,
+      "kind": "attr:helpertext",
+      "text": "The voucher will be issued this many hours before the customer’s birthday."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 220,
+      "kind": "jsx-text",
+      "text": "Expires In (hours)"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 230,
+      "kind": "attr:helpertext",
+      "text": "The voucher will expire after this duration (in hours) from the time it is issu…"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 236,
+      "kind": "jsx-text",
+      "text": "Limit per Customer"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 257,
+      "kind": "jsx-text",
+      "text": "How many times a customer can get this voucher."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 262,
+      "kind": "jsx-text",
+      "text": "Availability Count"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 283,
+      "kind": "jsx-text",
+      "text": "Restrict how often this voucher can be claimed in total by all customers."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 288,
+      "kind": "jsx-text",
+      "text": "Require Fields"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/form.tsx",
+      "line": 309,
+      "kind": "jsx-text",
+      "text": "The customer must complete all required fields to receive the voucher."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/[programId]/vouchers/new/page.tsx",
+      "line": 15,
+      "kind": "jsx-text",
+      "text": "New Pass"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 82,
+      "kind": "jsx-text",
+      "text": "Loyalty Program"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 96,
+      "kind": "attr:helpertext",
+      "text": "Short promotional teaser for your program"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 105,
+      "kind": "jsx-text",
+      "text": "Select country"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 124,
+      "kind": "attr:helpertext",
+      "text": "The icon needs to be of square format"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 151,
+      "kind": "jsx-text",
+      "text": "Pass Type ID"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 172,
+      "kind": "jsx-text",
+      "text": "Program Type"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 177,
+      "kind": "jsx-text",
+      "text": "Gift Card"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 213,
+      "kind": "jsx-text",
+      "text": "Stamp Card"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 237,
+      "kind": "jsx-text",
+      "text": "Tiered Membership"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 261,
+      "kind": "jsx-text",
+      "text": "Special Offers"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 271,
+      "kind": "jsx-text",
+      "text": "Choose from one of our ready made schemes above or build your own custom loyalt…"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 276,
+      "kind": "jsx-text",
+      "text": "Points for Activities"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 278,
+      "kind": "jsx-text",
+      "text": "Reward your customer points for certain activities"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 283,
+      "kind": "jsx-text",
+      "text": "Add Email"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 289,
+      "kind": "jsx-text",
+      "text": "Add Phone Number"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 295,
+      "kind": "jsx-text",
+      "text": "Install Pass"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 301,
+      "kind": "jsx-text",
+      "text": "Pass Scanned"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 311,
+      "kind": "jsx-text",
+      "text": "Chose dynamic if you want to reward a custom number of points for each scan."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 316,
+      "kind": "jsx-text",
+      "text": "Customer Referral"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 320,
+      "kind": "jsx-text",
+      "text": "points after referred customer has"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 326,
+      "kind": "jsx-text",
+      "text": "Contact & Legal"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 329,
+      "kind": "jsx-text",
+      "text": "Company Name"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 332,
+      "kind": "attr:helpertext",
+      "text": "Legal name of your business"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 363,
+      "kind": "jsx-text",
+      "text": "Terms & Conditions"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 366,
+      "kind": "attr:helpertext",
+      "text": "You can specify terms for your loyalty program"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 370,
+      "kind": "jsx-text",
+      "text": "Scanning & Redemption"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 382,
+      "kind": "jsx-text",
+      "text": "Browser: I want to use another scanning solution that can open URLs."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 386,
+      "kind": "jsx-text",
+      "text": "None: I don&apos;t need to scan the cards."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 392,
+      "kind": "jsx-text",
+      "text": "Points Change Message"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 399,
+      "kind": "jsx-text",
+      "text": "Disable Message"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 403,
+      "kind": "jsx-text",
+      "text": "The default message is"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 403,
+      "kind": "jsx-text",
+      "text": "&quot;New points: %@&quot;"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 409,
+      "kind": "jsx-text",
+      "text": "Point Names"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 417,
+      "kind": "jsx-text",
+      "text": "The default values are One:"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 417,
+      "kind": "jsx-text",
+      "text": "&quot;Point&quot;"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 417,
+      "kind": "jsx-text",
+      "text": "&quot;Points&quot;"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 422,
+      "kind": "jsx-text",
+      "text": "Customer Fields"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 425,
+      "kind": "jsx-text",
+      "text": "Required Fields"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 455,
+      "kind": "jsx-text",
+      "text": "Display Name"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 518,
+      "kind": "attr:helpertext",
+      "text": "Enter available options as comma separated values"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/form.tsx",
+      "line": 553,
+      "kind": "jsx-text",
+      "text": "Add Field"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/programs/new/page.tsx",
+      "line": 22,
+      "kind": "jsx-text",
+      "text": "New Program"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 85,
+      "kind": "jsx-text",
+      "text": "Hang tight! We’re getting everything ready for you..."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 90,
+      "kind": "jsx-text",
+      "text": "Please go to Shopify Admin and enable the Customer Accounts option to use full …"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 101,
+      "kind": "jsx-text",
+      "text": "It looks like you&apos;ve uninstalled the Loyalty Dog app. We&apos;re sad to se…"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 106,
+      "kind": "jsx-text",
+      "text": "Reinstall Loyalty Dog"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 112,
+      "kind": "jsx-text",
+      "text": "You uninstalled the Loyalty Dog app."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 123,
+      "kind": "jsx-text",
+      "text": "Please accept the application charge to active your account and use full functi…"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 127,
+      "kind": "jsx-text",
+      "text": "Active charge"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 133,
+      "kind": "jsx-text",
+      "text": "Incomplete application charge"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 144,
+      "kind": "jsx-text",
+      "text": "By default, app embed blocks are deactivated after an app is installed."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 146,
+      "kind": "jsx-text",
+      "text": "You need to activate app embed blocks in the theme editor to enable the widget."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 154,
+      "kind": "jsx-text",
+      "text": "Activate widget"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 157,
+      "kind": "jsx-text",
+      "text": "Recheck status"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 163,
+      "kind": "jsx-text",
+      "text": "Rewards widget inactivated"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 220,
+      "kind": "jsx-text",
+      "text": "Loyalty Program"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 232,
+      "kind": "jsx-text",
+      "text": "You have to configure the loyalty program to use full functionality."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 233,
+      "kind": "jsx-text",
+      "text": "You can&apos;t change the program after saved!"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 237,
+      "kind": "jsx-text",
+      "text": "Add new program"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 244,
+      "kind": "jsx-text",
+      "text": "Select program"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 253,
+      "kind": "attr:title",
+      "text": "Sync"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 263,
+      "kind": "jsx-text",
+      "text": "Sync all Shopify customers"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 270,
+      "kind": "jsx-text",
+      "text": "Reward customers when the financial status is one of"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 288,
+      "kind": "jsx-text",
+      "text": "Cancel rewards when the financial status is one of"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 306,
+      "kind": "jsx-text",
+      "text": "Reward customers for shopping"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 310,
+      "kind": "jsx-text",
+      "text": "Online and in-store (POS)"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 314,
+      "kind": "jsx-text",
+      "text": "Shop Online only"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 318,
+      "kind": "jsx-text",
+      "text": "In-store only (POS)"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 323,
+      "kind": "jsx-text",
+      "text": "Reward customers for the following parts of an order"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 331,
+      "kind": "jsx-text",
+      "text": "Exclude coupon discounts used"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 335,
+      "kind": "jsx-text",
+      "text": "Exclude taxes"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 339,
+      "kind": "jsx-text",
+      "text": "Exclude shipping"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 386,
+      "kind": "jsx-text",
+      "text": "Sign Up"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 401,
+      "kind": "jsx-text",
+      "text": "Points awarded"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 415,
+      "kind": "jsx-text",
+      "text": "Celebrate a birthday"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 430,
+      "kind": "jsx-text",
+      "text": "Points awarded"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 444,
+      "kind": "jsx-text",
+      "text": "Place first order"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 459,
+      "kind": "jsx-text",
+      "text": "Points awarded"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 485,
+      "kind": "jsx-text",
+      "text": "Like on Facebook"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 492,
+      "kind": "jsx-text",
+      "text": "Facebook page URL"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 500,
+      "kind": "jsx-text",
+      "text": "Points awarded"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 506,
+      "kind": "jsx-text",
+      "text": "Share to Facebook"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 513,
+      "kind": "jsx-text",
+      "text": "URL to share"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 521,
+      "kind": "jsx-text",
+      "text": "Points awarded"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 547,
+      "kind": "jsx-text",
+      "text": "Follow on Twitter"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 554,
+      "kind": "jsx-text",
+      "text": "Twitter username"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 562,
+      "kind": "jsx-text",
+      "text": "Points awarded"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 568,
+      "kind": "jsx-text",
+      "text": "Share to Twitter"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 575,
+      "kind": "jsx-text",
+      "text": "URL to share"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 589,
+      "kind": "jsx-text",
+      "text": "Points awarded"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 611,
+      "kind": "jsx-text",
+      "text": "Follow on Instagram"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 618,
+      "kind": "jsx-text",
+      "text": "Instagram username"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 626,
+      "kind": "jsx-text",
+      "text": "Points awarded"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 664,
+      "kind": "jsx-text",
+      "text": "Order Discounts"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 665,
+      "kind": "jsx-text",
+      "text": "Product Discounts"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 666,
+      "kind": "jsx-text",
+      "text": "Shipping Discounts"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 683,
+      "kind": "attr:title",
+      "text": "View"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 692,
+      "kind": "attr:title",
+      "text": "Configure"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 709,
+      "kind": "jsx-text",
+      "text": "No offers found."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 716,
+      "kind": "jsx-text",
+      "text": "Edit Options for"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 719,
+      "kind": "jsx-text",
+      "text": "Combines with"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 737,
+      "kind": "jsx-text",
+      "text": "Order Discounts"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 756,
+      "kind": "jsx-text",
+      "text": "Product Discounts"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 775,
+      "kind": "jsx-text",
+      "text": "Shipping Discounts"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1092,
+      "kind": "jsx-text",
+      "text": "Show the Rewards button on the Online Store"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1095,
+      "kind": "jsx-text",
+      "text": "Trigger mode"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1099,
+      "kind": "jsx-text",
+      "text": "Manual (Advance user)"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1102,
+      "kind": "jsx-text",
+      "text": "Manual: hide the launcher button; you can show the panel via JS methods of"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1107,
+      "kind": "jsx-text",
+      "text": "Button position"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1119,
+      "kind": "jsx-text",
+      "text": "Edge margin (px)"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1146,
+      "kind": "jsx-text",
+      "text": "Launcher Button"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1152,
+      "kind": "jsx-text",
+      "text": "Button width (px)"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1158,
+      "kind": "jsx-text",
+      "text": "Button height (px)"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1164,
+      "kind": "jsx-text",
+      "text": "Border radius (px)"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1172,
+      "kind": "jsx-text",
+      "text": "Background color"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1178,
+      "kind": "jsx-text",
+      "text": "Pulse color"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1186,
+      "kind": "jsx-text",
+      "text": "Enable pulse animation when active offer available"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1190,
+      "kind": "jsx-text",
+      "text": "Show button text"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1193,
+      "kind": "jsx-text",
+      "text": "Button text"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1200,
+      "kind": "jsx-text",
+      "text": "Text size (px)"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1206,
+      "kind": "jsx-text",
+      "text": "Text color"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1214,
+      "kind": "jsx-text",
+      "text": "Show button icon"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1218,
+      "kind": "jsx-text",
+      "text": "Icon size (px)"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1224,
+      "kind": "jsx-text",
+      "text": "Icon color"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1231,
+      "kind": "jsx-text",
+      "text": "Custom icon url"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1241,
+      "kind": "jsx-text",
+      "text": "Widget Theme"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1248,
+      "kind": "jsx-text",
+      "text": "Panel width (px)"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1254,
+      "kind": "jsx-text",
+      "text": "Panel height (px)"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1260,
+      "kind": "jsx-text",
+      "text": "Background color"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1268,
+      "kind": "jsx-text",
+      "text": "Border width (px)"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1274,
+      "kind": "jsx-text",
+      "text": "Border radius (px)"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1280,
+      "kind": "jsx-text",
+      "text": "Border color"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1289,
+      "kind": "jsx-text",
+      "text": "Border width (px)"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1295,
+      "kind": "jsx-text",
+      "text": "Border radius (px)"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1301,
+      "kind": "jsx-text",
+      "text": "Border color"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1307,
+      "kind": "jsx-text",
+      "text": "Background color"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1313,
+      "kind": "jsx-text",
+      "text": "Banner image / gradient"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1316,
+      "kind": "jsx-text",
+      "text": "Primary color"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1322,
+      "kind": "jsx-text",
+      "text": "Secondary color"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1328,
+      "kind": "jsx-text",
+      "text": "Text color"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1336,
+      "kind": "jsx-text",
+      "text": "Banner height"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1343,
+      "kind": "jsx-text",
+      "text": "% of panel height"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1349,
+      "kind": "jsx-text",
+      "text": "Content padding (px)"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1360,
+      "kind": "jsx-text",
+      "text": "Banner image url"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1363,
+      "kind": "jsx-text",
+      "text": "Tip: should use a small and light image to improve the loading speed."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1369,
+      "kind": "jsx-text",
+      "text": "Text color"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1375,
+      "kind": "jsx-text",
+      "text": "Border radius (px)"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1384,
+      "kind": "jsx-text",
+      "text": "Primary color"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1390,
+      "kind": "jsx-text",
+      "text": "Success color"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1396,
+      "kind": "jsx-text",
+      "text": "Error color"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1402,
+      "kind": "jsx-text",
+      "text": "Divider color"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1504,
+      "kind": "jsx-text",
+      "text": "Widget Text"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1532,
+      "kind": "jsx-text",
+      "text": "Advanced Styling"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1536,
+      "kind": "jsx-text",
+      "text": "You can add custom css using prefix class name to styling our widget."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1538,
+      "kind": "jsx-text",
+      "text": "Custom styles"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1542,
+      "kind": "jsx-text",
+      "text": "Custom root styles (widget size, position)"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1545,
+      "kind": "jsx-text",
+      "text": "Caution: This style will be injected to your site."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1597,
+      "kind": "attr:title",
+      "text": "Reset"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/forms.tsx",
+      "line": 1602,
+      "kind": "jsx-text",
+      "text": "Reset to Defaults"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/page.tsx",
+      "line": 34,
+      "kind": "jsx-text",
+      "text": "Your current authorization does not include the"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/page.tsx",
+      "line": 34,
+      "kind": "jsx-text",
+      "text": "write_discounts"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/page.tsx",
+      "line": 34,
+      "kind": "jsx-text",
+      "text": "scope. Discount features such as offer combination options will use the legacy …"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/page.tsx",
+      "line": 39,
+      "kind": "jsx-text",
+      "text": "Re-authorize"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/page.tsx",
+      "line": 45,
+      "kind": "jsx-text",
+      "text": "Missing &quot;write_discounts&quot; scope"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/page.tsx",
+      "line": 54,
+      "kind": "attr:title",
+      "text": "Settings"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/page.tsx",
+      "line": 57,
+      "kind": "attr:title",
+      "text": "Actions"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/page.tsx",
+      "line": 60,
+      "kind": "attr:title",
+      "text": "Offers"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/shopify/[shopId]/page.tsx",
+      "line": 63,
+      "kind": "attr:title",
+      "text": "Widget"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/wordpress/[wpId]/components/ActionsForm.tsx",
+      "line": 46,
+      "kind": "jsx-text",
+      "text": "Enable points for purchases"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/wordpress/[wpId]/components/ActionsForm.tsx",
+      "line": 66,
+      "kind": "jsx-text",
+      "text": "Sign-up Bonus"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/wordpress/[wpId]/components/ActionsForm.tsx",
+      "line": 69,
+      "kind": "jsx-text",
+      "text": "Award bonus points on sign-up"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/wordpress/[wpId]/components/ActionsForm.tsx",
+      "line": 89,
+      "kind": "jsx-text",
+      "text": "Save Actions"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/wordpress/[wpId]/components/OffersForm.tsx",
+      "line": 28,
+      "kind": "jsx-text",
+      "text": "No loyalty program linked."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/wordpress/[wpId]/components/OffersForm.tsx",
+      "line": 28,
+      "kind": "jsx-text",
+      "text": "Go to the"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/wordpress/[wpId]/components/OffersForm.tsx",
+      "line": 28,
+      "kind": "jsx-text",
+      "text": "tab to link a loyalty program. Once linked, offers from that program will be av…"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/wordpress/[wpId]/components/OffersForm.tsx",
+      "line": 38,
+      "kind": "jsx-text",
+      "text": "Manage offers on the"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/wordpress/[wpId]/components/OffersForm.tsx",
+      "line": 40,
+      "kind": "jsx-text",
+      "text": "Offers page"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/wordpress/[wpId]/components/OffersForm.tsx",
+      "line": 50,
+      "kind": "jsx-text",
+      "text": "No active offers yet. Create one on the Offers page to make it available for re…"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/wordpress/[wpId]/components/SettingsForm.tsx",
+      "line": 40,
+      "kind": "jsx-text",
+      "text": "— No program linked —"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/wordpress/[wpId]/components/SettingsForm.tsx",
+      "line": 47,
+      "kind": "jsx-text",
+      "text": "Link a loyalty program to enable points earning and offer redemption."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/wordpress/[wpId]/components/SettingsForm.tsx",
+      "line": 51,
+      "kind": "jsx-text",
+      "text": "Save Settings"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/wordpress/[wpId]/components/WidgetForm.tsx",
+      "line": 38,
+      "kind": "jsx-text",
+      "text": "Plugin not yet initialized."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/wordpress/[wpId]/components/WidgetForm.tsx",
+      "line": 38,
+      "kind": "jsx-text",
+      "text": "Complete the plugin activation on your WordPress site before configuring widget…"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/wordpress/[wpId]/components/WidgetForm.tsx",
+      "line": 46,
+      "kind": "jsx-text",
+      "text": "The LoyaltyDog widget can be placed in your WordPress site using any of the fol…"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/wordpress/[wpId]/page.tsx",
+      "line": 22,
+      "kind": "jsx-text",
+      "text": "Plugin not yet activated. Visit your WordPress admin to complete setup."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/wordpress/[wpId]/page.tsx",
+      "line": 23,
+      "kind": "jsx-text",
+      "text": "No loyalty program linked. Select a program in the Settings tab."
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/wordpress/[wpId]/page.tsx",
+      "line": 25,
+      "kind": "attr:title",
+      "text": "Settings"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/wordpress/[wpId]/page.tsx",
+      "line": 28,
+      "kind": "attr:title",
+      "text": "Actions"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/wordpress/[wpId]/page.tsx",
+      "line": 31,
+      "kind": "attr:title",
+      "text": "Offers"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/wordpress/[wpId]/page.tsx",
+      "line": 34,
+      "kind": "attr:title",
+      "text": "Widget"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/wordpress/page.tsx",
+      "line": 18,
+      "kind": "jsx-text",
+      "text": "No WordPress Sites Connected"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/loyalty/wordpress/page.tsx",
+      "line": 19,
+      "kind": "jsx-text",
+      "text": "Install the LoyaltyDog plugin on your WordPress / WooCommerce site to get start…"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/profile/page.tsx",
+      "line": 20,
+      "kind": "attr:title",
+      "text": "Update"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/profile/page.tsx",
+      "line": 45,
+      "kind": "jsx-text",
+      "text": "Email address"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/profile/page.tsx",
+      "line": 51,
+      "kind": "jsx-text",
+      "text": "Phone number"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/profile/settings/form.tsx",
+      "line": 42,
+      "kind": "jsx-text",
+      "text": "First Name"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/profile/settings/form.tsx",
+      "line": 50,
+      "kind": "jsx-text",
+      "text": "Last Name"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/profile/settings/form.tsx",
+      "line": 74,
+      "kind": "jsx-text",
+      "text": "Favorite Amount Spent"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/profile/settings/form.tsx",
+      "line": 151,
+      "kind": "jsx-text",
+      "text": "Current password"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/profile/settings/form.tsx",
+      "line": 159,
+      "kind": "jsx-text",
+      "text": "New password"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/profile/settings/form.tsx",
+      "line": 167,
+      "kind": "jsx-text",
+      "text": "Confirm password"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/profile/settings/form.tsx",
+      "line": 174,
+      "kind": "jsx-text",
+      "text": "Password requirements:"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/profile/settings/form.tsx",
+      "line": 175,
+      "kind": "jsx-text",
+      "text": "Ensure that these requirements are met:"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/profile/settings/form.tsx",
+      "line": 177,
+      "kind": "jsx-text",
+      "text": "At least 10 characters (and up to 100 characters)"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/profile/settings/form.tsx",
+      "line": 178,
+      "kind": "jsx-text",
+      "text": "At least one lowercase character"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/profile/settings/form.tsx",
+      "line": 179,
+      "kind": "jsx-text",
+      "text": "Inclusion of at least one special character, e.g., ! @ # ?"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/profile/settings/form.tsx",
+      "line": 180,
+      "kind": "jsx-text",
+      "text": "Some text here zoltan"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/profile/settings/page.tsx",
+      "line": 17,
+      "kind": "attr:title",
+      "text": "General information"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/profile/settings/page.tsx",
+      "line": 20,
+      "kind": "attr:title",
+      "text": "Password information"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/profile/settings/page.tsx",
+      "line": 23,
+      "kind": "attr:title",
+      "text": "Language & Time"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/profile/settings/page.tsx",
+      "line": 24,
+      "kind": "attr:title",
+      "text": "Social accounts"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/profile/settings/page.tsx",
+      "line": 25,
+      "kind": "attr:title",
+      "text": "Alerts & Notifications"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/programs/new/form.tsx",
+      "line": 29,
+      "kind": "jsx-text",
+      "text": "Program Type"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/programs/new/form.tsx",
+      "line": 34,
+      "kind": "jsx-text",
+      "text": "Gift Card"
+    },
+    {
+      "file": "src/app/(cpanel)/(user)/programs/new/page.tsx",
+      "line": 19,
+      "kind": "jsx-text",
+      "text": "New Program"
+    },
+    {
+      "file": "src/app/(marketing)/_components/CookieConsentBanner.tsx",
+      "line": 58,
+      "kind": "attr:aria-label",
+      "text": "Cookie consent"
+    },
+    {
+      "file": "src/app/(marketing)/_components/LanguageSwitcher.tsx",
+      "line": 28,
+      "kind": "attr:aria-label",
+      "text": "Language"
+    },
+    {
+      "file": "src/app/(mobile)/l/[programSid]/form.tsx",
+      "line": 51,
+      "kind": "jsx-text",
+      "text": "Enter Your Details"
+    },
+    {
+      "file": "src/app/(mobile)/l/[programSid]/form.tsx",
+      "line": 54,
+      "kind": "jsx-text",
+      "text": "First Name"
+    },
+    {
+      "file": "src/app/(mobile)/l/[programSid]/form.tsx",
+      "line": 60,
+      "kind": "jsx-text",
+      "text": "Last Name"
+    },
+    {
+      "file": "src/app/(mobile)/l/[programSid]/form.tsx",
+      "line": 66,
+      "kind": "jsx-text",
+      "text": "Email Address"
+    },
+    {
+      "file": "src/app/(mobile)/l/[programSid]/form.tsx",
+      "line": 72,
+      "kind": "jsx-text",
+      "text": "Cell Number"
+    },
+    {
+      "file": "src/app/(mobile)/l/[programSid]/form.tsx",
+      "line": 113,
+      "kind": "jsx-text",
+      "text": "I accept the"
+    },
+    {
+      "file": "src/app/(mobile)/l/[programSid]/form.tsx",
+      "line": 115,
+      "kind": "jsx-text",
+      "text": "Terms and Conditions"
+    },
+    {
+      "file": "src/app/(mobile)/l/[programSid]/form.tsx",
+      "line": 122,
+      "kind": "jsx-text",
+      "text": "Terms & Conditions"
+    },
+    {
+      "file": "src/app/(mobile)/l/c/[customerSid]/offers/[offerSid]/form.tsx",
+      "line": 18,
+      "kind": "jsx-text",
+      "text": "You currently have an active offer, if you confirm, your active offer will be r…"
+    },
+    {
+      "file": "src/app/(mobile)/l/c/[customerSid]/offers/[offerSid]/form.tsx",
+      "line": 45,
+      "kind": "jsx-text",
+      "text": "Back to Pass"
+    },
+    {
+      "file": "src/app/(mobile)/l/c/[customerSid]/offers/[offerSid]/form.tsx",
+      "line": 51,
+      "kind": "jsx-text",
+      "text": "Your Personal Offer"
+    },
+    {
+      "file": "src/app/(mobile)/l/c/[customerSid]/offers/[offerSid]/form.tsx",
+      "line": 53,
+      "kind": "jsx-text",
+      "text": "You will be notified when it&apos;s ready."
+    },
+    {
+      "file": "src/app/(mobile)/l/c/[customerSid]/offers/[offerSid]/form.tsx",
+      "line": 55,
+      "kind": "jsx-text",
+      "text": "You can close this window"
+    },
+    {
+      "file": "src/app/(mobile)/l/c/[customerSid]/offers/page.tsx",
+      "line": 25,
+      "kind": "attr:title",
+      "text": "Back to Pass"
+    },
+    {
+      "file": "src/app/(mobile)/l/c/[customerSid]/offers/page.tsx",
+      "line": 26,
+      "kind": "jsx-text",
+      "text": "Back to Pass"
+    },
+    {
+      "file": "src/app/(mobile)/l/c/[customerSid]/offers/page.tsx",
+      "line": 34,
+      "kind": "jsx-text",
+      "text": "Your Active Offer"
+    },
+    {
+      "file": "src/app/(mobile)/l/c/[customerSid]/offers/page.tsx",
+      "line": 47,
+      "kind": "jsx-text",
+      "text": "No new offers."
+    },
+    {
+      "file": "src/app/(mobile)/l/c/[customerSid]/profile/form.tsx",
+      "line": 39,
+      "kind": "jsx-text",
+      "text": "Enter Your Details"
+    },
+    {
+      "file": "src/app/(mobile)/l/c/[customerSid]/profile/form.tsx",
+      "line": 41,
+      "kind": "attr:placeholder",
+      "text": "First Name"
+    },
+    {
+      "file": "src/app/(mobile)/l/c/[customerSid]/profile/form.tsx",
+      "line": 44,
+      "kind": "attr:placeholder",
+      "text": "Last Name"
+    },
+    {
+      "file": "src/app/(mobile)/l/c/[customerSid]/profile/form.tsx",
+      "line": 47,
+      "kind": "attr:placeholder",
+      "text": "Email Address"
+    },
+    {
+      "file": "src/app/(mobile)/l/c/[customerSid]/profile/form.tsx",
+      "line": 50,
+      "kind": "attr:placeholder",
+      "text": "Phone Number"
+    },
+    {
+      "file": "src/app/(mobile)/l/c/[customerSid]/profile/page.tsx",
+      "line": 18,
+      "kind": "attr:title",
+      "text": "Back to Pass"
+    },
+    {
+      "file": "src/app/(mobile)/l/c/[customerSid]/profile/page.tsx",
+      "line": 19,
+      "kind": "jsx-text",
+      "text": "Back to Pass"
+    },
+    {
+      "file": "src/app/(mobile)/l/c/[customerSid]/profile/page.tsx",
+      "line": 25,
+      "kind": "jsx-text",
+      "text": "Your Profile"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 36,
+      "kind": "attr:alt",
+      "text": "Add to Apple Wallet"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 41,
+      "kind": "attr:alt",
+      "text": "Add to Google Wallet"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 44,
+      "kind": "attr:alt",
+      "text": "Add to Wallet Passes"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 50,
+      "kind": "attr:alt",
+      "text": "Add to Apple Wallet"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 53,
+      "kind": "attr:alt",
+      "text": "Add to Google Wallet"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 83,
+      "kind": "jsx-text",
+      "text": "You pass was sent."
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 112,
+      "kind": "jsx-text",
+      "text": "Enter Your Details"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 266,
+      "kind": "jsx-text",
+      "text": "Pass Added"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 267,
+      "kind": "attr:title",
+      "text": "Open Wallet"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 268,
+      "kind": "jsx-text",
+      "text": "Open Wallet"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 271,
+      "kind": "jsx-text",
+      "text": "Show Preview"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 279,
+      "kind": "jsx-text",
+      "text": "Pass Not Loaded?"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 282,
+      "kind": "attr:title",
+      "text": "Download Pass"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 283,
+      "kind": "jsx-text",
+      "text": "Download Pass"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 285,
+      "kind": "attr:title",
+      "text": "Open Wallet"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 286,
+      "kind": "jsx-text",
+      "text": "Open Wallet"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 292,
+      "kind": "attr:alt",
+      "text": "Add to Google Wallet"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 294,
+      "kind": "jsx-text",
+      "text": "If you don&apos;t have a Wallet app, please download it now:"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 298,
+      "kind": "attr:title",
+      "text": "Install WalletPasses"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 301,
+      "kind": "attr:alt",
+      "text": "Add to WalletPasses"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 303,
+      "kind": "jsx-text",
+      "text": "Your pass will automatically load after you open the app after installation."
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 307,
+      "kind": "jsx-text",
+      "text": "Show Preview"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 318,
+      "kind": "attr:title",
+      "text": "auto download"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 422,
+      "kind": "jsx-text",
+      "text": "Verifying session…"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 452,
+      "kind": "jsx-text",
+      "text": "Scan this QR Code on your smartphone to download the pass."
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 465,
+      "kind": "jsx-text",
+      "text": "Email the pass to your mobile device."
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 483,
+      "kind": "jsx-text",
+      "text": "Print this pass if you don&apos;t want to use your mobile device."
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 697,
+      "kind": "jsx-text",
+      "text": "How would you like to verify?"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 719,
+      "kind": "jsx-text",
+      "text": "Get a code by email"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 742,
+      "kind": "jsx-text",
+      "text": "SMS / Phone"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 743,
+      "kind": "jsx-text",
+      "text": "Get a code by text message"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 785,
+      "kind": "jsx-text",
+      "text": "We&apos;ll send a 6-digit verification code to your"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 807,
+      "kind": "jsx-text",
+      "text": "Code sent to"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 811,
+      "kind": "jsx-text",
+      "text": "Dev mode — code:"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 850,
+      "kind": "jsx-text",
+      "text": "← Change method"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 875,
+      "kind": "jsx-text",
+      "text": "Activate Your Card"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 877,
+      "kind": "jsx-text",
+      "text": "Enter the 6-digit security code printed on your gift card to activate it and lo…"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 900,
+      "kind": "jsx-text",
+      "text": "Security Code (6 digits)"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 927,
+      "kind": "jsx-text",
+      "text": "Activate Gift Card"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 929,
+      "kind": "jsx-text",
+      "text": "The security code is printed on the back or sticker of your physical card."
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 941,
+      "kind": "jsx-text",
+      "text": "← Start over"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 953,
+      "kind": "jsx-text",
+      "text": "Activating your gift card…"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/forms.tsx",
+      "line": 966,
+      "kind": "jsx-text",
+      "text": "Loading your pass…"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/page.tsx",
+      "line": 90,
+      "kind": "jsx-text",
+      "text": "The pass is only available on mobile device, please use your smartphone to scan…"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/page.tsx",
+      "line": 103,
+      "kind": "jsx-text",
+      "text": "You can email the pass to your email address so that you can open it on your mo…"
+    },
+    {
+      "file": "src/app/(mobile)/p/[passSid]/page.tsx",
+      "line": 121,
+      "kind": "jsx-text",
+      "text": "Print this pass if you don&apos;t want to use your mobile device"
+    },
+    {
+      "file": "src/app/(mobile)/s/[passSid]/status/forms.tsx",
+      "line": 136,
+      "kind": "jsx-text",
+      "text": "Points added:"
+    },
+    {
+      "file": "src/app/(mobile)/s/[passSid]/status/forms.tsx",
+      "line": 137,
+      "kind": "jsx-text",
+      "text": "New points:"
+    },
+    {
+      "file": "src/app/(mobile)/t/[templateSid]/form.tsx",
+      "line": 38,
+      "kind": "jsx-text",
+      "text": "Enter Your Details"
+    },
+    {
+      "file": "src/app/(mobile)/t/[templateSid]/page.tsx",
+      "line": 21,
+      "kind": "jsx-text",
+      "text": "Not available"
+    },
+    {
+      "file": "src/app/(mobile)/t/[templateSid]/page.tsx",
+      "line": 23,
+      "kind": "jsx-text",
+      "text": "Distribution of this pass has been stopped by the pass issuer."
+    },
+    {
+      "file": "src/app/(mobile)/t/[templateSid]/page.tsx",
+      "line": 41,
+      "kind": "jsx-text",
+      "text": "Existing Pass"
+    },
+    {
+      "file": "src/app/(mobile)/t/[templateSid]/page.tsx",
+      "line": 42,
+      "kind": "jsx-text",
+      "text": "You have already created a pass."
+    },
+    {
+      "file": "src/app/(mobile)/t/[templateSid]/page.tsx",
+      "line": 45,
+      "kind": "jsx-text",
+      "text": "Open exist Pass"
+    },
+    {
+      "file": "src/app/error.tsx",
+      "line": 26,
+      "kind": "jsx-text",
+      "text": "Something went wrong! We are already working to solve the problem."
+    },
+    {
+      "file": "src/app/error.tsx",
+      "line": 30,
+      "kind": "jsx-text",
+      "text": "Try again"
+    },
+    {
+      "file": "src/app/error.tsx",
+      "line": 33,
+      "kind": "jsx-text",
+      "text": "Return Home"
+    },
+    {
+      "file": "src/app/error/page.tsx",
+      "line": 22,
+      "kind": "jsx-text",
+      "text": "Return Home"
+    },
+    {
+      "file": "src/app/not-found.tsx",
+      "line": 12,
+      "kind": "jsx-text",
+      "text": "Whoops! That page doesn&apos;t exist."
+    },
+    {
+      "file": "src/app/not-found.tsx",
+      "line": 18,
+      "kind": "jsx-text",
+      "text": "Return Home"
+    },
+    {
+      "file": "src/app/test-ai-advisor/page.tsx",
+      "line": 92,
+      "kind": "jsx-text",
+      "text": "🧪 AI Advisor - Test Mode"
+    },
+    {
+      "file": "src/app/test-ai-advisor/page.tsx",
+      "line": 93,
+      "kind": "jsx-text",
+      "text": "This is a mock version for testing UI changes. Try asking:"
+    },
+    {
+      "file": "src/app/test-ai-advisor/page.tsx",
+      "line": 95,
+      "kind": "jsx-text",
+      "text": "&quot;Show me a table analysis&quot; - to test table pagination"
+    },
+    {
+      "file": "src/app/test-ai-advisor/page.tsx",
+      "line": 96,
+      "kind": "jsx-text",
+      "text": "&quot;How is my program performing?&quot; - to test heading hierarchy"
+    },
+    {
+      "file": "src/app/test-ai-advisor/page.tsx",
+      "line": 97,
+      "kind": "jsx-text",
+      "text": "Any message - to test auto-scroll behavior"
+    },
+    {
+      "file": "src/components/AIAdvisorChat.tsx",
+      "line": 270,
+      "kind": "jsx-text",
+      "text": "🐕 Loyalty Dog AI Business Advisor"
+    },
+    {
+      "file": "src/components/AIAdvisorChat.tsx",
+      "line": 275,
+      "kind": "jsx-text",
+      "text": "Total Transactions"
+    },
+    {
+      "file": "src/components/AIAdvisorChat.tsx",
+      "line": 282,
+      "kind": "jsx-text",
+      "text": "Member Participation"
+    },
+    {
+      "file": "src/components/AIAdvisorChat.tsx",
+      "line": 289,
+      "kind": "jsx-text",
+      "text": "Total Revenue"
+    },
+    {
+      "file": "src/components/AIAdvisorChat.tsx",
+      "line": 367,
+      "kind": "jsx-text",
+      "text": "💾 Your Download"
+    },
+    {
+      "file": "src/components/AIAdvisorChat.tsx",
+      "line": 413,
+      "kind": "jsx-text",
+      "text": "💡 Try asking:"
+    },
+    {
+      "file": "src/components/AIAdvisorChat.tsx",
+      "line": 444,
+      "kind": "attr:placeholder",
+      "text": "Ask about your loyalty program..."
+    },
+    {
+      "file": "src/components/CropModal.tsx",
+      "line": 36,
+      "kind": "attr:alt",
+      "text": "Crop Modal Image"
+    },
+    {
+      "file": "src/components/design-tabs/FieldForm.tsx",
+      "line": 317,
+      "kind": "jsx-text",
+      "text": "Normal Field"
+    },
+    {
+      "file": "src/components/design-tabs/FieldForm.tsx",
+      "line": 424,
+      "kind": "jsx-text",
+      "text": "Pass ID"
+    },
+    {
+      "file": "src/components/design-tabs/FieldForm.tsx",
+      "line": 425,
+      "kind": "jsx-text",
+      "text": "Pass URL"
+    },
+    {
+      "file": "src/components/design-tabs/FieldForm.tsx",
+      "line": 426,
+      "kind": "jsx-text",
+      "text": "Template URL"
+    },
+    {
+      "file": "src/components/design-tabs/FieldForm.tsx",
+      "line": 427,
+      "kind": "jsx-text",
+      "text": "Scan URL"
+    },
+    {
+      "file": "src/components/design-tabs/PlaceholderTab.tsx",
+      "line": 186,
+      "kind": "jsx-text",
+      "text": "6fed93a1-4214-44a5-bae2-a7eefd7a29af"
+    },
+    {
+      "file": "src/components/design-tabs/PlaceholderTab.tsx",
+      "line": 192,
+      "kind": "jsx-text",
+      "text": "b-2ToUIURKW64qfu_Xoprw"
+    },
+    {
+      "file": "src/components/design-tabs/StripTab.tsx",
+      "line": 138,
+      "kind": "attr:title",
+      "text": "Background"
+    },
+    {
+      "file": "src/components/layouts/Navbar.tsx",
+      "line": 49,
+      "kind": "attr:alt",
+      "text": "LoyaltyDog Logo"
+    },
+    {
+      "file": "src/components/layouts/Navbar.tsx",
+      "line": 50,
+      "kind": "attr:alt",
+      "text": "LoyaltyDog Logo"
+    },
+    {
+      "file": "src/components/layouts/Navbar.tsx",
+      "line": 51,
+      "kind": "attr:alt",
+      "text": "LoyaltyDog Logo"
+    },
+    {
+      "file": "src/components/layouts/Navbar.tsx",
+      "line": 63,
+      "kind": "attr:alt",
+      "text": "User settings"
+    },
+    {
+      "file": "src/components/layouts/Navbar.tsx",
+      "line": 104,
+      "kind": "attr:alt",
+      "text": "LoyaltyDog Logo"
+    },
+    {
+      "file": "src/components/layouts/Navbar.tsx",
+      "line": 105,
+      "kind": "attr:alt",
+      "text": "LoyaltyDog Logo"
+    },
+    {
+      "file": "src/components/layouts/Navbar.tsx",
+      "line": 116,
+      "kind": "attr:alt",
+      "text": "User settings"
+    },
+    {
+      "file": "src/components/layouts/Sidebar.tsx",
+      "line": 202,
+      "kind": "attr:label",
+      "text": "WordPress"
+    },
+    {
+      "file": "src/components/layouts/Sidebar.tsx",
+      "line": 339,
+      "kind": "jsx-text",
+      "text": "AI Settings"
+    },
+    {
+      "file": "src/components/PaginatedTable.tsx",
+      "line": 71,
+      "kind": "attr:aria-label",
+      "text": "Previous page"
+    },
+    {
+      "file": "src/components/PaginatedTable.tsx",
+      "line": 85,
+      "kind": "attr:aria-label",
+      "text": "Next page"
+    }
+  ]
+}
