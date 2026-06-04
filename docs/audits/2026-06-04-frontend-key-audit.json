@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-06-04T16:23:02.310Z",
+    "generatedAt": "2026-06-04T17:29:36.751Z",
     "inputs": {
       "frontendSrc": "/tmp/wt-core_api-i18n/frontend/src",
       "localeDir": "/tmp/wt-locplat-i18n/packages/i18n/locales/en-US",
@@ -12,7 +12,7 @@
     "uniqueReferencedKeys": 1858,
     "localeNamespaces": {
       "clover": 35,
-      "common": 2768,
+      "common": 2782,
       "emails": 409,
       "eposnow": 18,
       "errors": 284,
@@ -28,196 +28,25 @@
       "marketing": 32
     },
     "counts": {
-      "m1_missingFromJson": 14,
+      "m1_missingFromJson": 0,
       "m2_referenced_jsonNotBundle": 0,
-      "m2_referenced_bundleNotJson": 14,
+      "m2_referenced_bundleNotJson": 0,
       "m2_full_jsonNotBundle": 2187,
-      "m2_full_bundleNotJson": 18,
+      "m2_full_bundleNotJson": 4,
       "m3_missingFromBoth": 0,
+      "namespaceMismatch": 0,
       "dynamic_manualReview": 32
     }
   },
-  "m1": {
-    "common": [
-      {
-        "key": "app.admin.aiAdvisor.initialSummaryMessage",
-        "locations": [
-          {
-            "file": "src/app/(cpanel)/(admin)/admin/ai-advisor/page.tsx",
-            "line": 70,
-            "shape": "client"
-          }
-        ],
-        "inBundle": true
-      },
-      {
-        "key": "app.admin.aiAdvisor.failedToFetchData",
-        "locations": [
-          {
-            "file": "src/app/(cpanel)/(admin)/admin/ai-advisor/page.tsx",
-            "line": 103,
-            "shape": "client"
-          }
-        ],
-        "inBundle": true
-      },
-      {
-        "key": "app.admin.aiAdvisor.pageTitle",
-        "locations": [
-          {
-            "file": "src/app/(cpanel)/(admin)/admin/ai-advisor/page.tsx",
-            "line": 189,
-            "shape": "client"
-          }
-        ],
-        "inBundle": true
-      },
-      {
-        "key": "app.admin.aiAdvisor.liveData",
-        "locations": [
-          {
-            "file": "src/app/(cpanel)/(admin)/admin/ai-advisor/page.tsx",
-            "line": 237,
-            "shape": "client"
-          }
-        ],
-        "inBundle": true
-      },
-      {
-        "key": "app.admin.aiAdvisor.applied",
-        "locations": [
-          {
-            "file": "src/app/(cpanel)/(admin)/admin/ai-advisor/page.tsx",
-            "line": 247,
-            "shape": "client"
-          }
-        ],
-        "inBundle": true
-      },
-      {
-        "key": "app.admin.aiAdvisor.fromSource",
-        "locations": [
-          {
-            "file": "src/app/(cpanel)/(admin)/admin/ai-advisor/page.tsx",
-            "line": 248,
-            "shape": "client"
-          }
-        ],
-        "inBundle": true
-      },
-      {
-        "key": "app.admin.aiAdvisor.aiStatus",
-        "locations": [
-          {
-            "file": "src/app/(cpanel)/(admin)/admin/ai-advisor/page.tsx",
-            "line": 259,
-            "shape": "client"
-          }
-        ],
-        "inBundle": true
-      },
-      {
-        "key": "app.admin.aiAdvisor.aiConnected",
-        "locations": [
-          {
-            "file": "src/app/(cpanel)/(admin)/admin/ai-advisor/page.tsx",
-            "line": 262,
-            "shape": "client"
-          }
-        ],
-        "inBundle": true
-      },
-      {
-        "key": "app.admin.aiAdvisor.aiDisconnected",
-        "locations": [
-          {
-            "file": "src/app/(cpanel)/(admin)/admin/ai-advisor/page.tsx",
-            "line": 263,
-            "shape": "client"
-          }
-        ],
-        "inBundle": true
-      },
-      {
-        "key": "app.admin.aiAdvisor.refreshData",
-        "locations": [
-          {
-            "file": "src/app/(cpanel)/(admin)/admin/ai-advisor/page.tsx",
-            "line": 268,
-            "shape": "client"
-          }
-        ],
-        "inBundle": true
-      },
-      {
-        "key": "app.admin.aiAdvisor.noDataTitle",
-        "locations": [
-          {
-            "file": "src/app/(cpanel)/(admin)/admin/ai-advisor/page.tsx",
-            "line": 299,
-            "shape": "client"
-          }
-        ],
-        "inBundle": true
-      },
-      {
-        "key": "app.admin.aiAdvisor.noDataDescription",
-        "locations": [
-          {
-            "file": "src/app/(cpanel)/(admin)/admin/ai-advisor/page.tsx",
-            "line": 300,
-            "shape": "client"
-          }
-        ],
-        "inBundle": true
-      },
-      {
-        "key": "app.admin.aiAdvisor.pocNotice",
-        "locations": [
-          {
-            "file": "src/app/(cpanel)/(admin)/admin/ai-advisor/page.tsx",
-            "line": 308,
-            "shape": "client"
-          }
-        ],
-        "inBundle": true
-      },
-      {
-        "key": "nav.noProgram",
-        "locations": [
-          {
-            "file": "src/components/layouts/Navbar.tsx",
-            "line": 236,
-            "shape": "client"
-          }
-        ],
-        "inBundle": true
-      }
-    ]
-  },
+  "m1": {},
   "m2": {
     "referenced": {
       "jsonNotBundle": [],
-      "bundleNotJson": [
-        "common:nav.noProgram",
-        "common:app.admin.aiAdvisor.aiConnected",
-        "common:app.admin.aiAdvisor.aiDisconnected",
-        "common:app.admin.aiAdvisor.aiStatus",
-        "common:app.admin.aiAdvisor.applied",
-        "common:app.admin.aiAdvisor.failedToFetchData",
-        "common:app.admin.aiAdvisor.fromSource",
-        "common:app.admin.aiAdvisor.initialSummaryMessage",
-        "common:app.admin.aiAdvisor.liveData",
-        "common:app.admin.aiAdvisor.noDataDescription",
-        "common:app.admin.aiAdvisor.noDataTitle",
-        "common:app.admin.aiAdvisor.pageTitle",
-        "common:app.admin.aiAdvisor.pocNotice",
-        "common:app.admin.aiAdvisor.refreshData"
-      ]
+      "bundleNotJson": []
     },
     "full": {
       "jsonNotBundleCount": 2187,
-      "bundleNotJsonCount": 18,
+      "bundleNotJsonCount": 4,
       "jsonNotBundle": [
         "clover:clover.pos.title",
         "clover:clover.pos.enrollPrompt",
@@ -2408,20 +2237,6 @@
         "wordpress:wordpress.privacy.whenYouUseLoyaltydogYourEmail"
       ],
       "bundleNotJson": [
-        "common:nav.noProgram",
-        "common:app.admin.aiAdvisor.aiConnected",
-        "common:app.admin.aiAdvisor.aiDisconnected",
-        "common:app.admin.aiAdvisor.aiStatus",
-        "common:app.admin.aiAdvisor.applied",
-        "common:app.admin.aiAdvisor.failedToFetchData",
-        "common:app.admin.aiAdvisor.fromSource",
-        "common:app.admin.aiAdvisor.initialSummaryMessage",
-        "common:app.admin.aiAdvisor.liveData",
-        "common:app.admin.aiAdvisor.noDataDescription",
-        "common:app.admin.aiAdvisor.noDataTitle",
-        "common:app.admin.aiAdvisor.pageTitle",
-        "common:app.admin.aiAdvisor.pocNotice",
-        "common:app.admin.aiAdvisor.refreshData",
         "common:app.auth.register.dataProcessingAgreement",
         "common:app.auth.register.privacyPolicy",
         "common:app.auth.register.termsOfService",
@@ -2430,6 +2245,7 @@
     }
   },
   "m3": [],
+  "namespaceMismatch": [],
   "dynamic": [
     {
       "file": "src/app/(cpanel)/(admin)/admin/ai-advisor/page.tsx",

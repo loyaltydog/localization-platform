@@ -1,6 +1,6 @@
 # Frontend i18n Key-Reference Audit
 
-_Generated: 2026-06-04T16:23:02.310Z_
+_Generated: 2026-06-04T17:29:36.751Z_
 
 Reproduce: `node scripts/audit-frontend-keys.mjs` (paths overridable via flags/env).
 
@@ -11,12 +11,13 @@ Reproduce: `node scripts/audit-frontend-keys.mjs` (paths overridable via flags/e
 | Files scanned | 716 |
 | Total `t()` reference occurrences | 2124 |
 | Unique referenced keys (ns:key) | 1858 |
-| **M1** referenced but MISSING from en-US JSON | **14** |
+| **M1** referenced but MISSING from en-US JSON | **0** |
 | **M3** referenced but MISSING from BOTH JSON & bundle | **0** |
+| Namespace mismatch (key exists, wrong namespace) | 0 |
 | M2 referenced: in JSON, not in bundle | 0 |
-| M2 referenced: in bundle, not in JSON | 14 |
+| M2 referenced: in bundle, not in JSON | 0 |
 | M2 full drift: in JSON, not in bundle | 2187 |
-| M2 full drift: in bundle, not in JSON | 18 |
+| M2 full drift: in bundle, not in JSON | 4 |
 | Dynamic keys (manual review) | 32 |
 
 ### Inputs
@@ -29,7 +30,7 @@ Reproduce: `node scripts/audit-frontend-keys.mjs` (paths overridable via flags/e
 ### Locale JSON namespaces (leaf key counts)
 
 - `clover`: 35
-- `common`: 2768
+- `common`: 2782
 - `emails`: 409
 - `eposnow`: 18
 - `errors`: 284
@@ -50,26 +51,17 @@ Reproduce: `node scripts/audit-frontend-keys.mjs` (paths overridable via flags/e
 These keys must be ADDED to the en-US source-of-truth (grouped by namespace).
 `(bundled)` = also present in the frontend fallback bundle (so it renders today but isn't in source JSON).
 
-### `common` (14)
-
-- `app.admin.aiAdvisor.aiConnected` _(bundled)_ — src/app/(cpanel)/(admin)/admin/ai-advisor/page.tsx:262
-- `app.admin.aiAdvisor.aiDisconnected` _(bundled)_ — src/app/(cpanel)/(admin)/admin/ai-advisor/page.tsx:263
-- `app.admin.aiAdvisor.aiStatus` _(bundled)_ — src/app/(cpanel)/(admin)/admin/ai-advisor/page.tsx:259
-- `app.admin.aiAdvisor.applied` _(bundled)_ — src/app/(cpanel)/(admin)/admin/ai-advisor/page.tsx:247
-- `app.admin.aiAdvisor.failedToFetchData` _(bundled)_ — src/app/(cpanel)/(admin)/admin/ai-advisor/page.tsx:103
-- `app.admin.aiAdvisor.fromSource` _(bundled)_ — src/app/(cpanel)/(admin)/admin/ai-advisor/page.tsx:248
-- `app.admin.aiAdvisor.initialSummaryMessage` _(bundled)_ — src/app/(cpanel)/(admin)/admin/ai-advisor/page.tsx:70
-- `app.admin.aiAdvisor.liveData` _(bundled)_ — src/app/(cpanel)/(admin)/admin/ai-advisor/page.tsx:237
-- `app.admin.aiAdvisor.noDataDescription` _(bundled)_ — src/app/(cpanel)/(admin)/admin/ai-advisor/page.tsx:300
-- `app.admin.aiAdvisor.noDataTitle` _(bundled)_ — src/app/(cpanel)/(admin)/admin/ai-advisor/page.tsx:299
-- `app.admin.aiAdvisor.pageTitle` _(bundled)_ — src/app/(cpanel)/(admin)/admin/ai-advisor/page.tsx:189
-- `app.admin.aiAdvisor.pocNotice` _(bundled)_ — src/app/(cpanel)/(admin)/admin/ai-advisor/page.tsx:308
-- `app.admin.aiAdvisor.refreshData` _(bundled)_ — src/app/(cpanel)/(admin)/admin/ai-advisor/page.tsx:268
-- `nav.noProgram` _(bundled)_ — src/components/layouts/Navbar.tsx:236
+_None._
 
 ## M3 — Referenced but MISSING from BOTH JSON and bundle (likely code bug)
 
 Probable wrong path/casing in frontend code — these need a CODE FIX.
+
+_None._
+
+## Namespace mismatch — key exists, but under a DIFFERENT namespace
+
+The code references `resolvedNs:key`, and `key` is absent from `resolvedNs` but present under another namespace in JSON (and/or bundle). These are informational: either the code's namespace attribution is wrong, or the resolved namespace (often via the nearest `useTranslation` heuristic) mis-attributed the call. They are NOT counted as truly-missing (M1/M3). Spot-check before acting.
 
 _None._
 
@@ -81,27 +73,14 @@ These render from the API but would be missing if the backend is unreachable (fa
 
 _None._
 
-### Referenced keys present in bundle but NOT in JSON (14)
+### Referenced keys present in bundle but NOT in JSON (0)
 
-- `common:app.admin.aiAdvisor.aiConnected`
-- `common:app.admin.aiAdvisor.aiDisconnected`
-- `common:app.admin.aiAdvisor.aiStatus`
-- `common:app.admin.aiAdvisor.applied`
-- `common:app.admin.aiAdvisor.failedToFetchData`
-- `common:app.admin.aiAdvisor.fromSource`
-- `common:app.admin.aiAdvisor.initialSummaryMessage`
-- `common:app.admin.aiAdvisor.liveData`
-- `common:app.admin.aiAdvisor.noDataDescription`
-- `common:app.admin.aiAdvisor.noDataTitle`
-- `common:app.admin.aiAdvisor.pageTitle`
-- `common:app.admin.aiAdvisor.pocNotice`
-- `common:app.admin.aiAdvisor.refreshData`
-- `common:nav.noProgram`
+_None._
 
 ### Full drift (all keys, not just referenced)
 
 - In JSON but not bundle: **2187**
-- In bundle but not JSON: **18**
+- In bundle but not JSON: **4**
 
 ## Dynamic keys — manual review
 

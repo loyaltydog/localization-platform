@@ -150,7 +150,7 @@ function hasLetters(s) {
 function looksLikeClassName(s) {
   const tokens = s.trim().split(/\s+/);
   if (tokens.length === 0) return false;
-  const utilLike = tokens.filter((t) => /[-:]/.test(t) && /^[a-z0-9[\]/.#%-:]+$/i.test(t)).length;
+  const utilLike = tokens.filter((t) => /[-:]/.test(t) && /^[a-z0-9[\]/.#%\-:]+$/i.test(t)).length;
   return utilLike >= Math.max(1, Math.ceil(tokens.length * 0.6));
 }
 
@@ -380,6 +380,7 @@ function main() {
   const report = { summary, findings };
 
   fs.mkdirSync(path.dirname(cfg.outJson), { recursive: true });
+  fs.mkdirSync(path.dirname(cfg.outMd), { recursive: true });
   fs.writeFileSync(cfg.outJson, JSON.stringify(report, null, 2));
   fs.writeFileSync(cfg.outMd, renderMarkdown(report, perFile));
 

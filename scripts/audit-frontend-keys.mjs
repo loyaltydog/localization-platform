@@ -128,6 +128,7 @@ function isExcludedFile(p) {
   return false;
 }
 function collectFiles(dir, out = []) {
+  if (!fs.existsSync(dir)) return out;
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     const full = path.join(dir, entry.name);
     if (entry.isDirectory()) {
@@ -371,9 +372,6 @@ function main() {
   const localeNs = loadLocaleJson(cfg.localeDir); // ns -> Set
   const bundleNs = loadBundle(cfg.fallback); // ns -> Set
 
-  const localeAll = new Set();
-  for (const s of Object.values(localeNs)) for (const k of s) localeAll.add(k);
-
   // Known namespaces (for stripping i18next `ns:key` prefixes during extraction).
   const knownNamespaces = new Set([...Object.keys(localeNs), ...Object.keys(bundleNs)]);
 
@@ -397,22 +395,55 @@ function main() {
 
   const totalRefOccurrences = [...refMap.values()].reduce((n, r) => n + r.locations.length, 0);
 
+  // Helper: which namespaces contain `key` (in a given ns->Set map)?
+  function namespacesContaining(nsMap, key) {
+    const found = [];
+    for (const [ns, set] of Object.entries(nsMap)) {
+      if (set.has(key)) found.push(ns);
+    }
+    return found;
+  }
+
   // Classify each unique referenced key.
-  const m1 = {}; // ns -> [{key, locations}]  (missing from JSON)
-  const m3 = []; // [{ns,key,locations}]      (missing from JSON AND bundle)
+  //
+  // A reference is "present" ONLY when the key exists in its RESOLVED namespace
+  // (inJsonNs / inBundleNs). We deliberately do NOT treat a key found under a
+  // DIFFERENT namespace as present — that would hide wrong-namespace references
+  // and under-report real missing keys in M1/M3.
+  //
+  // References whose key is absent from its resolved ns but present under some
+  // OTHER namespace are surfaced in `namespaceMismatch` (informational) rather
+  // than forced into M1/M3 (which represent truly-absent keys).
+  const m1 = {}; // ns -> [{key, locations}]  (missing from JSON in resolved ns)
+  const m3 = []; // [{ns,key,locations}]      (missing from JSON AND bundle in resolved ns)
+  const namespaceMismatch = []; // [{ns,key,locations,foundInJsonNs,foundInBundleNs}]
   for (const ref of refMap.values()) {
     const inJsonNs = localeNs[ref.ns]?.has(ref.key) ?? false;
-    // A key may exist under its declared ns OR (defensively) anywhere in JSON.
-    const inJsonAnywhere = localeAll.has(ref.key);
-    const inJson = inJsonNs || inJsonAnywhere;
     const inBundleNs = bundleNs[ref.ns]?.has(ref.key) ?? false;
-    const inBundleAnywhere = Object.values(bundleNs).some((s) => s.has(ref.key));
-    const inBundle = inBundleNs || inBundleAnywhere;
 
-    if (!inJson) {
-      (m1[ref.ns] ??= []).push({ key: ref.key, locations: ref.locations, inBundle });
+    // Present in the RESOLVED namespace? If so, nothing to report.
+    if (inJsonNs) continue;
+
+    // Not in resolved JSON ns. Is it present under some OTHER namespace?
+    const otherJsonNs = namespacesContaining(localeNs, ref.key).filter((n) => n !== ref.ns);
+    const otherBundleNs = namespacesContaining(bundleNs, ref.key).filter((n) => n !== ref.ns);
+
+    if (otherJsonNs.length > 0 || (inBundleNs === false && otherBundleNs.length > 0)) {
+      // Exists somewhere, just not under the resolved namespace -> mismatch.
+      namespaceMismatch.push({
+        ns: ref.ns,
+        key: ref.key,
+        locations: ref.locations,
+        foundInJsonNs: otherJsonNs,
+        foundInBundleNs: otherBundleNs,
+        inResolvedBundleNs: inBundleNs,
+      });
+      continue;
     }
-    if (!inJson && !inBundle) {
+
+    // Genuinely absent from the resolved JSON namespace (and not a mismatch).
+    (m1[ref.ns] ??= []).push({ key: ref.key, locations: ref.locations, inBundle: inBundleNs });
+    if (!inBundleNs) {
       m3.push({ ns: ref.ns, key: ref.key, locations: ref.locations });
     }
   }
@@ -467,14 +498,16 @@ function main() {
       m2_full_jsonNotBundle: m2.full.jsonNotBundleCount,
       m2_full_bundleNotJson: m2.full.bundleNotJsonCount,
       m3_missingFromBoth: m3.length,
+      namespaceMismatch: namespaceMismatch.length,
       dynamic_manualReview: dynamicList.length,
     },
   };
 
-  const report = { summary, m1, m2, m3, dynamic: dynamicList, multiNsFiles };
+  const report = { summary, m1, m2, m3, namespaceMismatch, dynamic: dynamicList, multiNsFiles };
 
   // ----- write JSON -----
   fs.mkdirSync(path.dirname(cfg.outJson), { recursive: true });
+  fs.mkdirSync(path.dirname(cfg.outMd), { recursive: true });
   fs.writeFileSync(cfg.outJson, JSON.stringify(report, null, 2));
 
   // ----- write Markdown -----
@@ -490,7 +523,7 @@ function locStr(locations) {
 }
 
 function renderMarkdown(report) {
-  const { summary, m1, m2, m3, dynamic, multiNsFiles } = report;
+  const { summary, m1, m2, m3, namespaceMismatch = [], dynamic, multiNsFiles } = report;
   const c = summary.counts;
   let md = "";
   md += `# Frontend i18n Key-Reference Audit\n\n`;
@@ -504,6 +537,7 @@ function renderMarkdown(report) {
   md += `| Unique referenced keys (ns:key) | ${summary.uniqueReferencedKeys} |\n`;
   md += `| **M1** referenced but MISSING from en-US JSON | **${c.m1_missingFromJson}** |\n`;
   md += `| **M3** referenced but MISSING from BOTH JSON & bundle | **${c.m3_missingFromBoth}** |\n`;
+  md += `| Namespace mismatch (key exists, wrong namespace) | ${c.namespaceMismatch} |\n`;
   md += `| M2 referenced: in JSON, not in bundle | ${c.m2_referenced_jsonNotBundle} |\n`;
   md += `| M2 referenced: in bundle, not in JSON | ${c.m2_referenced_bundleNotJson} |\n`;
   md += `| M2 full drift: in JSON, not in bundle | ${c.m2_full_jsonNotBundle} |\n`;
@@ -544,6 +578,27 @@ function renderMarkdown(report) {
   else {
     const sorted = [...m3].sort((a, b) => `${a.ns}:${a.key}`.localeCompare(`${b.ns}:${b.key}`));
     for (const it of sorted) md += `- \`${it.ns}:${it.key}\` — ${locStr(it.locations)}\n`;
+    md += `\n`;
+  }
+
+  // Namespace mismatch
+  md += `## Namespace mismatch — key exists, but under a DIFFERENT namespace\n\n`;
+  md += `The code references \`resolvedNs:key\`, and \`key\` is absent from \`resolvedNs\` but `;
+  md += `present under another namespace in JSON (and/or bundle). These are informational: `;
+  md += `either the code's namespace attribution is wrong, or the resolved namespace (often via the `;
+  md += `nearest \`useTranslation\` heuristic) mis-attributed the call. They are NOT counted as `;
+  md += `truly-missing (M1/M3). Spot-check before acting.\n\n`;
+  if (namespaceMismatch.length === 0) md += `_None._\n\n`;
+  else {
+    const sorted = [...namespaceMismatch].sort((a, b) =>
+      `${a.ns}:${a.key}`.localeCompare(`${b.ns}:${b.key}`));
+    for (const it of sorted) {
+      const where = [
+        it.foundInJsonNs.length ? `JSON ns: ${it.foundInJsonNs.join(", ")}` : null,
+        it.foundInBundleNs.length ? `bundle ns: ${it.foundInBundleNs.join(", ")}` : null,
+      ].filter(Boolean).join("; ");
+      md += `- \`${it.ns}:${it.key}\` — found in [${where}] — ${locStr(it.locations)}\n`;
+    }
     md += `\n`;
   }
 

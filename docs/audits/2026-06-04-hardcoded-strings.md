@@ -1,6 +1,6 @@
 # Dashboard Hardcoded-String Audit (i18n triage)
 
-_Generated: 2026-06-04T16:31:55.856Z_
+_Generated: 2026-06-04T17:29:42.161Z_
 
 Reproduce: `node scripts/audit-hardcoded-strings.mjs` (paths overridable via flags/env).
 
