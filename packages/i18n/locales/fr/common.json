@@ -14,6 +14,7 @@
     "logout": "Se déconnecter",
     "programs": "Programmes",
     "newProgram": "Nouveau programme",
+    "noProgram": "Aucun Programme Sélectionné",
     "customers": "Clients",
     "offers": "Offres",
     "vouchers": "Bons",
@@ -891,7 +892,20 @@
         "errorTitle": "Error Title",
         "retryConnection": "Réessayer la connexion",
         "loadingTitle": "Loading Title",
-        "loadingDescription": "Loading Description"
+        "loadingDescription": "Loading Description",
+        "aiConnected": "IA connectée",
+        "aiDisconnected": "IA déconnectée",
+        "aiStatus": "État de l'IA",
+        "applied": "Appliqué: {{description}}",
+        "failedToFetchData": "Échec de la récupération des données",
+        "fromSource": " de {{source}}",
+        "initialSummaryMessage": "Message de résumé initial",
+        "liveData": "Données en direct",
+        "noDataDescription": "Aucune donnée disponible",
+        "noDataTitle": "Aucune Donnée",
+        "pageTitle": "Conseiller IA",
+        "pocNotice": "Affichage de {{count}} transactions (POC)",
+        "refreshData": "Actualiser les données"
       },
       "shopify": {
         "plans": {

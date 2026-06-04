@@ -14,6 +14,7 @@
     "logout": "Log Out",
     "programs": "Programs",
     "newProgram": "New Programme",
+    "noProgram": "No Programme Selected",
     "customers": "Customers",
     "offers": "Offers",
     "vouchers": "Vouchers",
@@ -1112,7 +1113,20 @@
         "errorTitle": "Error Title",
         "retryConnection": "Retry Connection",
         "loadingTitle": "Loading Title",
-        "loadingDescription": "Loading Description"
+        "loadingDescription": "Loading Description",
+        "aiConnected": "AI Connected",
+        "aiDisconnected": "AI Disconnected",
+        "aiStatus": "AI Status",
+        "applied": "Applied: {{description}}",
+        "failedToFetchData": "Failed to fetch data",
+        "fromSource": " from {{source}}",
+        "initialSummaryMessage": "Initial summary message",
+        "liveData": "Live data",
+        "noDataDescription": "No data available",
+        "noDataTitle": "No Data",
+        "pageTitle": "AI Advisor",
+        "pocNotice": "Showing {{count}} transactions (POC)",
+        "refreshData": "Refresh data"
       },
       "shopify": {
         "plans": {
