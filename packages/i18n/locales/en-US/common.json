@@ -1606,7 +1606,7 @@
         "syncConfirmTitle": "Sync",
         "syncConfirmMessage": "Are you sure you want to sync all customers from Clover to LoyaltyDog system? It can take some time to process.",
         "syncConfirmButton": "Sync customers",
-        "syncSuccessMessage": "You request has been added to queue! We will process your request soon.",
+        "syncSuccessMessage": "Your request has been added to queue! We will process your request soon.",
         "saveButton": "Save Settings",
         "savingButton": "Saving...",
         "cancelButton": "Cancel",
@@ -2133,7 +2133,7 @@
       "eposnowPlatformHeading": "EposNow Platform",
       "syncEposnowCustomersTitle": "Sync all EposNow customers",
       "syncEposnowCustomersMessage": "Are you sure you want to sync all customers from EposNow to LoyaltyDog system? It can take some time to process.",
-      "syncRequestQueuedMessage": "You request has been added to queue! We will process your request soon.",
+      "syncRequestQueuedMessage": "Your request has been added to queue! We will process your request soon.",
       "syncCustomersConfirm": "Sync customers",
       "syncEposnowCategoriesTitle": "Sync all EposNow categories and products",
       "syncEposnowCategoriesMessage": "Are you sure you want to sync all categories and products from EposNow to LoyaltyDog system? It can take some time to process.",
@@ -2519,7 +2519,7 @@
         "syncShopifyCustomersConfirm": "Are you sure you want to sync all customers from Shopify to LoyaltyDog system? It can take some time to process.",
         "syncShopifyCategoriesProducts": "Sync all Shopify categories and products",
         "syncShopifyCategoriesProductsConfirm": "Are you sure you want to sync all collections and products from Shopify to LoyaltyDog system? It can take some time to process.",
-        "syncQueued": "You request has been added to queue! We will process your request soon.",
+        "syncQueued": "Your request has been added to queue! We will process your request soon.",
         "confirmSyncCustomers": "Sync customers",
         "confirmSyncCategoriesProducts": "Sync categories and products",
         "confirmSyncCollectionsProducts": "Sync collections and products"
@@ -3080,11 +3080,11 @@
       "noQualifiedCustomers": "Don't have any qualified customers."
     },
     "listMembersOptingIn": {
-      "totalRecords": "Total Records {{total}}",
+      "totalRecords": "Total Records",
       "noQualifiedCustomers": "Don't have any qualified customers."
     },
     "listMembersOptingOut": {
-      "totalRecords": "Total Records {{total}}",
+      "totalRecords": "Total Records",
       "noQualifiedCustomers": "Don't have any qualified customers."
     },
     "listMembersRecentVisitedPeriod": {
@@ -3164,7 +3164,7 @@
       "offerActiveSuffix": " (active)"
     },
     "membersWithRewards": {
-      "totalRecords": "Total Records {{total}}",
+      "totalRecords": "Total Records",
       "noQualifiedCustomers": "Don't have any qualified customers."
     },
     "signUpSourcePeriod": {
@@ -3231,7 +3231,7 @@
     "otherVouchersSent": {
       "metaTitle": "Voucher Summary Report",
       "subtitle": "Other Vouchers Sent",
-      "totalRecords": "Total Records {{total}}",
+      "totalRecords": "Total Records",
       "table": {
         "voucherName": "Voucher Name",
         "voucherType": "Voucher Type",

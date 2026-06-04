@@ -3080,11 +3080,11 @@
       "noQualifiedCustomers": "Nessun cliente qualificato."
     },
     "listMembersOptingIn": {
-      "totalRecords": "Totale Record {{total}}",
+      "totalRecords": "Totale Record",
       "noQualifiedCustomers": "Nessun cliente qualificato."
     },
     "listMembersOptingOut": {
-      "totalRecords": "Totale Record {{total}}",
+      "totalRecords": "Totale Record",
       "noQualifiedCustomers": "Nessun cliente qualificato."
     },
     "listMembersRecentVisitedPeriod": {
@@ -3164,7 +3164,7 @@
       "offerActiveSuffix": " (attivo)"
     },
     "membersWithRewards": {
-      "totalRecords": "Totale Record {{total}}",
+      "totalRecords": "Totale Record",
       "noQualifiedCustomers": "Nessun cliente qualificato."
     },
     "signUpSourcePeriod": {
@@ -3231,7 +3231,7 @@
     "otherVouchersSent": {
       "metaTitle": "Rapporto Riepilogativo Buoni",
       "subtitle": "Altri Buoni Inviati",
-      "totalRecords": "Totale Record {{total}}",
+      "totalRecords": "Totale Record",
       "table": {
         "voucherName": "Nome Buono",
         "voucherType": "Tipo di Buono",

@@ -3070,11 +3070,11 @@
       "noQualifiedCustomers": "No tienes clientes cualificados."
     },
     "listMembersOptingIn": {
-      "totalRecords": "Total de registros {{total}}",
+      "totalRecords": "Total de registros",
       "noQualifiedCustomers": "No tienes clientes cualificados."
     },
     "listMembersOptingOut": {
-      "totalRecords": "Total de registros {{total}}",
+      "totalRecords": "Total de registros",
       "noQualifiedCustomers": "No tienes clientes cualificados."
     },
     "listMembersRecentVisitedPeriod": {
@@ -3154,7 +3154,7 @@
       "offerActiveSuffix": " (activa)"
     },
     "membersWithRewards": {
-      "totalRecords": "Total de registros {{total}}",
+      "totalRecords": "Total de registros",
       "noQualifiedCustomers": "No tienes clientes cualificados."
     },
     "signUpSourcePeriod": {
@@ -3221,7 +3221,7 @@
     "otherVouchersSent": {
       "metaTitle": "Informe de resumen de vales",
       "subtitle": "Otros vales enviados",
-      "totalRecords": "Total de registros {{total}}",
+      "totalRecords": "Total de registros",
       "table": {
         "voucherName": "Nombre del vale",
         "voucherType": "Tipo de vale",

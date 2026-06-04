@@ -3070,11 +3070,11 @@
       "noQualifiedCustomers": "Não tem clientes qualificados."
     },
     "listMembersOptingIn": {
-      "totalRecords": "Total de Registos {{total}}",
+      "totalRecords": "Total de Registos",
       "noQualifiedCustomers": "Não tem clientes qualificados."
     },
     "listMembersOptingOut": {
-      "totalRecords": "Total de Registos {{total}}",
+      "totalRecords": "Total de Registos",
       "noQualifiedCustomers": "Não tem clientes qualificados."
     },
     "listMembersRecentVisitedPeriod": {
@@ -3154,7 +3154,7 @@
       "offerActiveSuffix": " (ativo)"
     },
     "membersWithRewards": {
-      "totalRecords": "Total de Registos {{total}}",
+      "totalRecords": "Total de Registos",
       "noQualifiedCustomers": "Não tem clientes qualificados."
     },
     "signUpSourcePeriod": {
@@ -3221,7 +3221,7 @@
     "otherVouchersSent": {
       "metaTitle": "Relatório de Resumo de Vale",
       "subtitle": "Outros Vales Enviados",
-      "totalRecords": "Total de Registos {{total}}",
+      "totalRecords": "Total de Registos",
       "table": {
         "voucherName": "Nome do Vale",
         "voucherType": "Tipo de Vale",

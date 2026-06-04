@@ -3070,11 +3070,11 @@
       "noQualifiedCustomers": "Aucun client qualifié."
     },
     "listMembersOptingIn": {
-      "totalRecords": "Nombre total d'enregistrements {{total}}",
+      "totalRecords": "Nombre total d'enregistrements",
       "noQualifiedCustomers": "Aucun client qualifié."
     },
     "listMembersOptingOut": {
-      "totalRecords": "Nombre total d'enregistrements {{total}}",
+      "totalRecords": "Nombre total d'enregistrements",
       "noQualifiedCustomers": "Aucun client qualifié."
     },
     "listMembersRecentVisitedPeriod": {
@@ -3154,7 +3154,7 @@
       "offerActiveSuffix": " (actif)"
     },
     "membersWithRewards": {
-      "totalRecords": "Nombre total d'enregistrements {{total}}",
+      "totalRecords": "Nombre total d'enregistrements",
       "noQualifiedCustomers": "Aucun client qualifié."
     },
     "signUpSourcePeriod": {
@@ -3221,7 +3221,7 @@
     "otherVouchersSent": {
       "metaTitle": "Rapport de synthèse des bons",
       "subtitle": "Autres bons envoyés",
-      "totalRecords": "Nombre total d'enregistrements {{total}}",
+      "totalRecords": "Nombre total d'enregistrements",
       "table": {
         "voucherName": "Nom du bon",
         "voucherType": "Type de bon",
