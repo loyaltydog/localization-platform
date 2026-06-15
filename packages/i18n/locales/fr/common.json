@@ -2510,7 +2510,8 @@
       "platform": {
         "all": "Toutes les plateformes",
         "eposnow": "EposNow",
-        "shopify": "Shopify"
+        "shopify": "Shopify",
+        "wordpress": "WooCommerce"
       },
       "dataTools": {
         "eposnowPlatform": "Plateforme EposNow",
