@@ -191,14 +191,15 @@ describe('Translation Structure Tests - All Languages', () => {
       ['notifications.dateRangeTx', ['count']],
     ]);
 
-    // giftCards target files predate this branch and are missing keys already present in
-    // en-US, awaiting a Crowdin round-trip. Exempt the namespace from the absent-key
-    // report so it flags new gaps elsewhere without re-reporting that backlog.
+    // giftCards target files are missing keys already present in en-US and still need
+    // translating in-repo. Exempt the namespace from the absent-key report so it flags
+    // new gaps elsewhere without re-reporting that backlog.
     const PENDING_MISSING_NAMESPACES = new Set(['giftCards']);
 
     // Translations that dropped or invented a variable relative to en-US. Dropping one
     // silently deletes data from the sentence; inventing one renders the raw {{token}},
-    // because nothing passes a value for it. Fix via Crowdin, then delete the entry.
+    // because nothing passes a value for it. Retranslate the string in this repo against
+    // the en-US source, then delete the entry.
     const PENDING_PARITY = new Set([
       'it.common.customers.detail.metaTitle',
       'it.common.offers.form.percentageWarning',

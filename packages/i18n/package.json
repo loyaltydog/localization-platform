@@ -16,9 +16,6 @@
     "locales"
   ],
   "scripts": {
-    "crowdin:upload": "crowdin upload sources",
-    "crowdin:download": "crowdin download",
-    "crowdin:status": "crowdin status",
     "build": "echo 'No build step required'",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
