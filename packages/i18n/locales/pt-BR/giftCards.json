@@ -13,7 +13,8 @@
     "reports": "Relatórios",
     "cardList": "Lista de Cartões",
     "consolidate": "Consolidar",
-    "transferOwnership": "Transferir Propriedade"
+    "transferOwnership": "Transferir Propriedade",
+    "reloadCard": "Recarregar cartão"
   },
   "layout": {
     "giftCards": "Vales-Presente",
@@ -475,7 +476,16 @@
     "storeAddressValue": "Av. Paulista 123, São Paulo",
     "saveSettings": "Salvar Configurações",
     "merchantIdRequired": "O ID do lojista é obrigatório.",
-    "merchantSettings": "Configuração de Comerciante"
+    "merchantSettings": "Configuração de Comerciante",
+    "programIdHint": "Informe o ID do programa de cartões-presente fornecido pelo seu administrador do LoyaltyDog.",
+    "programIdPlaceholder": "ex.: 6613a1f2b2c3d4e5f6a7b8c9",
+    "programIdRequired": "O ID do programa é obrigatório.",
+    "programSettings": "Configurações do programa",
+    "programSettingsHint": "Informe o ID do programa LoyaltyDog para vincular a este local. O programa deve ser um programa de cartões-presente pertencente à sua conta.",
+    "saveFailed": "Não foi possível salvar as configurações. Verifique o ID do programa e tente novamente.",
+    "saveProgramId": "Salvar ID do programa",
+    "saveSuccess": "Configurações salvas com sucesso.",
+    "saving": "Salvando…"
   },
   "merchantDashboard": {
     "totalActiveCards": "Total de Cartões Ativos",

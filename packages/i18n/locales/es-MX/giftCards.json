@@ -13,7 +13,8 @@
     "reports": "Reportes",
     "cardList": "Lista de Tarjetas",
     "consolidate": "Consolidar",
-    "transferOwnership": "Transferir Propiedad"
+    "transferOwnership": "Transferir Propiedad",
+    "reloadCard": "Recargar tarjeta"
   },
   "layout": {
     "giftCards": "Tarjetas de Regalo",
@@ -475,7 +476,16 @@
     "storeAddressValue": "Av. Reforma 123, Ciudad de México",
     "saveSettings": "Guardar Configuración",
     "merchantIdRequired": "El ID de comercio es obligatorio.",
-    "merchantSettings": "Configuración de Comercio"
+    "merchantSettings": "Configuración de Comercio",
+    "programIdHint": "Ingresa el ID del programa de tarjetas de regalo que te proporcionó tu administrador de LoyaltyDog.",
+    "programIdPlaceholder": "p. ej. 6613a1f2b2c3d4e5f6a7b8c9",
+    "programIdRequired": "El ID del programa es obligatorio.",
+    "programSettings": "Configuración del programa",
+    "programSettingsHint": "Ingresa el ID de programa de LoyaltyDog que quieres vincular a esta ubicación. El programa debe ser un programa de tarjetas de regalo perteneciente a tu cuenta.",
+    "saveFailed": "No se pudo guardar la configuración. Verifica el ID del programa e inténtalo de nuevo.",
+    "saveProgramId": "Guardar ID del programa",
+    "saveSuccess": "Configuración guardada correctamente.",
+    "saving": "Guardando…"
   },
   "merchantDashboard": {
     "totalActiveCards": "Total de Tarjetas Activas",

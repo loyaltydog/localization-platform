@@ -391,7 +391,7 @@
     "footer": "Obrigado por usar {{merchantName}}."
   },
   "merchant_monthly_summary": {
-    "subject": "Resumo Mensal do Programa de Fidelidade de {{merchantName}} — {{month}} {{year}}",
+    "subject": "Resumo Mensal do seu Programa de Fidelidade — {{month}} {{year}}",
     "greeting": "Olá {{merchantName}},",
     "body": "Aqui está o resumo de desempenho do seu programa de fidelidade para {{month}} {{year}}.",
     "newMembers": "Novos Membros: {{count}}",

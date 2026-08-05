@@ -13,7 +13,8 @@
     "reports": "Rapporti",
     "cardList": "Elenco Carte",
     "consolidate": "Consolida",
-    "transferOwnership": "Trasferisci Proprietà"
+    "transferOwnership": "Trasferisci Proprietà",
+    "reloadCard": "Ricarica carta"
   },
   "layout": {
     "giftCards": "Carte Regalo",
@@ -475,7 +476,16 @@
     "storeAddressValue": "Via Roma 123, Milano",
     "saveSettings": "Salva Impostazioni",
     "merchantIdRequired": "L'ID esercente è obbligatorio.",
-    "merchantSettings": "Configurazione commerciante"
+    "merchantSettings": "Configurazione commerciante",
+    "programIdHint": "Inserisci l'ID del programma di carte regalo fornito dal tuo amministratore LoyaltyDog.",
+    "programIdPlaceholder": "es. 6613a1f2b2c3d4e5f6a7b8c9",
+    "programIdRequired": "L'ID del programma è obbligatorio.",
+    "programSettings": "Impostazioni del programma",
+    "programSettingsHint": "Inserisci l'ID del programma LoyaltyDog da collegare a questa sede. Il programma deve essere un programma di carte regalo appartenente al tuo account.",
+    "saveFailed": "Impossibile salvare le impostazioni. Verifica l'ID del programma e riprova.",
+    "saveProgramId": "Salva ID programma",
+    "saveSuccess": "Impostazioni salvate correttamente.",
+    "saving": "Salvataggio…"
   },
   "merchantDashboard": {
     "totalActiveCards": "Totale Carte Attive",

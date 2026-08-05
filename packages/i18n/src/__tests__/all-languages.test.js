@@ -191,25 +191,6 @@ describe('Translation Structure Tests - All Languages', () => {
       ['notifications.dateRangeTx', ['count']],
     ]);
 
-    // giftCards target files are missing keys already present in en-US and still need
-    // translating in-repo. Exempt the namespace from the absent-key report so it flags
-    // new gaps elsewhere without re-reporting that backlog.
-    const PENDING_MISSING_NAMESPACES = new Set(['giftCards']);
-
-    // Translations that dropped or invented a variable relative to en-US. Dropping one
-    // silently deletes data from the sentence; inventing one renders the raw {{token}},
-    // because nothing passes a value for it. Retranslate the string in this repo against
-    // the en-US source, then delete the entry.
-    const PENDING_PARITY = new Set([
-      'it.common.customers.detail.metaTitle',
-      'it.common.offers.form.percentageWarning',
-      'it.common.offers.detail.values.points',
-      'it.common.reports.eposnowFullTransactionsSummary.totalRecords',
-      'it.common.customerInfo.values.reserved',
-      'it.common.message.send.heading',
-      'pt-BR.emails.merchant_monthly_summary.subject',
-    ]);
-
     function entries(locale, namespace) {
       const flat = {};
       (function walk(node, prefix) {
@@ -248,12 +229,11 @@ describe('Translation Structure Tests - All Languages', () => {
         const target = entries(locale, namespace);
         for (const [key, value] of Object.entries(source)) {
           const qualified = `${locale}.${namespace}.${key}`;
-          if (PENDING_PARITY.has(qualified)) continue;
           if (!(key in target)) {
             // Key coverage is only asserted for `common` in this file, so an absent key
             // elsewhere would otherwise escape both checks and never have its
             // placeholders verified. Report it here rather than skip it.
-            if (!PENDING_MISSING_NAMESPACES.has(namespace)) mismatches.push(`${qualified}: absent from ${locale}`);
+            mismatches.push(`${qualified}: absent from ${locale}`);
             continue;
           }
           const expected = [...new Set(varsIn(value, DOUBLE_BRACE))].sort();

@@ -13,7 +13,8 @@
     "reports": "Informes",
     "cardList": "Lista de Tarjetas",
     "consolidate": "Consolidar",
-    "transferOwnership": "Transferir Propiedad"
+    "transferOwnership": "Transferir Propiedad",
+    "reloadCard": "Recargar tarjeta"
   },
   "layout": {
     "giftCards": "Tarjetas Regalo",
@@ -475,7 +476,16 @@
     "storeAddressValue": "Calle Mayor 123, Madrid",
     "saveSettings": "Guardar Configuración",
     "merchantIdRequired": "El ID de comercio es obligatorio.",
-    "merchantSettings": "Configuración de Comercio"
+    "merchantSettings": "Configuración de Comercio",
+    "programIdHint": "Introduce el ID del programa de tarjetas regalo que te ha facilitado tu administrador de LoyaltyDog.",
+    "programIdPlaceholder": "p. ej. 6613a1f2b2c3d4e5f6a7b8c9",
+    "programIdRequired": "El ID del programa es obligatorio.",
+    "programSettings": "Ajustes del programa",
+    "programSettingsHint": "Introduce el ID de programa de LoyaltyDog que quieres vincular a esta ubicación. El programa debe ser un programa de tarjetas regalo perteneciente a tu cuenta.",
+    "saveFailed": "No se han podido guardar los ajustes. Comprueba el ID del programa e inténtalo de nuevo.",
+    "saveProgramId": "Guardar ID del programa",
+    "saveSuccess": "Ajustes guardados correctamente.",
+    "saving": "Guardando…"
   },
   "merchantDashboard": {
     "totalActiveCards": "Total de Tarjetas Activas",
