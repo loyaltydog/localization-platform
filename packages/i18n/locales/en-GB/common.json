@@ -36,7 +36,8 @@
     "signOutAsUser": "Sign out as user",
     "shopify": "Shopify",
     "clover": "Clover",
-    "loyalty": "Loyalty"
+    "loyalty": "Loyalty",
+    "lightspeed": "Lightspeed"
   },
   "actions": {
     "save": "Save",
@@ -1264,7 +1265,10 @@
         "submitButton": "Sign up",
         "submittingButton": "Please wait...",
         "alreadyHaveAccount": "Already have an account?",
-        "signInLink": "Sign in"
+        "signInLink": "Sign in",
+        "dataProcessingAgreement": "Data Processing Agreement",
+        "privacyPolicy": "Privacy Policy",
+        "termsOfService": "Terms of Service"
       }
     },
     "user": {
@@ -2527,7 +2531,18 @@
         "syncQueued": "Your request has been added to queue! We will process your request soon.",
         "confirmSyncCustomers": "Sync customers",
         "confirmSyncCategoriesProducts": "Sync categories and products",
-        "confirmSyncCollectionsProducts": "Sync collections and products"
+        "confirmSyncCollectionsProducts": "Sync collections and products",
+        "dangerZone": "Danger Zone",
+        "resetPoints": "Reset all points to zero",
+        "resetPointsAlertWarning": "Members will get a wallet notification reading \"New points: 0\".",
+        "resetPointsConfirm": "Reset all points",
+        "resetPointsHelp": "Sets every member's balance to 0 and refreshes their wallet passes.",
+        "resetPointsIrreversible": "This cannot be undone from the dashboard.",
+        "resetPointsQueued": "Points reset queued. Balances clear within seconds; wallets follow over a few minutes.",
+        "resetPointsSummary": "This will clear {{points}} points from {{withBalance}} of {{members}} members. Balances drop immediately.",
+        "resetPointsTitle": "Reset all points to zero",
+        "resetPointsTypeName": "Type \"{{name}}\" to confirm",
+        "resetPointsWallets": "{{passes}} wallet passes will be refreshed across {{devices}} registered devices, over a few minutes."
       }
     }
   },
@@ -2718,7 +2733,8 @@
         "rewardRedeemed": "Reward Redeemed",
         "offerExpired": "Offer Expired",
         "passInstalled": "Pass Installed",
-        "scan": "Scan"
+        "scan": "Scan",
+        "pointsClamped": "Overspend Prevented"
       }
     },
     "eventType": {
@@ -2737,7 +2753,8 @@
       "rewardRedeemed": "Reward Redeemed",
       "offerExpired": "Offer Expired",
       "passInstalled": "Pass Installed",
-      "scan": "Scan"
+      "scan": "Scan",
+      "pointsClamped": "Overspend Prevented"
     },
     "message": {
       "form": {
@@ -2765,7 +2782,12 @@
       "confirm": "I'm sure",
       "sending": "Please wait...",
       "send": "Send",
-      "cancel": "Cancel"
+      "cancel": "Cancel",
+      "sentDeliveryNote": "Delivery to each phone is handled by Apple and Google and can take a few minutes.",
+      "sentHeading": "Message sent",
+      "sentNoRecipients": "This did not reach anyone — none of the members holding your pass have opted in to marketing messages.",
+      "sentNotOptedInHint": "The remaining {{notOptedIn}} have not opted in to marketing messages, so they were not sent to.",
+      "sentSummary": "Sent to {{recipients}} of your {{members}} members who have the pass installed."
     },
     "page": {
       "title": "Broadcasts",
@@ -3524,6 +3546,65 @@
       "passTypeIdsHelper": "For production use, you are strongly encouraged to use your own Pass Type ID. You need an iOS Developer Account.",
       "appKeys": "App Keys",
       "empty": "(empty)"
+    }
+  },
+  "integrations": {
+    "lightspeed": {
+      "connectButton": "Connect Lightspeed",
+      "connectHeading": "Connect Lightspeed",
+      "connectedNotice": "Lightspeed connected. Assign a loyalty program to each outlet below.",
+      "createProgramFirst": "Create a program first",
+      "disconnect": {
+        "button": "Disconnect",
+        "confirm": "Disconnect",
+        "confirmMessage": "This stops awarding points and clears LoyaltyDog's stored Lightspeed credentials. You can reconnect at any time.",
+        "success": "Lightspeed disconnected"
+      },
+      "errors": {
+        "installFailed": "Couldn't start the Lightspeed connection. Please try again, or contact support if it persists.",
+        "invalidProgram": "That loyalty program is not available on your account.",
+        "invalidPrograms": "One or more selected programs are invalid.",
+        "missingProgram": "Choose a loyalty program before connecting Lightspeed.",
+        "notConfigured": "The Lightspeed app isn't available yet. Please contact support to enable the Lightspeed integration.",
+        "saveFailed": "Something went wrong. Please try again."
+      },
+      "intro": "Connect your Lightspeed X-Series account to award loyalty points automatically on every sale. Choose which loyalty program new Lightspeed customers should join, then authorize LoyaltyDog with Lightspeed.",
+      "loyaltyProgramLabel": "Loyalty program",
+      "outlets": {
+        "active": "Active",
+        "colOutlet": "Outlet",
+        "colProgram": "Loyalty program",
+        "colStatus": "Status",
+        "heading": "Outlets",
+        "inactive": "Inactive",
+        "noLoyalty": "— No loyalty —",
+        "none": "No Lightspeed outlets found yet.",
+        "save": "Save",
+        "saved": "Outlet settings saved",
+        "saving": "Saving…"
+      },
+      "selectProgram": "Select a program",
+      "status": {
+        "connected": "Connected",
+        "disconnectedDescription": "This Lightspeed connection is inactive. Reconnect to resume awarding points.",
+        "disconnectedTitle": "Lightspeed is disconnected",
+        "needsReauthDescription": "Lightspeed revoked LoyaltyDog's access. Reconnect to resume awarding points.",
+        "needsReauthTitle": "Reconnect required",
+        "provisioned": "Setup complete",
+        "provisioningDescription": "We're finishing setup for your Lightspeed connection. Outlets and sync settings will appear here shortly.",
+        "provisioningTitle": "Setting up your connection",
+        "reconnect": "Reconnect Lightspeed",
+        "webhooks": "{{count}} webhook(s) active"
+      },
+      "sync": {
+        "customerProgram": "Enable customer sync on the mapped program",
+        "customers": "Sync customers",
+        "heading": "Sync settings",
+        "products": "Sync products",
+        "save": "Save sync settings",
+        "saved": "Sync settings saved",
+        "saving": "Saving…"
+      }
     }
   }
 }

@@ -1359,7 +1359,7 @@
       "sendPushNotifications": "Send push notifications",
       "editButtonTitle": "Edit",
       "pushButtonTitle": "Send push notifications",
-      "deleteButton": "Delete {template.name}"
+      "deleteButton": "Delete"
     },
     "push": {
       "message1": "You are about to send push notifications to all registered devices.",
