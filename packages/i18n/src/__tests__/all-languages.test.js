@@ -134,4 +134,135 @@ describe('Translation Structure Tests - All Languages', () => {
       }
     });
   });
+
+  describe('Placeholder Integrity', () => {
+    // Both consumers interpolate {{variable}}: i18next in the dashboard and
+    // translation_loader.py on the backend. A single-brace {variable} is therefore
+    // never substituted — it reaches the user literally.
+    // Dots are part of the name: i18next resolves {{shop.name}} and {{shop.domain}} to
+    // different values, so capturing only the segment before the dot would treat them as
+    // one variable and let a translation swap one for the other unnoticed.
+    const SINGLE_BRACE = /(?<!\{)(?<!\$)\{([A-Za-z_][A-Za-z0-9_.]*)\}(?!\})/g;
+    const DOUBLE_BRACE = /\{\{\s*([A-Za-z_][A-Za-z0-9_.]*)\s*(?:,[^}]*)?\}\}/g;
+
+    const varsIn = (value, pattern) => [...value.matchAll(pattern)].map((m) => m[1]);
+
+    // Strings whose single braces are NOT interpolation. The WordPress plugin gives
+    // merchants a message template and substitutes these tokens itself; the "adjust the
+    // message" string literally instructs merchants to type them, and uses {{first}} /
+    // {{second}} alongside for real interpolation. Doubling them would break the plugin
+    // and misinstruct merchants.
+    // Named per key for the same reason as PENDING_SINGLE_BRACE below: a new variable
+    // appearing in one of these strings is still a defect and must still fail.
+    const LITERAL_TOKEN_KEYS = new Map([
+      [
+        'wordpress.wordpress.admin.menu.adjustTheMessageByUsing1s',
+        ['friendlyNameToBeAdded', 'friendlyName', 'name', 'value', 'currency'],
+      ],
+      ['wordpress.wordpress.admin.menu.strongActiveLoyaltyOfferStrongFriendlynametobeadded', ['friendlyNameToBeAdded']],
+      ['wordpress.wordpress.admin.menu.strongLoyaltyRewardStrongFriendlynametobeadded', ['friendlyNameToBeAdded']],
+      ['wordpress.wordpress.misc.nameFree', ['name']],
+      ['wordpress.wordpress.misc.nameValueCurrency', ['name', 'value', 'currency']],
+      ['wordpress.wordpress.misc.nameValueCurrency2', ['name', 'value', 'currency']],
+    ]);
+
+    // Pre-existing breakage, listed so it stays visible while this test stops NEW
+    // regressions. Each entry is a real defect to fix, not an accepted exception.
+    //
+    // errors.* — no caller in core_api references these by key; they are likely consumed
+    //   by the Square/Shopify/Clover/WordPress repos. Confirm the consumer, then either
+    //   double the braces or move them to LITERAL_TOKEN_KEYS.
+    // notifications.dateRangeTx — same, plus the dashboard's bundled fallback disagrees.
+    //
+    // Exempting the NAMED variable rather than the whole key keeps the hole the size of
+    // the known defect: introduce any other single-brace variable into one of these and
+    // the test still fails. Placeholder names are not translated, so one entry covers
+    // every locale — and correcting a locale to {{var}} simply stops it matching.
+    const PENDING_SINGLE_BRACE = new Map([
+      ['errors.validation.business_domain_timeout', ['timeout']],
+      ['errors.validation.request_too_large', ['max_size']],
+      ['errors.validation.redirect_chain_exceeded', ['max_redirects']],
+      ['errors.validation.empty_email', ['accountId']],
+      ['errors.auth.invalid_auth_header', ['token']],
+      ['errors.auth.token_missing_header', ['token_type']],
+      ['errors.operations.duplicated_customers', ['shopId', 'customerId']],
+      ['errors.operations.failed_to_renew_certificate', ['message']],
+      ['errors.operations.unsupported_pass_style', ['style']],
+      ['notifications.dateRangeTx', ['count']],
+    ]);
+
+    // giftCards target files predate this branch and are missing keys already present in
+    // en-US, awaiting a Crowdin round-trip. Exempt the namespace from the absent-key
+    // report so it flags new gaps elsewhere without re-reporting that backlog.
+    const PENDING_MISSING_NAMESPACES = new Set(['giftCards']);
+
+    // Translations that dropped or invented a variable relative to en-US. Dropping one
+    // silently deletes data from the sentence; inventing one renders the raw {{token}},
+    // because nothing passes a value for it. Fix via Crowdin, then delete the entry.
+    const PENDING_PARITY = new Set([
+      'it.common.customers.detail.metaTitle',
+      'it.common.offers.form.percentageWarning',
+      'it.common.offers.detail.values.points',
+      'it.common.reports.eposnowFullTransactionsSummary.totalRecords',
+      'it.common.customerInfo.values.reserved',
+      'it.common.message.send.heading',
+      'pt-BR.emails.merchant_monthly_summary.subject',
+    ]);
+
+    function entries(locale, namespace) {
+      const flat = {};
+      (function walk(node, prefix) {
+        for (const [key, value] of Object.entries(node)) {
+          const full = prefix ? `${prefix}.${key}` : key;
+          if (value !== null && typeof value === 'object' && !Array.isArray(value)) walk(value, full);
+          else if (typeof value === 'string') flat[full] = value;
+        }
+      })(loadTranslation(locale, namespace), '');
+      return flat;
+    }
+
+    const NS_WITH_WORDPRESS = [...NAMESPACES, 'marketing', 'wordpress'];
+
+    it.each(ALL_LANGUAGES)('uses {{variable}} rather than {variable} in %s', (locale) => {
+      const offenders = [];
+      for (const namespace of NS_WITH_WORDPRESS) {
+        if (!existsSync(join(LOCALES_DIR, locale, `${namespace}.json`))) continue;
+        for (const [key, value] of Object.entries(entries(locale, namespace))) {
+          const qualified = `${namespace}.${key}`;
+          const allowed = LITERAL_TOKEN_KEYS.get(qualified) ?? PENDING_SINGLE_BRACE.get(qualified) ?? [];
+          const unexpected = varsIn(value, SINGLE_BRACE).filter((name) => !allowed.includes(name));
+          if (unexpected.length) offenders.push(`${qualified} {${unexpected}} in ${JSON.stringify(value)}`);
+        }
+      }
+      expect(offenders).toEqual([]);
+    });
+
+    // Key parity cannot see this: the key is present, its variable is not.
+    it.each(ALL_LANGUAGES.filter((l) => l !== 'en-US'))('carries the same variables as en-US in %s', (locale) => {
+      const mismatches = [];
+      for (const namespace of NS_WITH_WORDPRESS) {
+        if (!existsSync(join(LOCALES_DIR, locale, `${namespace}.json`))) continue;
+        if (!existsSync(join(LOCALES_DIR, 'en-US', `${namespace}.json`))) continue;
+        const source = entries('en-US', namespace);
+        const target = entries(locale, namespace);
+        for (const [key, value] of Object.entries(source)) {
+          const qualified = `${locale}.${namespace}.${key}`;
+          if (PENDING_PARITY.has(qualified)) continue;
+          if (!(key in target)) {
+            // Key coverage is only asserted for `common` in this file, so an absent key
+            // elsewhere would otherwise escape both checks and never have its
+            // placeholders verified. Report it here rather than skip it.
+            if (!PENDING_MISSING_NAMESPACES.has(namespace)) mismatches.push(`${qualified}: absent from ${locale}`);
+            continue;
+          }
+          const expected = [...new Set(varsIn(value, DOUBLE_BRACE))].sort();
+          const actual = [...new Set(varsIn(target[key], DOUBLE_BRACE))].sort();
+          if (JSON.stringify(expected) !== JSON.stringify(actual)) {
+            mismatches.push(`${qualified}: en-US=[${expected}] ${locale}=[${actual}]`);
+          }
+        }
+      }
+      expect(mismatches).toEqual([]);
+    });
+  });
 });

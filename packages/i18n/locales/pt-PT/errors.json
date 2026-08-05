@@ -173,7 +173,7 @@
     "duplicated_customers": "Foram encontrados clientes duplicados para a loja {shopId} com o id {customerId}",
     "order_data_not_found": "Dados da encomenda não encontrados",
     "generate_code_error": "Gerar erro de código",
-    "failed_to_renew_certificate": "Falha na renovação do certificado: {mensagem}",
+    "failed_to_renew_certificate": "Falha na renovação do certificado: {message}",
     "certificate_not_found": "Modelo de programa não encontrado",
     "unsupported_pass_style": "Estilo de passe não suportado: {style}",
     "invalid_attempt_rate_limit": "Demasiadas tentativas de criação de conta para este endereço de correio eletrónico. Tente novamente dentro de 7 dias.",
