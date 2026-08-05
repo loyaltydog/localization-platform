@@ -1,9 +1,10 @@
 # LoyaltyDog Localization Platform
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
-[![Crowdin](https://badges.crowdin.net/loyaltydog/localized.svg)](https://crowdin.com/project/loyaltydog)
 
-Multi-language localization infrastructure for the LoyaltyDog platform using Crowdin + i18next + shared i18n package.
+Multi-language localization infrastructure for the LoyaltyDog platform using i18next + a shared i18n package.
+
+This repository is the source of truth for every locale. Translations are authored here, in `main` — there is no external translation service in the loop.
 
 ## Overview
 
@@ -18,11 +19,6 @@ This repository contains the shared localization infrastructure used across all 
 ## Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                    Crowdin (SaaS)                               │
-│  Translation Editor + AI Translation + QA                       │
-└─────────────────────────────────────────────────────────────────┘
-                            ↕ CLI Sync
 ┌─────────────────────────────────────────────────────────────────┐
 │                   @loyaltydog/i18n (Shared Package)              │
 │  ┌──────────────────────────────────────────────────────────┐  │
@@ -55,11 +51,11 @@ This repository contains the shared localization infrastructure used across all 
 
 | Layer | Technology |
 |-------|-----------|
-| **Translation Management** | Crowdin (AI Translation) |
+| **Translation Management** | In-repo, AI-authored, reviewed in PRs |
 | **Shared Package** | `@loyaltydog/i18n` |
 | **Frontend** | i18next + React |
 | **Backend** | JSON loader for FastAPI |
-| **Sync** | Crowdin CLI + GitHub Actions |
+| **Quality gate** | Vitest key-parity + placeholder tests in CI |
 
 ## Target Languages
 
@@ -79,7 +75,6 @@ This repository contains the shared localization infrastructure used across all 
 ## Project Links
 
 - **Linear Project:** [Localization of all platforms](https://linear.app/loyaltydog/project/localization-of-all-platforms-69e910b55561)
-- **Crowdin Project:** [LoyaltyDog Platform](https://crowdin.com/project/loyaltydog-platform)
 
 ---
 
@@ -314,7 +309,6 @@ This ensures that users always see some text, never blank placeholders.
 localization-platform/
 ├── README.md                  # This file
 ├── CLAUDE.md                  # Project context for AI agents
-├── crowdin.yml                # Crowdin CLI config
 ├── docs/
 │   ├── architecture.md        # Technical architecture decisions
 │   ├── epics/                 # Epic breakdown
@@ -341,10 +335,11 @@ localization-platform/
 │       └── src/
 │           ├── react/         # i18next integration
 │           ├── node/          # Python/FastAPI loader
-│           └── rtl/           # RTL support hooks
+│           ├── rtl/           # RTL support hooks
+│           └── __tests__/     # Key parity + placeholder integrity tests
 └── .github/
     └── workflows/
-        └── i18n-sync.yml      # CI/CD sync with Crowdin
+        └── ci.yml             # Tests, lint, build on push and PR
 ```
 
 ## Getting Started
@@ -352,8 +347,6 @@ localization-platform/
 ### Prerequisites
 
 - Node.js 18+
-- Crowdin CLI: `npm install -g @crowdin/cli`
-- Access to the Crowdin project
 
 ### Installation
 
@@ -362,11 +355,11 @@ localization-platform/
 cd packages/i18n
 npm install
 
-# Download latest translations from Crowdin
-npm run crowdin:download
+# Run the locale test suite (key parity + placeholder integrity)
+npm test
 
-# Upload English source files to Crowdin
-npm run crowdin:upload
+# Structural validation of the locale files
+npm run validate:locales
 ```
 
 ### Usage (React)
@@ -392,12 +385,18 @@ subject = translator.translate('es_ES', 'emails', 'welcome.subject',
 
 ## Translation Workflow
 
-1. **Developer adds new keys** to `locales/en-US/*.json`
-2. **Upload to Crowdin:** `npm run crowdin:upload`
-3. **AI Translation** triggered in Crowdin for all target languages
-4. **CI/CD auto-syncs** on merge via GitHub Actions
-5. **Translations downloaded** to `locales/{lang}/`
-6. **Consumer repos** update `@loyaltydog/i18n` dependency
+Translation happens in this repository. A key and its 7 translations land in the same
+branch, in the same pull request, and are reviewed together.
+
+1. **Developer adds new keys** to `locales/en-US/*.json` — en-US defines which keys exist
+2. **Translate into all 7 target locales** in the same branch (AI-assisted; see below)
+3. **Tests enforce the invariants** — key parity, no single-brace `{var}`, and identical
+   `{{variable}}` sets across locales
+4. **Review and merge to `main`** — `main` is the source of truth for every locale
+5. **Consumer repos** update their `@loyaltydog/i18n` dependency
+
+There is no external translation service, no sync step, and no round-trip to wait on. A key
+that is missing from a target locale is a defect the test suite reports, not a queued item.
 
 ### Adding New Translation Keys
 
@@ -423,22 +422,32 @@ subject = translator.translate('es_ES', 'emails', 'welcome.subject',
 }
 ```
 
-**3. Upload the source file to Crowdin:**
+**3. Add the same key to all 7 target locales**, translating the English value:
+
+`en-GB`, `es-ES`, `es-MX`, `fr`, `it`, `pt-BR`, `pt-PT` — same file, same dot-path, same
+`{{variable}}` names. Translations are AI-authored; ask Claude to translate the new keys
+against the en-US source and to match the tone of the surrounding strings in each file.
+
+Two rules matter more than wording:
+
+- **Never change a placeholder.** `{{merchantName}}` stays `{{merchantName}}` in every
+  locale. Dropping one silently deletes data from the sentence; renaming or inventing one
+  renders the raw token, because nothing supplies a value for it.
+- **Use double braces.** i18next and `translation_loader.py` both interpolate `{{var}}`.
+  A single-brace `{var}` renders literally.
+
+**4. Verify before opening the PR:**
 
 ```bash
 cd packages/i18n
-npm run crowdin:upload
+npm test
 ```
 
-This uploads all `en-US` source files. Crowdin will auto-translate the new key into all 7 target languages using AI translation.
-
-**4. Pull translations back** (once Crowdin has processed them):
-
-```bash
-npm run crowdin:download
-```
-
-Or trigger the sync manually via GitHub Actions: **Actions → "Sync Translations from Crowdin" → Run workflow**. This opens a PR with the updated translation files.
+The suite in `src/__tests__/` fails on a key present in en-US but absent from a target
+locale, on any single-brace `{var}`, and on any locale whose variable set differs from
+en-US. Known pre-existing exceptions are named individually in `all-languages.test.js`
+with the reason each is unresolved — add to those lists only with a reason, never to
+silence a new failure.
 
 **5. Use the key in code:**
 
@@ -453,20 +462,24 @@ t('nav.newSection')  // → "My New Section"
 translator.translate('es-ES', 'common', 'nav.newSection')
 ```
 
-> **Note:** Never add keys directly to non-`en-US` locale files. All translation authoring happens in Crowdin.
+> **Note:** `en-US` is the source of truth for *which keys exist* — always add a new key
+> there first. Target locales are then filled in from it in the same change; a key that
+> exists only in en-US is an incomplete change, not a handoff to someone else.
 
 ## CI/CD
 
-Translations are automatically synced from Crowdin via GitHub Actions on push to `main`.
+`.github/workflows/ci.yml` runs on every push and pull request to `main`, `staging`, and
+`development`. It runs the Vitest suite on Node 18, 20, and 22 — including the key-parity
+and placeholder-integrity checks that guard the locale files — plus lint and build.
 
-Manual sync: Go to Actions → "Sync Translations" → "Run workflow"
+There is no translation sync workflow. Locale files change only through pull requests.
 
 ## Contributing
 
 See `docs/contributing.md` for guidelines on:
 - Adding new translation keys
 - Adding new languages
-- Crowdin best practices
+- Translation quality and placeholder conventions
 
 ## License
 
