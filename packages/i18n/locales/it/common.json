@@ -1055,9 +1055,9 @@
         "submittingButton": "Attendi...",
         "alreadyHaveAccount": "Hai già un account?",
         "signInLink": "Accedi",
-        "dataProcessingAgreement": "Data Processing Agreement",
-        "privacyPolicy": "Privacy Policy",
-        "termsOfService": "Terms of Service"
+        "dataProcessingAgreement": "Accordo sul trattamento dei dati",
+        "privacyPolicy": "Informativa sulla privacy",
+        "termsOfService": "Termini di servizio"
       }
     },
     "user": {
@@ -2542,17 +2542,17 @@
         "confirmSyncCustomers": "Conferma sincronizzazione clienti",
         "confirmSyncCategoriesProducts": "Conferma sincronizzazione categorie prodotti",
         "confirmSyncCollectionsProducts": "Conferma sincronizzazione raccolte prodotti",
-        "dangerZone": "Danger Zone",
-        "resetPoints": "Reset all points to zero",
-        "resetPointsAlertWarning": "Members will get a wallet notification reading \"New points: 0\".",
-        "resetPointsConfirm": "Reset all points",
-        "resetPointsHelp": "Sets every member's balance to 0 and refreshes their wallet passes.",
-        "resetPointsIrreversible": "This cannot be undone from the dashboard.",
-        "resetPointsQueued": "Points reset queued. Balances clear within seconds; wallets follow over a few minutes.",
-        "resetPointsSummary": "This will clear {{points}} points from {{withBalance}} of {{members}} members. Balances drop immediately.",
-        "resetPointsTitle": "Reset all points to zero",
-        "resetPointsTypeName": "Type \"{{name}}\" to confirm",
-        "resetPointsWallets": "{{passes}} wallet passes will be refreshed across {{devices}} registered devices, over a few minutes."
+        "dangerZone": "Zona pericolosa",
+        "resetPoints": "Azzera tutti i punti",
+        "resetPointsAlertWarning": "I membri riceveranno una notifica sul wallet con scritto «Nuovi punti: 0».",
+        "resetPointsConfirm": "Azzera tutti i punti",
+        "resetPointsHelp": "Imposta a 0 il saldo di ogni membro e aggiorna i loro pass del wallet.",
+        "resetPointsIrreversible": "Questa operazione non può essere annullata dalla dashboard.",
+        "resetPointsQueued": "Azzeramento dei punti in coda. I saldi si svuotano in pochi secondi; i wallet si aggiornano nel giro di qualche minuto.",
+        "resetPointsSummary": "Questa operazione cancellerà {{points}} punti da {{withBalance}} membri su {{members}}. I saldi si azzerano immediatamente.",
+        "resetPointsTitle": "Azzera tutti i punti",
+        "resetPointsTypeName": "Digita «{{name}}» per confermare",
+        "resetPointsWallets": "{{passes}} pass del wallet verranno aggiornati su {{devices}} dispositivi registrati, nel giro di qualche minuto."
       }
     }
   },
@@ -2726,7 +2726,7 @@
         "timeLabel": "Orario: ",
         "platformLabel": "Piattaforma: "
       },
-      "metaTitle": "Dettagli cliente",
+      "metaTitle": "Cliente {{name}}",
       "events": {
         "joined": "Iscritto",
         "referral": "Referral",
@@ -2744,7 +2744,7 @@
         "offerExpired": "Offerta scaduta",
         "passInstalled": "Tessera installata",
         "scan": "Scansione",
-        "pointsClamped": "Overspend Prevented"
+        "pointsClamped": "Spesa eccessiva impedita"
       }
     },
     "eventType": {
@@ -2764,7 +2764,7 @@
       "offerExpired": "Offerta Scaduta",
       "passInstalled": "Pass Installato",
       "scan": "Scansione",
-      "pointsClamped": "Overspend Prevented"
+      "pointsClamped": "Spesa eccessiva impedita"
     },
     "message": {
       "form": {
@@ -2793,11 +2793,11 @@
       "sending": "Invio...",
       "send": "Invia",
       "cancel": "Annulla",
-      "sentDeliveryNote": "Delivery to each phone is handled by Apple and Google and can take a few minutes.",
-      "sentHeading": "Message sent",
-      "sentNoRecipients": "This did not reach anyone — none of the members holding your pass have opted in to marketing messages.",
-      "sentNotOptedInHint": "The remaining {{notOptedIn}} have not opted in to marketing messages, so they were not sent to.",
-      "sentSummary": "Sent to {{recipients}} of your {{members}} members who have the pass installed."
+      "sentDeliveryNote": "La consegna a ogni telefono è gestita da Apple e Google e può richiedere alcuni minuti.",
+      "sentHeading": "Messaggio inviato",
+      "sentNoRecipients": "Questo messaggio non ha raggiunto nessuno: nessuno dei membri che possiede il tuo pass ha acconsentito a ricevere messaggi di marketing.",
+      "sentNotOptedInHint": "I restanti {{notOptedIn}} non hanno acconsentito a ricevere messaggi di marketing, quindi non è stato inviato loro.",
+      "sentSummary": "Inviato a {{recipients}} dei tuoi {{members}} membri che hanno il pass installato."
     },
     "page": {
       "title": "Comunicazioni",
@@ -2898,7 +2898,7 @@
       "notifyMessage": {
         "placeholder": "Messaggio"
       },
-      "percentageWarning": "Avvertimento percentuale",
+      "percentageWarning": "ATTENZIONE: il valore percentuale dello sconto è {{percent}}%. Verifica che sia la percentuale di sconto desiderata.",
       "categoriesHelperLine1": "Aiuto categorie linea 1",
       "categoriesHelperLine2": "Aiuto categorie linea 2",
       "productsHelperLine1": "Aiuto prodotti linea 1",
@@ -2965,7 +2965,7 @@
         "points": "Punti"
       },
       "values": {
-        "points": "Punti"
+        "points": "{{count}} Punti"
       }
     },
     "delete": {
@@ -3308,7 +3308,7 @@
     },
     "eposnowFullTransactionsSummary": {
       "loading": "Caricamento...",
-      "totalRecords": "Record totali",
+      "totalRecords": "Record totali {{total}}",
       "noQualifiedOrders": "Nessun ordine qualificato",
       "headers": {
         "orderNumber": "Numero ordine",
@@ -3481,7 +3481,7 @@
       "true": "Sì",
       "false": "No",
       "none": "Nessuno",
-      "reserved": "Riservato"
+      "reserved": "(+{{count}} riservati)"
     },
     "actions": {
       "redeem": "Riscatta"
@@ -3490,7 +3490,7 @@
   "message": {
     "send": {
       "metadataTitle": "Invia messaggio",
-      "heading": "Invia messaggio"
+      "heading": "Invia notifica push a {{name}}"
     }
   },
   "programDesign": {
@@ -3550,60 +3550,60 @@
   },
   "integrations": {
     "lightspeed": {
-      "connectButton": "Connect Lightspeed",
-      "connectHeading": "Connect Lightspeed",
-      "connectedNotice": "Lightspeed connected. Assign a loyalty program to each outlet below.",
-      "createProgramFirst": "Create a program first",
+      "connectButton": "Collega Lightspeed",
+      "connectHeading": "Collega Lightspeed",
+      "connectedNotice": "Lightspeed collegato. Assegna un programma fedeltà a ogni outlet qui sotto.",
+      "createProgramFirst": "Crea prima un programma",
       "disconnect": {
-        "button": "Disconnect",
-        "confirm": "Disconnect",
-        "confirmMessage": "This stops awarding points and clears LoyaltyDog's stored Lightspeed credentials. You can reconnect at any time.",
-        "success": "Lightspeed disconnected"
+        "button": "Disconnetti",
+        "confirm": "Disconnetti",
+        "confirmMessage": "Questa operazione interrompe l'assegnazione dei punti ed elimina le credenziali Lightspeed memorizzate da LoyaltyDog. Puoi ricollegarti in qualsiasi momento.",
+        "success": "Lightspeed disconnesso"
       },
       "errors": {
-        "installFailed": "Couldn't start the Lightspeed connection. Please try again, or contact support if it persists.",
-        "invalidProgram": "That loyalty program is not available on your account.",
-        "invalidPrograms": "One or more selected programs are invalid.",
-        "missingProgram": "Choose a loyalty program before connecting Lightspeed.",
-        "notConfigured": "The Lightspeed app isn't available yet. Please contact support to enable the Lightspeed integration.",
-        "saveFailed": "Something went wrong. Please try again."
+        "installFailed": "Impossibile avviare la connessione a Lightspeed. Riprova o contatta l'assistenza se il problema persiste.",
+        "invalidProgram": "Quel programma fedeltà non è disponibile sul tuo account.",
+        "invalidPrograms": "Uno o più programmi selezionati non sono validi.",
+        "missingProgram": "Scegli un programma fedeltà prima di collegare Lightspeed.",
+        "notConfigured": "L'app Lightspeed non è ancora disponibile. Contatta l'assistenza per abilitare l'integrazione con Lightspeed.",
+        "saveFailed": "Si è verificato un errore. Riprova."
       },
-      "intro": "Connect your Lightspeed X-Series account to award loyalty points automatically on every sale. Choose which loyalty program new Lightspeed customers should join, then authorize LoyaltyDog with Lightspeed.",
-      "loyaltyProgramLabel": "Loyalty program",
+      "intro": "Collega il tuo account Lightspeed X-Series per assegnare automaticamente punti fedeltà a ogni vendita. Scegli a quale programma fedeltà devono aderire i nuovi clienti Lightspeed, quindi autorizza LoyaltyDog in Lightspeed.",
+      "loyaltyProgramLabel": "Programma fedeltà",
       "outlets": {
-        "active": "Active",
+        "active": "Attivo",
         "colOutlet": "Outlet",
-        "colProgram": "Loyalty program",
-        "colStatus": "Status",
+        "colProgram": "Programma fedeltà",
+        "colStatus": "Stato",
         "heading": "Outlets",
-        "inactive": "Inactive",
-        "noLoyalty": "— No loyalty —",
-        "none": "No Lightspeed outlets found yet.",
-        "save": "Save",
-        "saved": "Outlet settings saved",
-        "saving": "Saving…"
+        "inactive": "Inattivo",
+        "noLoyalty": "— Nessuna fedeltà —",
+        "none": "Nessun outlet Lightspeed trovato finora.",
+        "save": "Salva",
+        "saved": "Impostazioni dell'outlet salvate",
+        "saving": "Salvataggio…"
       },
-      "selectProgram": "Select a program",
+      "selectProgram": "Seleziona un programma",
       "status": {
-        "connected": "Connected",
-        "disconnectedDescription": "This Lightspeed connection is inactive. Reconnect to resume awarding points.",
-        "disconnectedTitle": "Lightspeed is disconnected",
-        "needsReauthDescription": "Lightspeed revoked LoyaltyDog's access. Reconnect to resume awarding points.",
-        "needsReauthTitle": "Reconnect required",
-        "provisioned": "Setup complete",
-        "provisioningDescription": "We're finishing setup for your Lightspeed connection. Outlets and sync settings will appear here shortly.",
-        "provisioningTitle": "Setting up your connection",
-        "reconnect": "Reconnect Lightspeed",
-        "webhooks": "{{count}} webhook(s) active"
+        "connected": "Connesso",
+        "disconnectedDescription": "Questa connessione a Lightspeed è inattiva. Ricollegala per riprendere ad assegnare punti.",
+        "disconnectedTitle": "Lightspeed è disconnesso",
+        "needsReauthDescription": "Lightspeed ha revocato l'accesso di LoyaltyDog. Ricollegati per riprendere ad assegnare punti.",
+        "needsReauthTitle": "È necessario ricollegarsi",
+        "provisioned": "Configurazione completata",
+        "provisioningDescription": "Stiamo completando la configurazione della tua connessione a Lightspeed. Gli outlet e le impostazioni di sincronizzazione appariranno qui a breve.",
+        "provisioningTitle": "Configurazione della connessione in corso",
+        "reconnect": "Ricollega Lightspeed",
+        "webhooks": "{{count}} webhook attivi"
       },
       "sync": {
-        "customerProgram": "Enable customer sync on the mapped program",
-        "customers": "Sync customers",
-        "heading": "Sync settings",
-        "products": "Sync products",
-        "save": "Save sync settings",
-        "saved": "Sync settings saved",
-        "saving": "Saving…"
+        "customerProgram": "Abilita la sincronizzazione dei clienti sul programma associato",
+        "customers": "Sincronizza clienti",
+        "heading": "Impostazioni di sincronizzazione",
+        "products": "Sincronizza prodotti",
+        "save": "Salva impostazioni di sincronizzazione",
+        "saved": "Impostazioni di sincronizzazione salvate",
+        "saving": "Salvataggio…"
       }
     }
   }

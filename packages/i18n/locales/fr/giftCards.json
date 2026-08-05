@@ -13,7 +13,8 @@
     "reports": "Rapports",
     "cardList": "Liste des cartes",
     "consolidate": "Consolider",
-    "transferOwnership": "Transférer la propriété"
+    "transferOwnership": "Transférer la propriété",
+    "reloadCard": "Recharger la carte"
   },
   "layout": {
     "giftCards": "Cartes cadeaux",
@@ -475,7 +476,16 @@
     "storeAddressValue": "123 rue de la Paix, Paris",
     "saveSettings": "Enregistrer les paramètres",
     "merchantIdRequired": "L'ID marchand est requis.",
-    "merchantSettings": "Configuration du marchand"
+    "merchantSettings": "Configuration du marchand",
+    "programIdHint": "Saisissez l'identifiant du programme de cartes cadeaux fourni par votre administrateur LoyaltyDog.",
+    "programIdPlaceholder": "p. ex. 6613a1f2b2c3d4e5f6a7b8c9",
+    "programIdRequired": "L'identifiant du programme est obligatoire.",
+    "programSettings": "Paramètres du programme",
+    "programSettingsHint": "Saisissez l'identifiant de programme LoyaltyDog à associer à cet établissement. Le programme doit être un programme de cartes cadeaux appartenant à votre compte.",
+    "saveFailed": "Échec de l'enregistrement des paramètres. Vérifiez l'identifiant du programme et réessayez.",
+    "saveProgramId": "Enregistrer l'identifiant du programme",
+    "saveSuccess": "Paramètres enregistrés avec succès.",
+    "saving": "Enregistrement…"
   },
   "merchantDashboard": {
     "totalActiveCards": "Total des cartes actives",

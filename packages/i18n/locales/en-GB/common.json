@@ -3552,8 +3552,8 @@
     "lightspeed": {
       "connectButton": "Connect Lightspeed",
       "connectHeading": "Connect Lightspeed",
-      "connectedNotice": "Lightspeed connected. Assign a loyalty program to each outlet below.",
-      "createProgramFirst": "Create a program first",
+      "connectedNotice": "Lightspeed connected. Assign a loyalty programme to each outlet below.",
+      "createProgramFirst": "Create a programme first",
       "disconnect": {
         "button": "Disconnect",
         "confirm": "Disconnect",
@@ -3562,18 +3562,18 @@
       },
       "errors": {
         "installFailed": "Couldn't start the Lightspeed connection. Please try again, or contact support if it persists.",
-        "invalidProgram": "That loyalty program is not available on your account.",
-        "invalidPrograms": "One or more selected programs are invalid.",
-        "missingProgram": "Choose a loyalty program before connecting Lightspeed.",
+        "invalidProgram": "That loyalty programme is not available on your account.",
+        "invalidPrograms": "One or more selected programmes are invalid.",
+        "missingProgram": "Choose a loyalty programme before connecting Lightspeed.",
         "notConfigured": "The Lightspeed app isn't available yet. Please contact support to enable the Lightspeed integration.",
         "saveFailed": "Something went wrong. Please try again."
       },
-      "intro": "Connect your Lightspeed X-Series account to award loyalty points automatically on every sale. Choose which loyalty program new Lightspeed customers should join, then authorize LoyaltyDog with Lightspeed.",
-      "loyaltyProgramLabel": "Loyalty program",
+      "intro": "Connect your Lightspeed X-Series account to award loyalty points automatically on every sale. Choose which loyalty programme new Lightspeed customers should join, then authorise LoyaltyDog with Lightspeed.",
+      "loyaltyProgramLabel": "Loyalty programme",
       "outlets": {
         "active": "Active",
         "colOutlet": "Outlet",
-        "colProgram": "Loyalty program",
+        "colProgram": "Loyalty programme",
         "colStatus": "Status",
         "heading": "Outlets",
         "inactive": "Inactive",
@@ -3583,7 +3583,7 @@
         "saved": "Outlet settings saved",
         "saving": "Saving…"
       },
-      "selectProgram": "Select a program",
+      "selectProgram": "Select a programme",
       "status": {
         "connected": "Connected",
         "disconnectedDescription": "This Lightspeed connection is inactive. Reconnect to resume awarding points.",
@@ -3597,7 +3597,7 @@
         "webhooks": "{{count}} webhook(s) active"
       },
       "sync": {
-        "customerProgram": "Enable customer sync on the mapped program",
+        "customerProgram": "Enable customer sync on the mapped programme",
         "customers": "Sync customers",
         "heading": "Sync settings",
         "products": "Sync products",

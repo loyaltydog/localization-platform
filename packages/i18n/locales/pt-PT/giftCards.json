@@ -13,7 +13,8 @@
     "reports": "Relatórios",
     "cardList": "Lista de Cartões",
     "consolidate": "Consolidar",
-    "transferOwnership": "Transferir Propriedade"
+    "transferOwnership": "Transferir Propriedade",
+    "reloadCard": "Recarregar cartão"
   },
   "layout": {
     "giftCards": "Cartões de Oferta",
@@ -475,7 +476,16 @@
     "storeAddressValue": "Rua Augusta 123, Lisboa",
     "saveSettings": "Guardar Definições",
     "merchantIdRequired": "O ID do comerciante é obrigatório.",
-    "merchantSettings": "Configuração de Comerciante"
+    "merchantSettings": "Configuração de Comerciante",
+    "programIdHint": "Introduza o ID do programa de cartões de oferta fornecido pelo seu administrador do LoyaltyDog.",
+    "programIdPlaceholder": "ex.: 6613a1f2b2c3d4e5f6a7b8c9",
+    "programIdRequired": "O ID do programa é obrigatório.",
+    "programSettings": "Definições do programa",
+    "programSettingsHint": "Introduza o ID do programa LoyaltyDog a associar a este local. O programa deve ser um programa de cartões de oferta pertencente à sua conta.",
+    "saveFailed": "Não foi possível guardar as definições. Verifique o ID do programa e tente novamente.",
+    "saveProgramId": "Guardar ID do programa",
+    "saveSuccess": "Definições guardadas com sucesso.",
+    "saving": "A guardar…"
   },
   "merchantDashboard": {
     "totalActiveCards": "Total de Cartões Activos",
