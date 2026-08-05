@@ -134,4 +134,111 @@ describe('Translation Structure Tests - All Languages', () => {
       }
     });
   });
+
+  describe('Placeholder Integrity', () => {
+    // Both consumers interpolate {{variable}}: i18next in the dashboard and
+    // translation_loader.py on the backend. A single-brace {variable} is therefore
+    // never substituted — it reaches the user literally.
+    const SINGLE_BRACE = /(?<!\{)(?<!\$)\{([A-Za-z_][A-Za-z0-9_]*)\}(?!\})/;
+    const DOUBLE_BRACE = /\{\{\s*([A-Za-z_][A-Za-z0-9_]*)[^}]*\}\}/g;
+
+    // Strings whose single braces are NOT interpolation. The WordPress plugin gives
+    // merchants a message template and substitutes these tokens itself; the "adjust the
+    // message" string literally instructs merchants to type them, and uses {{first}} /
+    // {{second}} alongside for real interpolation. Doubling them would break the plugin
+    // and misinstruct merchants.
+    const LITERAL_TOKEN_KEYS = new Set([
+      'wordpress.wordpress.admin.menu.adjustTheMessageByUsing1s',
+      'wordpress.wordpress.admin.menu.strongActiveLoyaltyOfferStrongFriendlynametobeadded',
+      'wordpress.wordpress.admin.menu.strongLoyaltyRewardStrongFriendlynametobeadded',
+      'wordpress.wordpress.misc.nameFree',
+      'wordpress.wordpress.misc.nameValueCurrency',
+      'wordpress.wordpress.misc.nameValueCurrency2',
+      // Describes the ${Name} pass-placeholder syntax to the merchant, not a variable.
+      'common.tab.placeholderInfo',
+    ]);
+
+    // Pre-existing breakage, listed so it stays visible while this test stops NEW
+    // regressions. Each entry is a real defect to fix, not an accepted exception.
+    //
+    // errors.* — no caller in core_api references these by key; they are likely consumed
+    //   by the Square/Shopify/Clover/WordPress repos. Confirm the consumer, then either
+    //   double the braces or move them to LITERAL_TOKEN_KEYS.
+    // notifications.dateRangeTx — same, plus the dashboard's bundled fallback disagrees.
+    const PENDING_SINGLE_BRACE = new Set([
+      'errors.validation.business_domain_timeout',
+      'errors.validation.request_too_large',
+      'errors.validation.redirect_chain_exceeded',
+      'errors.validation.empty_email',
+      'errors.auth.invalid_auth_header',
+      'errors.auth.token_missing_header',
+      'errors.operations.duplicated_customers',
+      'errors.operations.failed_to_renew_certificate',
+      'errors.operations.unsupported_pass_style',
+      'notifications.dateRangeTx',
+    ]);
+
+    // Translations that dropped or invented a variable relative to en-US. Dropping one
+    // silently deletes data from the sentence; inventing one renders the raw {{token}},
+    // because nothing passes a value for it. Fix via Crowdin, then delete the entry.
+    const PENDING_PARITY = new Set([
+      'it.common.customers.detail.metaTitle',
+      'it.common.offers.form.percentageWarning',
+      'it.common.offers.detail.values.points',
+      'it.common.reports.eposnowFullTransactionsSummary.totalRecords',
+      'it.common.customerInfo.values.reserved',
+      'it.common.message.send.heading',
+      'pt-BR.emails.merchant_monthly_summary.subject',
+    ]);
+
+    function entries(locale, namespace) {
+      const flat = {};
+      (function walk(node, prefix) {
+        for (const [key, value] of Object.entries(node)) {
+          const full = prefix ? `${prefix}.${key}` : key;
+          if (value !== null && typeof value === 'object' && !Array.isArray(value)) walk(value, full);
+          else if (typeof value === 'string') flat[full] = value;
+        }
+      })(loadTranslation(locale, namespace), '');
+      return flat;
+    }
+
+    const NS_WITH_WORDPRESS = [...NAMESPACES, 'marketing', 'wordpress'];
+
+    it.each(ALL_LANGUAGES)('uses {{variable}} rather than {variable} in %s', (locale) => {
+      const offenders = [];
+      for (const namespace of NS_WITH_WORDPRESS) {
+        if (!existsSync(join(LOCALES_DIR, locale, `${namespace}.json`))) continue;
+        for (const [key, value] of Object.entries(entries(locale, namespace))) {
+          const qualified = `${namespace}.${key}`;
+          if (LITERAL_TOKEN_KEYS.has(qualified) || PENDING_SINGLE_BRACE.has(qualified)) continue;
+          if (SINGLE_BRACE.test(value)) offenders.push(`${qualified} = ${JSON.stringify(value)}`);
+        }
+      }
+      expect(offenders).toEqual([]);
+    });
+
+    // Key parity cannot see this: the key is present, its variable is not.
+    it.each(ALL_LANGUAGES.filter((l) => l !== 'en-US'))('carries the same variables as en-US in %s', (locale) => {
+      const mismatches = [];
+      for (const namespace of NS_WITH_WORDPRESS) {
+        if (!existsSync(join(LOCALES_DIR, locale, `${namespace}.json`))) continue;
+        if (!existsSync(join(LOCALES_DIR, 'en-US', `${namespace}.json`))) continue;
+        const source = entries('en-US', namespace);
+        const target = entries(locale, namespace);
+        for (const [key, value] of Object.entries(source)) {
+          if (!(key in target)) continue; // key coverage is asserted elsewhere
+          const qualified = `${locale}.${namespace}.${key}`;
+          if (PENDING_PARITY.has(qualified)) continue;
+          const vars = (s) => new Set([...s.matchAll(DOUBLE_BRACE)].map((m) => m[1]));
+          const expected = [...vars(value)].sort();
+          const actual = [...vars(target[key])].sort();
+          if (JSON.stringify(expected) !== JSON.stringify(actual)) {
+            mismatches.push(`${qualified}: en-US=[${expected}] ${locale}=[${actual}]`);
+          }
+        }
+      }
+      expect(mismatches).toEqual([]);
+    });
+  });
 });

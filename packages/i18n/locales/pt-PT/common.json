@@ -1561,7 +1561,7 @@
         "helper": "Isto irá resgatar automaticamente ofertas ou adicionar pontos de análise (se configurado)",
         "scanButton": "Analisar",
         "scanPerformed": "Análise realizada.",
-        "showCustomer": "Mostrar cliente #{id}",
+        "showCustomer": "Mostrar cliente #{{id}}",
         "pointsLabel": "Pontos:",
         "rewardButton": "Recompensar"
       },

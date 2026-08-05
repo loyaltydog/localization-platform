@@ -1571,7 +1571,7 @@
         "helper": "Inserisci email, telefono o ID carta del cliente per assegnare punti.",
         "scanButton": "Scansiona",
         "scanPerformed": "Scansione eseguita con successo",
-        "showCustomer": "Mostra cliente #{id}",
+        "showCustomer": "Mostra cliente #{{id}}",
         "pointsLabel": "Punti",
         "rewardButton": "Assegna Punti"
       },

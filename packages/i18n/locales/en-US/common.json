@@ -1575,7 +1575,7 @@
         "helper": "This will automatically redeem offers or add scan points (if configured)",
         "scanButton": "Scan",
         "scanPerformed": "Scan performed.",
-        "showCustomer": "Show Customer #{id}",
+        "showCustomer": "Show Customer #{{id}}",
         "pointsLabel": "Points:",
         "rewardButton": "Reward"
       },

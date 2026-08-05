@@ -539,7 +539,7 @@
         "helper": "Enter the customer's email, phone, or card ID to award points.",
         "scanButton": "Scan",
         "scanPerformed": "Scan performed successfully",
-        "showCustomer": "Show Customer #{id}",
+        "showCustomer": "Show Customer #{{id}}",
         "pointsLabel": "Points",
         "rewardButton": "Award Points"
       },

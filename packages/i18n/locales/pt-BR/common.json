@@ -1571,7 +1571,7 @@
         "helper": "Insira o e-mail, telefone ou ID do cartão do cliente para conceder pontos.",
         "scanButton": "Ler",
         "scanPerformed": "Leitura realizada com sucesso",
-        "showCustomer": "Mostrar Cliente #{id}",
+        "showCustomer": "Mostrar Cliente #{{id}}",
         "pointsLabel": "Pontos",
         "rewardButton": "Conceder Pontos"
       },
