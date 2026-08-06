@@ -220,7 +220,7 @@
     "invalidAmount": "Invalid amount",
     "amountExceedsBalance": "Amount exceeds available balance",
     "maxValueExceeded": "Total value exceeds maximum allowed",
-    "programNotFound": "Gift card programme not found",
+    "programNotFound": "Gift card program not found",
     "consolidationFailed": "Card consolidation failed",
     "transferFailed": "Card transfer failed",
     "reloadFailed": "Card reload failed",
@@ -309,7 +309,7 @@
   "subscription": {
     "planExpired": "Your subscription plan has expired",
     "paymentPastDue": "Your payment is past due. Please update your payment method",
-    "subscriptionCancelled": "Your subscription has been cancelled",
+    "subscriptionCancelled": "Your subscription has been canceled",
     "subscriptionPaused": "Your subscription has been paused",
     "planLimitReached": "You've reached your plan limit",
     "featureRequiresUpgrade": "This feature requires a higher subscription plan",
@@ -321,7 +321,7 @@
     "subscriptionRenewalFailed": "We couldn't renew your subscription. Please update payment information",
     "downgradeNotAllowed": "Plan downgrade is not allowed until {{date}}",
     "upgradeInProgress": "Your plan upgrade is in progress. Please wait...",
-    "cancelationPending": "Your subscription will be cancelled on {{effectiveDate}}"
+    "cancelationPending": "Your subscription will be canceled on {{effectiveDate}}"
   },
   "invalidSession": "Your session is invalid or has expired. Please launch the application again from your EPOS Now terminal.",
   "wordpress": {
