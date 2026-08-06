@@ -680,7 +680,7 @@
       "tier": "Tier",
       "enrollmentStatus": "Enrollment status",
       "enrolledAt": "Enrolled at",
-      "whenYouUseLoyaltydogYourEmail": "When you use LoyaltyDog, your email address and order totals are sent to the LoyaltyDog cloud service (api.loyalty.dog) to calculate and store loyalty points. Loyalty transaction history may be retained locally in de-identified form (linked only to an internal member ID) after an erasure request. See <a href=\\\"https://loyalty.dog/privacy\\\">loyalty.dog/privacy</a> for details."
+      "whenYouUseLoyaltydogYourEmail": "When you use LoyaltyDog, your email address and order totals are sent to the LoyaltyDog cloud service (api.loyalty.dog) to calculate and store loyalty points. Loyalty transaction history may be retained locally in de-identified form (linked only to an internal member ID) after an erasure request. See <a href=\"https://loyalty.dog/privacy\">loyalty.dog/privacy</a> for details."
     }
   }
 }
