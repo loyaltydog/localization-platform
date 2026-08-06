@@ -1349,7 +1349,7 @@
       "sendPushNotifications": "Enviar notificaciones push",
       "editButtonTitle": "Editar",
       "pushButtonTitle": "Push",
-      "deleteButton": "Delete"
+      "deleteButton": "Eliminar"
     },
     "push": {
       "message1": "Push Message 1",

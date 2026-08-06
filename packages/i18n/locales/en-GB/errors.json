@@ -1,5 +1,5 @@
 {
-  "unauthorized": "You are not authorized to perform this action",
+  "unauthorized": "You are not authorised to perform this action",
   "forbidden": "Access to this resource is forbidden",
   "notFound": "The requested resource was not found",
   "rateLimit": "Too many requests. Please try again later",
@@ -62,8 +62,8 @@
     "signature_missing": "Webhook signature missing",
     "invalid_api_key": "Invalid API key",
     "authentication_failed": "Authentication failed",
-    "invalid_auth_header": "Invalid Authorization header format. Use: Bearer {token}",
-    "token_missing_header": "Missing {token_type} in Authorization header",
+    "invalid_auth_header": "Invalid Authorisation header format. Use: Bearer {token}",
+    "token_missing_header": "Missing {token_type} in Authorisation header",
     "wordpress_oauth_failed": "WordPress OAuth authentication failed"
   },
   "integration": {
@@ -89,7 +89,7 @@
   },
   "http": {
     "400": "Bad request. Please check your input and try again.",
-    "401": "You are not authorized. Please log in again.",
+    "401": "You are not authorised. Please log in again.",
     "403": "You don't have permission to perform this action.",
     "404": "The requested resource was not found.",
     "409": "This operation conflicts with existing data.",
@@ -107,7 +107,7 @@
     "insufficientPoints": "Insufficient points for this redemption.",
     "cardNotFound": "Loyalty card not found.",
     "cardAlreadyLinked": "This card is already linked to another account.",
-    "enrollmentFailed": "Failed to enroll member. Please try again.",
+    "enrollmentFailed": "Failed to enrol member. Please try again.",
     "rewardExpired": "Esta recompensa expirou e já não está disponível.",
     "rewardAlreadyRedeemed": "Já resgatou esta recompensa.",
     "tierDowngraded": "O seu nível foi descido. Continue a ganhar pontos para manter o seu estatuto."

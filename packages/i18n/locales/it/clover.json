@@ -1,51 +1,51 @@
 {
-    "clover": {
-        "pos": {
-            "title": "LoyaltyDog",
-            "enrollPrompt": "Iscriviti al nostro programma fedeltà per iniziare a guadagnare punti",
-            "pointsBalance": "Saldo punti: {{points}}",
-            "pointsEarned": "Hai guadagnato {{points}} punti",
-            "rewardAvailable": "Premio disponibile: {{rewardName}}",
-            "redeemButton": "Riscatta il premio",
-            "cancelButton": "Annulla"
-        },
-        "loyalty": {
-            "tier": "Livello: {{tierName}}",
-            "memberSince": "Membro dal {{date}}",
-            "lifetimePoints": "Punti totali: {{points}}"
-        },
-        "errors": {
-            "connectionFailed": "Connessione a Clover non riuscita. Riprova.",
-            "enrollFailed": "Iscrizione del cliente non riuscita. Riprova.",
-            "transactionFailed": "Impossibile elaborare la transazione.",
-            "unableToLoadCustomer": "Unable to load customer details with your entered value.",
-            "unableToUseOffer": "Unable to use the selected offer. Please try again later.",
-            "unexpectedError": "Unexpected error. Please try again later."
-        },
-        "success": {
-            "enrolled": "Cliente iscritto al programma fedeltà con successo.",
-            "pointsAdded": "{{points}} punti aggiunti al tuo account.",
-            "redeemed": "Premio riscattato con successo."
-        },
-        "ui": {
-            "confirm": "Confirm",
-            "ok": "OK",
-            "cancel": "Cancel",
-            "search": "Search",
-            "searchHint": "You can enter pass, email, phone, card number, …",
-            "customerDetails": "CUSTOMER DETAILS",
-            "noCustomerName": "(no name)",
-            "noOfferName": "(none)"
-        },
-        "offers": {
-            "confirmUseOffer": "Do you really want to use this offer?",
-            "confirmUseOtherOffer": "Do you really want to use this offer? Your current active offer will be lost.",
-            "costTemplate": "Costs %d points",
-            "redeemButton": "REDEEM",
-            "doNotRedeemButton": "DO NOT REDEEM",
-            "useButton": "USE",
-            "doNotUseButton": "DO NOT USE",
-            "activeLabel": "ACTIVE"
-        }
+  "clover": {
+    "pos": {
+      "title": "LoyaltyDog",
+      "enrollPrompt": "Iscriviti al nostro programma fedeltà per iniziare a guadagnare punti",
+      "pointsBalance": "Saldo punti: {{points}}",
+      "pointsEarned": "Hai guadagnato {{points}} punti",
+      "rewardAvailable": "Premio disponibile: {{rewardName}}",
+      "redeemButton": "Riscatta il premio",
+      "cancelButton": "Annulla"
+    },
+    "loyalty": {
+      "tier": "Livello: {{tierName}}",
+      "memberSince": "Membro dal {{date}}",
+      "lifetimePoints": "Punti totali: {{points}}"
+    },
+    "errors": {
+      "connectionFailed": "Connessione a Clover non riuscita. Riprova.",
+      "enrollFailed": "Iscrizione del cliente non riuscita. Riprova.",
+      "transactionFailed": "Impossibile elaborare la transazione.",
+      "unableToLoadCustomer": "Impossibile caricare i dettagli del cliente con il valore inserito.",
+      "unableToUseOffer": "Impossibile usare l'offerta selezionata. Prova di nuovo più tardi.",
+      "unexpectedError": "Errore inaspettato. Prova di nuovo più tardi."
+    },
+    "success": {
+      "enrolled": "Cliente iscritto al programma fedeltà con successo.",
+      "pointsAdded": "{{points}} punti aggiunti al tuo account.",
+      "redeemed": "Premio riscattato con successo."
+    },
+    "ui": {
+      "confirm": "Conferma",
+      "ok": "OK",
+      "cancel": "Annulla",
+      "search": "Cerca",
+      "searchHint": "Puoi inserire pass, email, telefono, numero di carta, …",
+      "customerDetails": "DETTAGLI CLIENTE",
+      "noCustomerName": "(senza nome)",
+      "noOfferName": "(nessuna)"
+    },
+    "offers": {
+      "confirmUseOffer": "Vuoi davvero usare questa offerta?",
+      "confirmUseOtherOffer": "Vuoi davvero usare questa offerta? L'offerta attuale attiva andrà persa.",
+      "costTemplate": "Costa %d punti",
+      "redeemButton": "RISCATTA",
+      "doNotRedeemButton": "NON RISCATTARE",
+      "useButton": "USA",
+      "doNotUseButton": "NON USARE",
+      "activeLabel": "ATTIVO"
     }
+  }
 }

@@ -9,7 +9,7 @@
   },
   "rewardEarned": {
     "subject": "Vous avez gagné une récompense !",
-    "body": "Congratulations {{memberName}}!\n\nYou've unlocked: {{rewardName}}\n\nShow this at checkout to redeem your reward.\n\nReward expires: {{expiryDate}}"
+    "body": "Félicitations {{memberName}} !\n\nVous avez débloqué : {{rewardName}}\n\nMontrez ceci à la caisse pour utiliser votre récompense.\n\nLa récompense expire : {{expiryDate}}"
   },
   "pointsEarned": {
     "subject": "Vous avez gagné {{points}} points !",
@@ -393,7 +393,7 @@
   "merchant_monthly_summary": {
     "subject": "Votre Monthly Loyalty Program Summary — {{month}} {{year}}",
     "greeting": "Bonjour {{merchantName}},",
-    "body": "Here's your loyalty program performance summary for {{month}} {{year}}.",
+    "body": "Voici votre résumé de performance du programme de fidélité pour {{month}} {{year}}.",
     "newMembers": "Nouveaux membres : {{count}}",
     "pointsIssued": "Points émis : {{points}}",
     "rewardsRedeemed": "Récompenses échangées : {{count}}",

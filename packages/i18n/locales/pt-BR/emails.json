@@ -29,7 +29,7 @@
     "footer": "Visite {{merchantName}} para usar seu prêmio antes que ele expire."
   },
   "campaign": {
-    "body": "{{campaignBody}}\n\nView your rewards: {{rewardsUrl}}",
+    "body": "{{campaignBody}}\n\nVeja suas recompensas: {{rewardsUrl}}",
     "subject": "{{campaignName}}"
   },
   "birthday": {
@@ -81,7 +81,7 @@
     "footer": "Seus pontos são valiosos - não os desperdice!"
   },
   "pointsExpiring": {
-    "subject": "{{points}} points expiring soon!",
+    "subject": "{{points}} pontos expirando em breve!",
     "greeting": "Olá {{memberName}},",
     "currentBalance": "Saldo atual: {{balance}} pontos",
     "cta": "Use seus pontos",

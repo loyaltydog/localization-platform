@@ -185,7 +185,7 @@
     "installPass": "Installer le laissez-passer",
     "passScanned": "Passe scanné",
     "customerReferral": "Renvoi des clients",
-    "scanner": "Scanner",
+    "scanner": "Lecteur",
     "actions": "Actions",
     "noCustomers": "Pas de clients",
     "noOffers": "Pas d'offres",
@@ -788,7 +788,7 @@
           "vouchers": "Bons",
           "programs": "Programmes",
           "orders": "Commandes",
-          "eposnow": "Eposnow",
+          "eposnow": "EposNow",
           "webhooks": "Webhooks",
           "customers": "Clients",
           "shopifies": "Shopifies",
@@ -1349,7 +1349,7 @@
       "sendPushNotifications": "Envoyer des notifications push",
       "editButtonTitle": "Modifier",
       "pushButtonTitle": "Push",
-      "deleteButton": "Delete"
+      "deleteButton": "Supprimer"
     },
     "push": {
       "message1": "Push Message 1",
@@ -1445,7 +1445,7 @@
       "addPhone": "Ajouter un Téléphone",
       "installPass": "Installer le Pass",
       "customerReferral": "Parrainage Client",
-      "scanner": "Scanner",
+      "scanner": "Lecteur",
       "pointsLabel": "Points",
       "configure": "Configurer",
       "customerCard": "Carte Client",
@@ -1625,9 +1625,9 @@
   "verification": {
     "title": "Émetteurs",
     "scanners": {
-      "title": "Scanners",
+      "title": "Lecteurs",
       "pages": {
-        "list": "Scanners",
+        "list": "Lecteurs",
         "new": "Nouveau scanner",
         "view": "Mettre à Jour le Scanner",
         "notFound": "Scanner non trouvé."
@@ -1668,7 +1668,7 @@
       "title": "Scans récents",
       "pidNumber": "Numéro PID",
       "time": "Heure",
-      "scanner": "Scanner",
+      "scanner": "Lecteur",
       "action": "Action",
       "details": "Détails",
       "noScans": "Aucun scan",
@@ -2427,7 +2427,7 @@
       "termsAndConditions": "Conditions générales",
       "termsHelper": "Vous pouvez spécifier les conditions de votre programme de fidélisation",
       "scanningRedemption": "Scan et remboursement",
-      "scanner": "Scanner",
+      "scanner": "Lecteur",
       "scannerBrowser": "Navigateur : Je souhaite utiliser une autre solution de scan qui peut ouvrir des URLs.",
       "scannerNone": "Aucun : Je n'ai pas besoin de scanner les cartes.",
       "pointsChangeMessage": "Message de changement de points",
@@ -3540,12 +3540,12 @@
   },
   "account": {
     "overview": {
-      "appKeys": "App Keys",
-      "empty": "(empty)",
-      "passTemplates": "Pass Templates",
-      "passTypeIds": "Pass Type IDs",
-      "passTypeIdsHelper": "For production use, you are strongly encouraged to use your own Pass Type ID. You need an iOS Developer Account.",
-      "passes": "Passes"
+      "appKeys": "Clés d'application",
+      "empty": "(vide)",
+      "passTemplates": "Modèles de carte",
+      "passTypeIds": "ID de type de carte",
+      "passTypeIdsHelper": "Pour une utilisation en production, vous êtes vivement encouragé d'utiliser votre propre ID de type de carte. Vous devez disposer d'un compte développeur iOS.",
+      "passes": "Cartes"
     }
   },
   "integrations": {

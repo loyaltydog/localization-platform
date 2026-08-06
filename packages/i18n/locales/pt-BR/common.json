@@ -195,7 +195,7 @@
     "installPass": "Passe de instalação",
     "passScanned": "Passe digitalizado",
     "customerReferral": "Indicação de clientes",
-    "scanner": "Scanner",
+    "scanner": "Leitor",
     "actions": "Ações",
     "noCustomers": "Nenhum cliente",
     "noOffers": "Nenhuma oferta",
@@ -359,7 +359,7 @@
     "chooseScheme": "Escolha um dos nossos esquemas prontos acima ou crie o seu próprio programa de fidelidade personalizado"
   },
   "pagination": {
-    "showing": "Showing {{start}} to {{end}} of {{total}}",
+    "showing": "Mostrando {{start}} a {{end}} de {{total}}",
     "itemsPerPage": "Itens por página",
     "previous": "Anterior",
     "next": "Próximo",
@@ -469,7 +469,7 @@
     "labelColor": "Cor do Rótulo",
     "automaticallyGenerated": "Gerado Automaticamente",
     "fieldLimitReached": "Limite de Campos Atingido",
-    "fieldLimitMessage": "Reach the limit fields in this area of this pass layout (max: {{max}})",
+    "fieldLimitMessage": "Você atingiu o limite de campos nesta área do layout de passe (máx.: {{max}})",
     "field": "Campo",
     "fieldPanelDescription1": "Adicione campos personalizados para coletar mais informações do cliente",
     "fieldPanelDescription2": "Cada campo pode ser usado em várias templates",
@@ -711,7 +711,7 @@
     "tx": "tx",
     "eventModalClose": "Fechar",
     "eventModalDescription": "Este é um evento",
-    "verificationCodeLabel": "Code {{index}}",
+    "verificationCodeLabel": "Código {{index}}",
     "verificationCodeHelperText": "Insira o código de verificação enviado para você",
     "metricMemberGrowth": "Crescimento de Membros",
     "metricRedemptions": "Resgates",
@@ -735,14 +735,14 @@
       "backups": {
         "requestQueued": "Request Queued",
         "searchPlaceholder": "Search Placeholder",
-        "totalBackups": "Total backups: {{total}}",
+        "totalBackups": "Total de backups: {{total}}",
         "recentRestores": "Restaurações recentes",
         "noname": "Noname",
         "deleted": "Deleted",
         "createTitle": "Create Title",
-        "updateTitle": "Update {{name}}",
-        "restoreTitle": "Restore {{name}}",
-        "targetUser": "Target User: {{user}}",
+        "updateTitle": "Atualizar {{name}}",
+        "restoreTitle": "Restaurar {{name}}",
+        "targetUser": "Usuário de Destino: {{user}}",
         "table": {
           "name": "Nome",
           "account": "Conta",
@@ -768,10 +768,10 @@
         },
         "actions": {
           "reRun": "Re Run",
-          "reRunConfirm": "Re-run {{name}}",
+          "reRunConfirm": "Executar novamente {{name}}",
           "reRunMessage": "Re Run Message",
           "delete": "Excluir",
-          "deleteConfirm": "Delete {{name}}",
+          "deleteConfirm": "Excluir {{name}}",
           "deleteMessage": "Delete Message",
           "editTitle": "Editar Backup",
           "restoreTitle": "Restaurar Backup"
@@ -802,7 +802,7 @@
           "webhooks": "Webhooks",
           "customers": "Clientes",
           "shopifies": "Shopifies",
-          "templates": "Templates",
+          "templates": "Modelos",
           "offers": "Ofertas",
           "clovers": "Clovers"
         },
@@ -845,17 +845,17 @@
         },
         "actions": {
           "signInAsUser": "Sign In As User",
-          "signInAsUserLoading": "Signing in as {{email}} ...",
+          "signInAsUserLoading": "Entrando como {{email}} ...",
           "login": "Entrar",
           "edit": "Editar",
           "delete": "Excluir",
           "view": "Visualizar"
         },
-        "totalUsers": "Total users: {{total}}",
+        "totalUsers": "Total de usuários: {{total}}",
         "createButton": "Create Button",
         "searchPlaceholder": "Search Placeholder",
         "deleteForm": {
-          "title": "Delete {{userDisplayName}}"
+          "title": "Excluir {{userDisplayName}}"
         },
         "detail": {
           "business": "Empresa",
@@ -864,7 +864,7 @@
           "role": "Função",
           "betaUser": "Usuário beta",
           "location": "Local",
-          "website": "Website",
+          "website": "Site",
           "registeredAt": "Registrado em"
         },
         "form": {
@@ -941,7 +941,7 @@
           "form": {
             "title": "Planos Shopify",
             "newTitle": "New Title",
-            "updateTitle": "Update {{planName}}",
+            "updateTitle": "Atualizar {{planName}}",
             "nameLabel": "Name Label",
             "typeLabel": "Type Label",
             "typeOneTimeFee": "Type One Time Fee",
@@ -1003,10 +1003,10 @@
         "maintenanceMessage": "Maintenance Message"
       },
       "clover": {
-        "pageTitle": "Install LoyaltyDog ({{marketCode}})",
-        "merchantId": "Merchant ID: {{merchantId}}",
+        "pageTitle": "Instalar LoyaltyDog ({{marketCode}})",
+        "merchantId": "ID do Comerciante: {{merchantId}}",
         "continueWithEmail": "Continue With Email",
-        "connectTo": "Connect to {{name}} ({{email}})",
+        "connectTo": "Conectar a {{name}} ({{email}})",
         "connectToExistingAccount": "Connect To Existing Account",
         "back": "Voltar",
         "loginHelperText": "Digite suas credenciais de conta do LoyaltyDog para conectar à sua conta Clover",
@@ -1018,7 +1018,7 @@
       "shopify": {
         "pageTitle": "Connect to Shopify",
         "continueWithEmail": "Continue With Email",
-        "connectTo": "Connect to {{name}} ({{email}})",
+        "connectTo": "Conectar a {{name}} ({{email}})",
         "connectToExistingAccount": "Connect To Existing Account",
         "back": "Voltar",
         "loginHelperText": "Digite suas credenciais de conta do LoyaltyDog para conectar à sua loja Shopify",
@@ -1042,7 +1042,7 @@
       "register": {
         "title": "Create an account with your email and password",
         "description": "Description",
-        "otpSent": "A new OTP has been sent to {{email}}",
+        "otpSent": "Uma nova OTP foi enviada para {{email}}",
         "somethingWentWrong": "Algo deu errado. Tente novamente mais tarde.",
         "resendOtp": "Resend Otp",
         "businessNameLabel": "Nome da empresa",
@@ -1105,7 +1105,7 @@
         "recentPasses": "Passes recentes",
         "table": {
           "serialNumber": "Número de série",
-          "template": "Template",
+          "template": "Modelo",
           "created": "Criado",
           "status": "Status",
           "actions": "Ações"
@@ -1154,7 +1154,7 @@
           "tabSource": "Tab Source",
           "deleteConfirm": "Delete Confirm",
           "deleteMessage": "Delete Message",
-          "template": "Template",
+          "template": "Modelo",
           "passTypeId": "Pass Type Id",
           "serialNumber": "Número de série",
           "createdAt": "Criado em",
@@ -1199,9 +1199,9 @@
           "delete": "Excluir",
           "renew": "Renovar"
         },
-        "renewConfirm": "Renew {{passTypeIdentifier}}",
+        "renewConfirm": "Renovar {{passTypeIdentifier}}",
         "renewMessage": "Renew Message",
-        "deleteConfirmTitle": "Delete {{passTypeIdentifier}}",
+        "deleteConfirmTitle": "Excluir {{passTypeIdentifier}}",
         "deleteConfirmMessage": "Delete Confirm Message",
         "gettingStartedTitle": "Getting Started Title",
         "helperText": "Helper Text",
@@ -1238,7 +1238,7 @@
         },
         "delete": {
           "confirmationLabel": "Confirmation Label",
-          "confirmText": "Please type {{passTypeIdentifier}} to confirm the deletion.",
+          "confirmText": "Por favor, digite {{passTypeIdentifier}} para confirmar a exclusão.",
           "warningText": "Warning Text",
           "cautionLabel": "Caution Label",
           "submitButton": "Submit Button",
@@ -1271,7 +1271,7 @@
     }
   },
   "templates": {
-    "title": "Templates",
+    "title": "Modelos",
     "pages": {
       "list": "Modelos",
       "new": "New",
@@ -1312,7 +1312,7 @@
     },
     "edit": {
       "tabs": {
-        "template": "Template",
+        "template": "Modelo",
         "appearance": "Aparência",
         "designer": "Designer",
         "stripImage": "Imagem de tira",
@@ -1321,12 +1321,12 @@
         "relevance": "Relevância",
         "location": "Local",
         "beacons": "Sinalizadores",
-        "apps": "Apps",
+        "apps": "Aplicativos",
         "time": "Hora",
-        "placeholder": "Placeholder",
+        "placeholder": "Espaço Reservado",
         "actions": "Ações",
         "distribution": "Distribuição",
-        "branding": "Branding",
+        "branding": "Marca",
         "payment": "Pagamento",
         "restriction": "Restrição"
       },
@@ -1359,7 +1359,7 @@
       "sendPushNotifications": "Enviar notificações push",
       "editButtonTitle": "Editar",
       "pushButtonTitle": "Push",
-      "deleteButton": "Delete"
+      "deleteButton": "Excluir"
     },
     "push": {
       "message1": "Push Message 1",
@@ -1635,9 +1635,9 @@
   "verification": {
     "title": "Emissores",
     "scanners": {
-      "title": "Scanners",
+      "title": "Leitores",
       "pages": {
-        "list": "Scanners",
+        "list": "Leitores",
         "new": "Novo Scanner",
         "view": "Atualizar Leitor",
         "notFound": "Scanner não encontrado."
@@ -1678,7 +1678,7 @@
       "title": "Varreduras Recentes",
       "pidNumber": "Número PID",
       "time": "Hora",
-      "scanner": "Scanner",
+      "scanner": "Leitor",
       "action": "Ação",
       "details": "Detalhes",
       "noScans": "Sem varreduras",
@@ -1805,7 +1805,7 @@
       "update": "Atualizar",
       "edit": "Editar",
       "updating": "Atualizando...",
-      "download": "Download",
+      "download": "Baixar",
       "enable": "Ativar",
       "duplicate": "Duplicar",
       "noCancel": "Não, cancelar",
@@ -1982,7 +1982,7 @@
       "points": "pontos",
       "termsAndConditions": "Termos e Condições",
       "scanningRedemptionHeading": "Digitalização e Resgate",
-      "scanner": "Scanner",
+      "scanner": "Leitor",
       "scannerBrowserOption": "Navegador: Quero usar outra solução de digitalização que possa abrir URLs.",
       "scannerNoneOption": "Nenhum: Não preciso digitalizar os cartões.",
       "pointsChangeMessage": "Mensagem de Alteração de Pontos",
@@ -2437,7 +2437,7 @@
       "termsAndConditions": "Termos e Condições",
       "termsHelper": "Você pode especificar termos para seu programa de fidelidade",
       "scanningRedemption": "Escaneamento e Resgate",
-      "scanner": "Scanner",
+      "scanner": "Leitor",
       "scannerBrowser": "Navegador: Quero usar outra solução de escaneamento que possa abrir URLs.",
       "scannerNone": "Nenhum: Não preciso escanear os cartões.",
       "pointsChangeMessage": "Mensagem de Alteração de Pontos",

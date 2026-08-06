@@ -703,7 +703,7 @@
     "tryAsking": "Prova a chiedere:",
     "askAboutLoyaltyProgram": "Chiedi informazioni sul tuo programma fedeltà...",
     "send": "Invia",
-    "loyaltyDogAdvisor": "🐕 Loyalty Dog AI Business Advisor",
+    "loyaltyDogAdvisor": "🐕 Loyalty Dog Consulente IA per il Business",
     "totalTransactions": "Transazioni totali",
     "memberParticipation": "Partecipazione membro",
     "totalRevenue": "Ricavi totali",
@@ -798,7 +798,7 @@
           "vouchers": "Buoni",
           "programs": "Programmi",
           "orders": "Ordini",
-          "eposnow": "Eposnow",
+          "eposnow": "EPOSNow",
           "webhooks": "Webhook",
           "customers": "Clienti",
           "shopifies": "Shopify",
@@ -901,7 +901,7 @@
       },
       "aiAdvisor": {
         "errorTitle": "Error Title",
-        "retryConnection": "Retry Connection",
+        "retryConnection": "Riprova Connessione",
         "loadingTitle": "Loading Title",
         "loadingDescription": "Loading Description",
         "aiConnected": "IA connessa",
@@ -926,7 +926,7 @@
             "name": "Nome",
             "price": "Prezzo",
             "type": "Tipo",
-            "trialDays": "Trial Days",
+            "trialDays": "Giorni di Prova",
             "actions": "Azioni",
             "empty": "Vuoto"
           },
@@ -975,10 +975,10 @@
         "pageTitle": "Password dimenticata"
       },
       "login": {
-        "usernameEmpty": "Username can not be empty.",
-        "invalidPassword": "Invalid password",
-        "passwordEmpty": "Password can not be empty.",
-        "invalidCredentials": "Invalid authentication credentials.",
+        "usernameEmpty": "Lo username non può essere vuoto.",
+        "invalidPassword": "Password non valida",
+        "passwordEmpty": "La password non può essere vuota.",
+        "invalidCredentials": "Credenziali di autenticazione non valide.",
         "title": "Use your email and password to sign in",
         "description": "Description",
         "emailLabel": "Indirizzo email",
@@ -1286,13 +1286,13 @@
       "id": "ID",
       "name": "Nome",
       "passTypeId": "ID tipo tessera",
-      "style": "Style",
+      "style": "Stile",
       "actions": "Azioni"
     },
     "actions": {
       "view": "Visualizza",
       "edit": "Modifica",
-      "newPass": "New Pass",
+      "newPass": "Nuovo Pass",
       "duplicate": "Duplica",
       "delete": "Elimina"
     },
@@ -1353,13 +1353,13 @@
       "distribution": "Distribuzione",
       "shareQrCode": "Share QR Code",
       "quantity": "Quantità",
-      "redemption": "Redemption",
+      "redemption": "Riscatto",
       "loadingData": "Loading...",
       "edit": "Modifica",
       "sendPushNotifications": "Invia notifiche push",
       "editButtonTitle": "Modifica",
       "pushButtonTitle": "Push",
-      "deleteButton": "Delete"
+      "deleteButton": "Elimina"
     },
     "push": {
       "message1": "Push Message 1",
@@ -1406,7 +1406,7 @@
     "fromSource": " • da {{source}}",
     "aiConnected": "Connesso",
     "aiDisconnected": "Disconnesso",
-    "aiStatus": "AI: {{status}}",
+    "aiStatus": "IA: {{status}}",
     "refreshData": "Aggiorna dati",
     "pocNotice": "🚧 Versione POC - {{count}} transazioni caricate",
     "initialSummaryMessage": "Dammi un rapido riepilogo dell'intervallo di date selezionato"
@@ -1440,7 +1440,7 @@
       "noNewCustomers": "Nessun nuovo cliente",
       "allCustomers": "Tutti i Clienti",
       "welcomePrefix": "Benvenuto nel",
-      "welcomeHighlight": "Loyalty",
+      "welcomeHighlight": "Fedeltà",
       "welcomeSuffix": "Dashboard!",
       "introLine1": "Inizia un'esperienza gratificante con il nostro Loyalty Dashboard!",
       "introLine2": "Inizia il tuo percorso aggiungendo facilmente un Pass Type ID e avviando il tuo programma fedeltà personalizzato.",
@@ -1497,7 +1497,7 @@
       "viewButton": "Visualizza",
       "editButton": "Modifica",
       "deleteButton": "Elimina",
-      "totalCustomers": "Total customers"
+      "totalCustomers": "Clienti totali"
     },
     "offers": {
       "title": "Offerte",
@@ -1635,7 +1635,7 @@
   "verification": {
     "title": "Emittenti",
     "scanners": {
-      "title": "Scanners",
+      "title": "Scanner",
       "pages": {
         "list": "Elenco",
         "new": "Nuovo scanner",
@@ -2144,7 +2144,7 @@
     },
     "platformSelect": {
       "allPlatforms": "Tutte le Piattaforme",
-      "eposnow": "EposNow",
+      "eposnow": "EPOSNow",
       "shopify": "Shopify"
     },
     "dataTools": {
@@ -2523,7 +2523,7 @@
       "update": "Aggiorna",
       "platform": {
         "all": "Tutti",
-        "eposnow": "EposNow",
+        "eposnow": "EPOSNow",
         "shopify": "Shopify",
         "wordpress": "WordPress"
       },

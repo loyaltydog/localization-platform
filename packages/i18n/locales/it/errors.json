@@ -323,7 +323,7 @@
     "upgradeInProgress": "L'aggiornamento del tuo piano è in corso. Attendi...",
     "cancelationPending": "Il tuo abbonamento verrà cancellato il {{effectiveDate}}"
   },
-  "invalidSession": "Your session is invalid or has expired. Please launch the application again from your EPOS Now terminal.",
+  "invalidSession": "La tua sessione è scaduta o non valida. Avvia l'applicazione di nuovo dal tuo terminale EPOS Now.",
   "wordpress": {
     "sessionExpired": "Attivazione non riuscita — sessione scaduta. Prova di nuovo.",
     "activationFailed": "Qualcosa è andato storto durante l'attivazione. Prova di nuovo o contatta il supporto.",
