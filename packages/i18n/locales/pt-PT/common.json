@@ -788,7 +788,7 @@
           "vouchers": "Vouchers",
           "programs": "Programas",
           "orders": "Encomendas",
-          "eposnow": "Eposnow",
+          "eposnow": "EposNow",
           "webhooks": "Webhooks",
           "customers": "Clientes",
           "shopifies": "Shopifies",
@@ -1349,7 +1349,7 @@
       "sendPushNotifications": "Enviar notificações push",
       "editButtonTitle": "Editar",
       "pushButtonTitle": "Push",
-      "deleteButton": "Delete"
+      "deleteButton": "Eliminar"
     },
     "push": {
       "message1": "Push Message 1",
@@ -1431,7 +1431,7 @@
       "allCustomers": "Todos os clientes",
       "welcomePrefix": "Bem-vindo ao",
       "welcomeHighlight": "Fidelização",
-      "welcomeSuffix": "Dashboard!",
+      "welcomeSuffix": "Painel de Controlo!",
       "introLine1": "Embarque numa experiência gratificante com o nosso Dashboard de Fidelização!",
       "introLine2": "Inicie a sua jornada adicionando facilmente um ID de Tipo de Passe e impulsionando o seu programa de fidelização personalizado.",
       "introLine3": "Descubra a simplicidade de começar e aproveite benefícios exclusivos personalizados para si."
@@ -1477,7 +1477,7 @@
       "submitButton": "Submeter",
       "pleaseWait": "Aguarde...",
       "cancelButton": "Cancelar",
-      "searchPlaceholder": "Email / Phone / Card ID / Last Name",
+      "searchPlaceholder": "Email / Telefone / ID do Cartão / Apelido",
       "tableHeaderCustomer": "Cliente",
       "tableHeaderEmail": "E-mail",
       "tableHeaderMobileNumber": "Número de telemóvel",
@@ -1925,7 +1925,7 @@
         "companyName": "Nome da Empresa",
         "companyNameHelper": "Nome legal da sua empresa",
         "address": "Morada",
-        "website": "Website",
+        "website": "Site",
         "email": "E-mail",
         "phone": "Telefone",
         "termsConditions": "Termos e Condições",
@@ -1953,7 +1953,7 @@
       "companyName": "Nome da Empresa",
       "companyNameHelper": "Nome legal da sua empresa",
       "address": "Morada",
-      "website": "Website",
+      "website": "Site",
       "email": "E-mail",
       "phone": "Telefone",
       "termsConditions": "Termos e Condições",
@@ -3336,7 +3336,7 @@
         "pointsBeforePurchase": "Pontos Antes da Compra",
         "rewardsRedeemed": "Prémios Resgatados",
         "noOrders": "Não tem nenhuma encomenda qualificada.",
-        "quantity": "Qty",
+        "quantity": "Qtd",
         "notAvailable": "N/A"
       }
     },
@@ -3540,7 +3540,7 @@
   },
   "account": {
     "overview": {
-      "appKeys": "App Keys",
+      "appKeys": "Chaves de Aplicação",
       "empty": "(vazio)",
       "passTemplates": "Modelos de Pass",
       "passes": "Passes",

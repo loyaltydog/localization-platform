@@ -788,10 +788,10 @@
           "vouchers": "Vales",
           "programs": "Programas",
           "orders": "Pedidos",
-          "eposnow": "Eposnow",
+          "eposnow": "EPOSNow",
           "webhooks": "Webhooks",
           "customers": "Clientes",
-          "shopifies": "Shopifies",
+          "shopifies": "Shopify",
           "templates": "Plantillas",
           "offers": "Ofertas",
           "clovers": "Clovers"
@@ -1349,7 +1349,7 @@
       "sendPushNotifications": "Enviar notificaciones push",
       "editButtonTitle": "Editar",
       "pushButtonTitle": "Push",
-      "deleteButton": "Delete"
+      "deleteButton": "Eliminar"
     },
     "push": {
       "message1": "Push Message 1",
@@ -2056,7 +2056,7 @@
       "tabs": {
         "appearance": "Apariencia",
         "location": "Ubicación",
-        "beacons": "Beacons",
+        "beacons": "Balizas",
         "apps": "Aplicaciones",
         "stampsGenerator": "Generador de Sellos"
       },
@@ -2134,7 +2134,7 @@
     },
     "platformSelect": {
       "allPlatforms": "Todas las Plataformas",
-      "eposnow": "EposNow",
+      "eposnow": "EPOSNow",
       "shopify": "Shopify"
     },
     "dataTools": {
@@ -2513,7 +2513,7 @@
       "update": "Actualizar",
       "platform": {
         "all": "Todas las plataformas",
-        "eposnow": "EposNow",
+        "eposnow": "EPOSNow",
         "shopify": "Shopify",
         "wordpress": "WordPress"
       },

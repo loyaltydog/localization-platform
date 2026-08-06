@@ -81,7 +81,7 @@
     "footer": "I vostri punti sono preziosi: non sprecateli!"
   },
   "pointsExpiring": {
-    "subject": "{{points}} points expiring soon!",
+    "subject": "{{points}} punti scadono presto!",
     "greeting": "Ciao {{memberName}},",
     "currentBalance": "Bilancio attuale: punti {{balance}}",
     "cta": "Utilizzate i vostri punti",

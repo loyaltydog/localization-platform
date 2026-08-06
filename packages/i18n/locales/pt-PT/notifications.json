@@ -22,9 +22,9 @@
   "sms": {
     "welcome": "Bem-vindo ao {{merchantName}}! Aderiu ao nosso programa de fidelização. Comece a ganhar pontos hoje mesmo!",
     "pointsEarned": "Ganhou {{points}} pontos em {{merchantName}}! Saldo: {{balance}} pts",
-    "rewardReady": "{{memberName}}, your reward is ready! {{rewardName}} - show this at checkout",
+    "rewardReady": "{{memberName}}, a sua recompensa está pronta! {{rewardName}} - mostre isto na caixa",
     "rewardExpiring": "Não se esqueça! A sua {{rewardName}} expira {{expiryDate}}. Visite {{merchantName}} em breve!",
-    "birthdayReward": "Happy Birthday {{memberName}}! {{merchantName}} has a gift for you. Check your rewards!",
+    "birthdayReward": "Feliz Aniversário {{memberName}}! {{merchantName}} tem um presente para si. Veja as suas recompensas!",
     "tierUpgrade": "Parabéns {{memberName}}! Agora és {{tierName}} na {{merchantName}}. Desfruta dos teus novos benefícios!",
     "pointsExpiring": "{{points}} pontos que expiram {{expiryDate}} em {{merchantName}}. Utilize-os antes que desapareçam!",
     "inactivityReminder": "Sentimos a tua falta {{memberName}}! Tens {{points}} pontos em {{merchantName}}. Vem visitar-nos!",
@@ -50,7 +50,7 @@
     },
     "birthdayReward": {
       "title": "Feliz aniversário!",
-      "body": "{{merchantName}} has a special gift for you"
+      "body": "{{merchantName}} tem um presente especial para si"
     },
     "tierUpgrade": {
       "title": "Subir de nível!",
@@ -84,7 +84,7 @@
   "inApp": {
     "welcome": "Bem-vindo! Comece a ganhar pontos em cada compra.",
     "pointsEarned": "+{{points}} pontos ganhos",
-    "rewardRedeemed": "{{rewardName}} redeemed successfully",
+    "rewardRedeemed": "{{rewardName}} resgatado com sucesso",
     "tierUpgrade": "Alcançou o estatuto de {{tierName}}!",
     "newRewardUnlocked": "Nova recompensa desbloqueada: {{rewardName}}",
     "goalProgress": "{{progress}}% para a tua próxima recompensa"
@@ -118,7 +118,7 @@
   "memberParticipation": "Participação dos membros",
   "totalRevenue": "Receitas totais",
   "dateRangeTx": "{count} tx",
-  "oopsError": "Ooops!",
+  "oopsError": "Oops!",
   "updatedSuccessfully": "Atualizado com sucesso",
   "messageHasBeenSent": "A mensagem foi enviada!",
   "loadingPleaseWait": "A carregar, por favor aguarde...",

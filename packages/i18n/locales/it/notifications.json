@@ -83,7 +83,7 @@
   },
   "inApp": {
     "welcome": "Benvenuti! Iniziate ad accumulare punti ad ogni acquisto.",
-    "pointsEarned": "+{{points}} points earned",
+    "pointsEarned": "+{{points}} punti guadagnati",
     "rewardRedeemed": "{{rewardName}} riscattato con successo",
     "tierUpgrade": "Hai raggiunto lo status di {{tierName}}!",
     "newRewardUnlocked": "Nuova ricompensa sbloccata: {{rewardName}}",
@@ -118,7 +118,7 @@
   "memberParticipation": "Partecipazione dei membri",
   "totalRevenue": "Ricavi totali",
   "dateRangeTx": "{count} tx",
-  "oopsError": "Ooops!",
+  "oopsError": "Oops!",
   "updatedSuccessfully": "Aggiornato con successo",
   "messageHasBeenSent": "Il messaggio è stato inviato!",
   "loadingPleaseWait": "Caricamento, attendere prego...",

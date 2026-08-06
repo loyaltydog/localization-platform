@@ -382,7 +382,7 @@
     "topUpButton": "Recharger une carte cadeau — {{currency}}{{amount}}",
     "preview": "Aperçu de la carte cadeau",
     "previewStatus": "Statut",
-    "previewStatusActive": "Active",
+    "previewStatusActive": "Actif",
     "previewDelivery": "Livraison",
     "previewExpires": "Expire le",
     "previewMessage": "Message",
@@ -572,7 +572,7 @@
     "giftCardUser": "Utilisateur carte cadeau"
   },
   "status": {
-    "active": "Active",
+    "active": "Actif",
     "pending": "En attente",
     "depleted": "Épuisée",
     "expired": "Expirée",

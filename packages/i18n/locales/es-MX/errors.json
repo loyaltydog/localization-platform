@@ -109,7 +109,7 @@
     "cardAlreadyLinked": "Esta tarjeta ya está vinculada a otra cuenta.",
     "enrollmentFailed": "No se ha podido inscribir al usuario. Por favor, inténtelo de nuevo.",
     "rewardExpired": "Esta recompensa ha expirado y ya no está disponible.",
-    "rewardAlreadyRedeemed": "Já resgatou esta recompensa.",
+    "rewardAlreadyRedeemed": "Ya has canjeado esta recompensa.",
     "tierDowngraded": "Se ha descrito tu nivel. Sigue ganando puntos para mantener tu nivel."
   },
   "reward": {
@@ -323,7 +323,7 @@
     "upgradeInProgress": "Su actualización de plan está en progreso. Por favor espere...",
     "cancelationPending": "Su suscripción se cancelará el {{effectiveDate}}"
   },
-  "invalidSession": "Your session is invalid or has expired. Please launch the application again from your EPOS Now terminal.",
+  "invalidSession": "Tu sesión es inválida o ha caducado. Por favor, lanza la aplicación nuevamente desde tu terminal EPOS Now.",
   "wordpress": {
     "sessionExpired": "Activación fallida — sesión expirada. Por favor, intenta de nuevo.",
     "activationFailed": "Algo salió mal durante la activación. Por favor, intenta de nuevo o contacta a soporte.",
