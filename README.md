@@ -22,20 +22,21 @@ This repository contains the shared localization infrastructure used across all 
 ┌─────────────────────────────────────────────────────────────────┐
 │                   @loyaltydog/i18n (Shared Package)              │
 │  ┌──────────────────────────────────────────────────────────┐  │
-│  │  /locales                                                 │  │
-│  │    /en_US         # Source of truth (English - United States) │  │
-│  │    /en_GB         # English - United Kingdom (Target)         │  │
-│  │    /es_ES         # Spanish - Spain                          │  │
-│  │    /es_MX         # Spanish - Mexico                          │  │
-│  │    /fr            # French                                   │  │
-│  │    /it            # Italian                                  │  │
-│  │    /pt_BR         # Portuguese - Brazil                       │  │
-│  │    /pt_PT         # Portuguese - Portugal                     │  │
+│  │  /locales        # 11 namespaces × 5,049 keys per locale   │  │
+│  │    /en-US        # Source of truth (English - United States)│  │
+│  │    /en-GB        # English - United Kingdom                │  │
+│  │    /es-ES        # Spanish - Spain                         │  │
+│  │    /es-MX        # Spanish - Mexico                        │  │
+│  │    /fr           # French                                  │  │
+│  │    /it           # Italian                                 │  │
+│  │    /pt-BR        # Portuguese - Brazil                     │  │
+│  │    /pt-PT        # Portuguese - Portugal                   │  │
 │  │                                                          │  │
 │  │  /src                                                     │  │
 │  │    /react/     # i18next integration                      │  │
 │  │    /node/      # Python/FastAPI loader                    │  │
 │  │    /rtl/       # RTL hooks for future                     │  │
+│  │    /__tests__/ # Key parity + placeholder integrity        │  │
 │  └──────────────────────────────────────────────────────────┘  │
 └─────────────────────────────────────────────────────────────────┘
          │                      │                      │
@@ -59,18 +60,31 @@ This repository contains the shared localization infrastructure used across all 
 
 ## Target Languages
 
-| Language | Code | Status | Notes |
-|----------|------|--------|-------|
-| **English (US)** | `en_US` | ✅ Complete | Base language, source of truth |
-| **English (GB)** | `en_GB` | ✅ Complete | Ready for British spelling review |
-| **Spanish (Spain)** | `es_ES` | ✅ Complete | AI translated |
-| **Spanish (Mexico)** | `es_MX` | ✅ Complete | AI translated |
-| **French** | `fr` | ✅ Complete | AI translated (99%+) |
-| **Italian** | `it` | ✅ Complete | AI translated (99%+) |
-| **Portuguese (Brazil)** | `pt_BR` | ✅ Complete | AI translated |
-| **Portuguese (Portugal)** | `pt_PT` | ✅ Complete | AI translated |
+Locale directory names use the hyphenated codes below — these are the exact
+strings `SUPPORTED_LANGUAGES` exports and the only ones the loaders resolve.
 
-**Total:** 1,063 translation keys per language across 5 namespaces (common, errors, emails, notifications, validation).
+| Language | Code | Notes |
+|----------|------|-------|
+| **English (US)** | `en-US` | Source of truth. **US spellings only** — British forms belong in `en-GB` |
+| **English (GB)** | `en-GB` | British spellings (programme, colour, authorise) |
+| **Spanish (Spain)** | `es-ES` | AI translated |
+| **Spanish (Mexico)** | `es-MX` | AI translated |
+| **French** | `fr` | AI translated |
+| **Italian** | `it` | AI translated |
+| **Portuguese (Brazil)** | `pt-BR` | AI translated |
+| **Portuguese (Portugal)** | `pt-PT` | AI translated |
+
+**Total:** 5,049 keys per locale across 11 namespaces — every locale carries
+the identical key set, enforced by the test suite.
+
+| Namespace | Keys | | Namespace | Keys |
+|---|---:|---|---|---:|
+| `common` | 2,850 | | `notifications` | 103 |
+| `wordpress` | 618 | | `clover` | 35 |
+| `giftCards` | 536 | | `marketing` | 32 |
+| `emails` | 409 | | `shopify` | 23 |
+| `errors` | 284 | | `eposnow` | 18 |
+| `validation` | 141 | | | |
 
 ## Project Links
 
@@ -82,11 +96,11 @@ This repository contains the shared localization infrastructure used across all 
 
 ### Initial Release Strategy
 
-**Important:** All platforms should release with **English (en_US) only** initially, but implement the localization mechanism from day one. This means:
+**Important:** All platforms should release with **English (en-US) only** initially, but implement the localization mechanism from day one. This means:
 
 1. ✅ Install and configure `@loyaltydog/i18n` package
 2. ✅ Replace hardcoded strings with translation function calls
-3. ✅ Use en_US as the default language
+3. ✅ Use en-US as the default language
 4. ⏸️ Do NOT expose language selector UI yet
 5. ⏸️ Do NOT support multiple languages in production yet
 
@@ -96,10 +110,23 @@ This repository contains the shared localization infrastructure used across all 
 
 ### Installation
 
-```bash
-# Install the shared i18n package
-npm install @loyaltydog/i18n@latest
+`@loyaltydog/i18n` is **not published to npm** — `npm install @loyaltydog/i18n`
+will 404. Consume it from a local path or a git dependency:
+
+```jsonc
+// package.json
+{
+  "dependencies": {
+    // monorepo / sibling checkout
+    "@loyaltydog/i18n": "file:../localization-platform/packages/i18n"
+    // or straight from git
+    // "@loyaltydog/i18n": "github:loyaltydog/localization-platform#main"
+  }
+}
 ```
+
+The Python loader is likewise unpublished — vendor `src/node/translation_loader.py`
+into the consuming service, or add `packages/i18n/src/node` to `PYTHONPATH`.
 
 ### Frontend Integration (React)
 
@@ -111,11 +138,11 @@ For React-based platforms (Core API Dashboard, EPOSNow, Square, Shopify, Clover)
 // src/i18n.ts or similar entry point
 import { initI18n } from '@loyaltydog/i18n/react';
 
-// Initialize with default language (en_US)
+// Initialize with default language (en-US)
 initI18n({
   // Override default config if needed
   detection: {
-    // For initial release, only support en_US
+    // For initial release, only support en-US
     lookupLocalStorage: 'loyaltydog_language',
     caches: ['localStorage'],
   },
@@ -188,7 +215,7 @@ translator = TranslationLoader()
 ```python
 # Get translation for a specific language
 subject = translator.translate(
-    language='en_US',  # or 'es_ES', 'fr', etc.
+    language='en-US',  # or 'es-ES', 'fr', etc.
     namespace='emails',
     key='welcome.subject',
     merchantName='Acme Store'
@@ -205,7 +232,7 @@ from fastapi import HTTPException
 from pydantic import BaseModel
 
 class LanguageUpdate(BaseModel):
-    language: str  # e.g., 'en_US', 'es_ES', 'fr'
+    language: str  # e.g., 'en-US', 'es-ES', 'fr'
 
 @router.put("/merchants/{merchant_id}/language")
 async def update_merchant_language(merchant_id: str, data: LanguageUpdate):
@@ -234,8 +261,8 @@ def send_welcome_email(member_email: str, member_name: str, merchant_name: str):
 
     # Get member's preferred language from database
     # member = db.query(Member).filter_by(email=member_email).first()
-    # language = member.language_preference or 'en_US'
-    language = 'en_US'  # Default for initial release
+    # language = member.language_preference or 'en-US'
+    language = 'en-US'  # Default for initial release
 
     subject = translator.translate(
         language, 'emails', 'welcome.subject',
@@ -271,7 +298,7 @@ curl -X PUT "https://api.loyalty.dog/v2/merchants/{merchant_id}/language" \
   -H "Authorization: Bearer {api_token}" \
   -H "Content-Type: application/json" \
   -d '{
-    "language": "es_ES"
+    "language": "es-ES"
   }'
 ```
 
@@ -279,25 +306,25 @@ curl -X PUT "https://api.loyalty.dog/v2/merchants/{merchant_id}/language" \
 
 ```sql
 UPDATE merchants
-SET language_preference = 'es_ES'
+SET language_preference = 'es-ES'
 WHERE id = '{merchant_id}';
 ```
 
 **Supported Language Codes:**
-- `en_US` - English (United States) - **Default**
-- `en_GB` - English (United Kingdom)
-- `es_ES` - Spanish (Spain)
-- `es_MX` - Spanish (Mexico)
+- `en-US` - English (United States) - **Default**
+- `en-GB` - English (United Kingdom)
+- `es-ES` - Spanish (Spain)
+- `es-MX` - Spanish (Mexico)
 - `fr` - French
 - `it` - Italian
-- `pt_BR` - Portuguese (Brazil)
-- `pt_PT` - Portuguese (Portugal)
+- `pt-BR` - Portuguese (Brazil)
+- `pt-PT` - Portuguese (Portugal)
 
 ### Language Fallback Behavior
 
 If a translation is missing for the merchant's preferred language, the system automatically falls back to:
-1. Base language variant (e.g., `es_MX` → `es`)
-2. English (en_US) as final fallback
+1. Base language variant (e.g., `es-MX` → `es`)
+2. English (en-US) as final fallback
 
 This ensures that users always see some text, never blank placeholders.
 
@@ -309,29 +336,30 @@ This ensures that users always see some text, never blank placeholders.
 localization-platform/
 ├── README.md                  # This file
 ├── CLAUDE.md                  # Project context for AI agents
-├── docs/
-│   ├── architecture.md        # Technical architecture decisions
-│   ├── epics/                 # Epic breakdown
-│   │   └── localization-epic.md
-│   └── sprints/               # Sprint planning
-│       └── sprint-plan.md
+├── docs/                      # Untracked (see .gitignore) — local notes only
 ├── packages/
 │   └── i18n/
 │       ├── package.json
 │       ├── locales/
-│       │   ├── en_US/         # English - United States (source)
-│       │   │   ├── common.json      # 372 keys - UI strings
-│       │   │   ├── errors.json      # 176 keys - Error messages
-│       │   │   ├── emails.json      # 292 keys - Email templates
-│       │   │   ├── notifications.json # 82 keys - SMS/Push
-│       │   │   └── validation.json  # 141 keys - Form validation
-│       │   ├── en_GB/         # English - United Kingdom
-│       │   ├── es_ES/         # Spanish - Spain
-│       │   ├── es_MX/         # Spanish - Mexico
+│       │   ├── en-US/         # English - United States (source of truth)
+│       │   │   ├── common.json        # 2,850 keys - dashboard UI
+│       │   │   ├── wordpress.json     #   618 keys - WP/WooCommerce plugin
+│       │   │   ├── giftCards.json     #   536 keys - gift card flows
+│       │   │   ├── emails.json        #   409 keys - email templates
+│       │   │   ├── errors.json        #   284 keys - error messages
+│       │   │   ├── validation.json    #   141 keys - form validation
+│       │   │   ├── notifications.json #   103 keys - SMS/push
+│       │   │   ├── clover.json        #    35 keys - Clover integration
+│       │   │   ├── marketing.json     #    32 keys - landing copy
+│       │   │   ├── shopify.json       #    23 keys - Shopify integration
+│       │   │   └── eposnow.json       #    18 keys - EPOSNow integration
+│       │   ├── en-GB/         # English - United Kingdom
+│       │   ├── es-ES/         # Spanish - Spain
+│       │   ├── es-MX/         # Spanish - Mexico
 │       │   ├── fr/            # French
 │       │   ├── it/            # Italian
-│       │   ├── pt_BR/         # Portuguese - Brazil
-│       │   └── pt_PT/         # Portuguese - Portugal
+│       │   ├── pt-BR/         # Portuguese - Brazil
+│       │   └── pt-PT/         # Portuguese - Portugal
 │       └── src/
 │           ├── react/         # i18next integration
 │           ├── node/          # Python/FastAPI loader
@@ -379,7 +407,7 @@ function Dashboard() {
 from loyaltydog_i18n import TranslationLoader
 
 translator = TranslationLoader()
-subject = translator.translate('es_ES', 'emails', 'welcome.subject',
+subject = translator.translate('es-ES', 'emails', 'welcome.subject',
                                merchantName="Mi Tienda")
 ```
 
@@ -476,10 +504,15 @@ There is no translation sync workflow. Locale files change only through pull req
 
 ## Contributing
 
-See `docs/contributing.md` for guidelines on:
-- Adding new translation keys
-- Adding new languages
-- Translation quality and placeholder conventions
+Everything you need is in this file — there is no separate contributing guide:
+
+- **Adding translation keys** — see [Adding New Translation Keys](#adding-new-translation-keys)
+- **Placeholder conventions** — always `{{double}}`, never `{single}`; never add,
+  drop, or rename a variable in a translation
+- **Spelling** — `en-US` takes US spellings only; British forms belong in `en-GB`
+- **Adding a language** — create `locales/<code>/` with all 11 namespaces, add the
+  code to `SUPPORTED_LANGUAGES` in `src/index.js` and to `ALL_LANGUAGES` in
+  `src/__tests__/all-languages.test.js`, then make the suite pass
 
 ## License
 
