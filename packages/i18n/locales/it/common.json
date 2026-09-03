@@ -5,7 +5,7 @@
       "passes": "Tessere",
       "passTypeIds": "ID tipo di tessera",
       "passTypeIdsHelper": "Per uso in produzione, si consiglia vivamente di utilizzare il tuo ID tipo di tessera. Hai bisogno di un Account Sviluppatore iOS.",
-      "appKeys": "Chiavi dell'applicazione",
+      "appKeys": "Chiavi API",
       "empty": "(vuoto)"
     }
   },
@@ -35,7 +35,7 @@
     "overview": "Panoramica",
     "templates": "Modelli",
     "passes": "Pass",
-    "appKeys": "Chiavi dell'applicazione",
+    "appKeys": "Chiavi API",
     "passTypeIds": "ID tipo di pass",
     "verification": "Verifica",
     "webhooks": "Webhook",
@@ -1062,9 +1062,9 @@
     },
     "user": {
       "appKeys": {
-        "title": "Title",
+        "title": "Chiavi API",
         "pages": {
-          "list": "Elenco",
+          "list": "Chiavi API",
           "new": "New",
           "edit": "Edit"
         },
@@ -1382,7 +1382,7 @@
         "passes": "Passaggi",
         "passTypeIds": "ID tipo di passaggio",
         "passTypeIdsHelper": "Per l'uso in produzione, ti consigliamo vivamente di utilizzare il tuo ID tipo tessera. Hai bisogno di un account sviluppatore iOS.",
-        "appKeys": "Chiavi app",
+        "appKeys": "Chiavi API",
         "empty": "Vuoto"
       }
     }
@@ -1868,7 +1868,7 @@
   },
   "appkeys": {
     "page": {
-      "metaTitle": "Chiavi App"
+      "metaTitle": "Chiavi API"
     },
     "wordpressSites": {
       "heading": "Siti WordPress Collegati",

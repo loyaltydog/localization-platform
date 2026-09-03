@@ -25,7 +25,7 @@
     "overview": "Visão geral",
     "templates": "Modelos",
     "passes": "Passes",
-    "appKeys": "Chaves da aplicação",
+    "appKeys": "Chaves de API",
     "passTypeIds": "IDs de tipo de passe",
     "verification": "Verificação",
     "webhooks": "Webhooks",
@@ -1052,9 +1052,9 @@
     },
     "user": {
       "appKeys": {
-        "title": "Title",
+        "title": "Chaves de API",
         "pages": {
-          "list": "Chaves de Aplicação",
+          "list": "Chaves de API",
           "new": "New",
           "edit": "Edit"
         },
@@ -1372,7 +1372,7 @@
         "passes": "Passes",
         "passTypeIds": "IDs de Tipo de Passe",
         "passTypeIdsHelper": "Para uso em produção, recomenda-se vivamente que utilize o seu próprio ID de tipo de passe. Precisa de uma conta de programador iOS.",
-        "appKeys": "Chaves de Aplicação",
+        "appKeys": "Chaves de API",
         "empty": "(vazio)"
       }
     }
@@ -1858,7 +1858,7 @@
   },
   "appkeys": {
     "page": {
-      "metaTitle": "Chaves de Aplicação"
+      "metaTitle": "Chaves de API"
     },
     "wordpressSites": {
       "heading": "Sites WordPress Ligados",
@@ -3540,7 +3540,7 @@
   },
   "account": {
     "overview": {
-      "appKeys": "Chaves de Aplicação",
+      "appKeys": "Chaves de API",
       "empty": "(vazio)",
       "passTemplates": "Modelos de Pass",
       "passes": "Passes",

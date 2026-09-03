@@ -25,7 +25,7 @@
     "overview": "Vista general",
     "templates": "Plantillas",
     "passes": "Pases",
-    "appKeys": "Claves de aplicación",
+    "appKeys": "Claves de API",
     "passTypeIds": "IDs de tipo de pase",
     "verification": "Verificación",
     "webhooks": "Webhooks",
@@ -1052,9 +1052,9 @@
     },
     "user": {
       "appKeys": {
-        "title": "Title",
+        "title": "Claves de API",
         "pages": {
-          "list": "Lista de claves de aplicación",
+          "list": "Claves de API",
           "new": "New",
           "edit": "Edit"
         },
@@ -1372,7 +1372,7 @@
         "passes": "Pases",
         "passTypeIds": "IDs de tipo de pase",
         "passTypeIdsHelper": "Ayuda de IDs de tipo de pase",
-        "appKeys": "Claves de aplicación",
+        "appKeys": "Claves de API",
         "empty": "Vacío"
       }
     }
@@ -1858,7 +1858,7 @@
   },
   "appkeys": {
     "page": {
-      "metaTitle": "Claves de Aplicación"
+      "metaTitle": "Claves de API"
     },
     "wordpressSites": {
       "heading": "Sitios de WordPress Conectados",
@@ -3540,7 +3540,7 @@
   },
   "account": {
     "overview": {
-      "appKeys": "Claves de aplicación",
+      "appKeys": "Claves de API",
       "empty": "(vacío)",
       "passTemplates": "Plantillas de pase",
       "passTypeIds": "ID de tipo de pase",
