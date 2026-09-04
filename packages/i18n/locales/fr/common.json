@@ -25,7 +25,7 @@
     "overview": "Aperçu",
     "templates": "Modèles",
     "passes": "Cartes",
-    "appKeys": "Clés d'application",
+    "appKeys": "Clés API",
     "passTypeIds": "IDs de type de carte",
     "verification": "Vérification",
     "webhooks": "Webhooks",
@@ -1052,9 +1052,9 @@
     },
     "user": {
       "appKeys": {
-        "title": "Title",
+        "title": "Clés API",
         "pages": {
-          "list": "Clés de l'application",
+          "list": "Clés API",
           "new": "New",
           "edit": "Edit"
         },
@@ -1372,7 +1372,7 @@
         "passes": "Passages",
         "passTypeIds": "ID de type de passage",
         "passTypeIdsHelper": "Pour un usage en production, vous êtes fortement encouragé à utiliser votre propre ID de type de passage. Vous avez besoin d'un compte développeur iOS.",
-        "appKeys": "Clés de l'application",
+        "appKeys": "Clés API",
         "empty": "(vide)"
       }
     }
@@ -1858,7 +1858,7 @@
   },
   "appkeys": {
     "page": {
-      "metaTitle": "Clés d'Application"
+      "metaTitle": "Clés API"
     },
     "wordpressSites": {
       "heading": "Sites WordPress Connectés",
@@ -3540,7 +3540,7 @@
   },
   "account": {
     "overview": {
-      "appKeys": "Clés d'application",
+      "appKeys": "Clés API",
       "empty": "(vide)",
       "passTemplates": "Modèles de carte",
       "passTypeIds": "ID de type de carte",

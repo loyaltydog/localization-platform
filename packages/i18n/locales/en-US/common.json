@@ -5,7 +5,7 @@
       "passes": "Passes",
       "passTypeIds": "Pass Type IDs",
       "passTypeIdsHelper": "For production use, you are strongly encouraged to use your own Pass Type ID. You need an iOS Developer Account.",
-      "appKeys": "App Keys",
+      "appKeys": "API Keys",
       "empty": "(empty)"
     }
   },
@@ -35,7 +35,7 @@
     "overview": "Overview",
     "templates": "Templates",
     "passes": "Passes",
-    "appKeys": "App Keys",
+    "appKeys": "API Keys",
     "passTypeIds": "Pass Type IDs",
     "verification": "Verification",
     "webhooks": "Webhooks",
@@ -1062,9 +1062,9 @@
     },
     "user": {
       "appKeys": {
-        "title": "App Keys",
+        "title": "API Keys",
         "pages": {
-          "list": "App Keys",
+          "list": "API Keys",
           "new": "New App Key",
           "edit": "Edit App Key"
         },
@@ -1382,7 +1382,7 @@
         "passes": "Passes",
         "passTypeIds": "Pass Type IDs",
         "passTypeIdsHelper": "For production use, you are strongly encouraged to use your own Pass Type ID. You need an iOS Developer Account.",
-        "appKeys": "App Keys",
+        "appKeys": "API Keys",
         "empty": "(empty)"
       }
     }
@@ -1868,7 +1868,7 @@
   },
   "appkeys": {
     "page": {
-      "metaTitle": "App Keys"
+      "metaTitle": "API Keys"
     },
     "wordpressSites": {
       "heading": "Connected WordPress Sites",
