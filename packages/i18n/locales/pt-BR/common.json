@@ -1497,7 +1497,15 @@
       "viewButton": "Ver",
       "editButton": "Editar",
       "deleteButton": "Excluir",
-      "totalCustomers": "Total de clientes"
+      "totalCustomers": "Total de clientes",
+      "deleteResendHintBefore": "Se o cliente perdeu o passe, use",
+      "deleteResendHintAfter": "em vez de excluir. A exclusão remove os pontos e o histórico de compras e bloqueia este e-mail/número de novo cadastro por 30 dias.",
+      "deleteSelectReason": "Selecione um motivo:",
+      "deleteReasonErasure": "O cliente solicitou a exclusão",
+      "deleteReasonOperational": "Outro / manutenção",
+      "deleteErasureNoteBefore": "Registrado como uma solicitação de exclusão sob a LGPD — este cliente",
+      "deleteErasureNoteEmphasis": "não pode ser restaurado",
+      "deleteErasureNoteAfter": "depois disso."
     },
     "offers": {
       "title": "Ofertas",
@@ -2693,7 +2701,30 @@
         "passCard": "Cartão de Passe",
         "checkNewOffers": "Verificar Novas Ofertas",
         "update": "Atualizar",
-        "delete": "Excluir"
+        "delete": "Excluir",
+        "resend": "Reenviar Passe",
+        "reinstate": "Restaurar",
+        "deletePermanently": "Excluir permanentemente"
+      },
+      "trash": {
+        "banner": "Este cliente está na Lixeira.",
+        "willDeleteOnPrefix": "Ele será excluído permanentemente em",
+        "willDeleteAfterRetention": "Ele será excluído permanentemente após o período de retenção.",
+        "erasedNote": "Excluído a pedido do cliente (apagamento sob a LGPD) — não pode ser restaurado. Você pode excluí-lo permanentemente agora.",
+        "reasonUnknownNote": "Este registro é anterior aos motivos de exclusão. Confirme que não foi uma solicitação de exclusão do cliente antes de restaurar.",
+        "reinstatableNote": "Restaure-o para torná-lo ativo novamente, ou exclua-o permanentemente agora para que o cliente possa se cadastrar novamente."
+      },
+      "confirm": {
+        "reinstateConfirm": "Restaurar este cliente?",
+        "reinstateMessage": "O passe da carteira é recriado (o link de compartilhamento existente continua funcionando) e o histórico de fidelidade é restaurado.",
+        "reinstateMessageUnknownReason": "Este registro é anterior aos motivos de exclusão. Confirme que NÃO foi uma solicitação de exclusão do cliente antes de restaurar. O passe da carteira é recriado e o link de compartilhamento existente continua funcionando.",
+        "reinstateSuccess": "Cliente restaurado.",
+        "purgeConfirm": "Excluir este cliente permanentemente?",
+        "purgeMessage": "Isso não pode ser desfeito. Remove o registro agora (ignorando o período de retenção) e libera o e-mail/telefone para que possa se cadastrar novamente.",
+        "purgeSuccess": "Cliente excluído permanentemente.",
+        "resendConfirm": "Reenviar o passe deste cliente?",
+        "resendMessage": "Envia o passe para os dados de contato já registrados. Use isto em vez de excluir o cliente quando ele tiver perdido o passe.",
+        "resendSuccess": "Passe reenviado."
       },
       "availableOffers": {
         "heading": "Ofertas Disponíveis",
