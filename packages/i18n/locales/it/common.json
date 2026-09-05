@@ -1497,7 +1497,15 @@
       "viewButton": "Visualizza",
       "editButton": "Modifica",
       "deleteButton": "Elimina",
-      "totalCustomers": "Clienti totali"
+      "totalCustomers": "Clienti totali",
+      "deleteResendHintBefore": "Se il cliente ha perso il suo pass, usa",
+      "deleteResendHintAfter": "anziché eliminarlo. L'eliminazione rimuove i suoi punti e la cronologia degli acquisti e impedisce a questa e-mail/numero di iscriversi di nuovo per 30 giorni.",
+      "deleteSelectReason": "Seleziona un motivo:",
+      "deleteReasonErasure": "Il cliente ha richiesto l'eliminazione",
+      "deleteReasonOperational": "Altro / manutenzione",
+      "deleteErasureNoteBefore": "Registrato come richiesta di cancellazione GDPR — questo cliente",
+      "deleteErasureNoteEmphasis": "non potrà essere ripristinato",
+      "deleteErasureNoteAfter": "in seguito."
     },
     "offers": {
       "title": "Offerte",
@@ -2693,7 +2701,30 @@
         "passCard": "Carta Pass",
         "checkNewOffers": "Controlla Nuove Offerte",
         "update": "Aggiorna",
-        "delete": "Elimina"
+        "delete": "Elimina",
+        "resend": "Reinvia pass",
+        "reinstate": "Ripristina",
+        "deletePermanently": "Elimina definitivamente"
+      },
+      "trash": {
+        "banner": "Questo cliente è nel Cestino.",
+        "willDeleteOnPrefix": "Verrà eliminato definitivamente il",
+        "willDeleteAfterRetention": "Verrà eliminato definitivamente al termine del periodo di conservazione.",
+        "erasedNote": "Eliminato su richiesta del cliente (cancellazione GDPR) — non può essere ripristinato. Puoi eliminarlo definitivamente ora.",
+        "reasonUnknownNote": "Questo record è precedente all'introduzione dei motivi di eliminazione. Conferma che non si trattava di una richiesta di cancellazione del cliente prima di ripristinarlo.",
+        "reinstatableNote": "Ripristinalo per renderlo di nuovo attivo, oppure eliminalo definitivamente ora così il cliente potrà iscriversi di nuovo."
+      },
+      "confirm": {
+        "reinstateConfirm": "Ripristinare questo cliente?",
+        "reinstateMessage": "Il suo pass del wallet viene ricreato (il link di condivisione esistente continua a funzionare) e la sua cronologia fedeltà viene ripristinata.",
+        "reinstateMessageUnknownReason": "Questo record è precedente all'introduzione dei motivi di eliminazione. Conferma che NON si trattava di una richiesta di cancellazione del cliente prima di ripristinarlo. Il suo pass del wallet viene ricreato e il link di condivisione esistente continua a funzionare.",
+        "reinstateSuccess": "Cliente ripristinato.",
+        "purgeConfirm": "Eliminare definitivamente questo cliente?",
+        "purgeMessage": "Questa azione non può essere annullata. Rimuove il record ora (saltando il periodo di conservazione) e libera la sua e-mail/telefono così potrà iscriversi di nuovo.",
+        "purgeSuccess": "Cliente eliminato definitivamente.",
+        "resendConfirm": "Reinviare il pass di questo cliente?",
+        "resendMessage": "Invia il pass ai recapiti già registrati. Usa questa opzione anziché eliminare il cliente quando ha perso il suo pass.",
+        "resendSuccess": "Pass reinviato."
       },
       "availableOffers": {
         "heading": "Offerte Disponibili",
