@@ -1497,7 +1497,15 @@
       "viewButton": "View",
       "editButton": "Edit",
       "deleteButton": "Delete",
-      "totalCustomers": "Total customers"
+      "totalCustomers": "Total customers",
+      "deleteResendHintBefore": "If the customer lost their pass, use",
+      "deleteResendHintAfter": "instead. Deleting removes their points and purchase history, and blocks this email/number from re-signup for 30 days.",
+      "deleteSelectReason": "Select a reason:",
+      "deleteReasonErasure": "Customer requested deletion",
+      "deleteReasonOperational": "Other / housekeeping",
+      "deleteErasureNoteBefore": "Recorded as a GDPR erasure request — this customer",
+      "deleteErasureNoteEmphasis": "cannot be reinstated",
+      "deleteErasureNoteAfter": "afterwards."
     },
     "offers": {
       "title": "Offers",
@@ -2693,7 +2701,30 @@
         "passCard": "Pass Card",
         "checkNewOffers": "Check New Offers",
         "update": "Update",
-        "delete": "Delete"
+        "delete": "Delete",
+        "resend": "Resend Pass",
+        "reinstate": "Reinstate",
+        "deletePermanently": "Delete permanently"
+      },
+      "trash": {
+        "banner": "This customer is in Trash.",
+        "willDeleteOnPrefix": "It will be permanently deleted on",
+        "willDeleteAfterRetention": "It will be permanently deleted after the retention period.",
+        "erasedNote": "Deleted at the customer's request (GDPR erasure) — it cannot be reinstated. You can permanently delete it now.",
+        "reasonUnknownNote": "This record predates deletion reasons. Confirm it was not a customer erasure request before reinstating.",
+        "reinstatableNote": "Reinstate it to make it active again, or permanently delete it now so the customer can re-join."
+      },
+      "confirm": {
+        "reinstateConfirm": "Reinstate this customer?",
+        "reinstateMessage": "Their wallet pass is recreated (the existing share link keeps working) and their loyalty history is restored.",
+        "reinstateMessageUnknownReason": "This record predates deletion reasons. Confirm it was NOT a customer erasure request before reinstating. Their wallet pass is recreated and the existing share link keeps working.",
+        "reinstateSuccess": "Customer reinstated.",
+        "purgeConfirm": "Permanently delete this customer?",
+        "purgeMessage": "This cannot be undone. It removes the record now (skipping the retention period) and frees their email/phone so they can re-join.",
+        "purgeSuccess": "Customer permanently deleted.",
+        "resendConfirm": "Re-send this customer's pass?",
+        "resendMessage": "Sends the pass to the contact details already on file. Use this instead of deleting the customer when they have lost their pass.",
+        "resendSuccess": "Pass re-sent."
       },
       "availableOffers": {
         "heading": "Available Offers",

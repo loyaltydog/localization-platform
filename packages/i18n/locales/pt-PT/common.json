@@ -1487,7 +1487,15 @@
       "viewButton": "Ver",
       "editButton": "Editar",
       "deleteButton": "Eliminar",
-      "totalCustomers": "Total de clientes"
+      "totalCustomers": "Total de clientes",
+      "deleteResendHintBefore": "Se o cliente perdeu o passe, utilize",
+      "deleteResendHintAfter": "em vez disso. Eliminar remove os pontos e o histórico de compras e bloqueia este e-mail/número de novo registo durante 30 dias.",
+      "deleteSelectReason": "Selecione um motivo:",
+      "deleteReasonErasure": "Cliente solicitou a eliminação",
+      "deleteReasonOperational": "Outro / manutenção",
+      "deleteErasureNoteBefore": "Registado como pedido de eliminação RGPD — este cliente",
+      "deleteErasureNoteEmphasis": "não pode ser restaurado",
+      "deleteErasureNoteAfter": "posteriormente."
     },
     "offers": {
       "title": "Ofertas",
@@ -2683,7 +2691,30 @@
         "passCard": "Cartão de Passe",
         "checkNewOffers": "Verificar Novas Ofertas",
         "update": "Atualizar",
-        "delete": "Eliminar"
+        "delete": "Eliminar",
+        "resend": "Reenviar passe",
+        "reinstate": "Restaurar",
+        "deletePermanently": "Eliminar permanentemente"
+      },
+      "trash": {
+        "banner": "Este cliente está no Lixo.",
+        "willDeleteOnPrefix": "Será eliminado permanentemente em",
+        "willDeleteAfterRetention": "Será eliminado permanentemente após o período de retenção.",
+        "erasedNote": "Eliminado a pedido do cliente (eliminação RGPD) — não pode ser restaurado. Pode eliminá-lo permanentemente agora.",
+        "reasonUnknownNote": "Este registo é anterior aos motivos de eliminação. Confirme que não se tratou de um pedido de eliminação do cliente antes de restaurar.",
+        "reinstatableNote": "Restaure-o para o tornar ativo novamente ou elimine-o permanentemente agora para que o cliente possa voltar a inscrever-se."
+      },
+      "confirm": {
+        "reinstateConfirm": "Restaurar este cliente?",
+        "reinstateMessage": "O passe da carteira é recriado (a hiperligação de partilha existente continua a funcionar) e o histórico de fidelização é restaurado.",
+        "reinstateMessageUnknownReason": "Este registo é anterior aos motivos de eliminação. Confirme que NÃO se tratou de um pedido de eliminação do cliente antes de restaurar. O passe da carteira é recriado e a hiperligação de partilha existente continua a funcionar.",
+        "reinstateSuccess": "Cliente restaurado.",
+        "purgeConfirm": "Eliminar permanentemente este cliente?",
+        "purgeMessage": "Esta ação não pode ser anulada. Remove o registo agora (ignorando o período de retenção) e liberta o e-mail/telefone para que possa voltar a inscrever-se.",
+        "purgeSuccess": "Cliente eliminado permanentemente.",
+        "resendConfirm": "Reenviar o passe deste cliente?",
+        "resendMessage": "Envia o passe para os dados de contacto já registados. Utilize esta opção em vez de eliminar o cliente quando este tiver perdido o passe.",
+        "resendSuccess": "Passe reenviado."
       },
       "availableOffers": {
         "heading": "Ofertas Disponíveis",

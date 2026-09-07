@@ -1487,7 +1487,15 @@
       "viewButton": "Voir",
       "editButton": "Modifier",
       "deleteButton": "Supprimer",
-      "totalCustomers": "Nombre total de clients"
+      "totalCustomers": "Nombre total de clients",
+      "deleteResendHintBefore": "Si le client a perdu sa carte, utilisez",
+      "deleteResendHintAfter": "à la place. La suppression retire ses points et son historique d'achats, et bloque toute réinscription avec cet e-mail/numéro pendant 30 jours.",
+      "deleteSelectReason": "Sélectionnez un motif :",
+      "deleteReasonErasure": "Le client a demandé la suppression",
+      "deleteReasonOperational": "Autre / gestion courante",
+      "deleteErasureNoteBefore": "Enregistré comme une demande d'effacement RGPD — ce client",
+      "deleteErasureNoteEmphasis": "ne pourra plus être restauré",
+      "deleteErasureNoteAfter": "par la suite."
     },
     "offers": {
       "title": "Offres",
@@ -2683,7 +2691,30 @@
         "passCard": "Carte de passe",
         "checkNewOffers": "Vérifier les nouvelles offres",
         "update": "Mettre à jour",
-        "delete": "Supprimer"
+        "delete": "Supprimer",
+        "resend": "Renvoyer la carte",
+        "reinstate": "Restaurer",
+        "deletePermanently": "Supprimer définitivement"
+      },
+      "trash": {
+        "banner": "Ce client est dans la corbeille.",
+        "willDeleteOnPrefix": "Il sera définitivement supprimé le",
+        "willDeleteAfterRetention": "Il sera définitivement supprimé après la période de conservation.",
+        "erasedNote": "Supprimé à la demande du client (effacement RGPD) — il ne peut pas être restauré. Vous pouvez le supprimer définitivement maintenant.",
+        "reasonUnknownNote": "Cette fiche est antérieure aux motifs de suppression. Confirmez qu'il ne s'agissait pas d'une demande d'effacement du client avant de le restaurer.",
+        "reinstatableNote": "Restaurez-le pour le réactiver, ou supprimez-le définitivement maintenant afin que le client puisse se réinscrire."
+      },
+      "confirm": {
+        "reinstateConfirm": "Restaurer ce client ?",
+        "reinstateMessage": "Sa carte wallet est recréée (le lien de partage existant reste valable) et son historique de fidélité est restauré.",
+        "reinstateMessageUnknownReason": "Cette fiche est antérieure aux motifs de suppression. Confirmez qu'il ne s'agissait PAS d'une demande d'effacement du client avant de le restaurer. Sa carte wallet est recréée et le lien de partage existant reste valable.",
+        "reinstateSuccess": "Client restauré.",
+        "purgeConfirm": "Supprimer définitivement ce client ?",
+        "purgeMessage": "Cette action est irréversible. Elle supprime la fiche immédiatement (sans attendre la période de conservation) et libère son e-mail/téléphone afin qu'il puisse se réinscrire.",
+        "purgeSuccess": "Client définitivement supprimé.",
+        "resendConfirm": "Renvoyer la carte de ce client ?",
+        "resendMessage": "Envoie la carte aux coordonnées déjà enregistrées. Utilisez cette option plutôt que de supprimer le client lorsqu'il a perdu sa carte.",
+        "resendSuccess": "Carte renvoyée."
       },
       "availableOffers": {
         "heading": "Offres disponibles",
