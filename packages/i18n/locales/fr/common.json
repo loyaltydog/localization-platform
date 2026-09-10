@@ -1901,7 +1901,7 @@
       "channel": {
         "public": "Public API",
         "legacy": "Plateforme / POS",
-        "dashboard": "Dashboard"
+        "dashboard": "Tableau de bord"
       },
       "total": "Total",
       "emptyState": "Aucune activité dans cette période pour le moment.",

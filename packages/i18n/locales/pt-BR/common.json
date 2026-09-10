@@ -1911,7 +1911,7 @@
       "channel": {
         "public": "Public API",
         "legacy": "Plataforma / POS",
-        "dashboard": "Dashboard"
+        "dashboard": "Painel"
       },
       "total": "Total",
       "emptyState": "Nenhuma atividade neste período ainda.",
