@@ -1916,6 +1916,25 @@
       "total": "Total",
       "emptyState": "Nenhuma atividade neste período ainda.",
       "errorState": "Não foi possível carregar sua atividade. Por favor, tente novamente."
+    },
+    "quota": {
+      "heading": "Uso este mês",
+      "description": "Requisições contadas em sua cota de plano mensal, além de erros e latência dos últimos 30 dias.",
+      "key": "Chave",
+      "used": "{{used}} / {{limit}} requisições",
+      "unlimited": "Ilimitado",
+      "errors": "Erros",
+      "avgLatency": "Latência média",
+      "noKeys": "Nenhuma chave Public API ativa ainda.",
+      "errorState": "Não foi possível carregar seu uso. Por favor, tente novamente.",
+      "warningBanner": {
+        "title": "Aproximando-se da cota mensal",
+        "body": "Uma ou mais de suas chaves Public API está se aproximando de sua cota mensal de requisições."
+      },
+      "exceededBanner": {
+        "title": "Cota mensal atingida",
+        "body": "Uma ou mais de suas chaves Public API atingiu sua cota mensal de requisições. Requisições adicionais podem ser limitadas até o próximo mês, ou você pode atualizar seu plano."
+      }
     }
   },
   "giftcard": {

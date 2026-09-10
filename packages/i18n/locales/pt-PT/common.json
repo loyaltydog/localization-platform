@@ -1906,6 +1906,25 @@
       "total": "Total",
       "emptyState": "Sem atividade neste período ainda.",
       "errorState": "Não foi possível carregar a sua atividade. Por favor, tente novamente."
+    },
+    "quota": {
+      "heading": "Utilização este mês",
+      "description": "Pedidos contados relativos à sua quota do plano mensal, mais erros e latência dos últimos 30 dias.",
+      "key": "Chave",
+      "used": "{{used}} / {{limit}} pedidos",
+      "unlimited": "Ilimitado",
+      "errors": "Erros",
+      "avgLatency": "Latência média",
+      "noKeys": "Nenhuma chave Public API ativa ainda.",
+      "errorState": "Não foi possível carregar o seu uso. Por favor, tente novamente.",
+      "warningBanner": {
+        "title": "Aproximando-se da quota mensal",
+        "body": "Uma ou mais das suas chaves Public API está a aproximar-se da sua quota mensal de pedidos."
+      },
+      "exceededBanner": {
+        "title": "Quota mensal atingida",
+        "body": "Uma ou mais das suas chaves Public API atingiu a sua quota mensal de pedidos. Os pedidos adicionais podem ser limitados até ao próximo mês, ou pode atualizar o seu plano."
+      }
     }
   },
   "giftcard": {

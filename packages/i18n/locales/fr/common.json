@@ -1906,6 +1906,25 @@
       "total": "Total",
       "emptyState": "Aucune activité dans cette période pour le moment.",
       "errorState": "Impossible de charger votre activité. Veuillez réessayer."
+    },
+    "quota": {
+      "heading": "Utilisation ce mois-ci",
+      "description": "Requêtes comptabilisées par rapport à votre quota de plan mensuel, plus les erreurs et la latence des 30 derniers jours.",
+      "key": "Clé",
+      "used": "{{used}} / {{limit}} requêtes",
+      "unlimited": "Illimité",
+      "errors": "Erreurs",
+      "avgLatency": "Latence moyenne",
+      "noKeys": "Aucune clé Public API active pour le moment.",
+      "errorState": "Impossible de charger votre utilisation. Veuillez réessayer.",
+      "warningBanner": {
+        "title": "Approche du quota mensuel",
+        "body": "Une ou plusieurs de vos clés Public API approchent de leur quota mensuel de requêtes."
+      },
+      "exceededBanner": {
+        "title": "Quota mensuel atteint",
+        "body": "Une ou plusieurs de vos clés Public API a atteint son quota mensuel de requêtes. Les requêtes supplémentaires peuvent être limitées jusqu'au mois prochain, ou vous pouvez améliorer votre plan."
+      }
     }
   },
   "giftcard": {
