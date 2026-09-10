@@ -26,6 +26,7 @@
     "templates": "Templates",
     "passes": "Passes",
     "appKeys": "API Keys",
+    "usage": "Usage",
     "passTypeIds": "Pass Type IDs",
     "verification": "Verification",
     "webhooks": "Webhooks",
@@ -1885,6 +1886,26 @@
         "connected": "Connected",
         "pendingPluginPaste": "Pending plugin paste"
       }
+    },
+    "usage": {
+      "page": {
+        "metaTitle": "Usage"
+      },
+      "heading": "Your activity",
+      "notEntitled": {
+        "description": "You are not subscribed to Public API Access. The activity below reflects your platform, POS and dashboard use."
+      },
+      "entitled": {
+        "description": "Your Public API usage is shown separately from your other platform activity below."
+      },
+      "channel": {
+        "public": "Public API",
+        "legacy": "Platform / POS",
+        "dashboard": "Dashboard"
+      },
+      "total": "Total",
+      "emptyState": "No activity in this period yet.",
+      "errorState": "Could not load your activity. Please try again."
     }
   },
   "giftcard": {

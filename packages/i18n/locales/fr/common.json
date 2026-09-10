@@ -26,6 +26,7 @@
     "templates": "Modèles",
     "passes": "Cartes",
     "appKeys": "Clés API",
+    "usage": "Utilisation",
     "passTypeIds": "IDs de type de carte",
     "verification": "Vérification",
     "webhooks": "Webhooks",
@@ -1885,6 +1886,26 @@
         "connected": "Connecté",
         "pendingPluginPaste": "En attente de collage du plugin"
       }
+    },
+    "usage": {
+      "page": {
+        "metaTitle": "Utilisation"
+      },
+      "heading": "Votre activité",
+      "notEntitled": {
+        "description": "Vous n'êtes pas abonné à Public API Access. L'activité ci-dessous reflète votre utilisation de la plateforme, du POS et du tableau de bord."
+      },
+      "entitled": {
+        "description": "Votre utilisation de Public API est affichée séparément de votre autre activité de plateforme ci-dessous."
+      },
+      "channel": {
+        "public": "Public API",
+        "legacy": "Plateforme / POS",
+        "dashboard": "Dashboard"
+      },
+      "total": "Total",
+      "emptyState": "Aucune activité dans cette période pour le moment.",
+      "errorState": "Impossible de charger votre activité. Veuillez réessayer."
     }
   },
   "giftcard": {
