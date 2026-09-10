@@ -1920,6 +1920,7 @@
     "quota": {
       "heading": "Utilizzo questo mese",
       "description": "Richieste conteggiate rispetto alla tua quota del piano mensile, più errori e latenza degli ultimi 30 giorni.",
+      "exportCsv": "Esporta CSV",
       "key": "Chiave",
       "used": "{{used}} / {{limit}} richieste",
       "unlimited": "Illimitato",

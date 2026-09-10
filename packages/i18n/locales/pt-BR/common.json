@@ -1920,6 +1920,7 @@
     "quota": {
       "heading": "Uso este mês",
       "description": "Requisições contadas em sua cota de plano mensal, além de erros e latência dos últimos 30 dias.",
+      "exportCsv": "Exportar CSV",
       "key": "Chave",
       "used": "{{used}} / {{limit}} requisições",
       "unlimited": "Ilimitado",

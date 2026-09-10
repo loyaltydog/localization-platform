@@ -1910,6 +1910,7 @@
     "quota": {
       "heading": "Utilisation ce mois-ci",
       "description": "Requêtes comptabilisées par rapport à votre quota de plan mensuel, plus les erreurs et la latence des 30 derniers jours.",
+      "exportCsv": "Exporter en CSV",
       "key": "Clé",
       "used": "{{used}} / {{limit}} requêtes",
       "unlimited": "Illimité",

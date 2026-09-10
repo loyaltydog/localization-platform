@@ -1910,6 +1910,7 @@
     "quota": {
       "heading": "Usage this month",
       "description": "Requests counted against your monthly plan quota, plus errors and latency for the last 30 days.",
+      "exportCsv": "Export CSV",
       "key": "Key",
       "used": "{{used}} / {{limit}} requests",
       "unlimited": "Unlimited",

@@ -1910,6 +1910,7 @@
     "quota": {
       "heading": "Uso este mes",
       "description": "Solicitudes contadas en tu cuota del plan mensual, más errores y latencia de los últimos 30 días.",
+      "exportCsv": "Exportar CSV",
       "key": "Clave",
       "used": "{{used}} / {{limit}} solicitudes",
       "unlimited": "Ilimitado",
