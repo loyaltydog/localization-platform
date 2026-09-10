@@ -36,6 +36,7 @@
     "templates": "Modelli",
     "passes": "Pass",
     "appKeys": "Chiavi API",
+    "usage": "Utilizzo",
     "passTypeIds": "ID tipo di pass",
     "verification": "Verifica",
     "webhooks": "Webhook",
@@ -1895,6 +1896,26 @@
         "connected": "Collegato",
         "pendingPluginPaste": "In attesa dell'incollaggio del plugin"
       }
+    },
+    "usage": {
+      "page": {
+        "metaTitle": "Utilizzo"
+      },
+      "heading": "La tua attività",
+      "notEntitled": {
+        "description": "Non sei iscritto a Public API Access. L'attività sottostante riflette l'utilizzo della tua piattaforma, POS e dashboard."
+      },
+      "entitled": {
+        "description": "L'utilizzo di Public API è mostrato separatamente dalla tua altra attività di piattaforma di seguito."
+      },
+      "channel": {
+        "public": "Public API",
+        "legacy": "Piattaforma / POS",
+        "dashboard": "Dashboard"
+      },
+      "total": "Totale",
+      "emptyState": "Nessuna attività in questo periodo ancora.",
+      "errorState": "Impossibile caricare la tua attività. Per favore riprova."
     }
   },
   "giftcard": {
