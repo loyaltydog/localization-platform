@@ -1906,6 +1906,26 @@
       "total": "Total",
       "emptyState": "Sin actividad en este período aún.",
       "errorState": "No se pudo cargar tu actividad. Por favor, intenta de nuevo."
+    },
+    "quota": {
+      "heading": "Uso este mes",
+      "description": "Solicitudes contadas en tu cuota del plan mensual, más errores y latencia de los últimos 30 días.",
+      "exportCsv": "Exportar CSV",
+      "key": "Clave",
+      "used": "{{used}} / {{limit}} solicitudes",
+      "unlimited": "Ilimitado",
+      "errors": "Errores",
+      "avgLatency": "Latencia promedio",
+      "noKeys": "Aún no hay claves Public API activas.",
+      "errorState": "No se pudo cargar tu uso. Por favor, intenta de nuevo.",
+      "warningBanner": {
+        "title": "Acercándose a la cuota mensual",
+        "body": "Una o más de tus claves Public API se acercan a su cuota mensual de solicitudes."
+      },
+      "exceededBanner": {
+        "title": "Cuota mensual alcanzada",
+        "body": "Una o más de tus claves Public API han alcanzado su cuota mensual de solicitudes. Es posible que se limiten las solicitudes adicionales hasta el próximo mes, o puedes mejorar tu plan."
+      }
     }
   },
   "giftcard": {

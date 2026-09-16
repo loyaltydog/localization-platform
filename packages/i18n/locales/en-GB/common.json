@@ -1906,6 +1906,26 @@
       "total": "Total",
       "emptyState": "No activity in this period yet.",
       "errorState": "Could not load your activity. Please try again."
+    },
+    "quota": {
+      "heading": "Usage this month",
+      "description": "Requests counted against your monthly plan quota, plus errors and latency for the last 30 days.",
+      "exportCsv": "Export CSV",
+      "key": "Key",
+      "used": "{{used}} / {{limit}} requests",
+      "unlimited": "Unlimited",
+      "errors": "Errors",
+      "avgLatency": "Avg. latency",
+      "noKeys": "No active Public API keys yet.",
+      "errorState": "Could not load your usage. Please try again.",
+      "warningBanner": {
+        "title": "Approaching monthly quota",
+        "body": "One or more of your Public API keys is nearing its monthly request quota."
+      },
+      "exceededBanner": {
+        "title": "Monthly quota reached",
+        "body": "One or more of your Public API keys has reached its monthly request quota. Additional requests may be limited until next month, or you can upgrade your plan."
+      }
     }
   },
   "giftcard": {
