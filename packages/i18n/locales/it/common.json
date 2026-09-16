@@ -1929,7 +1929,7 @@
       "noKeys": "Nessuna chiave Public API attiva ancora.",
       "errorState": "Impossibile caricare il tuo utilizzo. Per favore riprova.",
       "warningBanner": {
-        "title": "Avvicinandosi alla quota mensile",
+        "title": "Quota mensile quasi raggiunta",
         "body": "Una o più delle tue chiavi Public API si stanno avvicinando alla loro quota mensile di richieste."
       },
       "exceededBanner": {

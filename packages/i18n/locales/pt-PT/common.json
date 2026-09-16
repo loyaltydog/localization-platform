@@ -1919,7 +1919,7 @@
       "noKeys": "Nenhuma chave Public API ativa ainda.",
       "errorState": "Não foi possível carregar o seu uso. Por favor, tente novamente.",
       "warningBanner": {
-        "title": "Aproximando-se da quota mensal",
+        "title": "Quota mensal quase atingida",
         "body": "Uma ou mais das suas chaves Public API estão a aproximar-se da sua quota mensal de pedidos."
       },
       "exceededBanner": {
