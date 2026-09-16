@@ -1919,7 +1919,7 @@
       "noKeys": "Aún no hay claves Public API activas.",
       "errorState": "No se pudo cargar tu uso. Por favor, intenta de nuevo.",
       "warningBanner": {
-        "title": "Acercándose a la cuota mensual",
+        "title": "Cuota mensual casi alcanzada",
         "body": "Una o más de tus claves Public API se acercan a su cuota mensual de solicitudes."
       },
       "exceededBanner": {
