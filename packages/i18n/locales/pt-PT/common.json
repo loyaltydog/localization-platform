@@ -1920,11 +1920,11 @@
       "errorState": "Não foi possível carregar o seu uso. Por favor, tente novamente.",
       "warningBanner": {
         "title": "Aproximando-se da quota mensal",
-        "body": "Uma ou mais das suas chaves Public API está a aproximar-se da sua quota mensal de pedidos."
+        "body": "Uma ou mais das suas chaves Public API estão a aproximar-se da sua quota mensal de pedidos."
       },
       "exceededBanner": {
         "title": "Quota mensal atingida",
-        "body": "Uma ou mais das suas chaves Public API atingiu a sua quota mensal de pedidos. Os pedidos adicionais podem ser limitados até ao próximo mês, ou pode atualizar o seu plano."
+        "body": "Uma ou mais das suas chaves Public API atingiram a sua quota mensal de pedidos. Os pedidos adicionais podem ser limitados até ao próximo mês, ou pode atualizar o seu plano."
       }
     }
   },

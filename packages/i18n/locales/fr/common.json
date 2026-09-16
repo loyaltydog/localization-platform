@@ -1924,7 +1924,7 @@
       },
       "exceededBanner": {
         "title": "Quota mensuel atteint",
-        "body": "Une ou plusieurs de vos clés Public API a atteint son quota mensuel de requêtes. Les requêtes supplémentaires peuvent être limitées jusqu'au mois prochain, ou vous pouvez améliorer votre plan."
+        "body": "Une ou plusieurs de vos clés Public API ont atteint leur quota mensuel de requêtes. Les requêtes supplémentaires peuvent être limitées jusqu'au mois prochain, ou vous pouvez améliorer votre plan."
       }
     }
   },

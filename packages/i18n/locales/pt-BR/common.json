@@ -1930,11 +1930,11 @@
       "errorState": "Não foi possível carregar seu uso. Por favor, tente novamente.",
       "warningBanner": {
         "title": "Aproximando-se da cota mensal",
-        "body": "Uma ou mais de suas chaves Public API está se aproximando de sua cota mensal de requisições."
+        "body": "Uma ou mais de suas chaves Public API estão se aproximando de sua cota mensal de requisições."
       },
       "exceededBanner": {
         "title": "Cota mensal atingida",
-        "body": "Uma ou mais de suas chaves Public API atingiu sua cota mensal de requisições. Requisições adicionais podem ser limitadas até o próximo mês, ou você pode atualizar seu plano."
+        "body": "Uma ou mais de suas chaves Public API atingiram sua cota mensal de requisições. Requisições adicionais podem ser limitadas até o próximo mês, ou você pode atualizar seu plano."
       }
     }
   },

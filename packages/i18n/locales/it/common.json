@@ -1930,11 +1930,11 @@
       "errorState": "Impossibile caricare il tuo utilizzo. Per favore riprova.",
       "warningBanner": {
         "title": "Avvicinandosi alla quota mensile",
-        "body": "Una o più delle tue chiavi Public API si sta avvicinando alla sua quota mensile di richieste."
+        "body": "Una o più delle tue chiavi Public API si stanno avvicinando alla loro quota mensile di richieste."
       },
       "exceededBanner": {
         "title": "Quota mensile raggiunta",
-        "body": "Una o più delle tue chiavi Public API ha raggiunto la sua quota mensile di richieste. Le richieste aggiuntive potrebbero essere limitate fino al prossimo mese, oppure puoi aggiornare il tuo piano."
+        "body": "Una o più delle tue chiavi Public API hanno raggiunto la loro quota mensile di richieste. Le richieste aggiuntive potrebbero essere limitate fino al prossimo mese, oppure puoi aggiornare il tuo piano."
       }
     }
   },
