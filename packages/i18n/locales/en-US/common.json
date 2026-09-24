@@ -842,7 +842,9 @@
           "actions": "Actions",
           "empty": "No customers",
           "roleAdmin": "admin",
-          "roleLoyalty": "loyalty"
+          "roleLoyalty": "loyalty",
+          "active": "Active",
+          "archived": "Archived"
         },
         "actions": {
           "signInAsUser": "Sign in as user",
@@ -850,7 +852,9 @@
           "login": "Login",
           "edit": "Edit",
           "delete": "Delete",
-          "view": "View"
+          "view": "View",
+          "archive": "Archive",
+          "unarchive": "Unarchive"
         },
         "totalUsers": "Total users: {{total}}",
         "createButton": "Create New User",
@@ -866,7 +870,13 @@
           "betaUser": "Beta User",
           "location": "Location",
           "website": "Website",
-          "registeredAt": "Registered At"
+          "registeredAt": "Registered At",
+          "apiAccess": "Public API Access",
+          "apiBilling": "API billing",
+          "apiFrozen": "Public API keys frozen",
+          "apiEntitled": "Entitled",
+          "apiNotEntitled": "Not entitled",
+          "viewActivity": "Merchant activity"
         },
         "form": {
           "businessLabel": "Business",
@@ -1076,11 +1086,14 @@
           "passTemplates": "Pass Templates",
           "actions": "Actions",
           "empty": "No App Key",
-          "emptyName": "(Empty)"
+          "emptyName": "(Empty)",
+          "lastUsed": "Last used",
+          "neverUsed": "Never"
         },
         "actions": {
           "edit": "Edit",
-          "delete": "Delete"
+          "delete": "Delete",
+          "rotate": "Rotate"
         },
         "form": {
           "nameLabel": "Name",
@@ -1092,7 +1105,19 @@
           "cancelButton": "Cancel",
           "deleteConfirmMessage": "Are you sure you want to delete this app key?",
           "deleteConfirmNo": "No, cancel",
-          "deleteConfirmYes": "Yes, confirm delete"
+          "deleteConfirmYes": "Yes, confirm delete",
+          "secretOnceTitle": "Copy your API secret now",
+          "secretOnceWarning": "This is the only time this secret will be shown. Copy it now — after you leave or refresh this page, it cannot be retrieved.",
+          "secretOnceDone": "Done",
+          "secretOnceLabel": "API secret",
+          "secretOnceMissing": "The app key was created, but the secret was not returned. Return to the app keys list.",
+          "scopesLabel": "Scopes",
+          "scopesHelp": "Public API keys are limited to the scopes you select. JWT app keys keep full merchant access; extra scopes are stored for when the API accepts them.",
+          "rotateLabel": "Rotate",
+          "rotateButton": "Rotate secret",
+          "rotateButtonLoading": "Rotating...",
+          "rotateWarning": "Rotating replaces this key's secret. Copy the new secret immediately — it is shown only once.",
+          "jwtCannotRotate": "JWT app keys cannot be rotated. Create a new key and delete this one."
         }
       },
       "passes": {
@@ -1879,6 +1904,44 @@
     "page": {
       "metaTitle": "API Keys"
     },
+    "notEnabled": {
+      "title": "Public API Not Enabled",
+      "body": "Production Public API Access is a separate paid product. A standard LoyaltyDog or POS plan does not include it. Subscribe to receive public credentials. Your loyalty program and supported platform integration keep working either way.",
+      "docs": "View API documentation"
+    },
+    "legacyKeys": {
+      "heading": "Platform / legacy keys",
+      "description": "JWT app keys used by POS and internal tools. They are not Public API credentials and are visible to staff only."
+    },
+    "billing": {
+      "heading": "Public API Access",
+      "description": "Build applications and integrations on LoyaltyDog. This is a paid product, not a charge for an API key.",
+      "subscribe": "Subscribe",
+      "manageBilling": "Manage billing",
+      "alreadySubscribed": "API Access is already subscribed. Use Manage billing to change plan, update the card, or cancel.",
+      "unconfigured": "Billing is not available right now.",
+      "checkoutError": "Could not start checkout.",
+      "portalError": "Could not open billing portal.",
+      "status": {
+        "none": "Not subscribed",
+        "active": "Active",
+        "pastDue": "Past due",
+        "canceled": "Canceled"
+      },
+      "plan": {
+        "tier1": "Standard",
+        "tier2": "Growth",
+        "tier3": "Scale"
+      },
+      "toast": {
+        "success": "Checkout complete. Your plan status will update shortly.",
+        "cancel": "Checkout canceled."
+      },
+      "frozen": {
+        "title": "Public API keys paused",
+        "body": "ld_* keys are paused until you resubscribe. JWT app keys still work."
+      }
+    },
     "wordpressSites": {
       "heading": "Connected WordPress Sites",
       "description": "Each WordPress installation that is authenticated against your account. The plugin uses an opaque Bearer key (separate from the JWT app keys above) — only its last 4 chars are shown so you can identify it."
@@ -1915,7 +1978,12 @@
       },
       "total": "Total",
       "emptyState": "No activity in this period yet.",
-      "errorState": "Could not load your activity. Please try again."
+      "errorState": "Could not load your activity. Please try again.",
+      "viewKeys": "API keys and quota",
+      "keysFrozen": "Keys frozen",
+      "billingUnavailable": "Billing unavailable",
+      "billingUnavailableDescription": "Could not load Public API billing. Your activity below is still shown.",
+      "byDay": "Requests by day"
     },
     "quota": {
       "heading": "Usage this month",
@@ -2184,6 +2252,10 @@
       "multiplePassColorsNote": "This feature is experimental and unstable.",
       "isGDPR": "Is GDPR",
       "isGDPRLabel": "Check this if this program has a GDPR field",
+      "consentField": "Consent Field",
+      "consentFieldDefault": "Default (GDPR)",
+      "consentFieldHelper": "Only used when GDPR is enabled above. Pick which customer field and answer(s) count as marketing consent. Once selected, that field becomes read-only for merchants — only LoyaltyDog can change its name, options, or type, or delete it.",
+      "consentFieldHint": "Consent field:",
       "activeAccount": "Active Account",
       "activeAccountNote": "Active accounts will sync all data. In-active accounts will only sync orders",
       "saveAdvancedSettings": "Save Advanced Settings"
@@ -2516,7 +2588,8 @@
         "empty": "Empty",
         "sameAsName": "Same as Name",
         "optionsHelper": "Enter available options as comma separated values",
-        "addField": "Add Field"
+        "addField": "Add Field",
+        "consentLocked": "This is the GDPR consent field — only LoyaltyDog can change its name, options, or type, or delete it."
       },
       "saving": "Saving...",
       "saveProgram": "Save Program",
@@ -2564,6 +2637,11 @@
       "multiplePassColorsNote": "This feature is experimental and unstable.",
       "isGDPR": "Is GDPR",
       "isGDPRLabel": "Check this if this program has a GDPR field",
+      "consentField": "Consent Field",
+      "consentFieldDefault": "Default (GDPR)",
+      "consentFieldHelper": "Only used when GDPR is enabled above. Pick which customer field and answer(s) count as marketing consent. Once selected, that field becomes read-only for merchants — only LoyaltyDog can change its name, options, or type, or delete it.",
+      "consentFieldHint": "Consent field:",
+      "consentFieldLockedError": "The GDPR consent field can only be changed by LoyaltyDog. Contact support to modify it.",
       "activeAccount": "Active Account",
       "activeAccountNote": "Active accounts will sync all data. In-active accounts will only sync orders",
       "saveAdvancedSettings": "Save Advanced Settings",
