@@ -832,7 +832,9 @@
           "actions": "Acciones",
           "empty": "Empty",
           "roleAdmin": "Role Admin",
-          "roleLoyalty": "Role Loyalty"
+          "roleLoyalty": "Role Loyalty",
+          "active": "Activos",
+          "archived": "Archivados"
         },
         "actions": {
           "signInAsUser": "Sign In As User",
@@ -840,7 +842,9 @@
           "login": "Iniciar sesión",
           "edit": "Editar",
           "delete": "Eliminar",
-          "view": "Ver"
+          "view": "Ver",
+          "archive": "Archivar",
+          "unarchive": "Desarchivar"
         },
         "totalUsers": "Total de usuarios: {{total}}",
         "createButton": "Create Button",
@@ -856,7 +860,13 @@
           "betaUser": "Usuario beta",
           "location": "Ubicación",
           "website": "Sitio web",
-          "registeredAt": "Registrado el"
+          "registeredAt": "Registrado el",
+          "apiAccess": "Public API Access",
+          "apiBilling": "Facturación de API",
+          "apiFrozen": "Claves Public API congeladas",
+          "apiEntitled": "Con acceso",
+          "apiNotEntitled": "Sin acceso",
+          "viewActivity": "Actividad del comerciante"
         },
         "form": {
           "businessLabel": "Business Label",
@@ -1066,11 +1076,14 @@
           "passTemplates": "Plantillas de pase",
           "actions": "Acciones",
           "empty": "Empty",
-          "emptyName": "Empty Name"
+          "emptyName": "Empty Name",
+          "lastUsed": "Último uso",
+          "neverUsed": "Nunca"
         },
         "actions": {
           "edit": "Editar",
-          "delete": "Eliminar"
+          "delete": "Eliminar",
+          "rotate": "Rotar"
         },
         "form": {
           "nameLabel": "Name Label",
@@ -1082,7 +1095,19 @@
           "cancelButton": "Cancel Button",
           "deleteConfirmMessage": "Delete Confirm Message",
           "deleteConfirmNo": "Delete Confirm No",
-          "deleteConfirmYes": "Delete Confirm Yes"
+          "deleteConfirmYes": "Delete Confirm Yes",
+          "secretOnceTitle": "Copia ahora tu secreto de API",
+          "secretOnceWarning": "Esta es la única vez que se mostrará este secreto. Cópialo ahora — después de salir o actualizar esta página, no se podrá recuperar.",
+          "secretOnceDone": "Listo",
+          "secretOnceLabel": "Secreto de API",
+          "secretOnceMissing": "La clave de aplicación se creó, pero no se devolvió el secreto. Vuelve a la lista de claves de aplicación.",
+          "scopesLabel": "Ámbitos",
+          "scopesHelp": "Las claves Public API se limitan a los ámbitos que selecciones. Las claves de aplicación JWT mantienen el acceso completo de comerciante; los ámbitos adicionales se guardan para cuando la API los acepte.",
+          "rotateLabel": "Rotación",
+          "rotateButton": "Rotar secreto",
+          "rotateButtonLoading": "Rotando...",
+          "rotateWarning": "La rotación sustituye el secreto de esta clave. Copia el nuevo secreto de inmediato — solo se muestra una vez.",
+          "jwtCannotRotate": "Las claves de aplicación JWT no se pueden rotar. Crea una nueva clave y elimina esta."
         }
       },
       "passes": {
@@ -1869,6 +1894,44 @@
     "page": {
       "metaTitle": "Claves de API"
     },
+    "notEnabled": {
+      "title": "Public API no habilitada",
+      "body": "Public API Access en producción es un producto de pago independiente. Un plan estándar de LoyaltyDog o de POS no lo incluye. Suscríbete para recibir credenciales públicas. Tu programa de fidelización y la integración con tu plataforma compatible siguen funcionando en cualquier caso.",
+      "docs": "Ver la documentación de la API"
+    },
+    "legacyKeys": {
+      "heading": "Claves de plataforma / heredadas",
+      "description": "Claves de aplicación JWT que utilizan el POS y las herramientas internas. No son credenciales Public API y solo las puede ver el personal."
+    },
+    "billing": {
+      "heading": "Public API Access",
+      "description": "Crea aplicaciones e integraciones sobre LoyaltyDog. Es un producto de pago, no un cargo por una clave de API.",
+      "subscribe": "Suscribirse",
+      "manageBilling": "Gestionar facturación",
+      "alreadySubscribed": "Ya tienes una suscripción a API Access. Usa Gestionar facturación para cambiar de plan, actualizar la tarjeta o cancelar.",
+      "unconfigured": "La facturación no está disponible en este momento.",
+      "checkoutError": "No se pudo iniciar el pago.",
+      "portalError": "No se pudo abrir el portal de facturación.",
+      "status": {
+        "none": "Sin suscripción",
+        "active": "Activo",
+        "pastDue": "Pago vencido",
+        "canceled": "Cancelado"
+      },
+      "plan": {
+        "tier1": "Standard",
+        "tier2": "Growth",
+        "tier3": "Scale"
+      },
+      "toast": {
+        "success": "Pago completado. El estado de tu plan se actualizará en breve.",
+        "cancel": "Pago cancelado."
+      },
+      "frozen": {
+        "title": "Claves Public API en pausa",
+        "body": "Las claves ld_* están en pausa hasta que vuelvas a suscribirte. Las claves de aplicación JWT siguen funcionando."
+      }
+    },
     "wordpressSites": {
       "heading": "Sitios de WordPress Conectados",
       "description": "Cada instalación de WordPress autenticada contra su cuenta. El plugin utiliza una clave Bearer opaca (separada de las claves de aplicación JWT anteriores) — solo se muestran sus últimos 4 caracteres para que pueda identificarla."
@@ -1905,7 +1968,12 @@
       },
       "total": "Total",
       "emptyState": "Sin actividad en este período aún.",
-      "errorState": "No se pudo cargar tu actividad. Por favor, intenta de nuevo."
+      "errorState": "No se pudo cargar tu actividad. Por favor, intenta de nuevo.",
+      "viewKeys": "Claves de API y cuota",
+      "keysFrozen": "Claves congeladas",
+      "billingUnavailable": "Facturación no disponible",
+      "billingUnavailableDescription": "No se pudo cargar la facturación de Public API. Tu actividad se sigue mostrando abajo.",
+      "byDay": "Solicitudes por día"
     },
     "quota": {
       "heading": "Uso este mes",
@@ -2174,6 +2242,10 @@
       "multiplePassColorsNote": "Esta característica es experimental e inestable.",
       "isGDPR": "Es GDPR",
       "isGDPRLabel": "Marca esto si este programa tiene un campo GDPR",
+      "consentField": "Campo de Consentimiento",
+      "consentFieldDefault": "Predeterminado (GDPR)",
+      "consentFieldHelper": "Solo se utiliza si el GDPR está habilitado más arriba. Elija qué campo de cliente y qué respuesta(s) cuentan como consentimiento de marketing. Una vez seleccionado, ese campo pasa a ser de solo lectura para los comerciantes — solo LoyaltyDog puede cambiar su nombre, opciones o tipo, o eliminarlo.",
+      "consentFieldHint": "Campo de consentimiento:",
       "activeAccount": "Cuenta Activa",
       "activeAccountNote": "Las cuentas activas sincronizarán todos los datos. Las cuentas inactivas solo sincronizarán pedidos",
       "saveAdvancedSettings": "Guardar Configuración Avanzada"
@@ -2506,7 +2578,8 @@
         "empty": "Vacío",
         "sameAsName": "Igual que el nombre",
         "optionsHelper": "Ingrese las opciones disponibles como valores separados por comas",
-        "addField": "Añadir campo"
+        "addField": "Añadir campo",
+        "consentLocked": "Este es el campo de consentimiento GDPR — solo LoyaltyDog puede cambiar su nombre, opciones o tipo, o eliminarlo."
       },
       "saving": "Guardando...",
       "saveProgram": "Guardar programa",
@@ -2554,6 +2627,11 @@
       "multiplePassColorsNote": "Esta característica es experimental e inestable.",
       "isGDPR": "Es GDPR",
       "isGDPRLabel": "Marque esto si este programa tiene un campo GDPR",
+      "consentField": "Campo de consentimiento",
+      "consentFieldDefault": "Predeterminado (GDPR)",
+      "consentFieldHelper": "Solo se utiliza si el GDPR está habilitado más arriba. Elija qué campo de cliente y qué respuesta(s) cuentan como consentimiento de marketing. Una vez seleccionado, ese campo pasa a ser de solo lectura para los comerciantes — solo LoyaltyDog puede cambiar su nombre, opciones o tipo, o eliminarlo.",
+      "consentFieldHint": "Campo de consentimiento:",
+      "consentFieldLockedError": "Solo LoyaltyDog puede cambiar el campo de consentimiento GDPR. Póngase en contacto con soporte para modificarlo.",
       "activeAccount": "Cuenta activa",
       "activeAccountNote": "Las cuentas activas sincronizarán todos los datos. Las cuentas inactivas solo sincronizarán pedidos",
       "saveAdvancedSettings": "Guardar configuración avanzada",
