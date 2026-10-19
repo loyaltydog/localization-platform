@@ -188,7 +188,6 @@ describe('Translation Structure Tests - All Languages', () => {
       ['errors.operations.duplicated_customers', ['shopId', 'customerId']],
       ['errors.operations.failed_to_renew_certificate', ['message']],
       ['errors.operations.unsupported_pass_style', ['style']],
-      ['notifications.dateRangeTx', ['count']],
     ]);
 
     function entries(locale, namespace) {
@@ -244,6 +243,13 @@ describe('Translation Structure Tests - All Languages', () => {
         }
       }
       expect(mismatches).toEqual([]);
+    });
+
+    // Regression (SWE-1522): es-ES/es-MX shipped the broken token "{tx" here, and every
+    // other locale used single-brace {count}, which is never interpolated. Pin the value
+    // so neither defect can return now that the key is off PENDING_SINGLE_BRACE.
+    it.each(ALL_LANGUAGES)('renders notifications.dateRangeTx with {{count}} in %s', (locale) => {
+      expect(loadTranslation(locale, 'notifications').dateRangeTx).toBe('{{count}} tx');
     });
   });
 });

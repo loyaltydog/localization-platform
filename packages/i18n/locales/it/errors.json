@@ -49,9 +49,9 @@
     "passwordResetRequired": "È necessario reimpostare la password prima di continuare.",
     "twoFactorRequired": "È richiesta l'autenticazione a due fattori.",
     "twoFactorInvalid": "Codice di autenticazione a due fattori non valido.",
-    "notVerified": "Il suo conto non è stato verificato. Per favore, verificate la vostra e-mail per ottenere il link di verifica.",
-    "alreadyLoggedIn": "Você tem sessão iniciada.",
-    "loginRequired": "Deve essere una sessione avviata per continuare.",
+    "notVerified": "Il suo account non è stato verificato. Controlli la sua e-mail per il link di verifica.",
+    "alreadyLoggedIn": "Ha già effettuato l'accesso.",
+    "loginRequired": "È necessario effettuare il login per continuare.",
     "not_authenticated": "È richiesta l'autenticazione",
     "invalid_token": "Token di autenticazione non valido",
     "token_missing": "Manca il gettone",
@@ -108,9 +108,9 @@
     "cardNotFound": "Carta fedeltà non trovata.",
     "cardAlreadyLinked": "Questa carta è già collegata a un altro conto.",
     "enrollmentFailed": "Impossibile iscrivere il membro. Riprovare.",
-    "rewardExpired": "Questa ricompensa è scaduta e non è più disponibile.",
-    "rewardAlreadyRedeemed": "Ho ricevuto questa ricompensa.",
-    "tierDowngraded": "Il suo livello è stato descritto. Continuare a guadagnare pesi per mantenere il proprio livello."
+    "rewardExpired": "Questo premio è scaduto e non è più disponibile.",
+    "rewardAlreadyRedeemed": "Ha già riscattato questo premio.",
+    "tierDowngraded": "Il suo livello è stato declassato. Continui ad accumulare punti per mantenere il suo status."
   },
   "reward": {
     "notFound": "Ricompensa non trovata.",

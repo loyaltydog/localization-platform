@@ -49,9 +49,9 @@
     "passwordResetRequired": "You must reset your password before continuing.",
     "twoFactorRequired": "Two-factor authentication is required.",
     "twoFactorInvalid": "Invalid two-factor authentication code.",
-    "notVerified": "A sua conta não foi verificada. Por favor, verifique o seu email para o link de verificação.",
+    "notVerified": "Your account has not been verified. Please check your email for the verification link.",
     "alreadyLoggedIn": "You are already logged in.",
-    "loginRequired": "Deve ter sessão iniciada para continuar.",
+    "loginRequired": "You must be logged in to continue.",
     "not_authenticated": "Authentication required",
     "invalid_token": "Invalid authentication token",
     "token_missing": "Token is missing",
@@ -108,9 +108,9 @@
     "cardNotFound": "Loyalty card not found.",
     "cardAlreadyLinked": "This card is already linked to another account.",
     "enrollmentFailed": "Failed to enroll member. Please try again.",
-    "rewardExpired": "Esta recompensa expirou e já não está disponível.",
-    "rewardAlreadyRedeemed": "Já resgatou esta recompensa.",
-    "tierDowngraded": "O seu nível foi descido. Continue a ganhar pontos para manter o seu estatuto."
+    "rewardExpired": "This reward has expired and is no longer available.",
+    "rewardAlreadyRedeemed": "You have already redeemed this reward.",
+    "tierDowngraded": "Your tier has been downgraded. Keep earning points to maintain your status."
   },
   "reward": {
     "notFound": "Reward not found.",

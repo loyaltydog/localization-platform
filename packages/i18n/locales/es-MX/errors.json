@@ -49,9 +49,9 @@
     "passwordResetRequired": "Debe restablecer su contraseña antes de continuar.",
     "twoFactorRequired": "Se requiere autenticación de dos factores.",
     "twoFactorInvalid": "Código de autenticación de dos factores no válido.",
-    "notVerified": "Tu cuenta no ha sido verificada. Por favor, compruebe su correo electrónico para ver el enlace de verificación.",
+    "notVerified": "Su cuenta no ha sido verificada. Por favor, compruebe su correo electrónico para ver el enlace de verificación.",
     "alreadyLoggedIn": "Ya ha iniciado la sesión.",
-    "loginRequired": "Debe tener sesión iniciada para continuar.",
+    "loginRequired": "Debe iniciar sesión para continuar.",
     "not_authenticated": "Autenticación necesaria",
     "invalid_token": "Token de autenticación no válido",
     "token_missing": "Falta la ficha",
@@ -108,9 +108,9 @@
     "cardNotFound": "Tarjeta de fidelidad no encontrada.",
     "cardAlreadyLinked": "Esta tarjeta ya está vinculada a otra cuenta.",
     "enrollmentFailed": "No se ha podido inscribir al usuario. Por favor, inténtelo de nuevo.",
-    "rewardExpired": "Esta recompensa ha expirado y ya no está disponible.",
-    "rewardAlreadyRedeemed": "Ya has canjeado esta recompensa.",
-    "tierDowngraded": "Se ha descrito tu nivel. Sigue ganando puntos para mantener tu nivel."
+    "rewardExpired": "Esta recompensa ha vencido y ya no está disponible.",
+    "rewardAlreadyRedeemed": "Ya canjeó esta recompensa.",
+    "tierDowngraded": "Su nivel ha bajado. Siga acumulando puntos para mantener su estatus."
   },
   "reward": {
     "notFound": "Recompensa no encontrada.",
