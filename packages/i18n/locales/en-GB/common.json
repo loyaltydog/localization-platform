@@ -1010,7 +1010,9 @@
           "cancelButton": "Cancel Button",
           "submittingButton": "Submitting Button",
           "backupVersionLabel": "Backup Version Label",
-          "restoreButton": "Restore Button"
+          "restoreButton": "Restore Backup",
+          "keepWeeklyHelper": "Also keep the first backup of each of the last N weeks. 0 keeps none.",
+          "keepWeeklyLabel": "Keep Weekly"
         },
         "restore": {
           "passTypeIds": "Pass Type Ids",
@@ -1095,7 +1097,52 @@
           "apiFrozen": "Public API keys frozen",
           "apiEntitled": "Entitled",
           "apiNotEntitled": "Not entitled",
-          "viewActivity": "Merchant activity"
+          "viewActivity": "Merchant activity",
+          "merge": {
+            "adminBlocked": "An administrator account cannot be merged.",
+            "apiSubscription": "Public API subscription",
+            "confirm": "Suspend the login that is not kept",
+            "customers": "{{count}} customers",
+            "customers_one": "{{count}} customer",
+            "customers_other": "{{count}} customers",
+            "done": "Merged. The login that was not kept can no longer sign in.",
+            "errors": {
+              "admin_account": "An administrator account cannot be merged.",
+              "already_merged": "That login was already merged into a different account.",
+              "channel_split": "A channel connection points at a programme that is staying behind. Select that programme too, or leave both.",
+              "program_not_owned": "A selected programme is not on either account.",
+              "same_user": "Choose two different accounts.",
+              "survivor_inactive": "The surviving login is not active.",
+              "template_collision": "A pass type on a selected programme is already on the surviving login.",
+              "template_not_owned": "A pass template on a selected programme is not owned by either account.",
+              "unknown_program": "One of the selected programmes does not exist.",
+              "user_not_found": "That account was not found."
+            },
+            "hashedKeys": "{{count}} hashed API keys",
+            "hashedKeys_one": "{{count}} hashed API key",
+            "hashedKeys_other": "{{count}} hashed API keys",
+            "inactiveBlocked": "The surviving login is not active.",
+            "intro": "Choose what the surviving login keeps. Nothing is deleted. Customers in different programmes stay separate. This does not call Stripe or cancel a subscription.",
+            "keepLegend": "Surviving login",
+            "keepOther": "Keep the other login",
+            "keepThis": "Keep this login",
+            "legacyKeys": "{{count}} JWT or legacy keys stay on their login",
+            "legacyKeys_one": "{{count}} JWT or legacy key stays on its login",
+            "legacyKeys_other": "{{count}} JWT or legacy keys stay on their login",
+            "load": "Load accounts",
+            "loading": "Loading...",
+            "noPlan": "No plan",
+            "noStripe": "No Stripe customer",
+            "noSubscription": "No subscription",
+            "otherLabel": "Other account email or id",
+            "programs": "Programmes the surviving login keeps",
+            "repeatDone": "Additional programmes moved. The API subscription and Stripe customer were left as they are.",
+            "repeatNote": "This login was already merged into the surviving login. A repeat only moves additional programmes. The API subscription and Stripe customer stay as they are.",
+            "stripeCustomer": "Stripe customer",
+            "submit": "Merge accounts",
+            "submitting": "Merging...",
+            "title": "Merge account"
+          }
         },
         "form": {
           "businessLabel": "Business Label",
@@ -1809,7 +1856,19 @@
       "claudeOpus4": {
         "name": "Claude Opus 4",
         "description": " - Anthropic's most capable model for complex tasks."
+      },
+      "claudeOpus4_8": {
+        "description": " - Anthropic's most capable model for complex tasks, via OpenRouter. Premium tier.",
+        "name": "Claude Opus 4.8"
+      },
+      "claudeSonnetLatest": {
+        "description": " - Anthropic's latest Sonnet model via OpenRouter. Premium tier.",
+        "name": "Claude Sonnet (Latest)"
       }
+    },
+    "premiumWarning": {
+      "body": "This model costs more per request than the standard models. Switch to it only when you need the extra capability.",
+      "heading": "Premium model selected"
     }
   },
   "common": {
@@ -1930,7 +1989,9 @@
       "frozen": {
         "title": "Public API keys paused",
         "body": "ld_* keys are paused until you resubscribe. JWT app keys still work."
-      }
+      },
+      "planUnavailable": "That plan is not available. Choose another.",
+      "unpaidFrozen": "Payment is needed to restore access. Use Manage billing to pay the open invoice."
     },
     "wordpressSites": {
       "heading": "Connected WordPress Sites",
@@ -1988,12 +2049,15 @@
       "errorState": "Could not load your usage. Please try again.",
       "warningBanner": {
         "title": "Approaching monthly quota",
-        "body": "One or more of your Public API keys is nearing its monthly request quota."
+        "body": "One or more of your Public API keys is nearing its monthly request quota.",
+        "scale": "You are on {{planName}}. Requests keep working until the monthly cap. Enterprise is quoted if you need a larger allowance.",
+        "upgrade": "You are on {{planName}}. {{nextPlanName}} includes {{nextPlanAllowance}} calls per month. Requests keep working until the monthly cap. Use Manage billing on this page to change plan."
       },
       "exceededBanner": {
         "title": "Monthly quota reached",
         "body": "One or more of your Public API keys has reached its monthly request quota. Additional requests may be limited until next month, or you can upgrade your plan."
-      }
+      },
+      "account": "All API keys"
     }
   },
   "giftcard": {
@@ -2669,8 +2733,11 @@
         "resetPointsSummary": "This will clear {{points}} points from {{withBalance}} of {{members}} members. Balances drop immediately.",
         "resetPointsTitle": "Reset all points to zero",
         "resetPointsTypeName": "Type \"{{name}}\" to confirm",
-        "resetPointsWallets": "{{passes}} wallet passes will be refreshed across {{devices}} registered devices, over a few minutes."
-      }
+        "resetPointsWallets": "{{passes}} wallet passes will be refreshed across {{devices}} registered devices, over a few minutes.",
+        "pointsResetQueued": "Points reset queued. Balances clear within seconds; wallets follow over a few minutes."
+      },
+      "integrationDeleteAlert": "Integration Deletes",
+      "integrationDeleteAlertLabel": "Email the account owner when EPOS Now, Shopify or Clover deletes a member's profile"
     }
   },
   "managersPortal": {

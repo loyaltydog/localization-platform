@@ -495,5 +495,19 @@
     "upgradeOption": "Para limites mais altos, considere atualizar seu plano.",
     "cta": "Ver Dashboard de Uso",
     "footer": "Este é um alerta automático para evitar interrupção do serviço."
+  },
+  "lightspeed": {
+    "welcome": {
+      "subject": "Bem-vindo à LoyaltyDog, {{merchantName}}!",
+      "body": "Sua loja Lightspeed agora está conectada à LoyaltyDog. Seu programa de fidelidade está sendo configurado e seus clientes e produtos estão sendo sincronizados agora."
+    },
+    "claim": {
+      "subject": "Você tem pontos esperando — resgate-os",
+      "headline": "Você tem pontos esperando!",
+      "cta": "Resgatar meus pontos"
+    }
+  },
+  "dsar": {
+    "exportSubject": "Sua exportação de dados do LoyaltyDog"
   }
 }

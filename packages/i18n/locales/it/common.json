@@ -791,7 +791,9 @@
           "cancelButton": "Cancel Button",
           "submittingButton": "Submitting Button",
           "backupVersionLabel": "Backup Version Label",
-          "restoreButton": "Restore Button"
+          "restoreButton": "Ripristina backup",
+          "keepWeeklyHelper": "Conserva anche il primo backup di ciascuna delle ultime N settimane. 0 non ne conserva nessuno.",
+          "keepWeeklyLabel": "Conserva settimanali"
         },
         "restore": {
           "passTypeIds": "Pass Type Ids",
@@ -876,7 +878,52 @@
           "apiFrozen": "Chiavi Public API congelate",
           "apiEntitled": "Con accesso",
           "apiNotEntitled": "Senza accesso",
-          "viewActivity": "Attività del commerciante"
+          "viewActivity": "Attività del commerciante",
+          "merge": {
+            "adminBlocked": "Un account amministratore non può essere unito.",
+            "apiSubscription": "Abbonamento Public API",
+            "confirm": "Sospendi il login che non viene conservato",
+            "customers": "{{count}} clienti",
+            "customers_one": "{{count}} cliente",
+            "customers_other": "{{count}} clienti",
+            "done": "Unione completata. Il login non conservato non può più accedere.",
+            "errors": {
+              "admin_account": "Un account amministratore non può essere unito.",
+              "already_merged": "Quel login è già stato unito a un altro account.",
+              "channel_split": "Una connessione di canale punta a un programma che resta indietro. Seleziona anche quel programma, oppure lascia entrambi.",
+              "program_not_owned": "Un programma selezionato non è su nessuno dei due account.",
+              "same_user": "Scegli due account diversi.",
+              "survivor_inactive": "Il login conservato non è attivo.",
+              "template_collision": "Un tipo di pass di un programma selezionato è già sul login conservato.",
+              "template_not_owned": "Un modello di tessera di un programma selezionato non appartiene a nessuno dei due account.",
+              "unknown_program": "Uno dei programmi selezionati non esiste.",
+              "user_not_found": "Account non trovato."
+            },
+            "hashedKeys": "{{count}} chiavi API con hash",
+            "hashedKeys_one": "{{count}} chiave API con hash",
+            "hashedKeys_other": "{{count}} chiavi API con hash",
+            "inactiveBlocked": "Il login conservato non è attivo.",
+            "intro": "Scegli che cosa conserva il login conservato. Non viene eliminato nulla. I clienti in programmi diversi restano separati. Questa operazione non chiama Stripe e non annulla un abbonamento.",
+            "keepLegend": "Login conservato",
+            "keepOther": "Conserva l'altro login",
+            "keepThis": "Conserva questo login",
+            "legacyKeys": "{{count}} chiavi JWT o legacy restano sul proprio login",
+            "legacyKeys_one": "{{count}} chiave JWT o legacy resta sul proprio login",
+            "legacyKeys_other": "{{count}} chiavi JWT o legacy restano sul proprio login",
+            "load": "Carica gli account",
+            "loading": "Caricamento...",
+            "noPlan": "Nessun piano",
+            "noStripe": "Nessun cliente Stripe",
+            "noSubscription": "Nessun abbonamento",
+            "otherLabel": "Email o id dell'altro account",
+            "programs": "Programmi che il login conservato mantiene",
+            "repeatDone": "Programmi aggiuntivi spostati. L'abbonamento API e il cliente Stripe sono rimasti invariati.",
+            "repeatNote": "Questo login è già stato unito al login conservato. Una ripetizione sposta solo programmi aggiuntivi. L'abbonamento API e il cliente Stripe restano invariati.",
+            "stripeCustomer": "Cliente Stripe",
+            "submit": "Unisci gli account",
+            "submitting": "Unione in corso...",
+            "title": "Unisci account"
+          }
         },
         "form": {
           "businessLabel": "Business Label",
@@ -1819,7 +1866,19 @@
       "claudeOpus4": {
         "name": "Claude Opus 4",
         "description": " - Modello più potente di Anthropic per compiti complessi."
+      },
+      "claudeOpus4_8": {
+        "description": " - Modello più potente di Anthropic per compiti complessi, tramite OpenRouter. Livello premium.",
+        "name": "Claude Opus 4.8"
+      },
+      "claudeSonnetLatest": {
+        "description": " - Ultimo modello Sonnet di Anthropic tramite OpenRouter. Livello premium.",
+        "name": "Claude Sonnet (Ultima versione)"
       }
+    },
+    "premiumWarning": {
+      "body": "Questo modello costa di più per richiesta rispetto ai modelli standard. Passa a questo solo quando ti serve la capacità aggiuntiva.",
+      "heading": "Modello premium selezionato"
     }
   },
   "common": {
@@ -1940,7 +1999,9 @@
       "frozen": {
         "title": "Chiavi Public API sospese",
         "body": "Le chiavi ld_* sono sospese finché non riattivi l'abbonamento. Le chiavi app JWT continuano a funzionare."
-      }
+      },
+      "planUnavailable": "Quel piano non è disponibile. Scegline un altro.",
+      "unpaidFrozen": "È necessario un pagamento per ripristinare l'accesso. Usa Gestisci fatturazione per pagare la fattura aperta."
     },
     "wordpressSites": {
       "heading": "Siti WordPress Collegati",
@@ -1998,12 +2059,15 @@
       "errorState": "Impossibile caricare il tuo utilizzo. Per favore riprova.",
       "warningBanner": {
         "title": "Quota mensile quasi raggiunta",
-        "body": "Una o più delle tue chiavi Public API si stanno avvicinando alla loro quota mensile di richieste."
+        "body": "Una o più delle tue chiavi Public API si stanno avvicinando alla loro quota mensile di richieste.",
+        "scale": "Sei sul piano {{planName}}. Le richieste continuano a funzionare fino al tetto mensile. Enterprise viene proposto su preventivo se ti serve una quota più ampia.",
+        "upgrade": "Sei sul piano {{planName}}. {{nextPlanName}} include {{nextPlanAllowance}} chiamate al mese. Le richieste continuano a funzionare fino al tetto mensile. Usa Gestisci fatturazione in questa pagina per cambiare piano."
       },
       "exceededBanner": {
         "title": "Quota mensile raggiunta",
         "body": "Una o più delle tue chiavi Public API hanno raggiunto la loro quota mensile di richieste. Le richieste aggiuntive potrebbero essere limitate fino al prossimo mese, oppure puoi aggiornare il tuo piano."
-      }
+      },
+      "account": "Tutte le chiavi API"
     }
   },
   "giftcard": {
@@ -2679,8 +2743,11 @@
         "resetPointsSummary": "Questa operazione cancellerà {{points}} punti da {{withBalance}} membri su {{members}}. I saldi si azzerano immediatamente.",
         "resetPointsTitle": "Azzera tutti i punti",
         "resetPointsTypeName": "Digita «{{name}}» per confermare",
-        "resetPointsWallets": "{{passes}} pass del wallet verranno aggiornati su {{devices}} dispositivi registrati, nel giro di qualche minuto."
-      }
+        "resetPointsWallets": "{{passes}} pass del wallet verranno aggiornati su {{devices}} dispositivi registrati, nel giro di qualche minuto.",
+        "pointsResetQueued": "Azzeramento dei punti in coda. I saldi si svuotano in pochi secondi; i wallet si aggiornano nel giro di qualche minuto."
+      },
+      "integrationDeleteAlert": "Eliminazioni dell'integrazione",
+      "integrationDeleteAlertLabel": "Invia un'email al proprietario dell'account quando EPOS Now, Shopify o Clover elimina il profilo di un membro"
     }
   },
   "managersPortal": {

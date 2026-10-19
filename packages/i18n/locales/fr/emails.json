@@ -495,5 +495,19 @@
     "upgradeOption": "Pour des limites plus élevées, envisagez de mettre à niveau votre plan.",
     "cta": "Voir le tableau de bord d'utilisation",
     "footer": "Ceci est un avertissement automatisé pour éviter l'interruption du service."
+  },
+  "lightspeed": {
+    "welcome": {
+      "subject": "Bienvenue à LoyaltyDog, {{merchantName}} !",
+      "body": "Votre boutique Lightspeed est maintenant connectée à LoyaltyDog. Votre programme de fidélité est en cours de configuration et vos clients et produits sont en cours de synchronisation."
+    },
+    "claim": {
+      "subject": "Des points vous attendent — réclamez-les",
+      "headline": "Des points vous attendent !",
+      "cta": "Réclamer mes points"
+    }
+  },
+  "dsar": {
+    "exportSubject": "Votre export de données LoyaltyDog"
   }
 }
