@@ -40,7 +40,7 @@
         "apiKeyNotConfigured": "API key not configured",
         "httpError": "HTTP {{code}} from API",
         "connectionSuccessful": "Connection successful",
-        "unauthorized": "Unauthorized",
+        "unauthorized": "Unauthorised",
         "youDoNotHavePermissionTo": "You do not have permission to access this page.",
         "programId": "Programme ID",
         "php1sOrNewerIsRequired": "PHP {{first}} or newer is required. This site is running PHP {{second}}. Please ask your hosting provider to upgrade PHP before configuring LoyaltyDog.",
@@ -200,7 +200,7 @@
         "allCredentialDeletionsAreLoggedAutomatically": "All credential deletions are logged automatically",
         "allCredentialAccessIsLoggedRead": "All credential access is logged (read, decrypt)",
         "logsIncludeUserTimestampAndAction": "Logs include user, timestamp, and action type",
-        "credentialValuesAreNeverLoggedSanitized": "Credential values are never logged (sanitized)",
+        "credentialValuesAreNeverLoggedSanitized": "Credential values are never logged (sanitised)",
         "backupRestore": "Backup & Restore",
         "exportCredentials": "Export Credentials",
         "exportYourEncryptedCredentialsAsA": "Export your encrypted credentials as a backup. Keep this file secure.",
@@ -678,7 +678,7 @@
       "phone": "Phone",
       "pointsBalance": "Points balance",
       "tier": "Tier",
-      "enrollmentStatus": "Enrollment status",
+      "enrollmentStatus": "Enrolment status",
       "enrolledAt": "Enrolled at",
       "whenYouUseLoyaltydogYourEmail": "When you use LoyaltyDog, your email address and order totals are sent to the LoyaltyDog cloud service (api.loyalty.dog) to calculate and store loyalty points. Loyalty transaction history may be retained locally in de-identified form (linked only to an internal member ID) after an erasure request. See <a href=\"https://loyalty.dog/privacy\">loyalty.dog/privacy</a> for details."
     }
