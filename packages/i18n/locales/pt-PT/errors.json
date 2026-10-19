@@ -49,9 +49,9 @@
     "passwordResetRequired": "Tem de repor a sua palavra-passe antes de continuar.",
     "twoFactorRequired": "É necessária uma autenticação de dois factores.",
     "twoFactorInvalid": "Código de autenticação de dois factores inválido.",
-    "notVerified": "A sua conta não foi verificada. Por favor, verifique o seu email para o link de verificação.",
+    "notVerified": "A sua conta não foi verificada. Por favor, verifique o seu email para obter o link de verificação.",
     "alreadyLoggedIn": "Você já está conectado.",
-    "loginRequired": "Deve ter sessão iniciada para continuar.",
+    "loginRequired": "Deve ter a sessão iniciada para continuar.",
     "not_authenticated": "Autenticação necessária",
     "invalid_token": "Token de autenticação inválido",
     "token_missing": "Falta o código",
@@ -110,7 +110,7 @@
     "enrollmentFailed": "Falha ao registar o membro. Por favor, tente novamente.",
     "rewardExpired": "Esta recompensa expirou e já não está disponível.",
     "rewardAlreadyRedeemed": "Já resgatou esta recompensa.",
-    "tierDowngraded": "O seu nível foi descido. Continue a ganhar pontos para manter o seu estatuto."
+    "tierDowngraded": "O seu nível foi rebaixado. Continue a ganhar pontos para manter o seu estatuto."
   },
   "reward": {
     "notFound": "Recompensa não encontrada.",

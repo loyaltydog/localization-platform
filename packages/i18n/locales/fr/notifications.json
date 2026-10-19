@@ -117,7 +117,7 @@
   "totalTransactions": "Total des transactions",
   "memberParticipation": "Participation des membres",
   "totalRevenue": "Recettes totales",
-  "dateRangeTx": "{count} tx",
+  "dateRangeTx": "{{count}} tx",
   "oopsError": "Oups !",
   "updatedSuccessfully": "Mise à jour réussie",
   "messageHasBeenSent": "Le message a été envoyé !",

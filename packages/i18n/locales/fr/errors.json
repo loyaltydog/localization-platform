@@ -49,9 +49,9 @@
     "passwordResetRequired": "Vous devez réinitialiser votre mot de passe avant de continuer.",
     "twoFactorRequired": "Une authentification à deux facteurs est requise.",
     "twoFactorInvalid": "Code d'authentification à deux facteurs invalide.",
-    "notVerified": "Votre compte n'a pas été vérifié. Veuillez vérifier votre e-mail pour obtenir le lien de vérification.",
+    "notVerified": "Votre compte n'a pas été vérifié. Veuillez consulter votre e-mail pour obtenir le lien de vérification.",
     "alreadyLoggedIn": "Vous avez déjà entamé une session.",
-    "loginRequired": "La session doit être ouverte pour continuer.",
+    "loginRequired": "Vous devez être connecté pour continuer.",
     "not_authenticated": "Authentification requise",
     "invalid_token": "Jeton d'authentification invalide",
     "token_missing": "Le jeton est manquant",
@@ -108,9 +108,9 @@
     "cardNotFound": "Carte de fidélité introuvable.",
     "cardAlreadyLinked": "Cette carte est déjà liée à un autre compte.",
     "enrollmentFailed": "L'inscription du membre a échoué. Veuillez réessayer.",
-    "rewardExpired": "Cette indemnité a expiré et n'est pas encore disponible.",
-    "rewardAlreadyRedeemed": "Você já resgatou esta recompensa.",
-    "tierDowngraded": "Votre niveau est descendu. Continuez à gagner des points pour maintenir votre niveau."
+    "rewardExpired": "Cette récompense a expiré et n'est plus disponible.",
+    "rewardAlreadyRedeemed": "Vous avez déjà échangé cette récompense.",
+    "tierDowngraded": "Votre niveau a été rétrogradé. Continuez à gagner des points pour maintenir votre statut."
   },
   "reward": {
     "notFound": "Récompense introuvable.",

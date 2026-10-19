@@ -188,7 +188,6 @@ describe('Translation Structure Tests - All Languages', () => {
       ['errors.operations.duplicated_customers', ['shopId', 'customerId']],
       ['errors.operations.failed_to_renew_certificate', ['message']],
       ['errors.operations.unsupported_pass_style', ['style']],
-      ['notifications.dateRangeTx', ['count']],
     ]);
 
     function entries(locale, namespace) {

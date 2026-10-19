@@ -120,7 +120,7 @@
   "totalTransactions": "Total Transactions",
   "memberParticipation": "Member Participation",
   "totalRevenue": "Total Revenue",
-  "dateRangeTx": "{count} tx",
+  "dateRangeTx": "{{count}} tx",
   "oopsError": "Ooops!",
   "updatedSuccessfully": "Updated successfully",
   "messageHasBeenSent": "Messsage has been sent!",
