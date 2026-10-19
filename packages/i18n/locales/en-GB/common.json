@@ -308,7 +308,7 @@
     "confirmDeleteOffer": "Are you sure you want to delete this offer?",
     "warning": "Warning",
     "deleteWarning": "All content from this customer will be permanently deleted. This action cannot be undone.",
-    "analyzing": "Analyzing...",
+    "analyzing": "Analysing...",
     "abort": "Abort",
     "askAboutLoyalty": "Ask about your loyalty programme...",
     "tryAsking": "Try asking:",
@@ -882,7 +882,7 @@
     "ios": "iOS",
     "android": "Android",
     "relevanceDate": "Relevance Date",
-    "translationHelperText": "If you would like to localize the pass for multiple languages please select the base language and provide translation below. Dates, numbers and currency data types will always be displayed according to the users' language and region preference.",
+    "translationHelperText": "If you would like to localise the pass for multiple languages please select the base language and provide translation below. Dates, numbers and currency data types will always be displayed according to the users' language and region preference.",
     "associatedStoreId": "iTunes Store item identifier for the associated app on the back of the pass",
     "associatedPlayId": "Google Play Store package name for the associated app on the back of the pass",
     "barcodeType": "Barcode Type"
@@ -918,7 +918,7 @@
     "failedToPersistLanguage": "Failed to persist merchant language preference",
     "cropImage": "Crop Image",
     "quickSelect": "Quick Select",
-    "analyzing": "Analyzing...",
+    "analyzing": "Analysing...",
     "abort": "Abort",
     "tryAsking": "Try asking:",
     "askAboutLoyaltyProgram": "Ask about your loyalty programme...",
@@ -2883,7 +2883,7 @@
         "deletePermanently": "Delete permanently"
       },
       "trash": {
-        "banner": "This customer is in Trash.",
+        "banner": "This customer is in the Bin.",
         "willDeleteOnPrefix": "It will be permanently deleted on",
         "willDeleteAfterRetention": "It will be permanently deleted after the retention period.",
         "erasedNote": "Deleted at the customer's request (GDPR erasure) — it cannot be reinstated. You can permanently delete it now.",

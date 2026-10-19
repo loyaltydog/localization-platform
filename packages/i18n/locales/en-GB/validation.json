@@ -19,7 +19,7 @@
     "address": "Address",
     "city": "City",
     "state": "State",
-    "zip": "ZIP Code",
+    "zip": "Postcode",
     "country": "Country",
     "password": "Password",
     "confirmPassword": "Confirm Password",
