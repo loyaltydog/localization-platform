@@ -495,5 +495,19 @@
     "upgradeOption": "For higher limits, consider upgrading your plan.",
     "cta": "View Usage Dashboard",
     "footer": "This is an automated warning to prevent service interruption."
+  },
+  "lightspeed": {
+    "welcome": {
+      "subject": "Welcome to LoyaltyDog, {{merchantName}}!",
+      "body": "Your Lightspeed store is now connected to LoyaltyDog. Your loyalty program is being set up and your customers and products are syncing now."
+    },
+    "claim": {
+      "subject": "You've got points waiting — claim them",
+      "headline": "You've got points waiting!",
+      "cta": "Claim my points"
+    }
+  },
+  "dsar": {
+    "exportSubject": "Your LoyaltyDog Data Export"
   }
 }

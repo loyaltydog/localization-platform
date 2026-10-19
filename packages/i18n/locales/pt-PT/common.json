@@ -781,7 +781,9 @@
           "cancelButton": "Cancel Button",
           "submittingButton": "Submitting Button",
           "backupVersionLabel": "Backup Version Label",
-          "restoreButton": "Restore Button"
+          "restoreButton": "Restore Button",
+          "keepWeeklyHelper": "Mantém também a primeira cópia de segurança de cada uma das últimas N semanas. 0 não mantém nenhuma.",
+          "keepWeeklyLabel": "Manter semanais"
         },
         "restore": {
           "passTypeIds": "Pass Type Ids",
@@ -866,7 +868,46 @@
           "apiFrozen": "Chaves Public API congeladas",
           "apiEntitled": "Com acesso",
           "apiNotEntitled": "Sem acesso",
-          "viewActivity": "Atividade do comerciante"
+          "viewActivity": "Atividade do comerciante",
+          "merge": {
+            "adminBlocked": "Uma conta de administrador não pode ser fundida.",
+            "apiSubscription": "Subscrição da Public API",
+            "confirm": "Suspender o início de sessão que não for mantido",
+            "customers": "{{count}} clientes",
+            "done": "Fundido. O início de sessão que não foi mantido já não pode iniciar sessão.",
+            "errors": {
+              "admin_account": "Uma conta de administrador não pode ser fundida.",
+              "already_merged": "Esse início de sessão já foi fundido noutra conta.",
+              "channel_split": "Uma ligação de canal aponta para um programa que fica para trás. Selecione também esse programa ou deixe ambos.",
+              "program_not_owned": "Um programa selecionado não está em nenhuma das duas contas.",
+              "same_user": "Escolha duas contas diferentes.",
+              "survivor_inactive": "O início de sessão que se mantém não está ativo.",
+              "template_collision": "Um tipo de passe de um programa selecionado já está no início de sessão que se mantém.",
+              "template_not_owned": "Um modelo de passe de um programa selecionado não pertence a nenhuma das duas contas.",
+              "unknown_program": "Um dos programas selecionados não existe.",
+              "user_not_found": "Essa conta não foi encontrada."
+            },
+            "hashedKeys": "{{count}} chaves de API com hash",
+            "inactiveBlocked": "O início de sessão que se mantém não está ativo.",
+            "intro": "Escolha o que o início de sessão que se mantém conserva. Nada é eliminado. Os clientes em programas diferentes mantêm-se separados. Isto não chama o Stripe nem cancela uma subscrição.",
+            "keepLegend": "Início de sessão que se mantém",
+            "keepOther": "Manter o outro início de sessão",
+            "keepThis": "Manter este início de sessão",
+            "legacyKeys": "{{count}} chaves JWT ou legadas permanecem no respetivo início de sessão",
+            "load": "Carregar contas",
+            "loading": "A carregar...",
+            "noPlan": "Sem plano",
+            "noStripe": "Sem cliente Stripe",
+            "noSubscription": "Sem subscrição",
+            "otherLabel": "E-mail ou id da outra conta",
+            "programs": "Programas que o início de sessão que se mantém conserva",
+            "repeatDone": "Programas adicionais movidos. A subscrição da API e o cliente Stripe foram deixados como estão.",
+            "repeatNote": "Este início de sessão já foi fundido no início de sessão que se mantém. Uma repetição apenas move programas adicionais. A subscrição da API e o cliente Stripe mantêm-se como estão.",
+            "stripeCustomer": "Cliente Stripe",
+            "submit": "Fundir contas",
+            "submitting": "A fundir...",
+            "title": "Fundir conta"
+          }
         },
         "form": {
           "businessLabel": "Business Label",
@@ -1809,7 +1850,19 @@
       "claudeOpus4": {
         "name": "Claude Opus 4",
         "description": " - Modelo mais capaz da Anthropic para tarefas complexas."
+      },
+      "claudeOpus4_8": {
+        "description": " - Modelo mais capaz da Anthropic para tarefas complexas, via OpenRouter. Nível premium.",
+        "name": "Claude Opus 4.8"
+      },
+      "claudeSonnetLatest": {
+        "description": " - Modelo Sonnet mais recente da Anthropic via OpenRouter. Nível premium.",
+        "name": "Claude Sonnet (Mais recente)"
       }
+    },
+    "premiumWarning": {
+      "body": "Este modelo custa mais por pedido do que os modelos padrão. Mude para ele apenas quando precisar da capacidade adicional.",
+      "heading": "Modelo premium selecionado"
     }
   },
   "common": {
@@ -1930,7 +1983,9 @@
       "frozen": {
         "title": "Chaves Public API em pausa",
         "body": "As chaves ld_* estão em pausa até voltar a subscrever. As chaves de aplicação JWT continuam a funcionar."
-      }
+      },
+      "planUnavailable": "Esse plano não está disponível. Escolha outro.",
+      "unpaidFrozen": "É necessário um pagamento para restaurar o acesso. Utilize Gerir faturação para pagar a fatura em aberto."
     },
     "wordpressSites": {
       "heading": "Sites WordPress Ligados",
@@ -1988,12 +2043,15 @@
       "errorState": "Não foi possível carregar o seu uso. Por favor, tente novamente.",
       "warningBanner": {
         "title": "Quota mensal quase atingida",
-        "body": "Uma ou mais das suas chaves Public API estão a aproximar-se da sua quota mensal de pedidos."
+        "body": "Uma ou mais das suas chaves Public API estão a aproximar-se da sua quota mensal de pedidos.",
+        "scale": "Está no plano {{planName}}. Os pedidos continuam a funcionar até ao limite mensal. Enterprise é apresentado sob orçamento se precisar de uma quota maior.",
+        "upgrade": "Está no plano {{planName}}. {{nextPlanName}} inclui {{nextPlanAllowance}} chamadas por mês. Os pedidos continuam a funcionar até ao limite mensal. Utilize Gerir faturação nesta página para mudar de plano."
       },
       "exceededBanner": {
         "title": "Quota mensal atingida",
         "body": "Uma ou mais das suas chaves Public API atingiram a sua quota mensal de pedidos. Os pedidos adicionais podem ser limitados até ao próximo mês, ou pode atualizar o seu plano."
-      }
+      },
+      "account": "Todas as chaves de API"
     }
   },
   "giftcard": {
@@ -2669,8 +2727,11 @@
         "resetPointsSummary": "Isto irá apagar {{points}} pontos de {{withBalance}} de {{members}} membros. Os saldos são limpos imediatamente.",
         "resetPointsTitle": "Repor todos os pontos a zero",
         "resetPointsTypeName": "Escreva \"{{name}}\" para confirmar",
-        "resetPointsWallets": "{{passes}} passes da carteira serão atualizados em {{devices}} dispositivos registados, ao longo de alguns minutos."
-      }
+        "resetPointsWallets": "{{passes}} passes da carteira serão atualizados em {{devices}} dispositivos registados, ao longo de alguns minutos.",
+        "pointsResetQueued": "Reposição de pontos em fila. Os saldos são limpos em segundos; as carteiras acompanham dentro de alguns minutos."
+      },
+      "integrationDeleteAlert": "Eliminações da integração",
+      "integrationDeleteAlertLabel": "Enviar um e-mail ao proprietário da conta quando EPOS Now, Shopify ou Clover eliminar o perfil de um membro"
     }
   },
   "managersPortal": {
