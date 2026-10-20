@@ -297,7 +297,7 @@
     "contactEmail": "If you have any questions in the meantime, please feel free to email me at",
     "moreMoney": "More Money; More Customers; More Transactions",
     "loyaltyTeam": "The LoyaltyDog Team",
-    "oops": "Ooops!",
+    "oops": "Oops!",
     "somethingWentWrong": "Something went wrong! We are already working to solve the problem.",
     "noQualifiedCustomers": "Don't have any qualified customers.",
     "customerDeleted": "Saved successfully",
@@ -340,7 +340,7 @@
     "days": "days",
     "warningMessage": "⚠️",
     "last": "last",
-    "oopsError": "Ooops!",
+    "oopsError": "Oops!",
     "welcomeDashboard": "Welcome to the Loyalty Dashboard!",
     "rewardingExperience": "Embark on a rewarding experience with our Loyalty Dashboard!",
     "beginJourney": "Begin your journey by effortlessly adding a Pass Type ID and kick-start your personalised loyalty programme.",
@@ -418,7 +418,7 @@
       "icon": "Icon",
       "shareURL": "Share URL",
       "addEmail": "Add Email",
-      "addPhone": "Add Phone",
+      "addPhone": "Add Phone Number",
       "installPass": "Install Pass",
       "customerReferral": "Customer Referral",
       "scanner": "Scanner",
@@ -427,8 +427,8 @@
       "customerCard": "Customer Card",
       "customize": "Customise",
       "referralSuffix": "referral",
-      "exportCustomerData": "Export Customer Data",
-      "exportActivityData": "Export Activity Data",
+      "exportCustomerData": "Customer Data",
+      "exportActivityData": "Activity Data",
       "benefits": {
         "edit": {
           "metaTitle": "Edit Benefit",
@@ -441,7 +441,7 @@
       "firstName": "First Name",
       "lastName": "Last Name",
       "email": "Email",
-      "phone": "Phone",
+      "phone": "Phone Number",
       "points": "Points",
       "phonePrefix": "e.g. +1",
       "savedSuccess": "Saved successfully",
@@ -580,7 +580,7 @@
     },
     "clover": {
       "statusBanner": {
-        "configuring": "Configuring...",
+        "configuring": "Hang tight! We're getting everything ready for you...",
         "uninstalledTitle": "Integration Uninstalled",
         "uninstalledDescription": "This Clover integration has been uninstalled. Reinstall to continue using LoyaltyDog.",
         "reinstallButton": "Reinstall"
@@ -901,9 +901,9 @@
     "cancel": "Cancel",
     "yesDeleteIt": "Yes, delete it",
     "hangTight": "Hang tight! We're getting everything ready for you...",
-    "betaBannerTitle": "AI Business Adviser Beta Test",
-    "betaBannerText": "You are using the beta test version of the AI Business Adviser. Only the AI Adviser features are available in this environment. Your feedback is valuable to help us improve this feature before the full release.",
-    "welcomeAI": "👋 Welcome to your Loyalty Dog AI Business Adviser!",
+    "betaBannerTitle": "AI Business Advisor Beta Test",
+    "betaBannerText": "You are using the beta test version of the AI Business Advisor. Only the AI Advisor features are available in this environment. Your feedback is valuable to help us improve this feature before the full release.",
+    "welcomeAI": "👋 Welcome to your Loyalty Dog AI Business Advisor!",
     "aiReadyToHelp": "I've analysed your transaction data and I'm ready to help you optimise your loyalty programme. Here's what I can help you with:",
     "performanceAnalysis": "Performance Analysis - How your loyalty programme is performing",
     "campaignRecommendations": "Campaign Recommendations - Birthday sales, punch cards, holiday promotions",
@@ -923,7 +923,7 @@
     "tryAsking": "Try asking:",
     "askAboutLoyaltyProgram": "Ask about your loyalty programme...",
     "send": "Send",
-    "loyaltyDogAdvisor": "🐕 Loyalty Dog AI Business Adviser",
+    "loyaltyDogAdvisor": "🐕 Loyalty Dog AI Business Advisor",
     "totalTransactions": "Total Transactions",
     "memberParticipation": "Member Participation",
     "totalRevenue": "Total Revenue",
@@ -953,13 +953,13 @@
   "app": {
     "admin": {
       "backups": {
-        "requestQueued": "Request Queued",
-        "searchPlaceholder": "Search Placeholder",
+        "requestQueued": "Your request was successfully added to queue, it will be processed shortly.",
+        "searchPlaceholder": "Search backup...",
         "totalBackups": "Total backups: {{total}}",
         "recentRestores": "Recent Restores",
-        "noname": "Noname",
-        "deleted": "Deleted",
-        "createTitle": "Create Title",
+        "noname": "(noname)",
+        "deleted": "(deleted)",
+        "createTitle": "Create Backup Task",
         "updateTitle": "Update {{name}}",
         "restoreTitle": "Restore {{name}}",
         "targetUser": "Target User: {{user}}",
@@ -981,41 +981,41 @@
           "noRestores": "No Restores"
         },
         "status": {
-          "active": "Active",
-          "inactive": "Inactive",
-          "inactiveBadge": "Inactive Badge",
+          "active": "True",
+          "inactive": "False",
+          "inactiveBadge": "Inactive",
           "somethingWentWrong": "Something went wrong!"
         },
         "actions": {
-          "reRun": "Re Run",
+          "reRun": "Re-Run",
           "reRunConfirm": "Re-run {{name}}",
-          "reRunMessage": "Re Run Message",
+          "reRunMessage": "Are you sure you want to re-run this backup?",
           "delete": "Delete",
           "deleteConfirm": "Delete {{name}}",
-          "deleteMessage": "Delete Message",
+          "deleteMessage": "Are you sure you want to delete this backup?",
           "editTitle": "Edit Backup",
           "restoreTitle": "Restore Backup"
         },
         "form": {
-          "nameLabel": "Name Label",
-          "nameHelper": "Name Helper",
-          "userAccountLabel": "User Account Label",
-          "cronExpressionLabel": "Cron Expression Label",
-          "cronHelperBefore": "Cron Helper Before",
-          "cronHelperAfter": "Cron Helper After",
-          "keepRecentLabel": "Keep Recent Label",
-          "activeLabel": "Active Label",
-          "backupButton": "Backup Button",
-          "updateButton": "Update Button",
-          "cancelButton": "Cancel Button",
-          "submittingButton": "Submitting Button",
-          "backupVersionLabel": "Backup Version Label",
+          "nameLabel": "Name",
+          "nameHelper": "The unique name of the backup for management.",
+          "userAccountLabel": "User Account",
+          "cronExpressionLabel": "Cron Expression",
+          "cronHelperBefore": "You can use",
+          "cronHelperAfter": "to define a cron expression.",
+          "keepRecentLabel": "Keep Recent",
+          "activeLabel": "Active",
+          "backupButton": "Backup",
+          "updateButton": "Update",
+          "cancelButton": "Cancel",
+          "submittingButton": "Please wait...",
+          "backupVersionLabel": "Backup Version",
           "restoreButton": "Restore Backup",
           "keepWeeklyHelper": "Also keep the first backup of each of the last N weeks. 0 keeps none.",
           "keepWeeklyLabel": "Keep Weekly"
         },
         "restore": {
-          "passTypeIds": "Pass Type Ids",
+          "passTypeIds": "Pass Type IDs",
           "passes": "Passes",
           "vouchers": "Vouchers",
           "programs": "Programmes",
@@ -1033,37 +1033,37 @@
         }
       },
       "configuration": {
-        "title": "Title"
+        "title": "Configuration"
       },
       "reports": {
-        "title": "Title",
+        "title": "Reports",
         "list": {
           "eposnowTransactionsSummaryAll": "EposNow Transactions Summary for all programmes",
           "shopifyTransactionsSummaryAll": "Shopify Transactions Summary for all programmes"
         },
-        "processingPrefix": "Processing Prefix",
-        "processingSuffix": "Processing Suffix"
+        "processingPrefix": "Processing",
+        "processingSuffix": "report. It will be emailed to you soon"
       },
       "users": {
         "title": "Users",
         "pages": {
           "list": "Users",
-          "new": "New",
-          "edit": "Edit",
+          "new": "New User",
+          "edit": "Update User",
           "view": "User",
           "delete": "Delete User"
         },
         "table": {
-          "id": "Id",
+          "id": "ID",
           "username": "Username",
           "email": "Email",
           "registeredAt": "Registered At",
           "pricePlan": "Price Plan",
           "roles": "Roles",
           "actions": "Actions",
-          "empty": "Empty",
-          "roleAdmin": "Role Admin",
-          "roleLoyalty": "Role Loyalty",
+          "empty": "No customers",
+          "roleAdmin": "admin",
+          "roleLoyalty": "loyalty",
           "active": "Active",
           "archived": "Archived"
         },
@@ -1078,8 +1078,8 @@
           "unarchive": "Unarchive"
         },
         "totalUsers": "Total users: {{total}}",
-        "createButton": "Create Button",
-        "searchPlaceholder": "Search Placeholder",
+        "createButton": "Create New User",
+        "searchPlaceholder": "Search user...",
         "deleteForm": {
           "title": "Delete {{userDisplayName}}"
         },
@@ -1145,42 +1145,42 @@
           }
         },
         "form": {
-          "businessLabel": "Business Label",
-          "firstNameLabel": "First Name Label",
-          "lastNameLabel": "Last Name Label",
-          "locationLabel": "Location Label",
-          "websiteLabel": "Website Label",
-          "usernameLabel": "Username Label",
-          "emailLabel": "Email Label",
-          "passwordLabel": "Password Label",
-          "passwordHelper": "Password Helper",
-          "administratorLabel": "Administrator Label",
-          "activeLabel": "Active Label",
-          "betaUserLabel": "Beta User Label",
-          "sendLoginCredentialsLabel": "Send Login Credentials Label",
-          "scheduledBackupLabel": "Scheduled Backup Label",
-          "submitButton": "Submit Button",
-          "submittingButton": "Submitting Button",
-          "cancelButton": "Cancel Button"
+          "businessLabel": "Business",
+          "firstNameLabel": "First Name",
+          "lastNameLabel": "Last Name",
+          "locationLabel": "Location",
+          "websiteLabel": "Website",
+          "usernameLabel": "Username",
+          "emailLabel": "Email Address",
+          "passwordLabel": "Password",
+          "passwordHelper": "Leave blank to keep existing password",
+          "administratorLabel": "Administrator",
+          "activeLabel": "Active",
+          "betaUserLabel": "Beta User",
+          "sendLoginCredentialsLabel": "Send Login Credentials",
+          "scheduledBackupLabel": "Scheduled Backup",
+          "submitButton": "Submit",
+          "submittingButton": "Please wait...",
+          "cancelButton": "Cancel"
         },
         "delete": {
-          "confirmation": "Confirmation",
-          "warningTitle": "Warning Title",
-          "warningDescription": "Warning Description",
-          "warningItemPassTypeIds": "Warning Item Pass Type Ids",
-          "warningItemPrograms": "Warning Item Programmes",
-          "warningItemEvents": "Warning Item Events",
-          "warningItemTemplates": "Warning Item Templates",
-          "confirmCheckboxLabel": "Confirm Checkbox Label",
-          "cancelButton": "Cancel Button",
-          "confirmButton": "Confirm Button"
+          "confirmation": "Please confirm the deletion",
+          "warningTitle": "Warning",
+          "warningDescription": "All associated data will be permanently deleted. This action cannot be undone.",
+          "warningItemPassTypeIds": "Pass Type IDs",
+          "warningItemPrograms": "Programmes",
+          "warningItemEvents": "Events",
+          "warningItemTemplates": "Templates",
+          "confirmCheckboxLabel": "Confirm deletion",
+          "cancelButton": "Cancel",
+          "confirmButton": "Delete"
         }
       },
       "aiAdvisor": {
-        "errorTitle": "Error Title",
+        "errorTitle": "Connection Error",
         "retryConnection": "Retry Connection",
-        "loadingTitle": "Loading Title",
-        "loadingDescription": "Loading Description",
+        "loadingTitle": "Loading Loyalty Data",
+        "loadingDescription": "Connecting to Loyalty Dog API...",
         "aiConnected": "AI Connected",
         "aiDisconnected": "AI Disconnected",
         "aiStatus": "AI Status",
@@ -1197,44 +1197,44 @@
       },
       "shopify": {
         "plans": {
-          "title": "Title",
-          "empty": "Empty",
+          "title": "Shopify Plans",
+          "empty": "No Shopify Plan",
           "table": {
             "name": "Name",
             "price": "Price",
             "type": "Type",
             "trialDays": "Trial Days",
             "actions": "Actions",
-            "empty": "Empty"
+            "empty": "(Empty)"
           },
           "actions": {
             "edit": "Edit",
             "delete": "Delete"
           },
           "confirm": {
-            "deleteTitle": "Delete Title",
-            "deleteMessage": "Delete Message"
+            "deleteTitle": "Delete",
+            "deleteMessage": "Are you sure you want to delete this shopify plan?"
           },
           "form": {
             "title": "Shopify Plans",
-            "newTitle": "New Title",
+            "newTitle": "New Shopify Plan",
             "updateTitle": "Update {{planName}}",
-            "nameLabel": "Name Label",
-            "typeLabel": "Type Label",
-            "typeOneTimeFee": "Type One Time Fee",
-            "typeSubscriptionFee": "Type Subscription Fee",
-            "priceLabel": "Price Label",
-            "priceHelper": "Price Helper",
-            "trialDaysLabel": "Trial Days Label",
-            "testingModeLabel": "Testing Mode Label",
-            "testingModeHelper": "Testing Mode Helper",
-            "testShopDomainsLabel": "Test Shop Domains Label",
-            "testShopDomainsHelper": "Test Shop Domains Helper",
-            "defaultPlanLabel": "Default Plan Label",
-            "defaultPlanHelper": "Default Plan Helper",
-            "submitButton": "Submit Button",
-            "submittingButton": "Submitting Button",
-            "cancelButton": "Cancel Button"
+            "nameLabel": "Name",
+            "typeLabel": "Type",
+            "typeOneTimeFee": "One-Time Fee",
+            "typeSubscriptionFee": "Subscription Fee",
+            "priceLabel": "Price",
+            "priceHelper": "Minimum price is $0.50",
+            "trialDaysLabel": "Trial Days",
+            "testingModeLabel": "Testing Mode",
+            "testingModeHelper": "Enable testing mode for this plan",
+            "testShopDomainsLabel": "Test Shop Domains",
+            "testShopDomainsHelper": "Enter shop domains (one per line) that will use this test plan",
+            "defaultPlanLabel": "Default Plan",
+            "defaultPlanHelper": "Set as default plan for new shops",
+            "submitButton": "Save Plan",
+            "submittingButton": "Saving...",
+            "cancelButton": "Cancel"
           }
         }
       }
@@ -1242,12 +1242,12 @@
     "auth": {
       "forgotPassword": {
         "title": "Enter your email to reset your password",
-        "description": "Description",
+        "description": "Don't fret! Just type in your email and we'll email you instructions to reset your password.",
         "emailLabel": "Email address",
         "submitButton": "Reset password",
         "submittingButton": "Please wait...",
         "successMessage": "Password reset link sent to your email.",
-        "alreadyHaveAccount": "Already Have Account",
+        "alreadyHaveAccount": "Already have an account?",
         "signInLink": "Sign in",
         "pageTitle": "Forgot Password"
       },
@@ -1257,7 +1257,7 @@
         "passwordEmpty": "Password can not be empty.",
         "invalidCredentials": "Invalid authentication credentials.",
         "title": "Use your email and password to sign in",
-        "description": "Description",
+        "description": "Use your email and password to sign in",
         "emailLabel": "Email address",
         "passwordLabel": "Password",
         "rememberMe": "Remember me",
@@ -1277,12 +1277,12 @@
         "sessionRequiredError": "Please sign in to access this page."
       },
       "layout": {
-        "maintenanceMessage": "Maintenance Message"
+        "maintenanceMessage": "Our service is currently undergoing maintenance. We'll be back soon!"
       },
       "clover": {
         "pageTitle": "Install LoyaltyDog ({{marketCode}})",
         "merchantId": "Merchant ID: {{merchantId}}",
-        "continueWithEmail": "Continue With Email",
+        "continueWithEmail": "Continue with your Clover email",
         "connectTo": "Connect to {{name}} ({{email}})",
         "connectToExistingAccount": "Connect To Existing Account",
         "back": "Back",
@@ -1294,7 +1294,7 @@
       },
       "shopify": {
         "pageTitle": "Connect to Shopify",
-        "continueWithEmail": "Continue With Email",
+        "continueWithEmail": "Continue with your Shopify email",
         "connectTo": "Connect to {{name}} ({{email}})",
         "connectToExistingAccount": "Connect To Existing Account",
         "back": "Back",
@@ -1303,25 +1303,25 @@
         "passwordLabel": "Password",
         "submittingButton": "Please wait...",
         "loginAndContinue": "Sign in and continue",
-        "shopifyStoreLabel": "Shopify Store Label",
+        "shopifyStoreLabel": "Your Shopify store",
         "installButton": "Install app"
       },
       "resetPassword": {
-        "title": "Title",
+        "title": "Reset Password",
         "newPasswordLabel": "New Password",
         "confirmPasswordLabel": "Confirm password",
         "submitButton": "Reset password",
         "submittingButton": "Please wait...",
         "successMessage": "Your password has been successfully changed.",
-        "alreadyHaveAccount": "Already Have Account",
-        "signInLink": "Sign In Link"
+        "alreadyHaveAccount": "Already have an account?",
+        "signInLink": "Sign in"
       },
       "register": {
         "title": "Create an account with your email and password",
-        "description": "Description",
+        "description": "Create an account with your email and password",
         "otpSent": "A new OTP has been sent to {{email}}",
         "somethingWentWrong": "Something went wrong. Please try again later.",
-        "resendOtp": "Resend Otp",
+        "resendOtp": "Click here to send a new one",
         "businessNameLabel": "Business name",
         "emailLabel": "Email address",
         "passwordLabel": "Password",
@@ -1342,17 +1342,17 @@
         "title": "API Keys",
         "pages": {
           "list": "API Keys",
-          "new": "New",
-          "edit": "Edit"
+          "new": "New App Key",
+          "edit": "Edit App Key"
         },
         "table": {
           "name": "Name",
           "appKey": "App Key",
-          "passTypeIds": "Pass Type Ids",
+          "passTypeIds": "Pass Type IDs",
           "passTemplates": "Pass Templates",
           "actions": "Actions",
-          "empty": "Empty",
-          "emptyName": "Empty Name",
+          "empty": "No App Key",
+          "emptyName": "(Empty)",
           "lastUsed": "Last used",
           "neverUsed": "Never"
         },
@@ -1362,16 +1362,16 @@
           "rotate": "Rotate"
         },
         "form": {
-          "nameLabel": "Name Label",
-          "fullAccessLabel": "Full Access Label",
-          "allowedTemplatesLabel": "Allowed Templates Label",
-          "allowedPassTypeIdsLabel": "Allowed Pass Type Ids Label",
-          "submitButton": "Submit Button",
-          "submitButtonLoading": "Submit Button Loading",
-          "cancelButton": "Cancel Button",
-          "deleteConfirmMessage": "Delete Confirm Message",
-          "deleteConfirmNo": "Delete Confirm No",
-          "deleteConfirmYes": "Delete Confirm Yes",
+          "nameLabel": "Name",
+          "fullAccessLabel": "Full Access",
+          "allowedTemplatesLabel": "Allowed Templates",
+          "allowedPassTypeIdsLabel": "Allowed Pass Type IDs",
+          "submitButton": "Submit",
+          "submitButtonLoading": "Please wait...",
+          "cancelButton": "Cancel",
+          "deleteConfirmMessage": "Are you sure you want to delete this app key?",
+          "deleteConfirmNo": "No, cancel",
+          "deleteConfirmYes": "Yes, confirm delete",
           "secretOnceTitle": "Copy your API secret now",
           "secretOnceWarning": "This is the only time this secret will be shown. Copy it now — after you leave or refresh this page, it cannot be retrieved.",
           "secretOnceDone": "Done",
@@ -1387,7 +1387,7 @@
         }
       },
       "passes": {
-        "title": "Title",
+        "title": "Passes",
         "pages": {
           "list": "Passes",
           "view": "View Pass",
@@ -1408,83 +1408,83 @@
           "delete": "Delete",
           "view": "View"
         },
-        "noData": "No Data",
+        "noData": "No passes found",
         "search": {
-          "cardHeader": "Card Header",
-          "placeholder": "Placeholder",
-          "searchButton": "Search Button",
-          "searchingButton": "Searching Button",
-          "errorMessage": "Error Message"
+          "cardHeader": "Search Pass",
+          "placeholder": "Enter pass pid, serial number, card number ...",
+          "searchButton": "Search",
+          "searchingButton": "Searching...",
+          "errorMessage": "Incorrect value"
         },
         "form": {
-          "submitButton": "Submit Button",
-          "submitButtonLoading": "Submit Button Loading",
-          "cancelButton": "Cancel Button"
+          "submitButton": "Submit",
+          "submitButtonLoading": "Saving...",
+          "cancelButton": "Cancel"
         },
         "edit": {
-          "title": "Title"
+          "title": "Edit Pass"
         },
         "status": {
           "title": "Update Status",
-          "statusLabel": "Status Label",
-          "statusValid": "Status Valid",
-          "statusInvalid": "Status Invalid",
-          "statusRedeemed": "Status Redeemed",
-          "statusExpired": "Status Expired",
-          "statusLocked": "Status Locked",
-          "statusUnpaid": "Status Unpaid",
-          "statusIncomplete": "Status Incomplete",
-          "updateButton": "Update Button",
-          "cancelButton": "Cancel Button"
+          "statusLabel": "Status",
+          "statusValid": "Valid",
+          "statusInvalid": "Invalid",
+          "statusRedeemed": "Redeemed",
+          "statusExpired": "Expired",
+          "statusLocked": "Locked",
+          "statusUnpaid": "Unpaid",
+          "statusIncomplete": "Incomplete",
+          "updateButton": "Update",
+          "cancelButton": "Cancel"
         },
         "detail": {
-          "passTitle": "Pass Title",
-          "tabGeneral": "Tab General",
-          "tabData": "Tab Data",
-          "tabScanHistory": "Tab Scan History",
-          "tabImages": "Tab Images",
-          "tabSource": "Tab Source",
-          "deleteConfirm": "Delete Confirm",
-          "deleteMessage": "Delete Message",
+          "passTitle": "Pass",
+          "tabGeneral": "General",
+          "tabData": "Data",
+          "tabScanHistory": "Scan History",
+          "tabImages": "Images",
+          "tabSource": "Source",
+          "deleteConfirm": "Confirm Action",
+          "deleteMessage": "Are you sure you want to delete this pass?",
           "template": "Template",
-          "passTypeId": "Pass Type Id",
+          "passTypeId": "Pass Type ID",
           "serialNumber": "Serial Number",
           "createdAt": "Created At",
           "lastUpdated": "Last Updated",
           "expiresAt": "Expires At",
           "status": "Status",
-          "updateStatusLink": "Update Status Link",
+          "updateStatusLink": "Update Status",
           "registrations": "Registrations",
           "shortlink": "Shortlink",
           "scanToAdd": "Scan To Add",
           "noValues": "No Values",
-          "tableHeaderPidNumber": "Table Header Pid Number",
-          "tableHeaderTime": "Table Header Time",
-          "tableHeaderScanner": "Table Header Scanner",
-          "tableHeaderAction": "Table Header Action",
-          "tableHeaderDetails": "Table Header Details",
+          "tableHeaderPidNumber": "PID Number",
+          "tableHeaderTime": "Time",
+          "tableHeaderScanner": "Scanner",
+          "tableHeaderAction": "Action",
+          "tableHeaderDetails": "Details",
           "noScans": "No Scans",
-          "unknownScanner": "Unknown Scanner",
-          "saveButton": "Save Button",
+          "unknownScanner": "Unknown",
+          "saveButton": "Save",
           "devicePrefix": "Device",
           "previewAlt": "Preview"
         }
       },
       "passTypes": {
-        "title": "Title",
+        "title": "Pass Type IDs",
         "pages": {
           "list": "Pass Type IDs",
-          "new": "New",
+          "new": "New Pass Type ID",
           "edit": "Edit Pass Type ID",
           "delete": "Delete Pass Type ID"
         },
         "table": {
-          "passTypeId": "Pass Type Id",
+          "passTypeId": "Pass Type ID",
           "organization": "Organisation",
           "teamIdentifier": "Team Identifier",
           "certificateExpiration": "Certificate Expiration",
           "actions": "Actions",
-          "empty": "Empty"
+          "empty": "No Pass Type IDs"
         },
         "actions": {
           "edit": "Edit",
@@ -1492,71 +1492,71 @@
           "renew": "Renew"
         },
         "renewConfirm": "Renew {{passTypeIdentifier}}",
-        "renewMessage": "Renew Message",
+        "renewMessage": "Are you sure you want to renew this Pass Type Identifier? Apple support max 5 valid certificates per Pass Type Identifier. You don't need to renew if you have a valid certificate.",
         "deleteConfirmTitle": "Delete {{passTypeIdentifier}}",
-        "deleteConfirmMessage": "Delete Confirm Message",
-        "gettingStartedTitle": "Getting Started Title",
-        "helperText": "Helper Text",
+        "deleteConfirmMessage": "CAUTION: You are about to delete a pass type id. Without a pass type id, passes can't be signed and are not usable. Because of this all associated pass templates and passes will be permanently deleted from our servers.",
+        "gettingStartedTitle": "Getting started by adding a Pass Type ID.",
+        "helperText": "Register a pass type identifier (Pass Type ID) for each kind of pass you create (i.e. gift cards). Registering your Pass Type IDs lets you generate Apple-issued certificates which are used to digitally sign and send updates to your passes, and allow your passes to be recognized by Apple Wallet/Passbook.",
         "tabs": {
           "wizard": "Wizard",
           "assistedUpload": "Assisted Upload",
           "manualImport": "Manual Import"
         },
-        "wizardTitle": "Wizard Title",
-        "uploadTitle": "Upload Title",
-        "importTitle": "Import Title",
+        "wizardTitle": "Create LoyaltyDog Certificate",
+        "uploadTitle": "Upload Certificate",
+        "importTitle": "Import Certificate",
         "new": {
           "assistedUpload": {
-            "step1": "Step1",
-            "step1Link": "Step1 Link",
-            "step2": "Step2",
-            "step3": "Step3",
-            "step3Link": "Step3 Link",
-            "step4": "Step4",
-            "step5": "Step5",
-            "step6": "Step6"
+            "step1": "Sign in with your Apple ID and go to",
+            "step1Link": "Certificates, Identifiers & Profiles",
+            "step2": "Register a new Pass Type ID if you don't have one",
+            "step3": "Download your",
+            "step3Link": "Certificate Signing Request (CSR)",
+            "step4": "Locate the Pass Type ID in the Identifiers list and open it, then press Create Certificate",
+            "step5": "Upload your Certificate Signing Request to the Apple Developer Portal, then press Continue",
+            "step6": "Download your certificate from the Apple Developer Portal and upload it here."
           }
         },
         "sideCard": {
-          "title": "Title",
-          "helperText": "Helper Text"
+          "title": "New Pass Type ID",
+          "helperText": "For production use, you are strongly encouraged to use your own Pass Type ID. You need an iOS Developer Account."
         },
         "edit": {
           "title": "Edit Pass Type ID",
-          "infoLabel": "Info Label",
-          "infoText": "Info Text",
-          "warningText": "Warning Text",
-          "submitButton": "Submit Button"
+          "infoLabel": "Note:",
+          "infoText": "The organisation name will be updated in your Pass Type ID. The current organisation name is",
+          "warningText": "The new organisation name will be used for newly created passes. Passes issued with the old organisation name might continue to use the old organisation name even after being updated. You should not frequently change your organisation name.",
+          "submitButton": "Update"
         },
         "delete": {
-          "confirmationLabel": "Confirmation Label",
+          "confirmationLabel": "Confirmation",
           "confirmText": "Please type {{passTypeIdentifier}} to confirm the deletion.",
-          "warningText": "Warning Text",
-          "cautionLabel": "Caution Label",
-          "submitButton": "Submit Button",
-          "cancelButton": "Cancel Button"
+          "warningText": "All associated templates and passes will be permanently deleted!",
+          "cautionLabel": "CAUTION:",
+          "submitButton": "Submit",
+          "cancelButton": "Cancel"
         },
         "newForm": {
           "upload": {
-            "certificateLabel": "Certificate Label",
-            "uploadButton": "Upload Button",
-            "cancelButton": "Cancel Button"
+            "certificateLabel": "Certificate (*.cer)",
+            "uploadButton": "Upload",
+            "cancelButton": "Cancel"
           },
           "import": {
-            "certificateLabel": "Certificate Label",
-            "certificateHelper": "Certificate Helper",
-            "passwordLabel": "Password Label",
-            "importButton": "Import Button",
-            "cancelButton": "Cancel Button"
+            "certificateLabel": "Pass Certificate (.p12 File)",
+            "certificateHelper": "You can create your pass type manually, export and upload the p12 file here.",
+            "passwordLabel": "Password",
+            "importButton": "Import",
+            "cancelButton": "Cancel"
           },
           "wizard": {
-            "passTypeIdLabel": "Pass Type Id Label",
-            "passTypeIdHelper": "Pass Type Id Helper",
-            "certificateNameLabel": "Certificate Name Label",
-            "certificateNameHelper": "Certificate Name Helper",
-            "createButton": "Create Button",
-            "creatingButton": "Creating Button",
-            "cancelButton": "Cancel Button"
+            "passTypeIdLabel": "Pass Type ID",
+            "passTypeIdHelper": "We recommend using a reverse-domain name style string (i.e., pass.dog.loyalty.merchant).",
+            "certificateNameLabel": "Certificate Name",
+            "certificateNameHelper": "You cannot use special characters such as @, &, *, ', \", -.",
+            "createButton": "Create",
+            "creatingButton": "Please wait...",
+            "cancelButton": "Cancel"
           }
         }
       }
@@ -1566,13 +1566,13 @@
     "title": "Templates",
     "pages": {
       "list": "Templates",
-      "new": "New",
+      "new": "New Template",
       "view": "Template",
       "edit": "Customise",
       "delete": "Delete Template",
-      "newPass": "New Pass",
-      "push": "Push",
-      "duplicate": "Duplicate"
+      "newPass": "Create Pass from Template",
+      "push": "Send Push Notification",
+      "duplicate": "Duplicate Template"
     },
     "table": {
       "id": "ID",
@@ -1590,11 +1590,11 @@
     },
     "form": {
       "templateName": "Template Name",
-      "templateNameHelper": "Template name helper",
+      "templateNameHelper": "For internal use, won't be visible to the outside",
       "passDescription": "Description",
-      "passDescriptionHelper": "Description helper",
+      "passDescriptionHelper": "Will be used as description for the passes that will be generated from this pass template. If you want to customise the description for each pass, add the description to the fields below",
       "icon": "Icon",
-      "iconHelper": "Icon helper",
+      "iconHelper": "The icon needs to be of square format",
       "passTypeId": "Pass Type ID",
       "passStyle": "Pass Style",
       "disableAutoPush": "Disable auto push",
@@ -1636,14 +1636,14 @@
     "delete": {
       "confirmMessage": "Are you sure you want to delete this template?",
       "warningTitle": "Warning",
-      "warningMessage": "Warning Message",
+      "warningMessage": "All passes from this template will be permanently deleted. This action cannot be undone.",
       "cancelButton": "Cancel",
       "confirmButton": "Delete"
     },
     "detail": {
       "analytics": "Analytics",
       "distribution": "Distribution",
-      "shareQrCode": "Share QR Code",
+      "shareQrCode": "Share this QR code to create passes or use",
       "quantity": "Quantity",
       "redemption": "Redemption",
       "loadingData": "Loading...",
@@ -1682,8 +1682,8 @@
   "aiAdvisor": {
     "title": "AI Business Advisor",
     "subtitle": "AI Business Advisor",
-    "loading": "Loading...",
-    "connecting": "Connecting...",
+    "loading": "Loading AI Advisor",
+    "connecting": "Connecting to your loyalty data...",
     "error": "Connection Error",
     "retryButton": "Retry",
     "noData": "No Data Available",
@@ -2598,7 +2598,7 @@
       "installPass": "Install Pass",
       "passScanned": "Pass Scanned",
       "dynamic": "Dynamic",
-      "dynamicScanHelper": "Chose dynamic if you want to reward a custom number of points for each scan.",
+      "dynamicScanHelper": "Choose dynamic if you want to reward a custom number of points for each scan.",
       "customerReferral": "Customer Referral",
       "pointsAfterReferredCustomerHas": "points after referred customer has",
       "points": "points",

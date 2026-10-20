@@ -6,6 +6,7 @@
 import { describe, it, expect } from 'vitest';
 import { readFileSync, existsSync } from 'fs';
 import { join } from 'path';
+import { findKeyNamePlaceholders, isKeyNamePlaceholder } from '../../scripts/validate-locales.js';
 
 const LOCALES_DIR = join(__dirname, '../../locales');
 
@@ -250,6 +251,40 @@ describe('Translation Structure Tests - All Languages', () => {
     // so neither defect can return now that the key is off PENDING_SINGLE_BRACE.
     it.each(ALL_LANGUAGES)('renders notifications.dateRangeTx with {{count}} in %s', (locale) => {
       expect(loadTranslation(locale, 'notifications').dateRangeTx).toBe('{{count}} tx');
+    });
+  });
+
+  describe('Key-name placeholders', () => {
+    // A title-cased leaf ("warningDescription" → "Warning Description") was
+    // shipped as the en-GB string. Real labels that already match en-US, and
+    // British spellings of those labels ("Programmes"), are not this bug.
+    it('flags a title-cased key when en-US has different text', () => {
+      expect(isKeyNamePlaceholder(
+        'warningDescription',
+        'Warning Description',
+        'All associated data will be permanently deleted. This action cannot be undone.',
+      )).toBe(true);
+      expect(isKeyNamePlaceholder('passTypeIds', 'Pass Type Ids', 'Pass Type IDs')).toBe(true);
+      expect(isKeyNamePlaceholder('noname', 'Noname', '(noname)')).toBe(true);
+      expect(isKeyNamePlaceholder('reRun', 'Re Run', 'Re-Run')).toBe(true);
+      expect(isKeyNamePlaceholder('step1Link', 'Step1 Link', 'Certificates, Identifiers & Profiles')).toBe(true);
+      expect(isKeyNamePlaceholder(
+        'templateNameHelper',
+        'Template name helper',
+        "For internal use, won't be visible to the outside",
+      )).toBe(true);
+    });
+
+    it('allows real short labels and British spelling of the same words', () => {
+      expect(isKeyNamePlaceholder('dashboard', 'Dashboard', 'Dashboard')).toBe(false);
+      expect(isKeyNamePlaceholder('programs', 'Programmes', 'Programs')).toBe(false);
+      expect(isKeyNamePlaceholder('amountSpent', 'Amount Spent', 'Amount spent')).toBe(false);
+      expect(isKeyNamePlaceholder('saving', 'Saving…', 'Saving...')).toBe(false);
+      expect(isKeyNamePlaceholder('noStartScheduled', 'No start scheduled', 'No Start scheduled yet')).toBe(false);
+    });
+
+    it('finds no title-cased key-name placeholders in en-GB', () => {
+      expect(findKeyNamePlaceholders()).toEqual([]);
     });
   });
 });
