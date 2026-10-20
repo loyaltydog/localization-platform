@@ -509,5 +509,58 @@
   },
   "dsar": {
     "exportSubject": "La tua esportazione dati LoyaltyDog"
+  },
+  "pass": {
+    "resend": {
+      "subject": "Il tuo pass {{programName}}",
+      "sms": "Ecco di nuovo il tuo pass {{programName}}: {{url}}"
+    }
+  },
+  "verification": {
+    "purge": {
+      "subject": "{{code}} è il tuo codice di verifica {{programName}}",
+      "sms": "Il tuo codice di verifica {{programName}} è: {{code}}. Scade tra 5 minuti."
+    },
+    "otp": {
+      "subject": "{{code}} è il tuo codice di verifica",
+      "giftCardSms": "Il tuo codice di verifica della carta regalo è: {{code}}. Scade tra 5 minuti.",
+      "sent": "Codice di verifica inviato",
+      "invalidTarget": "Formato di e-mail o numero di telefono non valido",
+      "rateHour": "Troppe richieste. Attendi prima di richiedere un altro codice.",
+      "rateDay": "Limite giornaliero superato. Riprova domani.",
+      "invalid": "Codice non valido o scaduto",
+      "expired": "Il codice è scaduto. Richiedine uno nuovo.",
+      "tooMany": "Troppi tentativi non riusciti. Richiedi un nuovo codice.",
+      "wrong": "Codice non valido. Tentativi rimasti: {{remaining}}."
+    }
+  },
+  "membership": {
+    "restore": {
+      "subject": "Ripristina la tua iscrizione a {{programName}}",
+      "sms": "Ripristina la tua iscrizione a {{programName}}: {{url}} — questo link funziona una sola volta e scade tra 24 ore.",
+      "expired": "Questo link è scaduto oppure è già stato usato.",
+      "invalid": "Questo link non è più valido.",
+      "refused": "Spiacenti — questa iscrizione non può più essere ripristinata. Iscriviti di nuovo o contatta il negozio."
+    },
+    "ended": {
+      "subject": "La tua iscrizione a {{programName}} è terminata"
+    }
+  },
+  "giftCard": {
+    "received": {
+      "subject": "🎁 Hai ricevuto una carta regalo di {{value}} da {{programName}}!",
+      "sms": "🎁 Hai ricevuto una carta regalo di {{value}} da {{programName}}!"
+    }
+  },
+  "voucher": {
+    "welcome": {
+      "subject": "Ecco il tuo voucher di benvenuto 🎉"
+    },
+    "birthday": {
+      "subject": "Buon compleanno! Goditi un pensiero 🎂"
+    },
+    "ready": {
+      "subject": "Il tuo voucher è pronto! 🎁"
+    }
   }
 }

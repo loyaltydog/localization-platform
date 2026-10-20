@@ -509,5 +509,58 @@
   },
   "dsar": {
     "exportSubject": "Votre export de données LoyaltyDog"
+  },
+  "pass": {
+    "resend": {
+      "subject": "Votre pass {{programName}}",
+      "sms": "Voici à nouveau votre pass {{programName}} : {{url}}"
+    }
+  },
+  "verification": {
+    "purge": {
+      "subject": "{{code}} est votre code de vérification {{programName}}",
+      "sms": "Votre code de vérification {{programName}} est : {{code}}. Il expire dans 5 minutes."
+    },
+    "otp": {
+      "subject": "{{code}} est votre code de vérification",
+      "giftCardSms": "Votre code de vérification de carte cadeau est : {{code}}. Il expire dans 5 minutes.",
+      "sent": "Code de vérification envoyé",
+      "invalidTarget": "Format d'e-mail ou de numéro de téléphone non valide",
+      "rateHour": "Trop de demandes. Veuillez patienter avant de demander un autre code.",
+      "rateDay": "Limite quotidienne dépassée. Veuillez réessayer demain.",
+      "invalid": "Code non valide ou expiré",
+      "expired": "Le code a expiré. Veuillez en demander un nouveau.",
+      "tooMany": "Trop de tentatives échouées. Veuillez demander un nouveau code.",
+      "wrong": "Code non valide. Tentatives restantes : {{remaining}}."
+    }
+  },
+  "membership": {
+    "restore": {
+      "subject": "Rétablissez votre adhésion à {{programName}}",
+      "sms": "Rétablissez votre adhésion à {{programName}} : {{url}} — ce lien ne fonctionne qu'une fois et expire dans 24 heures.",
+      "expired": "Ce lien a expiré ou a déjà été utilisé.",
+      "invalid": "Ce lien n'est plus valide.",
+      "refused": "Désolé — cette adhésion ne peut plus être rétablie. Veuillez vous inscrire à nouveau ou contacter le magasin."
+    },
+    "ended": {
+      "subject": "Votre adhésion à {{programName}} est terminée"
+    }
+  },
+  "giftCard": {
+    "received": {
+      "subject": "🎁 Vous avez reçu une carte cadeau de {{value}} de la part de {{programName}} !",
+      "sms": "🎁 Vous avez reçu une carte cadeau de {{value}} de la part de {{programName}} !"
+    }
+  },
+  "voucher": {
+    "welcome": {
+      "subject": "Voici votre bon de bienvenue 🎉"
+    },
+    "birthday": {
+      "subject": "Joyeux anniversaire ! Profitez d'une petite attention 🎂"
+    },
+    "ready": {
+      "subject": "Votre bon est prêt ! 🎁"
+    }
   }
 }

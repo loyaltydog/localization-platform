@@ -509,5 +509,58 @@
   },
   "dsar": {
     "exportSubject": "Sua exportação de dados do LoyaltyDog"
+  },
+  "pass": {
+    "resend": {
+      "subject": "Seu passe {{programName}}",
+      "sms": "Aqui está de novo o seu passe {{programName}}: {{url}}"
+    }
+  },
+  "verification": {
+    "purge": {
+      "subject": "{{code}} é o seu código de verificação do {{programName}}",
+      "sms": "Seu código de verificação do {{programName}} é: {{code}}. Ele expira em 5 minutos."
+    },
+    "otp": {
+      "subject": "{{code}} é o seu código de verificação",
+      "giftCardSms": "Seu código de verificação do cartão presente é: {{code}}. Ele expira em 5 minutos.",
+      "sent": "Código de verificação enviado",
+      "invalidTarget": "Formato de e-mail ou número de celular inválido",
+      "rateHour": "Muitas solicitações. Aguarde antes de pedir outro código.",
+      "rateDay": "Limite diário excedido. Tente novamente amanhã.",
+      "invalid": "Código inválido ou expirado",
+      "expired": "O código expirou. Solicite um novo.",
+      "tooMany": "Muitas tentativas incorretas. Solicite um novo código.",
+      "wrong": "Código inválido. Tentativas restantes: {{remaining}}."
+    }
+  },
+  "membership": {
+    "restore": {
+      "subject": "Restaure sua associação do {{programName}}",
+      "sms": "Restaure sua associação do {{programName}}: {{url}} — este link funciona uma vez e expira em 24 horas.",
+      "expired": "Este link expirou ou já foi usado.",
+      "invalid": "Este link não é mais válido.",
+      "refused": "Desculpe — esta associação não pode mais ser restaurada. Cadastre-se de novo ou fale com a loja."
+    },
+    "ended": {
+      "subject": "Sua associação do {{programName}} foi encerrada"
+    }
+  },
+  "giftCard": {
+    "received": {
+      "subject": "🎁 Você recebeu um cartão presente de {{value}} de {{programName}}!",
+      "sms": "🎁 Você recebeu um cartão presente de {{value}} de {{programName}}!"
+    }
+  },
+  "voucher": {
+    "welcome": {
+      "subject": "Aqui está o seu voucher de boas-vindas 🎉"
+    },
+    "birthday": {
+      "subject": "Feliz aniversário! Aproveite um mimo 🎂"
+    },
+    "ready": {
+      "subject": "Seu voucher está pronto! 🎁"
+    }
   }
 }
