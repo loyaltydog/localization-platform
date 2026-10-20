@@ -509,5 +509,58 @@
   },
   "dsar": {
     "exportSubject": "Your LoyaltyDog Data Export"
+  },
+  "pass": {
+    "resend": {
+      "subject": "Your {{programName}} pass",
+      "sms": "Here is your {{programName}} pass again: {{url}}"
+    }
+  },
+  "verification": {
+    "purge": {
+      "subject": "{{code}} is your {{programName}} verification code",
+      "sms": "Your {{programName}} verification code is: {{code}}. It expires in 5 minutes."
+    },
+    "otp": {
+      "subject": "{{code}} is your verification code",
+      "giftCardSms": "Your Gift Card verification code is: {{code}}. It expires in 5 minutes.",
+      "sent": "Verification code sent",
+      "invalidTarget": "Invalid email or phone number format",
+      "rateHour": "Too many requests. Please wait before requesting another code.",
+      "rateDay": "Daily limit exceeded. Please try again tomorrow.",
+      "invalid": "Invalid or expired code",
+      "expired": "Code has expired. Please request a new one.",
+      "tooMany": "Too many failed attempts. Please request a new code.",
+      "wrong": "Invalid code. Attempts remaining: {{remaining}}."
+    }
+  },
+  "membership": {
+    "restore": {
+      "subject": "Restore your {{programName}} membership",
+      "sms": "Restore your {{programName}} membership: {{url}} — this link works once and expires in 24 hours.",
+      "expired": "This link has expired or has already been used.",
+      "invalid": "This link is no longer valid.",
+      "refused": "Sorry — this membership can no longer be restored. Please sign up again or contact the store."
+    },
+    "ended": {
+      "subject": "Your {{programName}} membership has ended"
+    }
+  },
+  "giftCard": {
+    "received": {
+      "subject": "🎁 You've received a {{value}} gift card from {{programName}}!",
+      "sms": "🎁 You've received a {{value}} gift card from {{programName}}!"
+    }
+  },
+  "voucher": {
+    "welcome": {
+      "subject": "Here’s your Welcome Voucher 🎉"
+    },
+    "birthday": {
+      "subject": "Happy Birthday! Enjoy a treat 🎂"
+    },
+    "ready": {
+      "subject": "Your Voucher is ready! 🎁"
+    }
   }
 }

@@ -509,5 +509,58 @@
   },
   "dsar": {
     "exportSubject": "Tu exportación de datos de LoyaltyDog"
+  },
+  "pass": {
+    "resend": {
+      "subject": "Tu pase de {{programName}}",
+      "sms": "Aquí está de nuevo tu pase de {{programName}}: {{url}}"
+    }
+  },
+  "verification": {
+    "purge": {
+      "subject": "{{code}} es tu código de verificación de {{programName}}",
+      "sms": "Tu código de verificación de {{programName}} es: {{code}}. Vence en 5 minutos."
+    },
+    "otp": {
+      "subject": "{{code}} es tu código de verificación",
+      "giftCardSms": "Tu código de verificación de la tarjeta regalo es: {{code}}. Vence en 5 minutos.",
+      "sent": "Código de verificación enviado",
+      "invalidTarget": "El formato del correo electrónico o del número de teléfono no es válido",
+      "rateHour": "Demasiadas solicitudes. Espera antes de pedir otro código.",
+      "rateDay": "Se superó el límite diario. Inténtalo de nuevo mañana.",
+      "invalid": "Código no válido o vencido",
+      "expired": "El código ya venció. Solicita uno nuevo.",
+      "tooMany": "Demasiados intentos fallidos. Solicita un código nuevo.",
+      "wrong": "Código no válido. Intentos restantes: {{remaining}}."
+    }
+  },
+  "membership": {
+    "restore": {
+      "subject": "Restaura tu membresía de {{programName}}",
+      "sms": "Restaura tu membresía de {{programName}}: {{url}} — este enlace funciona una sola vez y vence en 24 horas.",
+      "expired": "Este enlace ya venció o ya se usó.",
+      "invalid": "Este enlace ya no es válido.",
+      "refused": "Lo sentimos: esta membresía ya no se puede restaurar. Regístrate de nuevo o contacta a la tienda."
+    },
+    "ended": {
+      "subject": "Tu membresía de {{programName}} ha terminado"
+    }
+  },
+  "giftCard": {
+    "received": {
+      "subject": "🎁 ¡Recibiste una tarjeta regalo de {{value}} de {{programName}}!",
+      "sms": "🎁 ¡Recibiste una tarjeta regalo de {{value}} de {{programName}}!"
+    }
+  },
+  "voucher": {
+    "welcome": {
+      "subject": "¡Aquí está tu vale de bienvenida! 🎉"
+    },
+    "birthday": {
+      "subject": "¡Feliz cumpleaños! Disfruta un detalle 🎂"
+    },
+    "ready": {
+      "subject": "¡Tu vale está listo! 🎁"
+    }
   }
 }
