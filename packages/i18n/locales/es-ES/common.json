@@ -433,7 +433,10 @@
     "leaveBlankInfinity": "- Dejar en blanco para fijar Infinito",
     "pushNotificationsGdpr": "Las notificaciones push cumplen el GDPR de la UE",
     "defaultCountryCode": "Código de país por defecto para la detección de números de teléfono",
-    "cannotLoadCustomer": "¡No se puede cargar el cliente! ¿Continuar de todos modos?"
+    "cannotLoadCustomer": "¡No se puede cargar el cliente! ¿Continuar de todos modos?",
+    "findCustomer": "Buscar cliente",
+    "rulesManagement": "Gestión de reglas",
+    "selectCustomerToContinue": "Seleccione un cliente para continuar."
   },
   "tab": {
     "proximityUuid": "UUID de proximidad",
