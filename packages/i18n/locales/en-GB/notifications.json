@@ -121,9 +121,9 @@
   "memberParticipation": "Member Participation",
   "totalRevenue": "Total Revenue",
   "dateRangeTx": "{{count}} tx",
-  "oopsError": "Ooops!",
+  "oopsError": "Oops!",
   "updatedSuccessfully": "Updated successfully",
-  "messageHasBeenSent": "Messsage has been sent!",
+  "messageHasBeenSent": "Message has been sent!",
   "loadingPleaseWait": "Loading, please wait...",
   "giftCard": {
     "sms": {
