@@ -1,0 +1,8 @@
+{
+  "effort": "base",
+  "triggerOnDrafts": false,
+  "triggerOnUpdates": true,
+  "excludeAuthors": ["dependabot[bot]", "renovate[bot]"],
+  "disabledLabels": ["skip-review"],
+  "ignorePatterns": "package-lock.json\n**/__pycache__/**\n*.pyc\npackages/i18n/locales/**/*.json"
+}
