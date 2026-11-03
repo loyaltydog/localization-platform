@@ -10,9 +10,9 @@ reviews:
     - "!**/*.pyc"
     - "!packages/i18n/locales/**/*.json"
   auto_review:
-    # Reviews are requested manually. A negative-only label stays an exclusion
-    # and does not opt pull requests in while automatic review is off.
-    enabled: false
+    # Every pull request is reviewed automatically, including low-risk ones.
+    # "!skip-review" excludes labeled pull requests; it is not an allowlist.
+    enabled: true
     drafts: false
     ignore_usernames:
       - "dependabot[bot]"

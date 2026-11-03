@@ -504,15 +504,17 @@ There is no translation sync workflow. Locale files change only through pull req
 
 ## Code review
 
-Reviews use CodeRabbit (not Greptile). Repository settings are in
-`.coderabbit.yaml`: automatic review is off, draft pull requests are skipped,
-and CodeRabbit writes its reviews in en-US.
+CodeRabbit reviews every pull request automatically, including this low-risk
+repository. Settings are in `.coderabbit.yaml`: automatic review is on, draft
+pull requests are skipped, and CodeRabbit writes its reviews in en-US.
 
-**greploop** means request a CodeRabbit review (`@coderabbitai review` on the
-pull request) and iterate until the review is satisfactory.
+While iterating, an agent may request a re-review with `@coderabbitai review`.
+Do not request those re-reviews excessively.
 
-This repository is low-risk, so it skips CodeRabbit and relies on thorough
-adversarial self-review.
+Any Greptile mention in a rule or methodology means CodeRabbit. **greploop**
+means review with CodeRabbit and iterate until the review is satisfactory.
+
+Loc's approval is still required to merge to `main` on important repositories.
 
 ## Contributing
 
