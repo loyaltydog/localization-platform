@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: en-US
+tone_instructions: >-
+  Review the shared @loyaltydog/i18n package for loader, helper, and test
+  defects: key parity, placeholder integrity, and hyphenated locale codes.
+  en-US is the source of truth. Locale catalog JSON, lockfiles, and Python
+  bytecode are out of scope.
+reviews:
+  auto_review:
+    enabled: false
+    drafts: false
+    ignore_usernames:
+      - "dependabot[bot]"
+      - "renovate[bot]"
+    labels:
+      - "!skip-review"
+  # Same files as greptile.json ignorePatterns. Those patterns are gitignore
+  # syntax (a slash-free name matches in any directory). These are minimatch,
+  # so package-lock.json and *.pyc need a ** form or the nested lockfile and
+  # bytecode stay in review. Exclusions only: every other path stays eligible.
+  path_filters:
+    - "!**/package-lock.json"
+    - "!**/__pycache__/**"
+    - "!**/*.pyc"
+    - "!packages/i18n/locales/**/*.json"
+  path_instructions:
+    - path: "**"
+      instructions: >-
+        This is LoyaltyDog's localization platform, the source of truth for
+        locale catalogs. Review code and tests for key parity, placeholder
+        integrity, and hyphenated locale codes (en-US is canonical). Locale
+        JSON under packages/i18n/locales, lockfiles, and bytecode are excluded
+        from review.
