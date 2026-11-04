@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: en-US
+reviews:
+  # Slash-free ignore patterns match in any directory (.gitignore style).
+  # CodeRabbit path filters use minimatch, so those patterns carry a **/ prefix.
+  # A leading "!" excludes the path. Exclusions do not limit review to an allowlist.
+  path_filters:
+    - "!**/package-lock.json"
+    - "!**/__pycache__/**"
+    - "!**/*.pyc"
+    - "!packages/i18n/locales/**/*.json"
+  auto_review:
+    # Every pull request is reviewed automatically, including low-risk ones.
+    # "!skip-review" excludes labeled pull requests; it is not an allowlist.
+    enabled: true
+    drafts: false
+    ignore_usernames:
+      - "dependabot[bot]"
+      - "renovate[bot]"
+    labels:
+      - "!skip-review"

@@ -502,6 +502,20 @@ and placeholder-integrity checks that guard the locale files — plus lint and b
 
 There is no translation sync workflow. Locale files change only through pull requests.
 
+## Code review
+
+CodeRabbit reviews every pull request automatically, including this low-risk
+repository. Settings are in `.coderabbit.yaml`: automatic review is on, draft
+pull requests are skipped, and CodeRabbit writes its reviews in en-US.
+
+While iterating, an agent may request a re-review with `@coderabbitai review`.
+Do not request those re-reviews excessively.
+
+Any Greptile mention in a rule or methodology means CodeRabbit. **greploop**
+means review with CodeRabbit and iterate until the review is satisfactory.
+
+Loc's approval is still required to merge to `main` on important repositories.
+
 ## Contributing
 
 Everything you need is in this file — there is no separate contributing guide:
@@ -513,6 +527,7 @@ Everything you need is in this file — there is no separate contributing guide:
 - **Adding a language** — create `locales/<code>/` with all 11 namespaces, add the
   code to `SUPPORTED_LANGUAGES` in `src/index.js` and to `ALL_LANGUAGES` in
   `src/__tests__/all-languages.test.js`, then make the suite pass
+- **Code review** — see [Code review](#code-review)
 
 ## License
 
