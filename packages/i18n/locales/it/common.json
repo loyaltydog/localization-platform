@@ -443,7 +443,10 @@
     "leaveBlankInfinity": "- Lasciare vuoto per impostare Infinito",
     "pushNotificationsGdpr": "Le notifiche push sono conformi al GDPR dell'UE",
     "defaultCountryCode": "Codice paese predefinito per il rilevamento dei numeri di telefono",
-    "cannotLoadCustomer": "Non è possibile caricare il cliente! Continuare comunque?"
+    "cannotLoadCustomer": "Non è possibile caricare il cliente! Continuare comunque?",
+    "findCustomer": "Cerca cliente",
+    "rulesManagement": "Gestione delle regole",
+    "selectCustomerToContinue": "Seleziona un cliente per continuare."
   },
   "tab": {
     "proximityUuid": "UUID di prossimità",
