@@ -662,7 +662,10 @@
     "leaveBlankInfinity": "• Leave blank to set Infinity",
     "pushNotificationsGdpr": "Push notifications are compliant with EU GDPR",
     "defaultCountryCode": "Default country code for phone number detection",
-    "cannotLoadCustomer": "Can not load the customer! Continue anyway?"
+    "cannotLoadCustomer": "Can not load the customer! Continue anyway?",
+    "findCustomer": "Find Customer",
+    "rulesManagement": "Rules Management",
+    "selectCustomerToContinue": "Select customer to continue."
   },
   "tab": {
     "proximityUuid": "Proximity UUID",

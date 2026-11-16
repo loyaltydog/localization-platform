@@ -411,7 +411,7 @@
     "updating": "Mise à jour",
     "update": "Mise à jour",
     "enterLoyaltyDogPass": "Entrer le Pass LoyaltyDog",
-    "passEnterHelp": "Vous pouvez saisir votre mot de passe, votre adresse électronique, votre numéro de téléphone ou l'identifiant de votre carte.",
+    "passEnterHelp": "Vous pouvez saisir le Pass, l'adresse e-mail, le numéro de téléphone ou l'identifiant de la carte.",
     "customerDetails": "COORDONNÉES DU CLIENT",
     "availableOffers": "OFFRES / RÉCOMPENSES DISPONIBLES",
     "advancedSettings": "Paramètres avancés",
@@ -433,7 +433,10 @@
     "leaveBlankInfinity": "- Laisser en blanc pour définir l'infini",
     "pushNotificationsGdpr": "Les notifications push sont conformes au GDPR de l'UE",
     "defaultCountryCode": "Code pays par défaut pour la détection des numéros de téléphone",
-    "cannotLoadCustomer": "Impossible de charger le client ! Continuer quand même ?"
+    "cannotLoadCustomer": "Impossible de charger le client ! Continuer quand même ?",
+    "findCustomer": "Rechercher un client",
+    "rulesManagement": "Gestion des règles",
+    "selectCustomerToContinue": "Sélectionnez un client pour continuer."
   },
   "tab": {
     "proximityUuid": "UUID de proximité",
